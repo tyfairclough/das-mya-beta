@@ -11,3 +11,91 @@
 <script src="/public/javascripts/application.js"></script>
 <script src="/public/javascripts/stackable.min.js"></script>
 <script src="/public/javascripts/aml.js"></script>
+
+<script>
+    // get & set sprint
+    var sprint = {{ sprint }};
+    localStorage.setItem("sprint", JSON.stringify(sprint));
+    
+    if ( sprint == 11 ) {
+        console.log("do this");
+    }
+    
+    //get url variables    
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == variable) {
+                return pair[1];
+            }
+        }
+        return (false);
+    }
+    var accepted = getQueryVariable("accepted");
+    var justadded = getQueryVariable("justadded");
+    var justremoved = getQueryVariable("justremoved");
+    var rolechange = getQueryVariable("rolechange");
+    var userdeleted = getQueryVariable("userdeleted");
+    var noinvite = getQueryVariable("noinvite");
+    var PAYEremoved = getQueryVariable("PAYEremoved");
+    var PAYEadded = getQueryVariable("PAYEadded");
+    var flow = getQueryVariable("flow");
+    var newOrg = getQueryVariable("newOrg");
+    var newOrgSigned = getQueryVariable("newOrgSigned");
+    var agreementState = getQueryVariable("agreementState");
+    var newLevyAccount = getQueryVariable("newLevyAccount");
+    var sessionState = getQueryVariable("sessionState");
+    var govgateway = getQueryVariable("govgateway");
+    var resetPassword = getQueryVariable("resetPassword");
+    var ab = getQueryVariable("ab");
+    var sprintIteration = JSON.parse(localStorage.getItem("sprint-number"));
+    var userEmail = JSON.parse(localStorage.getItem("email-address"));
+    var emailUpdated = getQueryVariable("emailUpdated");
+    var nameUpdated = getQueryVariable("nameUpdated");
+    
+    
+    // globals
+    //user details
+    var userFirstName = JSON.parse(localStorage.getItem('userFirstName'));
+    var userLastName = JSON.parse(localStorage.getItem('userLastName'));
+    var userEmail = JSON.parse(localStorage.getItem('userEmail'));
+    var userPassword = JSON.parse(localStorage.getItem('userPassword'));
+    var jobTitle = JSON.parse(localStorage.getItem('jobTitle'));
+    //user states
+    var userNDA = JSON.parse(localStorage.getItem('userNDA'));
+    var userState = JSON.parse(localStorage.getItem('userState'));
+    
+    // company details
+    var companyName = JSON.parse(localStorage.getItem('companyName'));
+    var companiesHouseNumber = JSON.parse(localStorage.getItem('companiesHouseNumber'));
+    
+
+    
+    // useful methods
+    
+    //back button
+    function goBack() {
+        window.history.back();
+    }
+    
+    if ( sessionState == 1 ) {
+        // show logged in to account
+        
+    } else {
+        // show logged out
+        $("#user-nav").hide();
+        $(".header-organisation").hide();
+    }
+
+    
+    $(".link-back").click(function(e){
+        e.preventDefault();
+            window.history.back();
+    })
+
+    
+</script>
+
+

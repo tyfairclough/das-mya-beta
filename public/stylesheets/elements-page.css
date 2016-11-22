@@ -2396,6 +2396,49 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
   border-top: 1px solid #bfc1c3;
 }
 
+.service-info {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.service-info .logo {
+  margin-top: 0.78947em;
+}
+
+.service-info .organisation-logo {
+  font-family: Helvetica, Arial;
+  font-weight: 400;
+  display: block;
+  position: relative;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 3px 0 2px 0;
+  text-decoration: none;
+  padding: 3px 0 2px 30px;
+  background-image: url("../images/hmrc_crest_18px.png");
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  border-left: 2px solid #009390;
+}
+
+.service-info .organisation-logo-medium {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 3px 0 2px 38px;
+  background-image: url("../images/hmrc_crest_18px_x2.png");
+  background-size: auto 26px;
+  border-left: 2px solid #009390;
+  white-space: nowrap;
+}
+
+.button.text-link {
+  background-color: transparent;
+  box-shadow: none;
+  text-decoration: underline;
+  color: #005ea5;
+  border: none;
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

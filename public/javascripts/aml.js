@@ -25,5 +25,8 @@ $(function() {
 	});
 	
 	$('#global-nav-links').stackable({stackerLabel: 'More'});
-	
+
+  
+    
 });
+

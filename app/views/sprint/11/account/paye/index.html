@@ -17,15 +17,81 @@
 <main class="elements-index" id="content" role="main" tabindex="-1">
   {% include "includes/breadcrumb.html" %}
 
-  <div class="grid-row">
+<div class="govuk-box-highlight PAYEremoved">
+          <h2 class="bold-large">
+            You've removed 680/cacb268	
+          </h2>
+        </div>
+<div class="govuk-box-highlight PAYEadded">
+          <h2 class="bold-large">
+680/cacb268 has been added
+          </h2>
+        <p>Levy funds from this PAYE scheme will now credit your account</p>
+        </div>    
+    
+<div class="grid-row">
     <div class="column-two-thirds">
-
-      <h1 class="heading-xlarge">
-        PAYE schemes
-      </h1>
-
-    </div>
+                    <div class="hgroup">
+            <h1 class="heading-large">Manage PAYE schemes</h1>
+            <p>Add PAYE schemes to allow levy funds to be added to your account.</p>
   </div>
+
+        </div>
+        <div class="column-third">
+                        <a id="dothething" class="button" href="/sprintbeta8-4&#10;&#10;&#10;&#10;/account/paye/step_a0">Add new scheme</a>
+        
+        </div>
+    </div>
+    
+<div id="emptyState" class="grid-row">
+        <div class="column-two-thirds">
+            <div class="notice">
+            <p class="">There are no PAYE schemes added.</p>
+                </div>
+        </div>
+    </div>    
+    
+
+<div class="grid-row">
+        <div class="column-two-thirds">
+            
+
+            
+            
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col" style="padding-top:0">Scheme&nbsp;ID</th>
+                                <th scope="col" style="padding-top:0">English %</th>
+                                <th scope="col" style="padding-top:0"></th>
+                                <th scope="col" style="padding-top:0"></th>
+                      
+                                
+                            </tr>
+                        </thead>
+<tbody>
+    <tr>
+        <td class="">123/AB12345
+        </td>
+        <td>80%</td>
+        <td><a href="/sprint/{{sprint}}/account/paye/details">Details</a></td>
+        <td><a href="/sprint/{{sprint}}/account/paye/remove">Remove</a></td>
+    </tr>
+    <tr>
+        <td class="">680/cacb268
+        </td>
+        <td>75%</td>
+        <td><a href="/sprint/{{sprint}}/account/paye/details">Details</a></td>
+        <td><a href="/sprint/{{sprint}}/account/paye/remove">Remove</a></td>
+    </tr>
+</tbody>
+</table>      
+ 
+            
+            
+            
+        </div>
+    </div>    
 
 </main>
 {% endblock %}

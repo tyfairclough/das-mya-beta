@@ -46,7 +46,7 @@
     var newOrgSigned = getQueryVariable("newOrgSigned");
     var agreementState = getQueryVariable("agreementState");
     var newLevyAccount = getQueryVariable("newLevyAccount");
-    var sessionState = getQueryVariable("sessionState");
+    var sessionState = JSON.parse(localStorage.getItem("sessionState"));
     var govgateway = getQueryVariable("govgateway");
     var resetPassword = getQueryVariable("resetPassword");
     var ab = getQueryVariable("ab");
@@ -66,11 +66,15 @@
     //user states
     var userNDA = JSON.parse(localStorage.getItem('userNDA'));
     var userState = JSON.parse(localStorage.getItem('userState'));
+    var userType = JSON.parse(localStorage.getItem('userType'));
     
     // company details
     var companyName = JSON.parse(localStorage.getItem('companyName'));
     var companiesHouseNumber = JSON.parse(localStorage.getItem('companiesHouseNumber'));
     
+    var payeSchemes = JSON.parse(localStorage.getItem('payeSchemes'));
+    // agreement object {type:"",id:"",state:""} type=org type id=unique number state=is it signed?
+    var agreements = JSON.parse(localStorage.getItem('agreements'));
 
     
     // useful methods
@@ -79,16 +83,6 @@
     function goBack() {
         window.history.back();
     }
-    
-    if ( sessionState == 1 ) {
-        // show logged in to account
-        
-    } else {
-        // show logged out
-        $("#user-nav").hide();
-        $(".header-organisation").hide();
-    }
-
     
     $(".link-back").click(function(e){
         e.preventDefault();

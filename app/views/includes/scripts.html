@@ -58,24 +58,34 @@
     
     // globals
     //user details
-    var userFirstName = JSON.parse(localStorage.getItem('userFirstName'));
-    var userLastName = JSON.parse(localStorage.getItem('userLastName'));
-    var userEmail = JSON.parse(localStorage.getItem('userEmail'));
-    var userPassword = JSON.parse(localStorage.getItem('userPassword'));
-    var jobTitle = JSON.parse(localStorage.getItem('jobTitle'));
+    var user = {}
+    user.firstName = JSON.parse(localStorage.getItem('user.firstName'));
+    user.lastName = JSON.parse(localStorage.getItem('user.lastName'));
+    user.email = JSON.parse(localStorage.getItem('user.email'));
+    user.password = JSON.parse(localStorage.getItem('user.password'));
+    user.jobTitle = JSON.parse(localStorage.getItem('user.jobTitle'));
     //user states
-    var userNDA = JSON.parse(localStorage.getItem('userNDA'));
-    var userState = JSON.parse(localStorage.getItem('userState'));
-    var userType = JSON.parse(localStorage.getItem('userType'));
+    user.NDA = JSON.parse(localStorage.getItem('userNDA'));
+    user.state = JSON.parse(localStorage.getItem('userState'));
+    user.type = JSON.parse(localStorage.getItem('userType'));
     
     // company details
-    var companyName = JSON.parse(localStorage.getItem('companyName'));
-    var companiesHouseNumber = JSON.parse(localStorage.getItem('companiesHouseNumber'));
-    
-    var payeSchemes = JSON.parse(localStorage.getItem('payeSchemes'));
+    //var companyName = JSON.parse(localStorage.getItem('companyName'));
+    //var companiesHouseNumber = JSON.parse(localStorage.getItem('companiesHouseNumber'));
     // agreement object {type:"",id:"",state:""} type=org type id=unique number state=is it signed?
-    var agreements = JSON.parse(localStorage.getItem('agreements'));
+    //localStorage.setItem('agreements')
+    //var agreements = JSON.parse(localStorage.getItem('agreements'));
 
+    //var companyData = [{companiesHouseNumber: 342342342, companyName:"ACME Ltd",agreement:0}]
+    var companyData = [{companiesHouseNumber: null, companyName:null,agreement:null}]
+    
+    localStorage.setItem('companyData', JSON.stringify(companyData));
+    console.log(JSON.parse(localStorage.getItem('companyData')));
+    
+    //var payeSchemes = [{ schemeNumber: "324234/AS1", englishPercentage: 80}, {schemeNumber:"234234234",englishPercentage: 90}];
+    var payeSchemes = [{ schemeNumber: null, englishPercentage: null}, {schemeNumber:null, englishPercentage: null}];
+    localStorage.setItem('payeSchemes', JSON.stringify(payeSchemes));
+    console.log(JSON.parse(localStorage.getItem('payeSchemes')));
     
     // useful methods
     
@@ -88,7 +98,7 @@
         e.preventDefault();
             window.history.back();
     })
-
+    
     
 </script>
 

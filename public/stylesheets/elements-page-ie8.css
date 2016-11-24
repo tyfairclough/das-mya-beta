@@ -2261,6 +2261,30 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
   margin-bottom: 0;
 }
 
+.related {
+  border-top-color: #005ea5;
+  border-top-style: solid;
+  border-top-width: 10px;
+  margin-top: 20px;
+}
+
+.visually-hidden, .hidden, .vh {
+  display: none;
+}
+
+table {
+  margin-bottom: 20px;
+}
+
+tr.total th {
+  border: none;
+}
+
+tr.total td {
+  border-bottom: 2px solid #0b0c0c;
+  font-weight: 700;
+}
+
 .sprint-11 #dothething {
   margin-bottom: 30px;
   float: right;

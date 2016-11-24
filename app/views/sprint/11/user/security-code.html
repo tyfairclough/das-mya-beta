@@ -15,36 +15,38 @@
 
 {% block content %}
 <main class="elements-index" id="content" role="main" tabindex="-1">
-  {% include "includes/breadcrumb.html" %}
 
+    <section id="notifications">
+        <div class="govuk-box-highlight"> 
+            <h2 class="bold-large">Check your email</h2> 
+            <p>We've sent a security code to <span class="bold-small user-email">ty@digi2al.co.uk</span></p> </div>
+    </section>
+    
+    
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <h1 class="heading-xlarge">
-        Sign in
+      <h1 class="heading-large">
+          Enter your security code
       </h1>
-        
-        <p>Sign in or <a href="#">create an account</a> to manage your apprenticeship levy account.</p>
+    
 
         <form>
         <div class="form-group">  
-            <label class="form-label-bold" for="email">Email address</label>
-            <input class="form-control" type="text"> 
+            <label class="form-label-bold" for="code">Enter security code</label>
+            <input class="form-control" type="text" id="code"> 
         </div>
         <div class="form-group">  
             <label class="form-label-bold" for="email">Password</label>
             <input class="form-control" type="password"> 
         </div>
             <div class="form-group">
-                <a href="/sprint/{{sprint}}/account/dashboard/index.html" class="button">Sign in</a>
+                <a href="/sprint/{{sprint}}/user/index.html" class="button">Continue</a>
             </div>
         </form>
-        <h2 class="heading-small">Problems signing in?</h2>
+        <h2 class="heading-small">Not received your security code?</h2>
         <ul class="list list-links">
-        <li>        <a href="#">Forgotten your password?</a>
-</li>
-        <li>        <a href="#">Reset your password?</a>
-</li>
+        <li>You can <a href="#">request another security code.</a></li>
         </ul>
     </div>
   </div>

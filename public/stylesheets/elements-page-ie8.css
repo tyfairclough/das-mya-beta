@@ -2285,6 +2285,18 @@ tr.total td {
   font-weight: 700;
 }
 
+.govuk-box-highlight a {
+  color: white;
+}
+
+.govuk-box-highlight a:hover {
+  color: #2b8cc4;
+}
+
+.govuk-box-highlight a:visited {
+  color: #912B88;
+}
+
 .sprint-11 #dothething {
   margin-bottom: 30px;
   float: right;

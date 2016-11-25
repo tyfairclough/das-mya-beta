@@ -605,6 +605,17 @@ tr.total td {
     border-bottom: 2px solid #0b0c0c;
     font-weight: 700;
 }
+
+.govuk-box-highlight a {
+    color: white;
+    &:hover {
+        color: #2b8cc4;
+    }
+    &:visited {
+        color: #912B88;
+    }
+}
+
 .sprint-11 {
 
     #dothething {

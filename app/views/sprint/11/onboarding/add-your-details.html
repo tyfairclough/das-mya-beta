@@ -21,16 +21,16 @@
     <div class="column-two-thirds">
         <div class="hgroup">
               <h1 class="heading-xlarge">
-                Add your details
-              </h1>
+                  Get set up as a user
+            </h1>
         </div>
         <form id="profileSetup" action="accesscode">
   <fieldset>
-    <legend class="visuallyhidden">Name</legend>
+    <legend class="visuallyhidden">Your name</legend>
       <div class="form-group" id="name">
           <label class="form-label-bold" for="users-name">
           <!--span class="form-hint">Here is a hint for this form field.</span-->
-          <span class="form-label-bold">First name</span>
+          <span class="form-label-bold">Your name</span>
           <span class="error-message hidden" style="display: none;">
           Enter a name to continue
         </span>
@@ -39,22 +39,10 @@
           <input aria-invalid="true" class="form-control" id="users-name" type="text" aria-required="true">
       </div>
       
-      <div class="form-group" id="lastNameField">
-          <label class="form-label-bold" for="lastName">
-          <!--span class="form-hint">Here is a hint for this form field.</span-->
-          <span class="form-label-bold">Last name</span>
-          <span class="error-message hidden" style="display: none;">
-          Enter your last name to continue
-        </span>
-        </label>
-              
-          <input class="form-control" id="lastName" type="text" aria-required="">
-      </div>
-
-      
       <div class="form-group" id="emailGroup">
           <label class="form-label-bold" for="email-address">
             <span class="form-label-bold">Email</span>
+  <span class="form-hint">We'll send you an email to confirm your identity.</span>              
             <span class="error-message hidden" style="display: none;">Error message about valid email here</span>
           </label>
           <input class="form-control" id="email-address" type="text">
@@ -113,7 +101,7 @@
         </div>
         <p class="bold-small">To confirm your identity, we need to send you an email.</p>
         
-            <a href="/sprint/{{sprint}}/onboarding/check-mail.html" class="button">Send me an email</a>
+            <a href="/sprint/{{sprint}}/onboarding/check-mail.html" class="button">Set me up</a>
 </form>
     </div>
   </div>

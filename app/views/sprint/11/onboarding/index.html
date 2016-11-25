@@ -15,7 +15,7 @@
 
 {% block content %}
 
-<main class="elements-index" id="content" role="main" tabindex="-1">
+<main class="onboarding-index" id="content" role="main" tabindex="-1">
 
   {% include "includes/link-back.html" %}
 
@@ -51,16 +51,9 @@
     </div>
   </div>
 
-    <script>
-        $("#action").click(function(e){
-            e.preventDefault();
-            if ( $('input[name=radio-group]:checked', 'form').val() == "new" ) {
-                    window.location.href = "/sprint/{{sprint}}/onboarding/before-you-start.html";
-            } else {
-                window.location.href = "/sprint/{{sprint}}/user/login.html";
-            }
-        })
-    </script>
+    
+    
+
     
 </main><!-- / #content -->
 {% endblock %}

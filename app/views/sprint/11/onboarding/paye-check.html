@@ -14,7 +14,7 @@
 
 
 {% block content %}
-<main class="elements-index" id="content" role="main" tabindex="-1">
+<main class="paye-check" id="content" role="main" tabindex="-1">
   {% include "includes/link-back.html" %}
 
   <div class="grid-row hidden">
@@ -37,7 +37,8 @@
                         <th scope="col"></th>
                       </tr>
                     </thead>
-                      <tbody><tr>
+                      <tbody>
+                      <tr>
                         <td>90210/HP</td>
                         <!--<td>A big company Ltd</td>-->
                         <td class="numeric">£90,000</td>
@@ -80,7 +81,7 @@
         
         
         
-        <table id="transactionsOUT">
+        <table id="paye-check-2">
                   
                     <thead>
                       <tr>
@@ -90,8 +91,33 @@
                         <th scope="col"></th>
                       </tr>
                     </thead>
-                      <tbody><tr>
+                      <tbody>
+                      <tr>
                         <td>90210/HP</td>
+                        <!--<td>A big company Ltd</td>-->
+                     <!--   <td class="numeric">£90,000</td>-->
+                        <td class="numeric"><a href="#">Remove</a></td>
+                      </tr>
+                      <tr>
+                        <td>69287D/FAP</td>
+                        <!--<td>A big company Ltd</td>-->
+                     <!--   <td class="numeric">£90,000</td>-->
+                        <td class="numeric"><a href="#">Remove</a></td>
+                      </tr>
+                    <tr>
+                        <td>897229/POP</td>
+                        <!--<td>A big company Ltd</td>-->
+                     <!--   <td class="numeric">£90,000</td>-->
+                        <td class="numeric"><a href="#">Remove</a></td>
+                      </tr>
+                    <tr>
+                        <td>935299/LZ</td>
+                        <!--<td>A big company Ltd</td>-->
+                     <!--   <td class="numeric">£90,000</td>-->
+                        <td class="numeric"><a href="#">Remove</a></td>
+                      </tr>
+                    <tr>
+                        <td>1968/ARS</td>
                         <!--<td>A big company Ltd</td>-->
                      <!--   <td class="numeric">£90,000</td>-->
                         <td class="numeric"><a href="#">Remove</a></td>
@@ -118,7 +144,7 @@
                      </label-->
                   </fieldset>
               </div>
-            <a href="/sprint/{{sprint}}/account/dashboard/index.html?account=created" class="button">Continue</a>
+            <a href="/sprint/{{sprint}}/account/dashboard/index.html?newLevyAccount=y" class="button">Continue</a>
         </form>
 
     </div>

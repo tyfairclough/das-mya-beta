@@ -23,7 +23,7 @@ $(document).ready(function () {
   // Details/summary polyfill
   // See /javascripts/vendor/details.polyfill.js
 })
-
+/*
 $(window).load(function () {
   // Only set focus for the error example pages
   if ($('.js-error-example').length) {
@@ -41,3 +41,4 @@ $(window).load(function () {
     }
   }
 })
+*/

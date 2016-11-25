@@ -17,18 +17,19 @@
 <main class="elements-index" id="content" role="main" tabindex="-1">
   {% include "includes/breadcrumb.html" %}
 
-<div class="govuk-box-highlight PAYEremoved">
+    <section id="notifications">
+<div class="govuk-box-highlight hidden" id="PAYEremoved">
           <h2 class="bold-large">
             You've removed 680/cacb268	
           </h2>
         </div>
-<div class="govuk-box-highlight PAYEadded">
+<div class="govuk-box-highlight hidden" id="PAYEadded">
           <h2 class="bold-large">
 680/cacb268 has been added
           </h2>
         <p>Levy funds from this PAYE scheme will now credit your account</p>
         </div>    
-    
+   </section> 
 <div class="grid-row">
     <div class="column-two-thirds">
                     <div class="hgroup">
@@ -38,7 +39,7 @@
 
         </div>
         <div class="column-third">
-                        <a id="dothething" class="button" href="/sprintbeta8-4&#10;&#10;&#10;&#10;/account/paye/step_a0">Add new scheme</a>
+                        <a id="dothething" class="button" href="/sprint/{{sprint}}/onboarding/gateway-alert.html">Add new scheme</a>
         
         </div>
     </div>

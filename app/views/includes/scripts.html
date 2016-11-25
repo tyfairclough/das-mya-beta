@@ -1,4 +1,4 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
 
 <!-- govuk_frontend_toolkit js -->
 <script src="/public/javascripts/vendor/polyfills/bind.js"></script>
@@ -12,9 +12,9 @@
 <script src="/public/javascripts/stackable.min.js"></script>
 
 <script src="/public/javascripts/aml.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" integrity="sha256-gl80aFE+bSTFw7UJf+ne/RkwC55cjidIp0Oe3AX5pfo=" crossorigin="anonymous" />
 
 <script>
@@ -98,13 +98,14 @@ var chart = c3.generate({
         return (false);
     }
     var accepted = getQueryVariable("accepted");
-    var justadded = getQueryVariable("justadded");
-    var justremoved = getQueryVariable("justremoved");
+    var invitesent = getQueryVariable("invitesent");
+    var inviteresent = getQueryVariable("inviteresent");
+    var invitecancelled = getQueryVariable("invitecancelled");
     var rolechange = getQueryVariable("rolechange");
     var userdeleted = getQueryVariable("userdeleted");
-    var noinvite = getQueryVariable("noinvite");
     var PAYEremoved = getQueryVariable("PAYEremoved");
     var PAYEadded = getQueryVariable("PAYEadded");
+    var rolechange = getQueryVariable("rolechange");
     var flow = getQueryVariable("flow");
     var newOrg = getQueryVariable("newOrg");
     var newOrgSigned = getQueryVariable("newOrgSigned");
@@ -162,6 +163,97 @@ var chart = c3.generate({
         e.preventDefault();
             window.history.back();
     })
+    
+            
+// sprint 11
+    
+    if ( $("main").hasClass("index") == true) {
+        localStorage.setItem('payeCount',0)
+    };
+    
+    
+    // used service before page
+            $(".sprint-11 .onboarding-index .button").click(function(e){
+            e.preventDefault();
+            if ( $('input[name=radio-group]:checked', 'form').val() == "new" ) {
+                    window.location.href = "/sprint/{{sprint}}/onboarding/before-you-start.html";
+            } else {
+                window.location.href = "/sprint/{{sprint}}/user/login.html";
+            }
+        })
+            
+    // adding paye scheme
+            $(".sprint-11 .gateway-auth .button").click(function(e){
+                e.preventDefault();
+                var payeCount = localStorage.getItem('payeCount');
+                payeCount++;
+               localStorage.setItem('payeCount', payeCount ); 
+                window.location.href = "/sprint/{{sprint}}/onboarding/paye-check.html";
+            });
+    
+    // add paye scheme loop
+                $(".sprint-11 .paye-check .button").click(function(e){
+            e.preventDefault();
+            if ( $('input[name=radio-group]:checked', 'form').val() == "addMore" ) {
+                    window.location.href = "/sprint/{{sprint}}/onboarding/gateway-login.html";
+            } else {
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html?newLevyAccount=y";
+            }
+        });
+    
+    // add correct number of paye schemes to page
+        if ( $("main").hasClass("paye-check") == true) {
+        var i = parseInt(localStorage.getItem('payeCount'));
+        i++;
+        $('.sprint-11 .paye-check table tr').hide();
+        $('.sprint-11 .paye-check table#paye-check-2 tr:lt('+i+')').show()
+    
+    // remove a paye scheme    
+        $("table a").click(function(e){
+        e.preventDefault();
+            i--;
+           localStorage.setItem('payeCount', i ); 
+            location.reload();
+        });
+        };
+    
+
+    // add organisations
+            if ( $("main").hasClass("organisations-add") == true) {
+                $(".panel").hide();
+                
+                $("label").click(function(){
+                    $(".panel").hide();                    
+                    $(this).next().show();
+                })
+            }
+    
+    // notifications site wide
+        if ( newLevyAccount == "y" ) {
+            $("#accountCreated").removeClass("hidden");
+        }
+        if ( invitesent == "y") {
+            $("#invitesent").removeClass("hidden");            
+        }
+        if ( userdeleted == "y" ) {
+            $("#userdeleted").removeClass("hidden");            
+        };
+        if ( inviteresent == "y" ) {
+            $("#inviteresent").removeClass("hidden");                        
+        };
+        if ( invitecancelled == "y") {
+            $("#invitecancelled").removeClass("hidden");      
+        };
+        if ( rolechange == "y" ){
+            $("#rolechange").removeClass("hidden");                  
+        }
+        if ( PAYEremoved == "y" ){
+            $("#PAYEremoved").removeClass("hidden");                  
+        }
+        if ( PAYEadded == "y" ){
+            $("#PAYEadded").removeClass("hidden");                  
+        }
+
     
     
 </script>

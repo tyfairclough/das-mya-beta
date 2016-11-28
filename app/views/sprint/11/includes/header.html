@@ -24,6 +24,7 @@
 				<li class="top-level"><a href="#">Help</a></li>
 				<li class="top-level"><a href="#" class="js-toggle menu-closed" data-target="#nav-user">Joe Bloggs</a>
 					<ul id="nav-user" class="js-hidden-mobile">
+						<li><a href="#">Your profile</a></li>
 						<li><a href="#">Sign out</a></li>
 					</ul>
 				</li>
@@ -33,10 +34,10 @@
 </div>
 <div class="header-organisation">
 	<div class="header-inner">
-		<h2 class="heading-medium">Red &amp; White &amp; Blue &amp; Green Holdings Ltd</h2>
+		<!--<h2 class="heading-medium">Spend your levy homepage</h2>-->
 		<nav id="global-nav" class="global-nav">
 			<ul id="global-nav-links">
-				<li {% if page_name == "dashboard" %} class="current" {% endif %}><a href="/sprint/{{ sprint }}/account/dashboard/index">Dashboard</a></li>
+				<li {% if page_name == "dashboard" %} class="current" {% endif %}><a href="/sprint/{{ sprint }}/account/dashboard/index">Home</a></li>
 				<li {% if page_name == "finance" %} class="current" {% endif %}><a href="/sprint/{{ sprint }}/account/finance/index">Finance</a></li>
 				<li {% if page_name == "apprentices" %} class="current" {% endif %}><a href="/sprint/{{ sprint }}/account/apprentices/index">Apprentices</a></li>
 				<li {% if page_name == "team" %} class="current" {% endif %}><a href="/sprint/{{ sprint }}/account/team/index">Manage your team</a></li>

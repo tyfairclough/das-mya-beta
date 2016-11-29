@@ -78,7 +78,7 @@ var chart = c3.generate({
 
 <script>
     // get & set sprint
-    var sprint = {{ sprint }};
+    var sprint = {{sprint}};
     localStorage.setItem("sprint", JSON.stringify(sprint));
     
     if ( sprint == 11 ) {
@@ -119,6 +119,7 @@ var chart = c3.generate({
     var userEmail = JSON.parse(localStorage.getItem("email-address"));
     var emailUpdated = getQueryVariable("emailUpdated");
     var nameUpdated = getQueryVariable("nameUpdated");
+    var accountCreated = getQueryVariable("accountCreated");
     
     
     // globals
@@ -253,7 +254,9 @@ var chart = c3.generate({
         if ( PAYEadded == "y" ){
             $("#PAYEadded").removeClass("hidden");                  
         }
-
+        if ( accountCreated == "y" ) {
+            $("#accountCreated").removeClass("hidden");
+        }
     
     
 </script>

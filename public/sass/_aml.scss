@@ -616,6 +616,24 @@ tr.total td {
     }
 }
 
+
+/* Alerts */
+
+.alert-default {
+    border-color: #2b8cc4;
+    background-color: #eaf4f9;
+}
+
+.alert-warning {
+    border-color: #b10e1e;
+    background-color: #fceaeb;
+}
+
+.alert-success {
+    border-color: #28a197;
+    background-color: #eaf6f5;
+}
+
 .sprint-11 {
 
     #dothething {
@@ -644,4 +662,20 @@ tr.total td {
         }
     }
     
+}
+
+.sprint-723 {
+    .header-global {
+        padding: 0;
+    }
+        #dothething {
+        margin-bottom: 30px;
+        float: right;
+    }
+    
+    @media (min-width: 641px) {
+        #dothething {
+            margin-top: 40px;
+        }
+    }
 }

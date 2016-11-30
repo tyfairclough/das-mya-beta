@@ -11,9 +11,15 @@
 {% block after_header %}
 {% include "sprint/"+sprint+"/includes/header.html" %}
 {% endblock %}
-
-
 {% block content %}
+<style>
+    .header-organisation {
+        display: none;
+    }
+    .header-user h2 {
+        display: none;
+    }
+</style>
 <main class="elements-index" id="content" role="main" tabindex="-1">
 
     <section id="notifications">

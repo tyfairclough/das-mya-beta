@@ -2339,6 +2339,22 @@ tr.total td {
   color: #912B88;
 }
 
+/* Alerts */
+.alert-default {
+  border-color: #2b8cc4;
+  background-color: #eaf4f9;
+}
+
+.alert-warning {
+  border-color: #b10e1e;
+  background-color: #fceaeb;
+}
+
+.alert-success {
+  border-color: #28a197;
+  background-color: #eaf6f5;
+}
+
 .sprint-11 #dothething {
   margin-bottom: 30px;
   float: right;
@@ -2362,6 +2378,21 @@ tr.total td {
 
 .sprint-11 #checklist td:last-child {
   padding-right: 0;
+}
+
+.sprint-723 .header-global {
+  padding: 0;
+}
+
+.sprint-723 #dothething {
+  margin-bottom: 30px;
+  float: right;
+}
+
+@media (min-width: 641px) {
+  .sprint-723 #dothething {
+    margin-top: 40px;
+  }
 }
 
 .elements-index .heading-medium {

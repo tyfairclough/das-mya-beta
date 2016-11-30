@@ -9,19 +9,25 @@
 {% endblock %}
 
 {% block after_header %}
-{% include "sprint/"+sprint+"/includes/header-loggedout.html" %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
 {% endblock %}
-
-
 {% block content %}
+<style>
+    .header-organisation {
+        display: none;
+    }
+    .header-user h2 {
+        display: none;
+    }
+</style>
 <main class="elements-index" id="content" role="main" tabindex="-1">
-  {% include "includes/link-back.html" %}
+  <!--{% include "includes/link-back.html" %}-->
 
   <div class="grid-row">
     <div class="column-two-thirds">
-
-      <h1 class="heading-large">Change your email address</h1>
-        
+<div class="hgroup">
+      <h1 class="heading-xlarge">Change your email address</h1>
+</div>        
 <form>
     <div class="form-group">
             <label class="form-label-bold" for="email">New email address</label>

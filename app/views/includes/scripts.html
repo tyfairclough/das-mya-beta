@@ -17,6 +17,92 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" integrity="sha256-gl80aFE+bSTFw7UJf+ne/RkwC55cjidIp0Oe3AX5pfo=" crossorigin="anonymous" />
 
+
+
+
+
+
+
+
+<script>
+$(document).ready(function () {
+
+    //GLOBAL VAR
+    var XMLSource = $('#search').attr('xmlData');
+    var keyword = '';
+    var catType = '';
+    var stn = '';
+    var frm = '';
+
+    var i = 0;
+    var msgPlural = 'are';
+
+    var paginateCount = 5;
+
+    $("#submit-keywords").click(function (e) {
+        e.preventDefault();
+        $("#public-sector-search").hide();
+        $("#results-wrapper").removeClass("hidden");
+        keyword = $("#input-keywords").val();
+        stn = '';
+        searchThis();
+    });
+
+    function searchThis() {
+        $.ajax({
+            type: "GET",
+            url: XMLSource,
+            dataType: "xml",
+            success: function (xml) {
+                loadstnlocation(xml)
+            },
+            error: function (request, error) {
+                console.log(arguments);
+                //alert(" Can't do because: " + error);
+            }
+        });
+    }
+
+    function loadstnlocation(xmlData) {
+
+        i = 0;
+        var row;
+        var searchExp = "";
+
+        $(xmlData).find('row').each(function () {
+
+
+            var iName = $(this).find('iName').text();
+            var iSector = $(this).find('.iSector').text();
+    
+
+
+            //Format the keyword expression
+            var exp = new RegExp(keyword, "gi");
+            searchExp = iName.match(exp);
+
+            if (searchExp != null) {
+                stn += '<li><a href="/sprint/{{sprint}}/account/organisations/confirm.html?name=' + iName + '">' + iName + iSector  + '</a>.</li>';
+            };
+        });
+
+          showList(stn);
+        
+    }
+
+
+
+    function showList(stn) {
+        //Populate on page
+        var contentTop = '<ul class="list list-links">';
+        var contentBottom = '</ul>';
+        $('#results').html(contentTop + stn + contentBottom);
+    }
+
+});
+</script>
+
+
 <script>
 
     
@@ -356,5 +442,5 @@ var chart = c3.generate({
     
     
 </script>
-
+-->
 

@@ -39,6 +39,21 @@ $(document).ready(function () {
 
     var paginateCount = 5;
 
+    
+    $('#input-keywords').keypress(function (e) {
+  if (e.which == 13) {
+        e.preventDefault();
+        $("#public-sector-search").hide();
+        $("#results-wrapper").removeClass("hidden");
+        keyword = $("#input-keywords").val();
+        stn = '';
+        searchThis();
+      
+      //$('form#login').submit();
+    return false;    //<---- Add this line
+  }
+});
+    
     $("#submit-keywords").click(function (e) {
         e.preventDefault();
         $("#public-sector-search").hide();

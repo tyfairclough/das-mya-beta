@@ -2359,6 +2359,15 @@ tr.total td {
   background-color: #eaf6f5;
 }
 
+/* directory pattern */
+.a-to-z-nav a {
+  display: inline-block;
+  padding: .3em;
+  position: relative;
+  left: -.3em;
+  text-transform: uppercase;
+}
+
 .sprint-11 #dothething {
   margin-bottom: 30px;
   float: right;

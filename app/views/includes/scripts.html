@@ -19,6 +19,89 @@
 
 <script>
 
+    
+           var content = '';
+
+    var XMLSource = $('#directory').attr('xmlData');
+
+    
+        function searchThis() {
+        $.ajax({
+            type: "GET",
+            url: XMLSource,
+            dataType: "xml",
+            success: function (xml) {
+                loadData(xml)
+            },
+            error: function (request, error) {
+                console.log(arguments);
+                //alert(" Can't do because: " + error);
+            }
+        });
+    }
+        function loadData(xmlData) {
+
+            $(xmlData).find('row').each(function () {
+             var iName = $(this).find('iName').text();
+             var iSector = $(this).find('iSector').text();
+
+                
+                //content += iName + iSector;
+                //content += '<tr>';
+                //content += '<td class="org-name">' + iName + '</td>';
+                //content += '<td class="org-name">' + iSector + '</td>';
+                //content += '<td class="numeric"><a href="/sprint/{{sprint}}/account/organisations/confirm.html">Select organisation</a></td>';
+                //content += '</tr>';
+                
+                
+                content += '<li><a href="/sprint/{{sprint}}/account/organisations/confirm.html">' + iName + '</a></li>';
+            });
+
+            returnDirectory(content);
+                                        };
+
+    
+    function returnDirectory(content) {
+    //    var contentTop = '<table><thead><tr><th scope="col">Insitute name</th><th scope="col">Sector</th><th class="numeric"></th></tr></thead><tbody>';
+    //    var contentBottom = '</tbody></table>';
+      //$("#content .alpha-list").html('<table><thead><tr><th scope="col">Insitute name</th><th scope="col">Sector</th><th class="numeric"></th></tr></thead><tbody>');  
+    //    $("#content .alpha-list").html(contentTop + content + contentBottom);
+        //$("#content .alpha-list").html('</tbody></table>');
+      
+        var contentTop = '<ul id="list">';
+        var contentBottom = '</ul>';
+        $("#content .alpha-list").html(contentTop + content + contentBottom);
+        
+        splitList();
+    }
+    
+    function splitList() {
+        var list = { letters: [] };
+$("#list").children("li").each(function(){
+    var itmLetter = $(this).text().substring(0,1).toUpperCase();
+    if (!(itmLetter in list)) {
+        list[itmLetter] = [];
+        list.letters.push(itmLetter);
+    }
+    list[itmLetter].push($(this));
+});
+list.letters.sort();
+$("#list").empty();
+$.each(list.letters, function(i, letter){
+    list[letter].sort(function(a, b) {
+        return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase());
+    });
+    var ul = $("<ul/>");
+    $.each(list[letter], function(idx, itm){
+        ul.append(itm);
+    });
+    $("#list").append($("<li/>").append($("<h2/>").attr("id", letter.toLowerCase()).addClass("title heading-medium").html(letter)).append(ul));
+});
+
+    }
+    
+    searchThis();
+    
 var chart = c3.generate({
     bindTo: 'chart',
     data: {
@@ -174,7 +257,7 @@ var chart = c3.generate({
     
     
     // used service before page
-            $(".sprint-11 .onboarding-index .button").click(function(e){
+            $(".onboarding-index .button").click(function(e){
             e.preventDefault();
             if ( $('input[name=radio-group]:checked', 'form').val() == "new" ) {
                     window.location.href = "/sprint/{{sprint}}/onboarding/before-you-start.html";
@@ -201,6 +284,17 @@ var chart = c3.generate({
                 window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html?newLevyAccount=y";
             }
         });
+    
+    // choosing a public sector
+    
+    $(".organisations-add .button").click(function(e){
+        e.preventDefault();
+                    if ( $('input[name=radio-group]:checked', 'form').val() == "public" ) {
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/public-sector.html";
+            } else {
+                window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html";
+            }
+    })
     
     // add correct number of paye schemes to page
         if ( $("main").hasClass("paye-check") == true) {
@@ -257,6 +351,8 @@ var chart = c3.generate({
         if ( accountCreated == "y" ) {
             $("#accountCreated").removeClass("hidden");
         }
+    
+    
     
     
 </script>

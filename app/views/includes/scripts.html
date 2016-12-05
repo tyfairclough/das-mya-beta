@@ -169,7 +169,7 @@ $(document).ready(function () {
     //    $("#content .alpha-list").html(contentTop + content + contentBottom);
         //$("#content .alpha-list").html('</tbody></table>');
       
-        var contentTop = '<ul id="list">';
+        var contentTop = '<ul id="list" class="list list-links>';
         var contentBottom = '</ul>';
         $("#content .alpha-list").html(contentTop + content + contentBottom);
         
@@ -202,6 +202,8 @@ $.each(list.letters, function(i, letter){
     }
     
     searchThis();
+    
+    $("section#directory ul li h2").append()("<a>back to top</a>");
     
 var chart = c3.generate({
     bindTo: 'chart',

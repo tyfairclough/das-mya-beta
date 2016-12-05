@@ -2368,6 +2368,10 @@ tr.total td {
   text-transform: uppercase;
 }
 
+.a-to-z-nav a ul#list li {
+  margin-bottom: 5px;
+}
+
 .sprint-11 #dothething {
   margin-bottom: 30px;
   float: right;
@@ -2391,6 +2395,15 @@ tr.total td {
 
 .sprint-11 #checklist td:last-child {
   padding-right: 0;
+}
+
+.sprint-723 .page-dashboard .grid-row .column-half {
+  min-height: 200px;
+}
+
+.sprint-723 .page-dashboard .grid-row .column-half p {
+  border-bottom: 3px solid #DEE0E2;
+  padding-bottom: 10px;
 }
 
 .sprint-723 .header-global {

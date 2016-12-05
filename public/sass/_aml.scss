@@ -645,6 +645,10 @@ tr.total td {
     position: relative;
     left: -.3em;
     text-transform: uppercase;
+
+    ul#list li {
+        margin-bottom: 5px;
+    }
 }
 
 
@@ -679,6 +683,14 @@ tr.total td {
 }
 
 .sprint-723 {
+    
+    .page-dashboard .grid-row .column-half {
+        min-height: 200px;
+    }
+    .page-dashboard .grid-row .column-half p {
+        border-bottom: 3px solid #DEE0E2;
+        padding-bottom: 10px;
+    }
     .header-global {
         padding: 0;
     }

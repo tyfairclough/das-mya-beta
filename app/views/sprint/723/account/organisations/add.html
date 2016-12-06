@@ -52,8 +52,8 @@
       
       <div class="column-two-thirds v2">
           <div class="hgroup">
-          <h1 class="heading-large">Add new organisation</h1>
-          <p>Explain the need to match this exactly with a legally bidning document.</p>
+          <h1 class="heading-large">Add an organisation</h1>
+          <p>Select your organisation type</p>
           </div>
              <form action="">
             
@@ -66,8 +66,8 @@
            
         <div class="form-group">
       <label class="block-label" data-target="contact-by-email" for="example-contact-by-email">
-        <input id="example-contact-by-email" type="radio" name="radio-group" value="Yes">
-          Limited company (Ltd) or Publically limited company (Plc)
+        <input id="example-contact-by-email" type="radio" name="radio-group" value="ltd">
+          Limited company (LTD) or Public limited company (PLC)
       </label>
       <div class="panel panel-border-narrow" id="contact-by-email">
            <p>Tell users they need to add the Companies House number.</p>
@@ -79,7 +79,7 @@
 
       <label class="block-label" data-target="contact-by-phone" for="public-sector">
         <input id="public-sector" type="radio" name="radio-group" value="public">
-        Public sector
+          Public sector organisation 
       </label>
 <!--      <div class="panel panel-border-narrow" id="contact-by-phone">
               <p>Tell users they need to add their name and address as it appears on the ONS public sector classification guide.</p>
@@ -98,8 +98,8 @@
             -->
             
       <label class="block-label" data-target="contact-by-phone" for="example-contact-by-phone">
-        <input id="example-contact-by-phone" type="radio" name="radio-group" value="No">
-          Registered charity
+        <input id="example-contact-by-phone" type="radio" name="radio-group" value="charity">
+          Registered charity  
       </label>
       <div class="panel panel-border-narrow" id="contact-by-phone">
                         <p>Tell users they need to add their name, charity number and address as it appears on the charities commission data.</p>
@@ -138,7 +138,7 @@
 </div>-->
     </fieldset>
       
-      <a class="button" href="/sprint/{{sprint}}/account/organisations/confirm.html?organisation=added">Continue</a>
+      <a class="button" href="/sprint/{{sprint}}/account/organisations/confirm.html?organisation=added" id="add-org">Continue</a>
       
   </div>
 </form>

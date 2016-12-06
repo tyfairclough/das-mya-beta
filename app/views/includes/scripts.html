@@ -40,6 +40,36 @@ $(document).ready(function () {
     var paginateCount = 5;
 
     
+    
+    $(".organisations-add").keypress(function(e){
+        if (e.which == 13) {
+            orgType();
+            // check the radio value
+        } else {
+            return false;
+        }
+    });
+    
+    $(".organisations-add .button").click(function(e){
+        e.preventDefault();
+        orgType();
+    })
+    
+    function orgType() {
+        
+        if ( $('input[name=radio-group]:checked', 'form').val() == "ltd" ) {
+            //send them down the limited route
+                    window.location.href = "/sprint/{{sprint}}/account/organisation/confirm.html";            
+        } else if ( $('input[name=radio-group]:checked', 'form').val() == "public" ) {
+            //public
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/public-sector.html";                
+        } else {
+            //charity
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/address.html";                        
+        }
+        
+    }
+    
     $('#input-keywords').keypress(function (e) {
   if (e.which == 13) {
         e.preventDefault();
@@ -203,7 +233,7 @@ $.each(list.letters, function(i, letter){
     
     searchThis();
     
-    $("section#directory ul li h2").append()("<a>back to top</a>");
+  //  $("section#directory ul li h2").append()("<a>back to top</a>");
     
 var chart = c3.generate({
     bindTo: 'chart',
@@ -388,16 +418,6 @@ var chart = c3.generate({
             }
         });
     
-    // choosing a public sector
-    
-    $(".organisations-add .button").click(function(e){
-        e.preventDefault();
-                    if ( $('input[name=radio-group]:checked', 'form').val() == "public" ) {
-                    window.location.href = "/sprint/{{sprint}}/account/organisations/public-sector.html";
-            } else {
-                window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html";
-            }
-    })
     
     // add correct number of paye schemes to page
         if ( $("main").hasClass("paye-check") == true) {

@@ -46,7 +46,7 @@ $(document).ready(function () {
             orgType();
             // check the radio value
         } else {
-            return false;
+          //  return false;
         }
     });
     
@@ -59,13 +59,24 @@ $(document).ready(function () {
         
         if ( $('input[name=radio-group]:checked', 'form').val() == "ltd" ) {
             //send them down the limited route
-                    window.location.href = "/sprint/{{sprint}}/account/organisation/confirm.html";            
+            
+            if($("#chn").val().match(/(IP|ip)/g)) {
+                // normal
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=ip";            
+            } else if ($("#chn").val().match(/(RC|rc)/g)) {
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=rc";                            
+            }
+            else {
+                // ip/rc royal charter
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html";            
+            }
+                
         } else if ( $('input[name=radio-group]:checked', 'form').val() == "public" ) {
             //public
                     window.location.href = "/sprint/{{sprint}}/account/organisations/public-sector.html";                
         } else {
             //charity
-                    window.location.href = "/sprint/{{sprint}}/account/organisations/address.html";                        
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=charity";                        
         }
         
     }
@@ -336,6 +347,7 @@ var chart = c3.generate({
     var emailUpdated = getQueryVariable("emailUpdated");
     var nameUpdated = getQueryVariable("nameUpdated");
     var accountCreated = getQueryVariable("accountCreated");
+    var orgType = getQueryVariable("orgtype");
     
     
     // globals
@@ -446,6 +458,18 @@ var chart = c3.generate({
                 })
             }
     
+        if ( orgType == "rc" ) {
+            $(".orgtype").text("Royal Charter")
+        }
+    
+        if ( orgType == "ip" ) {
+            $(".orgtype").text("Royal Charter")            
+        }
+        
+        if ( orgType == "charity" ) {
+            $(".orgtype").text("charity")            
+        }    
+    
     // notifications site wide
         if ( newLevyAccount == "y" ) {
             $("#accountCreated").removeClass("hidden");
@@ -474,6 +498,7 @@ var chart = c3.generate({
         if ( accountCreated == "y" ) {
             $("#accountCreated").removeClass("hidden");
         }
+
     
     
     

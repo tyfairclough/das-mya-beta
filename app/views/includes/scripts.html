@@ -40,47 +40,118 @@ $(document).ready(function () {
     var paginateCount = 5;
 
     
+
     
-    $(".organisations-add").keypress(function(e){
-        if (e.which == 13) {
-            orgType();
+
+    
+    
+
+    
+
+   var className = $("#content").attr('class');
+   switch(className){
+case 'public-sector':
+   // put directory stuff here
+break;
+case 'public-sector-search':
+   // put search keyword stuff here
+break;
+case 'organisations-add':
+           
+            $(".panel").hide()
+            $("label").click(function(){
+            $(".panel").hide();                    
+            $(this).next().show()
+            })
+            // adding organisations functions
+            $(".organisations-add").keypress(function(e){
+            if (e.which == 13) {
+            orgType()
             // check the radio value
-        } else {
-          //  return false;
+            } else {
+            //  return false;
+            }
+            })
+
+            $(".organisations-add .button").click(function(e){
+                e.preventDefault();
+                orgType();
+            });
+break;
+case 'organisations-address':
+     $(".button").click(function(e){
+         e.preventDefault();
+         localStorage.setItem("organisation-address", JSON.stringify($("#address").val()));
+         window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html?orgtype=";
+     });
+break;
+       case 'test':
+               
+    // get companies house number
+    
+    
+    $.ajax({
+        url: 'https://api.companieshouse.gov.uk/company/09963675',
+        beforeSend: function(xhr) {
+             xhr.setRequestHeader("das-aml-beta-ui", "0IJg_twH_cNHRQ4TufRhHhKW72_W8xdgijXsHDyI")
+        }, success: function(data){
+            alert(data);
+            //process the JSON data etc
         }
     });
+break;   
+default: break;
+   };
     
-    $(".organisations-add .button").click(function(e){
-        e.preventDefault();
-        orgType();
-    })
     
-    function orgType() {
-        
-        if ( $('input[name=radio-group]:checked', 'form').val() == "ltd" ) {
-            //send them down the limited route
-            
-            if($("#chn").val().match(/(IP|ip)/g)) {
-                // normal
-                    window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=ip";            
-            } else if ($("#chn").val().match(/(RC|rc)/g)) {
-                    window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=rc";                            
-            }
-            else {
-                // ip/rc royal charter
-                    window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html";            
-            }
-                
-        } else if ( $('input[name=radio-group]:checked', 'form').val() == "public" ) {
-            //public
-                    window.location.href = "/sprint/{{sprint}}/account/organisations/public-sector.html";                
-        } else {
-            //charity
-                    window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=charity";                        
-        }
-        
-    }
     
+    
+      // my functions
+    
+    
+                function orgType() {
+                    //check if organisation is in companies house or other
+                    //company, rc, ip
+                if ( $('input[name=radio-group]:checked', 'form').val() == "ltd" ) {
+                    //check if company is limited, royal charter or ip
+                    if($("#chn").val().match(/(IP|ip)/g)) {
+                            localStorage.setItem("organisation-type", JSON.stringify("ip"));
+                            window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=ip";            
+                    } else if ($("#chn").val().match(/(RC|rc)/g)) {
+                            localStorage.setItem("organisation-type", JSON.stringify("rc"));
+                            window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=rc";                            
+                    }
+                    else {
+                            localStorage.setItem("organisation-type", JSON.stringify("ltd"));
+                            window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html";            
+                    }
+
+                } else if ( $('input[name=radio-group]:checked', 'form').val() == "public" ) {
+                    //public
+                            localStorage.setItem("organisation-type", JSON.stringify("public"));
+                            window.location.href = "/sprint/{{sprint}}/account/organisations/public-sector.html";                
+                } else {
+                    //charity
+                            localStorage.setItem("organisation-type", JSON.stringify("charity"));
+                            window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=charity";                        
+                }
+
+            };
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // public body keyword search code
     $('#input-keywords').keypress(function (e) {
   if (e.which == 13) {
         e.preventDefault();
@@ -450,13 +521,18 @@ var chart = c3.generate({
 
     // add organisations
             if ( $("main").hasClass("organisations-add") == true) {
-                $(".panel").hide();
-                
-                $("label").click(function(){
-                    $(".panel").hide();                    
-                    $(this).next().show();
-                })
+
             }
+    
+    
+    
+    
+    
+  
+    
+    
+    /*
+    // label switching site wide
     
         if ( orgType == "rc" ) {
             $(".orgtype").text("Royal Charter")
@@ -469,6 +545,37 @@ var chart = c3.generate({
         if ( orgType == "charity" ) {
             $(".orgtype").text("charity")            
         }    
+        
+        */
+    
+    
+
+    
+    //switch
+
+   var orgType = JSON.parse(localStorage.getItem("organisation-type"));
+   switch(orgType){
+        case 'rc':
+        $(".orgtype").text("Royal Charter");
+        break;           
+        case 'ip':           
+        $(".orgtype").text("Industrial or Provident");
+        break;           
+        case 'public':
+        $(".orgtype").text("public sector");
+        break;           
+        case 'charity':
+        $(".orgtype").text("charity");
+        break;           
+        case 'limited':
+        $(".orgtype").text("company");
+        break;
+        default: break;
+   }
+           
+            
+           
+    
     
     // notifications site wide
         if ( newLevyAccount == "y" ) {

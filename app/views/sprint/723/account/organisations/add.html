@@ -18,37 +18,7 @@
   {% include "includes/link-back.html" %}
 
   <div class="grid-row">
-    <div class="column-two-thirds v1 hidden">
 
-      <h1 class="heading-xlarge">
-          Enter Companies House number
-      </h1>
-        <p>Use the companies house number for an organisation that your apprentices will be employed through.</p>
-        
-        <p><a href="https://beta.companieshouse.gov.uk" rel="external">Find my Companies House number</a></p>
-        
-        <form action="step_a5">
-            
-            <fieldset>
-                <div class="form-group">
-                <label class="form-label-bold" for="ch-number">
-                    <span class="form-label-bold">Companies House number</span>
-                    <span id="validNo" class="error-message visually-hidden">Enter a valid Companies House number
-</span>
-                    <span id="alreadyRegistered" class="error-message visually-hidden">Enter a company that isn't already registered
-                        </span>
-                    <span id="noCompaniesFound" class="error-message visually-hidden">No company found. Try again</span>
-                    </label>
-                <input class="form-control" id="ch-number" type="text" name="ch-number">
-                </div>
-                </fieldset>
-            
-            <a rel="external" href="/sprint/{{sprint}}/account/organisations/confirm" class="button">Continue</a>
-            </form>
-        
-        
-
-    </div>
       
       <div class="column-two-thirds v2">
           <div class="hgroup">
@@ -72,11 +42,11 @@
           Limited company (LTD) or Public limited company (PLC)
       </label>
       <div class="panel panel-border-narrow" id="contact-by-email">
-           <p>Tell users they need to add the Companies House number.</p>
-            <p class="font-xsmall"><a href="https://beta.companieshouse.gov.uk" rel="external">Link to the Companies House number service</a></p>
-          
-        <label class="form-label" for="chn">Companies House number</label>
-        <input class="form-control" name="contact-email" type="text" id="chn">
+        <div class="form-group">
+                <label class="form-label" for="chn">Enter Companies House number</label>
+                <input class="form-control" name="chn" type="text" id="chn">
+        </div>
+            <p class="font-xsmall"><a href="https://beta.companieshouse.gov.uk" rel="external">Find my Companies House number</a>.</p>          
       </div>
 
       <label class="block-label" data-target="contact-by-phone" for="public-sector">
@@ -104,16 +74,9 @@
           Registered charity  
       </label>
       <div class="panel panel-border-narrow" id="contact-by-phone">
-                        <p>Tell users they need to add their name, charity number and address as it appears on the charities commission data.</p>
-          <p class="font-xsmall"><a href="http://apps.charitycommission.gov.uk/showcharity/registerofcharities/RegisterHomePage.aspx" rel="external">link to the Charities commission data</a></p>
-
-          <!--<div class="form-group">
-                  <label class="form-label" for="contact-phone">Name of charity</label>
-        <input class="form-control" name="contact-phone" type="text" id="contact-phone">
-          </div>-->
           <div class="form-group">
-                            <label class="form-label" for="contact-phone">Registered charity number</label>
-        <input class="form-control" name="contact-phone" type="text" id="contact-phone">
+                            <label class="form-label" for="ccn">Enter Charity number</label>
+        <input class="form-control" name="ccn" type="text" id="ccn">
           </div>
           <!--<div class="form-group">
         <label class="form-label" for="contact-address">Address</label>

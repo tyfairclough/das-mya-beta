@@ -2417,6 +2417,10 @@ tr.total td {
   }
 }
 
+.orgtype:first-letter {
+  text-transform: uppercase;
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

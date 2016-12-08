@@ -52,6 +52,7 @@ $(document).ready(function () {
    switch(className){
 case 'public-sector':
    // put directory stuff here
+      
 break;
 case 'public-sector-search':
    // put search keyword stuff here
@@ -145,6 +146,9 @@ default: break;
                     //company, rc, ip
                 if ( $('input[name=radio-group]:checked', 'form').val() == "ltd" ) {
                     //check if company is limited, royal charter or ip
+                    var chn = $("#chn").val();
+                            localStorage.setItem("organisation-number", JSON.stringify(chn));
+                    
                     if($("#chn").val().match(/(IP|ip)/g)) {
                             localStorage.setItem("organisation-type", JSON.stringify("ip"));
                             window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=ip";            
@@ -159,12 +163,15 @@ default: break;
 
                 } else if ( $('input[name=radio-group]:checked', 'form').val() == "public" ) {
                     //public
+                            localStorage.setItem("organisation-number", JSON.stringify("12345678"));                    
                             localStorage.setItem("organisation-type", JSON.stringify("public"));
                             window.location.href = "/sprint/{{sprint}}/account/organisations/public-sector.html";                
                 } else {
                     //charity
+                    var ccn = $("#ccn").val();
+                            localStorage.setItem("organisation-number", JSON.stringify(ccn));                    
                             localStorage.setItem("organisation-type", JSON.stringify("charity"));
-                            window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=charity";                        
+                            window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html?orgtype=charity";                        
                 }
 
             };
@@ -317,6 +324,8 @@ default: break;
         $("#content .alpha-list").html(contentTop + content + contentBottom);
         
         splitList();
+        
+        fixPublicLink();
     }
     
     function splitList() {
@@ -342,6 +351,15 @@ $.each(list.letters, function(i, letter){
     $("#list").append($("<li/>").append($("<h2/>").attr("id", letter.toLowerCase()).addClass("title heading-medium").html(letter)).append(ul));
 });
 
+    }
+    
+    function fixPublicLink() {
+               $("ul#list li ul a").click(function(e){
+               //alert("hi");
+               e.preventDefault();
+               localStorage.setItem("organisation-name", JSON.stringify($(this).text()));
+               window.location.href = "/sprint/{{sprint}}/account/organisations/address.html";
+           });
     }
     
     searchThis();
@@ -550,11 +568,6 @@ var chart = c3.generate({
         };
     
 
-    // add organisations
-            if ( $("main").hasClass("organisations-add") == true) {
-
-            }
-    
     
     
     
@@ -593,7 +606,7 @@ var chart = c3.generate({
         $(".orgtype").text("Industrial or Provident");
         break;           
         case 'public':
-        $(".orgtype").text("public sector");
+        $(".orgtype").text("public sector body");
         break;           
         case 'charity':
         $(".orgtype").text("charity");
@@ -605,6 +618,7 @@ var chart = c3.generate({
    }
            
             
+    $(".orgnumber").text(JSON.parse(localStorage.getItem("organisation-number")));
            
     
     
@@ -644,6 +658,8 @@ var chart = c3.generate({
     }
     
     
+    $(".organisation-name").text(JSON.parse(localStorage.getItem("organisation-name")));
+    $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
     
     
 </script>

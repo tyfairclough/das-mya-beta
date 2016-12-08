@@ -21,7 +21,7 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
-          Confirm organisation
+          Confirm details
         </h1>
         
         <table class="check-your-answers">
@@ -30,18 +30,18 @@
     <tbody>
       <tr>
         <td>
-          Organisation name
+          <div class="orgtype"></div> name
         </td>
         <td>
-          <span class="company-name">Acme Ltd Coventry</span>
+          <span class="organisation-name"><span class="orgtype" style="inline-block;"></span> Acme Coventry</span>
         </td>
       </tr>
       <tr>
         <td>
-          <span class="orgtype">Companies House</span> number
+          <div class="orgtype">Companies House</div> number
         </td>
         <td>
-           <span class="ch-number">435234534</span>
+           <span class="orgnumber">435234534</span>
         </td>
  
           
@@ -49,10 +49,10 @@
         
         <tr>
         <td>
-            Address
+            Registered address
         </td>
         <td>
-            <address>
+            <address class="organisation-address">
             100 Aviation House
             London
             EC1 2BT
@@ -64,7 +64,7 @@
     </tbody>
   </table>
         <br>
-        <h3 class="heading-medium">Is this the correct organisation?</h3>
+        <h3 class="heading-medium">Is this the correct <span class="orgtype"></span>?</h3>
 <br>
         <a rel="external" href="/sprint/{{sprint}}/account/organisations/sign" class="button">Yes, continue</a>
             <a href="/sprint/{{sprint}}/account/organisations/index" class="button text-link">No, search again</a>

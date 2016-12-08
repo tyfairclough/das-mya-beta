@@ -93,7 +93,7 @@ break;
     $.ajax({
         url: 'https://api.companieshouse.gov.uk/company/09963675',
         beforeSend: function(xhr) {
-             xhr.setRequestHeader("das-aml-beta-ui", "0IJg_twH_cNHRQ4TufRhHhKW72_W8xdgijXsHDyI")
+             xhr.setRequestHeader("0IJg_twH_cNHRQ4TufRhHhKW72_W8xdgijXsHDyI","das-aml-beta-ui")
         }, success: function(data){
             alert(data);
             //process the JSON data etc

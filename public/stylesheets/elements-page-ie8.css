@@ -2326,17 +2326,6 @@ tr.total td {
   margin-bottom: 5px;
 }
 
-.sprint-11 #dothething {
-  margin-bottom: 30px;
-  float: right;
-}
-
-@media (min-width: 641px) {
-  .sprint-11 #dothething {
-    margin-top: 40px;
-  }
-}
-
 .sprint-11 #checklist .statusToDo {
   background: black;
   color: white;
@@ -2371,6 +2360,17 @@ tr.total td {
 
 @media (min-width: 641px) {
   .sprint-723 #dothething {
+    margin-top: 40px;
+  }
+}
+
+#dothething {
+  margin-bottom: 30px;
+  float: right;
+}
+
+@media (min-width: 641px) {
+  #dothething {
     margin-top: 40px;
   }
 }

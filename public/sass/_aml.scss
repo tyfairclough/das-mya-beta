@@ -654,16 +654,6 @@ tr.total td {
 
 .sprint-11 {
 
-    #dothething {
-        margin-bottom: 30px;
-        float: right;
-    }
-    
-    @media (min-width: 641px) {
-        #dothething {
-            margin-top: 40px;
-        }
-    }
     
     #checklist {
         .statusToDo {
@@ -705,3 +695,15 @@ tr.total td {
         }
     }
 }
+
+
+    #dothething {
+        margin-bottom: 30px;
+        float: right;
+    }
+    
+    @media (min-width: 641px) {
+        #dothething {
+            margin-top: 40px;
+        }
+    }

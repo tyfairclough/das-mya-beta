@@ -17,39 +17,55 @@
 <main class="organisations-address" id="content" role="main" tabindex="-1">
   {% include "includes/link-back.html" %}
 
-  <div class="grid-row">
+   <div class="grid-row">
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
           Enter the <span class="orgtype">organisation</span>'s address
       </h1>
-
-        <p class="charity">Find the registered address on the <a href="http://data.charitycommission.gov.uk/" rel="external">Charities Commission database</a>.</p>
-
-        
+                
         <form action="step_a5">
             
             <fieldset>
                 <div class="form-group">
                 <label class="form-label-bold" for="address">
-                    <span class="form-label-bold"><span class="orgtype" style="text-transform: capitalize;">Charity</span>'s registered address</span>
-                    <span id="validNo" class="error-message visually-hidden">Enter a valid Companies House number
-</span>
-                    
-                    <span id="noCompaniesFound" class="error-message visually-hidden">Enter an address</span>
+                    <span class="form-label-bold">Address</span>
+                    <span class="form-label">Building name or number and street</span>
                     </label>
-                    <textarea class="form-control" id="address" type="text" name="address"> </textarea>
+                    <div class="form-group">
+                    <input class="form-control" type="text" id="address" />
+                    </div>    
+                    <input class="form-control" type="text" id="address2" />
+                </div>
+                <div class="form-group">
+                <label class="form-label-bold" for="town">
+                    <span class="form-label">Town or city</span>
+                    </label>
+                    <input class="form-control" type="text" id="town" />
+                </div>
+                <div class="form-group">
+                <label class="form-label-bold" for="county">
+                    <span class="form-label">County (optional)</span>
+                    </label>
+                    <input class="form-control" type="text" id="county" />
+                </div>
+                <div class="form-group">
+                <label class="form-label-bold" for="postcode">
+                    <span class="form-label">Postcode</span>
+                    </label>
+                    <input class="form-control" type="text" id="postcode" style="width: 25%;" />
                 </div>
                 </fieldset>
-            
+            <div class="form-group">
             <a rel="external" href="/sprint/{{sprint}}/account/organisations/confirm" class="button">Continue</a>
+                </div>
             </form>
         
-        
+        <p>Find my organisation's address on the <a href="#" rel="external">ONS public sector classification guide</a>.</p>
+
 
     </div>
     
   </div>
-
 </main>
 {% endblock %}

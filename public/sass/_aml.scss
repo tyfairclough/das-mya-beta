@@ -708,9 +708,13 @@ tr.total td {
         }
     }
 
-
-.orgtype:first-letter {
-    text-transform: uppercase;
+table {
+    .orgtype { 
+        display: inline-block; 
+    }
+    .orgtype:first-letter {
+        text-transform: uppercase;
+    }
 }
 
 span.notification {

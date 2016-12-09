@@ -2766,7 +2766,11 @@ tr.total td {
   }
 }
 
-.orgtype:first-letter {
+table .orgtype {
+  display: inline-block;
+}
+
+table .orgtype:first-letter {
   text-transform: uppercase;
 }
 

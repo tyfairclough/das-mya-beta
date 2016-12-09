@@ -58,7 +58,7 @@ case 'public-sector-search':
    // put search keyword stuff here
 break;
 case 'organisations-add':
-           
+            localStorage.setItem("organisation-address", JSON.stringify("101 Aviation House"))           
             $(".panel").hide()
             $("label").click(function(){
             $(".panel").hide();                    
@@ -614,12 +614,17 @@ var chart = c3.generate({
         case 'limited':
         $(".orgtype").text("company");
         break;
+        case 'ltd':
+        $(".orgtype").text("company");
+        break;
         default: break;
    }
            
             
     $(".orgnumber").text(JSON.parse(localStorage.getItem("organisation-number")));
-           
+   $(".organisation-name").text(JSON.parse(localStorage.getItem("organisation-name")));
+    $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
+             
     
     
     // notifications site wide
@@ -658,9 +663,7 @@ var chart = c3.generate({
     }
     
     
-    $(".organisation-name").text(JSON.parse(localStorage.getItem("organisation-name")));
-    $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
-    
+   
     
 </script>
 -->

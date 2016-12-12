@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint 11 - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="elements-index" id="content" role="main" tabindex="-1">
+
+    <section id="notifications" class="">
+    <div class="govuk-box-highlight" id="org">
+          <h2 class="bold-xlarge"><span class="company-name">You've enabled spending</h2>
+
+        <p class="asNotSigned">A confirmation has been sent to all site owners</p>
+    <p class="asSigned hidden">This account can now spend levy funds</p>
+        </div>
+    </section>
+    
+ <div class="grid-row">
+    <div class="column-two-thirds">
+                    <div class="hgroup">
+            <h1 class="heading-large">Your SFA agreement</h1>
+<p>Link to document</p>
+          
+            </div>
+  </div>
+
+        <div class="column-third">
+                        <a class="button" href="/sprint/{{sprint}}/account/organisations/add.html" id="dothething">Add new organisation</a>
+            
+        
+        </div>
+</div>
+    
+      <div class="panel panel-border-wide alert-default">
+        <p>Spending enabled</p>
+        </div>        
+            
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col" style="padding-top:0">Organisation</th>
+                                <th>Date added</th>
+                                <th>Added by</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <td class=""><span class="company-name">Acme Plc</span>
+                                </td>
+                                <td>24 December 2017</td>
+                                <td><span class="user-name">John Doe</span></td>
+
+<td><a href="/sprint/{{sprint}}/account/organisations/remove.html">Disable spending</a></td>                            </tr>
+                            <tr>
+                                <td class="">Acme Ltd
+                                </td>
+                                <td>24 December 2017</td>
+                                <td><span class="user-name">John Doe</span></td>
+
+<td><a href="/sprint/{{sprint}}/account/organisations/remove.html">Disable spending</a></td>                            </tr>
+                            <tr>
+                                <td class="">Acme Foundation
+                                </td>
+                                <td>24 December 2017</td>
+                                <td><span class="user-name">John Doe</span></td>
+
+<td><a href="/sprint/{{sprint}}/account/organisations/remove.html">Disable spending</a></td>                            </tr>
+                        </tbody>
+                    </table>            
+ 
+            
+            
+  
+
+</main>
+{% endblock %}

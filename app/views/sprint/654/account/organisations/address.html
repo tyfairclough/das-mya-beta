@@ -9,28 +9,30 @@
 {% endblock %}
 
 {% block after_header %}
-{% include "sprint/"+sprint+"/includes/header-loggedout.html" %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
 {% endblock %}
 
 
 {% block content %}
-<main class="elements-index" id="content" role="main" tabindex="-1">
+<main class="organisations-address" id="content" role="main" tabindex="-1">
   {% include "includes/link-back.html" %}
-    
+
   <div class="grid-row">
     <div class="column-two-thirds">
-<div class="hgroup">
-<h1 class="heading-xlarge">Enter your Companies House number</h1>
-        <p>Use the Companies House number for an organisation that your apprentices will be employed through.</p>
-    <p>If you'll employ apprentices through more than one organisation, add the details of one organisation now. You can add more organisations later.</p>
-<a href="https://beta.companieshouse.gov.uk/" rel="external" target="_blank">Find my Companies House number</a>        
-      </div>
+
+      <h1 class="heading-xlarge">
+          Add your charity's registered address
+      </h1>
+        <p>we can't find the address in various scenarios, But there's a business need to legally identify the name and address of the charity. Tell them this in a nice way.</p>
+        
+        <p><a href="https://beta.companieshouse.gov.uk" rel="external">Can we help them find this address? Link to that if so</a></p>
+        
         <form action="step_a5">
             
             <fieldset>
                 <div class="form-group">
                 <label class="form-label-bold" for="ch-number">
-                    <span class="form-label-bold">Companies House number</span>
+                    <span class="form-label-bold">Charity number</span>
                     <span id="validNo" class="error-message visually-hidden">Enter a valid Companies House number
 </span>
                     <span id="alreadyRegistered" class="error-message visually-hidden">Enter a company that isn't already registered
@@ -40,10 +42,14 @@
                 <input class="form-control" id="ch-number" type="text" name="ch-number">
                 </div>
                 </fieldset>
+            
+            <a rel="external" href="/sprint/{{sprint}}/account/organisations/confirm" class="button">Continue</a>
             </form>
         
-        <a href="/sprint/{{sprint}}/onboarding/gateway-alert.html" class="button">Continue</a>
+        
+
     </div>
+    
   </div>
 
 </main>

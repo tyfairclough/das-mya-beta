@@ -2297,6 +2297,10 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
     color: black;
     margin-top: 30px;
   }
+  .html-publications-show .back-to-content {
+    position: fixed;
+    bottom: 15px;
+  }
 }
 
 /* SFA logo */

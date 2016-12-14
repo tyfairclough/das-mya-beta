@@ -27,8 +27,7 @@
         <div class="column-two-thirds">
                                 <aside style="float: right; text-align: right;">
             <ul>
-                <li><a href="#">Save as a pdf</a></li>
-                <li><a href="#">Invite a colleague to sign</a></li>
+                <li><a href="#">Save this agreement as a PDF</a></li>
             </ul>
         </div>
     </div>        
@@ -304,48 +303,22 @@
         
         
         
-        </div></div></div></article>
+        </div></div></div>
+    <div class="js-back-to-content back-to-content visually-hidden">
+  <a href="#contents">Contents</a>
+</div>
+    </article>
     
     
     <div class="grid-row">
+
     <div class="column-two-thirds">
             <form action="organisation?newOrg=y&amp;newOrgSigned=y" method="GET">
                 <input type="hidden" id="accountId" name="accountId" value="13">
                 <input type="hidden" id="agreementId" name="agreementId" value="13">
                 <input type="hidden" id="legalEntityName" name="legalEntityName" value="TESCO STORES LIMITED">
 
-                <table class="top-border">
-                <tbody><tr>
-                    <th scope="row">
-                        Your name
-                    </th>
-                    <td>
-                        <dl class="inline">
-                            Tom Freeman
-                        </dl>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">
-                        Date
-                    </th>
-                    <td>
-                        10 January 2017
-                    </td>
-                </tr>
-                    <tr class="">
-                    <th scope="row">
-                        On behalf of
-                    </th>
-                    <td>
-                        <ul>
-                            <li>Acme Ltd</li>
-                            <li>Acme Plc</li>
-                            <li>Acme Foudation</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody></table>
+
                 <div class="form-group hidden" id="agreeCheck">
                     
                 <legend class="form-label-bold"><!--Sign the agreement now?-->
@@ -360,12 +333,57 @@
                     </label>
 
                     </div>
+                
+                <!--
+                <form action="/sprint/{{sprint}}/organisations/signed.html">
+  <div class="form-group">
+    <fieldset>
 
+      <legend id="example-personal-details">
 
-                <a id="sign" href="/sprint/{{sprint}}/account/organisations/signed.html"  class="button" >I accept this agreement</a>
-            <input type="hidden" name="newOrg" value="y"><input type="hidden" name="newOrgSigned" value="y"><input type="hidden" name="newOrg" value="y"><input type="hidden" name="newOrgSigned" value="y"></form>
+        <span class="form-label-bold">
+            How does this make you feel?
+        </span>
+      </legend>
+
+      <label class="block-label selection-button-radio" for="personal_details_yes">
+        <input id="personal_details_yes" type="radio" name="personalDetails" value="Yes">
+        Agree and enable spending
+      </label>
+        
+
+      <label class="block-label selection-button-radio" for="personal_details_no">
+        <input id="personal_details_no" type="radio" name="personalDetails" value="No">
+        Invite a collegaue to agree
+      </label>
+
+    </fieldset>
+  </div>
+
+                    <a href="/sprint/{{sprint}}/account/organisations/signed.html" class="button">Continue</a>
+
+</form>-->
+                <table class=" form-group">
+            
+                                     
+                        <tbody>
+                            <tr>
+                                <td class="rjTableName">Agreed by</td>
+                                <td class="users-email">Regnif Bishop</td>
+                            </tr>
+                            <tr>
+                                <td class="rjTableName">Date</td>
+                                <td class="">11 January 2017</td>
+                            </tr>
+                        </tbody>
+                    </table>
+<br>               
+                <a id="sign" href="/sprint/{{sprint}}/account/organisations/signed.html"  class="button" >Agree and enable spending</a>
+            <input type="hidden" name="newOrg" value="y"><input type="hidden" name="newOrgSigned" value="y"><input type="hidden" name="newOrg" value="y"><input type="hidden" name="newOrgSigned" value="y">
+                
+                 <a class="button text-link" href="#">Share this document</a>
+
     </div>
-
 
 </div>
     

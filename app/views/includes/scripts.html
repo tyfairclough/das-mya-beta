@@ -151,12 +151,24 @@ default: break;
                     var chn = $("#chn").val();
                             localStorage.setItem("organisation-number", JSON.stringify(chn));
                     
+                    if($("#chn").val() == "" ) {
+                        // return blank error
+                    }
+                    var chnNumber = $("#chn").val().length;
+
+                    
                     if($("#chn").val().match(/(IP|ip)/g)) {
                             localStorage.setItem("organisation-type", JSON.stringify("ip"));
                             window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=ip";            
                     } else if ($("#chn").val().match(/(RC|rc)/g)) {
                             localStorage.setItem("organisation-type", JSON.stringify("rc"));
                             window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=rc";                            
+                    }
+                    else if ( chnNumber < 5 || chnNumber > 8 ) {
+                            //alert("number isn't right length");
+                            //window.location.href = "/sprint/{{sprint}}/account/organisations/manual-input.html";            
+                            $("#limited-group .form-group").addClass("error");
+                            $("#limited-group .form-group .visually-hidden").removeClass("visually-hidden");
                     }
                     else {
                             localStorage.setItem("organisation-type", JSON.stringify("ltd"));

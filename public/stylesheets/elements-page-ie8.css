@@ -2423,6 +2423,202 @@ span.notification {
   border-radius: 3px;
 }
 
+#account-switch ul li {
+  background: #f8f8f8;
+  padding: 10px;
+  border-left: 4px solid #bfc1c3;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
+#account-switch ul li h4 {
+  margin: 0;
+  width: 50%;
+  float: left;
+}
+
+#account-switch ul li dl {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+#account-switch ul li dl dt {
+  float: left;
+  padding-right: 5px;
+}
+
+#account-switch ul li dl dd {
+  font-weight: 900;
+  text-align: left;
+}
+
+#account-switch ul li.active {
+  border-color: #005ea5;
+  background: #bfd7e9;
+}
+
+.zxcvb .show-pw {
+  position: relative;
+  font-size: 19px;
+  border-left: 2px solid #6f777b;
+  cursor: pointer;
+  left: -73px;
+  padding: 4px 10px;
+  color: #005ea5;
+  text-decoration: underline;
+  width: 45px;
+  text-align: center;
+  display: inline-block;
+  background: white;
+}
+
+.zxcvb .show-pw:hover {
+  color: #2b8cc4;
+}
+
+.zxcvb .show-pw.hide-pw {
+  background: #6f777b;
+  color: white;
+}
+
+.zxcvb .password-strength {
+  display: block;
+  border: 2px solid #6f777b;
+  width: 50%;
+  box-sizing: border-box;
+  height: 10px;
+  background: #ccc;
+  border-top: 0;
+}
+
+.zxcvb .password-strength span {
+  width: 25%;
+  box-sizing: border-box;
+  background: transparent;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+
+.zxcvb .password-strength .tooweak {
+  background: #DF3034;
+}
+
+.zxcvb .password-strength .weak {
+  background: #F47738;
+}
+
+.zxcvb .password-strength .medium {
+  background: #2B8CC4;
+}
+
+.zxcvb .password-strength .strong {
+  background: #006435;
+}
+
+.zxcvb + p {
+  color: #6f777b;
+}
+
+.zxcvb + p .span {
+  color: #0b0c0c;
+  font-weight: 900;
+}
+
+.zxcvb #passwordgroup .popover {
+  position: relative;
+  left: 0;
+  background: #f8f8f8;
+  padding: 10px;
+  border-left: 4px solid #005ea5;
+  width: 100%;
+}
+
+.zxcvb #passwordgroup .popover p {
+  margin-bottom: 10px;
+}
+
+.zxcvb #passwordgroup .popover .arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 17.3px 10px 0;
+  border-color: transparent #005ea5 transparent transparent;
+  position: absolute;
+  left: -20px;
+  top: 53px;
+}
+
+.zxcvb #passwordgroup .popover .fa-circle {
+  color: black;
+  font-size: 0.35em !important;
+  top: -4px;
+  position: relative;
+  margin: 0 10px 0 5px;
+}
+
+.zxcvb #passwordgroup .popover .fa-check-circle {
+  color: #00823b;
+  font-size: 1em !important;
+  top: 0;
+  position: relative;
+  margin: 0 5px 0 0;
+}
+
+@media (min-width: 641px) {
+  #account-switch ul li {
+    width: 49%;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 1%;
+  }
+  #account-switch ul li h4 {
+    width: 100%;
+  }
+  #account-switch ul li dl {
+    width: 100%;
+  }
+  #account-switch ul li:last-child {
+    margin-right: 0%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  #account-switch ul {
+    overflow: auto;
+  }
+  #account-switch ul li {
+    width: 49%;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 1%;
+  }
+  #account-switch ul li h4 {
+    width: 50%;
+  }
+  #account-switch ul li dl {
+    width: 50%;
+  }
+  #account-switch ul li:last-child {
+    margin-right: 0%;
+    width: 50%;
+  }
+  .zxcvb #passwordgroup {
+    position: relative;
+  }
+  .zxcvb #passwordgroup .popover {
+    position: absolute;
+    left: 55%;
+    background: #f8f8f8;
+    padding: 10px;
+    border-left: 4px solid #005ea5;
+    top: -15px;
+    width: 60%;
+  }
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

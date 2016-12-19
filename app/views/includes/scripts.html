@@ -275,7 +275,8 @@ default: break;
         //Populate on page
         var contentTop = '<ul class="list list-links">';
         var contentBottom = '</ul>';
-        $('#results').html(contentTop + stn + contentBottom);
+        var helpText = "        <p>Can't find your public sector organisation? You can <a href='manual-input.html'>add it manually here</a></p>";
+        $('#results').html(contentTop + stn + contentBottom + helpText);
     }
 
 });

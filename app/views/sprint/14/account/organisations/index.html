@@ -20,7 +20,7 @@
     <div class="govuk-box-highlight hidden" id="org">
           <h2 class="bold-large"><span class="company-name">Acme Ltd Coventry</span>  has been added</h2>
 
-    <p class="asNotSigned">You can now spend levy funds</p>
+    <p class="asNotSigned">Acme Ltd Coventry can now spend levy funds</p>
         </div>
         
         <div class="govuk-box-highlight hidden" id="orgNo">
@@ -52,27 +52,42 @@
 
             
             
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col" style="padding-top:0">Organisation</th>
-                                <th scope="col" style="padding-top:0">Spending status</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="">
-                                <td class=""><span class="company-name">Acme Ltd Coventry</span>
-                                </td>
-                                <td>Enabled</td>
-<td><a href="/sprint/{{sprint}}/account/organisations/view.html">View</a></td>                            </tr>
-                            <tr>
-                                <td class="">Acme Ltd Bradford
-                                </td>
-                                <td>Disabled</td>
-<td><a href="/sprint/{{sprint}}/account/organisations/sign.html">View or sign</a></td>                            </tr>
-                        </tbody>
-                    </table>            
+<table>
+    <thead>
+        <tr>
+            <th scope="col" style="padding-top:0">Organisation</th>
+            <th scope="col" style="padding-top:0">Status</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="">
+            <td class=""><span class="company-name">Acme Ltd Coventry</span>
+            </td>
+            <td>Spending enabled</td>
+            <td><a href="/sprint/{{sprint}}/account/organisations/view.html">View</a></td>
+
+            <td><a href="/sprint/{{sprint}}/account/organisations/sign.html">Replace</a></td>        
+        </tr>
+        <tr class="hidden">
+            <td class=""><span class="company-name">Acme Ltd Coventry</span>
+            </td>
+            <td>Spending enabled</td>
+            <td><a href="/sprint/{{sprint}}/account/organisations/view.html">View</a></td>
+
+            <td><a href="/sprint/{{sprint}}/account/organisations/sign.html">Remove</a></td>        
+        </tr>
+        <tr class="">
+            <td class="">Acme Ltd Bradford
+            </td>
+            <td><a href="/sprint/{{sprint}}/account/organisations/sign.html">Enable spending</a></td>
+                        <td><a href="/sprint/{{sprint}}/account/organisations/view.html">View</a></td>
+<td><a href="/sprint/{{sprint}}/account/organisations/sign.html">Remove</a></td>
+        </tr>
+    </tbody>
+</table>
  
             
             

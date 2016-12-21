@@ -17,7 +17,12 @@
 <main class="organisations-chnumber" id="content" role="main" tabindex="-1">
   {% include "includes/link-back.html" %}
 
-    
+    <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+  <ul class="error-summary-list">
+    <li><a href="#example-personal-details">Enter name</a></li>
+  </ul>
+
+</div>
     
   <div class="grid-row">
 
@@ -31,9 +36,11 @@
 <form action="step_a5">
             
             <fieldset>
-                <div class="form-group">
+                <div class="form-group error">
                 <label class="form-label-bold" for="name">
-                    Name</label>
+                    Name
+                    <span class="error-message">Enter name</span>
+                    </label>
                     <input class="form-control" id="name" type="text">
                 </div>
                  
@@ -83,7 +90,7 @@
                 
                 </fieldset>
             <div class="form-group">
-            <a rel="external" href="/sprint/723/account/organisations/address" class="button">Continue</a>
+            <a rel="external" href="/sprint/{{sprint}}/account/organisations/address" class="button">Continue</a>
                 </div>
             </form>
       

@@ -34,8 +34,27 @@
     </form>
     
     <section id="results-wrapper" class="hidden">
-    <h1 class="heading-xlarge">Search results</h1>
-        <p>Choose from one of the follow results, or <a href="/sprint/{{sprint}}/account/organisations/public-sector-search.html">search again</a>.</p>
+<div class="search-header">
+  <fieldset class="search-input">
+    <label for="search-main">
+        <h1 class="heading-medium">Search results <span class="visuallyhidden">for “{{keyword}}”</span>
+</h1>
+    </label>
+
+    <input type="search" name="q" value="keyword" id="search-main">
+
+    
+    
+    
+    
+  </fieldset>
+
+  <fieldset class="search-submit">
+    <button type="submit" class="button">Search</button>
+  </fieldset>
+</div>
+        <p>xxx,xxx results found</p>
+        <!--<p>Choose from one of the follow results, or <a href="/sprint/{{sprint}}/account/organisations/public-sector-search.html">search again</a>.</p>-->
     <div id="results">
     
         

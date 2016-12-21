@@ -261,7 +261,7 @@ default: break;
             searchExp = iName.match(exp);
 
             if (searchExp != null) {
-                stn += '<li><a href="/sprint/{{sprint}}/account/organisations/confirm.html?name=' + iName + '">' + iName + iSector  + '</a>.</li>';
+                stn += '<li><a href="/sprint/{{sprint}}/account/organisations/confirm.html?name=' + iName + '">' + iName + iSector  + '</a></li>';
             };
         });
 
@@ -275,7 +275,7 @@ default: break;
         //Populate on page
         var contentTop = '<ul class="list list-links">';
         var contentBottom = '</ul>';
-        var helpText = "        <p>Can't find your public sector organisation? You can <a href='manual-input.html'>add it manually here</a></p>";
+        var helpText = "        <h5 class='heading-small'>Can't find your organisation?</h5><p> You can <a href='manual-input.html'>add it manually here</a>.</p>";
         $('#results').html(contentTop + stn + contentBottom + helpText);
     }
 
@@ -633,7 +633,7 @@ var chart = c3.generate({
         $(".orgtype").text("Industrial or Provident");
         break;           
         case 'public':
-        $(".orgtype").text("public sector body");
+        $(".orgtype").text("organisation");
         break;           
         case 'charity':
         $(".orgtype").text("charity");

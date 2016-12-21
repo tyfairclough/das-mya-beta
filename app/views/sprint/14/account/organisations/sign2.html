@@ -17,22 +17,6 @@
 <main class="elements-index" id="content" role="main" tabindex="-1">
   {% include "includes/link-back.html" %}
 
-<div class="grid-row">
-    <div class="column-two-thirds">
-        <div class="hgroup">
-            <h1 class="heading-large">Sign agreement</h1>
-            <p>You must sign this agreement to spend levy funds on apprentices for <span class="company-name bold-small">Acme Ltd Coventry</span>.</p>
-            <p>By signing you agree to:</p>
-            <ul class="list list-bullet">
-                <li>your specific record keeping requirements</li>
-                <li>your obligations to participate in audits</li>
-                <li><a href="https://skillsfundingagency.atlassian.net/wiki/display/AML/the+fundings+rules">the fundings rules</a></li>
-                <li><a href="https://skillsfundingagency.atlassian.net/wiki/display/AML/the+funding+rates+and+calculations">the funding rates and calculations</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-    
     <div class="grid-row" id="publication-banner">
         <div class="column-third">
             <div class="logo">
@@ -45,18 +29,23 @@
             <ul>
                 <li><a href="#">Save this agreement as a PDF</a></li>
             </ul>
-        </aside></div>
-    </div>
-    
-    <article id="draftContract" class="html-publications-show">
+        </div>
+    </div>        
 
+        </aside> 
+    <article id="draftContract" class="html-publications-show">
+   
             <header class="publication-header" id="contents">
 <div class="inner-block floated-children">
 <div class="headings">
 <p class="document-type">Agreement</p>
-<h1>Apprenticeship levy: <br>legal agreement to enable spending
-
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <h1>Apprenticeship levy: legal agreement to enable spending 
 </h1>
+
+    </div>
+    </div>
 <p>Updated <time class="published-at date" datetime="2016-08-12T09:34:04+01:00">12 August 2016</time></p>
 </div>
 <nav class="in-page-navigation">
@@ -314,17 +303,23 @@
         
         
         
-        </div></div></div></article>
+        </div></div></div>
+    <div class="js-back-to-content back-to-content visually-hidden">
+  <a href="#contents">Contents</a>
+</div>
+    </article>
     
     
     <div class="grid-row">
+
     <div class="column-two-thirds">
             <form action="organisation?newOrg=y&amp;newOrgSigned=y" method="GET">
                 <input type="hidden" id="accountId" name="accountId" value="13">
                 <input type="hidden" id="agreementId" name="agreementId" value="13">
                 <input type="hidden" id="legalEntityName" name="legalEntityName" value="TESCO STORES LIMITED">
-              <h1 class="heading-medium">Sign the agreement now?</h1>
-                <div class="form-group" id="agreeCheck">
+
+
+                <div class="form-group hidden" id="agreeCheck">
                     
                 <legend class="form-label-bold"><!--Sign the agreement now?-->
                     <div class="error-message" style="display: none;">You must be authorised to sign the agreement</div>
@@ -332,19 +327,70 @@
                     <label class="block-label" for="understood">
                     
                     <input class="checkbox" id="understood" name="understood" type="checkbox">
-                <span>I've been authorised by my organisation to sign this agreement</span>
+                <span>I am authorised by my organisation to sign this agreement</span>
                 
                     
                     </label>
 
                     </div>
-                <a id="sign" href="/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y"  class="button" >Sign, and add organisation</a>
-    <a id="add" href="/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=n" class="button text-link">Add organisation, but don't sign now</a>
-            <input type="hidden" name="newOrg" value="y"><input type="hidden" name="newOrgSigned" value="y"><input type="hidden" name="newOrg" value="y"><input type="hidden" name="newOrgSigned" value="y"></form>
+                
+                <!--
+                <form action="/sprint/{{sprint}}/organisations/signed.html">
+  <div class="form-group">
+    <fieldset>
+
+      <legend id="example-personal-details">
+
+        <span class="form-label-bold">
+            How does this make you feel?
+        </span>
+      </legend>
+
+      <label class="block-label selection-button-radio" for="personal_details_yes">
+        <input id="personal_details_yes" type="radio" name="personalDetails" value="Yes">
+        Agree and enable spending
+      </label>
+        
+
+      <label class="block-label selection-button-radio" for="personal_details_no">
+        <input id="personal_details_no" type="radio" name="personalDetails" value="No">
+        Invite a collegaue to agree
+      </label>
+
+    </fieldset>
+  </div>
+
+                    <a href="/sprint/{{sprint}}/account/organisations/signed.html" class="button">Continue</a>
+
+</form>-->
+                <table class=" form-group">
+            
+                                     
+                        <tbody>
+                            <tr>
+                                <td class="rjTableName">Agreed by</td>
+                                <td class="users-email">Regnif Bishop</td>
+                            </tr>
+                            <tr>
+                                <td class="rjTableName">Date</td>
+                                <td class="">11 January 2017</td>
+                            </tr>
+                        </tbody>
+                    </table>
+<br>               
+                <a id="sign" href="/sprint/{{sprint}}/account/organisations/signed.html"  class="button" >Agree and enable spending</a>
+            <input type="hidden" name="newOrg" value="y"><input type="hidden" name="newOrgSigned" value="y"><input type="hidden" name="newOrg" value="y"><input type="hidden" name="newOrgSigned" value="y">
+                
+                 <a class="button text-link" href="#">Share this document</a>
+<br>
+<br>
+                      {% include "includes/link-back.html" %}
+
     </div>
+
 </div>
-    <br>
-      {% include "includes/link-back.html" %}
+    
+<!--      {% include "includes/link-back.html" %}-->
 
     
         

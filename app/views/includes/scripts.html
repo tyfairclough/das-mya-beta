@@ -115,6 +115,12 @@ case 'organisations-question':
                orgQuestion();
            })
 break;           
+       case 'before-you-start':
+           $(".button").click(function(e){
+               e.preventDefault();
+               areYouReady();
+           })
+break;           
 default: break;
    };
     
@@ -124,6 +130,14 @@ default: break;
     
       // my functions
     
+    
+        function areYouReady() {
+                          if ( $('input[name=radio-group]:checked', 'form').val() == "no" ) {
+                                window.location.href = "/sprint/{{sprint}}/onboarding/not-ready.html";                           
+                          } else {
+                                window.location.href = "/sprint/{{sprint}}/onboarding/zxcvb.html";    
+                          }            
+        }
     
         function orgQuestion() {
                           if ( $('input[name=radio-group]:checked', 'form').val() == "charity" ) {
@@ -411,6 +425,7 @@ var chart = c3.generate({
             data3: '#28A197'
         },
         */
+        groups: [
         groups: [
             ['data1','data2','data4']
         ]

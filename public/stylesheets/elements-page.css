@@ -2876,7 +2876,6 @@ span.notification {
 .zxcvb .password-strength {
   display: block;
   border: 2px solid #6f777b;
-  width: 50%;
   box-sizing: border-box;
   height: 10px;
   background: #ccc;
@@ -2884,7 +2883,7 @@ span.notification {
 }
 
 .zxcvb .password-strength span {
-  width: 25%;
+  width: 20%;
   box-sizing: border-box;
   background: transparent;
   height: 100%;
@@ -2892,7 +2891,7 @@ span.notification {
   float: left;
 }
 
-.zxcvb .password-strength .tooweak {
+.zxcvb .password-strength .veryweak {
   background: #DF3034;
 }
 
@@ -2900,12 +2899,16 @@ span.notification {
   background: #F47738;
 }
 
-.zxcvb .password-strength .medium {
+.zxcvb .password-strength .good {
   background: #2B8CC4;
 }
 
 .zxcvb .password-strength .strong {
   background: #006435;
+}
+
+.zxcvb .password-strength .verystrong {
+  background: blue;
 }
 
 .zxcvb + p {
@@ -2972,6 +2975,9 @@ span.notification {
   }
   #account-switch ul li:last-child {
     margin-right: 0%;
+    width: 50%;
+  }
+  .zxcvb .password-strength {
     width: 50%;
   }
 }

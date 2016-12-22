@@ -10,6 +10,7 @@
 <script src="/public/javascripts/govuk/details.polyfill.js"></script>
 <script src="/public/javascripts/application.js"></script>
 <script src="/public/javascripts/stackable.min.js"></script>
+<script src="/public/javascripts/zxcvbn.js"></script>
 
 <script src="/public/javascripts/aml.js"></script>
 
@@ -413,7 +414,6 @@ var chart = c3.generate({
         },
         */
         groups: [
-        groups: [
             ['data1','data2','data4']
         ]
     },
@@ -731,7 +731,44 @@ var chart = c3.generate({
     
     $(".password-strength span").hide();
    
-    $("#passwordgroup input").keyup(function(e) {
+    $("#passwordgroup input").keyup(function(e){
+        var password = $(this).val();
+        var result = zxcvbn(password);
+        console.log(result.score);
+        var resultScore = result.score;
+
+        
+   switch(resultScore){
+       case 0:
+console.log("score is " + resultScore);
+           $(".password-strength span").hide();
+           $(".password-strength .veryweak").show();
+break;
+       case 1:
+console.log("score is " + resultScore)
+           $(".password-strength span").hide();
+           $(".password-strength .veryweak, .password-strength .weak").show();
+           break;
+       case 2:
+console.log("score is " + resultScore)
+           $(".password-strength span").hide();
+           $(".password-strength .veryweak, .password-strength .weak, .password-strength .good").show();
+break;
+       case 3:
+console.log("score is " + resultScore)
+           $(".password-strength span").hide();
+           $(".password-strength .veryweak, .password-strength .weak, .password-strength .good, .password-strength .strong").show();
+           break;
+       case 4:
+console.log("score is " + resultScore)
+           $(".password-strength span").hide();
+           $(".password-strength .veryweak, .password-strength .weak, .password-strength .good, .password-strength .strong, .password-strength .verystrong").show();
+           break;
+   }
+        
+    });
+
+ /*   $("#passwordgroup input").keyup(function(e) {
         var password = $(this).val();
         //validate the length
         if ( password.length < 8 ) {
@@ -784,7 +821,7 @@ var chart = c3.generate({
             $(".pw-strength").text("weak");
         }
         return true;
-    });
+    }); */
 
    
     

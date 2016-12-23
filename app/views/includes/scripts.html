@@ -709,10 +709,16 @@ var mc = new Hammer(myElement);
 // listen to events...
 mc.on("tap", function(ev) {
 // show helper text
+    $(".peakHelp").show().delay(2500).fadeOut("slow");
 });
 mc.on("press", function(ev) {
+        $(".peakHelp").hide();
         $("#password").attr('type', 'text');
         $('.show-pw').text("Hide").addClass("hide-pw");
+});
+mc.on("pressup", function(ev){
+        $("#password").attr('type', 'text');
+        $('.show-pw').text("Hide").addClass("hide-pw");    
 });
     
     $('.show-pw').on('mousedown mouseup', function mouseState(e) {
@@ -728,6 +734,10 @@ mc.on("press", function(ev) {
 });
 
 
+    
+$("#password").focusin(function(){
+   $(".popover").slideDown("slow");
+});
     
     i = 0;
     $("#password input").keyup(function(e){

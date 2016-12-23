@@ -2500,33 +2500,74 @@ span.notification {
   background: #bfd7e9;
 }
 
-.zxcvb .show-pw {
-  position: absolute;
+.zxcvb .passwordContainer {
+  position: relative;
+  float: left;
+  width: 100%;
+  clear: both;
+  overflow: visible;
+}
+
+.zxcvb .passwordContainer #password {
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  padding-right: 20%;
+}
+
+.zxcvb .passwordContainer .show-pw {
+  border: 2px solid #6f777b;
+  border-right: none;
+  box-sizing: border-box;
+  color: #005ea5;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
   font-size: 16px;
+  padding: 4px 10px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  text-decoration: underline;
+  width: 20%;
+  z-index: 999;
+}
+
+.zxcvb .passwordContainer .show-pw:hover {
+  color: #2b8cc4;
+}
+
+.zxcvb .passwordContainer .peakHelp {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  border: none;
+  padding: 4px;
   border-left: 2px solid #6f777b;
   cursor: pointer;
-  right: 2px;
   padding: 4px 10px;
-  color: #005ea5;
-  text-decoration: underline;
-  width: 45px;
+  color: gray;
+  width: 80%;
   text-align: center;
-  display: inline-block;
+  display: none;
   background: white;
   top: 2px;
 }
 
-.zxcvb .show-pw:hover {
-  color: #2b8cc4;
+.zxcvb .passwordContainer .password-strength {
+  display: block;
+  border: 2px solid #6f777b;
+  box-sizing: border-box;
+  height: 10px;
+  background: #ccc;
+  margin-top: 3px;
+  width: 100%;
+  float: left;
 }
 
-@media (min-width: 641px) {
-  .zxcvb .show-pw {
-    position: relative;
-    font-size: 19px;
-    left: -73px;
-    top: 0;
-  }
+.zxcvb .passwordContainer p {
+  float: left;
+  clear: both;
 }
 
 .zxcvb .show-pw.hide-pw {
@@ -2588,6 +2629,7 @@ span.notification {
 
 .zxcvb #passwordgroup .popover {
   position: relative;
+  display: none;
   left: 0;
   background: #f8f8f8;
   padding: 10px;
@@ -2629,7 +2671,7 @@ span.notification {
   margin: 0 5px 0 0;
 }
 
-@media (min-width: 641px) {
+@media (min-width: 960px) {
   .zxcvb #passwordgroup .popover {
     border-bottom: none;
     border-left: 4px solid #005ea5;
@@ -2640,6 +2682,15 @@ span.notification {
     position: absolute;
     left: -20px;
     top: 53px;
+  }
+}
+
+@media (min-width: 641px) {
+  .zxcvb .passwordContainer {
+    width: 50%;
+  }
+  .zxcvb .passwordContainer .show-pw {
+    font-size: 19px;
   }
 }
 

@@ -11,8 +11,10 @@
 <script src="/public/javascripts/application.js"></script>
 <script src="/public/javascripts/stackable.min.js"></script>
 <script src="/public/javascripts/zxcvbn.js"></script>
+<script src="/public/javascripts/hammer.min.js"></script>
 
 <script src="/public/javascripts/aml.js"></script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
@@ -26,6 +28,11 @@
 
 
 <script>
+    
+    
+    
+    
+    
 $(document).ready(function () {
 
     //GLOBAL VAR
@@ -692,6 +699,22 @@ var chart = c3.generate({
     }
     
     
+        
+var myElement = document.getElementById('peak');
+
+// create a simple instance
+// by default, it only adds horizontal recognizers
+var mc = new Hammer(myElement);
+
+// listen to events...
+mc.on("tap", function(ev) {
+// show helper text
+});
+mc.on("press", function(ev) {
+        $("#password").attr('type', 'text');
+        $('.show-pw').text("Hide").addClass("hide-pw");
+});
+    
     $('.show-pw').on('mousedown mouseup', function mouseState(e) {
     if (e.type == "mousedown") {
         //code triggers on hold
@@ -700,11 +723,11 @@ var chart = c3.generate({
         $('.show-pw').text("Hide").addClass("hide-pw");
     } else {
         $("#password").attr('type', 'password');
-        $('.show-pw').text("Show").removeClass("hide-pw");
+        $('.show-pw').text("Peak").removeClass("hide-pw");
     }
 });
-    
-    
+
+
     
     i = 0;
     $("#password input").keyup(function(e){
@@ -729,6 +752,11 @@ var chart = c3.generate({
     })
     i = 0;
     
+    
+
+    
+    
+    
     $(".password-strength span").hide();
    
     $("#passwordgroup input").keyup(function(e){
@@ -741,28 +769,38 @@ var chart = c3.generate({
    switch(resultScore){
        case 0:
 console.log("score is " + resultScore);
-           $(".password-strength span").hide();
-           $(".password-strength .veryweak").show();
-break;
+           $(".password-strength span").show();
+           //$(".password-strength .veryweak").show();
+           $(".password-strength.pw2 span").addClass("veryweak").css("width","20%");
+           $(".pw-strength").text("very weak");
+           break;
        case 1:
 console.log("score is " + resultScore)
-           $(".password-strength span").hide();
-           $(".password-strength .veryweak, .password-strength .weak").show();
+           //$(".password-strength span").hide();
+           //$(".password-strength .veryweak, .password-strength .weak").show();
+           $(".password-strength.pw2 span").removeClass().addClass("weak").css("width","40%");
+           $(".pw-strength").text("weak");
            break;
        case 2:
 console.log("score is " + resultScore)
-           $(".password-strength span").hide();
-           $(".password-strength .veryweak, .password-strength .weak, .password-strength .good").show();
-break;
+           //$(".password-strength span").hide();
+           ///$(".password-strength .veryweak, .password-strength .weak, .password-strength .good").show();
+           $(".password-strength.pw2 span").removeClass().addClass("good").css("width","60%");
+           $(".pw-strength").text("good");
+           break;
        case 3:
 console.log("score is " + resultScore)
-           $(".password-strength span").hide();
-           $(".password-strength .veryweak, .password-strength .weak, .password-strength .good, .password-strength .strong").show();
+           //$(".password-strength span").hide();
+           //$(".password-strength .veryweak, .password-strength .weak, .password-strength .good, .password-strength .strong").show();
+           $(".password-strength.pw2 span").removeClass().addClass("strong").css("width","80%");
+           $(".pw-strength").text("strong");
            break;
        case 4:
 console.log("score is " + resultScore)
-           $(".password-strength span").hide();
-           $(".password-strength .veryweak, .password-strength .weak, .password-strength .good, .password-strength .strong, .password-strength .verystrong").show();
+           //$(".password-strength span").hide();
+           //$(".password-strength .veryweak, .password-strength .weak, .password-strength .good, .password-strength .strong, .password-strength .verystrong").show();
+           $(".password-strength.pw2 span").removeClass().addClass("verystrong").css("width","100%");
+           $(".pw-strength").text("very strong");
            break;
    }
         

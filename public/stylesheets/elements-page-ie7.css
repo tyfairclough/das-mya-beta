@@ -2501,11 +2501,11 @@ span.notification {
 }
 
 .zxcvb .show-pw {
-  position: relative;
-  font-size: 19px;
+  position: absolute;
+  font-size: 16px;
   border-left: 2px solid #6f777b;
   cursor: pointer;
-  left: -73px;
+  right: 2px;
   padding: 4px 10px;
   color: #005ea5;
   text-decoration: underline;
@@ -2513,10 +2513,20 @@ span.notification {
   text-align: center;
   display: inline-block;
   background: white;
+  top: 2px;
 }
 
 .zxcvb .show-pw:hover {
   color: #2b8cc4;
+}
+
+@media (min-width: 641px) {
+  .zxcvb .show-pw {
+    position: relative;
+    font-size: 19px;
+    left: -73px;
+    top: 0;
+  }
 }
 
 .zxcvb .show-pw.hide-pw {
@@ -2540,10 +2550,11 @@ span.notification {
   height: 100%;
   display: inline-block;
   float: left;
+  -webkit-transition: width 2s, background-color 1s;
 }
 
 .zxcvb .password-strength .veryweak {
-  background: #DF3034;
+  background: #B10E1E;
 }
 
 .zxcvb .password-strength .weak {
@@ -2555,11 +2566,15 @@ span.notification {
 }
 
 .zxcvb .password-strength .strong {
-  background: #006435;
+  background: #28A197;
 }
 
 .zxcvb .password-strength .verystrong {
-  background: blue;
+  background: #006435;
+}
+
+.zxcvb .pw-strength {
+  font-weight: 900;
 }
 
 .zxcvb + p {
@@ -2576,8 +2591,10 @@ span.notification {
   left: 0;
   background: #f8f8f8;
   padding: 10px;
-  border-left: 4px solid #005ea5;
+  border-bottom: 4px solid #005ea5;
   width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .zxcvb #passwordgroup .popover p {
@@ -2588,11 +2605,12 @@ span.notification {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 10px 17.3px 10px 0;
-  border-color: transparent #005ea5 transparent transparent;
+  border-width: 17px 10px 0 10px;
+  border-color: #005ea5 transparent transparent transparent;
   position: absolute;
-  left: -20px;
-  top: 53px;
+  bottom: -18px;
+  display: block;
+  margin: 0 auto;
 }
 
 .zxcvb #passwordgroup .popover .fa-circle {
@@ -2609,6 +2627,20 @@ span.notification {
   top: 0;
   position: relative;
   margin: 0 5px 0 0;
+}
+
+@media (min-width: 641px) {
+  .zxcvb #passwordgroup .popover {
+    border-bottom: none;
+    border-left: 4px solid #005ea5;
+  }
+  .zxcvb #passwordgroup .popover .arrow {
+    border-width: 10px 17.3px 10px 0;
+    border-color: transparent #005ea5 transparent transparent;
+    position: absolute;
+    left: -20px;
+    top: 53px;
+  }
 }
 
 @media (min-width: 641px) {

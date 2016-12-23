@@ -2533,10 +2533,6 @@ span.notification {
   z-index: 999;
 }
 
-.zxcvb .passwordContainer .show-pw:hover {
-  color: #2b8cc4;
-}
-
 .zxcvb .passwordContainer .peakHelp {
   box-sizing: border-box;
   position: absolute;

@@ -710,18 +710,21 @@ var mc = new Hammer(myElement);
 mc.on("tap", function(ev) {
 // show helper text
     $(".peakHelp").show().delay(2500).fadeOut("slow");
+    console.log("tapp");
 });
 mc.on("press", function(ev) {
+    console.log("press down")
         $(".peakHelp").hide();
         $("#password").attr('type', 'text');
         $('.show-pw').text("Hide").addClass("hide-pw");
 });
 mc.on("pressup", function(ev){
-        $("#password").attr('type', 'text');
-        $('.show-pw').text("Hide").addClass("hide-pw");    
+    console.log("press release")
+        $("#password").attr('type', 'password');
+        $('.show-pw').text("Peak").removeClass("hide-pw");    
 });
     
-    $('.show-pw').on('mousedown mouseup', function mouseState(e) {
+ /*   $('.show-pw').on('mousedown mouseup', function mouseState(e) {
     if (e.type == "mousedown") {
         //code triggers on hold
         console.log("hold");
@@ -731,7 +734,7 @@ mc.on("pressup", function(ev){
         $("#password").attr('type', 'password');
         $('.show-pw').text("Peak").removeClass("hide-pw");
     }
-});
+});*/
 
 
     

@@ -3095,6 +3095,10 @@ span.notification {
   }
 }
 
+.phase-banner-beta .phase-tag {
+  background-color: #005ea5;
+}
+
 .panel[class*="alert-"] .left-side {
   width: auto;
   float: left;
@@ -3234,6 +3238,22 @@ span.notification {
   .search-header {
     width: 66.666%;
   }
+}
+
+.header-global {
+  width: 33%;
+  float: left;
+  padding: 0;
+}
+
+@media (min-width: 769px) {
+  #global-header .header-wrapper .header-global .header-logo {
+    width: 100% !important;
+  }
+}
+
+#global-header .header-proposition {
+  padding-top: 5px;
 }
 
 .elements-index .divider {

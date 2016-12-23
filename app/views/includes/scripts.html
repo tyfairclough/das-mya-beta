@@ -699,7 +699,21 @@ var chart = c3.generate({
     }
     
     
+   
+    
+$(".zxcvb .button").click(function(e){
+    e.preventDefault();
+   var email =$("#email-address").val(); 
+    if ( email == "ty.fairclough@gmail.com" ) {
+        $("#emailGroup").addClass("error");
+        $("#emailError1").show().removeClass("hidden");
+        $(".error-summary").show().removeClass("hidden");
         
+    } else {
+                                window.location.href = "/sprint/{{sprint}}/onboarding/check-mail.html";                           
+    }
+});
+    
 var myElement = document.getElementById('peak');
 
 // create a simple instance

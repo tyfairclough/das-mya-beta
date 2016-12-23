@@ -17,6 +17,15 @@
 <main class="zxcvb" id="content" role="main" tabindex="-1">
   {% include "includes/link-back.html" %}
 
+    <div class="error-summary hidden" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+
+        
+  <ul class="error-summary-list">
+    <li><a href="#email-address">Email already registered.</a></li>
+  </ul>
+
+</div>
+    
   <div class="grid-row">
     <div class="column-two-thirds">
         <div class="hgroup">
@@ -45,7 +54,7 @@
           <label class="form-label-bold" for="email-address">
             <span class="form-label-bold">Email</span>
   <span class="form-hint">We'll send you an email to confirm your identity.</span>              
-            <span class="error-message hidden" style="display: none;">Error message about valid email here</span>
+            <span class="error-message hidden" style="display: none;" id="emailError1">Email already registered.</span>
           </label>
           <input class="form-control" id="email-address" type="text">
       </div>

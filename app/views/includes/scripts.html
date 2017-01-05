@@ -525,6 +525,7 @@ var chart = c3.generate({
     var organisationNameNew = getQueryVariable("name-changed");
     
     
+    
    if ( organisationName != "" || null ) {
        var organisationNameStripped = organisationName.replace(/%20/g, " "); 
        localStorage.setItem("organisation-name", JSON.stringify(organisationNameStripped));
@@ -686,7 +687,8 @@ var chart = c3.generate({
            
             
     $(".orgnumber").text(JSON.parse(localStorage.getItem("organisation-number")));
-   $(".organisation-name").text(JSON.parse(localStorage.getItem("organisation-name")));
+   $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
+   $(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));
     $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
              
     

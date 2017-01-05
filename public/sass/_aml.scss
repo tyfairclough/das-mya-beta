@@ -810,21 +810,23 @@ span.notification {
                 padding-right: 20%;
             }
             .show-pw {
-                    border: 2px solid #6f777b;
+                    border-left: 2px solid #0B0C0C;
                     border-right: none;
                     box-sizing: border-box;
                     color: #005ea5;
                     cursor: pointer;
                     display: inline-block;
                     float: left;
-                    font-size: 16px;
+                    font-size: 17px;
                     padding: 4px 10px;
                     position: absolute;
-                    right: 0px;
+                    right: 2px;
                     text-align: center;
                     text-decoration: underline;
                     width: 20%;
                     z-index: 999;
+                    top: 2px;
+                    line-height: 23px;
             }
             .peakHelp {
                     box-sizing: border-box;
@@ -977,8 +979,10 @@ span.notification {
             .passwordContainer {
                     width: 50%;
                 .show-pw {
-                    font-size: 19px;
-                }
+                    font-size: 18px;
+                    padding: 5px 10px 6px;
+                    line-height: 25px;
+}
             }
         }
     }
@@ -1209,6 +1213,11 @@ span.notification {
 
 #global-header .header-proposition {
     padding-top: 5px;
+}
+
+
+.switch-levy-account table .active {
+    background: mix(white,#FFBF47,75);
 }
 
 /* update */

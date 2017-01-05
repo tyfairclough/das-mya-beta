@@ -128,7 +128,10 @@ break;
                e.preventDefault();
                areYouReady();
            })
-break;           
+break;
+       case 'rename-account':
+           renameAccount();
+break;
 default: break;
    };
     
@@ -138,6 +141,27 @@ default: break;
     
       // my functions
     
+    
+    function renameAccount() {
+        $(".error-summary").hide();
+        $(".form-group .error-message").hide();
+        $(".form-group").removeClass("error");
+        
+        $(".button").click(function(e){
+            e.preventDefault();
+            var newName = $("#new-name").val();
+            
+            if ( newName == "" ) {
+                //show error
+                      $(".error-summary").show();  
+                      $(".form-group .error-message").show();
+                      $("#newName").addClass("error");
+            } else {
+               localStorage.setItem("organisation-name", JSON.stringify(newName));
+                  window.location = document.referrer + '?name-changed=1';
+            };
+        });
+    }
     
         function areYouReady() {
                           if ( $('input[name=radio-group]:checked', 'form').val() == "no" ) {
@@ -498,6 +522,7 @@ var chart = c3.generate({
     var accountCreated = getQueryVariable("accountCreated");
     var orgType = getQueryVariable("orgtype");
     var organisationName = getQueryVariable("name");
+    var organisationNameNew = getQueryVariable("name-changed");
     
     
    if ( organisationName != "" || null ) {
@@ -505,6 +530,9 @@ var chart = c3.generate({
        localStorage.setItem("organisation-name", JSON.stringify(organisationNameStripped));
    } 
 
+    if (organisationNameNew == "1") {
+        $("#content").prepend("<div class='govuk-box-highlight'><h2 class='bold-large'>Account renamed</h2><p>You successfully updated the account name</p></div>");
+    };
     
     // globals
     //user details
@@ -839,6 +867,8 @@ console.log("score is " + resultScore)
    }
         
     });
+    
+    
 
  /*   $("#passwordgroup input").keyup(function(e) {
         var password = $(this).val();

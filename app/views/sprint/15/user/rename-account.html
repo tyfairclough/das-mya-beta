@@ -20,7 +20,7 @@
         display: none;
     }
 </style>
-<main class="elements-index" id="content" role="main" tabindex="-1">
+<main class="rename-account" id="content" role="main" tabindex="-1">
   <!--{% include "includes/link-back.html" %}-->
 
     <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
@@ -45,8 +45,8 @@
             <label class="form-label-bold" for="email">Account ID</label>
             <input class="form-control" id="email" maxlength="128" name="email" type="text" tabindex="0" disabled value="XC993">  
     </div>
-    <div class="form-group error">
-            <label class="form-label-bold" for="email2">
+    <div class="form-group error" id="newName">
+            <label class="form-label-bold" for="new-name">
                 
                 New account name
         <span class="error-message">
@@ -55,7 +55,7 @@
 
         </label>
         
-            <input class="form-control" id="email2" maxlength="128" name="email" type="text"> 
+            <input class="form-control" id="new-name" maxlength="128" name="email" type="text"> 
     </div>
     <div class="form-group">
         <a class="button" href="/sprint/{{sprint}}/user/index.html?name=new">Save and continue</a>

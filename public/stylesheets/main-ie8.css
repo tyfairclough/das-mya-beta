@@ -2928,6 +2928,18 @@ span.notification {
   background-color: #267daf;
 }
 
+#results li.added {
+  color: #6F777B;
+}
+
+#results li.added span {
+  padding: 2px 5px;
+  background: #DEE0E2;
+  color: #0B0C0C;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
 @media (min-width: 641px) {
   .search-header {
     width: 66.666%;

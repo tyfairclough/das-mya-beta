@@ -1193,6 +1193,17 @@ span.notification {
     }
 }
 
+#results li.added {
+    color: #6F777B;
+    span {
+    padding: 2px 5px;
+    background: #DEE0E2;
+    color: #0B0C0C;
+    margin-left: 10px;
+    font-size: 16px;
+    }
+}
+
 @media (min-width: 641px) {
 .search-header {
     width: 66.666%;
@@ -1219,6 +1230,7 @@ span.notification {
 .switch-levy-account table .active {
     background: mix(white,#FFBF47,75);
 }
+
 
 /* update */
 

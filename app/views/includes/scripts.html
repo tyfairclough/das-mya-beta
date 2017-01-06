@@ -237,7 +237,7 @@ default: break;
             };
     
     // public body keyword search code
-    $('#input-keywords').keypress(function (e) {
+    $('#input-keywords, #searc-main').keypress(function (e) {
   if (e.which == 13) {
         e.preventDefault();
         $("#public-sector-search").hide();
@@ -251,7 +251,7 @@ default: break;
   }
 });
     
-    $("#submit-keywords").click(function (e) {
+    $("#submit-keywords, #search-submit button").click(function (e) {
         e.preventDefault();
         $("#public-sector-search").hide();
         $("#results-wrapper").removeClass("hidden");
@@ -310,9 +310,27 @@ default: break;
         var contentBottom = '</ul>';
         var helpText = "        <h5 class='heading-small'>Can't find your organisation?</h5><p> You can <a href='manual-input.html'>add it manually here</a>.</p>";
         $('#results').html(contentTop + stn + contentBottom + helpText);
+        getPublicSearchCount(keyword);
+        disabledAddedPublicOrgs();
     }
 
+    
+    function getPublicSearchCount(keyword) {
+        $("#search-main").val(keyword);
+        var count = $(".list-links li").length;
+        $(".count").text(count);
+    };
+    
+    function disabledAddedPublicOrgs() {
+        var psAdded = 3;
+        
+        var name = $(".list-links li:nth-child("+psAdded+")").text();
+        
+                $(".list-links li:nth-child("+psAdded+")").replaceWith("<li class='added'>" + name + "<span>already added</span><li>");
+    }
 });
+    
+    
 </script>
 
 

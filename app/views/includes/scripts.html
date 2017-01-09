@@ -47,19 +47,18 @@ $(document).ready(function () {
 
     var paginateCount = 5;
 
-    
 
-    
-
-   $(document).scroll(function(){
-       $("#draftContract .js-back-to-content").removeClass("visually-hidden");
-}); 
     
 
     
 
    var className = $("#content").attr('class');
    switch(className){
+       case 'index':
+           // reset site
+           localStorage.setItem("onboarding","0");
+           localStorage.setItem("sessionState","0");
+break;
 case 'public-sector':
    // put directory stuff here
       
@@ -68,6 +67,10 @@ case 'public-sector-search':
    // put search keyword stuff here
 break;
 case 'organisations-add':
+           $(".errror-summary").hide();
+
+            $(".form-group").removeClass("error");
+           $(".error-message, .error-summary").addClass("hidden");
             localStorage.setItem("organisation-address", JSON.stringify("101 Aviation House"))           
             $(".panel").hide()
             $("label").click(function(){
@@ -77,6 +80,8 @@ case 'organisations-add':
             // adding organisations functions
             $(".organisations-add").keypress(function(e){
             if (e.which == 13) {
+                    $(".error-summary, .error-message").addClass("hidden");
+                    $("form-group.").removeClass("error");
             orgType()
             // check the radio value
             } else {
@@ -132,6 +137,12 @@ break;
        case 'rename-account':
            renameAccount();
 break;
+       case 'check-mail':
+           checkMail();
+break;
+       case 'sign-agreement':
+           signAgreement();
+break;
 default: break;
    };
     
@@ -140,6 +151,51 @@ default: break;
     
     
       // my functions
+    
+    headerNav();
+    
+    function headerNav() {
+        var sessionState = localStorage.getItem("sessionState");
+        if ( sessionState == "1") {
+            // if you're logged in
+            $("#loggedIn").removeClass("hidden");
+            $("#loggedOut").addClass("hidden");
+        } else {
+            // if you're logged out
+            $("#loggedOut").removeClass("hidden");
+            $("#loggedIn").addClass("hidden");
+        }
+    }
+    
+    
+
+
+    
+    function signAgreement() {
+        
+            // contract scroll up
+    $(document).scroll(function(){
+       $("#draftContract .js-back-to-content").removeClass("visually-hidden");
+    }); 
+        
+      $("#sign2").click(function(e){
+          e.preventDefault();
+        //  check if this is on-boarding or not
+              var onboarding = JSON.parse(localStorage.getItem("onboarding"));
+
+          if (onboarding == "1" ) {
+              //alert("onboarding user")
+              // take to account success - onboarding
+              sessionState = localStorage.setItem("sessionState","1");
+              sessionState = localStorage.setItem("onboarding","0");
+              window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html?accountCreated=y";
+          } else {
+              //alert("normal user")
+              // add legal entity complete
+              window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y";
+          }
+      });
+    };
     
     
     function renameAccount() {
@@ -192,15 +248,24 @@ default: break;
                 function orgType() {
                     //check if organisation is in companies house or other
                     //company, rc, ip
+                
+                    
                 if ( $('input[name=radio-group]:checked', 'form').val() == "ltd" ) {
                     //check if company is limited, royal charter or ip
                     var chn = $("#chn").val();
                             localStorage.setItem("organisation-number", JSON.stringify(chn));
                     
-                    if($("#chn").val() == "" ) {
-                        // return blank error
-                    }
+                    
                     var chnNumber = $("#chn").val().length;
+
+                    
+                    if(chnNumber == 0 ) {
+                        // return blank error
+                        console.log("blank companies house")
+                        $("#notValidCompany").removeClass("hidden");
+                        $(".error-summary").removeClass("hidden");
+                        $(".error-summary li").eq(1).removeClass("hidden");
+                    }
 
                     
                     if($("#chn").val().match(/(IP|ip)/g)) {
@@ -211,7 +276,7 @@ default: break;
                             window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=rc";                            
                     }
                     else if ( chnNumber < 5 || chnNumber > 8 ) {
-                            //alert("number isn't right length");
+                            console.log("number isn't right length");
                             //window.location.href = "/sprint/{{sprint}}/account/organisations/manual-input.html";            
                             $("#limited-group .form-group").addClass("error");
                             $("#limited-group .form-group .visually-hidden").removeClass("visually-hidden");
@@ -326,7 +391,7 @@ default: break;
         
         var name = $(".list-links li:nth-child("+psAdded+")").text();
         
-                $(".list-links li:nth-child("+psAdded+")").replaceWith("<li class='added'>" + name + "<span>already added</span><li>");
+                $(".list-links li:nth-child("+psAdded+")").replaceWith("<li class='added'>" + name + "<span>already added - <a href='#'>go to my account</a></span><li>");
     }
 });
     
@@ -608,9 +673,12 @@ var chart = c3.generate({
             $(".onboarding-index .button").click(function(e){
             e.preventDefault();
             if ( $('input[name=radio-group]:checked', 'form').val() == "new" ) {
+                    //set cookie about on-boarding
+                localStorage.setItem('onboarding',"1");
                     window.location.href = "/sprint/{{sprint}}/onboarding/before-you-start.html";
             } else {
                 window.location.href = "/sprint/{{sprint}}/user/login.html";
+                                localStorage.setItem('onboarding',"0");
             }
         })
             

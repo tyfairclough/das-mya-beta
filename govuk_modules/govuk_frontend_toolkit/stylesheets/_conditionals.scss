@@ -25,9 +25,6 @@
 $is-ie: false !default;
 $mobile-ie6: true !default;
 
-$tablet-breakpoint: 641px !default;
-$desktop-breakpoint: 769px !default;
-
 @mixin media($size: false, $max-width: false, $min-width: false, $ignore-for-ie: false) {
   @if $is-ie and ($ignore-for-ie == false) {
     @if $size != mobile {
@@ -37,15 +34,15 @@ $desktop-breakpoint: 769px !default;
     }
   } @else {
     @if $size == desktop {
-      @media (min-width: $desktop-breakpoint){
+      @media (min-width: 769px){
         @content;
       }
     } @else if $size == tablet {
-      @media (min-width: $tablet-breakpoint){
+      @media (min-width: 641px){
         @content;
       }
     } @else if $size == mobile {
-      @media (max-width: $tablet-breakpoint - 1px){
+      @media (max-width: 640px){
         @content;
       }
     } @else if $max-width != false {

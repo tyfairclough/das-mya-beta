@@ -1,3 +1,6 @@
+<!-- header logged in -->
+
+<nav id="loggedIn" class="hidden">
 <div class="global-header-bar"></div>
 <div class="header-user">
 	<div class="header-inner">
@@ -17,7 +20,7 @@
 						<li><a href="/sprint/{{sprint}}/user/change-email.html">Change your email address</a></li>
 						<li><a href="/sprint/{{sprint}}/user/reset-password.html">Create a new password</a></li>
 						<li><a href="/sprint/{{sprint}}/user/invitations/all.html">View invitations (1)</a></li>
-						<li><a href="/sprint/{{sprint}}/index">Sign out</a></li>
+						<li id="signOut"><a href="/sprint/{{sprint}}/index">Sign out</a></li>
 					</ul>
 				</li>
                 <li class="top-level"><a href="#" class="js-toggle menu-closed" data-target="#nav-companies">Settings</a>
@@ -30,7 +33,7 @@
 
 			</ul>
 		</nav>
-                    <h2 class="heading-medium" style="margin: 10px 10px 10px 0;">Your levy account </h2>
+        <h2 class="heading-medium" style="margin: 10px 10px 10px 0;"><span class="company-name">Your levy account</span></h2>
 
 	</div>
 </div>
@@ -50,3 +53,21 @@
 		</nav>
 	</div>
 </div>
+</nav>
+
+<!-- header logged out -->
+<nav id="loggedOut" class="hidden">
+    <div class="global-header-bar"></div>
+    <div class="header-user">
+        <div class="header-inner">
+            <div class="service-info">
+                <div class="phase-banner-beta">
+                    <p>
+                        <strong class="phase-tag">BETA</strong>
+                        <span>This is a new service – your <a href="https://www.surveymonkey.co.uk/r/accessmylevysurvey" target="_blank">feedback</a> will help us to improve it. </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

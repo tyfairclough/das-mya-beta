@@ -9,12 +9,12 @@
 {% endblock %}
 
 {% block after_header %}
-{% include "sprint/"+sprint+"/includes/header-loggedout.html" %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
 {% endblock %}
 
 
 {% block content %}
-<main class="elements-index" id="content" role="main" tabindex="-1">
+<main class="check-mail" id="content" role="main" tabindex="-1">
   {% include "includes/link-back.html" %}
 
     <section id="notifications">
@@ -47,7 +47,7 @@
      
              <div class="form-group">
 
-                 <a href="/sprint/{{sprint}}/onboarding/companies-house.html" class="button" >Continue</a>
+                 <a href="/sprint/{{sprint}}/account/organisations/add.html" class="button" >Continue</a>
       </div>
 
 

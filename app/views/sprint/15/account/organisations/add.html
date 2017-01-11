@@ -20,7 +20,7 @@
     <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
   <ul class="error-summary-list">
     <li class="hidden"><a href="#chn">Company not found</a></li>
-    <li class="hidden"><a href="#chn">Enter a Companies House Number</a></li>
+    <li class="hidden"><a href="#chn">Enter a Companies House number</a></li>
     <li class="hidden"><a href="#ccn">Charity not found</a></li>
   </ul>
 </div>
@@ -55,15 +55,19 @@
         <div class="form-group error">
                 <label class="form-label-bold" for="chn">Enter Companies House number
                 <span class="error-message" id="companyNotFound">Company not found</span>
-                <span class="error-message" id="notValidCompany">Enter a Companies House Number</span>
+                <span class="error-message" id="notValidCompany">Enter a Companies House number</span>
                 </label>
 
                 <input class="form-control" name="chn" type="text" id="chn">
         </div>
-          <h4 class="heading-small">Don't know your Companies House number?</h4>
-            <p>You can <a href="https://beta.companieshouse.gov.uk" rel="external">search for your Companies House number</a><br>
-                or <a href="/sprint/{{sprint}}/account/organisations/manual-input.html" rel="external">enter your company details manually.</a></p>  
-      </div>
+          <p><a href="#">Search for your Companies House number</a>.</p>
+          
+          <section class="additional-help hidden" style="margin-top:20px;">
+          <h4 class="heading-small">Not on Companies House?</h4>
+                    <a href="/sprint/{{sprint}}/account/organisations/manual-input.html" rel="external">Enter your company details manually</a>.</p>  
+      
+          </section>
+                    </div>
 
       <label class="block-label" data-target="contact-by-phone" for="public-sector">
         <input id="public-sector" type="radio" name="radio-group" value="public">
@@ -89,18 +93,20 @@
         <input id="example-contact-by-phone" type="radio" name="radio-group" value="charity">
           Registered charity  
       </label>
-      <div class="panel panel-border-narrow" id="contact-by-phone">
-          <div class="form-group error">
-                            <label class="form-label-bold" for="ccn">Enter charity number
+      <div class="panel panel-border-narrow">
+          <div class="form-group error" id="charity-panel">
+                            <label class="form-label-bold" for="ccn">Enter Charity number
               <span class="error-message">Charity not found</span>
               </label>
         <input class="form-control" name="ccn" type="text" id="ccn">
               
           </div>
-                    <h4 class="heading-small">Don't know your charity number?</h4>
-            <p>You can <a href="beta.charitycommission.gov.uk/charity-search" rel="external">search for your charity number </a><br>
-                or <a href="/sprint/{{sprint}}/account/organisations/manual-input.html" rel="external">enter your charity details manually.</a></p>  
-        
+            <p><a href="beta.charitycommission.gov.uk/charity-search" rel="external">Search for your Charity number</a>.</p>
+
+          <section class="additional-help hidden" style="margin-top:20px;">
+          <h4 class="heading-small">Don't have a Charity number?</h4>
+                <a href="/sprint/{{sprint}}/account/organisations/manual-input.html" rel="external">Enter your charity details manually</a>.</p>  
+        </section>
           <!--<div class="form-group">
         <label class="form-label" for="contact-address">Address</label>
           <textarea class="form-control" name="contact-address"></textarea>
@@ -108,9 +114,9 @@
 -->
       </div>
 
-      <label class="block-label" data-target="contact-by-text" for="example-contact-by-text">
-        <input id="example-contact-by-text" type="radio" name="radio-group" value="No">
-          Sole trader, partnership or other
+      <label class="block-label" data-target="contact-by-text" for="sole-trader">
+        <input id="sole-trader" type="radio" name="radio-group" value="sole-trader">
+          Other
       </label>
 </div>
         </div>

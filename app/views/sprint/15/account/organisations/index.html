@@ -14,7 +14,7 @@
 
 
 {% block content %}
-<main class="elements-index" id="content" role="main" tabindex="-1">
+<main class="organisations-index" id="content" role="main" tabindex="-1">
 
     <section id="notifications">
     <div class="govuk-box-highlight hidden" id="org">
@@ -31,12 +31,14 @@
         </div>
     </section>
     
+    
  <div class="grid-row">
     <div class="column-two-thirds">
                     <div class="hgroup">
             <h1 class="heading-xlarge">Enable your organisations to spend levy</h1>
                         <p>Add the organisations that you want to hire apprentices through.</p>
                         <p>To spend levy funds on apprentices for an organisation, you need to sign an agreement for that organisation.</p>
+                        <p></p>
             </div>
   </div>
 
@@ -45,19 +47,16 @@
         
         </div>
 </div>
-    
-    <div class="grid-row">
-        <div class="column-two-thirds">
-            
+
+        <div id="orgTable"></div>
 
             
-            
-<table>
+<table class="hidden">
     <thead>
         <tr>
             <th scope="col" style="padding-top:0">Organisation</th>
-            <th scope="col" style="padding-top:0">Status</th>
-            <th></th>
+
+            <th>Activated on</th>
             <th></th>
             <th></th>
         </tr>
@@ -66,24 +65,23 @@
         <tr class="">
             <td class=""><span class="company-name">Acme Ltd Coventry</span>
             </td>
-            <td>Spending enabled</td>
-            <td><a href="/sprint/{{sprint}}/account/organisations/view.html">View</a></td>
+            <td><a href="/sprint/{{sprint}}/account/organisations/sign.html">Enable spending</a></td>
+
 
             <td><a href="/sprint/{{sprint}}/account/organisations/sign.html">Replace</a></td>        
         </tr>
-        <tr class="hidden">
+        <tr class="">
             <td class=""><span class="company-name">Acme Ltd Coventry</span>
             </td>
-            <td>Spending enabled</td>
-            <td><a href="/sprint/{{sprint}}/account/organisations/view.html">View</a></td>
+            <td>12 Jan 2014</td>
 
             <td><a href="/sprint/{{sprint}}/account/organisations/sign.html">Remove</a></td>        
         </tr>
-        <tr class="">
+        <tr class="hidden">
             <td class="">Acme Ltd Bradford
             </td>
-            <td><a href="/sprint/{{sprint}}/account/organisations/sign.html">Enable spending</a></td>
-                        <td><a href="/sprint/{{sprint}}/account/organisations/view.html">View</a></td>
+
+            <td><a href="/sprint/{{sprint}}/account/organisations/view.html">12 Jan 2014</a></td>
 <td><a href="/sprint/{{sprint}}/account/organisations/sign.html">Remove</a></td>
         </tr>
     </tbody>
@@ -92,8 +90,6 @@
             
             
             
-        </div>
-    </div>
 
 </main>
 {% endblock %}

@@ -50,14 +50,15 @@ $(document).ready(function () {
 
     
 
-    
-
    var className = $("#content").attr('class');
    switch(className){
        case 'index':
            // reset site
            localStorage.setItem("onboarding","0");
            localStorage.setItem("sessionState","0");
+break;
+       case 'manual-input':
+           manualInputName();
 break;
 case 'public-sector':
    // put directory stuff here
@@ -101,6 +102,10 @@ case 'organisations-address':
          window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html?orgtype=";
      });
 break;
+       case 'organisations-address-manual':
+           // manual stuff
+           organisationsAddressManual();
+break;
        case 'test':
                
     // get companies house number
@@ -127,7 +132,10 @@ case 'organisations-question':
                e.preventDefault();
                orgQuestion();
            })
-break;           
+break; 
+       case 'organisations-index':
+           organisationsIndex();
+break;
        case 'before-you-start':
            $(".button").click(function(e){
                e.preventDefault();
@@ -138,10 +146,16 @@ break;
            renameAccount();
 break;
        case 'check-mail':
-           checkMail();
+           //checkMail();
 break;
        case 'sign-agreement':
            signAgreement();
+break;
+       case 'zxcvbn':
+           captureUserData();
+break;
+       case 'login' :
+           loginUser();
 break;
 default: break;
    };
@@ -151,6 +165,131 @@ default: break;
     
     
       // my functions
+    
+    function organisationsIndex() {
+        
+        
+ 
+
+                    if (localStorage.getItem("organisations") === null) {
+                    console.log("no orgs found")
+                    } else {
+                        var orgArray = [];
+                        orgArray = JSON.parse(localStorage.getItem("organisations"));
+
+                        
+                        
+                        var $table = $( "<table></table>" );
+    var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th>Activated on</th><th></th><th></th></tr></thead>");                
+    $table.append( $head );
+
+                        
+for ( var i = 0; i < orgArray.length; i++ ) {
+    var orgName = orgArray[i];
+    var $line = $( "<tr></tr>" );
+    $line.append( $( "<td></td>" ).html( orgName ) );
+    $line.append( $( "<td>12 Jan 2014</td>" ) );
+    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"'>Remove</a></td>" ) );
+    $table.append( $line );
+}
+
+
+$table.appendTo( document.body );
+
+// if you want to insert this table in a div with id attribute 
+// set as "myDiv", you can do this:
+$table.appendTo( $( "#orgTable" ) );
+                        
+                    }
+            var orgArray = []
+            orgArray = JSON.parse(localStorage.getItem("organisations"));
+            
+            $("table a").click(function(e){
+            e.preventDefault();
+            //get the number of the row
+            var rowNum = $(this).attr("id");
+            //var rowNum = $(this).id;
+            // splice that row
+            console.log(rowNum);
+            orgArray.splice(rowNum,1);
+                localStorage.setItem("organisations", JSON.stringify(orgArray));
+              window.location.href = "/sprint/{{sprint}}/account/organisations/index.html";
+        });
+        
+    }
+    
+    function loginUser() {
+        $(".button").click(function(e){
+              e.preventDefault();
+              sessionState = localStorage.setItem("sessionState","1");
+              sessionState = localStorage.setItem("onboarding","0");            
+              window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html";
+        })
+
+    }
+    
+    function organisationsAddressManual() {
+    }
+    
+    
+    function manualInputName() {
+        $(".error-summary, .error-message").addClass("hidden");
+        $(".form-group").removeClass("error");
+        
+        $(".button").click(function(e){
+          e.preventDefault();
+            var orgName = $("#name").val();
+            addOrg(orgName);
+            
+        localStorage.setItem("organisation-name", JSON.stringify(orgName));
+            window.location.href = "/sprint/{{sprint}}/account/organisations/address.html";
+        })
+        
+    }
+    
+    
+    function addOrg(orgName) {
+        
+        // This function takes a name and adds it to a list of organisations in an array
+            var orgArray = new Array;
+
+            //find out if there is a local storage for orgs already
+            if (localStorage.getItem("organisations") === null) {
+                orgArray.push(orgName);
+                localStorage.setItem("organisations", JSON.stringify(orgArray));
+
+            } else {                
+                //orgArray = JSON.parse("["+localStorage.getItem("organisations")+"]");
+                orgArray = JSON.parse(localStorage.getItem("organisations"));
+                //orgArray.push(orgName);
+                orgArray.push(orgName);
+                localStorage.setItem("organisations", JSON.stringify(orgArray));
+            }
+    }
+    
+    
+    function captureUserData() {
+        
+        $(".zxcvbn .button").click(function(e){
+    e.preventDefault();
+        var name = $("#users-name").val();
+        var email = $("#email-address").val(); 
+        var password = $("#password").val(); 
+    if ( email == "ty.fairclough@gmail.com" ) {
+        $("#emailGroup").addClass("error");
+        $("#emailError1").show().removeClass("hidden");
+        $(".error-summary").show().removeClass("hidden");
+        
+    } else {
+        // store field inputs into local storage
+                    localStorage.setItem("user.name", JSON.stringify(name));           
+                    localStorage.setItem("user.email", JSON.stringify(email));           
+                    localStorage.setItem("user.password", JSON.stringify(password));  
+                    window.location.href = "/sprint/{{sprint}}/onboarding/check-mail.html";                           
+    }
+});
+    }
+    
     
     headerNav();
     
@@ -223,7 +362,7 @@ default: break;
                           if ( $('input[name=radio-group]:checked', 'form').val() == "no" ) {
                                 window.location.href = "/sprint/{{sprint}}/onboarding/not-ready.html";                           
                           } else {
-                                window.location.href = "/sprint/{{sprint}}/onboarding/zxcvb.html";    
+                                window.location.href = "/sprint/{{sprint}}/onboarding/zxcvbn.html";    
                           }            
         }
     
@@ -254,7 +393,7 @@ default: break;
                     //check if company is limited, royal charter or ip
                     var chn = $("#chn").val();
                             localStorage.setItem("organisation-number", JSON.stringify(chn));
-                    
+
                     
                     var chnNumber = $("#chn").val().length;
 
@@ -279,7 +418,10 @@ default: break;
                             console.log("number isn't right length");
                             //window.location.href = "/sprint/{{sprint}}/account/organisations/manual-input.html";            
                             $("#limited-group .form-group").addClass("error");
-                            $("#limited-group .form-group .visually-hidden").removeClass("visually-hidden");
+                            $("#companyNotFound").removeClass("hidden");
+                            $(".additional-help").removeClass("hidden");
+                            $(".error-summary").removeClass("hidden");
+                            $(".error-summary ul li").eq(0).removeClass("hidden");
                     }
                     else {
                             localStorage.setItem("organisation-type", JSON.stringify("ltd"));
@@ -291,12 +433,25 @@ default: break;
                             localStorage.setItem("organisation-number", JSON.stringify("12345678"));                    
                             localStorage.setItem("organisation-type", JSON.stringify("public"));
                             window.location.href = "/sprint/{{sprint}}/account/organisations/public-sector-search.html";                
-                } else {
+                } else if ( $('input[name=radio-group]:checked', 'form').val() == "sole-trader" ) {
+                            window.location.href = "/sprint/{{sprint}}/account/organisations/manual-input.html";                                                       
+                }
+                else {
                     //charity
                     var ccn = $("#ccn").val();
+                    
+                    if (ccn.length == 0 ) {
+                        //alert("no charity entered")   ;
+                            $(".error-summary").removeClass("hidden");
+                            $(".error-summary ul li").eq(2).removeClass("hidden");
+                        $("#charity-panel").addClass("error");
+                        $("#charity-panel label span").removeClass("hidden");
+                        $("#charity-panel + p + .additional-help").removeClass("hidden");
+                    } else {
                             localStorage.setItem("organisation-number", JSON.stringify(ccn));                    
                             localStorage.setItem("organisation-type", JSON.stringify("charity"));
                             window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html?orgtype=charity";                        
+                    }
                 }
 
             };
@@ -377,6 +532,16 @@ default: break;
         $('#results').html(contentTop + stn + contentBottom + helpText);
         getPublicSearchCount(keyword);
         disabledAddedPublicOrgs();
+        
+        $("ul a").click(function(e){
+            e.preventDefault();
+            var orgName = $(this).text();
+            var href = this.href;
+            addOrg(orgName);
+            localStorage.setItem("organisation-name", orgName);
+            window.location.href = href;
+        })
+
     }
 
     
@@ -771,14 +936,7 @@ var chart = c3.generate({
         default: break;
    }
            
-            
-    $(".orgnumber").text(JSON.parse(localStorage.getItem("organisation-number")));
-   $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
-   $(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));
-    $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
-             
-    
-    
+   
     // notifications site wide
         if ( newLevyAccount == "y" ) {
             $("#accountCreated").removeClass("hidden");
@@ -817,25 +975,7 @@ var chart = c3.generate({
     
    
     
-$(".zxcvb .button").click(function(e){
-    e.preventDefault();
-        var name = $("#users-name").val();
-        var email = $("#email-address").val(); 
-        var password = $("#password").val(); 
-    if ( email == "ty.fairclough@gmail.com" ) {
-        $("#emailGroup").addClass("error");
-        $("#emailError1").show().removeClass("hidden");
-        $(".error-summary").show().removeClass("hidden");
-        
-    } else {
-        // store field inputs into local storage
-                    localStorage.setItem("users-name", JSON.stringify(name));           
-                    localStorage.setItem("users-email", JSON.stringify(email));           
-                    localStorage.setItem("users-password", JSON.stringify(password));           
 
-                                window.location.href = "/sprint/{{sprint}}/onboarding/check-mail.html";                           
-    }
-});
     
 var myElement = document.getElementById('peak');
 
@@ -1012,7 +1152,20 @@ console.log("score is " + resultScore)
         }
         return true;
     }); */
-
+         
+    function organisationName(){
+    $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
+   $(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));    
+    }
+    
+    $(".orgnumber").text(JSON.parse(localStorage.getItem("organisation-number")));
+   $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
+   $(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));
+    $(".user-name").text(JSON.parse(localStorage.getItem("user.name")));
+    $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
+             
+    
+    
    
     
 </script>

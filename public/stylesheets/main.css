@@ -2838,7 +2838,7 @@ tr.total td {
   margin-bottom: 5px;
 }
 
-.sprint-11 #checklist .statusToDo {
+.sprint-11 #checklist .statusToDo, .sprint-15 #checklist .statusToDo {
   background: black;
   color: white;
   padding: 3px 5px;
@@ -2848,7 +2848,7 @@ tr.total td {
   text-align: center;
 }
 
-.sprint-11 #checklist td:last-child {
+.sprint-11 #checklist td:last-child, .sprint-15 #checklist td:last-child {
   padding-right: 0;
 }
 
@@ -2938,7 +2938,7 @@ span.notification {
   background: #bfd7e9;
 }
 
-.zxcvb .passwordContainer {
+.zxcvbn .passwordContainer {
   position: relative;
   float: left;
   width: 100%;
@@ -2946,14 +2946,14 @@ span.notification {
   overflow: visible;
 }
 
-.zxcvb .passwordContainer #password {
+.zxcvbn .passwordContainer #password {
   width: 100%;
   box-sizing: border-box;
   float: left;
   padding-right: 20%;
 }
 
-.zxcvb .passwordContainer .show-pw {
+.zxcvbn .passwordContainer .show-pw {
   border-left: 2px solid #0B0C0C;
   border-right: none;
   box-sizing: border-box;
@@ -2973,7 +2973,7 @@ span.notification {
   line-height: 23px;
 }
 
-.zxcvb .passwordContainer .peakHelp {
+.zxcvbn .passwordContainer .peakHelp {
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -2990,7 +2990,7 @@ span.notification {
   top: 2px;
 }
 
-.zxcvb .passwordContainer .password-strength {
+.zxcvbn .passwordContainer .password-strength {
   display: block;
   border: 2px solid #6f777b;
   box-sizing: border-box;
@@ -3001,17 +3001,17 @@ span.notification {
   float: left;
 }
 
-.zxcvb .passwordContainer p {
+.zxcvbn .passwordContainer p {
   float: left;
   clear: both;
 }
 
-.zxcvb .show-pw.hide-pw {
+.zxcvbn .show-pw.hide-pw {
   background: #6f777b;
   color: white;
 }
 
-.zxcvb .password-strength {
+.zxcvbn .password-strength {
   display: block;
   border: 2px solid #6f777b;
   box-sizing: border-box;
@@ -3020,7 +3020,7 @@ span.notification {
   border-top: 0;
 }
 
-.zxcvb .password-strength span {
+.zxcvbn .password-strength span {
   width: 20%;
   box-sizing: border-box;
   background: transparent;
@@ -3030,40 +3030,40 @@ span.notification {
   -webkit-transition: width 2s, background-color 1s;
 }
 
-.zxcvb .password-strength .veryweak {
+.zxcvbn .password-strength .veryweak {
   background: #B10E1E;
 }
 
-.zxcvb .password-strength .weak {
+.zxcvbn .password-strength .weak {
   background: #F47738;
 }
 
-.zxcvb .password-strength .good {
+.zxcvbn .password-strength .good {
   background: #2B8CC4;
 }
 
-.zxcvb .password-strength .strong {
+.zxcvbn .password-strength .strong {
   background: #28A197;
 }
 
-.zxcvb .password-strength .verystrong {
+.zxcvbn .password-strength .verystrong {
   background: #006435;
 }
 
-.zxcvb .pw-strength {
+.zxcvbn .pw-strength {
   font-weight: 900;
 }
 
-.zxcvb + p {
+.zxcvbn + p {
   color: #6f777b;
 }
 
-.zxcvb + p .span {
+.zxcvbn + p .span {
   color: #0b0c0c;
   font-weight: 900;
 }
 
-.zxcvb #passwordgroup .popover {
+.zxcvbn #passwordgroup .popover {
   position: relative;
   display: none;
   left: 0;
@@ -3075,11 +3075,11 @@ span.notification {
   margin-bottom: 20px;
 }
 
-.zxcvb #passwordgroup .popover p {
+.zxcvbn #passwordgroup .popover p {
   margin-bottom: 10px;
 }
 
-.zxcvb #passwordgroup .popover .arrow {
+.zxcvbn #passwordgroup .popover .arrow {
   width: 0;
   height: 0;
   border-style: solid;
@@ -3091,7 +3091,7 @@ span.notification {
   margin: 0 auto;
 }
 
-.zxcvb #passwordgroup .popover .fa-circle {
+.zxcvbn #passwordgroup .popover .fa-circle {
   color: black;
   font-size: 0.35em !important;
   top: -4px;
@@ -3099,7 +3099,7 @@ span.notification {
   margin: 0 10px 0 5px;
 }
 
-.zxcvb #passwordgroup .popover .fa-check-circle {
+.zxcvbn #passwordgroup .popover .fa-check-circle {
   color: #00823b;
   font-size: 1em !important;
   top: 0;
@@ -3108,11 +3108,11 @@ span.notification {
 }
 
 @media (min-width: 960px) {
-  .zxcvb #passwordgroup .popover {
+  .zxcvbn #passwordgroup .popover {
     border-bottom: none;
     border-left: 4px solid #005ea5;
   }
-  .zxcvb #passwordgroup .popover .arrow {
+  .zxcvbn #passwordgroup .popover .arrow {
     border-width: 10px 17.3px 10px 0;
     border-color: transparent #005ea5 transparent transparent;
     position: absolute;
@@ -3122,10 +3122,10 @@ span.notification {
 }
 
 @media (min-width: 641px) {
-  .zxcvb .passwordContainer {
+  .zxcvbn .passwordContainer {
     width: 50%;
   }
-  .zxcvb .passwordContainer .show-pw {
+  .zxcvbn .passwordContainer .show-pw {
     font-size: 18px;
     padding: 5px 10px 6px;
     line-height: 25px;
@@ -3149,7 +3149,7 @@ span.notification {
     margin-right: 0%;
     width: 50%;
   }
-  .zxcvb .password-strength {
+  .zxcvbn .password-strength {
     width: 50%;
   }
 }
@@ -3174,10 +3174,10 @@ span.notification {
     margin-right: 0%;
     width: 50%;
   }
-  .zxcvb #passwordgroup {
+  .zxcvbn #passwordgroup {
     position: relative;
   }
-  .zxcvb #passwordgroup .popover {
+  .zxcvbn #passwordgroup .popover {
     position: absolute;
     left: 55%;
     background: #f8f8f8;

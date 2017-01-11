@@ -182,7 +182,7 @@ Manage your account
  
 </div>
     
-<div class="grid-row page-dashboard">
+<div class="grid-row page-dashboard hidden">
             <div class="hgroup">
                 <h1 class="heading-xlarge">Manage your account</h1>
                 <hr style="border-bottom: 5px #DEE0E2 solid; background: none;" />
@@ -253,8 +253,104 @@ Manage your account
         </section>
     </div>
 </div>    
-    
 
+    
+                <div class="hgroup">
+                <h1 class="heading-xlarge">Manage your account</h1>
+                <hr style="border-bottom: 5px #DEE0E2 solid; background: none;" />
+            </div>
+   <div class="grid-row">
+
+
+        
+        <div class="column-one-half">
+
+            
+            
+            <h3 class="heading-medium" style="margin-top: 0;"><a href="/sprint/{{sprint}}/account/finance/index">Finance</a></h3>
+            <p>View transactions and forecast your funds.</p>
+            
+            <h3 class="heading-medium" style="margin-top: 0"><a href="/sprint/{{sprint}}/account/apprentices/index">Manage your apprentices</a></h3>
+            <p>Update the status of your apprentices, or recruit new ones.</p>            
+            
+            <h3 class="heading-medium" style="margin-top: 0;"><a href="/sprint/{{sprint}}/account/organisations/index">Enable your organisations to spend levy</a></h3>
+            <p>Add and manage organisations that’ll hire apprentices.</p>
+
+            
+            <h3 class="heading-medium" style="margin-top: 0"><a href="/sprint/{{sprint}}/account/paye/index">Manage PAYE schemes</a></h3>
+            <p>Access funds by adding PAYE schemes.</p>
+
+            <h3 class="heading-medium" style="margin-top: 0">
+            <a href="/sprint/{{sprint}}/account/team/index">Manage your team</a></h3>
+            <p>Control what your team can do and invite new team members.</p>
+
+        </div>
+        
+        <div class="column-one-half">
+       
+            
+            <!--
+                    <h5 class="heading-small">Enable spending</h5>
+                        <p></p>You need to <a href="#">sign <span class="count">1</span> agreement.</a>
+                  
+
+                    <h5 class="heading-xsmall">Enable spending</h5>
+                    <p>You need to <a href="#">sign <span class="count">3</span> agreements.</a></p>
+               
+
+                    <h5 class="heading-xsmall">Enable spending</h5>
+                    <p><a href="#"><span class="count">1</span> agreement needs to be signed.</a></p>
+               
+
+                    <h5 class="heading-xsmall">Enable spending</h5>
+                    <p><a href="#"><span class="count">3</span> agreements needs to be signed.</a></p>
+            -->
+
+        <aside id="checklist" class="related">
+            <h4 class="heading-medium">Checklist</h4>    
+<table class="">
+                          <thead>
+                            <tr>
+                              <th scope="col" style="padding-top:0"></th>
+                               <th scope="col" style="padding-top:0"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+
+                             <tr id="" class="">
+                              <td>You need to <a href="/sprint/{{sprint}}/account/organisations/index">sign <span class="count">1</span> agreement.</a></td>
+                                <td class="looks-like-a-link-underline"></td>
+                              </tr>
+                             <tr>
+                              <td><a href="/sprint/{{sprint}}/account/team/index">Invite team members.</a></td>
+                                <td>
+                                  <span id="teamMemberOne" class="statusToDo visually-hidden">1 Team member added</span>
+                                  <span id="teamMemberTwo" class="statusToDo rj-dont-display">2 Team members added</span>
+                                </td>
+                              </tr>
+                              <tr>
+                              <!--quick hack, will fix -->
+                              <td><a href="/sprint/{{sprint}}/account/finance/index">Forecast your funds</a></td>
+                               <td> <span id="forecastComplete" class="statusToDo rj-dont-display">Forecast added on 20 May 2017</span> </td>
+                              </tr>
+
+                             <tr id="trainingProviders" class="rj-dont-display">
+                              <td><a href="http://www.findapprenticeshiptraining.sfa.bis.gov.uk">Explore training and find a provider.</a></td>
+                                <td class="looks-like-a-link-underline"></td>
+                              </tr>
+
+                              <tr id="endpointAssessment" class="rj-dont-display">
+                              <td><a href="https://www.gov.uk/government/collections/register-of-apprentice-assessment-organisations#employers-looking-for-an-assessment-organisation" rel="external">Learn more about Endpoint Assesment.</a></td>
+                                <td class="looks-like-a-link-underline"></td>
+                              </tr>
+
+
+                          </tbody>
+                      </table>
+        </aside>
+        </div>
+ 
+</div>
     
 
 </main><!-- / #content -->

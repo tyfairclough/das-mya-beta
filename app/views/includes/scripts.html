@@ -29,7 +29,8 @@
 
 <script>
     
-    
+           
+  
     
     
     
@@ -46,11 +47,9 @@ $(document).ready(function () {
     var msgPlural = 'are';
 
     var paginateCount = 5;
-
-
+    var className = $("#content").attr('class');
     
-
-   var className = $("#content").attr('class');
+    
    switch(className){
        case 'index':
            // reset site
@@ -161,6 +160,14 @@ default: break;
    };
     
     
+    
+    // Global string replacements    
+$(".orgnumber").text(JSON.parse(localStorage.getItem("organisation-number")));
+$(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
+$(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));
+$(".user-name").text(JSON.parse(localStorage.getItem("user.name")));
+$(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
+  
     
     
     
@@ -722,9 +729,7 @@ var chart = c3.generate({
 });
      
     
-</script>
 
-<script>
     // get & set sprint
     var sprint = {{sprint}};
     localStorage.setItem("sprint", JSON.stringify(sprint));
@@ -882,14 +887,7 @@ var chart = c3.generate({
             location.reload();
         });
         };
-    
-
-    
-    
-    
-    
-  
-    
+   
     
     /*
     // label switching site wide
@@ -1040,12 +1038,7 @@ $("#password").focusin(function(){
         }
         return true;
     })
-    i = 0;
-    
-    
-
-    
-    
+    i = 0;   
     
     $(".password-strength span").hide();
    
@@ -1157,14 +1150,7 @@ console.log("score is " + resultScore)
     $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
    $(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));    
     }
-    
-    $(".orgnumber").text(JSON.parse(localStorage.getItem("organisation-number")));
-   $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
-   $(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));
-    $(".user-name").text(JSON.parse(localStorage.getItem("user.name")));
-    $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
-             
-    
+  
     
    
     

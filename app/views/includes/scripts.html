@@ -187,7 +187,7 @@ $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-ad
                         
                         
                         var $table = $( "<table></table>" );
-    var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th>Activated on</th><th></th><th></th></tr></thead>");                
+    var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th>Spending status </th><th></th></tr></thead>");                
     $table.append( $head );
 
                         
@@ -195,8 +195,8 @@ for ( var i = 0; i < orgArray.length; i++ ) {
     var orgName = orgArray[i];
     var $line = $( "<tr></tr>" );
     $line.append( $( "<td></td>" ).html( orgName ) );
-    $line.append( $( "<td>12 Jan 2014</td>" ) );
-    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"'>Remove</a></td>" ) );
+    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/sign.html'>Enable spending</a></td>" ) );
+    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
     $table.append( $line );
 }
 
@@ -211,7 +211,7 @@ $table.appendTo( $( "#orgTable" ) );
             var orgArray = []
             orgArray = JSON.parse(localStorage.getItem("organisations"));
             
-            $("table a").click(function(e){
+            $("table a.remove").click(function(e){
             e.preventDefault();
             //get the number of the row
             var rowNum = $(this).attr("id");
@@ -231,8 +231,7 @@ $table.appendTo( $( "#orgTable" ) );
               sessionState = localStorage.setItem("sessionState","1");
               sessionState = localStorage.setItem("onboarding","0");            
               window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html";
-        })
-
+        });
     }
     
     function organisationsAddressManual() {

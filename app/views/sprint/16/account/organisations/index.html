@@ -35,10 +35,11 @@
  <div class="grid-row">
     <div class="column-two-thirds">
                     <div class="hgroup">
-            <h1 class="heading-xlarge">Enable your organisations to spend levy</h1>
-                        <p>Add the organisations that you want to hire apprentices through.</p>
-                        <p>To spend levy funds on apprentices for an organisation, you need to sign the SFA agreement for that organisation.</p>
-                        <p><a href="#">Read the SFA agreement</a>.</p>
+            <h1 class="heading-xlarge">Your organisations</h1>
+                        <p>Add the organisations that will hire apprentices.</p>
+                        <p>Before May 2017 you’ll be asked to accept an agreement for each of your organisations that will spend levy funds. This agreement will allow the SFA to pay your training providers.</p>
+                        <p>We’ll tell you when the agreement is available to read.</p>
+                        <p class="hidden"><a href="#">Read the SFA agreement</a>.</p>
             </div>
   </div>
 
@@ -47,9 +48,12 @@
         
         </div>
 </div>
-
-        <div id="orgTable"></div>
-
+    <style>
+        .table:not(#orgTable2)
+            { display: none; }
+        tr td + td, th + th { display: none; }
+    </style>
+<div class="table" id="orgTable2"><table><thead><tr><th scope="col" style="padding-top:0">Organisation</th><th>Spending status </th><th></th></tr></thead><tr><td>Home buying Ltd</td><td><a href="/sprint/16/account/organisations/sign.html">Enable spending</a></td><td><a href="/sprint/16/account/organisations/sign.html" id="0" class="remove">Remove</a></td></tr></table></div>
             <a class="button" href="/sprint/{{sprint}}/account/organisations/add.html" id="">Add new organisation</a>         
 <table class="hidden">
     <thead>

@@ -14,9 +14,10 @@
 
 
 {% block content %}
-<main class="elements-index" id="content" role="main" tabindex="-1">
-  {% include "includes/breadcrumb.html" %}
+<main class="history" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
 
+    
         <div class="hgroup">
       <h1 class="heading-large">
           Your transactions
@@ -24,13 +25,13 @@
 
         <div class="data" style="float: left; background: #2E358B; color: white; padding: 20px 10px; margin-right: 10px; width: 30%">
                     <h2 class="bold-xlarge">£10,500</h2>
-                    <h2 class="bold-small">Your contribution still to spend</h2>
+                    <h2 class="bold-small">Unused levy</h2>
                 <div class="lighter font-xsmall" style="background: rgba(255,255,255,0.2); margin: 5px -10px -20px; padding: 10px;">Next 3 months commitments</div>
         </div>
         <div class="data" style="float: left; background: #912B88; color: white; padding: 20px 10px; margin-right: 10px; width: 30%">
                     <h2 class="bold-xlarge">£20,095</h2>
                     <h2 class="bold-small">Free bonus claimed</h2>
-                <div class="lighter font-xsmall" style="background: rgba(255,255,255,0.2); margin: 5px -10px -20px; padding: 10px;">Hire more to claim more</div>
+                <div class="lighter font-xsmall" style="background: rgba(255,255,255,0.2); margin: 5px -10px -20px; padding: 10px;">Hire more, claim more</div>
         </div>
             
         <div class="data" style="background: gray; padding: 5px; float: left; width: 33%; display:none;">
@@ -45,7 +46,6 @@
                         <th scope="col"><span class="no-wrap">Payment date</span></th>
                         <th scope="col" class="mobile-hide-cell">Description</th>
                         <th scope="col" class="numeric">Amount</th>
-                        <th scope="col" class="numeric">Balance</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -60,7 +60,6 @@
                                 </span>
                             </td>
                             <td class="numeric"> £0.00 </td>
-                            <td class="numeric">£0.00</td>
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 Apr 2018" href="/sprint/{{sprint}}/account/finance/credit-details.html">
                                         Details <span class="vh"> for the transaction on 15 Apr 2018</span>
@@ -76,27 +75,9 @@
                                     Acme Training Limited
                                 </span>
                             </td>
-                            <td class="numeric"> £900.00 </td>
-                            <td class="numeric">£900.00</td>
+                            <td class="numeric"> -£900.00 </td>
                             <td class="numeric">
-                                    <a title="View details for the transaction on 15 Mar 2018" href="/sprint/{{sprint}}/account/finance/credit-details.html">
-                                        Details <span class="vh"> for the transaction on 15 Mar 2018</span>
-                                    </a>
-                            </td>
-                        </tr>
-                    <tr>
-                            <td>
-                                <span class="no-wrap"> 15 Mar 2018 </span>
-                            </td>
-                            <td class="mobile-hide-cell">
-                                <span class="description">
-                                    Acme Training Limited - co-funding
-                                </span>
-                            </td>
-                            <td class="numeric"> -£90.00 </td>
-                            <td class="numeric"> </td>
-                            <td class="numeric">
-                                    <a title="View details for the transaction on 15 Mar 2018" href="/sprint/{{sprint}}/account/finance/credit-details.html">
+                                    <a title="View details for the transaction on 15 Mar 2018" href="/sprint/{{sprint}}/account/finance/payment-details.html">
                                         Details <span class="vh"> for the transaction on 15 Mar 2018</span>
                                     </a>
                             </td>
@@ -111,7 +92,6 @@
                                 </span>
                             </td>
                             <td class="numeric"> £0.00 </td>
-                            <td class="numeric">£0.00</td>
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 Feb 2018" href="/sprint/{{sprint}}/account/finance/credit-details.html">
                                         Details <span class="vh"> for the transaction on 15 Feb 2018</span>
@@ -128,7 +108,6 @@
                                 </span>
                             </td>
                             <td class="numeric"> -£1,375.00 </td>
-                            <td class="numeric">£0.00</td>
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 Jan 2018" href="/sprint/{{sprint}}/account/finance/adjustment-details.html">
                                         Details <span class="vh"> for the transaction on 15 Jan 2018</span>
@@ -146,7 +125,6 @@
                                 </span>
                             </td>
                             <td class="numeric"> £11,000.00 </td>
-                            <td class="numeric">£11,000.00</td>
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 May 2017" href="/sprint/{{sprint}}/account/finance/credit-details.html">
                                         Details <span class="vh"> for the transaction on 15 May 2017</span>

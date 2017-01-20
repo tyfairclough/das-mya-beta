@@ -166,7 +166,14 @@ default: break;
 $(".orgnumber").text(JSON.parse(localStorage.getItem("organisation-number")));
 $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
 $(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));
-$(".user-name").text(JSON.parse(localStorage.getItem("user.name")));
+
+    
+    if ( JSON.parse(localStorage.getItem("user.name")) != "" ) {
+        $(".user-name").text(JSON.parse(localStorage.getItem("user.name")));        
+    } else {
+        $(".user-name").text("Your profile");        
+    }
+    
 $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
   
     

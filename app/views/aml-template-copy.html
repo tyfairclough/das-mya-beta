@@ -47,7 +47,7 @@
       
     </div>
 
-    
+    {%block header %} 
     <header role="banner" id="global-header" class="">
         <div class="header-wrapper">
 <div class="header-global">
@@ -64,7 +64,7 @@
             </div>
         </div>
     </header>
-
+{% endblock %}
     {% block after_header %}
     	<div id="global-header-bar"></div>
     {% endblock %}
@@ -72,7 +72,7 @@
     
 
     {% block content %}{% endblock %}
-
+      {% block footer %} 
     <footer class="group js-footer" id="footer" role="contentinfo">
 
       <div class="footer-wrapper">
@@ -103,7 +103,7 @@
         </div>
       </div>
     </footer>
-
+{% endblock %}
     <div id="global-app-error" class="app-error hidden"></div>
 
     <script src="{{ asset_path }}javascripts/govuk-template.js?0.19.1"></script>
@@ -111,6 +111,8 @@
 
     {% block body_end %}{% endblock %}
       {% block sprint_js %}{% endblock %}
+      
+
 
     
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>

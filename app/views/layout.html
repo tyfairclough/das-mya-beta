@@ -15,6 +15,9 @@
 {% endblock %}
 
 {% block body_end %}
-  {% include "includes/scripts.html" %}
+
+{% include "sprint/"+sprint+"/includes/scripts.html" ignore missing %}
+
+hello world {{sprint}}
 {% endblock %}
 

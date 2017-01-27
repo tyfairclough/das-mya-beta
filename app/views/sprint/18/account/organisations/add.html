@@ -25,24 +25,28 @@
   </ul>
 </div>
     
+    <div class="grid-row">
+        <div class="column-two-thirds">
+                  <div class="hgroup">
+          <h1 class="heading-large">Add an organisation</h1>
+          <p>Add an organisation that'll make agreements with training providers. </p>
+              
+          </div>
+        </div>
+    </div>
   <div class="grid-row">
 
       
       <div class="column-two-thirds v2">
-          <div class="hgroup">
-          <h1 class="heading-large">Add an organisation</h1>
-          </div>
+
              <form action="">
             
 
-  <div class="form-group">
+  <div>
 
-
-      <legend class="bold-small">Select your organisation type
-
-
-</legend>
-           
+<div class="form-group">
+      <legend class="bold-small">Select your organisation type</legend>
+</div>
         <div class="form-group">
 
 
@@ -52,7 +56,10 @@
           <div class="font-xsmall" style="color: gray">Limited company, public limited company, royal charter, or industrial and provident organisation</div>
       </label>
       <div class="panel panel-border-narrow" id="limited-group">
-        <div class="form-group error">
+          <p style="background: #d5e8f3; font-size: 19px; border-left: 10px solid #2b8cc4; padding: 0.7894736842em;">Organisations of different types are not usually connected. Confirm that yours are before going ahead</p>
+          
+     
+          <div class="form-group error">
                 <label class="form-label-bold" for="chn">Enter Companies House number
                 <span class="error-message" id="companyNotFound">Company not found</span>
                 <span class="error-message" id="notValidCompany">Enter a Companies House number</span>
@@ -73,27 +80,28 @@
         <input id="public-sector" type="radio" name="radio-group" value="public">
           Public sector organisation 
       </label>
-<!--      <div class="panel panel-border-narrow" id="contact-by-phone">
-              <p>Tell users they need to add their name and address as it appears on the ONS public sector classification guide.</p>
-          <p class="font-xsmall"><a href="https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/datasets/publicsectorclassificationguide" rel="external">link to the ONS Public Sector Classification Guide</a></p>
+<div class="panel panel-border-narrow" id="contact-by-phone">
+    
+              <p style="background: #d5e8f3; font-size: 19px; border-left: 10px solid #2b8cc4; padding: 0.7894736842em;">Organisations of different types are not usually connected. Confirm that yours are before going ahead</p>
+
           <div class="form-group">
 
-              <label class="form-label" for="contact-phone">Name of public sector body</label>
+              <label class="form-label" for="contact-phone">Enter organisation's name</label>
         <input class="form-control" name="contact-phone" type="text" id="contact-phone">
           </div>
-          <div class="form-group">
-                      <label class="form-label" for="contact-address">Address</label>
-          <textarea class="form-control" name="contact-address"></textarea>
-          </div>
-          
+        
       </div>
-            -->
+
             
       <label class="block-label" data-target="contact-by-phone" for="example-contact-by-phone">
         <input id="example-contact-by-phone" type="radio" name="radio-group" value="charity">
           Registered charity  
       </label>
       <div class="panel panel-border-narrow">
+                        <p style="background: #d5e8f3; font-size: 19px; border-left: 10px solid #2b8cc4; padding: 0.7894736842em;">Organisations of different types are not usually connected. Confirm that yours are before going ahead</p>
+          
+                        <p style="background: #d5e8f3; font-size: 19px; border-left: 10px solid #2b8cc4; padding: 0.7894736842em;">Only incorporated charities should be added. Unincorporated charities trusts will not be able to sign the employer agreement.</p>
+
           <div class="form-group error" id="charity-panel">
                             <label class="form-label-bold" for="ccn">Enter Charity number
               <span class="error-message">Charity not found</span>
@@ -118,6 +126,10 @@
         <input id="sole-trader" type="radio" name="radio-group" value="sole-trader">
           Other
       </label>
+                 <div class="panel panel-border-narrow">
+                                             <p style="background: #d5e8f3; font-size: 19px; border-left: 10px solid #2b8cc4; padding: 0.7894736842em;">Organisations of different types are not usually connected. Confirm that yours are before going ahead</p>
+
+                 </div>
 </div>
         </div>
 
@@ -126,6 +138,27 @@
 </form>
           
       </div>
+<div class="column-third">
+    <div class="related">
+
+<br >        
+        
+        <div class="notice">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+Only add <a href="https://www.gov.uk/government/publications/employment-allowance-more-detailed-guidance">'connected organisations'</a> that have control of each other or that are under the control of the same people. </strong>
+</div>
+        <br >
+        <div class="notice">
+  <strong class="bold-small">
+Unincorporated charities are not accepted.
+ </strong>
+</div>
+
+<p></p></div>
+    
   </div>
 
 </main>

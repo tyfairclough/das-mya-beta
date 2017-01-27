@@ -305,25 +305,66 @@
 <div class="grid-row">
     <div class="column-two-thirds">
         <div class="hgroup">
-            <h1 class="heading-large">Sign agreement</h1>
-            <p>I am authorised on behalf of <span class="company-name bold-small">Acme Ltd Coventry</span> to sign this levy agreement.</p>
+            
+        <form>
+  <fieldset>
+
+    <legend class="visually-hidden">Accept the agreement</legend>
+    
+            <h1 class="heading-large">Accept the agreement</h1>
+            
+<table class="top-border">
+                <tbody>
+                    <tr>
+                    <th scope="row">
+                        Name:
+                    </th>
+                    <td>
+                            Pete Kowalczyk
+                    </td>
+                </tr>
+    <tr>
+                    <th scope="row">
+                        On behalf of:
+                    </th>
+                    <td>
+                            <span class="company-name">Acme Ltd</span>
+                    </td>
+                </tr>
+    <tr>
+                    <th scope="row">
+Address:
+                    </th>
+                    <td>
+1 Aviation House, WC1V 6AL
+                    </td>
+                </tr> 
+                    
+                    <tr>
+                    <th scope="row">
+Date
+                    </th>
+                    <td>
+1 April 2017
+                    </td>
+                </tr>                    
+    </tbody></table>          
+
+<div class="form-group">
+    <label class="block-label selection-button-checkbox" for="waste-type-1">
+      <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+        I accept this agreement 
+    </label>
+</div>
+
+  </fieldset>
+</form>
+        <a id="sign2" href="/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y"  class="button" >Accept and continue</a>
         </div>
         
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col" style="padding-top:0">Name</th>
-            <th>Date </th>
-        </tr>
-    </thead>
-    <tr>
-        <td>John Doe<br><span class="font-xsmall">john.doe@company.com</span></td>
-        <td>14 May 2017</td>
-    </tr>
-</table>
+  {% include "includes/link-back.html" %}
+
         
-        <a id="sign" href="/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y"  class="button" >Agree and continue</a>
-        <a id="sign" href="/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y"  class="button text-link" >Share this document</a>
 
     </div>
 </div>

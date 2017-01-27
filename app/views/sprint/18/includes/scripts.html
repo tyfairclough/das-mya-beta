@@ -247,7 +247,7 @@ function testReactCountdown() {
     }
     
     
-    function organisationsIndex() {
+    function organisationsIndex(i) {
         
         
  
@@ -270,7 +270,7 @@ for ( var i = 0; i < orgArray.length; i++ ) {
     var $line = $( "<tr></tr>" );
 
 
-    if (i === 0 ) { 
+    if (i === 3 ) { 
     $line.append( $( "<td></td>" ).html( orgName ) );
     $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/sign.html'>Enable spending</a></td>" ) );
     $line.append( $( "<td><div></div><div style='color:#6F777B' class='font-xsmall'>Not signed</div></td>" ) );
@@ -281,7 +281,7 @@ for ( var i = 0; i < orgArray.length; i++ ) {
     
     $line.append( $( "<td></td>" ).html( orgName ) );
     $line.append( $( "<td>Spending enabled</td>" ) );
-    $line.append( $( "<td><div>John Doe</div><div style='color:#6F777B' class='font-xsmall'>Signed on: 14 May 2017</div></td>" ) );
+    $line.append( $( "<td><div>Pete Kowalczyk</div><div style='color:#6F777B' class='font-xsmall'>Signed on: 14 May 2017</div></td>" ) );
     $line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
     $table.append( $line );
 }

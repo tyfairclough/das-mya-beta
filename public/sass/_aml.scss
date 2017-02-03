@@ -368,6 +368,12 @@ nav.global-nav ul {
     border: none;
 }
 
+.button.secondary {
+    background-color: #eee;
+    color: #000;
+    box-shadow: 0 2px 0 #666;
+}
+
 .hgroup {
   margin-bottom: 30px;
 }
@@ -686,7 +692,7 @@ tr.total td {
 }
 
 
-.sprint-11, .sprint-15 {
+.sprint-11, .sprint-15, .sprint-19 {
 
     
     #checklist {
@@ -1303,5 +1309,49 @@ main[class*="test-react-"] {
         text-align: left;
         width: 50vw;
         margin: 0 auto;
+    }
+}
+
+.agreement-cover {
+    section {
+    margin-bottom: 30px;
+    overflow: auto;
+        .attachment {
+        position: relative;
+        padding: 15px 0 0 129px;
+            .attachment-thumb {
+                position: relative;
+                float: left;
+                margin-top: 5px;
+                margin-left: -124px;
+                padding-bottom: 15px;
+                }
+        }
+        .detail {
+        position: relative;
+        padding: 15px 0 0 0px;            
+        }
+    }
+}
+
+@media (min-width: 641px) {
+    .agreement-cover {
+        section {
+            .attachment {
+                        margin: 30px 0;
+            }
+        }
+        .head-section {
+        float: left;
+        clear: both;
+        width: 33.33333%;
+        }
+        .content {
+        float: right;
+        width: 66.66667%;
+        }    
+        address {
+            margin-top: 48px;
+        }
     }
 }

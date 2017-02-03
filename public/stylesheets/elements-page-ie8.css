@@ -2129,6 +2129,12 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
   border: none;
 }
 
+.button.secondary {
+  background-color: #eee;
+  color: #000;
+  box-shadow: 0 2px 0 #666;
+}
+
 .hgroup {
   margin-bottom: 30px;
 }
@@ -2439,7 +2445,7 @@ tr.total td {
   margin-bottom: 5px;
 }
 
-.sprint-11 #checklist .statusToDo, .sprint-15 #checklist .statusToDo {
+.sprint-11 #checklist .statusToDo, .sprint-15 #checklist .statusToDo, .sprint-19 #checklist .statusToDo {
   background: black;
   color: white;
   padding: 3px 5px;
@@ -2449,7 +2455,7 @@ tr.total td {
   text-align: center;
 }
 
-.sprint-11 #checklist td:last-child, .sprint-15 #checklist td:last-child {
+.sprint-11 #checklist td:last-child, .sprint-15 #checklist td:last-child, .sprint-19 #checklist td:last-child {
   padding-right: 0;
 }
 
@@ -3034,6 +3040,47 @@ main[class*="test-react-"] #response div {
   text-align: left;
   width: 50vw;
   margin: 0 auto;
+}
+
+.agreement-cover section {
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+.agreement-cover section .attachment {
+  position: relative;
+  padding: 15px 0 0 129px;
+}
+
+.agreement-cover section .attachment .attachment-thumb {
+  position: relative;
+  float: left;
+  margin-top: 5px;
+  margin-left: -124px;
+  padding-bottom: 15px;
+}
+
+.agreement-cover section .detail {
+  position: relative;
+  padding: 15px 0 0 0px;
+}
+
+@media (min-width: 641px) {
+  .agreement-cover section .attachment {
+    margin: 30px 0;
+  }
+  .agreement-cover .head-section {
+    float: left;
+    clear: both;
+    width: 33.33333%;
+  }
+  .agreement-cover .content {
+    float: right;
+    width: 66.66667%;
+  }
+  .agreement-cover address {
+    margin-top: 48px;
+  }
 }
 
 .elements-index .heading-medium {

@@ -213,6 +213,9 @@ function confirmDetails() {
     function organisationsIndex(i) {
         
         
+                      sessionState = localStorage.setItem("onboarding","0");            
+
+        
  
 
                     if (localStorage.getItem("organisations") === null) {
@@ -239,7 +242,7 @@ for ( var i = 0; i < orgArray.length; i++ ) {
     //$line.append( $( "<td><a href='#'></a></td>" ).html( orgName ) );
     $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-signed.html'>"+ orgName +"</a></td>" ));
     $line.append( $( "<td>Spending enabled</td>" ) );
-    $line.append( $( "<td><div class='user-name'>Pete Kowalczyk</div><div style='color:#6F777B' class='font-xsmall'>Signed on: 14 May 2017</div></td>" ) );
+    $line.append( $( "<td><div class='user-name'>Pete Kowalczyk</div><div style='color:#6F777B' class='font-xsmall'>Signed on: <span class='today'>01 January 2017</span></div></td>" ) );
     //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
     $table.append( $line );
     continue;

@@ -1235,7 +1235,39 @@ var year = date.getFullYear();
   today();  
     
     
- 
+    
+var chApiKey = "fNoTIfmTDt5fP0kKESHsxQSfa2DVzKXBDzCrFQkV";
+
+ var company_number = "09963675";
+    
+    			$.ajax({
+					url: "https://api.companieshouse.gov.uk/company/company_number/",
+					type: "GET",
+					crossDomain: true,
+					contentType: "application/json",
+					data: company_number,
+					dataType:'json',
+					success: function(data){
+						//Response text
+						alert(data);					
+					},
+					beforeSend: function (xhr) {
+						xhr.withCredentials = true;
+						xhr.setRequestHeader ("Authorization", make_base_auth(encodeURIComponent(chApiKey)))
+					},
+					error:function(){
+						//Gat failure
+						alert("failure");
+
+					}
+			});
+
+
+		function make_base_auth(user) {
+			var tok = user;
+			var hash = btoa(tok);
+			return "Basic " + hash;
+		}
     
 </script>
 

@@ -195,8 +195,16 @@ function confirmDetails() {
         e.preventDefault();        
         var orgName = JSON.parse(localStorage.getItem("organisation-name"));
         addOrg(orgName);
+        var onboarding = JSON.parse(localStorage.getItem("onboarding"));
+
+        if ( onboarding == 1 ) {
         window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html?accountCreated=y";
-    })
+            }
+        else {
+       window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?orgAdded=y";
+            
+        }
+    });
 }    
     
 
@@ -226,7 +234,7 @@ for ( var i = 0; i < orgArray.length; i++ ) {
 
     // this is if it is disabled 
 
-    if (i <= 0 ) { 
+    if (i != 0 ) { 
     // this is if its enabled
     //$line.append( $( "<td><a href='#'></a></td>" ).html( orgName ) );
     $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-signed.html'>"+ orgName +"</a></td>" ));
@@ -1219,7 +1227,6 @@ var monthIndex = date.getMonth();
 var year = date.getFullYear();
 
 //console.log(day, monthNames[monthIndex], year);
-document.write(day + ' ' + monthNames[monthIndex] + ' ' + year);
     $(".today").text(day + ' ' + monthNames[monthIndex] + ' ' + year);
     }
   today();  

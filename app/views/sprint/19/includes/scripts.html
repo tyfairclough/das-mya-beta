@@ -324,7 +324,7 @@ $table.appendTo( $( "#orgTable" ) );
 
             //find out if there is a local storage for orgs already
             if (localStorage.getItem("organisations") === null) {
-                orgArray.push(orgName);
+                orgArray.push(newOrg);
                 localStorage.setItem("organisations", JSON.stringify(orgArray));
 
             } else {                
@@ -390,12 +390,15 @@ $table.appendTo( $( "#orgTable" ) );
           e.preventDefault();
         //  check if this is on-boarding or not
         
+        var today = new Date();
+        var date = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear();
+        
         var orgToSign = localStorage.getItem("signAgreementFor"),
         	organisations = JSON.parse(localStorage.getItem("organisations"));
         	
         existingDetails = JSON.parse(organisations[orgToSign]);
         existingDetails.signed = 1;
-        existingDetails.date = 'anyold';
+        existingDetails.date = date;
         
         organisations[orgToSign] = JSON.stringify(existingDetails);
                 

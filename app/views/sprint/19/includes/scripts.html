@@ -183,12 +183,10 @@ $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("org
     }
     
 $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
-  
-    
-    
-    
       // my functions
-    
+ $('.review-agreement-button').on('click', function(e) {
+	 localStorage.setItem("signAgreementFor",$(this).data('org-index'));
+ });   
     
 function confirmDetails() {
     $(".button").click(function(e){
@@ -244,14 +242,14 @@ for ( var i = 0; i < orgArray.length; i++ ) {
     //$line.append( $( "<td><a href='#'></a></td>" ).html( orgName ) );
     $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-signed.html'>"+ orgName.name +"</a></td>" ));
     $line.append( $( "<td>Spending enabled</td>" ) );
-    $line.append( $( "<td><div class='user-name'>Pete Kowalczyk</div><div style='color:#6F777B' class='font-xsmall'>Signed on: <span class='today'>01 January 2017</span></div></td>" ) );
+    $line.append( $( "<td><div class='user-name'>Pete Kowalczyk</div><div style='color:#6F777B' class='font-xsmall'>Signed on: <span class='today'>"+ orgName.date +"</span></div></td>" ) );
     //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
     $table.append( $line );
     continue;
     }
     $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html'>"+ orgName.name +"</a></td>" ));
     $line.append( $( "<td>Agreement required</td>" ) );
-    $line.append( $( "<td><div></div><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html' class='button secondary'>Review agreement</td>" ) );
+    $line.append( $( "<td><div></div><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html' class='button secondary review-agreement-button' data-org-index='"+i+"'>Review agreement</td>" ) );
     //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
     $table.append( $line );
     
@@ -391,19 +389,21 @@ $table.appendTo( $( "#orgTable" ) );
       $("#sign2").click(function(e){
           e.preventDefault();
         //  check if this is on-boarding or not
-              var onboarding = JSON.parse(localStorage.getItem("onboarding"));
-
-          if (onboarding == "1" ) {
-              //alert("onboarding user")
-              // take to account success - onboarding
-              sessionState = localStorage.setItem("sessionState","1");
-              sessionState = localStorage.setItem("onboarding","0");
-              window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html?accountCreated=y";
-          } else {
-              //alert("normal user")
-              // add legal entity complete
-              window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y";
-          }
+        
+        var orgToSign = localStorage.getItem("signAgreementFor"),
+        	organisations = JSON.parse(localStorage.getItem("organisations"));
+        	
+        existingDetails = JSON.parse(organisations[orgToSign]);
+        existingDetails.signed = 1;
+        existingDetails.date = 'anyold';
+        
+        organisations[orgToSign] = JSON.stringify(existingDetails);
+                
+        localStorage.setItem("organisations", JSON.stringify(organisations));
+        
+        var onboarding = JSON.parse(localStorage.getItem("onboarding"));
+		window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y";
+          
       });
     };
     

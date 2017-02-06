@@ -223,7 +223,7 @@ function confirmDetails() {
                         orgArray = JSON.parse(localStorage.getItem("organisations"));
                         
                         var $table = $( "<table class='table'></table>" );
-    var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th>Funding status </th><th>Signed by</th></tr></thead>");                
+    var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th>Spending status </th><th>Signed by</th></tr></thead>");                
     $table.append( $head );
 
                         
@@ -248,8 +248,8 @@ for ( var i = 0; i < orgArray.length; i++ ) {
     continue;
     }
     $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html'>"+ orgName.name +"</a></td>" ));
-    $line.append( $( "<td>Agreement required</td>" ) );
-    $line.append( $( "<td><div></div><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html' class='button secondary review-agreement-button' data-org-index='"+i+"'>Review agreement</td>" ) );
+    $line.append( $( "<td>Spending disabled<div style='color:#6F777B' class='font-xsmall'>SFA agreement needs to be signed</div></td>" ) );
+    $line.append( $( "<td><div></div><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html' class='button secondary review-agreement-button' data-org-index='"+i+"'>View SFA agreement</td>" ) );
     //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
     $table.append( $line );
     

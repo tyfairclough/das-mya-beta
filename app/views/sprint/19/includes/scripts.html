@@ -1236,8 +1236,9 @@ var year = date.getFullYear();
     
     
     
-var myApi = "fNoTIfmTDt5fP0kKESHsxQSfa2DVzKXBDzCrFQkV";
-var chApiKey = base64encode(myApi);
+    function companiesHouseApi(){
+var chApiKey = "fNoTIfmTDt5fP0kKESHsxQSfa2DVzKXBDzCrFQkV";
+
  var company_number = "09963675";
     
     			$.ajax({
@@ -1268,6 +1269,7 @@ var chApiKey = base64encode(myApi);
 			var hash = btoa(tok);
 			return "Basic " + hash;
 		}
+}
     
 </script>
 

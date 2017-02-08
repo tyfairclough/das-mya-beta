@@ -34,25 +34,7 @@
     
     
 $(document).ready(function () {
-  
-  
-    
-    
-    if (localStorage.getItem("organisations") === null){
-    console.log("no orgs founddddd");
-    var newCompany = [];
-    var newCompanyDetails = {};
-    newCompanyDetails.name = "Acme Ltd2";
-    newCompanyDetails.signed = 0;
-    newCompany.push(JSON.stringify(newCompanyDetails));
-    console.log(newCompany);    
-    localStorage.setItem("organisations", JSON.stringify(newCompany));
-    }
-
-    
-               //localStorage.setItem("sessionState","0");
-
-    
+        
     //GLOBAL VAR
     var XMLSource = $('#search').attr('xmlData');
     var keyword = '';

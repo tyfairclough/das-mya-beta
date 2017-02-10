@@ -136,8 +136,22 @@ Accepted on:
         </div>    
     </div>
     
-  {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+            <hr />
         
+        <div class="column-two-thirds">      
+            <div class="form-group">
+            <a class="button secondary" href="/sprint/{{sprint}}/account/organisations/remove-org.html">Remove this organisation</a>
+            </div>
+            <div class="panel panel-border-wide alert-default">
+                <h5 class="heading-small">You can't remove <span class="organisation-name">Acme Limited</span></h5>
+<span class="organisation-name">Acme ltd</span> can only be removed when all its apprentices on this account have finished.          </div>
+        </div>
+    </div>
+    <br>
+      {% include "includes/link-back.html" %}
+       
 
 </main>
 {% endblock %}

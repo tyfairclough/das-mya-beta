@@ -34,7 +34,9 @@
     
     
 $(document).ready(function () {
-        
+  
+
+    
     //GLOBAL VAR
     var XMLSource = $('#search').attr('xmlData');
     var keyword = '';
@@ -165,6 +167,12 @@ break;
        case 'confirm' :
             confirmDetails();     
 break;
+       case 'agreement-cover' :
+           agreementsCover();
+break;
+       case 'remove-org' :
+           removeOrg();
+break;
 default: break;
    };
     
@@ -203,7 +211,28 @@ function confirmDetails() {
             
         }
     });
-}    
+}
+    
+    
+    function agreementsCover(){
+        $(".organisation-name").text(organisationName)
+    }
+    
+    function removeOrg(){
+            var orgArray = []
+            orgArray = JSON.parse(localStorage.getItem("organisations"));
+        
+        
+        $(".button").click(function(e){
+            e.preventDefault();
+            var orgCache = localStorage.getItem("orgIndex");
+            console.log(orgCache);
+            orgArray.splice(orgCache,1);
+                localStorage.setItem("organisations", JSON.stringify(orgArray));        
+            window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?orgRemoved=y";
+        })
+    
+    }
     
 
     
@@ -280,6 +309,17 @@ $table.appendTo( $( "#orgTable" ) );
         });
         
         userName();
+     
+        
+        $(".secondary").click(function(e){
+            e.preventDefault();
+            var orgIndex = ($(this).attr("data-org-index"));            
+            	orgCache = JSON.parse(orgArray[orgIndex]);
+            localStorage.setItem("orgIndex",orgIndex);
+            //alert(orgCache.name);
+            window.location.href = "/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html?orgName="+orgCache.name+"&orgState="+orgCache.signed;
+            
+        })
         
     }
     

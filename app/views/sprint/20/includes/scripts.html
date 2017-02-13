@@ -189,14 +189,13 @@ $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-ad
     
     function getCompaniesHouse() {
             // get companies house number
-    
-    
+
 
         var chApiKey = "0IJg_twH_cNHRQ4TufRhHhKW72_W8xdgijXsHDyI";
         var company_number = "09963675";
         
 $.ajax({
-					url: "https://api.companieshouse.gov.uk/company/",
+					url: "https://api.companieshouse.gov.uk/search/companies?q="+company_number,
 					type: "GET",
 					crossDomain: true,
 					contentType: "application/json",
@@ -218,6 +217,12 @@ $.ajax({
 			});
 
         
+		}
+    
+    function make_base_auth(user) {
+			var tok = user;
+			var hash = btoa(tok);
+			return "Basic " + hash;
 		}
 
 

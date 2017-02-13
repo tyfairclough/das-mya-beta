@@ -203,7 +203,8 @@ $.ajax({
 					dataType:'json',
 					success: function(data){
 						//Response text
-						alert(data);					
+						console.log(data);	
+                        showCompany(data);
 					},
 					beforeSend: function (xhr) {
 						xhr.withCredentials = true;
@@ -218,6 +219,10 @@ $.ajax({
 
         
 		}
+    
+    function showCompany(data) {
+        
+    }
     
     function make_base_auth(user) {
 			var tok = user;

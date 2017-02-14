@@ -35,6 +35,22 @@
     
 $(document).ready(function () {
   
+  
+    
+    
+    if (localStorage.getItem("organisations") === null){
+    console.log("no orgs founddddd");
+    var newCompany = [];
+    var newCompanyDetails = {};
+    newCompanyDetails.name = "Acme Ltd2";
+    newCompanyDetails.signed = 0;
+    newCompany.push(JSON.stringify(newCompanyDetails));
+    console.log(newCompany);    
+    localStorage.setItem("organisations", JSON.stringify(newCompany));
+    }
+
+    
+               //localStorage.setItem("sessionState","0");
 
     
     //GLOBAL VAR
@@ -108,7 +124,18 @@ break;
 break;
        case 'test':
                
-           getCompaniesHouse();
+    // get companies house number
+    
+    
+    $.ajax({
+        url: 'https://api.companieshouse.gov.uk/company/09963675',
+        beforeSend: function(xhr) {
+             xhr.setRequestHeader("0IJg_twH_cNHRQ4TufRhHhKW72_W8xdgijXsHDyI:")
+        }, success: function(data){
+            alert(data);
+            //process the JSON data etc
+        }
+    });
 break; 
 case 'organisations-chquestion':
            $(".button").click(function(e){
@@ -156,12 +183,6 @@ break;
        case 'confirm' :
             confirmDetails();     
 break;
-       case 'agreement-cover' :
-           agreementsCover();
-break;
-       case 'remove-org' :
-           removeOrg();
-break;
 default: break;
    };
     
@@ -185,60 +206,6 @@ $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-ad
 	 localStorage.setItem("signAgreementFor",$(this).data('org-index'));
  });   
     
-    
-    
-    function getCompaniesHouse() {
-            // get companies house number
-
-
-        var chApiKey = "fNoTIfmTDt5fP0kKESHsxQSfa2DVzKXBDzCrFQkV";
-        var company_number = "09963675";
-        
-$.ajax({
-					url: "https://api.companieshouse.gov.uk/search/companies?q="+company_number,
-					type: "GET",
-					crossDomain: true,
-					contentType: "application/json",
-					data: company_number,
-					dataType:'json',
-					success: function(data){
-						//Response text
-						console.log(data);	
-                        showCompany(data);
-					},
-					beforeSend: function (xhr) {
-						xhr.withCredentials = true;
-						xhr.setRequestHeader ("Authorization", make_base_auth(encodeURIComponent(chApiKey)))
-					},
-					error:function(){
-						//Gat failure
-						alert("failure");
-
-					}
-			});
-
-        
-		}
-    
-    function showCompany(data) {
-
-     for ( var i = 0; i < data.length; i++ ) {
-
-     }
-        
-    }
-    
-    function make_base_auth(user) {
-			var tok = user;
-			var hash = btoa(tok);
-			return "Basic " + hash;
-		}
-
-
-
-
-    
-    
 function confirmDetails() {
     $(".button").click(function(e){
         e.preventDefault();        
@@ -254,28 +221,7 @@ function confirmDetails() {
             
         }
     });
-}
-    
-    
-    function agreementsCover(){
-        $(".organisation-name").text(organisationName)
-    }
-    
-    function removeOrg(){
-            var orgArray = []
-            orgArray = JSON.parse(localStorage.getItem("organisations"));
-        
-        
-        $(".button").click(function(e){
-            e.preventDefault();
-            var orgCache = localStorage.getItem("orgIndex");
-            console.log(orgCache);
-            orgArray.splice(orgCache,1);
-                localStorage.setItem("organisations", JSON.stringify(orgArray));        
-            window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?orgRemoved=y";
-        })
-    
-    }
+}    
     
 
     
@@ -295,7 +241,7 @@ function confirmDetails() {
                         orgArray = JSON.parse(localStorage.getItem("organisations"));
                         
                         var $table = $( "<table class='table'></table>" );
-    var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th>Spending status </th><th>Signed by</th></tr></thead>");                
+    var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th>Agreement</th><th></th></tr></thead>");                
     $table.append( $head );
 
                         
@@ -312,16 +258,18 @@ for ( var i = 0; i < orgArray.length; i++ ) {
     if (orgName.signed != 0 ) { 
     // this is if its enabled
     //$line.append( $( "<td><a href='#'></a></td>" ).html( orgName ) );
-    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-signed.html'>"+ orgName.name +"</a></td>" ));
-    $line.append( $( "<td>Spending enabled</td>" ) );
-    $line.append( $( "<td><div class='user-name'>Pete Kowalczyk</div><div style='color:#6F777B' class='font-xsmall'>Signed on: <span class='today'>"+ orgName.date +"</span></div></td>" ) );
+    $line.append( $( "<td>" + orgName.name +"</td>" ));
+    $line.append( $( "<td>Signed by <span class='user-name'>John Doe</span><div style='color:#6F777B' class='font-xsmall'>Signed on: <span class='today'>"+ orgName.date +"</span></div></td>" ) );
+
+    $line.append( $("<td class='numeric'><a class='button text-link' href='/sprint/{{sprint}}/account/organisations/agreement-cover-signed.html'>View</a></td>") );
     //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
     $table.append( $line );
     continue;
     }
-    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html'>"+ orgName.name +"</a></td>" ));
-    $line.append( $( "<td>Spending disabled<div style='color:#6F777B' class='font-xsmall'>SFA agreement needs to be signed</div></td>" ) );
-    $line.append( $( "<td><div></div><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html' class='button secondary review-agreement-button' data-org-index='"+i+"'>View SFA agreement</td>" ) );
+    $line.append( $( "<td>"+ orgName.name +"</td>" ));
+    $line.append( $( "<td>Agreement not signed<div style='color:#6F777B' class='font-xsmall'>SFA agreement needs to be signed</div></td>" ) );
+
+    $line.append( $("<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html' class='button secondary review-agreement-button' data-org-index='"+i+"'>Sign agreement</a></td>"));
     //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
     $table.append( $line );
     
@@ -352,17 +300,6 @@ $table.appendTo( $( "#orgTable" ) );
         });
         
         userName();
-     
-        
-        $(".secondary").click(function(e){
-            e.preventDefault();
-            var orgIndex = ($(this).attr("data-org-index"));            
-            	orgCache = JSON.parse(orgArray[orgIndex]);
-            localStorage.setItem("orgIndex",orgIndex);
-            //alert(orgCache.name);
-            window.location.href = "/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html?orgName="+orgCache.name+"&orgState="+orgCache.signed;
-            
-        })
         
     }
     

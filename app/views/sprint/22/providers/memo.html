@@ -15,7 +15,7 @@
 
 {% block content %}
 
-<main class="provider-sign-agreement" id="content" role="main" tabindex="-1">
+<main class="memo" id="content" role="main" tabindex="-1">
 
   {% include "includes/link-back.html" %}
 
@@ -24,14 +24,22 @@
 
         <div class="hgroup">
       <h1 class="heading-xlarge">
-          Sign SFA Provider Agreement
+         Add a memo
       </h1>
         
-        <p>TELL THE USER THEY HAVEN'T SIGNED THE PROVIDER AGREEMENT. TELL THEM THEY WILL LOOSE THE PROGRESS THEY JUST MADE, BUT AMENDS TO COHORTS WILL BE SAVED.</p></div>
+        <p>Add a message page</p></div>
         
+<form id="form1">
+                    <div class="form-group">
+                     
+                        <textarea></textarea>
+                        
+                  </div>
+                
 
-
-        <a href="/sprint/{{sprint}}/account/organisations/index.html" class="button">Continue</a>
+              </form>
+        
+        <a href="/sprint/{{sprint}}/providers/cohort-approve.html" class="button">Continue</a>
 
         
     </div>

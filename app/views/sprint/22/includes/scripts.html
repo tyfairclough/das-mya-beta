@@ -183,9 +183,157 @@ break;
        case 'confirm' :
             confirmDetails();     
 break;
+       case 'provider-index' :
+           providerIndex();
+break;
+       case 'contract-of-service' :
+           contractOfService();
+break;
+       case 'no-contract-of-service' :
+           noContractOfService();
+break;
+       case 'confirm-apprentices':
+           confirmApprentices();
+break;
+       case 'confirm-identity' :
+           confirmIdentity();
+break;
+       case 'choose-option-0':
+            chooseOption0();
+break;
+       case 'approve-question':
+           approveQuestion();
+break;
+       case 'first-approval':
+           firstApproval();
+break;
 default: break;
    };
     
+    function firstApproval() {
+           $(".button").click(function(e){
+                    e.preventDefault();
+                        var state = $('input[name=radio-group]:checked').val();
+
+                    if ( state == "1" ) {
+                        // if they have already approved a commitment
+                        window.location.href = "/sprint/{{sprint}}/providers/memo.html";
+                    } else {
+                        window.location.href = "/sprint/{{sprint}}/providers/cohort-approve-no-memo.html"
+                    }
+                });   
+    }
+    function approveQuestion() {
+         $(".button").click(function(e){
+                    e.preventDefault();
+                        var state = $('input[name=radio-group]:checked').val();
+
+                    if ( state == "1" ) {
+                        // if they have already approved a commitment
+                        window.location.href = "/sprint/{{sprint}}/providers/first-approval.html";
+                    } else {
+                        window.location.href = "/sprint/{{sprint}}/providers/sign-agreement.html"
+                    }
+                });   
+    }
+    
+    function chooseOption0() {
+              $(".button").click(function(e){
+                    e.preventDefault();
+                        var state = $('input[name=radio-group]:checked').val();
+
+                    if ( state == "1" ) {
+                        // if they have already approved a commitment
+                        window.location.href = "/sprint/{{sprint}}/providers/approve-question.html";
+                    } else if ( state == "2") {
+                        // if they haven't go to contract of service
+                        window.location.href = "/sprint/{{sprint}}/providers/memo.html";
+                    } else {
+                        window.location.href = "/sprint/{{sprint}}/providers/cohort-save.html"
+                    }
+                });   
+    }
+    
+    function confirmIdentity() {
+                  $(".button").click(function(e){
+                    e.preventDefault();
+                        var state = $('input[name=radio-group]:checked').val();
+
+                    if ( state == "1" ) {
+                        // if they have already approved a commitment
+                        window.location.href = "/sprint/{{sprint}}/providers/choose-option.html";
+                    } else {
+                        // if they haven't go to contract of service
+                        window.location.href = "/sprint/{{sprint}}/providers/advice-confirm-identity.html";
+                    }
+                });   
+    }
+    
+    function confirmApprentices() {
+                             $(".button").click(function(e){
+                    e.preventDefault();
+                        var state = $('input[name=radio-group]:checked').val();
+
+                    if ( state == "1" ) {
+                        // if they have already approved a commitment
+                        window.location.href = "/sprint/{{sprint}}/providers/choose-option.html";
+                    } else {
+                        // if they haven't go to contract of service
+                        window.location.href = "/sprint/{{sprint}}/providers/advice-not-employees.html";
+                    }
+                });   
+    }
+    
+    function noContractOfService() {
+                        $(".button").click(function(e){
+                    e.preventDefault();
+                        var state = $('input[name=radio-group]:checked').val();
+
+                    if ( state == "1" ) {
+                        // if they have already approved a commitment
+                        window.location.href = "/sprint/{{sprint}}/providers/advice-no-contract.html";
+                    } else {
+                        // if they haven't go to contract of service
+                        window.location.href = "/sprint/{{sprint}}/providers/choose-option-1.html";
+                    }
+                });
+    };
+    
+    
+    function contractOfService() {
+            
+                $(".button").click(function(e){
+                    e.preventDefault();
+                        var state = $('input[name=radio-group]:checked').val();
+
+                    if ( state == "1" ) {
+                        // if they have already approved a commitment
+                        window.location.href = "/sprint/{{sprint}}/providers/confirm-identity.html";
+                    } else {
+                        // if they haven't go to contract of service
+                        window.location.href = "/sprint/{{sprint}}/providers/no-contract-reason.html";
+                    }
+                });
+                    
+    };
+    
+    function providerIndex() {
+        
+                $(".button").click(function(e){
+                    e.preventDefault();
+                    
+                        var state = $('input[name=radio-group]:checked').val();
+                    
+                    if ( state == "1" ) {
+                        // if they have already approved a commitment
+                        window.location.href = "/sprint/{{sprint}}/providers/confirm-apprentices.html";
+                    } else {
+                        // if they haven't go to contract of service
+                        window.location.href = "/sprint/{{sprint}}/providers/contract-of-service.html";
+                    }
+               
+                });
+    }
     
     
     // Global string replacements    

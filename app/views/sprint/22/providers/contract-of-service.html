@@ -15,7 +15,7 @@
 
 {% block content %}
 
-<main class="choose-option-0" id="content" role="main" tabindex="-1">
+<main class="contract-of-service" id="content" role="main" tabindex="-1">
 
   {% include "includes/link-back.html" %}
 
@@ -24,33 +24,28 @@
 
         <div class="hgroup">
       <h1 class="heading-xlarge">
-          Choose  an option
+          Do you have a contract of service?
       </h1>
         
-        <p>Options for normal providers</p></div>
+        <p>Ask if the provider has an offline agreement with the employer.</p></div>
         
 <form id="form1">
-                  <legend class="visuallyhidden">Delete me</legend>
                     <div class="form-group">
-                      <label class="form-label-bold" for="">Choose an option?</label>
+                      <label class="form-label-bold" for="">Do you have a contract of service?</label>
                     <label class="block-label" for="provider-1">
                       <input id="provider-1" type="radio" name="radio-group" value="1">
-                     Approve
+                     Yes, Continue
                      </label>
                     <label class="block-label" for="provider-2">
-                      <input id="provider-2" type="radio" name="radio-group" value="2">
-                    Send for review
-                     </label>
-                        <label class="block-label" for="provider-3">
-                      <input id="provider-3" type="radio" name="radio-group" value="3">
-                    Send  save but don't send
+                      <input id="provider-2" type="radio" name="radio-group" value="0">
+                    No, Go to reason for no contract page
                      </label>
                   </div>
                 
 
               </form>
         
-        <a href="#" id="action" class="button">Go</a>
+        <a href="#" class="button">Continue</a>
 
         
     </div>

@@ -271,16 +271,9 @@ default: break;
     
     function confirmApprentices() {
                              $(".button").click(function(e){
-                    e.preventDefault();
-                        var state = $('input[name=radio-group]:checked').val();
-
-                    if ( state == "1" ) {
-                        // if they have already approved a commitment
+                   
                         window.location.href = "/sprint/{{sprint}}/providers/choose-option.html";
-                    } else {
-                        // if they haven't go to contract of service
-                        window.location.href = "/sprint/{{sprint}}/providers/advice-not-employees.html";
-                    }
+               
                 });   
     }
     
@@ -308,7 +301,7 @@ default: break;
 
                     if ( state == "1" ) {
                         // if they have already approved a commitment
-                        window.location.href = "/sprint/{{sprint}}/providers/confirm-identity.html";
+                        window.location.href = "/sprint/{{sprint}}/providers/confirm-apprentices.html";
                     } else {
                         // if they haven't go to contract of service
                         window.location.href = "/sprint/{{sprint}}/providers/no-contract-reason.html";

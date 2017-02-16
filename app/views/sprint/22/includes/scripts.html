@@ -417,7 +417,7 @@ for ( var i = 0; i < orgArray.length; i++ ) {
     $line.append( $( "<td>"+ orgName.name +"</td>" ));
     $line.append( $( "<td>Agreement not signed<div style='color:#6F777B' class='font-xsmall'>SFA agreement needs to be signed</div></td>" ) );
 
-    $line.append( $("<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html' class='button secondary review-agreement-button' data-org-index='"+i+"'>Sign agreement</a></td>"));
+    $line.append( $("<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html' class='review-agreement-button' data-org-index='"+i+"'>Sign agreement</a></td>"));
     //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
     $table.append( $line );
     

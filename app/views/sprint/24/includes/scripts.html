@@ -123,19 +123,7 @@ break;
            organisationsAddressManual();
 break;
        case 'test':
-               
-    // get companies house number
-    
-    
-    $.ajax({
-        url: 'https://api.companieshouse.gov.uk/company/09963675',
-        beforeSend: function(xhr) {
-             xhr.setRequestHeader("0IJg_twH_cNHRQ4TufRhHhKW72_W8xdgijXsHDyI:")
-        }, success: function(data){
-            alert(data);
-            //process the JSON data etc
-        }
-    });
+       getCompaniesHouse();
 break; 
 case 'organisations-chquestion':
            $(".button").click(function(e){
@@ -209,6 +197,22 @@ break;
 break;
 default: break;
    };
+    
+    
+    function getCompaniesHouse() {
+                
+    // get companies house number
+    
+    $.ajax({
+        url: 'https://api.companieshouse.gov.uk/company/09963675',
+        beforeSend: function(xhr) {
+             xhr.setRequestHeader("0IJg_twH_cNHRQ4TufRhHhKW72_W8xdgijXsHDyI:")
+        }, success: function(data){
+            alert(data);
+            //process the JSON data etc
+        }
+    });
+    }
     
     function firstApproval() {
            $(".button").click(function(e){

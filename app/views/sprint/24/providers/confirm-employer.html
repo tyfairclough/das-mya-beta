@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint 11 - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="confirm-employer" id="content" role="main" tabindex="-1">
+
+  {% include "includes/link-back.html" %}
+
+    
+    <div class="grid-row">
+           <div class="column-two-thirds">
+              <h1 class="heading-xlarge">Confirm your relationship</h1>
+            <div>
+                <!--h2 class="heading-medium">
+                  What do you want to update?
+                </h2-->
+<p>You need to confirm your relationship with the employer before you can approve the cohort.</p>
+                
+                <form class="state-2">
+                    <legend class="visuallyhidden">Things to do next</legend>
+                      <div class="form-group">
+       
+                      <label class="block-label" for="radio-1">
+                        <input id="radio-1" type="radio" name="radio-group" value="1">
+                       <span id="changeOne">I know Acme Coventry Ltd<span>
+                      </span></span></label>
+                          <label class="block-label" for="radio-3">
+                        <input id="radio-3" type="radio" name="radio-group" value="2">
+                        <span id="changeThree">I still don't know</span>
+                      </label>
+                    </div>
+                     <div style="margin-top:20px;"><a class="button" href="/sprint/{{sprint}}/providers/id-check.html">Continue</a></div>
+                  </form>
+
+            </div>
+            <div style="margin-top:35px"></div>
+            <div style="margin-top:50px"></div>
+          </div>
+
+          <div class="column-one-third">
+            </div>
+        </div>
+    
+</main><!-- / #content -->
+{% endblock %}

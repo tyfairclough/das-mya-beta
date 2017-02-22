@@ -15,37 +15,37 @@
 
 {% block content %}
 
-<main class="confirm-identity" id="content" role="main" tabindex="-1">
+<main class="approve-question" id="content" role="main" tabindex="-1">
 
   {% include "includes/link-back.html" %}
 
-  <div class="grid-row">
+  <div class="grid-row logic-page">
     <div class="column-two-thirds">
 
         <div class="hgroup">
       <h1 class="heading-xlarge">
-          Confirm employer identity
+          Is there a provider agreement signed?
       </h1>
         
-        <p>Tell the user what they are undertaking, that they must confirm the identity or they loose their funding if found to be wrong. Are they a connected company?</p></div>
+        <p>Has the provider signed an agreement</p></div>
         
 <form id="form1">
                     <div class="form-group">
-                      <label class="form-label-bold" for="">Is this company a company?</label>
+                      <label class="form-label-bold" for="">          Is there a provider agreement signed?</label>
                     <label class="block-label" for="provider-1">
                       <input id="provider-1" type="radio" name="radio-group" value="1">
-                     Yes, THEY'RE ARE FOR REAL
+                     Yes, continue
                      </label>
                     <label class="block-label" for="provider-2">
                       <input id="provider-2" type="radio" name="radio-group" value="0">
-                    No, THEY'RE NOT BRAH
+                    No, break the whole thing!
                      </label>
                   </div>
                 
 
               </form>
         
-        <a href="#" class="button">Go</a>
+        <a href="#" class="button">Continue</a>
 
         
     </div>

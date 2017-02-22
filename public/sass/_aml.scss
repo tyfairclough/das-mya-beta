@@ -1390,3 +1390,13 @@ main[class*="test-react-"] {
     margin: 0px !important;
     padding: 60px;
 }
+
+
+dl.confirm-details {
+    dd {
+        font-weight: 900;
+        width: auto;
+        float: left;
+        padding-right: 10px;
+    }
+}

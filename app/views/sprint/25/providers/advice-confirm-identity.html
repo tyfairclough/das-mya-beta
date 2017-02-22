@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint 11 - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="contract-of-service" id="content" role="main" tabindex="-1">
+
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+        <div class="hgroup">
+      <h1 class="heading-xlarge">
+Cohort approval stopped
+      </h1>
+        
+
+            
+<p>To use funds in an employer’s digital account you must have a written agreement and a commitment statement in place at the start, and for the entire length, of the apprenticeship. You, the apprentice and the employer must have signed copies of these. For more information, see the <a href="https://www.gov.uk/government/publications/apprenticeship-funding-and-performance-management-rules-2017-to-2018">apprenticeship funding and performance-management rules for training providers</a>.</p>
+
+<p>The cohort represents the agreement between your organisation and the organisation you’re providing apprenticeship training to. If you don’t recognise the employer that’s sent you the cohort request, the cohort doesn’t reflect your agreement.</p>
+
+<p>The cohort has been saved in your account. You can choose to delete it or to contact the employer to resolve the situation.</p>          
+            
+        <a class="link-back" href="/sprint/{{sprint}}/provider/your-cohorts.html">Back to your cohorts</a>
+
+    </div>
+  </div>
+
+    
+    
+
+    
+</main><!-- / #content -->
+{% endblock %}

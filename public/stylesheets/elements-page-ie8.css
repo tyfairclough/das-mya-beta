@@ -2858,6 +2858,10 @@ span.notification {
   background: #b10e1e;
 }
 
+.panel-filled {
+  background: #dee0e2;
+}
+
 @media (min-width: 960px) {
   .panel[class*="alert-"] h6 {
     width: 60%;

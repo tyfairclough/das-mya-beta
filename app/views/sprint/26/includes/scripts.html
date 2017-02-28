@@ -160,6 +160,9 @@ break;
        case 'test-react-test' :
            testReactCountdown();
 break;
+       case 'funding-index' :
+           fundingIndex();
+break;
        case 'test-react-instructions' :
                        localStorage.setItem("reactLoop","1");
 break;
@@ -188,6 +191,27 @@ $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-ad
       // my functions
     
     
+    
+function fundingIndex() {
+    $(".impact-link").click(function(e){
+        e.preventDefault();
+        $(".impact-link").removeClass("active");
+        $(this).addClass("active");
+        
+        var tab = $(this).attr("href");
+        
+        if (tab == "#tab1") {
+            $(".combined").show();
+            $(".levy, .coinvest").hide();
+        } else if ( tab == "#tab2") {
+            $(".coinvest").show();
+            $(".levy, .combined").hide();
+        } else {
+            $(".levy").show();
+            $(".combined, .coinvest").hide();            
+        }
+    })
+}    
     
 function testReactCountdown() {
     

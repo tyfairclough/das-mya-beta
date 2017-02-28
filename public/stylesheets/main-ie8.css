@@ -3129,3 +3129,80 @@ dl.confirm-details dd {
   float: left;
   padding-right: 10px;
 }
+
+/*New FILTER menu style*/
+@media (min-width: 641px) {
+  .vertical-padding-medium-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.impact-link .impact-link-figure {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.impact-link .impact-link-label {
+  display: inline-block;
+  /*padding-left: 0.5em;*/
+  white-space: normal;
+  width: 75%;
+  vertical-align: text-top;
+  /*text-decoration: underline;*/
+}
+
+.impact-link {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  padding: 5px;
+  background-color: #dee0e2;
+  margin-bottom: 2px;
+}
+
+.impact-link:visited {
+  color: #005ea5;
+}
+
+.impact-link:hover {
+  color: #2b8cc4;
+}
+
+.impact-link.active {
+  color: black;
+  background-color: white;
+  border: 1px solid;
+}
+
+.impact-link.active .impact-link-label {
+  text-decoration: none;
+}
+
+@media (min-width: 641px) {
+  .impact-link .impact-link-label {
+    padding-left: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .impact-link {
+    font-size: 24px;
+    padding: 10px;
+    min-height: 55px;
+  }
+}
+
+@media (min-width: 769px) {
+  .impact-link .impact-link-figure {
+    height: 80px;
+    font-size: 60px;
+    line-height: 0.9;
+  }
+}
+
+/*End of filter menu style*/

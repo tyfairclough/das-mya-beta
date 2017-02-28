@@ -3221,14 +3221,7 @@ span.notification {
   float: left;
   display: inline-block;
 }
-
-.panel[class*="alert-"] p {
-  float: left;
-  display: inline-block;
-  margin: 0;
-  color: #6F777B;
-}
-
+/*
 .panel[class*="alert-"] pre {
   background: white;
   padding: 10px;
@@ -3238,6 +3231,8 @@ span.notification {
   width: 100%;
   box-sizing: border-box;
 }
+
+*/
 
 .alert-error {
   border-color: #F47738;
@@ -3265,11 +3260,13 @@ span.notification {
   .panel[class*="alert-"] h6 {
     width: 60%;
   }
+    /*
   .panel[class*="alert-"] p {
     float: right;
     text-align: right;
     width: 40%;
   }
+    */
 }
 
 /* search field header */

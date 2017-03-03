@@ -5,10 +5,26 @@ Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Or
 */
 
 .hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #444;
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+    margin: 0 0 30px 0;
+    background: #fcfcfc;
+    border: 1px solid #bfc1c3;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    direction: ltr;
+    text-align: left;
+    line-height: 1.5;
+    tab-size: 4;
+    hyphens: none;
+    word-spacing: normal;
+    word-break: normal;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 .hljs-keyword,
@@ -16,12 +32,12 @@ Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Or
 .hljs-literal,
 .hljs-section,
 .hljs-link {
-  color: white;
+    color: white;
 }
 
 .hljs,
 .hljs-subst {
-  color: #ddd;
+    color: #0b0c0c;
 }
 
 .hljs-string,
@@ -36,14 +52,14 @@ Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Or
 .hljs-variable,
 .hljs-template-tag,
 .hljs-template-variable {
-  color: #d88;
+    color: #d88;
 }
 
 .hljs-comment,
 .hljs-quote,
 .hljs-deletion,
 .hljs-meta {
-  color: #777;
+    color: #777;
 }
 
 .hljs-keyword,
@@ -55,9 +71,9 @@ Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Or
 .hljs-type,
 .hljs-name,
 .hljs-strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .hljs-emphasis {
-  font-style: italic;
+    font-style: italic;
 }

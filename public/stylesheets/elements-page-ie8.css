@@ -2799,47 +2799,6 @@ span.notification {
   background-color: #005ea5;
 }
 
-.panel[class*="alert-"] .left-side {
-  width: auto;
-  float: left;
-}
-
-.panel[class*="alert-"] .right-side {
-  overflow: auto;
-}
-
-.panel[class*="alert-"] div > span {
-  padding: 5px 10px;
-  color: white;
-  margin-right: 5px;
-  margin-top: -5px;
-  display: inline-block;
-  float: left;
-  font-weight: 900;
-}
-
-.panel[class*="alert-"] h6 {
-  float: left;
-  display: inline-block;
-}
-
-.panel[class*="alert-"] p {
-  float: left;
-  display: inline-block;
-  margin: 0;
-  color: #6F777B;
-}
-
-.panel[class*="alert-"] pre {
-  background: white;
-  padding: 10px;
-  clear: both;
-  margin-top: 10px;
-  float: left;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 .alert-error {
   border-color: #F47738;
   background: #fcddcd;
@@ -2860,17 +2819,6 @@ span.notification {
 
 .panel-filled {
   background: #dee0e2;
-}
-
-@media (min-width: 960px) {
-  .panel[class*="alert-"] h6 {
-    width: 60%;
-  }
-  .panel[class*="alert-"] p {
-    float: right;
-    text-align: right;
-    width: 40%;
-  }
 }
 
 /* search field header */

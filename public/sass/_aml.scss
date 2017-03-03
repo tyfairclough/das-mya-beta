@@ -1069,44 +1069,6 @@ span.notification {
     background-color: #005ea5;
 }
 
-.panel[class*="alert-"] {
-    
-    .left-side {
-        width: auto;
-        float: left;
-    }
-    .right-side {
-        overflow: auto;
-    }
-    div > span {
-        padding: 5px 10px;
-        color: white;
-        margin-right: 5px;
-        margin-top: -5px;
-        display: inline-block;
-        float: left;
-        font-weight: 900;
-        }
-    h6 {
-    float: left;
-    display: inline-block;  
-    }
-    p {
-    float: left;
-    display: inline-block;
-    margin: 0;
-    color: #6F777B;
-    }
-    pre {
-    background: white;
-    padding: 10px;
-    clear: both;
-    margin-top: 10px;
-    float: left;
-    width: 100%;
-    box-sizing: border-box;    
-    }
-}
 
 .alert-error {
     border-color: #F47738;
@@ -1126,20 +1088,6 @@ span.notification {
 .panel-filled {
     background: #dee0e2;
 }
-
-@media (min-width: 960px) {
-    .panel[class*="alert-"] {
-        h6 {
-            width: 60%;
-        }
-        p {
-            float: right;
-            text-align: right;
-            width: 40%;
-        }
-    }
-}
-
 
 /* search field header */
 .search-header {

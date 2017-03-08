@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="organisations-remove" id="content" role="main" tabindex="-1">
+
+
+{% include "includes/link-back.html" %}
+    
+    
+        <div class="hgroup text">
+            <h1 class="heading-xlarge">Remove an organisation</h1>
+                        <p>You can only remove organisations that aren’t currently employing apprentices.</p>
+            </div>
+
+ <div class="grid-row">
+    <div class="column-two-thirds">
+                  </div>
+
+        <div class="column-third">
+               
+        
+        </div>
+</div>
+
+        <div id="orgTable"></div>
+
+<table class="hidden">
+    <thead>
+        <tr>
+            <th scope="col" style="padding-top:0">Organisation</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="">
+            <td class=""><span class="company-name">Acme Ltd Coventry</span>
+            </td>
+            <td><a href="/sprint/{{sprint}}/account/organisations/sign.html"><a href="#">Remove</a></a></td>
+        </tr>
+        <tr class="">
+            <td class=""><span class="company-name">Acme Plc Coventry</span>
+            </td>
+            <td><a href="/sprint/{{sprint}}/account/organisations/sign.html"><a href="#">Remove</a></a></td>
+        </tr>
+        
+        
+        <tr class="">
+            <td class="">Acme Ltd Bradford
+            </td>
+<td>
+    Can’t be removed because it has ongoing apprenticeships.     
+</td>
+        </tr>        </tr>
+        
+        <tr class="">
+            <td class="">Acme Ltd Bradford
+            </td>
+<td>
+   Can’t be removed because it's the only organisation on your account. 
+    
+</td>
+        </tr>
+    </tbody>
+</table>
+    
+            
+            
+
+</main>
+{% endblock %}

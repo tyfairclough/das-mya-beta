@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Sprint 11 - Funding
+  Sprint {{sprint}} - Funding
 {% endblock %}
 
 {% block inside_header %}
@@ -23,13 +23,20 @@
     <!--<p class="asNotSigned"><span class="organisation-name">Acme Ltd Coventry</span> can now spend levy funds</p>-->
         </div>
         
-        <div class="govuk-box-highlight " id="org">
+        
+        <div class="govuk-box-highlight" id="org">
+          <h2 class="bold-large">You have removed <span class="organisation-name">Acme Ltd Coventry</span>.</h2>
+
+    <!--<p class="asNotSigned"><span class="organisation-name">Acme Ltd Coventry</span> can now spend levy funds</p>-->
+        </div>
+        
+        <div class="govuk-box-highlight hidden" id="org">
           <h2 class="bold-large"><span class="organisation-name">Acme Ltd Coventry</span>  successfully removed, contract terminated</h2>
 
     <!--<p class="asNotSigned"><span class="organisation-name">Acme Ltd Coventry</span> can now spend levy funds</p>-->
         </div>
         
-        <div class="govuk-box-highlight " id="org">
+        <div class="govuk-box-highlight hidden" id="org">
           <h2 class="bold-large"><span class="organisation-name">Acme Ltd Coventry</span> successfully removed</h2>
 
     <!--<p class="asNotSigned"><span class="organisation-name">Acme Ltd Coventry</span> can now spend levy funds</p>-->
@@ -48,8 +55,9 @@
     <div class="column-two-thirds">
                     <div class="hgroup">
             <h1 class="heading-xlarge">Your organisations and agreements</h1>
-                        <p>Add the organisations that you want to hire apprentices through.</p>
+                        <p>Add each organisation that will hire apprentices by making agreements with training providers. There is no restriction on the number of <a href="https://www.gov.uk/government/publications/employment-allowance-more-detailed-guidance" rel="external">connected organisations</a> you can add.</p>
                         <p>To spend levy funds on apprentices for an organisation, you need to sign the SFA agreement for that organisation.</p>
+                        <!--<a href="#">Read the SFA agreement</a>.-->
             </div>
   </div>
 
@@ -97,7 +105,10 @@
         </tr>
     </tbody>
 </table>
- 
+    
+    <hr />
+
+    <p class="font-xsmall"><a href="/sprint/{{sprint}}/account/organisations/remove-org.html">Remove an organisation from your account</a>.</p>
             
             
             

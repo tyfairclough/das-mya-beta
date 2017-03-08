@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Sprint 11 - Dashboard
+  Sprint {{sprint}} - Dashboard
 {% endblock %}
 
 {% block inside_header %}
@@ -35,7 +35,7 @@ Manage your account
     </div>
   </div>   
                 <div class="hgroup">
-                <h1 class="heading-xlarge">Manage your account</h1>
+                <h1 class="heading-xlarge">TEST_TYIT LTD</h1>
                 <hr style="border-bottom: 5px #DEE0E2 solid; background: none;" />
             </div>
     
@@ -43,74 +43,42 @@ Manage your account
 
 <div class="grid-row">
 
-    <div class="column-one-half">
+    <div class="column-one-third">
 
-                <h3 class="heading-medium" style="margin-top: 0"><a href="/sprint/{{sprint}}/account/paye/index">PAYE schemes</a></h3>
-                <p>Access funds by adding PAYE schemes.</p>         
-
-                <h3 class="heading-medium" style="margin-top: 0;"><a href="/sprint/{{sprint}}/account/organisations/index">Your organisations and agreements</a></h3>
-                <p>Add and manage organisations that’ll hire apprentices.</p>
-
-                <h3 class="heading-medium" style="margin-top: 0;"><a href="/sprint/{{sprint}}/account/finance/index">Finance</a></h3>
-                <p>View transactions and forecast your funds.</p>
-
-                <h3 class="heading-medium" style="margin-top: 0"><a href="/sprint/{{sprint}}/account/apprentices/index">Apprentices</a></h3>
-                <p>Update the status of your apprentices, or recruit new ones.</p>            
-
+        
                 <h3 class="heading-medium" style="margin-top: 0">
                 <a href="/sprint/{{sprint}}/account/team/index">Your team</a></h3>
                 <p>Control what your team can do and invite new team members.</p>
 
+                <h3 class="heading-medium" style="margin-top: 0;"><a href="/sprint/{{sprint}}/account/organisations/index">Your organisations and SFA agreements</a></h3>
+                <p>Add each organisation that will hire apprentices.</p>
+
+                <h3 class="heading-medium" style="margin-top: 0"><a href="/sprint/{{sprint}}/account/apprentices/index">Apprentices</a></h3>
+                <p>Update the status of your apprentices, or recruit new ones.</p>            
+
+        
+
     </div>
         
-<div class="column-one-half">
-    <aside id="checklist" class="related">
-            <h4 class="heading-medium">Checklist</h4>    
-<table class="">
-                          <thead>
-                            <tr>
-                              <th scope="col" style="padding-top:0"></th>
-                               <th scope="col" style="padding-top:0"></th>
-                            </tr>
-                          </thead>
-                          <tbody>
+    <div class="column-one-third">
+                <h3 class="heading-medium" style="margin-top: 0;"><a href="/sprint/{{sprint}}/account/finance/index">Finance</a></h3>
+                <p>View transactions and forecast your funds.</p>
 
-                             <tr id="" class="">
-                              <td style="width: 100%">Before you can spend levy funds you need to <a href="/sprint/{{sprint}}/account/organisations/index">sign the SFA employer agreement</a>.</td>
-                                <td style="width: 0%;" class="looks-like-a-link-underline"></td>
-                              </tr>
-                             <tr>
-                              <td><a href="/sprint/{{sprint}}/account/team/index">Invite team members.</a></td>
-                                <td>
+                <h3 class="heading-medium" style="margin-top: 0"><a href="/sprint/{{sprint}}/account/paye/index">PAYE schemes</a></h3>
+                <p>Access funds by adding PAYE schemes.</p>         
 
-                                </td>
-                              </tr>
-                              <tr>
-                              <!--quick hack, will fix -->
-                              <td><a href="/sprint/{{sprint}}/account/finance/index">Forecast your funds</a></td>
-                               <td> <span id="forecastComplete" class="statusToDo rj-dont-display hidden">No forecast made</span> </td>
-                              </tr>
+                <h3 class="heading-medium" style="margin-top: 0"><a href="/sprint/{{sprint}}/account/paye/index" target="_blank">Find apprenticeship training</a></h3>
+                <p>Search for training providers, training frameworks and end-point assessors.</p>                         
 
-                             <tr id="trainingProviders" class="rj-dont-display">
-                              <td><a href="http://www.findapprenticeshiptraining.sfa.bis.gov.uk">Explore training and find a provider.</a></td>
-                                <td class="looks-like-a-link-underline"></td>
-                              </tr>
+    </div>
+    
+    <div class="column-one-third">
+        <div class="panel alert-default">
+                <h3 class="heading-medium">Notice</h3>
+                <p><a href="https://www.gov.uk/government/publications/apprenticeship-funding-legal-agreement-to-enable-spending" target="_blank">Read the <abbr title="Skills Funding Agency">SFA</abbr> agreement</a> - from May 2017, SFA will ask you to accept this agreement in order to spend apprenticeship funds.</p>
+            </div>
+    </div>
 
-                              <tr id="endpointAssessment" class="rj-dont-display">
-                              <td><a href="https://www.gov.uk/government/collections/register-of-apprentice-assessment-organisations#employers-looking-for-an-assessment-organisation" rel="external">Learn more about Endpoint Assesment.</a></td>
-                                <td class="looks-like-a-link-underline"></td>
-                              </tr>
-
-                              <tr id="endpointAssessment" class="rj-dont-display">
-                              <td><a href="https://www.gov.uk/government/collections/register-of-apprentice-assessment-organisations#employers-looking-for-an-assessment-organisation" rel="external">Recruit your first apprentice.</a></td>
-                                <td class="looks-like-a-link-underline"></td>
-                              </tr>
-
-
-                          </tbody>
-                      </table>
-        </aside>
-           </div>
            
     </div>
  

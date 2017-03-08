@@ -189,11 +189,48 @@ break;
        case 'confirm-employer' :
            confirmEmployer();
 break;
+       case 'funding-index' :
+           nudgeGraph();
+break;
        case 'first-approval' :
            firstApproval();
 break;
+       case 'organisations-remove' :
+           removeOrgIndex();
+break;
 default: break;
    };
+     
+     
+     function nudgeGraph() {
+         //c3 js for our nudge graph
+         
+         var chart = c3.generate({
+            bindto: '#nudge',
+            data: {
+                columns: [
+                    ['data1',10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130]
+                ],
+                types: {
+                    data1: 'area-spline'
+                },
+                regions: {
+                    data1: [{'start':0, 'end':6}]
+                },
+                names: {
+                    data1: 'Apprentices*'
+                }
+            }
+
+        });
+         
+         // select the x axis
+d3.select(chart.element).select('.' + c3.chart.internal.fn.CLASS.axisX).transition()
+// and translate it to the y = 0 position
+    .attr('transform', "translate(" + 0 + "," + chart.internal.y(70) + ")")
+
+
+     }
     
     function firstApproval(){
             $(".button").click(function(e){
@@ -400,12 +437,10 @@ function confirmDetails() {
 }    
     
 
-    
-    
-    function organisationsIndex(i) {
+    function removeOrgIndex(i) {
         
         
-                      sessionState = localStorage.setItem("onboarding","0");            
+                      //sessionState = localStorage.setItem("onboarding","0");            
 
         
  
@@ -417,7 +452,92 @@ function confirmDetails() {
                         orgArray = JSON.parse(localStorage.getItem("organisations"));
                         
                         var $table = $( "<table class='table'></table>" );
-    var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th>Agreement</th><th></th></tr></thead>");                
+    var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th></th></tr></thead>");                
+    $table.append( $head );
+
+    
+                        
+if ( orgArray.length == 1 ) {
+alert("show there's only 1 org");
+    
+	orgName = JSON.parse(orgArray[0]);
+    
+    var $line = $( "<tr></tr>" );
+     $line.append( $( "<td>" + orgName.name +"</td>" ));
+    $line.append( $( "<td>Can’t be removed because it's the only organisation on your account.</td>" ) );
+    //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
+    $table.append( $line );
+    
+} else {
+                            
+                        
+for ( var i = 0; i < orgArray.length; i++ ) {
+    
+	orgName = JSON.parse(orgArray[i]);
+    
+    var $line = $( "<tr></tr>" );
+
+    // this is if it is disabled 
+
+    if (orgName.signed != 0 ) { 
+    // this is if its enabled
+    //$line.append( $( "<td><a href='#'></a></td>" ).html( orgName ) );
+    $line.append( $( "<td>" + orgName.name +"</td>" ));
+    $line.append( $( "<td>Can’t be removed because it has ongoing apprenticeships.</td>" ) );
+    //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
+    $table.append( $line );
+    continue;
+    }
+    $line.append( $( "<td>"+ orgName.name +"</td>" ));
+    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/remove-org-confirm.html'>Remove</a></td>" ) );
+    $table.append( $line );
+    
+
+    }
+};
+
+$table.appendTo( document.body );
+
+// if you want to insert this table in a div with id attribute 
+// set as "myDiv", you can do this:
+$table.appendTo( $( "#orgTable" ) );
+                        
+                    }
+            var orgArray = []
+            orgArray = JSON.parse(localStorage.getItem("organisations"));
+            console.log(orgArray);
+            $("table a.remove").click(function(e){
+            e.preventDefault();
+            //get the number of the row
+            var rowNum = $(this).attr("id");
+            //var rowNum = $(this).id;
+            // splice that row
+            console.log(rowNum);
+            orgArray.splice(rowNum,1);
+                localStorage.setItem("organisations", JSON.stringify(orgArray));
+              window.location.href = "/sprint/{{sprint}}/account/organisations/index.html";
+        });
+        
+        userName();
+        
+    }
+    
+    function organisationsIndex(i) {
+        
+        
+                      //sessionState = localStorage.setItem("onboarding","0");            
+
+        
+ 
+
+                    if (localStorage.getItem("organisations") === null) {
+                    console.log("no orgs found")
+                    } else {
+                        var orgArray = [];
+                        orgArray = JSON.parse(localStorage.getItem("organisations"));
+                        
+                        var $table = $( "<table class='table'></table>" );
+    var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th>Spending status</th><th></th></tr></thead>");                
     $table.append( $head );
 
                         
@@ -434,16 +554,16 @@ for ( var i = 0; i < orgArray.length; i++ ) {
     if (orgName.signed != 0 ) { 
     // this is if its enabled
     //$line.append( $( "<td><a href='#'></a></td>" ).html( orgName ) );
-    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-signed.html'>" + orgName.name +"</a></td>" ));
-    $line.append( $( "<td>Signed by <span class='user-name'>John Doe</span><div style='color:#6F777B' class='font-xsmall'>Signed on: <span class='today'>"+ orgName.date +"</span></div></td>" ) );
+    $line.append( $( "<td>" + orgName.name +"</td>" ));
+    $line.append( $( "<td>Spending enabled<div style='color:#6F777B' class='font-xsmall'>SFA agreement signed by <span class='user-name'>Maxim Baby</span>, <span class='today'>"+ orgName.date +"</span></div></td>" ) );
 
-    $line.append( $("<td class='numeric'><a class='button text-link' href='/sprint/{{sprint}}/account/organisations/agreement-cover-signed.html'>View</a></td>") );
+    $line.append( $("<td class='numeric'><a class='button text-link' href='/sprint/{{sprint}}/account/organisations/agreement-cover-signed.html'>Details</a></td>") );
     //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
     $table.append( $line );
     continue;
     }
-    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-signed.html'>"+ orgName.name +"</a></td>" ));
-    $line.append( $( "<td>Agreement not signed<div style='color:#6F777B' class='font-xsmall'>SFA agreement needs to be signed</div></td>" ) );
+    $line.append( $( "<td>"+ orgName.name +"</td>" ));
+    $line.append( $( "<td>Spending disabled<div style='color:#6F777B' class='font-xsmall'>SFA agreement not yet signed</div></td>" ) );
 
     $line.append( $("<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html' class='button secondary review-agreement-button' data-org-index='"+i+"'>Sign agreement</a></td>"));
     //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
@@ -1095,7 +1215,7 @@ var chart = c3.generate({
     })
     
             
-// sprint 11
+// Sprint {{sprint}}
     
     if ( $("main").hasClass("index") == true) {
         localStorage.setItem('payeCount',0)

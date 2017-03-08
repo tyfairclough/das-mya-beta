@@ -436,6 +436,20 @@ function confirmDetails() {
     });
 }    
     
+     
+     function removeOrgConfirm(i) {
+                     $("table a.remove").click(function(e){
+            e.preventDefault();
+            //get the number of the row
+            var rowNum = $(this).attr("id");
+            //var rowNum = $(this).id;
+            // splice that row
+            console.log(rowNum);
+            orgArray.splice(rowNum,1);
+                localStorage.setItem("organisations", JSON.stringify(orgArray));
+              window.location.href = "/sprint/{{sprint}}/account/organisations/index.html";
+        });
+     }
 
     function removeOrgIndex(i) {
         
@@ -489,7 +503,7 @@ for ( var i = 0; i < orgArray.length; i++ ) {
     continue;
     }
     $line.append( $( "<td>"+ orgName.name +"</td>" ));
-    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/remove-org-confirm.html'>Remove</a></td>" ) );
+    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/remove-org-confirm.html?orgId="+ i +"'>Remove</a></td>" ) );
     $table.append( $line );
     
 

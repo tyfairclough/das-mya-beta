@@ -198,8 +198,37 @@ break;
        case 'organisations-remove' :
            removeOrgIndex();
 break;
+       case 'organisations-remove-confirm' :
+           removeOrgConfirm2();
+break;
 default: break;
    };
+     
+
+     
+     
+     function removeOrgConfirm2() {
+         
+         
+         
+         
+         
+                     $("#action").click(function(e){
+            e.preventDefault();
+            //get the number of the row
+            //var rowNum = $(this).attr("id");
+            var rowNum = getQueryVariable("orgId");
+
+                         
+                         
+                        var orgArray = [];
+                        orgArray = JSON.parse(localStorage.getItem("organisations"));
+
+            orgArray.splice(rowNum,1);
+                localStorage.setItem("organisations", JSON.stringify(orgArray));
+              window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?removeMsg=y";
+        });
+     }     
      
      
      function nudgeGraph() {
@@ -452,13 +481,6 @@ function confirmDetails() {
      }
 
     function removeOrgIndex(i) {
-        
-        
-                      //sessionState = localStorage.setItem("onboarding","0");            
-
-        
- 
-
                     if (localStorage.getItem("organisations") === null) {
                     console.log("no orgs found")
                     } else {
@@ -472,7 +494,7 @@ function confirmDetails() {
     
                         
 if ( orgArray.length == 1 ) {
-alert("show there's only 1 org");
+//alert("show there's only 1 org");
     
 	orgName = JSON.parse(orgArray[0]);
     
@@ -503,7 +525,7 @@ for ( var i = 0; i < orgArray.length; i++ ) {
     continue;
     }
     $line.append( $( "<td>"+ orgName.name +"</td>" ));
-    $line.append( $( "<td><a href='/sprint/{{sprint}}/account/organisations/remove-org-confirm.html?orgId="+ i +"'>Remove</a></td>" ) );
+    $line.append( $( "<td><a data-org-index="+i+" href='/sprint/{{sprint}}/account/organisations/remove-org-confirm.html?orgId="+ i +"'>Remove</a></td>" ) );
     $table.append( $line );
     
 
@@ -519,8 +541,8 @@ $table.appendTo( $( "#orgTable" ) );
                     }
             var orgArray = []
             orgArray = JSON.parse(localStorage.getItem("organisations"));
-            console.log(orgArray);
-            $("table a.remove").click(function(e){
+//            console.log(orgArray);
+/*            $("table a.remove").click(function(e){
             e.preventDefault();
             //get the number of the row
             var rowNum = $(this).attr("id");
@@ -530,6 +552,14 @@ $table.appendTo( $( "#orgTable" ) );
             orgArray.splice(rowNum,1);
                 localStorage.setItem("organisations", JSON.stringify(orgArray));
               window.location.href = "/sprint/{{sprint}}/account/organisations/index.html";
+        }); */
+        
+        $("table a").click(function(e){
+            e.preventDefault();
+            var orgName = $(this).closest("td").prev("td").text();
+            var orgId = $(this).attr("data-org-index");
+            localStorage.setItem("organisation-name", JSON.stringify(orgName));
+            window.location.href = "/sprint/{{sprint}}/account/organisations/remove-org-confirm.html?orgId="+orgId;
         });
         
         userName();
@@ -540,7 +570,9 @@ $table.appendTo( $( "#orgTable" ) );
         
         
                       //sessionState = localStorage.setItem("onboarding","0");            
-
+                    if ( removeMsg == "y" ) {
+                        $("#removeOrgMsg").removeClass("hidden");
+                    }
         
  
 
@@ -1173,6 +1205,7 @@ var chart = c3.generate({
     var orgType = getQueryVariable("orgtype");
     var organisationName = getQueryVariable("name");
     var organisationNameNew = getQueryVariable("name-changed");
+    var removeMsg = getQueryVariable("removeMsg");
     
     
     

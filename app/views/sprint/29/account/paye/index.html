@@ -14,7 +14,7 @@
 
 
 {% block content %}
-<main class="paye-index" id="content" role="main" tabindex="-1">
+<main class="elements-index" id="content" role="main" tabindex="-1">
 
     <section id="notifications">
 <div class="govuk-box-highlight hidden" id="PAYEremoved">
@@ -38,12 +38,17 @@
 
         </div>
         <div class="column-third">
-                        <a id="dothething" class="button" href="/sprint/{{sprint}}/onboarding/gateway-alert.html">Add new scheme</a>
         
         </div>
     </div>
     
-    
+<div id="emptyState" class="grid-row">
+        <div class="column-two-thirds">
+            <div class="notice">
+            <p class="">There are no PAYE schemes added.</p>
+                </div>
+        </div>
+    </div>    
     
 
 <div class="grid-row">
@@ -86,6 +91,7 @@
             
         </div>
     </div>    
+                        <a  class="button" href="/sprint/{{sprint}}/onboarding/gateway-alert.html">Add new scheme</a>
 
 </main>
 {% endblock %}

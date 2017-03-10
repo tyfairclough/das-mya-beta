@@ -479,7 +479,7 @@ function confirmDetails() {
               window.location.href = "/sprint/{{sprint}}/account/organisations/index.html";
         });
      }
-/*
+
     function removeOrgIndex(i) {
                     if (localStorage.getItem("organisations") === null) {
                     console.log("no orgs found")
@@ -542,7 +542,7 @@ $table.appendTo( $( "#orgTable" ) );
             var orgArray = []
             orgArray = JSON.parse(localStorage.getItem("organisations"));
 //            console.log(orgArray);
-/*            $("table a.remove").click(function(e){
+          $("table a.remove").click(function(e){
             e.preventDefault();
             //get the number of the row
             var rowNum = $(this).attr("id");
@@ -552,8 +552,8 @@ $table.appendTo( $( "#orgTable" ) );
             orgArray.splice(rowNum,1);
                 localStorage.setItem("organisations", JSON.stringify(orgArray));
               window.location.href = "/sprint/{{sprint}}/account/organisations/index.html";
-        }); */
-/*        
+        }); 
+        
         $("table a").click(function(e){
             e.preventDefault();
             var orgName = $(this).closest("td").prev("td").text();
@@ -565,7 +565,7 @@ $table.appendTo( $( "#orgTable" ) );
         userName();
         
     }
-  */  
+ 
    function organisationsIndex(i) {
         
         

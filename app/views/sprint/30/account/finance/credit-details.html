@@ -23,7 +23,8 @@
       <h1 class="heading-large">
           Credit details
       </h1>
-        <p class="lede">Credit made on 15 Apr 2018.</p>
+        <p class="lede">Credit made on 15 April 2018.</p>
+            <p>Levy declared to HMRC might include negative adjustments from previous months. </p>
         </div>
         
 
@@ -33,15 +34,14 @@
       
    
     </div>
-    
                   <table>
             <thead>
                 <tr>
                     <th scope="col">PAYE scheme</th>
-                    <th class="numeric" scope="col">Levy declared</th>
+                    <th class="numeric" scope="col">Levy amount</th>
                     <th class="numeric" scope="col">English %</th>
-                    <th class="numeric" scope="col">Top up</th>
-                    <th class="numeric" scope="col">Paid in</th>
+                    <th class="numeric" scope="col">10% Top up</th>
+                    <th class="numeric" scope="col">Amount</th>
                 </tr>
             </thead>
             <tbody>
@@ -69,14 +69,15 @@
             </tbody>
         </table>
     
-    <div class="grid-row">
-       <div class="column-two-thirds">
-        
-        <div class="panel panel-border-wide">
-            <p>Levy declared to HMRC might include negative adjustments from previous months. </p>
-        </div>
-        </div> 
-  </div>
+<div class="grid-row">
+    <div class="column-two-thirds">
+    <details class="">
+            <summary>What is English percentage?</summary>
+                <p>Your English percentage is provided by HMRC based on the data in your payroll submissions. It represents the proportion of your payroll that’s paid to your employees that live in England.</p>
+                <p>If you think there are any issues with your English percentage, check your payroll data to make sure your employee's address information is correct.</p>
+        </details>
+    </div>
+    </div>
 
 </main>
 {% endblock %}

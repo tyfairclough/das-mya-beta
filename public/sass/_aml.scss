@@ -621,6 +621,18 @@ nav.global-nav ul {
     margin-bottom: 0;
 }
 
+.govuk-box-highlight {
+    p, h1, h2 {
+    margin: 0 auto;
+    max-width: 30em;        
+    }
+    p {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+}
+
 .related {
     border-top-color: $govuk-blue;
     border-top-style: solid;

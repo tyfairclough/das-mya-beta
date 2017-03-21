@@ -181,10 +181,33 @@
                 </div>
             </div>
             <pre>
-                <code>
-<p><a href="#">A 19px link without surrounding text</a></p>
-<p><a href="#">A 19px body copy link</a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-<a href="#" class="link-back">Back</a>
+                <code class="html">
+&lt;p&gt;&lt;a href="#"&gt;A 19px link without surrounding text&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#"&gt;A 19px body copy link&lt;/a&gt;. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
+&lt;a href="#" class="link-back"&gt;Back&lt;/a&gt;
+                </code>
+            </pre>
+            
+            <pre>
+                <code class="sass">
+    a {
+    &:link {
+        color: #005ea5;
+        }
+    &:visited {
+        color: #4c2c92;
+        }
+    &:hover {
+        color: #2b8cc4;
+        }
+    &:active {
+        color: #2b8cc4;
+        }
+    &:focus {
+        background-color: #ffbf47;
+        outline: 3px solid #ffbf47;
+        }
+    }
                 </code>
             </pre>
         </div>

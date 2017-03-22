@@ -1441,4 +1441,17 @@ dl.confirm-details {
   }
 }
 
+
+table.form {
+        td {
+            line-height: 2.315789;
+                .block-label.selection-button-radio::before {
+                    top: -12px;
+                }
+                .block-label.selection-button-radio::after {
+                    top: -3px;
+                }
+        }
+}
+
 /*End of filter menu style*/

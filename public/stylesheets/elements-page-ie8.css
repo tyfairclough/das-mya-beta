@@ -1770,11 +1770,11 @@ input[type=number] {
   }
 }
 
-.notifications .error-summary, .notifications .warning-summary, .notifications .success-summary, .notifications .info-summary, .notifications .info-highlighted {
+.error-summary, .warning-summary, .success-summary, .info-summary, .info-highlighted {
   margin-bottom: 0px !important;
 }
 
-.notifications .error-summary:last-child, .notifications .warning-summary:last-child, .notifications .success-summary:last-child, .notifications .info-summary:last-child, .notifications .info-highlighted:last-child {
+.error-summary:last-child, .warning-summary:last-child, .success-summary:last-child, .info-summary:last-child, .info-highlighted:last-child {
   margin-bottom: 100px;
 }
 
@@ -1884,7 +1884,8 @@ input[type=number] {
   color: #f47738;
 }
 
-.notifications .info-highlighted {
+.info-highlighted {
+  max-width: 30em;
   background: #eaebf3;
   border: none;
   border-left: solid 10px #2e358b;

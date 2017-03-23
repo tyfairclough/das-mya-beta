@@ -1459,3 +1459,16 @@ table.form {
 }
 
 /*End of filter menu style*/
+
+@media (min-width: 768px) {
+    ul.three-column {
+        clear: both;
+        width: 100%;
+        display: block;
+        overflow: auto;
+            li {
+                width: 33%;
+                float: left;
+            }
+        }
+}

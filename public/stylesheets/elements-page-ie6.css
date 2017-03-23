@@ -3354,6 +3354,19 @@ table.form td .block-label.selection-button-radio::after {
 }
 
 /*End of filter menu style*/
+@media (min-width: 768px) {
+  ul.three-column {
+    clear: both;
+    width: 100%;
+    display: block;
+    overflow: auto;
+  }
+  ul.three-column li {
+    width: 33%;
+    float: left;
+  }
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

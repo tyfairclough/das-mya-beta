@@ -2,10 +2,11 @@
 $info-colour:$light-blue;
 $success-colour:$turquoise;
 $warning-colour:$orange;
+$info-highlighted:$purple;
 
 // Container for notifications, to reduce space between them wehen there are multiple
 .notifications { 
-    .error-summary,.warning-summary,.success-summary,.info-summary{
+    .error-summary,.warning-summary,.success-summary,.info-summary, .info-highlighted{
         margin-bottom:0px !important;
         &:last-child {
            margin-bottom:100px; 
@@ -14,7 +15,7 @@ $warning-colour:$orange;
 }
 
 // Share notification styles
-.error-summary, .info-summary, .success-summary, .warning-summary {
+.error-summary, .info-summary, .success-summary, .warning-summary, .info-highlighted {
     border-width: 4px;
     border-style: solid;
 
@@ -128,6 +129,16 @@ $warning-colour:$orange;
   .warning-dismiss {
     color: $warning-colour;
   }
+}
+
+// info-highlighted styles
+.notifications {
+.info-highlighted {
+
+    background: mix(white,$purple,90%);
+    border: none;
+    border-left: solid 10px $purple;
+    }
 }
 
 // ==========================================================================

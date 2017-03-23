@@ -80,7 +80,7 @@ a.nav-menu-link {
 	float: right;
 	clear: both;
 	margin: 10px 0;
-	font-size: 14px;
+	font-size: 16px;
 	padding-left: 15px !important;
 	color: #000;
 	text-decoration: none;
@@ -1443,6 +1443,10 @@ dl.confirm-details {
 
 
 table.form {
+    
+    tbody > tr th {
+            border-bottom: none;
+        }
         td {
             line-height: 2.315789;
                 .block-label.selection-button-radio::before {

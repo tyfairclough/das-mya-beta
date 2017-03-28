@@ -3361,3 +3361,8 @@ table.form td .block-label.selection-button-radio::after {
     float: left;
   }
 }
+
+#app {
+  width: 100%;
+  overflow: auto;
+}

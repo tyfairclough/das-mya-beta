@@ -206,10 +206,15 @@ break;
 break;
        case 'account-dashboard' :
            accountDashboard();
+break;
+       case 'account-forecast' :
+           accountForecast();
+break;
 default: break;
    };
      
      
+
      
      function accountDashboard() {
               
@@ -271,6 +276,22 @@ var chart = c3.generate({
      
      function inviteNew() {
          
+         
+         // version without drop down
+         
+                      $(".acl").removeClass("hidden");
+                      $(".preset-roles").addClass("hidden");
+                      $("label").removeClass('selected');
+                        
+         $("label").click(function(e){
+             e.preventDefault();
+             $(this).parents("tr").find("label").removeClass("selected");
+             $(this).addClass("selected");
+         })
+         // version with drop down
+         
+         /*
+         
          $("select").change(function(e){
             //e.preventDefault();                  
              var role = $( "select option:selected" ).val();
@@ -296,6 +317,8 @@ var chart = c3.generate({
              }
          
         })
+         
+         */
      }
 
      
@@ -549,11 +572,10 @@ function confirmDetails() {
         var onboarding = JSON.parse(localStorage.getItem("onboarding"));
 
         if ( onboarding == 1 ) {
-        window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html?accountCreated=y";
+       window.location.href = "/sprint/{{sprint}}/account/organisations/next.html?orgAdded=y";
             }
         else {
-       window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?orgAdded=y";
-            
+        window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html?accountCreated=y";            
         }
     });
 }    
@@ -1673,6 +1695,22 @@ var chApiKey = "fNoTIfmTDt5fP0kKESHsxQSfa2DVzKXBDzCrFQkV";
 			return "Basic " + hash;
 		}
 }
+    
+     function accountForecast() {
+         
+         var body = $(body).height();
+         var block1 = $("#global-header").height();
+         var block2 = $("#loggedOut").height();
+         //var block3 = $("#footer").height();
+         var block3 = 271;
+         var block4 = $(".account-forecast").height();
+         
+         var wrapperBlock = body - block1 - block2 - block3 - block4;
+         console.log("height of chart is" + wrapperBlock);
+         $(".account-forecast").height(wrapperBlock);
+         
+     }
+         
     
     
 </script>

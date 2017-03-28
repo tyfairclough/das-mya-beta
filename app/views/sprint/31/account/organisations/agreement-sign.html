@@ -422,11 +422,11 @@
    
             <h1 class="heading-large">Accept this agreement</h1>
               <legend class="visually-hidden">Accept this agreement</legend>
-         <p>As an employer you must:</p>
+<!--         <p>As an employer you must:</p>
 <ul class="list list-bullet">
     <li>make sure that the person signing the agreement on behalf of your organisation has the authority to do so</li>
     <li>agree that by using this service, your contracts are signed digitally and are legally binding</li>
-</ul>    
+</ul>-->
 <table class="top-border">
                 <tbody>
                     <tr>
@@ -467,7 +467,19 @@ Accepted on:
   </fieldset>
 </form>
         <a id="sign2" href="/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y"  class="button" >Accept and finish</a>
+        <br>    
+        <br>    
+<div class="notice">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+This agreement is legally binding. You must have authority from your organisation to accept it.
+  </strong>
+</div>              
         </div>
+        
+      
         
   {% include "includes/link-back.html" %}
 

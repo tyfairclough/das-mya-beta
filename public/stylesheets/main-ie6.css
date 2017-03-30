@@ -3371,3 +3371,123 @@ table.form td .block-label.selection-button-radio::after {
   width: 100%;
   overflow: auto;
 }
+
+#finance-bingo .column-third div {
+  background-color: #DEE0E2;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+
+#finance-bingo .column-third div h2 {
+  margin: 0px 0 0px 15px;
+  padding-top: 25px;
+}
+
+#finance-bingo .column-third div h2 + h2 {
+  margin: 0px 0 0px 15px;
+  padding: 0;
+}
+
+#finance-bingo .column-third div a {
+  margin: 10px 0 0;
+  padding: 10px 15px;
+  float: left;
+  background: #F8F8F8;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #DEE0E2;
+}
+
+#help2 {
+  background: #DEE0E2;
+  padding: 20px;
+}
+
+.sprint-31 .bingo > div div {
+  color: white;
+  padding: 15px;
+}
+
+.sprint-31 .bingo > div div .heading-medium {
+  margin: 0 0 30px;
+}
+
+.sprint-31 .bingo > div div a {
+  display: block;
+  margin: -15px;
+  padding: 11px;
+  background: white;
+}
+
+.sprint-31 .bingo div:nth-child(1) div {
+  background: #2E358B;
+}
+
+.sprint-31 .bingo div:nth-child(1) div a {
+  border: 4px solid #2E358B;
+}
+
+.sprint-31 .bingo div:nth-child(2) div {
+  background: #912B88;
+}
+
+.sprint-31 .bingo div:nth-child(2) div a {
+  border: 4px solid #912B88;
+}
+
+.sprint-31 .bingo div:nth-child(3) div {
+  background: #D53880;
+}
+
+.sprint-31 .bingo div:nth-child(3) div a {
+  border: 4px solid #D53880;
+}
+
+.sprint-31 .bingo-1 > div div, .sprint-31 .bingo-2 > div div, .sprint-31 .bingo-3 > div div, .sprint-31 .bingo-4 > div div {
+  color: white;
+  padding: 15px;
+}
+
+.sprint-31 .bingo-1 > div div .heading-medium, .sprint-31 .bingo-2 > div div .heading-medium, .sprint-31 .bingo-3 > div div .heading-medium, .sprint-31 .bingo-4 > div div .heading-medium {
+  margin: 0 0 30px;
+}
+
+.sprint-31 .bingo-1 > div div a, .sprint-31 .bingo-2 > div div a, .sprint-31 .bingo-3 > div div a, .sprint-31 .bingo-4 > div div a {
+  display: block;
+  margin: -15px;
+  padding: 11px;
+  background: white;
+}
+
+.sprint-31 .bingo-1 div div {
+  background: #2E358B;
+}
+
+.sprint-31 .bingo-1 div div a {
+  border: 4px solid #2E358B;
+}
+
+.sprint-31 .bingo-2 div div {
+  background: #912B88;
+}
+
+.sprint-31 .bingo-2 div div a {
+  border: 4px solid #912B88;
+}
+
+.sprint-31 .bingo-3 div div {
+  background: #D53880;
+}
+
+.sprint-31 .bingo-3 div div a {
+  border: 4px solid #D53880;
+}
+
+.sprint-31 .bingo-4 div div {
+  background: #6F72AF;
+}
+
+.sprint-31 .bingo-4 div div a {
+  border: 4px solid #6F72AF;
+}

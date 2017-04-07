@@ -7,7 +7,7 @@
 <script src="/public/javascripts/govuk/show-hide-content.js"></script>
 
 <!-- govuk_elements js -->
-<script src="/public/javascripts/govuk/details.polyfill.js"></script>
+<!--<script src="/public/javascripts/govuk/details.polyfill.js"></script>-->
 <script src="/public/javascripts/application.js"></script>
 <script src="/public/javascripts/stackable.min.js"></script>
 <script src="/public/javascripts/zxcvbn.js"></script>
@@ -38,7 +38,65 @@
     
 $(document).ready(function () {
   
+    var wordLen = 5,
+		len; // Maximum word length
+$('#wordlimit').keydown(function(event) {	
+	len = $('#wordlimit').val().split(/[\s]+/);
+	if (len.length > wordLen) { 
+		if ( event.keyCode == 46 || event.keyCode == 8 ) {// Allow backspace and delete buttons
+	$('.words-left').html(wordsLeft+ ' words left');
+
+    } else if (event.keyCode < 48 || event.keyCode > 57 ) {//all other buttons
+    //	event.preventDefault();
+	$('.words-left').html(wordsLeft+ ' words too many');
+
+    }
+	}
+	console.log(len.length + " words are typed out of an available " + wordLen);
+	wordsLeft = (wordLen) - len.length;
+	//$('.words-left').html(wordsLeft+ ' words left');
+	//if(wordsLeft <= 0) {
+	//	$('.words-left').prepend('');
+	//}
+});
+    
   
+// character count for text area    
+    characterCount = function(n) {
+  console.log(n);
+  var i = $(n)
+    , r = i.attr("data-val-length-max")
+    , e = i.val()
+    , h = (e.match(/\n/g) || []).length
+    , o = e.length + h
+    , u = Math.abs(r - o)
+    , f = i.closest(".form-group").find(".maxchar-count")
+    , t = i.closest(".form-group").find(".maxchar-text")
+    , s = i.closest(".form-group").find(".aria-limit");
+  if (r)
+      f.text(u);
+  else {
+      t.hide();
+      return
+  }
+  o > r ? (f.parent().addClass("has-error"),
+  t.text(" characters over the limit"),
+  s.text("Character limit has been reached, you must type fewer than " + r + " characters"),
+  u == 1 ? t.text(" character over the limit") : t.text(" characters over the limit")) : (f.parent().removeClass("has-error"),
+  t.text(" characters remaining"),
+  s.text(""),
+  u == 1 ? t.text(" character remaining") : t.text(" characters remaining"))
+}
+$("textarea").on("keyup", function() {
+    console.log(this);
+    characterCount(this);
+});
+$("textarea").each(function() {
+    characterCount(this);
+});
+    
+    
+// end character count for text area    
     
     
     if (localStorage.getItem("organisations") === null){

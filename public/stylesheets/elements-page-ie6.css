@@ -3573,6 +3573,17 @@ table.form td .block-label.selection-button-radio::after {
   background: #dee0e2;
 }
 
+.sfa-form-control-after {
+  font-size: 16px;
+  line-height: 1.25;
+  display: block;
+  color: #6f777b;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 19px;
+  line-height: 1.31579;
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

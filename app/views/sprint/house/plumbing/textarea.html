@@ -1,7 +1,7 @@
             
 <section id="textarea">
     <h2 class="heading-large">Textarea count</h2>
-    <p class="lede">By showing limits on inputs users are less likely to cause an error.</p>
+    <p>By showing limits on inputs users are less likely to cause an error.</p>
     <h3 class="heading-medium">Character count</h3>
     
     
@@ -17,36 +17,43 @@
         </div>
     </div>
     
-    <pre>
-        <code class="html">
-        &lt;div class="form-group"&gt;
-        &lt;textarea class="form-control" data-val-length-max="240" type="text" &gt;&lt;/textarea&gt;
-        &lt;span class="sfa-form-control-after"&gt;
-        &lt;span class="maxchar-count"&gt;100&lt;/span&gt;
-        &lt;span class="maxchar-text"&gt; characters remaining&lt;/span&gt;
-        &lt;/span&gt;
-        &lt;/div&gt;            
-        </code>
-    </pre>
-    
-    <pre>
-        <code class="css">
-            .sfa-form-control-after {
-                font-size: 16px;
-                line-height: 1.25;
-                display: block;
-                color: $secondary-text-colour;
-                padding-top: 2px;
-                padding-bottom: 2px;
-                @include media(tablet){
-                  font-size: 19px;
-                  line-height: 1.31579;
-                }
-            }
-        </code>
-    </pre>
-    
-    <pre>
+    <details>
+        <summary>HTML</summary>
+            <pre>
+                <code class="html">
+                &lt;div class="form-group"&gt;
+                &lt;textarea class="form-control" data-val-length-max="240" type="text" &gt;&lt;/textarea&gt;
+                &lt;span class="sfa-form-control-after"&gt;
+                &lt;span class="maxchar-count"&gt;100&lt;/span&gt;
+                &lt;span class="maxchar-text"&gt; characters remaining&lt;/span&gt;
+                &lt;/span&gt;
+                &lt;/div&gt;            
+                </code>
+            </pre>
+    </details>
+
+    <details>
+        <summary>SASS</summary>
+        <pre>
+            <code class="sass">
+.sfa-form-control-after {
+    font-size: 16px;
+    line-height: 1.25;
+    display: block;
+    color: $secondary-text-colour;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    @include media(tablet){
+      font-size: 19px;
+      line-height: 1.31579;
+    }
+}
+            </code>
+        </pre>        
+    </details>
+    <details>
+        <summary>JS</summary>
+<pre>
         <code class="js">
 characterCount = function(n) {
   console.log(n);
@@ -81,27 +88,56 @@ $("textarea").each(function() {
     characterCount(this);
 });        
         </code>
-    </pre>
+</pre>
+    </details>
+    
     
     
         <h3 class="heading-medium">Word count</h3>
     <p>Use this micro interaction if you have a soft limit on the content.</p>
     
     <div class="example">
-  <div class="question" id="question-50">
-    <label for="input-question-50">
-      <span class="question-heading">
-        Large textbox with word count limit of 5 words
-      </span>
-    </label>  
         <div class="word-count">
-          <textarea class="text-box text-box-large" id="wordlimit" data-max-length-in-words="5"></textarea>
-            
+            <textarea class="form-control" type="text" id="wordlimit" data-max-length-in-words="5"></textarea>
             <span class="sfa-form-control-after" id="#charlimit">
-        <span class="words-left">5</span>
-        </span>
+                <span class="words-left">5</span>
+            </span>
         </div>
-  </div>
     </div>
+    
+    <details>
+        <summary>HTML</summary>
+        <pre>
+            <code class="html">
+        &lt;div class="word-count"&gt;
+            &lt;textarea class="form-control" type="text" id="wordlimit" data-max-length-in-words="5"&gt;&lt;/textarea&gt;
+            &lt;span class="sfa-form-control-after" id="#charlimit"&gt;
+                &lt;span class="words-left">5&lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/div&gt;            
+            </code>
+        </pre>
+    </details>
+    
+    <details>
+        <summary>JS</summary>
+        <pre>
+            <code class="js">
+var wordLen = $("#wordlimit").data("max-length-in-words");
+var len;
+    $(".words-left").html(wordLen+ ' words left');	
+    $('#wordlimit').keydown(function(event) {	
+        len = $('#wordlimit').val().split(/[\s]+/);
+        console.log(len.length + " words are typed out of an available " + wordLen);
+        wordsLeft = (wordLen) - len.length;
+        if (len.length <= wordLen) { 
+            $('.words-left').html(wordsLeft+ ' words left');		
+        } else {
+            $('.words-left').html((wordsLeft *= -1 ) + ' words too many');		        
+        }
+    });            
+            </code>
+        </pre>
+    </details>
 
 </section>

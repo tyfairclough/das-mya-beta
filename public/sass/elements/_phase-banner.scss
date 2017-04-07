@@ -11,3 +11,11 @@
 .phase-banner-beta {
   @include phase-banner();
 }
+
+
+.phase-banner {
+    border-bottom: none;
+    .phase-tag {
+            background: $govuk-blue;
+    }
+}

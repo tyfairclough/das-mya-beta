@@ -2113,6 +2113,14 @@ input[type=number] {
   vertical-align: baseline;
 }
 
+.phase-banner {
+  border-bottom: none;
+}
+
+.phase-banner .phase-tag {
+  background: #005ea5;
+}
+
 .govuk-box-highlight {
   margin: 1em 0;
   padding: 2em 0 1em;
@@ -3960,6 +3968,55 @@ table.form td .block-label.selection-button-radio::after {
     font-size: 19px;
     line-height: 1.31579;
   }
+}
+
+.text-box-with-unit-before-with-error,
+.text-box-with-unit-before, .text-box-with-unit-after-with-error,
+.text-box-with-unit-after {
+  display: -moz-inline-stack;
+  display: inline-block;
+}
+
+.text-box-with-unit-before-with-error,
+.text-box-with-unit-before {
+  margin-left: -40px;
+  padding-left: 30px;
+}
+
+.text-box-with-unit-after-with-error,
+.text-box-with-unit-after {
+  text-align: right;
+  margin-right: -40px;
+  padding-right: 30px;
+}
+
+.text-box-unit {
+  display: -moz-inline-stack;
+  display: inline-block;
+  color: #6f777b;
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: bold;
+  width: 40px;
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+  text-align: center;
+}
+
+@media (min-width: 641px) {
+  .text-box-unit {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
+
+.text-box-unit-qualifier {
+  position: absolute;
+  left: -9999em;
 }
 
 .elements-index .heading-medium {

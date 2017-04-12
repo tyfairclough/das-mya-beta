@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="elements-index" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="hgroup">
+      <h1 class="heading-large">
+          Payment details
+            </h1>
+            
+            <ul>
+                <li>Date  <span class="bold-small">5th May 2017</span></li>
+                <li>Payment to <span class="bold-small">Barnfield College</span></li>
+            </ul>
+        </div>
+        
+
+        
+     </div>   
+        
+      
+   
+    </div>
+                  <table>
+                      <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="2" class="colspan cofunding">Co-investment</th>
+                          </tr>
+                      </thead>
+            <thead>
+                <tr>
+                    <th scope="col">Course</th>
+                    <th class="numeric" scope="col">Total</th>
+                    <th class="numeric" scope="col">Paid from levy</th>
+                    <th class="numeric cofunding" scope="col">90% paid by Government</th>
+                    <th class="numeric cofunding" scope="col">10% paid by you</th>
+                    <th class="numeric" scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr class="responsive-tr">
+                        <td>
+                            Financial services administrator level 3
+                            <br>
+                            <span class="form-hint">2 apprentices on course</span>
+                        </td>
+                        <td class="numeric">
+                            £1,750
+                        </td>
+                        <td class="numeric">
+                            £1,750
+                        </td>
+                        <td class="numeric cofunding">
+                            £0.00
+                        </td>
+                        <td class="numeric cofunding">
+                            £0.00
+                        </td>
+                        <td class="details"><a href="/sprint/{{sprint}}/account/finance/apprentice-details.html">Details</a></td>
+                    </tr>
+                
+                <tr class="total">
+                    <th scope="row"><span class="vh">Total</span></th>
+                    
+                    <td class="numeric">£1,750</td>
+                    <td class="numeric">£1.750</td>
+                    <td class="numeric cofunding">£0.00</td>
+                    <td class="numeric cofunding">£0.00</td>
+                </tr>
+            </tbody>
+        </table>
+    
+<div class="grid-row">
+    <div class="column-two-thirds">
+        
+        <p>Your payments to the provider include:</p>
+        <ul class="list list-bullet">
+            <li>any cofunding contributions you need to make</li>
+            <li>the costs of any appreticeships above the <a href="#">funding caps</a></li>
+        </ul>
+        
+<!--<a href="#">Download detailed financial data (spreadsheet)</a>-->
+    </div>
+    </div>
+
+</main>
+{% endblock %}

@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="history" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+    
+        <div class="">
+      <h1 class="heading-large">
+          Your transactions
+      </h1>
+    <h2 class="heading-medium">Current balance
+    <div class="bold-large">£2,650</div>
+    </h2>
+         </div>   
+
+        
+        <table>
+                <thead>
+                    <tr>
+                        <th scope="col"><span class="no-wrap">Payment date</span></th>
+                        <th scope="col" class="mobile-hide-cell">Description</th>
+                        <th scope="col" class="numeric">Amount</th>
+                        <th scope="col" class="numeric">Balance</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>
+                                <span class="no-wrap">22 June 2017 </span>
+                            </td>
+                            <td class="mobile-hide-cell">
+                                <span class="description">
+                                    Credit
+                                </span>
+                            </td>
+                            <td class="numeric"> £2,200.00</td>
+                            <td class="numeric"> £2,650.00</td>
+                            <td class="numeric">
+                                    <a title="View details for the transaction on 15 Mar 2018" href="/sprint/{{sprint}}/account/finance/credit-details.html">
+                                        Details <span class="vh"> for the transaction on 15 Mar 2018</span>
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr>
+                            <td>
+                                <span class="no-wrap">7 June 2017 </span>
+                            </td>
+                            <td class="mobile-hide-cell">
+                                <span class="description">
+                                    Barnfield College
+                                </span>
+                            </td>
+                            <td class="numeric"> £1,750.00</td>
+                            <td class="numeric"> £450.00</td>
+                            <td class="numeric">
+                                    <a title="View details for the transaction on 15 Apr 2018" href="/sprint/{{sprint}}/account/finance/payment-details.html">
+                                        Details <span class="vh"> for the transaction on 15 Apr 2018</span>
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="no-wrap">22 May 2017 </span>
+                            </td>
+                            <td class="mobile-hide-cell">
+                                <span class="description">
+                                    Credit
+                                </span>
+                            </td>
+                            <td class="numeric"> £2,200.00</td>
+                            <td class="numeric"> £2,200.00</td>
+                            <td class="numeric">
+                                    <a title="View details for the transaction on 15 Mar 2018" href="/sprint/{{sprint}}/account/finance/credit-details.html">
+                                        Details <span class="vh"> for the transaction on 15 Mar 2018</span>
+                                    </a>
+                            </td>
+                        </tr>
+                       
+                </tbody>
+            </table>
+</main>
+{% endblock %}

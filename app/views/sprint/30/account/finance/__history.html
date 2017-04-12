@@ -18,27 +18,15 @@
   {% include "includes/link-back.html" %}
 
     
-        <div class="hgroup">
+        <div class="">
       <h1 class="heading-large">
           Your transactions
       </h1>
+    <h2 class="heading-medium">Current balance
+    <div class="bold-large">£65,0000</div>
+    </h2>
+         </div>   
 
-        <div class="data" style="float: left; background: #2E358B; color: white; padding: 20px 10px; margin-right: 10px; width: 30%">
-                    <h2 class="bold-xlarge">£10,500</h2>
-                    <h2 class="bold-small">Unused levy</h2>
-                <div class="lighter font-xsmall" style="background: rgba(255,255,255,0.2); margin: 5px -10px -20px; padding: 10px;">Next 3 months commitments</div>
-        </div>
-        <div class="data" style="float: left; background: #912B88; color: white; padding: 20px 10px; margin-right: 10px; width: 30%">
-                    <h2 class="bold-xlarge">£20,095</h2>
-                    <h2 class="bold-small">Free bonus claimed</h2>
-                <div class="lighter font-xsmall" style="background: rgba(255,255,255,0.2); margin: 5px -10px -20px; padding: 10px;">Hire more, claim more</div>
-        </div>
-            
-        <div class="data" style="background: gray; padding: 5px; float: left; width: 33%; display:none;">
-                    <h2 class="bold-xlarge">next 3 months</h2>
-                    <h2 class="heading-small">based on current commitments and funds</h2>
-        </div>            
-     </div>   
         
         <table>
                 <thead>
@@ -46,6 +34,7 @@
                         <th scope="col"><span class="no-wrap">Payment date</span></th>
                         <th scope="col" class="mobile-hide-cell">Description</th>
                         <th scope="col" class="numeric">Amount</th>
+                        <th scope="col" class="numeric">Balance</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -59,7 +48,8 @@
                                     Credit
                                 </span>
                             </td>
-                            <td class="numeric"> £900</td>
+                            <td class="numeric"> -£999,999,999</td>
+                            <td class="numeric"> -£999,999,999</td>
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 Apr 2018" href="/sprint/{{sprint}}/account/finance/credit-details.html">
                                         Details <span class="vh"> for the transaction on 15 Apr 2018</span>
@@ -75,7 +65,8 @@
                                     Acme Training Limited
                                 </span>
                             </td>
-                            <td class="numeric"> -£512.00 </td>
+                            <td class="numeric"> -£999,999,999</td>
+                            <td class="numeric"> -£999,999,999</td>
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 Mar 2018" href="/sprint/{{sprint}}/account/finance/payment-details.html">
                                         Details <span class="vh"> for the transaction on 15 Mar 2018</span>
@@ -91,7 +82,8 @@
                                     Credit
                                 </span>
                             </td>
-                            <td class="numeric"> £0.00 </td>
+                            <td class="numeric"> -£999,999,999</td>
+                            <td class="numeric"> -£999,999,999</td>     
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 Feb 2018" href="/sprint/{{sprint}}/account/finance/credit-details.html">
                                         Details <span class="vh"> for the transaction on 15 Feb 2018</span>
@@ -107,7 +99,8 @@
                                     Adjustment
                                 </span>
                             </td>
-                            <td class="numeric"> -£1,375 </td>
+                            <td class="numeric"> -£999,999,999</td>
+                            <td class="numeric"> -£999,999,999</td>
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 Jan 2018" href="/sprint/{{sprint}}/account/finance/adjustment-details.html">
                                         Details <span class="vh"> for the transaction on 15 Jan 2018</span>
@@ -124,7 +117,8 @@
                                     Credit
                                 </span>
                             </td>
-                            <td class="numeric"> £1,950</td>
+                            <td class="numeric"> -£999,999,999</td>
+                            <td class="numeric"> -£999,999,999</td>
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 May 2017" href="/sprint/{{sprint}}/account/finance/credit-details.html">
                                         Details <span class="vh"> for the transaction on 15 May 2017</span>
@@ -133,7 +127,23 @@
                         </tr>
                 </tbody>
             </table>
-   
+    
+    <div class="grid-row">
+        <div class="column-two-thirds">
+        <section>
+            <div class="panel panel-filled">
+                <h3 class="heading-medium">Help us improve this section</h3>
+                <p><a href="https://www.surveymonkey.co.uk/r/2JPLQ9T" target="_blank">Give us feedback</a> about your levy data to make this section better suit your needs.</p>
+                <p><a href="https://www.surveymonkey.co.uk/r/2JPLQ9T" target="_blank" class="button">Give feedback</a></p>
+            </div>
+        </section>
+        </div>
+    </div>
+    
+   <div class="info-highlighted hidden">
+                        <!--<h3 class="heading-medium">Only levy payers can continue</h3>-->
+                        <p><a href="#">Give us your feedback</a> if your funding isn't what you expected.</p>
+                    </div>
 
 </main>
 {% endblock %}

@@ -3592,3 +3592,24 @@ table.form td .block-label.selection-button-radio::after {
   position: absolute;
   left: -9999em;
 }
+
+table .details {
+  padding: 0.6315789474em 1.0526315789em 0.4736842105em;
+}
+
+dl.course-details {
+  margin-bottom: 15px;
+  overflow: auto;
+}
+
+dl.course-details dt {
+  font-weight: 900;
+  float: left;
+  display: inline-block;
+  clear: left;
+}
+
+dl.course-details dd {
+  float: left;
+  display: inline-block;
+}

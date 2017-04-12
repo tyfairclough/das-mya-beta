@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="elements-index" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="hgroup">
+      <h1 class="heading-large">
+          Apprentice payment details
+      </h1>
+        <p class="lede">Showing apprentice payments for <a href="/sprint/{{sprint}}/account/finance/payment-details">Life Science and Chemical Science Professionals: Chemical Science Technologist level 5</a>.</p>
+        </div>
+     </div>   
+    </div>
+    <table>
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th class="numeric" scope="col">Levy funded</th>
+                    <th class="numeric" scope="col">Co-funded</th>
+                    <th class="numeric" scope="col">Paid out</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr class="responsive-tr">
+                        <td>
+                            Rob Edwards                            
+                        </td>
+
+                        <td class="numeric">
+                            £1,000.00
+                        </td>
+                        <td class="numeric">
+                            £0.00
+                        </td>
+
+                        <td class="numeric">
+                            £750.00
+                        </td>
+                        <td class="numeric"><a href="#">Details</a></td>
+                    </tr>
+                <tr class="responsive-tr">
+                        <td>
+                            Sally Gunnel
+                        </td>
+
+                        <td class="numeric">
+                            £750.00
+                        </td>
+                        <td class="numeric">
+                            £0.00
+                        </td>
+
+                        <td class="numeric">
+                            £750.00
+                        </td>
+                        <td class="numeric"><a href="#">Details</a></td>
+                    </tr>
+                                    
+                <tr class="total">
+                    <th scope="row" colspan="3"><span class="vh">Total</span></th>
+                    <td class="numeric">£750.00    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+</main>
+{% endblock %}

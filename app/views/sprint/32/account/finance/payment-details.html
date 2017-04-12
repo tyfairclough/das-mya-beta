@@ -1,0 +1,196 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="payment-details" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+<div class="column-two-thirds">
+        <h1 class="heading-xlarge">Debit details</h1>
+
+        <p>The following shows details of the payment from your account.</p>
+
+        <h2 class="heading-medium">Payment</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="responsive-tr">
+                    <td>Payment to</td>
+                    <td>Barnfield College</td>
+                </tr>
+                <tr class="responsive-tr">
+                    <td>This payment</td>
+                    <td>£1,750.00</td>
+                </tr>
+                <tr class="responsive-tr">
+                    <td>Date of payment</td>
+                    <td>5 May 2017</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+                <h2 class="heading-medium">Life Science and Chemical Science Professionals: Chemical Science Technologist</h2>
+                <dl class="inline course-details">
+
+                    <dt>Level: </dt>
+                    <dd>5</dd>
+
+                    <!--<dt>Start date: </dt>
+                    <dd>5/3/2017</dd>-->
+
+                    <dt>Training code: </dt>
+                    <dd>736</dd>
+
+                </dl>
+    
+                <details>
+                    <summary>See all apprentices (2)</summary>
+<table>
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th class="numeric" scope="col">Levy funded</th>
+                    <th class="numeric" scope="col">Co-funded</th>
+                    <th class="numeric" scope="col">Paid out</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr class="responsive-tr">
+                        <td>
+                            Rob Edwards                            
+                        </td>
+
+                        <td class="numeric">
+                            £1,000.00
+                        </td>
+                        <td class="numeric">
+                            £0.00
+                        </td>
+
+                        <td class="numeric">
+                            £1000.00
+                        </td>
+                        <td class="numeric"><a href="#">Details</a></td>
+                    </tr>
+                <tr class="responsive-tr">
+                        <td>
+                            Sally Gunnel
+                        </td>
+
+                        <td class="numeric">
+                            £750.00
+                        </td>
+                        <td class="numeric">
+                            £0.00
+                        </td>
+
+                        <td class="numeric">
+                            £750.00
+                        </td>
+                        <td class="numeric"><a href="#">Details</a></td>
+                    </tr>
+                                    
+                <tr class="total">
+                    <th scope="row" colspan="3"><span class="vh">Total</span></th>
+                    <td class="numeric">£1750.00    </td>
+                </tr>
+            </tbody>
+        </table>
+                </details>    
+    
+
+    </div>        
+    </div>
+     
+    
+    <section class="hidden">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="hgroup">
+      <h1 class="heading-large">
+          Payment details
+      </h1>
+        <p class="lede">Payment made to Barnfield College for 5<sup>th</sup> May 2017.</p>
+        </div>
+     </div>   
+    </div>
+   
+    
+    <table class="">
+            <thead>
+                <tr>
+                    <th scope="col">Course</th>
+                    <th class="numeric" scope="col">Levy funded</th>
+                    <th class="numeric" scope="col">Co-funded</th>
+                    <th class="numeric" scope="col">Paid out</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr class="responsive-tr">
+                        <td>
+                            Life Science and Chemical Science Professionals: Chemical Science Technologist level 5
+                            <br>
+                            <a href="/sprint/{{sprint}}/account/finance/apprentice-details2.html">View all apprentices (2)</a>
+                        </td>
+
+                        <td class="numeric">
+                            £1,750.00
+                        </td>
+                        <td class="numeric">
+                            £0.00
+                        </td>
+
+                        <td class="numeric">
+                            £1,750
+                        </td>
+                    </tr>
+                <tr class="responsive-tr hidden">
+                        <td>
+                            Investment operations administrator level 4
+                            <br>    
+                            <a href="/sprint/{{sprint}}/account/finance/apprentice-details.html">View all apprentices (4)</a>
+                        </td>
+
+                        <td class="numeric">
+                            £200
+                        </td>
+                        <td class="numeric">
+                            £72
+                        </td>
+
+                        <td class="numeric">
+                            £272
+                        </td>
+                    </tr>
+                <tr class="total">
+                    <th scope="row" colspan="3"><span class="vh">Total</span></th>
+                    <td class="numeric">£1,750</td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+</main>
+{% endblock %}

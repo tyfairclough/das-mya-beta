@@ -3656,3 +3656,99 @@ dl.course-details dd {
   float: left;
   display: inline-block;
 }
+
+#mobile-cards header {
+  display: none;
+}
+
+#mobile-cards .card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  overflow: auto;
+}
+
+#mobile-cards .card p {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+#mobile-cards .card dl dt {
+  font-weight: 900;
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+}
+
+#mobile-cards .card .details {
+  padding: 10px 0;
+}
+
+@media (min-width: 641px) {
+  #mobile-cards header {
+    display: block;
+    font-weight: 900;
+    clear: both;
+    overflow: auto;
+    border-bottom: 1px solid gray;
+  }
+  #mobile-cards header .coinvest {
+    border-bottom: 1px solid;
+    text-align: center;
+    margin: 0 auto 0 45%;
+    width: 30%;
+  }
+  #mobile-cards header div :nth-child(1) {
+    width: 30%;
+    padding-left: 0;
+  }
+  #mobile-cards header div :nth-child(2) {
+    width: 15%;
+  }
+  #mobile-cards header div :nth-child(3) {
+    width: 15%;
+    background: #dee0e2;
+    padding: 10px;
+  }
+  #mobile-cards header div :nth-child(4) {
+    width: 15%;
+    background: #dee0e2;
+  }
+  #mobile-cards header div :nth-child(5) {
+    width: 15%;
+    padding: 10px;
+  }
+  #mobile-cards header div span {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #mobile-cards .card {
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0;
+    margin: 0;
+  }
+  #mobile-cards .card p {
+    float: left;
+    width: 30%;
+    font-weight: 400;
+  }
+  #mobile-cards .card dt {
+    display: none;
+  }
+  #mobile-cards .card dd {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #mobile-cards .card dl :nth-child(4), #mobile-cards .card dl :nth-child(6) {
+    background: #dee0e2;
+    box-sizing: border-box;
+  }
+  #mobile-cards .card .details {
+    padding: 10px;
+    float: right;
+  }
+}

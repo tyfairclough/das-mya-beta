@@ -21,7 +21,7 @@
     <div class="column-two-thirds">
         <div class="hgroup">
       <h1 class="heading-large">
-          Payment details
+          Payment details 
             </h1>
             
             <ul>
@@ -37,92 +37,61 @@
       
    
     </div>
-                  <table>
-                      <thead>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th colspan="2" class="colspan cofunding">Co-investment</th>
-                            <th></th>
-                            <th></th>
-                          </tr>
-                      </thead>
+
+       
+<table class="responsive">
             <thead>
                 <tr>
+                    <th colspan="2"></th>
+                    <th class="highlight colgroup" scope="colgroup" colspan="2">Co-investment</th>
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
                     <th scope="col">Course</th>
-                    <th class="numeric" scope="col">Paid from levy</th>
-                    <th class="numeric cofunding" scope="col">90% paid by Government</th>
-                    <th class="numeric cofunding" scope="col"><span style="white-space:nowrap">10% by you</span></th>
-                    <th class="numeric" scope="col">Amount</th>
-                    <th class="numeric" scope="col"></th>
+                    <th scope="col" class="numeric">Paid from levy</th>
+                    <th scope="col" class="highlight numeric">Government contribution </th>
+                    <th scope="col" class="highlight numeric">Your contribution</th>
+                    <th scope="col" class="numeric">Amount</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
-                    <tr class="responsive-tr">
-                        <td>
-                            Financial services administrator <span style="white-space:nowrap">level 3</span>
-                            <br>
-                            <!--<span class="form-hint">4 apprentices on course</span>-->
-                        </td>
-                        <td class="numeric">
-                            -£1,000.00
-                        </td>
-                        <td class="numeric cofunding">
-                            £0.00
-                        </td>
-                        <td class="numeric cofunding">
-                            £0.00
-                        </td>
-                        <td class="numeric">
-                            -£1,000.00
-                        </td>                        
-                        <td class="details"><a href="/sprint/{{sprint}}/account/finance/payment-details-apprentice.html">Details</a></td>
-                    </tr>
-                <tr class="responsive-tr">
-                        <td>
-                            Investment operations administrator <span style="white-space:nowrap">level 4</span>
-                            <br>
-                            <!--<span class="form-hint">3 apprentices on course</span>-->
-                        </td>
-
-                        <td class="numeric">
-                            -£1,000.00
-                        </td>
-                        <td class="numeric cofunding">
-                            £0.00
-                        </td>
-                        <td class="numeric cofunding">
-                            £0.00
-                        </td>
-                        <td class="numeric">
-                       -£1,000.00
-                        </td>
-                    <td class="details"><a href="/sprint/{{sprint}}/account/finance/payment-details-apprentice.html">Details</a></td>
-
-                    </tr>
-                <tr class="total">
-                    <th scope="row"><span class="vh">Amount</span></th>
-                    
-                    <td class="numeric">-£2,000.00</td>
-                    <td class="numeric cofunding">£0.00</td>
-                    <td class="numeric cofunding">£0.00</td>
-                    <td class="numeric details"><span style="white-space:nowrap;">-£2,000.00</span></td>
+                <tr>
+                    <td data-label="Course">Financial services administrator level 3</td>
+                    <td data-label="Paid from levy" class="numeric">-£1,000.00</td>
+                    <td data-label="Government contribution" class="highlight numeric">£0.00</td>
+                    <td data-label="Your contribution" class="highlight numeric">£0.00</td>
+                    <td data-label="Amount" class="numeric">-£1,000.00</td>
+                    <td><a href="/sprint/{{sprint}}/account/finance/payment-details-apprentice-levy.html">Details</a></td>
+                </tr>
+                <tr>
+                    <td data-label="Course">Investment operations administrator level 4	</td>
+                    <td data-label="Paid from levy" class="numeric">-£1,000.00</td>
+                    <td data-label="Government contribution" class="highlight numeric">£0.00</td>
+                    <td data-label="Your contribution" class="highlight numeric">£0.00</td>
+                    <td data-label="Amount" class="numeric">-£1,000.00</td>
+                    <td><a href="/sprint/{{sprint}}/account/finance/payment-details-apprentice-levy.html">Details</a></td>
                 </tr>
             </tbody>
-        </table>
-    
+            <tfoot>
+                <tr class="total">
+                    <td data-label="Totals"> </td>
+                    <td data-label="Paid from levy" class="total numeric nowrap">-£2,000.00</td>
+                    <td data-label="Government contribution" class="total numeric nowrap">£0.00</td>
+                    <td data-label="Your contribution" class="total numeric nowrap">£0.00	</td>
+                    <td data-label="Amount" class="total numeric nowrap">-£3,000.00</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>   
 <div class="grid-row">
     <div class="column-two-thirds">
         <div class="panel panel-width-thin">
-        <p>Your payments to the provider include:</p>
-        <ul class="list list-bullet">
-            <li>any co-investment contributions you need to make</li>
-            <li>the costs of any appreticeships above the <a href="#">funding caps</a></li>
-        </ul>
+            <p>It's up to you and your training provider to decide how and when your co-investment is paid </p>
         </div>
-<!--<a href="#">Download detailed financial data (spreadsheet)</a>-->
+            
+        
     </div>
     </div>
-
 </main>
 {% endblock %}

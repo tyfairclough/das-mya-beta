@@ -1747,101 +1747,116 @@ dl.course-details {
     dd { float: left; display: inline-block;}
 }
 
-#mobile-cards {
-    header {
+
+
+td, th {
+    &.highlight {
+        background: $grey-3;
+    }
+}
+
+// Responsive Tables
+
+table.responsive {
+    thead {
         display: none;
     }
-
-    .card {
-        border: 1px solid #ccc;
-        padding: 10px;
-        margin-bottom: 15px;
-        overflow: auto;
-        p {
-            font-size: 19px;
-            font-weight: 900;
+    tr {
+       // border: 1px solid $border-colour;
+        margin-bottom: 10px;
+        display: block;
+        float: lefåt;
+        width: 100%;
+        box-sizing: border-box;
+        td {
+            display: block;
+            text-align: right;
+            clear:left;
+            float:left;
+            width: 100%;
+            padding: 10px 10px 8px;
+            box-sizing: border-box;
+            border-bottom: 1px dotted $border-colour;
+            &:before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                padding-right: 10px;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+            &:empty {
+                display: none;
+            }
         }
-        dl {
-            dt { font-weight: 900; float: left; width: 50%; padding-right: 10px; }
-
-        }
-        .details {
-            padding: 10px 0;
+        &.total {
+            border: 2px solid #000;
         }
     }
 }
 
-@media (min-width: 641px) {
-    #mobile-cards
-        {   
-        header {
-            display: block;
-            font-weight: 900;
-            clear: both;
-            overflow: auto;
-            border-bottom:1px solid gray;
-            .coinvest {
-                border-bottom: 1px solid;
-                text-align: center;
-                margin: 0 auto 0 45%;
-                width: 30%;
-            }
-            div {
-             :nth-child(1) {
-                width: 30%;
-                padding-left:0;
-            }
-            :nth-child(2) {
-                width: 15%;
-            }
-            :nth-child(3) {
-                width: 15%;
-                background: #dee0e2;
-                padding: 10px;
-            }
-            :nth-child(4) {
-                width: 15%;
-                background: #dee0e2;
-            }
-            :nth-child(5) {
-                width: 15%;
-                padding: 10px
-            }
-            }
-            div span {
-                float: left;
-                padding: 10px;
-                box-sizing: border-box;
-            }
-   
+@include media(tablet) {
+    table.responsive {
+        thead {
+            display: table-header-group;
         }
-        .card {
-            border: none;
-            border-bottom: 1px solid gray;
-            padding: 0;
+        tr {
+            display: table-row;
+            border:none;
+            float: none;
             margin: 0;
-            p {
-                float: left;
-                width: 30%;
-                font-weight: 400;
-            }
-            dt { display: none;}
-            dd {
-                float: left;
-                width: 15%;
-                padding: 10px;
-                box-sizing: border-box;
-            }
-            dl {
-                :nth-child(4), :nth-child(6) {
-                    background: #dee0e2;
-                    box-sizing: border-box;
+            th, td {
+                display: table-cell;
+                text-align: left;
+                float: none;
+                clear: none;
+                padding: 0.6em 1em 0.5em;
+                border-bottom-style: solid;
+                width: auto;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+                &:before {
+                    display: none;
+                }
+                &.numeric {
+                    text-align: right;
+                }
+                &.colgroup {
+                    text-align: center
+                }
+                &:last-child {
+                    border-bottom: 1px solid $border-colour;
                 }
             }
-            .details {
-                padding: 10px;
-                float: right;
+            &.total {
+                border: none;
+                td {
+                    border-bottom: none;
+                    &.total {
+                        border-bottom: 2px solid #000;
+                    }
+                    &:last-child {
+                        padding-left: 0;
+                    }
+                }
             }
         }
     }
+
+    @for $i from 1 through 14 {
+        table.responsive tr th.tw-#{$i * 5} {
+            width: $i * 5%;
+        }
+    }
+
+}
+
+
+.nowrap {
+    white-space: nowrap;
 }

@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="account-dashboard" id="content" role="main" tabindex="-1">
+
+
+      
+    
+    
+    <h1 class="heading-xlarge">Your account</h1>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <p>You can change stuff here</p>
+            <ul class="list list-links">
+                <li><a href="#">Change your email address</a></li>
+                <li><a href="#">Change your password</a></li>
+                <li>
+                    <a href="#">
+                        Your invitations
+                        <br>
+                    </a>
+                        <span class="form-hint">No pending invitations</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr />
+
+    
+    <section class="text">
+                <div class="panel panel-filled">
+                    <h3 class="bold-medium">Help us improve this site</h3>
+                    <p><a href="https://www.surveymonkey.co.uk/r/2JPLQ9T" target="_blank">Take our 3 minute survey</a> so that we can improve the service.</p>
+                    <p><a href="https://www.surveymonkey.co.uk/r/2JPLQ9T" target="_blank" class="button">Take the survey <span class="vh">so that we can improve the service</span></a></p>
+                </div>
+            </section>
+
+
+
+
+</main><!-- / #content -->
+{% endblock %}

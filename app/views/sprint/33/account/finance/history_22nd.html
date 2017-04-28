@@ -26,7 +26,7 @@
     <div class="grid-row">
         <div class="column-one-third">
                   <div class="data" style="background: #912B88; color: white; padding: 20px 10px; margin-right: 10px;">
-                    <h2 class="bold-xlarge">£4,500</h2>
+                    <h2 class="bold-xlarge">£4,037</h2>
                     <h2 class="bold-small">Current funds</h2>
         </div>
                </div>
@@ -65,7 +65,7 @@
                                     Levy funds
                                 </span>
                             </td>
-                            <td class="numeric"> £5,000.00</td>
+                            <td class="numeric">£2,178.00</td>
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 Mar 2018" href="/sprint/{{sprint}}/account/finance/levy.html">
                                         Details <span class="vh"> for the transaction on 20 Oct 2017</span>
@@ -97,7 +97,7 @@
                                     Acme Ltd
                                 </span>
                             </td>
-                            <td class="numeric"> -£2,000.00</td>
+                            <td class="numeric"> -£3,000.00</td>
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 Apr 2018" href="/sprint/{{sprint}}/account/finance/payment-details-levy.html">
                                         Details <span class="vh"> for the transaction on  4 Nov 2017</span>
@@ -112,7 +112,7 @@
                                      Anvil Plc: Co-invested
                                 </span>
                             </td>
-                            <td class="numeric"> -£1,000.00</td>
+                            <td class="numeric"> -£2,000.00</td>
                             <td class="numeric">
                                     <a title="View details for the transaction on 15 Apr 2018" href="/sprint/{{sprint}}/account/finance/payment-details.html">
                                         Details <span class="vh"> for the transaction on  4 Nov 2017</span>
@@ -125,7 +125,7 @@
             </table>
     
     <div class="page-navigation">
-                    <a class="page-navigation__btn previous">
+                    <a class="page-navigation__btn previous" href="/sprint/{{sprint}}/account/finance/history_last-month.html">
                         <i class="arrow-button fa fa-angle-left"></i>
                         <span class="description">Previous <span class="hide-mob">month</span></span>
                         <span class="counter">March 2017</span>
@@ -144,6 +144,11 @@
     <br>
   <!--  <a href="#">Download detailed financial data (spreadsheet)</a> -->
    
-
+   
+<script>
+    $("header, nav, footer").click(function(e){
+        e.preventDefault();
+    })
+    </script>
 </main>
 {% endblock %}

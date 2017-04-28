@@ -77,8 +77,8 @@
                 <tr class="total">
                     <td data-label="Totals"> </td>
                     <td data-label="Paid from levy" class="total numeric nowrap">-£875.00</td>
-                    <td data-label="Government contribution (90%)" class="total numeric nowrap">-£1,012.50</td>
-                    <td data-label="Your contribution" class="total numeric nowrap">-£112.50	</td>
+                    <td data-label="Government contribution (90%)" class="highlight total numeric nowrap">-£1,012.50</td>
+                    <td data-label="Your contribution" class="highlight total numeric nowrap">-£112.50	</td>
                     <td data-label="Amount" class="total numeric nowrap">-£2,000.00</td>
                     <td></td>
                 </tr>
@@ -87,11 +87,16 @@
 <div class="grid-row">
     <div class="column-two-thirds">
         <div class="panel panel-width-thin">
-            <p>It's up to you and your training provider to decide how and when your co-investment is paid </p>
+            <p>It's up to you and your training provider to decide how and when your contributions are paid.</p>
         </div>
             
         
     </div>
     </div>
+    <script>
+    $("header, nav, footer").click(function(e){
+        e.preventDefault();
+    })
+    </script>
 </main>
 {% endblock %}

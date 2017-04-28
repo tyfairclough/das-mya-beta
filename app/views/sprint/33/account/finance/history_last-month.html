@@ -92,7 +92,7 @@
 
 
 
-                   <a style="" class="page-navigation__btn next">
+                   <a style="" class="page-navigation__btn next" href="/sprint/{{sprint}}/account/finance/history_22nd.html">
                         <i class="arrow-button fa fa-angle-right"></i>
                         <span class="description">Next <span class="hide-mob">month</span></span>
                         <span class="counter">April 2017</span>
@@ -102,6 +102,10 @@
     <br>
   <!--  <a href="#">Download detailed financial data (spreadsheet)</a> -->
    
-
+<script>
+    $("header, nav, footer").click(function(e){
+        e.preventDefault();
+    })
+    </script>
 </main>
 {% endblock %}

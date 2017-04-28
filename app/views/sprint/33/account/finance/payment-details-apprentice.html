@@ -130,8 +130,8 @@
                 <tr class="total">
                     <td data-label="Total apprentices" class="numeric">&nbsp;</td>
                     <td data-label="Paid from levy" class="total numeric">-£375.00</td>
-                    <td data-label="Government contribution" class="total numeric">-£562.50</td>
-                    <td data-label="Your contribution" class="total numeric">-£62.00</td>
+                    <td data-label="Government contribution" class="highlight total numeric">-£562.50</td>
+                    <td data-label="Your contribution" class="highlight total numeric">-£62.00</td>
                     <td data-label="Total amount" class="total numeric">-£1,000.00</td>
                 </tr>
                 
@@ -140,11 +140,16 @@
 <div class="grid-row">
     <div class="column-two-thirds">
         <div class="panel panel-width-thin">
-            <p>It's up to you and your training provider to decide how and when your co-investment is paid </p>
+            <p>It's up to you and your training provider to decide how and when your contributions are paid.</p>
         </div>
             
         
     </div>
     </div>
+    <script>
+    $("header, nav, footer").click(function(e){
+        e.preventDefault();
+    })
+    </script>
 </main>
 {% endblock %}

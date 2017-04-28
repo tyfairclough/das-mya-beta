@@ -3781,3 +3781,15 @@ table.responsive tr th.tw-70 {
 .nowrap {
   white-space: nowrap;
 }
+
+.todo, .done {
+  margin-bottom: 15px !important;
+}
+
+.todo {
+  background: #fff;
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+  margin-bottom: 15px;
+  overflow: auto;
+}

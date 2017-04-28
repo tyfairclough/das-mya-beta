@@ -1860,3 +1860,18 @@ table.responsive {
 .nowrap {
     white-space: nowrap;
 }
+
+.todo, .done {
+    margin-bottom: 15px !important;
+}
+.todo {
+    background: #fff;
+    border: 1px solid #bfc1c3;
+    padding: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+//.done {
+    //background: mix(white, #28a197, 80%);
+//    border: 5px solid #28a197;
+//}

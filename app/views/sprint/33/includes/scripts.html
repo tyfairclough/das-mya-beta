@@ -76,6 +76,9 @@ case 'public-sector':
    // put directory stuff here
       
 break;
+       case 'account-dashboard-7':
+           accountDash7();
+break;
 case 'public-sector-search':
    // put search keyword stuff here
 break;
@@ -215,6 +218,60 @@ break;
 default: break;
    };
      
+     
+function accountDash7() {
+            $("#add-paye, #add-org, #invite-users, .done, #welcome .panel").hide();
+
+    
+    var orgArray = [];
+            orgArray = JSON.parse(localStorage.getItem("organisations"));
+            console.log(orgArray[0]);
+            orgObj = orgArray.splice(0,1);
+            console.log(orgObj);
+    
+        var orgParse = JSON.parse(orgObj)
+
+            console.log(orgParse.signed);
+    
+    if (orgParse.signed === 1) {
+        $("#sign-agreement .todo, #add-paye .panel").hide();
+        $("#sign-agreement .done, #add-paye").show();
+    }
+    
+    $("#add-paye form label").click(function(e){
+      //e.preventDefault();  
+        var state = $('input[name=add-paye-group]:checked').val();
+
+        if ( state === "1" ) {
+            $("#add-paye .todo").hide();
+            $("#add-org, #add-paye .done").show();
+        } else {
+            $("#add-paye .todo .panel").fadeIn();
+        }
+    });
+    
+    $("#add-org form label").click(function(e){
+        var state = $("input[name=add-org-group]:checked").val();
+        
+        if ( state === "1") {
+            $("#add-org .todo").hide();
+            $("#add-org .done, #invite-users").show();
+        } else {
+            $("#add-org .panel").show();
+        }
+    });
+    
+    $("#invite-users form label").click(function(e){ 
+        
+        var state = $("input[name=invite-users-group]:checked").val();
+        console.log("state is " + state)
+        if ( state === "1") {
+            $("#invite-users .panel:first").show();
+        } else {
+            $("#invite-users .panel + .panel").show();
+        }
+    })
+} 
      
 function forecastIndex() {
     

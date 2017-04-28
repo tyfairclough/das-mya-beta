@@ -3830,6 +3830,18 @@ table.responsive tr th.tw-70 {
   white-space: nowrap;
 }
 
+.todo, .done {
+  margin-bottom: 15px !important;
+}
+
+.todo {
+  background: #fff;
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+  margin-bottom: 15px;
+  overflow: auto;
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

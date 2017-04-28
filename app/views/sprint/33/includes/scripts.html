@@ -215,9 +215,16 @@ break;
        case 'forecast-index':
            forecastIndex();
 break;
+       case 'account-dash-8':
+           accountDash8();
+break;
 default: break;
    };
      
+     
+function accountDash8() {
+    
+}     
      
 function accountDash7() {
             $("#add-paye, #add-org, #invite-users, .done, #welcome .panel").hide();
@@ -267,7 +274,9 @@ function accountDash7() {
         console.log("state is " + state)
         if ( state === "1") {
             $("#invite-users .panel:first").show();
+            $("#invite-users .panel + .panel").hide();
         } else {
+            $("#invite-users .panel:first").hide();
             $("#invite-users .panel + .panel").show();
         }
     })

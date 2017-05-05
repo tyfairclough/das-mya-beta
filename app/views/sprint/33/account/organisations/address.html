@@ -37,44 +37,40 @@
       </h1>
                               <p>Use your organisation's main address, such as your head office.</p>
 </div>
-        <form action="step_a5">
-            
-            <fieldset>
-                <div class="form-group error">
-                <label class="form-label-bold" for="address">
-                    <span class="form-label-bold">Address</span>
-                    <span class="error-message">Enter house number or name, building and street</span>                    
-                    </label>
-                    <input class="form-control" type="text" id="address" /><br><br>
-
-                    <input class="form-control" type="text" id="address2" />
-                </div>
-                <div class="form-group error">
-                <label class="form-label-bold" for="town">
-                    <span class="form-label-bold">Town or city</span>
-                    <span class="error-message">Enter town or city</span>
-                    </label>
-                    <input class="form-control" type="text" id="town" />
-                </div>
-                <div class="form-group">
-                <label class="form-label-bold" for="county">
-                    <span class="form-label-label">County (optional)</span>
-                    </label>
-                    <input class="form-control" type="text" id="county" />
-                </div>
-                <div class="form-group error">
-                <label class="form-label-bold" for="postcode">
-                    <span class="form-label-label">Postcode</span>
-                    <span class="error-message">Enter a valid postcode</span>
-                    </label>
-                    <input class="form-control" type="text" id="postcode" style="width: 25%;" />
-                </div>
-                </fieldset>
-            <div class="form-group">
-            <a rel="external" href="/sprint/{{sprint}}/account/organisations/confirm" class="button">Continue</a>
-                </div>
-            </form>
         
+        
+        
+        
+        
+<!-- Postcode field -->
+<div id="postcode_lookup"></div>  
+<section class="manual-entry">
+    <div class="form-group">
+<!-- Add to your existing form -->
+<label class="form-label">First Address Line</label>
+<input class="form-control" id="line1" type="text"> 
+
+<label class="form-label">Second Address Line</label>
+<input class="form-control" id="line2" type="text">   
+
+<label class="form-label">Third Address Line</label>
+<input class="form-control" id="line3" type="text">  
+
+<label class="form-label">Town</label>
+<input class="form-control" id="town" type="text">
+
+<label class="form-label">County</label>
+<input class="form-control" id="county" type="text">
+
+<label class="form-label">Postcode</label>
+<input class="form-control" id="postcode" type="text">
+</div>
+    <div class="form-group">
+            <a rel="external" href="/sprint/{{sprint}}/account/organisations/confirm" class="button">Continue</a>       
+    </div>
+        </section>        
+
+
 
 
     </div>

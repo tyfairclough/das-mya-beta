@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <iName>123 Facilities Ltd - (s C4)</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Former Public Corporation</iType>
+  </row>
+  <row>
+    <iName>180 Housing Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public Non-Financial Corporation</iType>
+  </row>
+  <row>
+    <iName>2010 Rotherham Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Former Public Corporation</iType>
+  </row>
+  <row>
+    <iName>20-20 Housing Co-operative Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public Non-Financial Corporation</iType>
+  </row>
+  <row>
+    <iName>28a Supported Living Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public Non-Financial Corporation</iType>
+  </row>
+  <row>
+    <iName>4 Ventures Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public Non-Financial Corporation</iType>
+  </row>
+  <row>
+    <iName>700 Club</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public Non-Financial Corporation</iType>
+  </row>
+  <row>
+    <iName>A1 Housing Bassetlaw Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public Non-Financial Corporation</iType>
+  </row>
+  <row>
+    <iName>A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public Non-Financial Corporation</iType>
+  </row>
+</root>

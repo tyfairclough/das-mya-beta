@@ -10,8 +10,7 @@
 <script src="/public/javascripts/application.js"></script>
 <script src="/public/javascripts/stackable.min.js"></script>
 <script src="/public/javascripts/zxcvbn.js"></script>
-<script src="/public/javascripts/hammer.min.js"></script>
-<script src="/public/javascripts/jquery.hammer.js"></script>
+<script src="https://getaddress.io/js/jquery.getAddress-2.0.5.min.js"></script>
 
 <script src="/public/javascripts/aml.js"></script>
 
@@ -19,14 +18,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" integrity="sha256-gl80aFE+bSTFw7UJf+ne/RkwC55cjidIp0Oe3AX5pfo=" crossorigin="anonymous" />
-
-
-
-
-
-
-
-
 <script>
 
  $(document).ready(function () {
@@ -45,8 +36,6 @@
     localStorage.setItem("organisations", JSON.stringify(newCompany));
     }
 
-
-               //localStorage.setItem("sessionState","0");
 
     
     //GLOBAL VAR
@@ -83,32 +72,7 @@ case 'public-sector-search':
    // put search keyword stuff here
 break;
 case 'organisations-add':
-           $(".errror-summary").hide();
-
-            $(".form-group").removeClass("error");
-           $(".error-message, .error-summary").addClass("hidden");
-            localStorage.setItem("organisation-address", JSON.stringify("101 Aviation House"))           
-            $(".panel").hide()
-            $("label").click(function(){
-            $(".panel").hide();                    
-            $(this).next().show()
-            })
-            // adding organisations functions
-            $(".organisations-add").keypress(function(e){
-            if (e.which == 13) {
-                    $(".error-summary, .error-message").addClass("hidden");
-                    $("form-group.").removeClass("error");
-            orgType()
-            // check the radio value
-            } else {
-            //  return false;
-            }
-            })
-
-            $(".organisations-add .button").click(function(e){
-                e.preventDefault();
-                orgType();
-            });
+           organisationAdd();
 break;
 case 'organisations-address':
      $(".button").click(function(e){
@@ -120,6 +84,9 @@ break;
        case 'organisations-address-manual':
            // manual stuff
            organisationsAddressManual();
+break;
+       case 'organisations-type-manual':
+           organisationsTypeManual();
 break;
        case 'test':
        getCompaniesHouse();
@@ -222,10 +189,6 @@ default: break;
    };
      
      
-function accountDash8() {
-    
-}     
-     
 function accountDash7() {
             $("#add-paye, #add-org, #invite-users, .done, #welcome .panel").hide();
 
@@ -282,174 +245,6 @@ function accountDash7() {
     })
 } 
      
-function forecastIndex() {
-    
-        
-    var chart = c3.generate({
-        bindto: '#forecastGraph',
-    data: {
-        xs: {
-            levy: 'levy_x',
-            payment: 'payment_x',
-            one: 'one_x',
-            two: 'two_x'
-            //payments_cash: 'payments_cash_x',
-        },
-        // iris data from R
-        columns: [
-            //["levy_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-            ["one_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-            ["two_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-            //["payment_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,41,42,43,44,45,46,47,48],
-            //["payment", 7186,14372, 21558, 28744, 35930, 43116, 50302, 57488, 64674, 68660, 72646, 76632, 80618, 84604, 88590, 92576, 85562, 78548, 71534, 64520, 57506, 50492, 43478, 36464, 29450, 22436, 1022, 7186, 14372, 21558, 28744, 35930, 43116, 50302, 57488],
-            //["levy",7186,14372,21558,28744,35930,43116,50302,57488,64674,71860,75846,79832,83818,87804,91790,95776,99762,92748,85734,78720,71706,64692,57678,50664,43650,36636,29622,8208,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,14372,21558,28744,35930,43116,50302,57488], 
-            ["one",7186,14372,21558,28744,35930,43116,50302,57488,71860,75846,79832,83818,87804,91790,95776,99762,92748,85734,78720,71706,64692,57678,50664,43650,36636,29622,8208,-28606,-30753,-32900,-35047,-37194,-39341,-41488,-43635,-45782,-47929,-50076,-52223,7186,14372,21558,28744,35930,43116,50302,57488],
-            ["two",7186,14372,21558,28744,35930,43116,50302,57488,64674,68660,72646,76632,80618,84604,88590,92576,85562,78548,71534,64520,57506,50492,43478,36464,29450,22436,1022,-35792,-37939,-40086,-42233,-44380,-46527,-48674,-50821,-52968,-55115,-57262,-59409,-89560,7186,14372,21558,28744,35930,43116,50302,57488]
-        ],
-        type: 'scatter'
-    },
-    axis: {
-        x: {
-            label: 'Date',
-            tick: {
-                fit: false
-            }
-        },
-        y: {
-            label: 'Amount in (£s)'
-        }
-    }
-});
-    
-    
-    var chart = c3.generate({
-        bindto: '#forecastGraph2',
-        zoom: {
-  enabled: false
-},
-    data: {
-     /*   xs: {
-            levyin: 'levyin_x',
-            paymentout: 'paymentout_x',
-            payment: 'payment_x',
-            one: 'one_x',
-            two: 'two_x',
-            balance: 'balance_x'
-            //payments_cash: 'payments_cash_x',
-        },
-        
-        */
-        // iris data from R
-        columns: [
-            
-           /*["balance",0,0,0,0,0,0,0,0,0,0,65460,69446,73432,77418,81404,85390,78376,71362,64348,57334,50320,43306,36292,29278,22264,15250,28600,72600,81933,91266,100599,109932,119265,128598,137931,147264,156597,165930,175263,212600,0,7186,14372,21558,28744,35930,43116,50302],["paymentout",0,0,0,0,0,0,0,0,0,3200,3200,3200,3200,3200,3200,3200,14200,14200,14200,14200,14200,14200,14200,14200,14200,14200,28600,44000,9333,9333,9333,9333,9333,9333,9333,9333,9333,9333,9333,37337,0,0,0,0,0,0,0,0],
-            ["levyin", 7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186],
-             
-       
-            ["one",7186,14372,21558,28744,35930,43116,50302,57488,71860,75846,79832,83818,87804,91790,95776,99762,92748,85734,78720,71706,64692,57678,50664,43650,36636,29622,8208,-28606,-30753,-32900,-35047,-37194,-39341,-41488,-43635,-45782,-47929,-50076,-52223,7186,14372,21558,28744,35930,43116,50302,57488],
-            ["two",7186,14372,21558,28744,35930,43116,50302,57488,64674,68660,72646,76632,80618,84604,88590,92576,85562,78548,71534,64520,57506,50492,43478,36464,29450,22436,1022,-35792,-37939,-40086,-42233,-44380,-46527,-48674,-50821,-52968,-55115,-57262,-59409,-89560,7186,14372,21558,28744,35930,43116,50302,57488],
-
-        
-            ["paymentout_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-            ["balance_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-            ["levyin_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-            ["one_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-            ["two_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-          */ 
-            
-            
-            ["one",7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186],
-            ["two",0,0,0,0,0,0,0,0,0,3200,3200,3200,3200,3200,3200,3200,14200,14200,14200,14200,14200,14200,14200,14200,14200,14200,28600,44000,9333,9333,9333,9333,9333,9333,9333,9333,9333,9333,9333,37337,0,0,0,0,0,0,0,0],
-            ["three",7186,14372,21558,28744,35930,43116,50302,57488,64674,68660,72646,76632,80618,84604,88590,92576,85562,78548,71534,64520,57506,50492,43478,36464,29450,22436,1022,0,0,0,0,0,0,0,0,0,0,0,0,0,7186,14372,21558,28744,35930,43116,50302,57488],
-            
-            ["four",7186,14372,21558,28744,35930,43116,50302,57488,64674,71860,75846,79832,83818,87804,91790,95776,99762,92748,85734,78720,71706,64692,57678,50664,43650,36636,29622,8208,-28606,-30753,-32900,-35047,-37194,-39341,-41488,-43635,-45782,-47929,-50076,-52223,7186,14372,21558,28744,35930,43116,50302,57488],
-            ["five",7186,14372,21558,28744,35930,43116,50302,57488,64674,68660,72646,76632,80618,84604,88590,92576,85562,78548,71534,64520,57506,50492,43478,36464,29450,22436,1022,-35792,-37939,-40086,-42233,-44380,-46527,-48674,-50821,-52968,-55115,-57262,-59409,-89560,7186,14372,21558,28744,35930,43116,50302,57488]
-        ],
-        type: 'bar'
-    },
-    axis: {
-        x: {
-            label: 'Date',
-            tick: {
-                fit: false
-            }
-        },
-        y: {
-            label: 'Amount in (£s)'
-        }
-    }
-});
-    
-    
-    var chart = c3.generate({
-        bindto: '#forecastGraph3',
-        zoom: {
-  enabled: false
-},
-    data: {
-     /*   xs: {
-            levyin: 'levyin_x',
-            paymentout: 'paymentout_x',
-            payment: 'payment_x',
-            one: 'one_x',
-            two: 'two_x',
-            balance: 'balance_x'
-            //payments_cash: 'payments_cash_x',
-        },
-        
-        */
-        // iris data from R
-        columns: [
-            
-           /*["balance",0,0,0,0,0,0,0,0,0,0,65460,69446,73432,77418,81404,85390,78376,71362,64348,57334,50320,43306,36292,29278,22264,15250,28600,72600,81933,91266,100599,109932,119265,128598,137931,147264,156597,165930,175263,212600,0,7186,14372,21558,28744,35930,43116,50302],["paymentout",0,0,0,0,0,0,0,0,0,3200,3200,3200,3200,3200,3200,3200,14200,14200,14200,14200,14200,14200,14200,14200,14200,14200,28600,44000,9333,9333,9333,9333,9333,9333,9333,9333,9333,9333,9333,37337,0,0,0,0,0,0,0,0],
-            ["levyin", 7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186],
-             
-       
-            ["one",7186,14372,21558,28744,35930,43116,50302,57488,71860,75846,79832,83818,87804,91790,95776,99762,92748,85734,78720,71706,64692,57678,50664,43650,36636,29622,8208,-28606,-30753,-32900,-35047,-37194,-39341,-41488,-43635,-45782,-47929,-50076,-52223,7186,14372,21558,28744,35930,43116,50302,57488],
-            ["two",7186,14372,21558,28744,35930,43116,50302,57488,64674,68660,72646,76632,80618,84604,88590,92576,85562,78548,71534,64520,57506,50492,43478,36464,29450,22436,1022,-35792,-37939,-40086,-42233,-44380,-46527,-48674,-50821,-52968,-55115,-57262,-59409,-89560,7186,14372,21558,28744,35930,43116,50302,57488],
-
-        
-            ["paymentout_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-            ["balance_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-            ["levyin_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-            ["one_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-            ["two_x", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-          */ 
-            
-            
-            ["one",7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186,7186],
-            ["two",0,0,0,0,0,0,0,0,0,3200,3200,3200,3200,3200,3200,3200,14200,14200,14200,14200,14200,14200,14200,14200,14200,14200,28600,44000,9333,9333,9333,9333,9333,9333,9333,9333,9333,9333,9333,37337,0,0,0,0,0,0,0,0],
-            ["three",7186,14372,21558,28744,35930,43116,50302,57488,64674,68660,72646,76632,80618,84604,88590,92576,85562,78548,71534,64520,57506,50492,43478,36464,29450,22436,1022,0,0,0,0,0,0,0,0,0,0,0,0,0,7186,14372,21558,28744,35930,43116,50302,57488],
-            
-            ["four",-7186,-14372,-21558,-28744,-35930,-43116,-50302,-57488,-64674,-71860,-75846,-79832,-83818,-87804,-91790,-95776,-99762,-92748,-85734,-78720,-71706,-64692,-57678,-50664,-43650,-36636,-29622,-8208,28606,30753,32900,35047,37194,39341,41488,43635,45782,47929,50076,52223,-7186,-14372,-21558,-28744,-35930,-43116,-50302,-57488],
-            ["five",7186,14372,21558,28744,35930,43116,50302,57488,64674,68660,72646,76632,80618,84604,88590,92576,85562,78548,71534,64520,57506,50492,43478,36464,29450,22436,1022,-35792,-37939,-40086,-42233,-44380,-46527,-48674,-50821,-52968,-55115,-57262,-59409,-89560,7186,14372,21558,28744,35930,43116,50302,57488]
-        ],
-        type: 'area-spline'
-    },
-    axis: {
-        x: {
-            label: 'Date',
-            tick: {
-                fit: false
-            }
-        },
-        y: {
-            label: 'Amount in (£s)'
-        }
-    },
-        subchart: {
-            show: true
-        },
-         zoom: {
-            enabled: true
-        }
-});
-
-
-    console.log("yoo")
-    
-}
-     
      function accountDashboard() {
               
 var chart = c3.generate({
@@ -505,9 +300,7 @@ var chart = c3.generate({
     }
 }); 
      }
-     
-     
-     
+         
      function inviteNew() {
          
          
@@ -555,8 +348,6 @@ var chart = c3.generate({
          */
      }
 
-     
-     
      function removeOrgConfirm2() {
          
          
@@ -579,37 +370,6 @@ var chart = c3.generate({
               window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?removeMsg=y";
         });
      }     
-     
-     
-     function nudgeGraph() {
-         //c3 js for our nudge graph
-         
-         var chart = c3.generate({
-            bindto: '#nudge',
-            data: {
-                columns: [
-                    ['data1',10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130]
-                ],
-                types: {
-                    data1: 'area-spline'
-                },
-                regions: {
-                    data1: [{'start':0, 'end':6}]
-                },
-                names: {
-                    data1: 'Apprentices*'
-                }
-            }
-
-        });
-         
-         // select the x axis
-d3.select(chart.element).select('.' + c3.chart.internal.fn.CLASS.axisX).transition()
-// and translate it to the y = 0 position
-    .attr('transform', "translate(" + 0 + "," + chart.internal.y(70) + ")")
-
-
-     }
     
     function firstApproval(){
             $(".button").click(function(e){
@@ -1002,11 +762,47 @@ $table.appendTo( $( "#orgTable" ) );
               window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html";
         });
     }
+     
+     function organisationsTypeManual() {
+         $(".button").click(function(e){
+             e.preventDefault();
+          window.location.href = "/sprint/{{sprint}}/account/organisations/address.html";       
+         })
+     }
     
     function organisationsAddressManual() {
         
         $(".error-summary, .error-summary li, .error-message").hide();
         $(".form-group").removeClass("error");
+        $(".manual-entry").hide();
+        
+
+$('#postcode_lookup').getAddress({
+    api_key: 'PZ3nAXOYLE-eWh1OqQNuZw8517',  
+    output_fields:{
+        line_1: '#line1',
+        line_2: '#line2',
+        line_3: '#line3',
+        post_town: '#town',
+        county: '#county',
+        postcode: '#postcode'
+    },
+    button_class: 'button',
+    input_class: 'form-control',
+    select_class: 'select2',
+                                                                          
+    onLookupSuccess: function(data){
+        alert("success")
+    },
+    onLookupError: function(){
+        $(".manual-entry").show();        
+    },
+    onAddressSelected: function(elem,index){
+        $(".manual-entry").show();
+    }   
+});
+
+
     }
     
     
@@ -1168,102 +964,9 @@ $table.appendTo( $( "#orgTable" ) );
 
         }
     
+
     
-                function orgType() {
-                    //check if organisation is in companies house or other
-                    //company, rc, ip
-                
-                    
-                if ( $('input[name=radio-group]:checked', 'form').val() == "ltd" ) {
-                    //check if company is limited, royal charter or ip
-                    var chn = $("#chn").val();
-                            localStorage.setItem("organisation-number", JSON.stringify(chn));
 
-                    
-                    var chnNumber = $("#chn").val().length;
-
-                    
-                    if(chnNumber == 0 ) {
-                        // return blank error
-                        console.log("blank companies house")
-                        $("#notValidCompany").removeClass("hidden");
-                        $(".error-summary").removeClass("hidden");
-                        $(".error-summary li").eq(1).removeClass("hidden");
-                    }
-
-                    
-                    if($("#chn").val().match(/(IP|ip)/g)) {
-                            localStorage.setItem("organisation-type", JSON.stringify("ip"));
-                            window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=ip";            
-                    } else if ($("#chn").val().match(/(RC|rc)/g)) {
-                            localStorage.setItem("organisation-type", JSON.stringify("rc"));
-                            window.location.href = "/sprint/{{sprint}}/account/organisations/address.html?orgtype=rc";                            
-                    }
-                    else if ( chnNumber < 5 || chnNumber > 8 ) {
-                            console.log("number isn't right length");
-                            //window.location.href = "/sprint/{{sprint}}/account/organisations/manual-input.html";            
-                            $("#limited-group .form-group").addClass("error");
-                            $("#companyNotFound").removeClass("hidden");
-                            $(".additional-help").removeClass("hidden");
-                            $(".error-summary").removeClass("hidden");
-                            $(".error-summary ul li").eq(0).removeClass("hidden");
-                    }
-                    else {
-                            localStorage.setItem("organisation-type", JSON.stringify("ltd"));
-                            window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html?name=Acme%20Plc";            
-                    }
-
-                } else if ( $('input[name=radio-group]:checked', 'form').val() == "public" ) {
-                    //public
-                            localStorage.setItem("organisation-number", JSON.stringify("12345678"));                    
-                            localStorage.setItem("organisation-type", JSON.stringify("public"));
-                            window.location.href = "/sprint/{{sprint}}/account/organisations/public-sector-search.html";                
-                } else if ( $('input[name=radio-group]:checked', 'form').val() == "sole-trader" ) {
-                            window.location.href = "/sprint/{{sprint}}/account/organisations/manual-input.html";                                                       
-                }
-                else {
-                    //charity
-                    var ccn = $("#ccn").val();
-                    
-                    if (ccn.length == 0 ) {
-                        //alert("no charity entered")   ;
-                            $(".error-summary").removeClass("hidden");
-                            $(".error-summary ul li").eq(2).removeClass("hidden");
-                        $("#charity-panel").addClass("error");
-                        $("#charity-panel label span").removeClass("hidden");
-                        $("#charity-panel + p + .additional-help").removeClass("hidden");
-                    } else {
-                            localStorage.setItem("organisation-number", JSON.stringify(ccn));                    
-                            localStorage.setItem("organisation-type", JSON.stringify("charity"));
-                            window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html?orgtype=charity";                        
-                    }
-                }
-
-            };
-    
-    // public body keyword search code
-    $('#input-keywords, #searc-main').keypress(function (e) {
-  if (e.which == 13) {
-        e.preventDefault();
-        $("#public-sector-search").hide();
-        $("#results-wrapper").removeClass("hidden");
-        keyword = $("#input-keywords").val();
-        stn = '';
-        searchThis();
-      
-      //$('form#login').submit();
-    return false;    //<---- Add this line
-  }
-});
-    
-    $("#submit-keywords, #search-submit button").click(function (e) {
-        e.preventDefault();
-        $("#public-sector-search").hide();
-        $("#results-wrapper").removeClass("hidden");
-        keyword = $("#input-keywords").val();
-        stn = '';
-        searchThis();
-    });
 
     function searchThis() {
         $.ajax({
@@ -1289,9 +992,14 @@ $table.appendTo( $( "#orgTable" ) );
 
         $(xmlData).find('row').each(function () {
 
+            i++;
 
             var iName = $(this).find('iName').text();
-            var iSector = $(this).find('.iSector').text();
+            var iAddress = $(this).find('iAddress').text();
+            var iType = $(this).find('iType').text();
+    //        console.log(iName);
+    //        console.log(iType);
+    //        console.log("address" + iAddress);
     
 
 
@@ -1300,7 +1008,10 @@ $table.appendTo( $( "#orgTable" ) );
             searchExp = iName.match(exp);
 
             if (searchExp != null) {
-                stn += '<li><a href="/sprint/{{sprint}}/account/organisations/confirm.html?name=' + iName + '">' + iName + iSector  + '</a></li>';
+                stn += '<li data-id='+ i +'"><h2 class="heading-medium"><a href="/sprint/{{sprint}}/account/organisations/confirm.html?name=' + iName + '">' + iName  + '</a></h2>';
+                stn += '<dl class="result-data-list"><dt><b>Address</b></dt><dd>'
+                stn += '<address class="form-hint">'+ iAddress +'</address></dd>';
+                stn += '<dt><b>Type</b><dd><span class="type">' + iType + '</span></dd></dl></li>';
             };
         });
 
@@ -1340,113 +1051,15 @@ $table.appendTo( $( "#orgTable" ) );
     function disabledAddedPublicOrgs() {
         var psAdded = 3;
         
-        var name = $(".list-links li:nth-child("+psAdded+")").text();
+        var name = $(".list-links li:nth-child("+psAdded+") a").text();
+        var iAddress = $(".list-links li:nth-child("+psAdded+") address").text();
+        var iType = $(".list-links li:nth-child("+psAdded+") span.type").text();
         
-                $(".list-links li:nth-child("+psAdded+")").replaceWith("<li class='added'>" + name + "<span>already added - <a href='#'>go to my account</a></span><li>");
+                $(".list-links li:nth-child("+psAdded+")").replaceWith("<li class='added'><div>already added</div><h2 class='heading-medium'>" + name + "</h2><dl class='result-data-list'><dt><b>Address</b></dt><dd><address>" + iAddress + "</dd><dt><b>Type</b></dt><dd><span class='type'>"+ iType +"</span></dd></dl><li>");
     }
-});
-    
-    
-</script>
-
-
-<script>
 
     
-           var content = '';
-
-    var XMLSource = $('#directory').attr('xmlData');
-
     
-        function searchThis() {
-        $.ajax({
-            type: "GET",
-            url: XMLSource,
-            dataType: "xml",
-            success: function (xml) {
-                loadData(xml)
-            },
-            error: function (request, error) {
-                console.log(arguments);
-                console.log("something broke in the searchThis function 1")
-                //alert(" Can't do because: " + error);
-            }
-        });
-    }
-        function loadData(xmlData) {
-
-            $(xmlData).find('row').each(function () {
-             var iName = $(this).find('iName').text();
-             var iSector = $(this).find('iSector').text();
-
-                
-                //content += iName + iSector;
-                //content += '<tr>';
-                //content += '<td class="org-name">' + iName + '</td>';
-                //content += '<td class="org-name">' + iSector + '</td>';
-                //content += '<td class="numeric"><a href="/sprint/{{sprint}}/account/organisations/confirm.html">Select organisation</a></td>';
-                //content += '</tr>';
-                
-                
-                content += '<li><a href="/sprint/{{sprint}}/account/organisations/address.html">' + iName + ' ' + iSector +'</a></li>';
-            });
-
-            returnDirectory(content);
-                                        };
-
-    
-    function returnDirectory(content) {
-    //    var contentTop = '<table><thead><tr><th scope="col">Insitute name</th><th scope="col">Sector</th><th class="numeric"></th></tr></thead><tbody>';
-    //    var contentBottom = '</tbody></table>';
-      //$("#content .alpha-list").html('<table><thead><tr><th scope="col">Insitute name</th><th scope="col">Sector</th><th class="numeric"></th></tr></thead><tbody>');  
-    //    $("#content .alpha-list").html(contentTop + content + contentBottom);
-        //$("#content .alpha-list").html('</tbody></table>');
-      
-        var contentTop = '<ul id="list" class="list list-links>';
-        var contentBottom = '</ul>';
-        $("#content .alpha-list").html(contentTop + content + contentBottom);
-        
-        splitList();
-        
-        fixPublicLink();
-    }
-    
-    function splitList() {
-        var list = { letters: [] };
-$("#list").children("li").each(function(){
-    var itmLetter = $(this).text().substring(0,1).toUpperCase();
-    if (!(itmLetter in list)) {
-        list[itmLetter] = [];
-        list.letters.push(itmLetter);
-    }
-    list[itmLetter].push($(this));
-});
-list.letters.sort();
-$("#list").empty();
-$.each(list.letters, function(i, letter){
-    list[letter].sort(function(a, b) {
-        return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase());
-    });
-    var ul = $("<ul/>");
-    $.each(list[letter], function(idx, itm){
-        ul.append(itm);
-    });
-    $("#list").append($("<li/>").append($("<h2/>").attr("id", letter.toLowerCase()).addClass("title heading-medium").html(letter)).append(ul));
-});
-
-    }
-    
-    function fixPublicLink() {
-               $("ul#list li ul a").click(function(e){
-               //alert("hi");
-               e.preventDefault();
-               localStorage.setItem("organisation-name", JSON.stringify($(this).text()));
-               window.location.href = "/sprint/{{sprint}}/account/organisations/address.html";
-           });
-    }
-    
-    
-  
 
     // get & set sprint
     var sprint = {{sprint}};
@@ -1608,50 +1221,8 @@ $.each(list.letters, function(i, letter){
         };
    
     
-    /*
-    // label switching site wide
-    
-        if ( orgType == "rc" ) {
-            $(".orgtype").text("Royal Charter")
-        }
-    
-        if ( orgType == "ip" ) {
-            $(".orgtype").text("Royal Charter")            
-        }
-        
-        if ( orgType == "charity" ) {
-            $(".orgtype").text("charity")            
-        }    
-        
-        */
-    
     
 
-    
-    //switch
-
-   var orgType = JSON.parse(localStorage.getItem("organisation-type"));
-   switch(orgType){
-        case 'rc':
-        $(".orgtype").text("Royal Charter");
-        break;           
-        case 'ip':           
-        $(".orgtype").text("Industrial or Provident");
-        break;           
-        case 'public':
-        $(".orgtype").text("organisation");
-        break;           
-        case 'charity':
-        $(".orgtype").text("charity");
-        break;           
-        case 'limited':
-        $(".orgtype").text("company");
-        break;
-        case 'ltd':
-        $(".orgtype").text("company");
-        break;
-        default: break;
-   }
            
    
     // notifications site wide
@@ -1808,62 +1379,6 @@ console.log("score is " + resultScore)
         
     });
     
-    
-
- /*   $("#passwordgroup input").keyup(function(e) {
-        var password = $(this).val();
-        //validate the length
-        if ( password.length < 8 ) {
-            $('#8num').removeClass('success').addClass('danger');
-            $("#8num i").removeClass("fa-check-circle").addClass("fa-circle");
-        } else {
-            $('#8num').removeClass('danger').addClass('success');
-            $("#8num i").removeClass("fa-circle").addClass("fa-check-circle");
-        }
-//validate letter
-        if ( password.match(/[A-z]/) ) {
-            $('#1char').removeClass('danger').addClass('success');
-            $("#1char i").removeClass("fa-circle").addClass("fa-check-circle");
-        } else {
-            $('#1char').removeClass('success').addClass('danger');
-            $("#1char i").removeClass("fa-check-circle").addClass("fa-circle");
-        }
-//validate capital letter
-        if ( password.match(/[A-Z]/) ) {
-            $('#1cap').removeClass('danger').addClass('success');
-            $("#1cap i").removeClass("fa-circle").addClass("fa-check-circle");
-        } else {
-            $('#1cap').removeClass('success').addClass('danger');
-            $("#1cap i").removeClass("fa-check-circle").addClass("fa-circle");
-        }
-//validate number
-        if ( password.match(/\d/) ) {
-            $('#1num').removeClass('danger').addClass('success');
-            $("#1num i").removeClass("fa-circle").addClass("fa-check-circle");
-        } else {
-            $('#1num').removeClass('success').addClass('danger');
-            $("#1num i").removeClass("fa-check-circle").addClass("fa-circle");
-        }
-        i++;
-        var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
-        var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
-        var enoughRegex = new RegExp("(?=.{6,}).*", "g");
-        if (false == enoughRegex.test(password)) {
-            console.log("pass");
-            $('.password-strength .tooweak').fadeIn();
-            $(".pw-strength").text("incomplete");
-        } else if (strongRegex.test($(this).val())) {
-            $('.password-strength .strong').fadeIn();
-            $(".pw-strength").text("strong");
-        } else if (mediumRegex.test($(this).val())) {
-            $('.password-strength .medium').fadeIn();
-            $(".pw-strength").text("moderate");
-        } else {
-            $('.password-strength .weak').fadeIn();
-            $(".pw-strength").text("weak");
-        }
-        return true;
-    }); */
          
     function organisationName(){
     $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
@@ -1895,56 +1410,33 @@ var year = date.getFullYear();
     
     
     
-    function companiesHouseApi(){
-var chApiKey = "fNoTIfmTDt5fP0kKESHsxQSfa2DVzKXBDzCrFQkV";
+   
 
- var company_number = "09963675";
     
-    			$.ajax({
-					url: "https://api.companieshouse.gov.uk/company/",
-					type: "GET",
-					crossDomain: true,
-					contentType: "application/json",
-					data: company_number,
-					dataType:'json',
-					success: function(data){
-						//Response text
-						alert(data);					
-					},
-					beforeSend: function (xhr) {
-						xhr.withCredentials = true;
-						xhr.setRequestHeader ("Authorization", make_base_auth(encodeURIComponent(chApiKey)))
-					},
-					error:function(){
-						//Gat failure
-						alert("failure");
-
-					}
-			});
-
-
-		function make_base_auth(user) {
-			var tok = user;
-			var hash = btoa(tok);
-			return "Basic " + hash;
-		}
-}
     
-     function accountForecast() {
          
-         var body = $(body).height();
-         var block1 = $("#global-header").height();
-         var block2 = $("#loggedOut").height();
-         //var block3 = $("#footer").height();
-         var block3 = 271;
-         var block4 = $(".account-forecast").height();
-         
-         var wrapperBlock = body - block1 - block2 - block3 - block4;
-         console.log("height of chart is" + wrapperBlock);
-         $(".account-forecast").height(wrapperBlock);
-         
-     }
-         
+function organisationAdd() {
+        $(".errror-summary").hide();
+        $(".form-group").removeClass("error");
+        $(".error-message, .error-summary").addClass("hidden");
+        //localStorage.setItem("organisation-address", JSON.stringify("101 Aviation House"))           
+        $(".panel").hide()
+        $("label").click(function(){
+        $(".panel").hide();                    
+        $(this).next().show()
+        })
+
+    $("#submit-keywords, #search-submit button").click(function (e) {
+        e.preventDefault();
+        $("#public-sector-search").hide();
+        $("#results-wrapper").removeClass("hidden");
+        keyword = $("#input-keywords").val();
+        stn = '';
+        searchThis();
+    });
+}     
+
+         });
     
     
 </script>

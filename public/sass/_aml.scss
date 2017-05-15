@@ -1893,10 +1893,24 @@ table.responsive {
     margin-bottom: 15px;
     overflow: auto;
 }
-//.done {
+.done {
     //background: mix(white, #28a197, 80%);
-//    border: 5px solid #28a197;
-//}
+    background: #28a197;
+    color: white;
+    overflow: auto;
+    margin: 0;
+    h3 {
+        float: left;
+    }
+    p {
+        display: none;
+    }
+    span {
+        font-size: 24px;
+        font-weight: 900;
+        float: right;
+    }
+}
 
 .account-dashboard-8 #welcome {
     .todo {

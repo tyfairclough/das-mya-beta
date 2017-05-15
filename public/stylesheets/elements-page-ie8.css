@@ -3817,6 +3817,27 @@ table.responsive tr th.tw-70 {
   overflow: auto;
 }
 
+.done {
+  background: #28a197;
+  color: white;
+  overflow: auto;
+  margin: 0;
+}
+
+.done h3 {
+  float: left;
+}
+
+.done p {
+  display: none;
+}
+
+.done span {
+  font-size: 24px;
+  font-weight: 900;
+  float: right;
+}
+
 .account-dashboard-8 #welcome .todo {
   border: none;
   border-left: 5px solid #2e358b;

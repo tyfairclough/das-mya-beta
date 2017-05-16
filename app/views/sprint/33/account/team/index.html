@@ -72,9 +72,7 @@
         <p>Invite members, control what they can do, remove members and cancel or resend invitations.</p>
 </div>
     </div>
-      <div class="column-third">
-        <a class="button" id="dothething" href="/sprint/{{sprint}}/account/team/new.html">Invite a new member</a>
-      </div>
+
   </div>
 
 
@@ -91,48 +89,65 @@
                         <tbody>
                             <tr>
                                 <!--quick hack, will fix -->
-                                <td class="">Charlie George (Owner)
+                                <td class="">Charlie George (owner)
                                     <br><span class="text-secondary">charlie.george@gmail.com</span>
                                 </td>
-                                <td>Everything - they're the owner</td>
+                                <td>Accept agreements, view information and manage PAYE schemes, organisations, apprentices and team members</td>
                                 <td>Invitation awaiting response</td>
                                 <td><a href="/sprint/{{sprint}}/account/team/view-invite">Edit</a></td>
                             </tr>
                             <tr>
-                                <td class="">Chuba Akpom (Viewer)
+                                <td class="">Chuba Akpom (viewer)
                                     <br><span class="text-secondary">chuba.akpom@googlemail.es</span>
                                 </td>
-                                <td>View financial information</td>
-                                <td>Profile active</td>
+                                <td>View information but can't make changes</td>
+                                <td>Active</td>
                                 <td><a href="/sprint/{{sprint}}/account/team/view-user">Edit</a></td>
                             </tr>
                             <tr>
-                                <td class="">Shkodran Mustafi (Viewer)
+                                <td class="">Shkodran Mustafi (viewer)
                                     <br><span class="text-secondary">s.mustafi@gmail.co.uk</span>
                                 </td>
-                                <td>View financial information</td>
-                                <td>Profile removed</td>
+                                <td>View information but can't make changes</td>
+                                <td>Removed</td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td class="">Alex Iwobi (Editor)
+                                <td class="">Alex Iwobi (editor)
                                     <br><span class="text-secondary">georgia.c@outlook.com</span>
                                 </td>
-                                <td>Create or stop payment and view financial information</td>
+                                <td>Add apprentices and view financial information</td>
                                 <td>Invitation cancelled</td>
                                 <td></td>
                             </tr>
                                                         <tr>
-                                <td class="">Sammi Nasri (Editor)
+                                <td class="">Sammi Nasri (editor)
                                     <br><span class="text-secondary">sammi.n@tesco.com</span>
                                 </td>
-                                <td>Create or stop payment and view financial information</td>
+                                <td>Add apprentices and view financial information</td>
                                 <td>Invitation expired</td>
                                 <td><a href="/sprint/{{sprint}}/account/team/view-expired-user">Edit</a></td>
                             </tr>
                         </tbody>
                     </table>
-                </section>
+    </section>
+    
+    <div class="page-navigation">
+                    <a class="page-navigation__btn previous hidden">
+                        <i class="arrow-button fa fa-angle-left"></i>
+                        <span class="description">Previous <span class="hide-mob">page</span></span>
+                        <span class="counter">Page <span class="prevPage"></span> of <span class="totalPage"></span></span>
+                    </a>
+
+
+
+                    <a style="" class="page-navigation__btn next">
+                        <i class="arrow-button fa fa-angle-right"></i>
+                        <span class="description">Next <span class="hide-mob">page</span></span>
+                        <span class="counter">Page <span class="nextPage">1</span> of <span class="totalPage">3</span></span>
+                    </a>
+
+                </div>
 
                       <section id="expired-invitations" class="hidden">
                                               <h2 class="heading-medium">Expired user</h2>
@@ -159,6 +174,7 @@
                     </table>
                 </section>
       
+        <a class="button" id="" href="/sprint/{{sprint}}/account/team/new.html">Invite a new member</a>
 
 </main>
 {% endblock %}

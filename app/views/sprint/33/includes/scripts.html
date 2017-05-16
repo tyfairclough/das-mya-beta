@@ -1339,7 +1339,14 @@ localStorage.setItem("onboarding",0);
         }
 
         function userName() {
-            $(".user-name").text(JSON.parse(localStorage.getItem('user.firstName')));
+            var userName = JSON.parse(localStorage.getItem('user.firstName'));
+            if (userName =! null ) {
+                $(".user-name").text(userName);    
+            } else {
+                JSON.parse(localStorage.setItem('user.firstName',"James King"));
+                $(".user-name").text("James King");
+            }
+            
         }
 
 

@@ -1899,17 +1899,23 @@ table.responsive {
     color: white;
     overflow: auto;
     margin: 0;
+    position: relative;
     h3 {
         float: left;
     }
     p {
-        display: none;
-    }
-    span {
+        float: left;
+        clear: left;
+         + span {
         font-size: 24px;
         font-weight: 900;
         float: right;
+        position: absolute;
+        top: 40px;
+        right: 20px;
     }
+    }
+  
 }
 
 .account-dashboard-8 #welcome {

@@ -3822,6 +3822,7 @@ table.responsive tr th.tw-70 {
   color: white;
   overflow: auto;
   margin: 0;
+  position: relative;
 }
 
 .done h3 {
@@ -3829,13 +3830,17 @@ table.responsive tr th.tw-70 {
 }
 
 .done p {
-  display: none;
+  float: left;
+  clear: left;
 }
 
-.done span {
+.done p + span {
   font-size: 24px;
   font-weight: 900;
   float: right;
+  position: absolute;
+  top: 40px;
+  right: 20px;
 }
 
 .account-dashboard-8 #welcome .todo {

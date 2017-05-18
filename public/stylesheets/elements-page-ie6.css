@@ -3097,6 +3097,9 @@ span.notification {
 #results li.added {
   outline: 3px solid #6F777B;
   padding: 10px;
+  border-bottom: none;
+  background: #F8F8F8;
+  color: #0B0C0C;
 }
 
 #results li.added h2 {
@@ -3104,10 +3107,13 @@ span.notification {
 }
 
 #results li.added div {
-  margin: -10px -10px 10px;
+  margin: 10px -10px -10px;
   padding: 10px;
-  background: #6F777B;
-  color: white;
+  color: #0b0c0c;
+  border-top: 1px solid #BFC1C3;
+  float: left;
+  width: 100%;
+  font-size: 16px;
 }
 
 @media (min-width: 641px) {

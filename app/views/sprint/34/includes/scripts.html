@@ -1043,7 +1043,7 @@ localStorage.setItem("onboarding",0);
             var iAddress = $(".list-links li:nth-child(" + psAdded + ") address").text();
             var iType = $(".list-links li:nth-child(" + psAdded + ") span.type").text();
 
-            $(".list-links li:nth-child(" + psAdded + ")").replaceWith("<li class='added'><div>Already added <a href='/sprint/{{sprint}}/account/organisations/index'>View my organisations</a></div><h2 class='heading-medium'>" + name + "</h2><dl class='result-data-list'><dt><b>Address</b></dt><dd><address>" + iAddress + "</dd><dt><b>Type</b></dt><dd><span class='type'>" + iType + "</span></dd></dl><li>");
+            $(".list-links li:nth-child(" + psAdded + ")").replaceWith("<li class='added'><h2 class='heading-medium'>" + name + "</h2><dl class='result-data-list'><dt><b>Address</b></dt><dd><address>" + iAddress + "</dd><dt><b>Type</b></dt><dd><span class='type'>" + iType + "</span></dd></dl><div>Already added <a href='/sprint/{{sprint}}/account/organisations/index'>View my organisations</a></div><li>");
         }
 
 

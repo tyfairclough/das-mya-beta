@@ -261,37 +261,6 @@ localStorage.setItem("onboarding",0);
                     $(this).parents("tr").find("label").removeClass("selected");
                     $(this).addClass("selected");
                 })
-                // version with drop down
-
-            /*
-         
-         $("select").change(function(e){
-            //e.preventDefault();                  
-             var role = $( "select option:selected" ).val();
-             //alert(role);
-             $(".acl").removeClass("hidden");
-             $("label").removeClass('selected');
-            
-             if ( role  == 1 ) {
-                 console.log("manager");
-                 $("#radio-inline-2,#radio-inline-4,#radio-inline-8, #radio-inline-10, #radio-inline-15").parent().addClass('selected');
-             } else if ( role == 2 ) {
-                 $("#radio-inline-2,#radio-inline-6,#radio-inline-8, #radio-inline-12, #radio-inline-15").parent().addClass('selected');
-             } else if ( role == 3 ) {
-                 $("#radio-inline-1,#radio-inline-6,#radio-inline-9, #radio-inline-11, #radio-inline-14").parent().addClass('selected');
-             } else if ( role == 4 ) {
-                 $("#radio-inline-1,#radio-inline-6,#radio-inline-8, #radio-inline-11, #radio-inline-14").parent().addClass('selected');
-             } else if ( role == 5 ) {
-                 $("#radio-inline-1,#radio-inline-5,#radio-inline-9, #radio-inline-10, #radio-inline-13").parent().addClass('selected');
-             } else if ( role == 6 ) {
-                 $("#radio-inline-1,#radio-inline-5,#radio-inline-9, #radio-inline-10, #radio-inline-13").parent().addClass('selected');
-             } else {
-                 $("#radio-inline-1,#radio-inline-4,#radio-inline-7, #radio-inline-10, #radio-inline-13").parent().addClass('selected');                 
-             }
-         
-        })
-         
-         */
         }
 
         function removeOrgConfirm2() {

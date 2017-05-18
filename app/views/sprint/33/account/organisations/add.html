@@ -63,10 +63,47 @@
 </div>
         <p><span class="count">xxx,xxx</span> results found</p>
         <!--<p>Choose from one of the follow results, or <a href="/sprint/{{sprint}}/account/organisations/public-sector-search.html">search again</a>.</p>-->
-    <div id="results">
-    
         
-    </div>
+        <div class="grid-row">
+
+            <div class="column-one-third">
+                <aside>
+                    <h3 class="bold-small">Filter results</h3>
+                    <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Organisation type</h2>
+                    <div class="toggled-content">
+                        <div class="form-group">
+                            <legend class="form-label sr-only">Select an organisation type</legend>
+                            <label class="block-label selection-button-radio" for="levy-1">
+                                <input id="levy-1" type="radio" name="levy-group" value="1"> Private limited company
+                            </label>
+                            <label class="block-label selection-button-radio" for="levy-2">
+                                <input id="levy-2" type="radio" name="levy-group" value="2"> Public limited company
+                            </label>
+                            <label class="block-label selection-button-radio" for="levy-3">
+                                <input id="levy-3" type="radio" name="levy-group" value="3">    Public body
+                            </label>
+                            <label class="block-label selection-button-radio" for="levy-4">
+                                <input id="levy-4" type="radio" name="levy-group" value="4">    Industrial and Provident organisation
+                            </label>
+                            <label class="block-label selection-button-radio" for="levy-5">
+                                <input id="levy-5" type="radio" name="levy-group" value="5">    Royal charter
+                            </label>
+                            <label class="block-label selection-button-radio" for="levy-6">
+                                <input id="levy-6" type="radio" name="levy-group" value="6">    Registered charity
+                            </label>
+                            <label class="block-label selection-button-radio" for="levy-7">
+                                <input id="levy-7" type="radio" name="levy-group" value="7">    Other
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                </aside>
+            </div>            
+            <div class="column-two-thirds">
+                <div id="results"></div>        
+            </div>
+        </div>
     </section>
 </section>    
  

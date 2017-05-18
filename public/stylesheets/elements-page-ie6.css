@@ -4026,6 +4026,31 @@ li.added + li {
   display: none;
 }
 
+.filters {
+  display: block;
+  margin: 0 0 20px 0;
+  border: 1px solid #dee0e2;
+  overflow: hidden;
+}
+
+.filters .toggler {
+  clear: both;
+  background: #dee0e2;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 5px 30px 5px 10px;
+  margin: 0;
+  top: 0;
+  float: none;
+  position: relative;
+  cursor: default;
+}
+
+.filters .toggled-content {
+  padding: 20px;
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

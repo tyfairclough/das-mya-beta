@@ -56,6 +56,7 @@
             // reset site
             localStorage.setItem("onboarding", "0");
             localStorage.setItem("sessionState", "0");
+                indexV1();
             break;
         case 'manual-input':
             manualInputName();
@@ -186,6 +187,37 @@
         default:
             break;
         };
+        
+        
+        function indexV1(){
+            
+            
+            $('input').keypress(function(e){
+                if(e.which == 13){//Enter key pressed
+                e.preventDefault();
+                indexSwitch();
+                }
+            });
+            
+            $(".button").click(function (e) {
+                e.preventDefault();
+                indexSwitch();
+            });
+            
+            function indexSwitch() {
+                console.log("done");
+                var email = $("#email-address").val();
+                
+                if (email == ("ty.fairclough@gmail.com" || "pritesh.patel@digital.education.gov.uk")) {
+                    window.location.href = "/sprint/{{sprint}}/user/login.html";                    
+                } else {
+                    // store field inputs into local storage
+                    localStorage.setItem("user.email", JSON.stringify(email));
+                    //console.log(localStorage.getItem("user.email"));
+                    window.location.href = "/sprint/{{sprint}}/onboarding/zxcvbn.html";
+                }
+            }   
+        }
 
 
         function accountDash7() {
@@ -753,16 +785,16 @@ localStorage.setItem("onboarding",0);
                 localStorage.setItem("organisations", JSON.stringify(orgArray));
             }
         }
-
+        
 
         function captureUserData() {
-
+                $("#email-address").val(JSON.parse(localStorage.getItem("user.email")));
             $(".zxcvbn .button").click(function (e) {
                 e.preventDefault();
                 var name = $("#users-name").val();
                 var email = $("#email-address").val();
                 var password = $("#password").val();
-                if (email == "ty.fairclough@gmail.com") {
+                if (email == "joe.bloggs@gmail.com") {
                     $("#emailGroup").addClass("error");
                     $("#emailError1").show().removeClass("hidden");
                     $(".error-summary").show().removeClass("hidden");

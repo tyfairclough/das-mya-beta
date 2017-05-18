@@ -4003,6 +4003,24 @@ li.added + li {
   padding: 20px;
 }
 
+#signinsignup {
+  position: relative;
+}
+
+#OR {
+  position: relative;
+  width: 0px;
+  top: 180px;
+  left: -50px;
+  display: inline;
+  background: gray;
+  border-radius: 20px;
+  padding: 6px 6px 4px 6px;
+  color: white;
+  font-weight: 900;
+  line-height: normal;
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

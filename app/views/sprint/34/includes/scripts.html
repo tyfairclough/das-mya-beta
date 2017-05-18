@@ -10,6 +10,8 @@
 <script src="/public/javascripts/stackable.min.js"></script>
 <script src="/public/javascripts/zxcvbn.js"></script>
 <script src="/public/javascripts/hammer.min.js"></script>
+<script src="/public/javascripts/list.min.js"></script>
+<script src="/public/javascripts/jPages.min.js"></script>
 <script src="https://getaddress.io/js/jquery.getAddress-2.0.5.min.js"></script>
 
 <script src="/public/javascripts/aml.js"></script>
@@ -974,10 +976,11 @@ localStorage.setItem("onboarding",0);
             //Populate on page
             var contentTop = '<ul class="list list-links">';
             var contentBottom = '</ul>';
-            var helpText = "        <h5 class='heading-small'>Can't find your organisation?</h5><p> You can <a href='manual-input.html'>add it manually here</a>.</p>";
+            var helpText = "<aside id='manualentrylink' style='display:none;'><h5 class='heading-small'>Can't find your organisation?</h5><p> You can <a href='manual-input.html'>add it manually here</a>.</p></aside>";
             $('#results').html(contentTop + stn + contentBottom + helpText);
             getPublicSearchCount(keyword);
             disabledAddedPublicOrgs();
+            pageNsort();
 
             $("ul a").click(function (e) {
                 e.preventDefault();
@@ -988,6 +991,42 @@ localStorage.setItem("onboarding",0);
                 window.location.href = href;
             })
 
+        }
+        
+        function pageNsort(){
+            
+            //$(".page-navigation__btn.previous").css("visibility","hidden");
+            //$("ol li").hide();
+            //$("ol#standard-results li:lt(" + paginateCount + ")").show();
+            //$("ol#framework-results li:lt(" + paginateCount + ")").show();
+            $("#pagedat").jPages({                
+                containerID: "results ul",
+                perPage: 10,
+                animation: "none",
+                first: false,
+                previous: "a.previous",
+                next: "a.next",
+                last: false,
+                midRange: 0,
+                callback: function (pages, items) {
+                    $(".totalPage").html(pages.count);
+                    $(".prevPage").html((pages.current) - 1);
+                    $(".nextPage").html((pages.current) + 1);
+                    $(".page-navigation__btn.next").removeClass("hidden");    
+                    if ( pages.current == 1 ) {
+                        $(".page-navigation__btn.previous").addClass("hidden");                        
+                    } else {
+                        $(".page-navigation__btn.previous").removeClass("hidden");                                                
+                    }
+                    if ( pages.current == pages.count ) {
+                        $("#manualentrylink").show();
+                        $(".page-navigation__btn.next").addClass("hidden");                        
+                        }
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, "slow");
+                }
+            });
         }
 
 
@@ -1004,7 +1043,7 @@ localStorage.setItem("onboarding",0);
             var iAddress = $(".list-links li:nth-child(" + psAdded + ") address").text();
             var iType = $(".list-links li:nth-child(" + psAdded + ") span.type").text();
 
-            $(".list-links li:nth-child(" + psAdded + ")").replaceWith("<li class='added'><div>already added</div><h2 class='heading-medium'>" + name + "</h2><dl class='result-data-list'><dt><b>Address</b></dt><dd><address>" + iAddress + "</dd><dt><b>Type</b></dt><dd><span class='type'>" + iType + "</span></dd></dl><li>");
+            $(".list-links li:nth-child(" + psAdded + ")").replaceWith("<li class='added'><div>Already added <a href='/sprint/{{sprint}}/account/organisations/index'>View my organisations</a></div><h2 class='heading-medium'>" + name + "</h2><dl class='result-data-list'><dt><b>Address</b></dt><dd><address>" + iAddress + "</dd><dt><b>Type</b></dt><dd><span class='type'>" + iType + "</span></dd></dl><li>");
         }
 
 

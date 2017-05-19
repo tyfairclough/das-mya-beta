@@ -1046,7 +1046,12 @@ localStorage.setItem("onboarding",0);
             });
         }
         
-        function pageNfilter() {     
+        function pageNfilter() {    
+            var iType = localStorage.getItem("addSort");
+$('input:radio[name="levy-group"]').filter('[value="'+iType+'"]').attr('checked', true).parent().addClass("selected");
+        
+
+            
                     
             $('input[name=levy-group]').change(function(){
     var value = $( 'input[name=levy-group]:checked' ).val();

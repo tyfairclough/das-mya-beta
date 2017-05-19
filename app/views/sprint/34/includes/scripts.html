@@ -956,13 +956,27 @@ localStorage.setItem("onboarding",0);
                 //Format the keyword expression
                 var exp = new RegExp(keyword, "gi");
                 searchExp = iName.match(exp);
-
+                
+                var sortBy = localStorage.getItem("addSort");
+//sortBy = "Public body";
+                
                 if (searchExp != null) {
-                    stn += '<li data-id=' + i + '"><h2 class="heading-medium"><a href="/sprint/{{sprint}}/account/organisations/confirm.html?name=' + iName + '">' + iName + '</a></h2>';
+                    if ( sortBy != null ){
+                        if ( sortBy == iType ) {
+                            returnList();
+                        }
+                    } else {
+                        returnList();
+                    }
+                }
+                
+                
+              function returnList() {
+                    stn += '<li class="item" data-id=' + i + '"><h2 class="heading-medium"><a href="/sprint/{{sprint}}/account/organisations/confirm.html?name=' + iName + '">' + iName + '</a></h2>';
                     stn += '<dl class="result-data-list"><dt><b>Address</b></dt><dd>'
                     stn += '<address class="form-hint">' + iAddress + '</address></dd>';
-                    stn += '<dt><b>Type</b><dd><span class="type">' + iType + '</span></dd></dl></li>';
-                };
+                    stn += '<dt><b>Type</b><dd data-filter='+ iType + '><span class="type">' + iType + '</span></dd></dl></li>';
+                }
             });
 
             showList(stn);
@@ -981,6 +995,7 @@ localStorage.setItem("onboarding",0);
             getPublicSearchCount(keyword);
             disabledAddedPublicOrgs();
             pageNsort();
+            pageNfilter();
 
             $("ul a").click(function (e) {
                 e.preventDefault();
@@ -1030,6 +1045,15 @@ localStorage.setItem("onboarding",0);
                 }
             });
         }
+        
+        function pageNfilter() {     
+                    
+            $('input[name=levy-group]').change(function(){
+    var value = $( 'input[name=levy-group]:checked' ).val();
+                localStorage.setItem("addSort",value);
+                location.reload();
+});
+        }
 
 
         function getPublicSearchCount(keyword) {
@@ -1045,7 +1069,7 @@ localStorage.setItem("onboarding",0);
             var iAddress = $(".list-links li:nth-child(" + psAdded + ") address").text();
             var iType = $(".list-links li:nth-child(" + psAdded + ") span.type").text();
 
-            $(".list-links li:nth-child(" + psAdded + ")").replaceWith("<li class='added'><h2 class='heading-medium'>" + name + "</h2><dl class='result-data-list'><dt><b>Address</b></dt><dd><address>" + iAddress + "</dd><dt><b>Type</b></dt><dd><span class='type'>" + iType + "</span></dd></dl><div>Already added — <a href='/sprint/{{sprint}}/account/organisations/index'>view my organisations</a></div><li>");
+            $(".list-links li:nth-child(" + psAdded + ")").replaceWith("<li class='added item'><h2 class='heading-medium'>" + name + "</h2><dl class='result-data-list'><dt><b>Address</b></dt><dd><address>" + iAddress + "</dd><dt><b>Type</b></dt><dd><span class='type'>" + iType + "</span></dd></dl><div>Already added — <a href='/sprint/{{sprint}}/account/organisations/index'>view my organisations</a></div><li>");
         }
 
 
@@ -1436,6 +1460,13 @@ localStorage.setItem("onboarding",0);
                 stn = '';
                 searchThis();
             });
+            var addSort = localStorage.getItem("addSort");
+            if ( addSort != null ) {
+                $("#public-sector-search").hide();
+                $("#results-wrapper").removeClass("hidden");
+                searchThis();                
+            }
+            
         }
     
     console.log("end");

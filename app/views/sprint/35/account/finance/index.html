@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="funding-index" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+           <h1 class="heading-xlarge">
+        Finance
+      </h1>
+        <!--<p class="lede">View transactions and forecast your funds.</p>-->
+
+      </div>
+    </div>
+
+    
+    <div class="grid-row">
+  <div class="column-one-quarter">            
+        <div class="data" style="background: #912B88; color: white; padding: 20px 10px; margin-right: 10px;">
+                    <h2 class="bold-large">£3,010</h2>
+                    <h2 class="bold-small">May funding position</h2>
+        </div>
+        </div>
+  <div class="column-one-quarter">
+
+            <div class="data" style="background: #912B88; color: white; padding: 20px 10px; margin-right: 10px;">
+                    <h2 class="bold-large">£28,230</h2>
+                    <h2 class="bold-small">Comitted spend</h2>
+        </div>
+     </div>   
+  <div class="column-one-quarter">
+
+     <div class="data" style="background: #2E358B; color: white; padding: 20px 10px; margin-right: 10px;">
+                    <h2 class="bold-large">£2,150</h2>
+                    <h2 class="bold-small">Funds at risk</h2>
+        </div>
+        </div>
+          <div class="column-one-quarter">
+            <div class="data" style="background: #2E358B; color: white; padding: 20px 10px; margin-right: 10px;">
+                    <h2 class="bold-large">0%</h2>
+                    <h2 class="bold-small">Co-investment gain</h2>
+        </div>
+        </div>
+    </div>
+               
+                         
+    <div class="grid-row">
+        <div class="column-half">
+            <h2 class="heading-medium">Reconcile</h2>            
+            <ul class="list list-links">
+                <li>
+                    <h3 class="heading-medium"><a href="/sprint/{{sprint}}/account/finance/history_22nd.html">Your transactions</a></h3>
+                    <p>View payments made into and out of your SFA digital apprenticeship account</p>
+                    <hr/>
+                </li>
+                <li>
+                    <h3 class="heading-medium"><a href="/sprint/{{sprint}}/account/finance">View committed spending</a></h3>
+                    <p>Review the amount you've committed to spend on apprenticeships</p>
+                    <hr/>
+                </li>
+                <li>
+                    <h3 class="heading-medium"><a href="/sprint/{{sprint}}/account/paye/index">View your English percentage</a></h3>
+                    <p>Check the English percentage that's been applied to your levy</p>
+                    <hr/>
+                </li>
+                <li>
+                    <h3 class="heading-medium"><a href="/sprint/{{sprint}}/account/finance">Download your financial information</a></h3>
+                    <p>Download your financial information for your records</p>
+                    <hr/>
+                </li>
+            </ul>
+        </div>
+        <div class="column-half">
+                        <h2 class="heading-medium">Forecast</h2>
+                <ul class="list list-links">
+                <li>
+                    <h3 class="heading-medium"><a href="/sprint/{{sprint}}/account/finance">Forecast your funds</a></h3>
+                    <p>Calculate the amount you have available to spend on apprenticeships</p>
+                    <hr/>
+                </li>
+                <li>
+                    <h3 class="heading-medium"><a href="/sprint/{{sprint}}/account/finance">View funds at risk</a></h3>
+                    <p>Your funds will expire after 24 months if you don't spend it on apprenticeships</p>
+                    <hr/>
+                </li>
+
+
+ 
+            </ul>
+        </div>
+    </div>
+    
+
+
+
+
+</main>
+{% endblock %}

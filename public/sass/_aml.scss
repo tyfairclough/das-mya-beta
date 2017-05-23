@@ -2079,10 +2079,11 @@ li.added + li {
 #signinsignup {
     position: relative;
 }
-#OR {
+#OR:after {
+    content: "OR";
     position: relative;
     width: 0px;
-    top: 180px;
+    top: 140px;
     left: -50px;
     display: inline;
     background: gray;

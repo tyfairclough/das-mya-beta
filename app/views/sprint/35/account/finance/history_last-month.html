@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="history" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+    
+      <h1 class="heading-large">
+        Your transactions
+          <span class="heading-secondary">March 2017</span>
+            </h1>   
+        <table>
+                <thead>
+                    <tr>
+                        <th scope="col"><span class="no-wrap">Date</span></th>
+                        <th scope="col" class="mobile-hide-cell">Description</th>
+                        <th scope="col" class="numeric">Amount</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                            <td>
+                                <span class="no-wrap"> 22 Mar 2017 </span>
+                            </td>
+                            <td class="mobile-hide-cell">
+                                <span class="description">
+                                    Levy funds
+                                </span>
+                            </td>
+                            <td class="numeric"> £5,000.00</td>
+                            <td class="numeric">
+                                    <a title="View details for the transaction on 15 Mar 2017" href="/sprint/{{sprint}}/account/finance/levy.html">
+                                        Details <span class="vh"> for the transaction on 20 Oct 2017</span>
+                                    </a>
+                            </td>
+                        </tr>
+                                               <tr>
+                            <td>
+                                <span class="no-wrap"> 5 Mar 2017</span>
+                            </td>
+                            <td class="mobile-hide-cell">
+                                <span class="description">
+                                    Acme Ltd
+                                </span>
+                            </td>
+                            <td class="numeric"> -£2,000.00</td>
+                            <td class="numeric">
+                                    <a title="View details for the transaction on 15 April 2017" href="/sprint/{{sprint}}/account/finance/payment-details-levy.html">
+                                        Details <span class="vh"> for the transaction on  4 Nov 2017</span>
+                                    </a>
+                            </td>
+                        </tr>                        <tr>
+                            <td>
+                                <span class="no-wrap"> 5 Mar 2017</span>
+                            </td>
+                            <td class="mobile-hide-cell">
+                                <span class="description">
+                                    Anvil Plc: Co-invested	
+                                </span>
+                            </td>
+                            <td class="numeric"> -£1,000.00</td>
+                            <td class="numeric">
+                                    <a title="View details for the transaction on 15 April 2017" href="/sprint/{{sprint}}/account/finance/payment-details.html">
+                                        Details <span class="vh"> for the transaction on  4 Nov 2017</span>
+                                    </a>
+                            </td>
+                        </tr>
+            
+                </tbody>
+            </table>
+    
+    <div class="page-navigation">
+                    <a class="page-navigation__btn previous">
+                        <i class="arrow-button fa fa-angle-left"></i>
+                        <span class="description">Previous <span class="hide-mob">month</span></span>
+                        <span class="counter">February 2017</span>
+                    </a>
+
+
+
+                   <a style="" class="page-navigation__btn next" href="/sprint/{{sprint}}/account/finance/history_22nd.html">
+                        <i class="arrow-button fa fa-angle-right"></i>
+                        <span class="description">Next <span class="hide-mob">month</span></span>
+                        <span class="counter">April 2017</span>
+                    </a>
+                </div>
+    
+    <br>
+  <!--  <a href="#">Download detailed financial data (spreadsheet)</a> -->
+   
+<script>
+    $("header, nav, footer").click(function(e){
+        e.preventDefault();
+    })
+    </script>
+</main>
+{% endblock %}

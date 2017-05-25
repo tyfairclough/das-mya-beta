@@ -194,10 +194,17 @@
             case 'd3linked':
             d3Linked();
             break;
+            case 'provider-dashboard':
+            providerDashboard();
+            break;
         default:
             break;
         };
         
+        
+        function providerDashboard() {
+            console.log("fire");
+        }
         
         function d3Linked(){
             d3.json('/public/data/fake_users2.json', function(data) {

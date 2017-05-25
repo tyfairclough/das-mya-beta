@@ -12,13 +12,18 @@
 <script src="/public/javascripts/hammer.min.js"></script>
 <script src="/public/javascripts/list.min.js"></script>
 <script src="/public/javascripts/jPages.min.js"></script>
-<script src="https://getaddress.io/js/jquery.getAddress-2.0.5.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+<script src="/public/javascripts/metricsgraphics.min.js"></script>
+<script src="/public/javascripts/mg_line_brushing.js"></script>
+<!--<script src="https://getaddress.io/js/jquery.getAddress-2.0.5.min.js"></script>-->
+
 
 <script src="/public/javascripts/aml.js"></script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" integrity="sha256-gl80aFE+bSTFw7UJf+ne/RkwC55cjidIp0Oe3AX5pfo=" crossorigin="anonymous" />
 <script>
     $(document).ready(function () {
@@ -186,9 +191,57 @@
         case 'account-dash-8':
             accountDash8();
             break;
+            case 'd3linked':
+            d3Linked();
+            break;
         default:
             break;
         };
+        
+        
+        function d3Linked(){
+            d3.json('/public/data/fake_users2.json', function(data) {
+                for (var i = 0; i < data.length; i++) {
+                    data[i] = MG.convert.date(data[i], 'date');
+                }              
+                
+                MG.data_graphic({
+                    title: "Levy balance",
+                    description: "Showing the levy balance over time.",
+                    data: data,
+                    interpolate: d3.curveLinear,
+                    width: 600,
+                    height: 200,
+                    right: 40,
+                    target: '#linked_multi1',
+                    linked: true,
+                    brushing: false
+                });
+            })
+
+            d3.json('/public/data/fake_users3.json', function(data) {
+                for (var i = 0; i < data.length; i++) {
+                    data[i] = MG.convert.date(data[i], 'date');
+                }
+                MG.data_graphic({
+                    title: "Gain and Loss chart",
+                    description: "Shows periods of co-investment and expiring levy funds",
+                    data: data,
+                    interpolate: d3.curveLinear,
+                    width: 600,
+                    height: 200,
+                    right: 40,
+                    target: '#linked_multi2',
+                    //chart_type: 'histogram',
+                    linked: true,
+                    legend: ['Gain', 'Loss'],
+                    brushing: false
+                });
+                
+                
+                
+            });            
+        }
         
         
         function indexV1(){

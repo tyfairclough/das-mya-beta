@@ -210,7 +210,9 @@
             d3.json('/public/data/fake_users2.json', function(data) {
                 for (var i = 0; i < data.length; i++) {
                     data[i] = MG.convert.date(data[i], 'date');
-                }              
+                }
+                
+                
                 
                 MG.data_graphic({
                     title: "Levy balance",
@@ -224,6 +226,7 @@
                     linked: true,
                     brushing: false,
                     full_width: true,
+                    animate_on_load: true,
                 });
             })
 
@@ -231,6 +234,19 @@
                 for (var i = 0; i < data.length; i++) {
                     data[i] = MG.convert.date(data[i], 'date');
                 }
+
+var adi_baselines = [{value:0, label:'baseline'}];
+                
+                
+                 var markers = [{
+                     'date': new Date('2018-01-01'),
+                     'label': 'You\'re getting additional government investment'
+                 },{
+        'date': new Date('2021-04-01'),
+        'label': 'You\'re funds are expiring'
+    }];   
+                        
+                
                 MG.data_graphic({
                     title: "Gain and Loss chart",
                     description: "Shows periods of co-investment and expiring levy funds",
@@ -244,11 +260,24 @@
                     linked: true,
                     legend: ['Gain', 'Loss'],
                     brushing: false,
+                    markers: markers,
                     full_width: true,
+                    animate_on_load: true,
+                    baselines: adi_baselines,
+                    mouseover: function(d, i) {
+                        //custom format the rollover text, show days
+                        //var prefix = d3.formatPrefix(d.value);
+                        $("h1")
+                            //.text(data.value);
+                            .text("highlight row" + i);
+                        $("tbody tr").css("outline","none");
+                        $("tbody tr").eq(i).children("td").css("border-bottom","1px solid #bfc1c3");
+                        $("tbody tr").eq(i).css("outline","solid 3px #FFBF47");
+                        $("tbody tr").eq(i).children("td").css("border-bottom","none");
+                    }
                 });
                 
-                
-                
+        
             });            
         }
         

@@ -219,6 +219,12 @@
             break;
         };
         
+        
+        $("#proposition-name").click(function(){
+            localStorage.clear();
+            window.location.href = "/sprint/{{sprint}}/index";
+        })
+        
         function agreementSign() {}
         
         function agreementNext() {
@@ -381,8 +387,42 @@ var adi_baselines = [{value:0, label:'baseline'}];
 
 
         function accountDash7() {
+            
+            $("#hideWelcomeWizard").click(function(e){
+                localStorage.setItem("welcomeState","hide")
+                e.preventDefault();
+                $("#welcome").fadeOut("slow");
+            });
+            
             $("#sign-agreement, #add-org, #invite-users, .done, #welcome .panel").hide();
 
+            welcomeState = localStorage.getItem("welcomeState");
+        
+            
+            switch(welcomeState) {
+                case '1':
+                    console.log("step 1 complete");
+                    $("#add-paye .todo").hide()
+                    $("#add-org, #add-paye .done").show();
+                    break;
+                case '2':
+                    console.log("step 2 complete");
+                    $("#add-paye .todo, #add-org .todo").hide()
+                    $("#add-org, #add-org .done, #add-paye .done, #sign-agreement").show();
+                    break;
+                case '3':
+                    console.log("step 3 complete")
+                    break;
+                case '4':
+                    console.log("step 4 complete");
+                    break;
+                case 'hide':
+                    console.log("hide welcome wizard");
+                    $("#welcome").hide();
+                default:
+                    break;
+                               }
+            
             localStorage.setItem("onboarding",0);
 
                             // code for counting signed orgs
@@ -403,6 +443,7 @@ var adi_baselines = [{value:0, label:'baseline'}];
                 $("#sign-agreement .todo").hide();
                 $("#sign-agreement .done").show();
                 $("#invite-users").show();
+                localStorage.setItem("welcomeState","3");
             } else {
                 console.log("not all orgs are signed");
             }
@@ -434,6 +475,7 @@ var adi_baselines = [{value:0, label:'baseline'}];
                 if (state === "1") {
                     $("#add-paye .todo").hide();
                     $("#add-org, #add-paye .done").show();
+                    localStorage.setItem("welcomeState","1");
                 } else {
                     $("#add-paye .todo .panel").fadeIn();
                 }
@@ -445,6 +487,7 @@ var adi_baselines = [{value:0, label:'baseline'}];
                 if (state === "1") {
                     $("#add-org .todo").hide();
                     $("#add-org .done, #sign-agreement").show();
+                    localStorage.setItem("welcomeState","2");
                 } else {
                     $("#add-org .panel").show();
                 }
@@ -677,11 +720,6 @@ var adi_baselines = [{value:0, label:'baseline'}];
 
 
 
-        if (JSON.parse(localStorage.getItem("user.name")) != "") {
-            $(".user-name").text(JSON.parse(localStorage.getItem("user.name")));
-        } else {
-            $(".user-name").text("Joe");
-        }
 
         $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
         // my functions
@@ -801,9 +839,6 @@ var adi_baselines = [{value:0, label:'baseline'}];
                 localStorage.setItem("organisation-name", JSON.stringify(orgName));
                 window.location.href = "/sprint/{{sprint}}/account/organisations/remove-org-confirm.html?orgId=" + orgId;
             });
-
-            userName();
-
         }
 
         function organisationsIndex(i) {
@@ -998,8 +1033,13 @@ var adi_baselines = [{value:0, label:'baseline'}];
         }
         
         function checkMail() {
-            e.preventDefault();
-            window.href = "/sprint/{{sprint}}/onboarding/gateway-alert";
+            //window.location.href = "/sprint/{{sprint}}/onboarding/gateway-alert";
+            $("#email-code").keyup(function(e){
+                e.preventDefault();
+                if(e.keyCode == 13){
+                    window.location.href = "/sprint/{{sprint}}/onboarding/gateway-alert";
+                }
+            });
         }
 
 
@@ -1184,7 +1224,12 @@ var adi_baselines = [{value:0, label:'baseline'}];
             var helpText = "<aside id='manualentrylink' style='display:none;'><h5 class='heading-small'>Can't find your organisation?</h5><p> You can <a href='manual-input.html'>add it manually here</a>.</p></aside>";
             $('#results').html(contentTop + stn + contentBottom + helpText);
             getPublicSearchCount(keyword);
+            
+            
+            onboarding = localStorage.getItem("onboarding");
+            if ( onboarding != "1" ) {
             disabledAddedPublicOrgs();
+            }
             pageNsort();
             pageNfilter();
 
@@ -1608,11 +1653,11 @@ $('input:radio[name="levy-group"]').filter('[value="'+iType+'"]').attr('checked'
         }
 
         function userName() {
-            var userName = JSON.parse(localStorage.getItem('user.firstName'));
-            if (userName =! null ) {
+            var userName = JSON.parse(localStorage.getItem('user.name'));
+            if (userName != null ) {
                 $(".user-name").text(userName);    
             } else {
-                JSON.parse(localStorage.setItem('user.firstName',"James King"));
+                JSON.parse(localStorage.setItem('user.name',"Sam"));
                 $(".user-name").text("James King");
             }
             
@@ -1680,6 +1725,7 @@ $('input:radio[name="levy-group"]').filter('[value="'+iType+'"]').attr('checked'
             }
     }
     console.log("end");
+            userName();
 
     });
 </script>

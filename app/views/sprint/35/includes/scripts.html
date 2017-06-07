@@ -123,7 +123,7 @@
             renameAccount();
             break;
         case 'check-mail':
-            //checkMail();
+            checkMail();
             break;
         case 'sign-agreement':
             signAgreement();
@@ -197,10 +197,95 @@
             case 'provider-dashboard':
             providerDashboard();
             break;
+            case 'paye-check':
+                payeCheck();
+            break;
+            case 'gateway-alert':
+                gatewayAlert();
+            break;
+            case 'paye-next':
+                payeNext();
+                break;
+            case 'organisations-next':
+                organisationsNext();
+                break;
+            case 'agreement-sign':
+                agreementSign();
+                break;
+            case 'agreement-next':
+                agreementNext();
+                break;
         default:
             break;
         };
         
+        function agreementSign() {}
+        
+        function agreementNext() {
+                        $("#submit").click(function (e) {
+                //e.preventDefault();  
+                var state = $('input[name=next]:checked').val();
+
+                if (state === "sign") {
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/index";
+                } else if ( state === "apprentices") {
+                    window.location.href = "/sprint/{{sprint}}/account/apprentices/add";
+                } else {
+                    window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
+                }
+            }); 
+        }
+        
+        function organisationsNext() {
+            $("#submit").click(function (e) {
+                //e.preventDefault();  
+                var state = $('input[name=next]:checked').val();
+
+                if (state === "sign") {
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/agreement-sign";
+                } else if ( state === "addorg") {
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/add";
+                } else {
+                    window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
+                }
+            });            
+        }
+        
+        function payeNext() {
+                        $("#submit").click(function (e) {
+                //e.preventDefault();  
+                var state = $('input[name=next]:checked').val();
+
+                if (state === "sign") {
+                    window.location.href = "/sprint/{{sprint}}/onboarding/gateway-alert";
+                } else if ( state === "addorg") {
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/add";
+                } else {
+                    window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
+                }
+            });
+        }
+        
+        function gatewayAlert() {
+            onboardingNav();
+        }
+        
+        function payeCheck() {
+            $(".organisation-name").text(localStorage.getItem("organisation-name"));
+            onboardingNav();
+            onboarding = localStorage.getItem("onboarding");
+            
+            $("#continue").click(function(e){
+            e.preventDefault();
+                if ( onboarding == 1 ) {
+                    //onboarding continues
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard"                    
+                } else {
+                window.location.href = "/sprint/{{sprint}}/account/paye/next"
+                }                
+            }            
+        )
+        }
         
         function providerDashboard() {
             console.log("fire");
@@ -285,31 +370,13 @@ var adi_baselines = [{value:0, label:'baseline'}];
         function indexV1(){
             
             
-            $('input').keypress(function(e){
-                if(e.which == 13){//Enter key pressed
+            $("a#register").click(function(e){
+                var href = this.href;
                 e.preventDefault();
-                indexSwitch();
-                }
-            });
+                localStorage.setItem("onboarding",1);
+                window.location = href;
+            })
             
-            $(".button").click(function (e) {
-                e.preventDefault();
-                indexSwitch();
-            });
-            
-            function indexSwitch() {
-                console.log("done");
-                var email = $("#email-address").val();
-                
-                if (email == ("ty.fairclough@gmail.com" || "pritesh.patel@digital.education.gov.uk")) {
-                    window.location.href = "/sprint/{{sprint}}/user/login.html";                    
-                } else {
-                    // store field inputs into local storage
-                    localStorage.setItem("user.email", JSON.stringify(email));
-                    //console.log(localStorage.getItem("user.email"));
-                    window.location.href = "/sprint/{{sprint}}/onboarding/zxcvbn.html";
-                }
-            }   
         }
 
 
@@ -317,20 +384,36 @@ var adi_baselines = [{value:0, label:'baseline'}];
             $("#sign-agreement, #add-org, #invite-users, .done, #welcome .panel").hide();
 
             localStorage.setItem("onboarding",0);
-            var orgArray = [];
-            orgArray = JSON.parse(localStorage.getItem("organisations"));
-            console.log(orgArray[0]);
-            orgObj = orgArray.splice(0, 1);
-            console.log(orgObj);
 
-            var orgParse = JSON.parse(orgObj)
-
-            console.log(orgParse.signed);
-
-            if (orgParse.signed === 1) {
-                $("#sign-agreement .todo, #add-paye .panel").hide();
-                $("#sign-agreement .done, #invite-users").show();
+                            // code for counting signed orgs
+                var orgArray = [];
+                var signedOrgs = 0;
+                orgArray = JSON.parse(localStorage.getItem("organisations"));
+                for (var i = 0; i < orgArray.length; i++) {
+                    orgName = JSON.parse(orgArray[i]);
+                    console.log(orgName.signed);
+                    if ( orgName.signed == 1 ) {
+                        signedOrgs++
+                    }
+                    
+                }
+            
+            if ( orgArray.length == signedOrgs ) {
+                console.log("all orgs are signed");
+                $("#sign-agreement .todo").hide();
+                $("#sign-agreement .done").show();
+                $("#invite-users").show();
+            } else {
+                console.log("not all orgs are signed");
             }
+            
+            //var orgsLength = orgName.length;
+            console.log("number of orgs: " + orgArray.length );
+            
+            console.log("signed orgs: " + signedOrgs);
+            
+            $(".signedOrgs,.org-count").text(signedOrgs)
+            
 
             $("#sign-agreement form label").click(function (e) {
                 //e.preventDefault();  
@@ -597,7 +680,7 @@ var adi_baselines = [{value:0, label:'baseline'}];
         if (JSON.parse(localStorage.getItem("user.name")) != "") {
             $(".user-name").text(JSON.parse(localStorage.getItem("user.name")));
         } else {
-            $(".user-name").text("Your profile");
+            $(".user-name").text("Joe");
         }
 
         $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
@@ -774,7 +857,7 @@ var adi_baselines = [{value:0, label:'baseline'}];
 
 
                 }
-
+                
 
                 $table.appendTo(document.body);
 
@@ -785,7 +868,7 @@ var adi_baselines = [{value:0, label:'baseline'}];
             }
             var orgArray = []
             orgArray = JSON.parse(localStorage.getItem("organisations"));
-            console.log(orgArray);
+            console.log("org array is: " + orgArray);
             $("table a.remove").click(function (e) {
                 e.preventDefault();
                 //get the number of the row
@@ -912,6 +995,11 @@ var adi_baselines = [{value:0, label:'baseline'}];
                     window.location.href = "/sprint/{{sprint}}/onboarding/check-mail.html";
                 }
             });
+        }
+        
+        function checkMail() {
+            e.preventDefault();
+            window.href = "/sprint/{{sprint}}/onboarding/gateway-alert";
         }
 
 
@@ -1106,9 +1194,16 @@ var adi_baselines = [{value:0, label:'baseline'}];
                 var orgType = $(this).text();
                 var href = this.href;
                 //addOrg(orgName);
+                onboarding = localStorage.getItem("onboarding");
                 localStorage.setItem("organisation-name", orgName);
-                localStorage.setItem("organisation-type", orgType);
-                window.location.href = href;
+                localStorage.setItem("organisation-type", orgType)
+                localStorage.setItem("organisation-name",$(this).text());
+                
+                if ( onboarding == 1 ) {
+                window.location.href = "/sprint/{{sprint}}/onboarding/gateway-alert";
+                } else {
+                window.location.href = href;                    
+                }
             })
 
         }
@@ -1573,10 +1668,17 @@ $('input:radio[name="levy-group"]').filter('[value="'+iType+'"]').attr('checked'
                 $("#public-sector-search").hide();
                 $("#results-wrapper").removeClass("hidden");
                 searchThis();                
+                onboardingNav();
             }
-            
         }
     
+    
+    function onboardingNav() {
+        onboarding = localStorage.getItem("onboarding");
+            if ( onboarding == 1 ) {
+                $("nav").hide();
+            }
+    }
     console.log("end");
 
     });

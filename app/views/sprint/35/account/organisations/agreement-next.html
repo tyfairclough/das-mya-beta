@@ -14,14 +14,14 @@
 
 
 {% block content %}
-<main class="organisations-next" id="content" role="main" tabindex="-1">
+<main class="agreement-next" id="content" role="main" tabindex="-1">
   {% include "includes/link-back.html" %}
 
   <div class="grid-row">
         <div class="column-two-thirds">
     <div id="notifications">
         <div class="success-summary">
-            <p><span class="organisation-name">Acme Ltd</span> has been added.</p>
+            <p><span class="organisation-name">Acme Ltd</span> has been signed and can now spend levy funds.</p>
         </div>
     </div>
       
@@ -46,15 +46,14 @@
 
       <label class="block-label" data-target="sign" for="sign">
         <input id="sign" type="radio" name="next" value="sign">
-Accept agreement in order to add apprentices 
-      </label>
+Sign another organisation agreement     </label>
 
-      <label class="block-label" data-target="addorg" for="addorg">
-        <input id="addorg" type="radio" name="next" value="addorg">
-Add another organisation
-      </label>
+      <label class="block-label" data-target="apprentices" for="apprentices">
+        <input id="apprentices" type="radio" name="next" value="apprentices">
+Add apprentices
+        </label>
             
-      <label class="block-label" data-target="homepage" for="homepage">
+            <label class="block-label" data-target="homepage" for="homepage">
         <input id="homepage" type="radio" name="next" value="homepage">
 Go back to the homepage
             </label>
@@ -65,8 +64,9 @@ Go back to the homepage
       <a class="button" href="#" id="submit">Continue</a>
       
 </form>
-           
-      </div></div>
+          
+                 
+</div></div>
 
 </main>
 {% endblock %}

@@ -48,6 +48,7 @@
         var XMLSource = $('#search').attr('xmlData');
         var keyword = '';
         var catType = '';
+        var catType = '';
         var stn = '';
         var frm = '';
 
@@ -248,7 +249,12 @@
                 var state = $('input[name=next]:checked').val();
 
                 if (state === "sign") {
-                    window.location.href = "/sprint/{{sprint}}/account/organisations/agreement-sign";
+                    
+                    var orgArray = []
+                    orgArray = JSON.parse(localStorage.getItem("organisations"));
+                    console.log("org array is: " + orgArray);
+                    localStorage.setItem("signAgreementFor", orgArray.length);
+                    window.location.href = "/sprint/{{sprint}}/account/organisations/agreement-cover-sign";
                 } else if ( state === "addorg") {
                     window.location.href = "/sprint/{{sprint}}/account/organisations/add";
                 } else {
@@ -256,6 +262,8 @@
                 }
             });            
         }
+        
+            
         
         function payeNext() {
                         $("#submit").click(function (e) {
@@ -283,7 +291,7 @@
             
             $("#continue").click(function(e){
             e.preventDefault();
-                if ( onboarding == 1 ) {
+                if ( onboarding == "1" ) {
                     //onboarding continues
                 window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard"                    
                 } else {
@@ -492,6 +500,7 @@ var adi_baselines = [{value:0, label:'baseline'}];
                     $("#add-org .panel").show();
                 }
             });
+            
 
             $("#invite-users form label").click(function (e) {
 
@@ -721,15 +730,20 @@ var adi_baselines = [{value:0, label:'baseline'}];
 
 
 
-        $(".organisation-address").text(JSON.parse(localStorage.getItem("organisation-address")));
-        // my functions
+   
+        
         $('.review-agreement-button').on('click', function (e) {
             localStorage.setItem("signAgreementFor", $(this).data('org-index'));
         });
 
+        
         function confirmDetails() {
+            orgName = localStorage.getItem("organisation-name")
+            $(".organisation-name").text(orgName);
+            $(".organisation-address").text(localStorage.getItem("organisation-address"));
             $(".button").click(function (e) {
                 e.preventDefault();
+                addOrg(orgName)
                 //var orgName = JSON.parse(localStorage.getItem("organisation-name"));
                 //addOrg(orgName);
                 //console.log(orgName);
@@ -841,6 +855,7 @@ var adi_baselines = [{value:0, label:'baseline'}];
             });
         }
 
+        
         function organisationsIndex(i) {
 
 
@@ -1237,15 +1252,19 @@ var adi_baselines = [{value:0, label:'baseline'}];
                 e.preventDefault();
                 var orgName = $(this).text();
                 var orgType = $(this).text();
+                var orgAddress = $(this).parents("li").find("address").text();
+                //alert($(this).parents("li").find("address").text());
+                //$("ul a")
                 var href = this.href;
                 //addOrg(orgName);
                 onboarding = localStorage.getItem("onboarding");
                 localStorage.setItem("organisation-name", orgName);
-                localStorage.setItem("organisation-type", orgType)
+                localStorage.setItem("organisation-type", orgType);
+                localStorage.setItem("organisation-address", orgAddress);
                 localStorage.setItem("organisation-name",$(this).text());
                 
                 if ( onboarding == 1 ) {
-                window.location.href = "/sprint/{{sprint}}/onboarding/gateway-alert";
+               window.location.href = "/sprint/{{sprint}}/onboarding/gateway-alert";
                 } else {
                 window.location.href = href;                    
                 }
@@ -1369,6 +1388,7 @@ $('input:radio[name="levy-group"]').filter('[value="'+iType+'"]').attr('checked'
         var organisationNameNew = getQueryVariable("name-changed");
         var removeMsg = getQueryVariable("removeMsg");
 
+    
 
 
         if (organisationName != "" || null) {
@@ -1647,17 +1667,18 @@ $('input:radio[name="levy-group"]').filter('[value="'+iType+'"]').attr('checked'
         });
 
 
-        function organisationName() {
+         console.log("fire");
+            $(".organisation-address").text(localStorage.getItem("organisation-address"));
+        // my functions
             $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
             $(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));
-        }
 
         function userName() {
             var userName = JSON.parse(localStorage.getItem('user.name'));
             if (userName != null ) {
                 $(".user-name").text(userName);    
             } else {
-                JSON.parse(localStorage.setItem('user.name',"Sam"));
+                localStorage.setItem('user.name',JSON.stringify("Sam"));
                 $(".user-name").text("James King");
             }
             
@@ -1719,13 +1740,15 @@ $('input:radio[name="levy-group"]').filter('[value="'+iType+'"]').attr('checked'
     
     
     function onboardingNav() {
-        onboarding = localStorage.getItem("onboarding");
-            if ( onboarding == 1 ) {
+/*        onboarding = localStorage.getItem("onboarding");
+            if ( onboarding != 0 ) {
                 $("nav").hide();
             }
-    }
-    console.log("end");
-            userName();
+  */  }
 
+
+    
+    console.log("end");
+            
     });
 </script>

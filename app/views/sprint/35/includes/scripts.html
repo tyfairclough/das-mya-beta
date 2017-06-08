@@ -1085,8 +1085,9 @@ var adi_baselines = [{value:0, label:'baseline'}];
             });
 
             $("#sign2").click(function (e) {
-                e.preventDefault();
+               // e.preventDefault();
                 //  check if this is on-boarding or not
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
 
                 var today = new Date();
                 var date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
@@ -1108,7 +1109,7 @@ var adi_baselines = [{value:0, label:'baseline'}];
                 localStorage.setItem("organisations", JSON.stringify(organisations));
 
                 var onboarding = JSON.parse(localStorage.getItem("onboarding"));
-                window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y";
+                //window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y";
 
             });
         };
@@ -1711,6 +1712,8 @@ $('input:radio[name="levy-group"]').filter('[value="'+iType+'"]').attr('checked'
 
 
         function organisationAdd() {
+                            onboardingNav();
+
             $(".errror-summary").hide();
             $(".form-group").removeClass("error");
             $(".error-message, .error-summary").addClass("hidden");
@@ -1740,11 +1743,11 @@ $('input:radio[name="levy-group"]').filter('[value="'+iType+'"]').attr('checked'
     
     
     function onboardingNav() {
-/*        onboarding = localStorage.getItem("onboarding");
+        onboarding = localStorage.getItem("onboarding");
             if ( onboarding != 0 ) {
                 $("nav").hide();
             }
-  */  }
+    }
 
 
     

@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <iName proId="59375983">123 Facilities Ltd - (s C4)</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="69486573">180 Housing Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="33095820">2010 Rotherham Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="13394827">20-20 Housing Co-operative Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="99883110">28a Supported Living Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="43568321">4 Ventures Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="667844521">700 Club</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="820378946">ARRIVA PLC</iName>
+      <iAddress>1 Admiral Way, Doxford International Business, Park Sunderland, Tyne And Wear, SR3 3XP</iAddress>
+    <iType>Public limited company</iType>
+  </row>
+  <row>
+<iName proId="900460330">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">Tescos Plc</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public limited company</iType>
+  </row>
+    <row>
+<iName proId="XC3339808/S3">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Charity</iType>
+  </row>
+    <row>
+<iName proId="93485209">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="93485209">National Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Trust</iType>
+  </row>
+    <row>
+<iName proId="93485209">NHS England</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Mid Essex Mental Heatlh Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Great Baddow High School</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Psuedo Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Essex Fire Service</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Exxon</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Industrial and Provident organisation</iType>
+  </row>
+  <row>
+    <iName proId="59375983">123 Facilities Ltd - (s C4)</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="69486573">180 Housing Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="33095820">2010 Rotherham Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="13394827">20-20 Housing Co-operative Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="99883110">28a Supported Living Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="43568321">4 Ventures Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="667844521">700 Club</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="820378946">A1 Housing Bassetlaw Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="900460330">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">Tescos Plc</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public limited company</iType>
+  </row>
+    <row>
+<iName proId="XC3339808/S3">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Charity</iType>
+  </row>
+    <row>
+<iName proId="93485209">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="93485209">National Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Trust</iType>
+  </row>
+    <row>
+<iName proId="93485209">NHS England</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Mid Essex Mental Heatlh Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Great Baddow High School</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Psuedo Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Essex Fire Service</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Exxon</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Industrial and Provident organisation</iType>
+  </row>
+  <row>
+    <iName proId="59375983">123 Facilities Ltd - (s C4)</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="69486573">180 Housing Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="33095820">2010 Rotherham Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="13394827">20-20 Housing Co-operative Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="99883110">28a Supported Living Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="43568321">4 Ventures Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="667844521">700 Club</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="820378946">A1 Housing Bassetlaw Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="900460330">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">Tescos Plc</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public limited company</iType>
+  </row>
+    <row>
+<iName proId="XC3339808/S3">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Charity</iType>
+  </row>
+    <row>
+<iName proId="93485209">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="93485209">National Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Trust</iType>
+  </row>
+    <row>
+<iName proId="93485209">NHS England</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Mid Essex Mental Heatlh Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Great Baddow High School</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Psuedo Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Essex Fire Service</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Exxon</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Industrial and Provident organisation</iType>
+  </row>
+  <row>
+    <iName proId="59375983">123 Facilities Ltd - (s C4)</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="69486573">180 Housing Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="33095820">2010 Rotherham Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="13394827">20-20 Housing Co-operative Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="99883110">28a Supported Living Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="43568321">4 Ventures Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="667844521">700 Club</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="820378946">A1 Housing Bassetlaw Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="900460330">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">Tescos Plc</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public limited company</iType>
+  </row>
+    <row>
+<iName proId="XC3339808/S3">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Charity</iType>
+  </row>
+    <row>
+<iName proId="93485209">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="93485209">National Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Trust</iType>
+  </row>
+    <row>
+<iName proId="93485209">NHS England</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Mid Essex Mental Heatlh Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Great Baddow High School</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Psuedo Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Essex Fire Service</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Exxon</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Industrial and Provident organisation</iType>
+  </row>
+  <row>
+    <iName proId="59375983">123 Facilities Ltd - (s C4)</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="69486573">180 Housing Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="33095820">2010 Rotherham Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="13394827">20-20 Housing Co-operative Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="99883110">28a Supported Living Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="43568321">4 Ventures Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="667844521">700 Club</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="820378946">A1 Housing Bassetlaw Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="900460330">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">Tescos Plc</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public limited company</iType>
+  </row>
+    <row>
+<iName proId="XC3339808/S3">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Charity</iType>
+  </row>
+    <row>
+<iName proId="93485209">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="93485209">National Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Trust</iType>
+  </row>
+    <row>
+<iName proId="93485209">NHS England</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Mid Essex Mental Heatlh Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Great Baddow High School</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Psuedo Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Essex Fire Service</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Exxon</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Industrial and Provident organisation</iType>
+  </row>
+  <row>
+    <iName proId="59375983">123 Facilities Ltd - (s C4)</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="69486573">180 Housing Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="33095820">2010 Rotherham Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="13394827">20-20 Housing Co-operative Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+    <iName proId="99883110">28a Supported Living Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="43568321">4 Ventures Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="667844521">700 Club</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="820378946">A1 Housing Bassetlaw Ltd</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+  <row>
+<iName proId="900460330">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">A2Dominion Homes Limited</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="2243336778">Tescos Plc</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public limited company</iType>
+  </row>
+    <row>
+<iName proId="XC3339808/S3">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Charity</iType>
+  </row>
+    <row>
+<iName proId="93485209">NSPCC</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Private limited company</iType>
+  </row>
+    <row>
+<iName proId="93485209">National Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Trust</iType>
+  </row>
+    <row>
+<iName proId="93485209">NHS England</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Mid Essex Mental Heatlh Trust</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Great Baddow High School</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Psuedo Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Essex Fire Service</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Public body</iType>
+  </row>
+    <row>
+<iName proId="93485209">Exxon</iName>
+      <iAddress>154 Principal Places</iAddress>
+    <iType>Industrial and Provident organisation</iType>
+  </row>
+</root>

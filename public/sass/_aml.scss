@@ -2093,3 +2093,56 @@ li.added + li {
     font-weight: 900;
     line-height: normal;
 }
+
+
+#finance-bingo a
+{
+    margin-bottom: 15px;
+    text-decoration: none;
+    width: 100%;
+    overflow: auto;
+    float: left;
+    .data {
+        padding: 20px 10px;
+        margin: 0;
+        &.fuschia {
+            background: $fuschia;
+            color: $white;
+            &:hover {
+                background: mix(black,$fuschia,25);
+            }
+        }
+        &.orange {
+            background: $orange;
+            color: $white;
+            &:hover {
+                background: mix(black,$orange,25);
+            }
+        }
+        &.purple {
+            background: $purple;
+            color: $white;
+            &:hover {
+                background: mix(black,$purple,25);
+            }
+        }
+        &.red {
+            background: $mellow-red;
+            color: $white;
+            &:hover {
+                background: mix(black,$mellow-red,25);
+            }
+        }
+        span {
+            text-decoration: underline;
+            i {
+            visibility: hidden;                
+            }
+        }
+        &:hover {
+            span i {
+                visibility: visible;
+            }
+        }
+    }
+}

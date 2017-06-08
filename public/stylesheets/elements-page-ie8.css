@@ -4028,6 +4028,67 @@ li.added + li {
   line-height: normal;
 }
 
+#finance-bingo a {
+  margin-bottom: 15px;
+  text-decoration: none;
+  width: 100%;
+  overflow: auto;
+  float: left;
+}
+
+#finance-bingo a .data {
+  padding: 20px 10px;
+  margin: 0;
+}
+
+#finance-bingo a .data.fuschia {
+  background: #912b88;
+  color: #fff;
+}
+
+#finance-bingo a .data.fuschia:hover {
+  background: #6d2066;
+}
+
+#finance-bingo a .data.orange {
+  background: #f47738;
+  color: #fff;
+}
+
+#finance-bingo a .data.orange:hover {
+  background: #b7592a;
+}
+
+#finance-bingo a .data.purple {
+  background: #2e358b;
+  color: #fff;
+}
+
+#finance-bingo a .data.purple:hover {
+  background: #232868;
+}
+
+#finance-bingo a .data.red {
+  background: #df3034;
+  color: #fff;
+}
+
+#finance-bingo a .data.red:hover {
+  background: #a72427;
+}
+
+#finance-bingo a .data span {
+  text-decoration: underline;
+}
+
+#finance-bingo a .data span i {
+  visibility: hidden;
+}
+
+#finance-bingo a .data:hover span i {
+  visibility: visible;
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

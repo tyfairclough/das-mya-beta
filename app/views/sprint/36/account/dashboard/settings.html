@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="account-dashboard" id="content" role="main" tabindex="-1">
+
+
+       <div class="govuk-box-highlight hidden">
+          <h2 class="bold-large">
+Levy account created          </h2>
+        <p>You need to <a href="/{{sprint}}/account/organisation/view?agreementState=not-signed">sign the SFA agreement</a> before you can start spending your levy.</p>
+        </div>
+    
+           <div class="govuk-box-highlight hidden" id="emailUpdated">
+          <h2 class="bold-large">
+Email changed         </h2>
+           <p>You've changed your email address to <span class="user-email bold-small">john@tesco.co.uk</span> </p>
+        </div>
+    
+
+
+ 
+    <h1 class="heading-xlarge organisation-namee">Settings</h1>
+
+    
+    <section class="text">
+                <div class="panel panel-filled">
+                    <h3 class="bold-medium">Help us improve this site</h3>
+                    <p><a href="https://www.surveymonkey.co.uk/r/2JPLQ9T" target="_blank">Take our 3 minute survey</a> so that we can improve the service.</p>
+                    <p><a href="https://www.surveymonkey.co.uk/r/2JPLQ9T" target="_blank" class="button">Take the survey <span class="vh">so that we can improve the service</span></a></p>
+                </div>
+            </section>
+
+
+
+
+
+</main><!-- / #content -->
+{% endblock %}

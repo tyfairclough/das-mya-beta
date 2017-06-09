@@ -1901,13 +1901,28 @@ table.responsive {
 }
 .done {
     //background: mix(white, #28a197, 80%);
-    background: #28a197;
+    background: $purple;
+    border-color: $purple;
     color: white;
     overflow: auto;
     margin: 0;
     position: relative;
+    &:hover {
+        background: mix(black,$purple,25%);
+        cursor: pointer;
+    }
     h3 {
         float: left;
+        span {
+            a{
+                color: white;
+                font-weight: 400;
+                top: -3px;
+                position: relative;
+                left: 5px;
+                cursor: pointer;
+            }
+        }
     }
     p {
         float: left;
@@ -1920,6 +1935,10 @@ table.responsive {
         top: 40px;
         right: 20px;
     }
+        a {
+            font-weight: 900;
+            color: $white;
+        }
     }
   
 }

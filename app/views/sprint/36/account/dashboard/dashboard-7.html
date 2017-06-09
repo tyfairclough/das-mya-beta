@@ -57,7 +57,7 @@ Email changed         </h2>
            
                                 </fieldset>
   <div class="panel panel-border-narrow">
-    <a href="/sprint/{{sprint}}/onboarding/gateway-alert">Add PAYE schemes now</a>. you'll need your Government Gateway login details. This allows levy to be paid into your account. 
+    <a href="/sprint/{{sprint}}/onboarding/gateway-alert">Add PAYE schemes now</a> - you'll need your Government Gateway login details. This allows levy to be paid into your account. 
       
   </div>
 </div>
@@ -70,7 +70,7 @@ Email changed         </h2>
                         </div>
 
                         <div class="done success-summary">
-                            <h3 class="heading-medium">Step 1 of 4</h3>
+                            <h3 class="heading-medium">Step 1 of 4 <span class="bold-small"><a href="#">(review this step)</a></span></h3>
                             <p><span class="addedPAYE">1</span> PAYE schemes added</p>
                             <span>Done <i class="fa fa-check"></i></span>
                         </div>
@@ -104,7 +104,7 @@ Email changed         </h2>
                             </form>
                         </div>
                         <div class="done success-summary">
-                            <h3 class="heading-medium">Step 2 of 4</h3>
+                            <h3 class="heading-medium">Step 2 of 4 <span class="bold-small"><a href="#">(review this step)</a></span></h3>
                             <p><span class="signedOrgs">1</span> organisations added</p>
                             <span>Done <i class="fa fa-check"></i></span>
                         </div>
@@ -114,19 +114,36 @@ Email changed         </h2>
                       <section id="sign-agreement">
                         <div class="todo">
                             <h3 class="heading-medium">Step 3 of 4</h3>
-<form class="inline" action="#">
+                        <form class="inline">
+                              <div class="form-group" action="#">
                                 <fieldset>
-                                  <legend class="heading-small">Sign your agreements to enable spending</legend>
-                                                      <a href="/sprint/{{sprint}}/account/organisations/index" id="action" class="button">View agreements</a>
-            
+                                  <legend class="heading-small">Who'll sign agreements to enable spending?</legend>
+                                  <label class="block-label selection-button-radio" for="invite-users-1">
+                                  <input id="invite-users-1" type="radio" name="invite-users-group" value="1">
+                                      I'll sign the agreements 
+                                  </label>
+                                  <label class="block-label selection-button-radio" for="invite-users-2">
+                                    <input id="invite-users-2" type="radio" name="invite-users-group" value="2">
+                                      Invite someone else to sign agreements
+                                    </label>
+                                    <div class="sr-only">
+                                    <!--<a href="/sprint/19/onboarding/before-you-start.html"> id="action" class="button">Continue</a>-->
+                                    <a href="#" id="action" class="button">Continue</a>
+                                    </div>     
                                 </fieldset>
-                                  <div class="panel panel-border-narrow" style="display: none;">
-                                  <p><a href="/sprint/{{sprint}}/account/organisations/index">Add organisations now</a> - so they can spend funds on apprentices.</p> 
+                                  
+                                  <div class="panel panel-border-narrow">
+                                    <p><a href="/sprint/{{sprint}}/account/team/new">View my agreements now.</a></p> 
                                   </div>
+                                  
+                                  <div class="panel panel-border-narrow">
+                                    <p><a href="/sprint/{{sprint}}/account/team/new">Invite someone else from my organisation to view the agreements</a>.</p> 
+                                  </div>
+                              </div>
                             </form>
                         </div>
                         <div class="done success-summary">
-                            <h3 class="heading-medium">Step 3 of 4</h3>
+                            <h3 class="heading-medium">Step 3 of 4 <span class="bold-small"><a href="#">(review this step)</a></span></h3>
                             <p><span class="org-count">1</span> agreements signed</p>
                             <span>Done <i class="fa fa-check"></i></span>
                         </div>
@@ -138,36 +155,32 @@ Email changed         </h2>
                             <form class="inline">
                               <div class="form-group" action="#">
                                 <fieldset>
-                                  <legend class="heading-small">Who's going to add apprentices?</legend>
+                                  <legend class="heading-small">Have you added all your team members?</legend>
+                                    <p>You can add people to manage apprenticeships and finances.</p>
                                   <label class="block-label selection-button-radio" for="invite-users-1">
                                   <input id="invite-users-1" type="radio" name="invite-users-group" value="1">
-                                      Me
+                                     Yes
                                   </label>
                                   <label class="block-label selection-button-radio" for="invite-users-2">
                                     <input id="invite-users-2" type="radio" name="invite-users-group" value="2">
-                                      One of my colleagues
+                                      No, invite team members
                                   </label>
                                     <div class="sr-only">
                                     <!--<a href="/sprint/19/onboarding/before-you-start.html"> id="action" class="button">Continue</a>-->
                                     <a href="#" id="action" class="button">Continue</a>
                                     </div>     
                                 </fieldset>
-                                    <div class="panel panel-border-narrow">
-                                    <h4 class="heading-small">Next steps</h4>
-                                        <ul class="list list-links">
-                                            <li><a href="https://das-alpha-node-ui-proto.herokuapp.com/programmeTen/contracts/new-contract">Add apprentices</a></li>
-                                            <li><a href="/sprint/{{sprint}}/account/finance/index">Check finances</a></li>
-                                            <li><a href="https://das-fat-beta.herokuapp.com/sprint/01/index">Find apprenticeship training (opens in new window)</a></li>
-                                            <li><a href="https://www.gov.uk/recruit-apprentice">Recruit an apprentice (opens in new window)</a></li>
-                                            <li><a href="/sprint/{{sprint}}/account/team/new">Invite team members to this account</a></li>
-                                        </ul>
-                                  </div>
                                   
                                   <div class="panel panel-border-narrow">
-                                    <p><a href="/sprint/{{sprint}}/account/team/new">Invite someone else to this account</a> - so the can add apprentices.</p> 
+                                    <p><a href="/sprint/{{sprint}}/account/team/new">Invite someone else to this account.</a></p> 
                                   </div>
                               </div>
                             </form>
+                        </div>
+                                    <div class="done success-summary">
+                            <h3 class="heading-medium">Step 4 of 4 <span class="bold-small"><a href="#">(review this step)</a></span></h3>
+                            <p>Your account setup is complete. <a href="#">Close this message.</a></p>
+                            <span>Done <i class="fa fa-check"></i></span>
                         </div>
                     </section>       
 

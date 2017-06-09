@@ -3867,15 +3867,30 @@ table.responsive tr th.tw-70 {
 }
 
 .done {
-  background: #28a197;
+  background: #2e358b;
+  border-color: #2e358b;
   color: white;
   overflow: auto;
   margin: 0;
   position: relative;
 }
 
+.done:hover {
+  background: #232868;
+  cursor: pointer;
+}
+
 .done h3 {
   float: left;
+}
+
+.done h3 span a {
+  color: white;
+  font-weight: 400;
+  top: -3px;
+  position: relative;
+  left: 5px;
+  cursor: pointer;
 }
 
 .done p {
@@ -3890,6 +3905,11 @@ table.responsive tr th.tw-70 {
   position: absolute;
   top: 40px;
   right: 20px;
+}
+
+.done p a {
+  font-weight: 900;
+  color: #fff;
 }
 
 .account-dashboard-8 #welcome .todo {

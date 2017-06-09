@@ -460,6 +460,8 @@ $(document).ready(function () {
             e.preventDefault();
             if (onboarding == "1") {
                 //onboarding continues
+                        orgName = localStorage.getItem("organisation-address");
+                addOrg(orgName);
                 window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard"
             } else {
                 window.location.href = "/sprint/{{sprint}}/account/paye/next"
@@ -613,7 +615,8 @@ $(document).ready(function () {
 
         localStorage.setItem("onboarding", 0);
 
-        // code for counting signed orgs
+        // code for counting signed orgs 
+
         var orgArray = [];
         var signedOrgs = 0;
         orgArray = JSON.parse(localStorage.getItem("organisations"));
@@ -625,6 +628,8 @@ $(document).ready(function () {
             }
 
         }
+        
+
 
         if (orgArray.length == signedOrgs) {
             console.log("all orgs are signed");
@@ -641,7 +646,9 @@ $(document).ready(function () {
 
         console.log("signed orgs: " + signedOrgs);
 
-        $(".signedOrgs,.org-count").text(signedOrgs)
+        $(".signedOrgs").text(signedOrgs)
+        
+        $(".org-count").text(orgArray.length);
 
 
         $("#sign-agreement form label").click(function (e) {
@@ -650,9 +657,9 @@ $(document).ready(function () {
 
             if (state === "1") {
                 $("#sign-agreement .todo").hide();
-                $("#invite-users, #sign-agreement .done").show();
+                $("#sign-agreement .todo .panel + .panel").fadeIn();
             } else {
-                $("#sign-agreement .todo .panel").fadeIn();
+                $("#sign-agreement .todo > .panel").fadeIn();
             }
         });
 
@@ -1593,10 +1600,10 @@ $(document).ready(function () {
         }
 
     function getOrganisationDetails() {
-        $(".organisation-address").text(localStorage.getItem("organisation-address"));
+     //   $(".organisation-address").text(localStorage.getItem("organisation-address"));
         // my functions
-        $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
-        $(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));
+    //    $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
+    //    $(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));
     }
 
     function organisationAdd() {

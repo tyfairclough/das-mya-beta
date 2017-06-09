@@ -4013,12 +4013,16 @@ li.added + li {
   position: relative;
 }
 
+#OR {
+  height: 0;
+}
+
 #OR:after {
   content: "OR";
   position: relative;
   width: 0px;
   top: 140px;
-  left: -50px;
+  left: -120px;
   display: inline;
   background: gray;
   border-radius: 20px;
@@ -4068,6 +4072,33 @@ li.added + li {
   background: #232868;
 }
 
+#finance-bingo a .data.fuscia {
+  background: #912b88;
+  color: #fff;
+}
+
+#finance-bingo a .data.fuscia:hover {
+  background: #6d2066;
+}
+
+#finance-bingo a .data.mauve {
+  background: #6f72af;
+  color: #fff;
+}
+
+#finance-bingo a .data.mauve:hover {
+  background: #535683;
+}
+
+#finance-bingo a .data.pink {
+  background: #d53880;
+  color: #fff;
+}
+
+#finance-bingo a .data.pink:hover {
+  background: #a02a60;
+}
+
 #finance-bingo a .data.red {
   background: #df3034;
   color: #fff;
@@ -4079,6 +4110,11 @@ li.added + li {
 
 #finance-bingo a .data span {
   text-decoration: underline;
+  margin: 5px -10px -20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  display: block;
+  font-weight: 900;
 }
 
 #finance-bingo a .data span i {

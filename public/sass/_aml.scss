@@ -2079,12 +2079,15 @@ li.added + li {
 #signinsignup {
     position: relative;
 }
+#OR {
+    height: 0;
+}
 #OR:after {
     content: "OR";
     position: relative;
     width: 0px;
     top: 140px;
-    left: -50px;
+    left: -120px;
     display: inline;
     background: gray;
     border-radius: 20px;
@@ -2126,6 +2129,27 @@ li.added + li {
                 background: mix(black,$purple,25);
             }
         }
+        &.fuscia {
+            background: $fuschia;
+            color: $white;
+            &:hover {
+                background: mix(black,$fuschia,25);
+            }
+        }
+        &.mauve {
+            background: $mauve;
+            color: $white;
+            &:hover {
+                background: mix(black,$mauve,25);
+            }
+        }
+        &.pink {
+            background: $pink;
+            color: $white;
+            &:hover {
+                background: mix(black,$pink,25);
+            }
+        }
         &.red {
             background: $mellow-red;
             color: $white;
@@ -2135,6 +2159,11 @@ li.added + li {
         }
         span {
             text-decoration: underline;
+            margin: 5px -10px -20px;
+            padding: 10px;
+            background: rgba(255,255,255,0.2);
+            display: block;
+            font-weight: 900;
             i {
             visibility: hidden;                
             }

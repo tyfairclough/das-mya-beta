@@ -183,6 +183,8 @@
   }
 }
 
+
+
 // Sass list for colour palette
 $palette: (
   ("purple", $purple),
@@ -201,6 +203,9 @@ $palette: (
   ("light-blue", $light-blue),
   ("govuk-blue", $govuk-blue)
 );
+
+$mauve : #6F72AF;
+$pink : #D53880;
 
 @mixin color-swatches {
   @each $color in $palette {

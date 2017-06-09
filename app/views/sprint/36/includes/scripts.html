@@ -602,6 +602,9 @@ $(document).ready(function () {
             break;
         case '3':
             console.log("step 3 complete")
+            $("#add-paye .todo, #add-org .todo").hide()
+            $("#add-org, #add-org .done, #add-paye .done, #sign-agreement").show();
+
             break;
         case '4':
             console.log("step 4 complete");
@@ -698,13 +701,23 @@ $(document).ready(function () {
             var state = $("input[name=invite-users-group]:checked").val();
             console.log("state is " + state)
             if (state === "1") {
+                $("#invite-users .todo").hide();
+                $("#invite-users .done").show();
+            } else {
                 $("#invite-users .panel:first").show();
                 $("#invite-users .panel + .panel").hide();
-            } else {
-                $("#invite-users .panel:first").hide();
-                $("#invite-users .panel + .panel").show();
             }
         })
+        
+        
+        $("#welcome .done h3 a").click(function(e){
+            e.preventDefault(); 
+            
+            //$(this).parent("done").hide();
+            $(this).parents(".done").hide();
+            $(this).parents("section").children(".todo").show();
+        })
+        
     }
 
     function accountDashboard() {}

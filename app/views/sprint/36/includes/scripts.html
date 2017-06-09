@@ -656,10 +656,14 @@ $(document).ready(function () {
             var state = $('input[name=sign-org-group]:checked').val();
 
             if (state === "1") {
-                $("#sign-agreement .todo").hide();
-                $("#sign-agreement .todo .panel + .panel").fadeIn();
+                console.log("state 1")
+                //$("#sign-agreement .todo").hide();
+                $("#sign-agreement .todo .invite-panel").hide();
+                $("#sign-agreement .todo .agreement-panel").fadeIn();
             } else {
-                $("#sign-agreement .todo > .panel").fadeIn();
+                console.log("state 2")
+                $("#sign-agreement .todo .agreement-panel").hide();
+                $("#sign-agreement .todo .invite-panel").fadeIn();
             }
         });
 

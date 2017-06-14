@@ -682,10 +682,9 @@ $(document).ready(function () {
 
         
         $("#sign-agreement form label").click(function (e) {
-            e.preventDefault();  
             var state = $('input[name=sign-org-group]:checked').val();
 
-            if (state == 1) {
+            if (state == "1") {
                 console.log("agreement option state 1")
                 $("#sign-agreement .todo .agreement-panel").fadeIn();
                 //$("#sign-agreement .todo").hide();

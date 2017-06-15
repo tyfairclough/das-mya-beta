@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="organisations-add" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+    <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+  <ul class="error-summary-list">
+    <li class="hidden"><a href="#chn">Company not found</a></li>
+    <li class="hidden"><a href="#chn">Enter a Companies House number</a></li>
+    <li class="hidden"><a href="#ccn">Charity not found</a></li>
+  </ul>
+</div>
+
+    
+<section id="search" xmldata="/sprint/{{sprint}}/proData.xml">
+       
+
+        
+    <form id="public-sector-search">
+          <h1 class="heading-large">Search for your organisation</h1>
+
+           
+    <div class="form-group">
+        <label name="input-keywords" for="input-keywords" class="form-label-bold">Enter name</label>
+        <input class="form-control" id="input-keywords" type="text" />
+    </div>
+        <a class="button" id="submit-keywords">Search</a>
+    </form>
+    
+    <section id="results-wrapper" class="hidden">
+        
+        <h1 class="heading-large">Select your organisation</h1>
+<div class="search-header">
+  <fieldset class="search-input">
+    <label for="search-main">
+        <h1 class="heading-medium">Search results <span class="visuallyhidden">for “{{keyword}}”</span>
+</h1>
+    </label>
+
+    <input type="search" name="q" value="keyword" id="search-main">
+  </fieldset>
+
+  <fieldset class="search-submit">
+    <button type="submit" class="button">Search</button>
+  </fieldset>
+</div>
+        <p><span class="count">xxx,xxx</span> results found</p>
+        <!--<p>Choose from one of the follow results, or <a href="/sprint/{{sprint}}/account/organisations/public-sector-search.html">search again</a>.</p>-->
+        
+        <div class="grid-row">
+
+            <div class="column-one-third">
+                <aside>
+                    <h3 class="bold-small">Filter results</h3>
+                    <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Organisation type</h2>
+                    <div class="toggled-content">
+                        <div class="form-group filters-button-group">
+                            <legend class="form-label sr-only">Select an organisation type</legend>
+                            <label class="block-label selection-button-radio" for="levy-1">
+                                <input id="levy-1" type="radio" name="levy-group" value="Private limited company" data-filter="Private limited company"> Private limited company
+                            </label>
+                            <label class="block-label selection-button-radio" for="levy-2">
+                                <input id="levy-2" type="radio" name="levy-group" value="Public limited company" data-filter="Public limited company"> Public limited company
+                            </label>
+                            <label class="block-label selection-button-radio" for="levy-3">
+                                <input id="levy-3" type="radio" name="levy-group" value="Public body" data-filter="Public body">    Public body
+                            </label>
+                           <!-- <label class="block-label selection-button-radio" for="levy-4">
+                                <input id="levy-4" type="radio" name="levy-group" value="Industrial and Provident" data-filter="Industrial and Provident organisation">    Industrial and Provident organisation
+                            </label>
+                            <label class="block-label selection-button-radio" for="levy-5">
+                                <input id="levy-5" type="radio" name="levy-group" value="Royal charter" data-filter="Royal charter">    Royal charter
+                            </label>
+                            <label class="block-label selection-button-radio" for="levy-6">
+                                <input id="levy-6" type="radio" name="levy-group" value="Registered charity" data-filter="Registered charity">    Registered charity
+                            </label>
+
+-->
+                           <!-- <label class="block-label selection-button-radio" for="levy-7">
+                                <input id="levy-7" type="radio" name="levy-group" value="" data-filter="*">Show all
+                            </label> -->
+                        </div>
+                    </div>
+                </fieldset>
+                </aside>
+            </div>            
+            <div class="column-two-thirds">
+                <div id="results"></div>  
+        <div id="pagedat" style="display: none;">
+
+                </div>
+
+
+                <div class="page-navigation">
+                    <a class="page-navigation__btn previous">
+                        <i class="arrow-button fa fa-angle-left"></i>
+                        <span class="description">Previous <span class="hide-mob">page</span></span>
+                        <span class="counter">Page <span class="prevPage"></span> of <span class="totalPage"></span></span>
+                    </a>
+
+
+
+                    <a style="" class="page-navigation__btn next">
+                        <i class="arrow-button fa fa-angle-right"></i>
+                        <span class="description">Next <span class="hide-mob">page</span></span>
+                        <span class="counter">Page <span class="nextPage"></span> of <span class="totalPage"></span></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</section>    
+ 
+
+</main>
+{% endblock %}

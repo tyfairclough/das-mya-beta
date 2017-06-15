@@ -21,7 +21,8 @@
         <div class="column-two-thirds">
     <div id="notifications">
         <div class="success-summary">
-            <p><span class="organisation-name">Acme Ltd</span> has been added.</p>
+            <h3 class="heading-medium"><span class="organisation-name">Acme Ltd</span> has been added.</h3>
+            <p>An agreement needs to be signed for <span class="organisation-name">Acme Ltd</span> to spend funds.</p>
         </div>
     </div>
       
@@ -46,10 +47,15 @@
 
       <label class="block-label" data-target="sign" for="sign">
         <input id="sign" type="radio" name="next" value="sign">
-Accept agreement in order to add apprentices 
-      </label>
+Sign an agreement to allow <span class="organisation-name">Acme Ltd</span> to spend funds
+            </label>
 
-      <label class="block-label" data-target="addorg" for="addorg">
+      <label class="block-label" data-target="team" for="team">
+        <input id="team" type="radio" name="next" value="team">
+Check which team members can sign the agreement
+      </label>
+            
+            <label class="block-label" data-target="addorg" for="addorg">
         <input id="addorg" type="radio" name="next" value="addorg">
 Add another organisation
       </label>

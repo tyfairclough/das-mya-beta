@@ -1,0 +1,5930 @@
+[
+ {
+   "id": 1,
+   "apprentice": "Hagir Mac Coluim",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 2,
+   "apprentice": "Urban Llywelyn",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 3,
+   "apprentice": "Sara Van De Laar",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 4,
+   "apprentice": "Khushi Tiraboschi",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 5,
+   "apprentice": "Riccarda Sierra",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 6,
+   "apprentice": "Paavali Wang",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 7,
+   "apprentice": "Stjepan Rana",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 8,
+   "apprentice": "Besnik Castelo",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 9,
+   "apprentice": "Gabriel Vigo",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 10,
+   "apprentice": "Vasiliki Maas",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 11,
+   "apprentice": "Brunhilde Tasker",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 12,
+   "apprentice": "Teun Grenville",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 13,
+   "apprentice": "Kate Triggs",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 14,
+   "apprentice": "Alexis Christopherson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 15,
+   "apprentice": "Trishna Marquerink",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 16,
+   "apprentice": "Wayne Elzinga",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 17,
+   "apprentice": "Franka Jans",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 18,
+   "apprentice": "Regula Geisler",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 19,
+   "apprentice": "Ruthie Leeuwenhoek",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 20,
+   "apprentice": "Tahmid Rey",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 21,
+   "apprentice": "Lucille Randell",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 22,
+   "apprentice": "Jayadev Esser",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 23,
+   "apprentice": "Dillon Junge",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 24,
+   "apprentice": "Grover Brasher",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 25,
+   "apprentice": "Elwood Nigel",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 26,
+   "apprentice": "August Traves",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 27,
+   "apprentice": "Alana Arnold",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 28,
+   "apprentice": "Kasi Zimmermann",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 29,
+   "apprentice": "Nellie Shakesheave",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 30,
+   "apprentice": "Alban Van Rumpade",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 31,
+   "apprentice": "Sofia Richard",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 32,
+   "apprentice": "Kelly Reyes",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 33,
+   "apprentice": "Guy Cole",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 34,
+   "apprentice": "Timothy Barton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 35,
+   "apprentice": "Marco Wise",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 36,
+   "apprentice": "Patsy Jenkins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 37,
+   "apprentice": "Guillermo Moreno",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 38,
+   "apprentice": "Pam Holloway",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 39,
+   "apprentice": "Luke Sanders",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 40,
+   "apprentice": "Benny Padilla",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 41,
+   "apprentice": "Kristi Elliott",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 42,
+   "apprentice": "Christie Fuller",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 43,
+   "apprentice": "Francisco Price",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 44,
+   "apprentice": "Bradford Olson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 45,
+   "apprentice": "Guadalupe Hughes",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 46,
+   "apprentice": "Belinda Simmons",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 47,
+   "apprentice": "Woodrow Hayes",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 48,
+   "apprentice": "Reginald Mccormick",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 49,
+   "apprentice": "Terrance Kelly",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 50,
+   "apprentice": "Danielle Rose",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 51,
+   "apprentice": "Timothy Briggs",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 52,
+   "apprentice": "Max Gilbert",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 53,
+   "apprentice": "Courtney Lawrence",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 54,
+   "apprentice": "Jo Hardy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 55,
+   "apprentice": "Ross Sherman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 56,
+   "apprentice": "Nellie Mcbride",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 57,
+   "apprentice": "Darryl Wallace",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 58,
+   "apprentice": "Karl Reed",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 59,
+   "apprentice": "Cesar Roberson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 60,
+   "apprentice": "Rochelle Patrick",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 61,
+   "apprentice": "Ruben Wong",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 62,
+   "apprentice": "Malcolm Hammond",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 63,
+   "apprentice": "Lisa Lee",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 64,
+   "apprentice": "Silvia Burke",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 65,
+   "apprentice": "Kari Diaz",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 66,
+   "apprentice": "Jill Walters",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 67,
+   "apprentice": "Clarence Chambers",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 68,
+   "apprentice": "Catherine Vargas",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 69,
+   "apprentice": "Jackie Mitchell",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 70,
+   "apprentice": "Leona Dixon",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 71,
+   "apprentice": "Donnie Reese",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 72,
+   "apprentice": "Colin Carr",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 73,
+   "apprentice": "Jesus Hall",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 74,
+   "apprentice": "Naomi Ramsey",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 75,
+   "apprentice": "Neal Turner",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 76,
+   "apprentice": "Sheri Tucker",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 77,
+   "apprentice": "Bobby Moss",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 78,
+   "apprentice": "Terry Mendoza",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 79,
+   "apprentice": "Johnny Cruz",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 80,
+   "apprentice": "Maryann Gill",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 81,
+   "apprentice": "Maggie Carpenter",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 82,
+   "apprentice": "Alton Griffin",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 83,
+   "apprentice": "Dolores Thomas",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 84,
+   "apprentice": "Rachel Burns",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 85,
+   "apprentice": "Jessie Roberts",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 86,
+   "apprentice": "Christian Parks",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 87,
+   "apprentice": "Ricky Mcguire",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 88,
+   "apprentice": "Madeline Lopez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 89,
+   "apprentice": "Stanley Phillips",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 90,
+   "apprentice": "Roger Adkins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 91,
+   "apprentice": "Maria Harrison",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 92,
+   "apprentice": "Lola Palmer",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 93,
+   "apprentice": "Joe Wilson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 94,
+   "apprentice": "Edith Franklin",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 95,
+   "apprentice": "Amanda Arnold",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 96,
+   "apprentice": "Ernesto Keller",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 97,
+   "apprentice": "Gloria Vaughn",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 98,
+   "apprentice": "Desiree Bass",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 99,
+   "apprentice": "Horace Maxwell",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 100,
+   "apprentice": "David Rowe",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 101,
+   "apprentice": "Marguerite Taylor",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 102,
+   "apprentice": "Shaun Mclaughlin",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 103,
+   "apprentice": "Raul Holloway",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 104,
+   "apprentice": "Shannon Foster",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 105,
+   "apprentice": "Andrea Fisher",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 106,
+   "apprentice": "Krista Weber",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 107,
+   "apprentice": "Nicholas Mcdaniel",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 108,
+   "apprentice": "Tommie Erickson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 109,
+   "apprentice": "Irma Castro",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 110,
+   "apprentice": "Teresa Cohen",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 111,
+   "apprentice": "Jim Dawson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 112,
+   "apprentice": "Gabriel Christensen",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 113,
+   "apprentice": "Allan Williamson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 114,
+   "apprentice": "Mathew Howard",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 115,
+   "apprentice": "Lynn Freeman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 116,
+   "apprentice": "Regina Klein",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 117,
+   "apprentice": "Abraham Pope",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 118,
+   "apprentice": "Melvin Mullins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 119,
+   "apprentice": "Devin Riley",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 120,
+   "apprentice": "Adrienne Barton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 121,
+   "apprentice": "Troy Martin",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 122,
+   "apprentice": "Brett Curtis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 123,
+   "apprentice": "Sara Howell",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 124,
+   "apprentice": "Margie Robinson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 125,
+   "apprentice": "Kristine Morrison",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 126,
+   "apprentice": "Craig Jennings",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 127,
+   "apprentice": "Alonzo Smith",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 128,
+   "apprentice": "Billie Perry",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 129,
+   "apprentice": "Harvey Warren",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 130,
+   "apprentice": "Candice Moody",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 131,
+   "apprentice": "Evan Harrington",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 132,
+   "apprentice": "Shane Garner",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 133,
+   "apprentice": "Virgil Malone",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 134,
+   "apprentice": "Meredith Wells",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 135,
+   "apprentice": "Doug Shaw",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 136,
+   "apprentice": "Pedro Roy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 137,
+   "apprentice": "Janet Ryan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 138,
+   "apprentice": "Della Greene",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 139,
+   "apprentice": "Hugh Rodriquez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 140,
+   "apprentice": "Perry Murphy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 141,
+   "apprentice": "Juan Ingram",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 142,
+   "apprentice": "Maryann Wise",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 143,
+   "apprentice": "Kristine Washington",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 144,
+   "apprentice": "Cecelia Hill",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 145,
+   "apprentice": "Tasha Howell",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 146,
+   "apprentice": "Juana Jones",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 147,
+   "apprentice": "Leon Holland",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 148,
+   "apprentice": "Wayne Taylor",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 149,
+   "apprentice": "Ellen Johnston",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 150,
+   "apprentice": "Katrina Jennings",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 151,
+   "apprentice": "Orlando Hunt",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 152,
+   "apprentice": "Oscar Patton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 153,
+   "apprentice": "Rosalie Fisher",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 154,
+   "apprentice": "Sheila Bradley",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 155,
+   "apprentice": "Viola Robinson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 156,
+   "apprentice": "Johnnie Harper",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 157,
+   "apprentice": "Dwayne Chapman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 158,
+   "apprentice": "Gabriel Ball",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 159,
+   "apprentice": "Pauline Bailey",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 160,
+   "apprentice": "Nathaniel Little",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 161,
+   "apprentice": "Marian Roy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 162,
+   "apprentice": "Leo Fernandez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 163,
+   "apprentice": "Marilyn Blake",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 164,
+   "apprentice": "Dominic Mclaughlin",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 165,
+   "apprentice": "Marion Mack",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 166,
+   "apprentice": "Ramon Hamilton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 167,
+   "apprentice": "Jerome Parsons",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 168,
+   "apprentice": "Isabel Bowers",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 169,
+   "apprentice": "Marcos Moore",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 170,
+   "apprentice": "Melinda Lawrence",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 171,
+   "apprentice": "Cassandra Fletcher",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 172,
+   "apprentice": "Kristina Sutton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 173,
+   "apprentice": "Adam Crawford",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 174,
+   "apprentice": "Ricky Burgess",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 175,
+   "apprentice": "Chad Johnson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 176,
+   "apprentice": "Johnathan Richards",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 177,
+   "apprentice": "Shirley Gross",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 178,
+   "apprentice": "Paul Wong",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 179,
+   "apprentice": "Lindsay Silva",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 180,
+   "apprentice": "Jean Snyder",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 181,
+   "apprentice": "Shaun Briggs",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 182,
+   "apprentice": "Lynn Elliott",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 183,
+   "apprentice": "Traci Knight",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 184,
+   "apprentice": "Agnes Zimmerman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 185,
+   "apprentice": "Whitney Leonard",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 186,
+   "apprentice": "Pat Patrick",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 187,
+   "apprentice": "Drew Hale",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 188,
+   "apprentice": "Van Wilson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 189,
+   "apprentice": "Randall Potter",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 190,
+   "apprentice": "Dennis Gibbs",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 191,
+   "apprentice": "Candace Romero",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 192,
+   "apprentice": "Howard Hanson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 193,
+   "apprentice": "Otis Day",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 194,
+   "apprentice": "Ignacio Coleman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 195,
+   "apprentice": "Vanessa Payne",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 196,
+   "apprentice": "Wilbert Nelson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 197,
+   "apprentice": "Marjorie Flores",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 198,
+   "apprentice": "Salvador Cannon",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 199,
+   "apprentice": "Jacquelyn Byrd",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 200,
+   "apprentice": "Terrance Lamb",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 201,
+   "apprentice": "Lindsey Black",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 202,
+   "apprentice": "Tommy Norton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 203,
+   "apprentice": "Doris Pratt",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 204,
+   "apprentice": "Rosie Goodman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 205,
+   "apprentice": "Herman Rodriquez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 206,
+   "apprentice": "Alma Mathis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 207,
+   "apprentice": "Clyde Maldonado",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 208,
+   "apprentice": "Sylvester Guzman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 209,
+   "apprentice": "Virgil George",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 210,
+   "apprentice": "Daisy Waters",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 211,
+   "apprentice": "Omar Saunders",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 212,
+   "apprentice": "Angelina James",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 213,
+   "apprentice": "Ernesto Burke",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 214,
+   "apprentice": "Marguerite Clayton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 215,
+   "apprentice": "Lyle Cobb",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 216,
+   "apprentice": "Santiago Riley",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 217,
+   "apprentice": "Priscilla Porter",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 218,
+   "apprentice": "Amanda Ramirez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 219,
+   "apprentice": "Max Ward",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 220,
+   "apprentice": "Lela Parks",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 221,
+   "apprentice": "Annie Brown",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 222,
+   "apprentice": "Joey Barton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 223,
+   "apprentice": "Dean Griffith",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 224,
+   "apprentice": "Tyrone Patterson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 225,
+   "apprentice": "Clay Hart",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 226,
+   "apprentice": "Terrence Baldwin",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 227,
+   "apprentice": "Alicia Luna",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 228,
+   "apprentice": "Roxanne Kennedy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 229,
+   "apprentice": "Matthew Morton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 230,
+   "apprentice": "Irvin Ellis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 231,
+   "apprentice": "Amelia Howard",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 232,
+   "apprentice": "Bernadette Hoffman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 233,
+   "apprentice": "Angelica Buchanan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 234,
+   "apprentice": "Loretta Klein",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 235,
+   "apprentice": "Billy Copeland",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 236,
+   "apprentice": "Julio Morrison",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 237,
+   "apprentice": "Lucas Kim",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 238,
+   "apprentice": "Frederick Palmer",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 239,
+   "apprentice": "Yvette Montgomery",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 240,
+   "apprentice": "Leslie Carter",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 241,
+   "apprentice": "Mike Gill",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 242,
+   "apprentice": "Monique Schultz",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 243,
+   "apprentice": "Alexandra Johnston",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 244,
+   "apprentice": "Jessie Love",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 245,
+   "apprentice": "Sheryl Garrett",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 246,
+   "apprentice": "Paula Briggs",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 247,
+   "apprentice": "Tim Haynes",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 248,
+   "apprentice": "Dwayne Hines",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 249,
+   "apprentice": "Christopher Henderson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 250,
+   "apprentice": "Daisy Greene",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 251,
+   "apprentice": "Jake Nguyen",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 252,
+   "apprentice": "Perry Rios",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 253,
+   "apprentice": "Garry Jefferson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 254,
+   "apprentice": "Ida Long",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 255,
+   "apprentice": "Keith Boone",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 256,
+   "apprentice": "Michael Daniels",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 257,
+   "apprentice": "Nelson Howard",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 258,
+   "apprentice": "Marcus Cain",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 259,
+   "apprentice": "Danny Mendoza",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 260,
+   "apprentice": "Zachary Peterson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 261,
+   "apprentice": "Harriet Austin",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 262,
+   "apprentice": "Dallas Lowe",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 263,
+   "apprentice": "Grant Higgins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 264,
+   "apprentice": "Homer Abbott",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 265,
+   "apprentice": "Chester Frank",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 266,
+   "apprentice": "Corey Banks",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 267,
+   "apprentice": "Ginger Casey",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 268,
+   "apprentice": "Randal Dennis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 269,
+   "apprentice": "Charlene Bass",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 270,
+   "apprentice": "Justin Spencer",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 271,
+   "apprentice": "Carole Marsh",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 272,
+   "apprentice": "Phillip Harrison",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 273,
+   "apprentice": "Camille Mcdaniel",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 274,
+   "apprentice": "Ana Barker",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 275,
+   "apprentice": "Diane Gibson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 276,
+   "apprentice": "Kathryn Tyler",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 277,
+   "apprentice": "Annette Nunez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 278,
+   "apprentice": "Joanne Burns",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 279,
+   "apprentice": "Clint Olson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 280,
+   "apprentice": "Jeanne Wise",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 281,
+   "apprentice": "Sara Hoffman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 282,
+   "apprentice": "Marion Sherman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 283,
+   "apprentice": "Janice Ford",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 284,
+   "apprentice": "Yvette Myers",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 285,
+   "apprentice": "Elsie Patton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 286,
+   "apprentice": "Lillian Lewis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 287,
+   "apprentice": "Franklin Gutierrez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 288,
+   "apprentice": "Jorge Horton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 289,
+   "apprentice": "Betty Jordan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 290,
+   "apprentice": "Judith Benson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 291,
+   "apprentice": "Leland Miles",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 292,
+   "apprentice": "Annie Munoz",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 293,
+   "apprentice": "Kenny Davis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 294,
+   "apprentice": "Vicky Wallace",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 295,
+   "apprentice": "Darren Woods",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 296,
+   "apprentice": "Shelia Allison",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 297,
+   "apprentice": "Iris Moreno",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 298,
+   "apprentice": "Constance Hicks",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 299,
+   "apprentice": "Ivan Steele",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 300,
+   "apprentice": "Casey Maldonado",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 301,
+   "apprentice": "Fernando Collins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 302,
+   "apprentice": "Kathy Caldwell",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 303,
+   "apprentice": "Edwin Hale",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 304,
+   "apprentice": "Lena Knight",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 305,
+   "apprentice": "Lora Robbins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 306,
+   "apprentice": "Theresa Fleming",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 307,
+   "apprentice": "Billy Ryan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 308,
+   "apprentice": "Edmund Drake",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 309,
+   "apprentice": "Robin Mcdonald",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 310,
+   "apprentice": "Mattie Sullivan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 311,
+   "apprentice": "Harold Ruiz",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 312,
+   "apprentice": "Ebony Gomez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 313,
+   "apprentice": "Herman Lynch",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 314,
+   "apprentice": "Dwight Boyd",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 315,
+   "apprentice": "Irvin Palmer",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 316,
+   "apprentice": "Allen Bryan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 317,
+   "apprentice": "Raymond Vega",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 318,
+   "apprentice": "Jenny Rogers",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 319,
+   "apprentice": "Joann Clark",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 320,
+   "apprentice": "Erma Hubbard",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 321,
+   "apprentice": "Lula Obrien",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 322,
+   "apprentice": "Whitney Rodgers",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 323,
+   "apprentice": "Mindy Hamilton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 324,
+   "apprentice": "Roberto Gregory",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 325,
+   "apprentice": "Bennie Newton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 326,
+   "apprentice": "Randolph Barrett",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 327,
+   "apprentice": "Kerry Phillips",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 328,
+   "apprentice": "Wilbur Buchanan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 329,
+   "apprentice": "Emily Dixon",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 330,
+   "apprentice": "Clifton Waters",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 331,
+   "apprentice": "Jean Cross",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 332,
+   "apprentice": "Valerie Alexander",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 333,
+   "apprentice": "Carl Conner",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 334,
+   "apprentice": "Darrin Murphy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 335,
+   "apprentice": "Terrell Reyes",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 336,
+   "apprentice": "Juanita Soto",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 337,
+   "apprentice": "Dora Meyer",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 338,
+   "apprentice": "Ora Townsend",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 339,
+   "apprentice": "Francis Ingram",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 340,
+   "apprentice": "Sandy Reed",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 341,
+   "apprentice": "Evelyn Foster",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 342,
+   "apprentice": "Jack Carroll",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 343,
+   "apprentice": "Bernard Wilson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 344,
+   "apprentice": "Kenny Harrington",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 345,
+   "apprentice": "Jennie Cobb",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 346,
+   "apprentice": "Timmy Moss",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 347,
+   "apprentice": "Virgil Harper",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 348,
+   "apprentice": "Salvatore Bush",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 349,
+   "apprentice": "Ana Byrd",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 350,
+   "apprentice": "Eduardo Watson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 351,
+   "apprentice": "Ramon Garrett",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 352,
+   "apprentice": "Jimmy Larson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 353,
+   "apprentice": "Bernadette Ramirez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 354,
+   "apprentice": "Malcolm Carter",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 355,
+   "apprentice": "Flora Quinn",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 356,
+   "apprentice": "Sara Dawson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 357,
+   "apprentice": "Lawrence Campbell",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 358,
+   "apprentice": "Pat Cohen",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 359,
+   "apprentice": "Myron Patton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 360,
+   "apprentice": "Joy Reyes",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 361,
+   "apprentice": "Jared Long",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 362,
+   "apprentice": "Matt Burns",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 363,
+   "apprentice": "Roosevelt Pierce",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 364,
+   "apprentice": "Megan Lawrence",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 365,
+   "apprentice": "Billie Smith",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 366,
+   "apprentice": "Wallace Jensen",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 367,
+   "apprentice": "Miranda Flowers",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 368,
+   "apprentice": "Don Ellis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 369,
+   "apprentice": "Dallas Mckenzie",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 370,
+   "apprentice": "Chris Sanders",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 371,
+   "apprentice": "Antonia Bryan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 372,
+   "apprentice": "Kara Pope",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 373,
+   "apprentice": "Cesar Allison",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 374,
+   "apprentice": "Shannon Nash",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 375,
+   "apprentice": "Mary Austin",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 376,
+   "apprentice": "Ruben Lucas",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 377,
+   "apprentice": "Cora Sullivan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 378,
+   "apprentice": "Tina Saunders",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 379,
+   "apprentice": "Ethel Luna",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 380,
+   "apprentice": "Richard Neal",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 381,
+   "apprentice": "Marta Berry",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 382,
+   "apprentice": "Ismael Drake",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 383,
+   "apprentice": "Roberta Watts",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 384,
+   "apprentice": "Verna Walters",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 385,
+   "apprentice": "Boyd Phelps",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 386,
+   "apprentice": "Vivian Hammond",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 387,
+   "apprentice": "Luther Morrison",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 388,
+   "apprentice": "Nathaniel Estrada",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 389,
+   "apprentice": "Wendell Swanson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 390,
+   "apprentice": "Gerard Richards",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 391,
+   "apprentice": "Darrin Francis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 392,
+   "apprentice": "Terrance George",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 393,
+   "apprentice": "Ben Gordon",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 394,
+   "apprentice": "Kristy Morgan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 395,
+   "apprentice": "Austin Holmes",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 396,
+   "apprentice": "Marcus Benson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 397,
+   "apprentice": "Robert Stewart",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 398,
+   "apprentice": "Rose Gomez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 399,
+   "apprentice": "Harry Martinez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 400,
+   "apprentice": "Vincent Ortiz",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 401,
+   "apprentice": "Rudy Pearson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 402,
+   "apprentice": "Otis Burke",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 403,
+   "apprentice": "Stanley Mathis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 404,
+   "apprentice": "Nick Washington",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 405,
+   "apprentice": "Johnnie Black",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 406,
+   "apprentice": "Stella Goodman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 407,
+   "apprentice": "Laura Gross",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 408,
+   "apprentice": "Colleen Rice",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 409,
+   "apprentice": "Tracey Rodriquez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 410,
+   "apprentice": "Mattie Bradley",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 411,
+   "apprentice": "Muriel Miller",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 412,
+   "apprentice": "Helen Bishop",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 413,
+   "apprentice": "Lula Dunn",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 414,
+   "apprentice": "Samuel Jenkins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 415,
+   "apprentice": "Sheryl Diaz",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 416,
+   "apprentice": "Owen Mccoy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 417,
+   "apprentice": "Miguel Johnson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 418,
+   "apprentice": "Lee Perez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 419,
+   "apprentice": "Sophie Hubbard",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 420,
+   "apprentice": "Leonard Barnett",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 421,
+   "apprentice": "Lewis Malone",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 422,
+   "apprentice": "Melody Murphy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 423,
+   "apprentice": "Freda Harmon",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 424,
+   "apprentice": "Holly Boyd",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 425,
+   "apprentice": "Garry Peters",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 426,
+   "apprentice": "Raymond Massey",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 427,
+   "apprentice": "Sandra Keller",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 428,
+   "apprentice": "Tabitha Obrien",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 429,
+   "apprentice": "Reginald Vaughn",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 430,
+   "apprentice": "Eunice Hawkins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 431,
+   "apprentice": "Maxine Miles",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 432,
+   "apprentice": "Christy Kennedy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 433,
+   "apprentice": "Elvira Ramsey",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 434,
+   "apprentice": "Marilyn Kelly",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 435,
+   "apprentice": "Bryan Morales",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 436,
+   "apprentice": "Joanna Lawson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 437,
+   "apprentice": "Terence Glover",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 438,
+   "apprentice": "Joey Ford",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 439,
+   "apprentice": "Russell Baker",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 440,
+   "apprentice": "Luz Hill",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 441,
+   "apprentice": "Rita Simon",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 442,
+   "apprentice": "Ron Anderson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 443,
+   "apprentice": "Malcolm Erickson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 444,
+   "apprentice": "Josephine Santos",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 445,
+   "apprentice": "Edwin Davis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 446,
+   "apprentice": "Rudy Carter",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 447,
+   "apprentice": "Hector Shaw",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 448,
+   "apprentice": "Yvette Powell",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 449,
+   "apprentice": "Erin Tate",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 450,
+   "apprentice": "Elbert Lamb",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 451,
+   "apprentice": "Jesus Thomas",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 452,
+   "apprentice": "Lillie Little",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 453,
+   "apprentice": "Nadine Singleton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 454,
+   "apprentice": "Darren Boyd",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 455,
+   "apprentice": "Rickey Sanders",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 456,
+   "apprentice": "Harold Daniel",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 457,
+   "apprentice": "Laverne Jones",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 458,
+   "apprentice": "Toni Wallace",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 459,
+   "apprentice": "Moses Garcia",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 460,
+   "apprentice": "Ashley Castillo",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 461,
+   "apprentice": "Roy Welch",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 462,
+   "apprentice": "Jordan Waters",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 463,
+   "apprentice": "Rebecca Bates",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 464,
+   "apprentice": "Jessie Robertson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 465,
+   "apprentice": "Phil Cross",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 466,
+   "apprentice": "Darla Roberson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 467,
+   "apprentice": "Julie Day",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 468,
+   "apprentice": "Marie Gibbs",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 469,
+   "apprentice": "Darrin Hall",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 470,
+   "apprentice": "Sylvia Gray",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 471,
+   "apprentice": "Shari Gross",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 472,
+   "apprentice": "Glenn Jackson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 473,
+   "apprentice": "Julia Johnson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 474,
+   "apprentice": "Kathryn Hammond",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 475,
+   "apprentice": "Regina Hill",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 476,
+   "apprentice": "Geoffrey Williamson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 477,
+   "apprentice": "Herbert Grant",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 478,
+   "apprentice": "Donna Carpenter",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 479,
+   "apprentice": "Sherry Phelps",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 480,
+   "apprentice": "Marilyn Chandler",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 481,
+   "apprentice": "Shelia Saunders",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 482,
+   "apprentice": "Suzanne Mccoy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 483,
+   "apprentice": "Ed Doyle",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 484,
+   "apprentice": "Velma Bass",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 485,
+   "apprentice": "Cary Cobb",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 486,
+   "apprentice": "Bennie Owens",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 487,
+   "apprentice": "Russell Swanson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 488,
+   "apprentice": "Alberto Hunter",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 489,
+   "apprentice": "Kate Vargas",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 490,
+   "apprentice": "Irving Maldonado",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 491,
+   "apprentice": "Dwight Estrada",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 492,
+   "apprentice": "Camille Arnold",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 493,
+   "apprentice": "Juana Higgins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 494,
+   "apprentice": "Ada Baker",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 495,
+   "apprentice": "Beverly Harris",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 496,
+   "apprentice": "Delores Jefferson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 497,
+   "apprentice": "Mitchell Stephens",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 498,
+   "apprentice": "Katie Kelley",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 499,
+   "apprentice": "Kristy Powers",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 500,
+   "apprentice": "Tonya Schmidt",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 501,
+   "apprentice": "Mathew Berry",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 502,
+   "apprentice": "Chelsea French",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 503,
+   "apprentice": "Darin Daniels",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 504,
+   "apprentice": "Sidney Hawkins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 505,
+   "apprentice": "Levi Quinn",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 506,
+   "apprentice": "Spencer Figueroa",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 507,
+   "apprentice": "Allison Payne",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 508,
+   "apprentice": "Lynne Olson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 509,
+   "apprentice": "Jake Harvey",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 510,
+   "apprentice": "Tammy Morton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 511,
+   "apprentice": "Bradford Newman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 512,
+   "apprentice": "Kimberly Gardner",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 513,
+   "apprentice": "Jorge Mcbride",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 514,
+   "apprentice": "Caleb Byrd",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 515,
+   "apprentice": "Benjamin Mckinney",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 516,
+   "apprentice": "Monica Vega",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 517,
+   "apprentice": "Earl Riley",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 518,
+   "apprentice": "Amanda Marshall",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 519,
+   "apprentice": "June Webster",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 520,
+   "apprentice": "Nancy Munoz",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 521,
+   "apprentice": "Irma Chapman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 522,
+   "apprentice": "Leona Terry",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 523,
+   "apprentice": "Thomas Miller",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 524,
+   "apprentice": "Sabrina Mitchell",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 525,
+   "apprentice": "Gerard Mccarthy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 526,
+   "apprentice": "Minnie Watson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 527,
+   "apprentice": "Peter Barnes",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 528,
+   "apprentice": "Frances Gordon",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 529,
+   "apprentice": "Ross Becker",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 530,
+   "apprentice": "Blake Burke",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 531,
+   "apprentice": "Maureen Garner",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 532,
+   "apprentice": "Glen Ingram",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 533,
+   "apprentice": "Guadalupe Pratt",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 534,
+   "apprentice": "Leslie Luna",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 535,
+   "apprentice": "Francis Graham",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 536,
+   "apprentice": "Leon Frazier",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 537,
+   "apprentice": "Austin Castro",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 538,
+   "apprentice": "Terrance Moran",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 539,
+   "apprentice": "Rhonda Walton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 540,
+   "apprentice": "Natalie Cummings",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 541,
+   "apprentice": "Marsha Mendez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 542,
+   "apprentice": "Deanna Parker",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 543,
+   "apprentice": "Dominick Schultz",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 544,
+   "apprentice": "Evelyn Long",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 545,
+   "apprentice": "Cora Banks",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 546,
+   "apprentice": "Lee Mcdaniel",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 547,
+   "apprentice": "Clint Sparks",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 548,
+   "apprentice": "Luther Terry",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 549,
+   "apprentice": "Luke Mclaughlin",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 550,
+   "apprentice": "Franklin George",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 551,
+   "apprentice": "Whitney Smith",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 552,
+   "apprentice": "Ginger Jefferson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 553,
+   "apprentice": "Marvin Nash",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 554,
+   "apprentice": "Terence Estrada",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 555,
+   "apprentice": "Monica Collins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 556,
+   "apprentice": "Leland Fox",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 557,
+   "apprentice": "Yolanda Young",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 558,
+   "apprentice": "Rachel Alvarez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 559,
+   "apprentice": "Wayne Reynolds",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 560,
+   "apprentice": "Enrique Scott",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 561,
+   "apprentice": "Johnny Mann",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 562,
+   "apprentice": "Walter Hicks",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 563,
+   "apprentice": "Faith Yates",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 564,
+   "apprentice": "Darrel Mckinney",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 565,
+   "apprentice": "Marion Hart",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 566,
+   "apprentice": "Daisy Bridges",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 567,
+   "apprentice": "Kenny Collier",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 568,
+   "apprentice": "Claire Morrison",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 569,
+   "apprentice": "Guadalupe Weaver",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 570,
+   "apprentice": "Nathaniel Stephens",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 571,
+   "apprentice": "Julio Wood",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 572,
+   "apprentice": "Roosevelt Floyd",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 573,
+   "apprentice": "Jesse Black",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 574,
+   "apprentice": "Alma Carter",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 575,
+   "apprentice": "Lola Stone",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 576,
+   "apprentice": "Victoria Doyle",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 577,
+   "apprentice": "Kelvin Goodman",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 578,
+   "apprentice": "Neil Fowler",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 579,
+   "apprentice": "Craig Patterson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 580,
+   "apprentice": "Dave Benson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 581,
+   "apprentice": "Elisa Hodges",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 582,
+   "apprentice": "Troy Anderson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 583,
+   "apprentice": "Derrick Jimenez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 584,
+   "apprentice": "Ora Bell",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 585,
+   "apprentice": "Denise Diaz",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 586,
+   "apprentice": "Loren Buchanan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 587,
+   "apprentice": "Marjorie Adams",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 588,
+   "apprentice": "Dawn Nguyen",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 589,
+   "apprentice": "Noel Spencer",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 590,
+   "apprentice": "Guillermo Vega",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 591,
+   "apprentice": "Alonzo Carr",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 592,
+   "apprentice": "Ramiro Sanders",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 593,
+   "apprentice": "Elmer Caldwell",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 594,
+   "apprentice": "Pamela Bryan",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 595,
+   "apprentice": "Lillie Edwards",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 596,
+   "apprentice": "Desiree Roy",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 597,
+   "apprentice": "Raquel Valdez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 598,
+   "apprentice": "Elena Patrick",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 599,
+   "apprentice": "Christy Mendez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 600,
+   "apprentice": "Randy Owen",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 601,
+   "apprentice": "Laura Wells",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 602,
+   "apprentice": "Janis Dunn",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 603,
+   "apprentice": "Nora Brown",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 604,
+   "apprentice": "Oscar Gray",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 605,
+   "apprentice": "Eula Conner",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 606,
+   "apprentice": "James Mathis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 607,
+   "apprentice": "Bridget Williamson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 608,
+   "apprentice": "Marie Walters",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 609,
+   "apprentice": "Lois Huff",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 610,
+   "apprentice": "Lori Oliver",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 611,
+   "apprentice": "Irvin West",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 612,
+   "apprentice": "Jacquelyn Bishop",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 613,
+   "apprentice": "Omar Curtis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 614,
+   "apprentice": "Nina Rogers",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 615,
+   "apprentice": "Jeremiah Craig",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 616,
+   "apprentice": "Tony Patton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 617,
+   "apprentice": "Jaime Hansen",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 618,
+   "apprentice": "Grady Allen",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 619,
+   "apprentice": "Rose Clayton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 620,
+   "apprentice": "Paul Roberson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 621,
+   "apprentice": "Wade Robertson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 622,
+   "apprentice": "Neal Willis",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 623,
+   "apprentice": "Marco Barber",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 624,
+   "apprentice": "Melody Soto",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 625,
+   "apprentice": "Raul Jenkins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 626,
+   "apprentice": "Jeffrey Aguilar",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 627,
+   "apprentice": "Carmen Gomez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 628,
+   "apprentice": "Winston Nichols",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 629,
+   "apprentice": "Jo Henry",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 630,
+   "apprentice": "Martin Horton",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 631,
+   "apprentice": "Claudia Erickson",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 632,
+   "apprentice": "Tina Perkins",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 633,
+   "apprentice": "Pablo Mcgee",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 634,
+   "apprentice": "Shannon Sanchez",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 635,
+   "apprentice": "Marsha Lawrence",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 636,
+   "apprentice": "Sam Holloway",
+   "levy": -250,
+   "govContribution": 0,
+   "yourContribution": 0,
+   "amount": 250
+ },
+ {
+   "id": 637,
+   "apprentice": "Rex Tucker",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 638,
+   "apprentice": "Timothy Hill",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 639,
+   "apprentice": "Lillian Cooper",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 640,
+   "apprentice": "Carolyn Reid",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 641,
+   "apprentice": "Sandra Romero",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 642,
+   "apprentice": "Charlene Burke",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 643,
+   "apprentice": "Philip Bryant",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 644,
+   "apprentice": "Abel Goodman",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 645,
+   "apprentice": "Viola Myers",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 646,
+   "apprentice": "Tasha Ramsey",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 647,
+   "apprentice": "Krystal Cross",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 648,
+   "apprentice": "Doris Mclaughlin",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 649,
+   "apprentice": "Danny Greene",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 650,
+   "apprentice": "Lindsay Hardy",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 651,
+   "apprentice": "Marvin Pittman",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 652,
+   "apprentice": "Larry Lopez",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 653,
+   "apprentice": "Woodrow Griffin",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 654,
+   "apprentice": "Ray Hall",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 655,
+   "apprentice": "Jacob May",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 656,
+   "apprentice": "Paul Moody",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 657,
+   "apprentice": "Myra Price",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 658,
+   "apprentice": "Irvin Cruz",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 659,
+   "apprentice": "Opal Mathis",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 660,
+   "apprentice": "Amos Sanchez",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 661,
+   "apprentice": "Shaun Gonzales",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 662,
+   "apprentice": "Meredith Banks",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 663,
+   "apprentice": "Claudia Fitzgerald",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 664,
+   "apprentice": "Darnell Harris",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 665,
+   "apprentice": "Roberta Hudson",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 666,
+   "apprentice": "Milton Elliott",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 667,
+   "apprentice": "Suzanne Manning",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 668,
+   "apprentice": "Travis Nelson",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 669,
+   "apprentice": "Stella White",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 670,
+   "apprentice": "Janis Armstrong",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 671,
+   "apprentice": "Hazel Fleming",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 672,
+   "apprentice": "Brandon Martin",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 673,
+   "apprentice": "Winifred Murray",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 674,
+   "apprentice": "Vickie Arnold",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 675,
+   "apprentice": "Molly Ballard",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 676,
+   "apprentice": "Pam Coleman",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 677,
+   "apprentice": "Duane Kelley",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 678,
+   "apprentice": "Harry Ingram",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 679,
+   "apprentice": "Casey Norman",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 680,
+   "apprentice": "Richard Kim",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 681,
+   "apprentice": "Cary Lyons",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 682,
+   "apprentice": "Chris Meyer",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 683,
+   "apprentice": "Andy Cooper",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 684,
+   "apprentice": "Ron West",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 685,
+   "apprentice": "Sheryl Farmer",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 686,
+   "apprentice": "Ricardo Singleton",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 687,
+   "apprentice": "Lana Jacobs",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 688,
+   "apprentice": "Kirk Caldwell",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 689,
+   "apprentice": "Gladys Henry",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 690,
+   "apprentice": "Jimmy Terry",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 691,
+   "apprentice": "Donald Sullivan",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 692,
+   "apprentice": "Deborah Blair",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 693,
+   "apprentice": "Jonathon Ramirez",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 694,
+   "apprentice": "Yvonne James",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 695,
+   "apprentice": "Alvin Hunter",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 696,
+   "apprentice": "Conrad Frazier",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 697,
+   "apprentice": "Paula Delgado",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 698,
+   "apprentice": "Angie Strickland",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 699,
+   "apprentice": "Gwendolyn Gibson",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 700,
+   "apprentice": "Kristy Walton",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 701,
+   "apprentice": "Glenn Osborne",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 702,
+   "apprentice": "Lora Drake",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 703,
+   "apprentice": "Jasmine Bowen",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 704,
+   "apprentice": "Edgar Hawkins",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 705,
+   "apprentice": "Claire Yates",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 706,
+   "apprentice": "Erik Carpenter",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 707,
+   "apprentice": "Karla Floyd",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 708,
+   "apprentice": "Stuart Butler",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 709,
+   "apprentice": "Victoria Gray",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 710,
+   "apprentice": "Janie Gordon",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 711,
+   "apprentice": "Arnold Henderson",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 712,
+   "apprentice": "Ethel Diaz",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 713,
+   "apprentice": "Laura Stewart",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 714,
+   "apprentice": "Terri Barnett",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 715,
+   "apprentice": "Ginger Padilla",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 716,
+   "apprentice": "Miriam Phillips",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 717,
+   "apprentice": "Dorothy Fowler",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 718,
+   "apprentice": "Josephine Mccoy",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 719,
+   "apprentice": "Georgia Daniels",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 720,
+   "apprentice": "Jeannie Hicks",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 721,
+   "apprentice": "Courtney Cook",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 722,
+   "apprentice": "Ida Cohen",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 723,
+   "apprentice": "Isabel Cobb",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 724,
+   "apprentice": "Carlos Johnson",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 725,
+   "apprentice": "Harold Gregory",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 726,
+   "apprentice": "Rochelle Blake",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 727,
+   "apprentice": "Lydia Chandler",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 728,
+   "apprentice": "Dana Abbott",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 729,
+   "apprentice": "Cameron Douglas",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 730,
+   "apprentice": "Cheryl Peters",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 731,
+   "apprentice": "Shawn Romero",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 732,
+   "apprentice": "Curtis Larson",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 733,
+   "apprentice": "Allen Paul",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 734,
+   "apprentice": "Nelson Mcdaniel",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 735,
+   "apprentice": "Sherry Pope",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 736,
+   "apprentice": "Alonzo Gardner",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 737,
+   "apprentice": "Guillermo Thompson",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 738,
+   "apprentice": "Kimberly Garner",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 739,
+   "apprentice": "Mary Brock",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 740,
+   "apprentice": "Gerard Perkins",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ },
+ {
+   "id": 741,
+   "apprentice": "Robin Webb",
+   "levy": 0,
+   "govContribution": -225,
+   "yourContribution": -25,
+   "amount": 250
+ }
+]

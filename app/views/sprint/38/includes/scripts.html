@@ -433,7 +433,7 @@ $(document).ready(function () {
             if (state === "sign") {
                 window.location.href = "/sprint/{{sprint}}/account/organisations/index";
             } else if (state === "apprentices") {
-                window.location.href = "/sprint/{{sprint}}/account/apprentices/add";
+                window.location.href = "/sprint/{{sprint}}/account/apprentices/index";
             } else {
                 window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
             }
@@ -1323,6 +1323,7 @@ $(document).ready(function () {
         $("#sign2").click(function (e) {
              e.preventDefault();
             //  check if this is on-boarding or not
+            window.location.href = "/sprint/{{sprint}}/account/organisations/agreement-next";
 
             var today = new Date();
             var date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
@@ -1345,7 +1346,6 @@ $(document).ready(function () {
 
             var onboarding = JSON.parse(localStorage.getItem("onboarding"));
             //window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y";
-            window.location.href = "/sprint/{{sprint}}/account/organisations/next";
 
         });
     };

@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="paye-next" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+        <div class="column-two-thirds">
+    <div id="notifications">
+        <div class="success-summary">
+            <p>John doe has been added.</p>
+        </div>
+    </div>
+      
+      </div>
+    </div>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+                  <div class="">
+          <h1 class="heading-medium">What next?</h1>
+          </div>
+        </div>
+    </div>
+  <div class="grid-row">
+
+      
+      <div class="column-two-thirds">
+
+             <form action="">
+            
+        <div class="form-group">
+
+
+      <label class="block-label" data-target="addpaye" for="addpaye">
+        <input id="addpaye" type="radio" name="next" value="addpaye">
+Add another team member
+      </label>
+            
+            <label class="block-label" data-target="homepage" for="homepage">
+        <input id="homepage" type="radio" name="next" value="homepage">
+Go back to the homepage
+            </label>
+
+      </div>
+
+  
+      <a class="button" href="#" id="submit">Continue</a>
+      
+</form>
+          
+                 
+</div></div>
+
+</main>
+{% endblock %}

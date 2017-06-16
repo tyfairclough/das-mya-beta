@@ -413,12 +413,31 @@ $(document).ready(function () {
             break;
         default:
             break;
+        case 'team-next':
+            teamNext();
+            break;
         };
 
     
     
     
 // PAGE FUNCTIONS 
+    
+    function teamNext() {
+        localStorage.setItem("welcomeState","3");
+                $("#submit").click(function (e) {
+            //e.preventDefault();  
+                        var state = $('input[name=next]:checked').val();
+
+            if (state === "addteam") {
+                window.location.href = "/sprint/{{sprint}}/account/team/new";
+            } else if (state === "viewteam") {
+                window.location.href = "/sprint/{{sprint}}/account/team/index";
+            } else {
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
+            }
+        });
+    }
     
     function agreementCover() {
         $(".organisation-name").text(localStorage.getItem("organisation-name"));
@@ -463,6 +482,8 @@ $(document).ready(function () {
     function payeNext() {
         $("#submit").click(function (e) {
             //e.preventDefault();  
+            
+            localStorage.setItem("welcomeState","1");
             var state = $('input[name=next]:checked').val();
 
             if (state === "addpaye") {
@@ -981,6 +1002,7 @@ $(document).ready(function () {
     };
 
     function confirmDetails() {
+        localStorage.setItem("welcomeState","2")
         orgName = localStorage.getItem("organisation-name")
         $(".organisation-name").text(orgName);
         $(".organisation-address").text(localStorage.getItem("organisation-address"));

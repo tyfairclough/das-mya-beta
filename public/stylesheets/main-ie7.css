@@ -3097,6 +3097,8 @@ span.notification {
   border-bottom: none;
   background: #F8F8F8;
   color: #0B0C0C;
+  margin: 10px -10px;
+  box-sizing: content-box;
 }
 
 #results li.added h2 {

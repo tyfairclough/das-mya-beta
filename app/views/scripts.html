@@ -1177,62 +1177,6 @@ console.log("score is " + resultScore)
         
     });
     
-    
-
- /*   $("#passwordgroup input").keyup(function(e) {
-        var password = $(this).val();
-        //validate the length
-        if ( password.length < 8 ) {
-            $('#8num').removeClass('success').addClass('danger');
-            $("#8num i").removeClass("fa-check-circle").addClass("fa-circle");
-        } else {
-            $('#8num').removeClass('danger').addClass('success');
-            $("#8num i").removeClass("fa-circle").addClass("fa-check-circle");
-        }
-//validate letter
-        if ( password.match(/[A-z]/) ) {
-            $('#1char').removeClass('danger').addClass('success');
-            $("#1char i").removeClass("fa-circle").addClass("fa-check-circle");
-        } else {
-            $('#1char').removeClass('success').addClass('danger');
-            $("#1char i").removeClass("fa-check-circle").addClass("fa-circle");
-        }
-//validate capital letter
-        if ( password.match(/[A-Z]/) ) {
-            $('#1cap').removeClass('danger').addClass('success');
-            $("#1cap i").removeClass("fa-circle").addClass("fa-check-circle");
-        } else {
-            $('#1cap').removeClass('success').addClass('danger');
-            $("#1cap i").removeClass("fa-check-circle").addClass("fa-circle");
-        }
-//validate number
-        if ( password.match(/\d/) ) {
-            $('#1num').removeClass('danger').addClass('success');
-            $("#1num i").removeClass("fa-circle").addClass("fa-check-circle");
-        } else {
-            $('#1num').removeClass('success').addClass('danger');
-            $("#1num i").removeClass("fa-check-circle").addClass("fa-circle");
-        }
-        i++;
-        var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
-        var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
-        var enoughRegex = new RegExp("(?=.{6,}).*", "g");
-        if (false == enoughRegex.test(password)) {
-            console.log("pass");
-            $('.password-strength .tooweak').fadeIn();
-            $(".pw-strength").text("incomplete");
-        } else if (strongRegex.test($(this).val())) {
-            $('.password-strength .strong').fadeIn();
-            $(".pw-strength").text("strong");
-        } else if (mediumRegex.test($(this).val())) {
-            $('.password-strength .medium').fadeIn();
-            $(".pw-strength").text("moderate");
-        } else {
-            $('.password-strength .weak').fadeIn();
-            $(".pw-strength").text("weak");
-        }
-        return true;
-    }); */
          
     function organisationName(){
     $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));

@@ -36,3 +36,6 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 .DS_Store
+govuk_modules/govuk_frontend_toolkit/package.json
+govuk_modules/govuk_template/package.json
+govuk_modules/govuk_frontend_toolkit/package.json

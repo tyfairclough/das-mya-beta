@@ -1449,19 +1449,20 @@ $(document).ready(function () {
         c = 0;
         var row;
         var searchExp = "";
+        var stn;
+        
+        
 
         $(xmlData).find('row').each(function () {
 
             i++;
+            
 
             var iName = $(this).find('iName').text();
             var iAddress = $(this).find('iAddress').text();
             var iType = $(this).find('iType').text();
-            //        console.log(iName);
-            //        console.log(iType);
-            //        console.log("address" + iAddress);
-
-
+            
+            console.log(iName);
 
             //Format the keyword expression
             var exp = new RegExp(keyword, "gi");
@@ -1473,6 +1474,7 @@ $(document).ready(function () {
             if (searchExp != null) {
                 if (sortBy != null) {
                     if (sortBy == iType) {
+	                    	
                         returnList();
                         c++;
                     }
@@ -1489,7 +1491,11 @@ $(document).ready(function () {
                 stn += '<address class="form-hint">' + iAddress + '</address></dd>';
                 stn += '<dt><b>Type</b><dd data-filter=' + iType + '><span class="type">' + iType + '</span></dd></dl></li>';
             }
+            
+           
         });
+        
+
 
 				$('span.count').text(c);
         showList(stn);
@@ -1498,7 +1504,7 @@ $(document).ready(function () {
 
     function showList(stn) {
 
-        //Populate on page
+	        //Populate on page
         var contentTop = '<ul class="list list-links">';
         var contentBottom = '</ul>';
         var helpText = "<aside id='manualentrylink' style='display:none;'><h5 class='heading-small'>Can't find your organisation?</h5><p> You can <a href='manual-input.html'>add it manually here</a>.</p></aside>";

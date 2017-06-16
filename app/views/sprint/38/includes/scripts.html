@@ -471,7 +471,10 @@ $(document).ready(function () {
                 console.log("org array is: " + orgArray);
                 localStorage.setItem("signAgreementFor", orgArray.length);
                 window.location.href = "/sprint/{{sprint}}/account/organisations/agreement-cover-sign";
-            } else if (state === "addorg") {
+            } else if (state === "team") {
+                window.location.href = "/sprint/{{sprint}}/account/team/index";                
+            } 
+            else if (state === "addorg") {
                 window.location.href = "/sprint/{{sprint}}/account/organisations/add";
             } else {
                 window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
@@ -488,8 +491,8 @@ $(document).ready(function () {
 
             if (state === "addpaye") {
                 window.location.href = "/sprint/{{sprint}}/onboarding/gateway-login";
-            } else if (state === "addorg") {
-                window.location.href = "/sprint/{{sprint}}/account/organisations/add";
+            } else if (state === "checkfinance") {
+                window.location.href = "/sprint/{{sprint}}/account/finance/index";
             } else {
                 window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
             }
@@ -1003,7 +1006,7 @@ $(document).ready(function () {
 
     function confirmDetails() {
         localStorage.setItem("welcomeState","2")
-        orgName = localStorage.getItem("organisation-name")
+        orgName = JSON.parse(localStorage.getItem("organisation-name"));
         $(".organisation-name").text(orgName);
         $(".organisation-address").text(localStorage.getItem("organisation-address"));
         $(".button").click(function (e) {

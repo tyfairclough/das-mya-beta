@@ -1446,6 +1446,7 @@ $(document).ready(function () {
 
     function loadstnlocation(xmlData) {
         i = 0;
+        c = 0;
         var row;
         var searchExp = "";
 
@@ -1473,9 +1474,11 @@ $(document).ready(function () {
                 if (sortBy != null) {
                     if (sortBy == iType) {
                         returnList();
+                        c++;
                     }
                 } else {
                     returnList();
+                    c++;
                 }
             }
 
@@ -1488,6 +1491,7 @@ $(document).ready(function () {
             }
         });
 
+				$('span.count').text(c);
         showList(stn);
 
     }
@@ -1586,7 +1590,7 @@ $(document).ready(function () {
     function getPublicSearchCount(keyword) {
         $("#search-main").val(keyword);
         var count = $(".list-links li").length;
-        $(".count").text(count);
+        //$(".count").text(count);
     };
 
     function disabledAddedPublicOrgs() {
@@ -1712,6 +1716,7 @@ $(document).ready(function () {
 
     function organisationAdd() {
         onboardingNav();
+        localStorage.removeItem("addSort");
 
         $(".errror-summary").hide();
         $(".form-group").removeClass("error");
@@ -1741,15 +1746,22 @@ $(document).ready(function () {
             searchThis();
         });
         
+        
+        
+        $('.org-search-filter input:radio').on('change', function(e) {
+	        var filterValue = $('.org-search-filter input:radio:checked').val();
+	        console.log(filterValue);
+	        if (filterValue !== 'all') {
+		        localStorage.setItem("addSort", filterValue);
+		        searchThis();
+	        } else {
+		        localStorage.removeItem("addSort");
+	        }
+	        e.stopPropergation();
+        });
+        
         var addSort = localStorage.getItem("addSort");
-        /*
-        if (addSort != null) {
-            $("#public-sector-search").hide();
-            $("#results-wrapper").removeClass("hidden");
-            searchThis();
-            onboardingNav();
-        }
-        */
+
     }
 
     function onboardingNav() {

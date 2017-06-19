@@ -48,11 +48,11 @@ Email changed         </h2>
 
                                   <legend class="heading-small">Add more PAYE schemes now?</legend>
                                     <p>This allows your schemes' levy funds to be paid into your account.</p>
-                                  <label class="block-label selection-button-radio" for="add-paye-1">
+                                  <label class="block-label " for="add-paye-1">
                                     <input id="add-paye-1" type="radio" name="add-paye-group" value="1">
                                       Yes
                                   </label>
-                                  <label class="block-label selection-button-radio" for="add-paye-2">
+                                  <label class="block-label " for="add-paye-2">
                                     <input id="add-paye-2" type="radio" name="add-paye-group" value="2">
                                       No
                                   </label>
@@ -86,11 +86,11 @@ Email changed         </h2>
                                 <fieldset>
                                   <legend class="heading-small">Add more organisations now? </legend>
 <p>This allows organisations to spend funds on apprentices.</p>
-                                  <label class="block-label selection-button-radio" for="add-org-1">
+                                  <label class="block-label" for="add-org-1">
                                     <input id="add-org-1" type="radio" name="add-org-group" value="1">
                                       Yes
                                   </label>
-                                  <label class="block-label selection-button-radio" for="add-org-2">
+                                  <label class="block-label " for="add-org-2">
                                     <input id="add-org-2" type="radio" name="add-org-group" value="2">
                                       No
                                   </label>
@@ -118,15 +118,15 @@ Email changed         </h2>
                             <form class="inline">
                               <div class="form-group" action="#">
                                 <fieldset>
-                                  <legend class="heading-small">Have you added all your team members?</legend>
-                                    <p>You can add people to manage apprenticeships and finances.</p>
-                                  <label class="block-label selection-button-radio" for="invite-users-1">
-                                  <input id="invite-users-1" type="radio" name="invite-users-group" value="1">
-                                     Yes
-                                  </label>
-                                  <label class="block-label selection-button-radio" for="invite-users-2">
+                                  <legend class="heading-small">Add team members now?</legend>
+                                    <p>This allows your colleagues to manage apprenticeships or finances.</p>
+                                 <label class="block-label " for="invite-users-2">
                                     <input id="invite-users-2" type="radio" name="invite-users-group" value="2">
-                                      No, invite team members
+                                      Yes, add team members
+                                  </label>
+                                    <label class="block-label " for="invite-users-1">
+                                  <input id="invite-users-1" type="radio" name="invite-users-group" value="1">
+                                     No, not now
                                   </label>
                                     <div class="sr-only">
                                     <!--<a href="/sprint/19/onboarding/before-you-start.html"> id="action" class="button">Continue</a>-->
@@ -156,11 +156,11 @@ Email changed         </h2>
                                 <fieldset>
                                   <legend class="heading-small">Are you going to sign the agreements?</legend>
                                     <p>This allows you to spend funds.</p>
-                                  <label class="block-label selection-button-radio" for="sign-org-group-1">
+                                  <label class="block-label " for="sign-org-group-1">
                                   <input id="sign-org-group-1" type="radio" name="sign-org-group" value="1">
                                       Yes
                                   </label>
-                                  <label class="block-label selection-button-radio" for="sign-org-group-2">
+                                  <label class="block-label " for="sign-org-group-2">
                                     <input id="sign-org-group-2" type="radio" name="sign-org-group" value="2">
                                     No, someone else will sign the agreements
                                     </label>
@@ -188,9 +188,9 @@ Email changed         </h2>
                     <section style="display:none; margin-top: 10px;" id="wizardPending">
                         <div class="complete" style="padding: 20px; background:#28A197; color: white;">
                             <h4 class="heading-medium">
-                                Task completed <i class="fa fa-check"></i>
+                                Tasks completed <i class="fa fa-check"></i>
                             </h4>
-                            <p>You can now <a href="/sprint/{{sprint}}/account/apprentices/index" style="font-weight: 900; color: white;">add apprentices</a>.</p>
+                            <p class="bold-small"><a style="color: white;" href="#" id="hideWelcomeWizard">I'm done - take me to my homepage</a></p>
                         </div>
                         
                                                 <div style="margin-top: 10px; display: block; padding: 20px; float: left; width: 100%; box-sizing: border-box;">
@@ -214,7 +214,7 @@ Your agreement needs to be signed before you can spend funds. <a href="/sprint/{
                     </section>
        
                     
-                    <a id="hideWelcomeWizard" style="position: absolute; top :20px; right: 20px; text-decoration: none;" class="" href="#"><span class="">close</span> <i class="fa fa-times"></i></a>
+                    <a id="hideWelcomeWizard" style="position: absolute; top :20px; right: 20px; text-decoration: none;" class="" href="#"><span class="">Close</span> <i class="fa fa-times"></i></a>
   
                 </section> 
     </section>

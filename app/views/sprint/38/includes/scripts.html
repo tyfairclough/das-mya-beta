@@ -449,11 +449,14 @@ $(document).ready(function () {
             //e.preventDefault();  
             var state = $('input[name=next]:checked').val();
 
-            if (state === "sign") {
+            if (state === "orgs") {
                 window.location.href = "/sprint/{{sprint}}/account/organisations/index";
             } else if (state === "apprentices") {
                 window.location.href = "/sprint/{{sprint}}/account/apprentices/index";
-            } else {
+            } else if ( state === "finance") {
+                window.location.href = "/sprint/{{sprint}}/account/finance/index";                
+            }
+            else {
                 window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
             }
         });

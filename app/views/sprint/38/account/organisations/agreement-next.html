@@ -21,7 +21,8 @@
         <div class="column-two-thirds">
     <div id="notifications">
         <div class="success-summary">
-            <p><span class="organisation-name">Acme Ltd</span> has been signed and can now spend levy funds.</p>
+            <h3 class="heading-medium">Agreement signed</h3>
+            <p><span class="organisation-name bold-small">Acme Ltd</span> can now spend levy funds.</p>
         </div>
     </div>
       
@@ -43,12 +44,16 @@
             
         <div class="form-group">
 
+            <label class="block-label selection-button-radio" data-target="orgs" for="orgs">
+        <input id="orgs" type="radio" name="next" value="orgs">
+View all organisations    </label>
+            
+      <label class="block-label selection-button-radio" data-target="finance" for="finance">
+        <input id="finance" type="radio" name="next" value="finance">
+Check finances     </label>
+        
 
-      <label class="block-label" data-target="sign" for="sign">
-        <input id="sign" type="radio" name="next" value="sign">
-Sign another organisation agreement     </label>
-
-      <label class="block-label" data-target="apprentices" for="apprentices">
+      <label class="block-label selection-button-radio" data-target="apprentices" for="apprentices">
         <input id="apprentices" type="radio" name="next" value="apprentices">
 Add apprentices
         </label>

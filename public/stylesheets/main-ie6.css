@@ -4322,3 +4322,55 @@ li.added + li {
 #finance-bingo a .data:hover span i {
   visibility: visible;
 }
+
+table.footable > tfoot > tr.footable-paging > td > ul.pagination {
+  display: block;
+}
+
+.footable .pagination > li > a, .footable .pagination > li > span {
+  border: none;
+  background: none;
+}
+
+.footable .pagination li, ul.pagination > li.footable-page.visible {
+  display: none;
+}
+
+.footable .pagination li[data-page="next"], .footable .pagination li[data-page="prev"] {
+  display: inline-block;
+  font-size: 3.5em;
+}
+
+.footable .pagination li[data-page="next"] {
+  float: right;
+}
+
+.footable .pagination li[data-page="next"] a:before {
+  content: "Next page";
+  font-size: 19px;
+  position: relative;
+  top: -10px;
+}
+
+.footable .pagination li[data-page="prev"] {
+  float: left;
+}
+
+.footable .pagination li[data-page="prev"] a:after {
+  content: "Previous page";
+  font-size: 19px;
+  position: relative;
+  top: -10px;
+}
+
+table.footable > tfoot > tr.footable-paging > td > span.label {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 4px 10px;
+  top: 40px;
+  position: relative;
+  background: white;
+  color: black;
+  font-weight: 400;
+  font-size: 19px;
+}

@@ -123,7 +123,7 @@ nav#user-nav {
 		li.top-level {
 			> a {
 				text-decoration: none;
-				color: $black
+				color: $#0b0c0c
 			}
 			&.open {
 				ul li.selected a {
@@ -133,7 +133,7 @@ nav#user-nav {
 					background-position: 0px 14px;
 					background-size: 15px;
 					text-decoration: none;
-					color: $black;
+					color: $#0b0c0c;
 					margin-left: $nav-padding * 1;
 				}	
 			}
@@ -215,11 +215,11 @@ a.menu-closed {
 }
 
 a.menu-open:before {
-	border-top-color: black;
+	border-top-color: #0b0c0c;
 }
 
 a.menu-closed:before {
-	border-left-color: black;
+	border-left-color: #0b0c0c;
 	border-width: 4px 7px;
 }
 
@@ -250,7 +250,7 @@ nav.global-nav {
             }
             &.current {
                 a {
-                    color: black;
+                    color: #0b0c0c;
                     text-decoration:none;
                     &:after {
                         content: "";
@@ -483,7 +483,7 @@ nav.global-nav ul {
 
 .html-publications-show .publication-content .govspeak h2, #whitehall-wrapper .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
-  color: black;
+  color: #0b0c0c;
   margin-top: 30px;
 }
 
@@ -495,7 +495,7 @@ nav.global-nav ul {
 
 .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
-  color: black;
+  color: #0b0c0c;
   margin-top: 30px;
 }
 
@@ -574,7 +574,7 @@ nav.global-nav ul {
   }
   .html-publications-show .publication-content .govspeak h4, #whitehall-wrapper .html-publications-show .publication-content .govspeak h5, #whitehall-wrapper .html-publications-show .publication-content .govspeak h6 {
     font-weight: bold;
-    color: black;
+    color: #0b0c0c;
     margin-top: 30px;
   }
   .html-publications-show .back-to-content {
@@ -709,7 +709,7 @@ tr.total td {
     
     #checklist {
         .statusToDo {
-            background: black;
+            background: #0b0c0c;
             color: white;
             padding: 3px 5px;
             text-transform: uppercase;
@@ -958,7 +958,7 @@ span.notification {
                 margin: 0 auto;
             }
             .fa-circle {
-                color: black;
+                color: #0b0c0c;
                 font-size: 0.35em !important;
                 top: -4px;
                 position: relative;
@@ -1436,7 +1436,7 @@ dl.confirm-details {
 }
 
 .impact-link.active {
-  color: black;
+  color: #0b0c0c;
   background-color: white;
   border: 1px solid;
 }
@@ -1910,7 +1910,7 @@ table.responsive {
     margin: 0;
     position: relative;
     &:hover {
-        background: mix(black,$purple,25%);
+        background: mix(#0b0c0c,$purple,25%);
         cursor: pointer;
     }
     h3 {
@@ -2133,49 +2133,49 @@ li.added + li {
             background: $fuschia;
             color: $white;
             &:hover {
-                background: mix(black,$fuschia,25);
+                background: mix(#0b0c0c,$fuschia,25);
             }
         }
         &.orange {
             background: $orange;
             color: $white;
             &:hover {
-                background: mix(black,$orange,25);
+                background: mix(#0b0c0c,$orange,25);
             }
         }
         &.purple {
             background: $purple;
             color: $white;
             &:hover {
-                background: mix(black,$purple,25);
+                background: mix(#0b0c0c,$purple,25);
             }
         }
         &.fuscia {
             background: $fuschia;
             color: $white;
             &:hover {
-                background: mix(black,$fuschia,25);
+                background: mix(#0b0c0c,$fuschia,25);
             }
         }
         &.mauve {
             background: $mauve;
             color: $white;
             &:hover {
-                background: mix(black,$mauve,25);
+                background: mix(#0b0c0c,$mauve,25);
             }
         }
         &.pink {
             background: $pink;
             color: $white;
             &:hover {
-                background: mix(black,$pink,25);
+                background: mix(#0b0c0c,$pink,25);
             }
         }
         &.red {
             background: $mellow-red;
             color: $white;
             &:hover {
-                background: mix(black,$mellow-red,25);
+                background: mix(#0b0c0c,$mellow-red,25);
             }
         }
         span {
@@ -2195,4 +2195,52 @@ li.added + li {
             }
         }
     }
+}
+
+// footable updates for gds styling
+table.footable>tfoot>tr.footable-paging>td>ul.pagination {
+    display: block;
+}
+
+.footable .pagination>li>a, .footable .pagination>li>span {
+    border: none;
+    background: none;
+}
+
+.footable .pagination li, ul.pagination>li.footable-page.visible { display: none; }
+.footable .pagination li[data-page="next"],.footable .pagination li[data-page="prev"] {
+    display: inline-block;
+    font-size: 3.5em;
+}
+
+.footable .pagination li[data-page="next"] {
+    float: right;
+}
+
+.footable .pagination li[data-page="next"] a:before {
+    content: "Next page";
+    font-size: 19px;
+    position: relative;
+    top: -10px;
+}
+.footable .pagination li[data-page="prev"] {
+    float: left;
+}
+.footable .pagination li[data-page="prev"] a:after {
+    content: "Previous page";
+    font-size: 19px;
+    position: relative;
+    top: -10px;
+}
+
+table.footable>tfoot>tr.footable-paging>td>span.label {
+    display: inline-block;
+    margin: 0 0 10px;
+    padding: 4px 10px;
+    top: 40px;
+    position: relative;
+    background: white;
+    color: #0b0c0c;
+    font-weight: 400;
+    font-size: 19px;
 }

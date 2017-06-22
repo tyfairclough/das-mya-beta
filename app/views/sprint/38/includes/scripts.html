@@ -411,6 +411,9 @@ $(document).ready(function () {
         case 'agreement-cover':
             agreementCover();
             break;
+        case 'footable-index':
+            footableIndex();
+            break;
         default:
             break;
         case 'team-next':
@@ -422,6 +425,19 @@ $(document).ready(function () {
     
     
 // PAGE FUNCTIONS 
+    
+    function footableIndex(){
+    
+        $('#showcase-example-1').footable({
+            "columns": $.get('/public/data/columns.json'),
+            /*"columns": [
+                {$.get('/public/data/columns.json')},
+                {"classes": "class1 class2"}
+            ],*/
+            "rows": $.get('/public/data/rows.json')
+        });
+
+    }
     
     function teamNext() {
         localStorage.setItem("welcomeState","3");

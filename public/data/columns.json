@@ -2,7 +2,7 @@
   {"name":"id","title":"ID","visible":false,"filterable":false,"type":"number"},
   {"name":"apprentice","title":"Apprentice"},
   {"name":"levy","title":"Paid from levy"},
-  {"name":"govContribution","title":"Government contribution"},
-  {"name":"yourContribution","title":"Your Contribution"},
+  {"name":"govContribution","title":"Government contribution","classes":"highlight"},
+  {"name":"yourContribution","title":"Your Contribution","classes":"highlight"},
   {"name":"amount","title":"Amount","type":"number"}
 ]

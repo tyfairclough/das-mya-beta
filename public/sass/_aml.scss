@@ -124,7 +124,6 @@ nav#user-nav {
 			> a {
 				text-decoration: none;
 				color: $black
-				color: $#0b0c0c
 			}
 			&.open {
 				ul li.selected a {
@@ -135,7 +134,6 @@ nav#user-nav {
 					background-size: 15px;
 					text-decoration: none;
 					color: $black;
-					color: $#0b0c0c;
 					margin-left: $nav-padding * 1;
 				}	
 			}
@@ -2442,4 +2440,3 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
     font-weight: 400;
     font-size: 19px;
 }
->>>>>>> a1191368756c9bf618df80a9c13e17a566b06f8f

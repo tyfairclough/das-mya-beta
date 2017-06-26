@@ -4299,7 +4299,7 @@ li.added + li {
 .timeline {
   width: 100%;
   background: #fff;
-  padding: 30px 10px;
+  padding: 10px;
   position: relative;
 }
 
@@ -4307,44 +4307,21 @@ li.added + li {
   content: '';
   position: absolute;
   top: 0px;
-  left: calc(33% + 15px);
+  left: 0;
   bottom: 0px;
   width: 1px;
   background: #ddd;
-}
-
-.timeline:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .entry {
   clear: both;
   text-align: left;
   position: relative;
+  margin-bottom: 15px;
 }
 
 .entry .title {
-  margin-bottom: .5em;
-  float: left;
-  width: 33%;
-  padding-right: 30px;
-  text-align: right;
-  position: relative;
-}
-
-.entry .title:before {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #ddd;
-  background-color: #ddd;
-  border-radius: 100%;
-  top: 15%;
-  right: -16px;
-  z-index: 99;
+  color: #bfc1c3;
 }
 
 .entry .title h3 {
@@ -4355,11 +4332,19 @@ li.added + li {
   margin: 0;
 }
 
-.entry .body {
-  margin: 0 0 3em;
-  float: right;
-  width: 66%;
-  padding-left: 30px;
+.entry.start .title:after {
+  content: "Start";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  border-radius: 100%;
+  margin-top: 47px;
+  left: -19px;
+  z-index: 99;
+  text-indent: 20px;
+  font-weight: 900;
 }
 
 .entry .body p {
@@ -4380,6 +4365,88 @@ li.added + li {
 .entry .body ul li:before {
   content: "–";
   margin-right: .5em;
+}
+
+.entry .body:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  border-radius: 100%;
+  margin-top: 4px;
+  left: -15px;
+  z-index: 99;
+}
+
+@media (min-width: 640px) {
+  .timeline {
+    padding: 0 15px;
+  }
+  .timeline:before {
+    left: calc(33% + 15px);
+  }
+  .timeline:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .entry {
+    margin-bottom: 0;
+  }
+  .entry.start .title:after {
+    display: none;
+  }
+  .entry.start .body:after {
+    content: "Start";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 100%;
+    margin-top: 20px;
+    right: auto;
+    z-index: 99;
+    margin-left: -34px;
+    text-indent: 33px;
+    font-weight: 400;
+    color: gray;
+    line-height: 16px;
+  }
+  .entry .title {
+    width: 33%;
+    margin-bottom: .5em;
+    float: left;
+    padding-right: 15px;
+    text-align: right;
+    position: relative;
+    top: -5px;
+  }
+  .entry .title:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 100%;
+    top: 15%;
+    right: -15px;
+    z-index: 99;
+  }
+  .entry .body {
+    width: 66%;
+    margin: 0 0 30px;
+    padding-left: 30px;
+    float: right;
+    position: relative;
+    top: -5px;
+  }
+  .entry .body:before {
+    display: none;
+  }
 }
 
 .multiple-choice {
@@ -4525,6 +4592,10 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   color: #0b0c0c;
   font-weight: 400;
   font-size: 19px;
+}
+
+.activity-dashboard .form-control {
+  width: 100%;
 }
 
 .elements-index .heading-medium {

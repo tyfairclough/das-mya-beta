@@ -2227,47 +2227,28 @@ $dot-diameter: 8px;
 .timeline {
   width:100%;
   background:#fff;
-  padding: 30px 10px;
+  padding: 10px;
   position: relative;
-  &:before {
+              &:before {
     content: '';
     position: absolute;
     top: 0px;
-    left:calc(33% + 15px); //$gutter/2
+    left:0;
     bottom: 0px;
     width: $border-width;
     background: #ddd;
-  }
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  } 
+    }
 }
+
+
 
 .entry {
   clear: both;
   text-align: left;
   position: relative;
+    margin-bottom: 15px;
   .title {
-    margin-bottom: .5em;
-    float: left;
-    width: 33%;
-    padding-right: $gutter;
-    text-align: right;
-    position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      width: $dot-diameter;
-      height: $dot-diameter;
-      border: $border-width solid #ddd;
-      background-color:#ddd;
-      border-radius:100%;
-      top: 15%;
-      right: -$dot-diameter * 2;
-      z-index: 99;
-    }
+    color: $grey-2; 
     h3 {
       margin: 0;
     }
@@ -2275,11 +2256,27 @@ $dot-diameter: 8px;
       margin: 0;
     }
   }
+    
+  &.start {
+      .title {
+          &:after {
+            content: "Start";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #ddd;
+            background-color: #ddd;
+            border-radius: 100%;
+            margin-top: 47px;
+            left: -19px;
+            z-index: 99;
+            text-indent: 20px;
+            font-weight: 900;
+          }              
+      }
+  }
+    
   .body {
-    margin: 0 0 3em;
-    float: right;
-    width: 66%;
-    padding-left: $gutter;
     p {
       line-height: 1.4em;
       &:first-child {
@@ -2296,9 +2293,98 @@ $dot-diameter: 8px;
         margin-right: .5em;
       }
     }
+            &:before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border: 1px solid #ddd;
+        background-color: #ddd;
+        border-radius: 100%;
+        margin-top: 4px;
+        left: -15px;
+        z-index: 99;  
+      }
   }
 }
 
+
+@media (min-width: 640px)
+{
+.timeline {
+    padding: 0 15px;
+  &:before {
+    left:calc(33% + 15px); //$gutter/2
+    }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+    }
+    .entry {
+        margin-bottom: 0;
+          &.start {
+      .title {
+          &:after {
+              display: none;
+          }              
+      }
+              .body {
+                            &:after {
+    content: "Start";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 100%;
+    margin-top: 20px;
+    right: auto;
+    z-index: 99;
+    margin-left: -34px;
+    text-indent: 33px;
+    font-weight: 400;
+    color: gray;
+    line-height: 16px;
+          } 
+              }
+  }
+        .title {
+    width: 33%;
+    margin-bottom: .5em;
+    float: left;
+    padding-right: $gutter/2;
+    text-align: right;
+    position: relative;    
+    top: -5px;
+                
+             &:before {
+      content: '';
+      position: absolute;
+      width: $dot-diameter;
+      height: $dot-diameter;
+      border: $border-width solid #ddd;
+      background-color:#ddd;
+      border-radius:100%;
+      top: 15%;
+      right: -15px;
+      z-index: 99;
+    }   
+        }
+        .body {
+            width: 66%;            
+            margin: 0 0 30px;
+            padding-left: $gutter;
+            float: right;
+            position: relative;
+            top: -5px;
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
 
 .multiple-choice {
     display: block;
@@ -2439,4 +2525,10 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
     color: #0b0c0c;
     font-weight: 400;
     font-size: 19px;
+}
+
+.activity-dashboard {
+    .form-control {
+        width: 100%
+    }
 }

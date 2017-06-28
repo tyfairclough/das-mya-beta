@@ -4320,8 +4320,20 @@ li.added + li {
   margin-bottom: 15px;
 }
 
+.entry .time {
+  color: #6f777b;
+}
+
+.entry a.name {
+  color: #0b0c0c;
+}
+
+.entry a.name:hover {
+  color: #6f777b;
+}
+
 .entry .title {
-  color: #bfc1c3;
+  color: #6f777b;
 }
 
 .entry .title h3 {

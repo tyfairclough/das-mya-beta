@@ -2247,8 +2247,17 @@ $dot-diameter: 8px;
   text-align: left;
   position: relative;
     margin-bottom: 15px;
+    .time {
+        color: $grey-1
+    }
+    a.name {
+     color: $black;
+        &:hover {
+            color: $grey-1;
+        }
+    }
   .title {
-    color: $grey-2; 
+    color: $grey-1; 
     h3 {
       margin: 0;
     }

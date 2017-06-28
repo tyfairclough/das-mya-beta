@@ -17,31 +17,38 @@
 
 <main class="activity-dashboard" id="content" role="main" tabindex="-1">
 
-
+<div class="hgroup">
           <h2 class="heading-xlarge">
 Activity         </h2>
-    <p>Something here about activity</p>
-    
+    <p>A timeline of all the activity on your account.</p>
+    </div>
         
 
 
     
     <div class="grid-row">
         <div class="column-one-third">
-            <h3 class="heading-medium">Filters</h3>
-
-            <fieldset class="filters filters-accordion">
-                    <h2 class="toggler heading-small">Search</h2>
-                    <div class="toggled-content">
-
-                  <div class="form-group">
-                            <label for="apprenticeshipKeyword" class="form-label sr-only">Keyword or job role</label>
-                            <input id="apprenticeshipKeyword" type="text" class="form-control" value="">
-                </div>
-                                              <button class="button">Submit</button>
-
-                    </div>
-                </fieldset>
+            <h3 class="bold-medium">Filters</h3><br>
+ 
+            
+               <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Date range</h2>
+                <div class="toggled-content">
+                        <div class="form-group">
+                            <label>
+                            From
+                            <input placeholder="31/11/18" type="text" class="form-control" />
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                            To
+                            <input placeholder="31/12/18" type="text" class="form-control" />
+                            </label>
+                        </div>
+                   </div>
+            </fieldset>  
+            
             
             <fieldset class="filters filters-accordion">
                     <h2 class="toggler heading-small">Type</h2>
@@ -95,26 +102,21 @@ Activity         </h2>
                 </div>
             </fieldset>
             
+           
             
-            
-               <fieldset class="filters filters-accordion">
-                    <h2 class="toggler heading-small">Date range</h2>
-                <div class="toggled-content">
-                        <div class="form-group">
-                            <label>
-                            From
-                            <input placeholder="31/11/18" type="text" class="form-control" />
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label>
-                            To
-                            <input placeholder="31/12/18" type="text" class="form-control" />
-                            </label>
-                        </div>
-                   </div>
-            </fieldset>         
-            
+            <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Keyword search</h2>
+                    <div class="toggled-content">
+
+                  <div class="form-group">
+                            <label for="apprenticeshipKeyword" class="form-label sr-only">Keyword or job role</label>
+                            <input id="apprenticeshipKeyword" type="text" class="form-control" value="">
+                </div>
+
+                    </div>
+                </fieldset>
+                                                          <button class="button">Update timeilne</button>
+
         </div>
         <div class="column-two-thirds">
             <div class="timeline">
@@ -137,7 +139,7 @@ Activity         </h2>
       </div>
   </div>  
   <div class="entry apprentice">
-    <div class="title">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
         <div>Start date change approved for Anne Smith</div>
@@ -145,7 +147,7 @@ Activity         </h2>
     </div>
   </div>
  <div class="entry team">
-    <div class="title">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Pete Kowalczyk signed in</div>
@@ -164,7 +166,7 @@ Activity         </h2>
       </div>
   </div> 
                 
- <div class="entry">
+ <div class="entry team">
     <div class="title">
       <span class="font-small">26 June 2018</span>
     </div>
@@ -174,8 +176,8 @@ Activity         </h2>
       </div>
   </div>                  
                 
-<div class="entry">
-    <div class="title">
+<div class="entry payment">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Price changed approved for Anne Smith</div>
@@ -183,8 +185,8 @@ Activity         </h2>
       </div>
   </div>                
                 
- <div class="entry">
-    <div class="title">
+ <div class="entry team">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Sarah Thomson signed in</div>
@@ -192,8 +194,8 @@ Activity         </h2>
       </div>
   </div>                  
                 
-  <div class="entry">
-    <div class="title">
+  <div class="entry payment">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Closing balance for May: £16,780</div>
@@ -201,16 +203,16 @@ Activity         </h2>
       </div>
   </div>
                 
-  <div class="entry">
-    <div class="title">
+  <div class="entry apprentice payment">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Price change requested for Anne Smith</div>
         <div class=""><span class="time">At  5:50pm</span> by Acme Training Ltd - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
-  <div class="entry">
-    <div class="title">
+  <div class="entry payment">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Outgoing payment made: £14,500 to Acme ltd</div>
@@ -218,7 +220,7 @@ Activity         </h2>
       </div>
   </div>                
                 
-  <div class="entry">
+  <div class="entry team">
     <div class="title">
                         <span class="font-small">25 June 2018</span>                    
     </div>
@@ -227,16 +229,16 @@ Activity         </h2>
         <div class=""><span class="time">At  5:35pm</span></div>
       </div>
   </div>
-  <div class="entry">
-    <div class="title">
+  <div class="entry apprentice">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Cohort approved: Acme Training ltd</div>
         <div class=""><span class="time">At  5:34pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
- <div class="entry">
-    <div class="title">
+ <div class="entry team">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Sarah Thomson signed in</div>
@@ -244,8 +246,8 @@ Activity         </h2>
       </div>
   </div>           
                 
-                <div class="entry">
-    <div class="title">
+    <div class="entry apprentice">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Cohort request made</div>
@@ -254,7 +256,7 @@ Activity         </h2>
   </div>
                 
                 
-  <div class="entry">
+  <div class="entry team">
     <div class="title">
                         <span class="font-small">24 June 2018</span>                    
     </div>
@@ -264,24 +266,24 @@ Activity         </h2>
       </div>
   </div>
                 
-  <div class="entry">
-    <div class="title">
+  <div class="entry apprentice">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Cohort request sent to Acme Training ltd</div>
         <div class=""><span class="time">At  6:00pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
-  <div class="entry">
-    <div class="title">
+  <div class="entry team">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Sarah Thomson signed in</div>
         <div class=""><span class="time">At  5:45pm</span></div>
       </div>
   </div>
-  <div class="entry">
-    <div class="title">
+  <div class="entry apprentice">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Cohort request made</div>
@@ -290,7 +292,7 @@ Activity         </h2>
   </div>
 
 
-  <div class="entry">
+  <div class="entry team">
     <div class="title">
         <span class="font-small">23 June 2018</span>                    
     </div>
@@ -299,9 +301,9 @@ Activity         </h2>
         <div class=""><span class="time">At  5:24pm</span></div>
       </div>
   </div>
-    <div class="entry">
-    <div class="title">
-
+                
+    <div class="entry apprentice">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Cohort request sent to Acme Training ltd</div>
@@ -309,8 +311,8 @@ Activity         </h2>
       </div>
   </div>
 
-  <div class="entry">
-    <div class="title">
+  <div class="entry apprentice">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Cohort created with Acme Training ltd</div>
@@ -318,8 +320,8 @@ Activity         </h2>
       </div>
   </div>
 
-  <div class="entry">
-    <div class="title">
+  <div class="entry team">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
       <div>Sarah Thomson signed in</div>
@@ -328,7 +330,7 @@ Activity         </h2>
   </div>
 
                 
-  <div class="entry">
+  <div class="entry payment">
     <div class="title">
         <span class="font-small">22 June 2018</span>                    
     </div>
@@ -338,40 +340,41 @@ Activity         </h2>
     </div>
   </div>
                 
-                <div class="entry">
-    <div class="title">
+                <div class="entry team">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
         <div>Pete Kowalczyk timed out</div>
         <div class=""><span class="time">At  2:59pm</span>
     </div>
   </div>
-                <div class="entry">
-    <div class="title">
+                </div>
+                <div class="entry team">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
         <div>Agreement signed for Tesco stores ltd</div>
         <div class=""><span class="time">At  2:29pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div> 
-                <div class="entry">
-    <div class="title">
+    <div class="entry team">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
         <div>Pete Kowalczyk signed in</div>
         <div class=""><span class="time">At  2:24pm</span></div>
     </div>
   </div> 
-                <div class="entry">
+    <div class="entry team">
     <div class="title">
-
+&nbsp;
     </div>
     <div class="body">
         <div>Pete Kowalczyk joined</div>
         <div class=""><span class="time">At  2:24pm</span></div>
     </div>
   </div>         
-  <div class="entry">
+  <div class="entry team">
     <div class="title">
         <span class="font-small">19 June 2018</span>                    
     </div>
@@ -380,49 +383,49 @@ Activity         </h2>
         <div class=""><span class="time">At  2:46pm</span></div>
     </div>
   </div>  
-                <div class="entry">
+    <div class="entry team">
     <div class="title">
-
+&nbsp;
     </div>
     <div class="body">
         <div>Pete Kowalczyk invited</div>
         <div class=""><span class="time">At  2:45pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div>                 
-  <div class="entry">
-    <div class="title">
+  <div class="entry account">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
         <div>PAYE scheme added: 123/456789</div>
         <div class=""><span class="time">At  2:34pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div>                 
-  <div class="entry">
-    <div class="title">
+  <div class="entry account">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
         <div>Tesco stores ltd added</div>
         <div class=""><span class="time">At  2:30pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div> 
-    <div class="entry">
-    <div class="title">
+    <div class="entry account">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
         <div>PAYE scheme added: 123/6543321</div>
         <div class=""><span class="time">At  2:24pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div>                 
-  <div class="entry">
-    <div class="title">
+  <div class="entry account">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
         <div>Tesco food ltd added</div>
         <div class=""><span class="time">At  2:24pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div>                
-  <div class="entry start">
-    <div class="title">
+  <div class="entry start account">
+    <div class="title">&nbsp;
     </div>
     <div class="body">
         <div>Account created</div>

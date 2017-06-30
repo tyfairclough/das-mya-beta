@@ -2245,6 +2245,7 @@ a.menu-closed:before {
 a.menu-open:before {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   border-top-color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
@@ -2257,6 +2258,13 @@ a.menu-closed:before {
   border-left-color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   border-left-color: #0b0c0c;
+=======
+  border-top-color: black;
+}
+
+a.menu-closed:before {
+  border-left-color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   border-top-color: black;
 }
@@ -2299,10 +2307,14 @@ nav.global-nav ul li a:focus {
 nav.global-nav ul li.current a {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+=======
+  color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -2533,10 +2545,14 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
   font-weight: bold;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+=======
+  color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -2553,10 +2569,14 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
   font-weight: bold;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+=======
+  color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -2640,10 +2660,14 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
     font-weight: bold;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
     color: #0b0c0c;
+=======
+    color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
     color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -2769,10 +2793,14 @@ tr.total td {
 .sprint-11 #checklist .statusToDo, .sprint-15 #checklist .statusToDo, .sprint-19 #checklist .statusToDo {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #0b0c0c;
+=======
+  background: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -3030,10 +3058,14 @@ span.notification {
 .zxcvbn #passwordgroup .popover .fa-circle {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+=======
+  color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -3488,10 +3520,14 @@ dl.confirm-details dd {
 .impact-link.active {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+=======
+  color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -4037,10 +4073,14 @@ table.responsive tr th.tw-70 {
 .done:hover {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #232868;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #252b6b;
+=======
+  background: #232868;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #232868;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -4283,10 +4323,14 @@ li.added + li {
 #finance-bingo a .data.fuschia:hover {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #6d2066;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #702369;
+=======
+  background: #6d2066;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #6d2066;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -4300,10 +4344,14 @@ li.added + li {
 #finance-bingo a .data.orange:hover {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #b7592a;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #ba5c2d;
+=======
+  background: #b7592a;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #b7592a;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -4317,10 +4365,14 @@ li.added + li {
 #finance-bingo a .data.purple:hover {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #232868;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #252b6b;
+=======
+  background: #232868;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #232868;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -4334,10 +4386,14 @@ li.added + li {
 #finance-bingo a .data.fuscia:hover {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #6d2066;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #702369;
+=======
+  background: #6d2066;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #6d2066;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -4351,10 +4407,14 @@ li.added + li {
 #finance-bingo a .data.mauve:hover {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #535683;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #565986;
+=======
+  background: #535683;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #535683;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -4368,10 +4428,14 @@ li.added + li {
 #finance-bingo a .data.pink:hover {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #a02a60;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #a32d63;
+=======
+  background: #a02a60;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #a02a60;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -4385,10 +4449,14 @@ li.added + li {
 #finance-bingo a .data.red:hover {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #a72427;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #aa272a;
+=======
+  background: #a72427;
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #a72427;
 >>>>>>> parent of b546766... Fixed the radio buttons
@@ -4725,12 +4793,16 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   font-size: 19px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 }
 
 .activity-dashboard .form-control {
   width: 100%;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
+=======
+>>>>>>> a1191368756c9bf618df80a9c13e17a566b06f8f
+>>>>>>> parent of b546766... Fixed the radio buttons
 =======
 >>>>>>> a1191368756c9bf618df80a9c13e17a566b06f8f
 >>>>>>> parent of b546766... Fixed the radio buttons

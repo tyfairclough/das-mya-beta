@@ -31,17 +31,22 @@
                 <div class="form-group" action="add-your-details.html">
     <fieldset>
 
-      <legend class="visually-hidden">Are you sure you want to cancel?</legend>
+      <legend class="visually-hidden">
+          you sure you want to cancel?</legend>
         <div class="form-group">
-      <label class="block-label selection-button-radio" for="radio-1">
-        <input id="radio-1" type="radio" name="radio-group" value="cancel">
-          Yes, cancel invitation
+          <div class="multiple-chocie">
+            <input id="radio-1" type="radio" name="radio-group" value="cancel">
+            <label for="radio-1">
+                Yes, cancel invitation
             </label>
-      <label class="block-label selection-button-radio" for="radio-2">
+          </div>
+          <div class="multiple-chocie">
         <input id="radio-2" type="radio" name="radio-group" value="abort">
+      <label for="radio-2">
           No, don't cancel invitation
             </label>
             </div>
+        </div>
         <div class="form-group">
         <a href="/sprint/{{sprint}}/account/team/index.html?userdeleted=y" class="button">Continue</a>
         </div>            

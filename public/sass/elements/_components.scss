@@ -2,9 +2,8 @@
 // Used for transaction end pages, and Bank Holidays
 .govuk-box-highlight {
   margin: 1em 0;
-  padding: 20px 15px 15px;
-  border: 5px solid $turquoise;
+  padding: 2em 0 1em;
+  color: $white;
+  background: $turquoise;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }

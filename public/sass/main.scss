@@ -2,5 +2,8 @@
 // in the govuk frontend toolkit's url-helpers partial
 $path: "/public/images/";
 
-// Import all the govuk-elements partials listed in _govuk-elements.scss
 @import "govuk-elements";
+
+@import "_sfa-notifications";
+
+@import "_aml";

@@ -1,36 +1,10 @@
-// GOV.UK front end toolkit
-// Sass variables, mixins and functions
-// https://github.com/alphagov/govuk_frontend_toolkit/tree/master/stylesheets
-
-// Settings (variables)
-@import "colours";                                // Colour variables
-@import "measurements";                           // Widths and gutter variables
-
-// Mixins
-@import "conditionals";                           // Media query mixin
-@import "grid_layout";                            // Basic grid layout mixin
-@import "typography";                             // Core bold and heading mixins, also external links
-
-// GOV.UK elements
-@import "elements/helpers";                       // Helper functions and classes
+@import "main";
 
 // ==========================================================================
 // Elements page styles
-// These are example styles, used only for the elements pages
 // ==========================================================================
 
-// Add a class to wrap the <main> element
-// This is so the breadcrumb can sit outside <main>
-.site-wrapper {
-  @extend %site-width-container;
-
-  // Override margins set on #content
-  // This is a kludge to prevent a breaking change to govuk_elements_sass
-  // where @extend %site-width-container; is set for #content, so we need to override its margins
-  #content {
-    margin: 0;
-  }
-}
+// These are example styles, used only for the elements pages
 
 .elements-index {
   // Reduce top and bottom margins
@@ -173,13 +147,9 @@
 // 1. Layout
 // ==========================================================================
 
-$grid-stripe-light: #7DADD3;
-$grid-stripe-dark: #B7CFE1;
-
 .example-grid p {
   width: 100%;
-  background-color: $grid-stripe-light;
-  background-image: repeating-linear-gradient(180deg, $grid-stripe-light, $grid-stripe-light $gutter-half, $grid-stripe-dark $gutter-half, $grid-stripe-dark $gutter);
+  background: file-url("examples/grid.png") 0 0 repeat;
   margin-bottom: 0;
   height: 30px;
   @include media(tablet) {
@@ -201,7 +171,7 @@ $grid-stripe-dark: #B7CFE1;
 .swatch {
   width: 60px;
   height: 60px;
-  border-radius: 100%;
+  @include border-radius(100%);
   @include media(mobile) {
     clear: both;
     float: left;
@@ -212,6 +182,8 @@ $grid-stripe-dark: #B7CFE1;
     margin: 0 auto $gutter-half auto;
   }
 }
+
+
 
 // Sass list for colour palette
 $palette: (
@@ -231,6 +203,9 @@ $palette: (
   ("light-blue", $light-blue),
   ("govuk-blue", $govuk-blue)
 );
+
+$mauve : #6F72AF;
+$pink : #D53880;
 
 @mixin color-swatches {
   @each $color in $palette {

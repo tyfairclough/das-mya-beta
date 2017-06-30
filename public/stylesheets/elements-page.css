@@ -2665,6 +2665,7 @@ a.menu-closed:before {
 
 a.menu-open:before {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   border-top-color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
@@ -2677,6 +2678,13 @@ a.menu-closed:before {
   border-left-color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   border-left-color: #0b0c0c;
+=======
+  border-top-color: black;
+}
+
+a.menu-closed:before {
+  border-left-color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
   border-width: 4px 7px;
 }
 
@@ -2716,10 +2724,14 @@ nav.global-nav ul li a:focus {
 
 nav.global-nav ul li.current a {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+=======
+  color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
   text-decoration: none;
 }
 
@@ -2960,10 +2972,14 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 .html-publications-show .publication-content .govspeak h2, #whitehall-wrapper .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+=======
+  color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
   margin-top: 30px;
 }
 
@@ -2976,10 +2992,14 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+=======
+  color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
   margin-top: 30px;
 }
 
@@ -3059,10 +3079,14 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
   .html-publications-show .publication-content .govspeak h4, #whitehall-wrapper .html-publications-show .publication-content .govspeak h5, #whitehall-wrapper .html-publications-show .publication-content .govspeak h6 {
     font-weight: bold;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
     color: #0b0c0c;
+=======
+    color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
     margin-top: 30px;
   }
   .html-publications-show .back-to-content {
@@ -3184,10 +3208,14 @@ tr.total td {
 
 .sprint-11 #checklist .statusToDo, .sprint-15 #checklist .statusToDo, .sprint-19 #checklist .statusToDo {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #0b0c0c;
+=======
+  background: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
   color: white;
   padding: 3px 5px;
   text-transform: uppercase;
@@ -3441,10 +3469,14 @@ span.notification {
 
 .zxcvbn #passwordgroup .popover .fa-circle {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+=======
+  color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
   font-size: 0.35em !important;
   top: -4px;
   position: relative;
@@ -3895,10 +3927,14 @@ dl.confirm-details dd {
 
 .impact-link.active {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+=======
+  color: black;
+>>>>>>> parent of b546766... Fixed the radio buttons
   background-color: white;
   border: 1px solid;
 }
@@ -4421,10 +4457,14 @@ table.responsive tr.total {
 
 .done:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #232868;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #252b6b;
+=======
+  background: #232868;
+>>>>>>> parent of b546766... Fixed the radio buttons
   cursor: pointer;
 }
 
@@ -4663,10 +4703,14 @@ li.added + li {
 
 #finance-bingo a .data.fuschia:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #6d2066;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #702369;
+=======
+  background: #6d2066;
+>>>>>>> parent of b546766... Fixed the radio buttons
 }
 
 #finance-bingo a .data.orange {
@@ -4676,10 +4720,14 @@ li.added + li {
 
 #finance-bingo a .data.orange:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #b7592a;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #ba5c2d;
+=======
+  background: #b7592a;
+>>>>>>> parent of b546766... Fixed the radio buttons
 }
 
 #finance-bingo a .data.purple {
@@ -4689,10 +4737,14 @@ li.added + li {
 
 #finance-bingo a .data.purple:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #232868;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #252b6b;
+=======
+  background: #232868;
+>>>>>>> parent of b546766... Fixed the radio buttons
 }
 
 #finance-bingo a .data.fuscia {
@@ -4702,10 +4754,14 @@ li.added + li {
 
 #finance-bingo a .data.fuscia:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #6d2066;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #702369;
+=======
+  background: #6d2066;
+>>>>>>> parent of b546766... Fixed the radio buttons
 }
 
 #finance-bingo a .data.mauve {
@@ -4715,10 +4771,14 @@ li.added + li {
 
 #finance-bingo a .data.mauve:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #535683;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #565986;
+=======
+  background: #535683;
+>>>>>>> parent of b546766... Fixed the radio buttons
 }
 
 #finance-bingo a .data.pink {
@@ -4728,10 +4788,14 @@ li.added + li {
 
 #finance-bingo a .data.pink:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #a02a60;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #a32d63;
+=======
+  background: #a02a60;
+>>>>>>> parent of b546766... Fixed the radio buttons
 }
 
 #finance-bingo a .data.red {
@@ -4741,10 +4805,14 @@ li.added + li {
 
 #finance-bingo a .data.red:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   background: #a72427;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #aa272a;
+=======
+  background: #a72427;
+>>>>>>> parent of b546766... Fixed the radio buttons
 }
 
 #finance-bingo a .data span {
@@ -4764,6 +4832,7 @@ li.added + li {
   visibility: visible;
 }
 
+<<<<<<< HEAD
 * {
   box-sizing: border-box;
 }
@@ -5024,8 +5093,7 @@ li.added + li {
 .multiple-choice option:disabled {
   color: gray;
   background: red;
-}
-
+=======
 table.footable > tfoot > tr.footable-paging > td > ul.pagination {
   display: block;
 }
@@ -5073,9 +5141,10 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   top: 40px;
   position: relative;
   background: white;
-  color: #0b0c0c;
+  color: black;
   font-weight: 400;
   font-size: 19px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 }
@@ -5083,6 +5152,9 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
 .activity-dashboard .form-control {
   width: 100%;
 >>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
+=======
+>>>>>>> a1191368756c9bf618df80a9c13e17a566b06f8f
+>>>>>>> parent of b546766... Fixed the radio buttons
 }
 
 .elements-index .heading-medium {

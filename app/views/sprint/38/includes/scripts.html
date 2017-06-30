@@ -756,7 +756,7 @@ $(document).ready(function () {
         }
 
         
-        $("#sign-agreement form input").click(function (e) {
+        $("#sign-agreement form label").click(function (e) {
             var state = $('input[name=sign-org-group]:checked').val();
 
             if (state == "1") {
@@ -774,7 +774,7 @@ $(document).ready(function () {
             }
         });
 
-        $("#add-paye form input").click(function (e) {
+        $("#add-paye form label").click(function (e) {
             //e.preventDefault();  
             var state = $('input[name=add-paye-group]:checked').val();
 
@@ -787,7 +787,7 @@ $(document).ready(function () {
             }
         });
 
-        $("#add-org form input").click(function (e) {
+        $("#add-org form label").click(function (e) {
             var state = $("input[name=add-org-group]:checked").val();
 
             if (state === "1") {
@@ -800,7 +800,7 @@ $(document).ready(function () {
         });
 
 
-        $("#invite-users form").click(function (e) {
+        $("#invite-users form label").click(function (e) {
 
             var state = $("input[name=invite-users-group]:checked").val();
             console.log("state is " + state)

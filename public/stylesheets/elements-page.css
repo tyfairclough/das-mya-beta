@@ -2663,19 +2663,8 @@ a.menu-closed:before {
   margin-top: -4px;
 }
 
-a.menu-open:before {
-<<<<<<< HEAD
-=======
-  border-top-color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
-  border-top-color: #0b0c0c;
-}
-
 a.menu-closed:before {
-<<<<<<< HEAD
-=======
   border-left-color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   border-left-color: #0b0c0c;
   border-width: 4px 7px;
 }
@@ -2715,10 +2704,6 @@ nav.global-nav ul li a:focus {
 }
 
 nav.global-nav ul li.current a {
-<<<<<<< HEAD
-=======
-  color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
   text-decoration: none;
 }
@@ -2959,10 +2944,6 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 
 .html-publications-show .publication-content .govspeak h2, #whitehall-wrapper .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
-<<<<<<< HEAD
-=======
-  color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
   margin-top: 30px;
 }
@@ -2975,10 +2956,6 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 
 .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
-<<<<<<< HEAD
-=======
-  color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
   margin-top: 30px;
 }
@@ -3058,10 +3035,6 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
   }
   .html-publications-show .publication-content .govspeak h4, #whitehall-wrapper .html-publications-show .publication-content .govspeak h5, #whitehall-wrapper .html-publications-show .publication-content .govspeak h6 {
     font-weight: bold;
-<<<<<<< HEAD
-=======
-    color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
     color: #0b0c0c;
     margin-top: 30px;
   }
@@ -3183,10 +3156,6 @@ tr.total td {
 }
 
 .sprint-11 #checklist .statusToDo, .sprint-15 #checklist .statusToDo, .sprint-19 #checklist .statusToDo {
-<<<<<<< HEAD
-=======
-  background: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #0b0c0c;
   color: white;
   padding: 3px 5px;
@@ -3440,10 +3409,6 @@ span.notification {
 }
 
 .zxcvbn #passwordgroup .popover .fa-circle {
-<<<<<<< HEAD
-=======
-  color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
   font-size: 0.35em !important;
   top: -4px;
@@ -3894,10 +3859,6 @@ dl.confirm-details dd {
 }
 
 .impact-link.active {
-<<<<<<< HEAD
-=======
-  color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
   background-color: white;
   border: 1px solid;
@@ -4420,10 +4381,6 @@ table.responsive tr.total {
 }
 
 .done:hover {
-<<<<<<< HEAD
-=======
-  background: #232868;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #252b6b;
   cursor: pointer;
 }
@@ -4662,10 +4619,6 @@ li.added + li {
 }
 
 #finance-bingo a .data.fuschia:hover {
-<<<<<<< HEAD
-=======
-  background: #6d2066;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #702369;
 }
 
@@ -4675,10 +4628,6 @@ li.added + li {
 }
 
 #finance-bingo a .data.orange:hover {
-<<<<<<< HEAD
-=======
-  background: #b7592a;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #ba5c2d;
 }
 
@@ -4688,10 +4637,6 @@ li.added + li {
 }
 
 #finance-bingo a .data.purple:hover {
-<<<<<<< HEAD
-=======
-  background: #232868;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #252b6b;
 }
 
@@ -4701,10 +4646,6 @@ li.added + li {
 }
 
 #finance-bingo a .data.fuscia:hover {
-<<<<<<< HEAD
-=======
-  background: #6d2066;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #702369;
 }
 
@@ -4714,10 +4655,6 @@ li.added + li {
 }
 
 #finance-bingo a .data.mauve:hover {
-<<<<<<< HEAD
-=======
-  background: #535683;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #565986;
 }
 
@@ -4727,10 +4664,6 @@ li.added + li {
 }
 
 #finance-bingo a .data.pink:hover {
-<<<<<<< HEAD
-=======
-  background: #a02a60;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #a32d63;
 }
 
@@ -4740,10 +4673,6 @@ li.added + li {
 }
 
 #finance-bingo a .data.red:hover {
-<<<<<<< HEAD
-=======
-  background: #a72427;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #aa272a;
 }
 
@@ -5076,13 +5005,6 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   color: #0b0c0c;
   font-weight: 400;
   font-size: 19px;
-<<<<<<< HEAD
-=======
-}
-
-.activity-dashboard .form-control {
-  width: 100%;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
 }
 
 .elements-index .heading-medium {

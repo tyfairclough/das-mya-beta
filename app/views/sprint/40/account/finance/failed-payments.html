@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="failed-payments" id="content" role="main" tabindex="-1">
+
+<div class="hgroup">
+          <h2 class="heading-xlarge">
+Failed payments         </h2>
+    <p>Payments can fail if there's a mismatch between the data you submitted in your account and the data submitted directly to ESFA by your provider.</p>
+    </div>
+        
+
+
+            <div class="timeline">
+  <div class="entry payment">
+    <div class="title">
+      <span class="font-small">Today</span>
+    </div>
+    <div class="body">
+        <div class=""><span class="time">At  1:25pm</span></div>
+      <div>£5,000 for Anne Smith to Acme training ltd<br>Payment failed because Acme limited haven't submitted any details to ESFA<br>Contact Acme training ltd if you think this payment should've been made</div>
+  </div>
+  </div>
+                 <div class="entry team">
+    <div class="title">
+      <span class="font-small">Yesterday</span>
+    </div>
+    <div class="body">
+        <div class=""><span class="time">At  3:40pm</span></div>
+      <div>£4,000 for Aziz Anzari to Master training ltd<br>Payment failed because there's a data mismatch </div>
+            <a href="#">Make sure Aziz's details are correct</a>
+      </div>
+  </div>  
+  <div class="entry apprentice">
+    <div class="title">27 June 2018
+    </div>
+    <div class="body">
+        <div class=""><span class="time">At  3:34pm</span></div>
+        <div>£3,500 for Yuval Noah Harari to Sapiens training ltd<br>
+            Payment failed because there's a data mismatch <br>
+            <a href="#">Make sure Yuval's details are correct</a>
+        </div>
+    </div>
+  </div>
+                
+ <div class="entry team">
+    <div class="title">
+      <span class="font-small">26 June 2018</span>
+    </div>
+    <div class="body">
+        <div class=""><span class="time">At 1:25pm</span></div>
+      <div>£5,000 for Christian Riese Lassen to Dolphin training ltd<br>
+Payment failed because Acme limited haven't submitted any details to ESFA<br>
+Contact Dolphin training ltd if you think this payment should've been made</div>
+      </div>
+  </div>                  
+ <div class="entry team">
+    <div class="title">
+      <span class="font-small">&nbsp;</span>
+    </div>
+    <div class="body">
+        <div class=""><span class="time">At 1:25pm</span></div>
+      <div>£4,000 for Emeline Nsingi Nkosi to Acme training ltd<br>
+Payment failed because there's a data mismatch <br>
+<a href="#">Make sure Emeline's details are correct</a></div>
+      </div>
+  </div>   
+ <div class="entry team">
+    <div class="title">
+      <span class="font-small">&nbsp;</span>
+    </div>
+    <div class="body">
+        <div class=""><span class="time">At 1:25pm</span></div>
+      <div>£5,000 for Tim Sweeney to BIS training ltd<br>
+Payment failed because Acme limited haven't submitted any details to ESFA<br>
+Contact BIS training ltd if you think this payment should've been made</div>
+      </div>
+  </div>                   
+  <div class="entry start account">
+
+    <div class="body">
+    </div>
+  </div> 
+</div>
+
+
+</main><!-- / #content -->
+{% endblock %}

@@ -1,0 +1,850 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="d3linked" id="content" role="main" tabindex="-1">
+
+
+        <div class="hgroup">
+      <h1 class="heading-xlarge">
+d3 linked graphs for forecasting demo            </h1>
+
+
+<div id="linked_multi1">
+            
+</div>
+            
+<div id="linked_multi2">
+            
+</div>
+    </div>
+<div class="grid-row">
+        <div class="column-full-width">
+            <table class="results-table sticky-header">
+                <thead>
+
+
+
+
+                        <tr>
+                            <th colspan="3"></th>
+                            <th colspan="2" class="co-funding co-funding-banner">Co-investment</th>
+                            <th></th>
+                        </tr>
+
+                    <tr>
+                        <th>Date</th>
+                        <th class="financial">Levy credit</th>
+                        <th class="financial">Cost of training</th>
+                            <th class="financial co-funding co-funding-emp">Your share (10%)</th>
+                            <th class="financial co-funding co-funding-govt">Government share (90%)</th>
+                        <th class="financial">Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                        <tr>
+                            <td class="main-grid"> May 2017</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£14,373</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> June 2017</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£28,746</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> July 2017</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£43,119</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> August 2017</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£57,492</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> September 2017</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£45,465</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> October 2017</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£33,438</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> November 2017</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£21,411</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> December 2017</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£9,384</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> January 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£264</td>
+                                <td class="financial co-funding co-funding-govt">£2,379</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> February 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> March 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> April 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> May 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> June 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> July 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> August 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> September 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> October 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> November 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> December 2018</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> January 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> February 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £26,400
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£1,202</td>
+                                <td class="financial co-funding co-funding-govt">£10,825</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> March 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    £118,800
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">£10,442</td>
+                                <td class="financial co-funding co-funding-govt">£93,985</td>
+                            <td class="financial main-grid">
+                                <span>£0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> April 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£14,373</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> May 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£28,746</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> June 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£43,119</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> July 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£57,492</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> August 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£71,865</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> September 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£86,238</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> October 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£100,611</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> November 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£114,984</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> December 2019</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£129,357</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> January 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£143,730</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> February 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£158,103</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> March 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£172,476</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> April 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£186,849</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> May 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£201,222</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> June 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£215,595</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> July 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£229,968</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> August 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£244,341</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> September 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£258,714</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> October 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£273,087</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> November 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£287,460</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> December 2020</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£301,833</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> January 2021</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£316,206</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> February 2021</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£330,579</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> March 2021</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£344,952</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> April 2021</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£344,952</span>
+                                    <span class="sunset-funds">£14,373 expired</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="main-grid"> May 2021</td>
+                            <td class="financial main-grid">£14,373</td>
+                            <td class="financial main-grid training-column-full">
+                                <span>
+                                    -
+
+                                    
+                                </span>
+                            </td>
+                                <td class="financial co-funding co-funding-emp">-</td>
+                                <td class="financial co-funding co-funding-govt">-</td>
+                            <td class="financial main-grid">
+                                <span>£344,952</span>
+                                    <span class="sunset-funds">£14,373 expired</span>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main><!-- / #content -->
+{% endblock %}

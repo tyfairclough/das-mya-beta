@@ -2289,19 +2289,19 @@ a.menu-open:before {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   border-top-color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   border-top-color: #0b0c0c;
 }
 
 a.menu-closed:before {
+  border-left-color: black;
+  border-left-color: #0b0c0c;
 <<<<<<< HEAD
 =======
-  border-left-color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
-  border-left-color: #0b0c0c;
-=======
   border-top-color: black;
 }
 
@@ -2315,6 +2315,8 @@ a.menu-closed:before {
 a.menu-closed:before {
   border-left-color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
   border-width: 4px 7px;
 }
 
@@ -2351,16 +2353,21 @@ nav.global-nav ul li.current a {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
   text-decoration: none;
 }
 
@@ -2589,16 +2596,21 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
   margin-top: 30px;
 }
 
@@ -2613,16 +2625,21 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
   margin-top: 30px;
 }
 
@@ -2704,16 +2721,21 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
     color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
     color: #0b0c0c;
+<<<<<<< HEAD
 =======
     color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
     color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
     margin-top: 30px;
   }
   .html-publications-show .back-to-content {
@@ -2837,16 +2859,21 @@ tr.total td {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   background: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #0b0c0c;
+<<<<<<< HEAD
 =======
   background: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
   color: white;
   padding: 3px 5px;
   text-transform: uppercase;
@@ -3102,16 +3129,21 @@ span.notification {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
   font-size: 0.35em !important;
   top: -4px;
   position: relative;
@@ -3564,16 +3596,21 @@ dl.confirm-details dd {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   color: black;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   color: #0b0c0c;
+<<<<<<< HEAD
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   color: black;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
   background-color: white;
   border: 1px solid;
 }
@@ -4117,16 +4154,21 @@ table.responsive tr th.tw-70 {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   background: #232868;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #252b6b;
+<<<<<<< HEAD
 =======
   background: #232868;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #232868;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
   cursor: pointer;
 }
 
@@ -4367,16 +4409,21 @@ li.added + li {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   background: #6d2066;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #702369;
+<<<<<<< HEAD
 =======
   background: #6d2066;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #6d2066;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
 }
 
 #finance-bingo a .data.orange {
@@ -4388,16 +4435,21 @@ li.added + li {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   background: #b7592a;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #ba5c2d;
+<<<<<<< HEAD
 =======
   background: #b7592a;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #b7592a;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
 }
 
 #finance-bingo a .data.purple {
@@ -4409,16 +4461,21 @@ li.added + li {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   background: #232868;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #252b6b;
+<<<<<<< HEAD
 =======
   background: #232868;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #232868;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
 }
 
 #finance-bingo a .data.fuscia {
@@ -4430,16 +4487,21 @@ li.added + li {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   background: #6d2066;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #702369;
+<<<<<<< HEAD
 =======
   background: #6d2066;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #6d2066;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
 }
 
 #finance-bingo a .data.mauve {
@@ -4451,16 +4513,21 @@ li.added + li {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   background: #535683;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #565986;
+<<<<<<< HEAD
 =======
   background: #535683;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #535683;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
 }
 
 #finance-bingo a .data.pink {
@@ -4472,16 +4539,21 @@ li.added + li {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   background: #a02a60;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #a32d63;
+<<<<<<< HEAD
 =======
   background: #a02a60;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #a02a60;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
 }
 
 #finance-bingo a .data.red {
@@ -4493,16 +4565,21 @@ li.added + li {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fixedradios
   background: #a72427;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
   background: #aa272a;
+<<<<<<< HEAD
 =======
   background: #a72427;
 >>>>>>> parent of b546766... Fixed the radio buttons
 =======
   background: #a72427;
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
 }
 
 #finance-bingo a .data span {
@@ -4522,7 +4599,6 @@ li.added + li {
   visibility: visible;
 }
 
-<<<<<<< HEAD
 * {
   box-sizing: border-box;
 }
@@ -4783,7 +4859,8 @@ li.added + li {
 .multiple-choice option:disabled {
   color: gray;
   background: red;
-=======
+}
+
 table.footable > tfoot > tr.footable-paging > td > ul.pagination {
   display: block;
 }
@@ -4831,9 +4908,10 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   top: 40px;
   position: relative;
   background: white;
-  color: black;
+  color: #0b0c0c;
   font-weight: 400;
   font-size: 19px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4849,4 +4927,6 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
 =======
 >>>>>>> a1191368756c9bf618df80a9c13e17a566b06f8f
 >>>>>>> parent of b546766... Fixed the radio buttons
+=======
+>>>>>>> fixedradios
 }

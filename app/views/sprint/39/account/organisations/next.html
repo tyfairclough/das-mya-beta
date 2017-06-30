@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="organisations-next" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+        <div class="column-two-thirds">
+    <div id="notifications">
+        <div class="success-summary">
+            <h3 class="heading-medium"><span class="organisation-name">Acme Ltd</span> has been added</h3>
+            <p>An agreement needs to be signed for <span class="organisation-name bold-small">Acme Ltd</span> to spend funds.</p>
+        </div>
+    </div>
+      
+      </div>
+    </div>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+                  <div class="">
+          <h1 class="heading-medium">What next?</h1>
+          </div>
+        </div>
+    </div>
+  <div class="grid-row">
+
+      
+      <div class="column-two-thirds">
+
+             <form action="">
+            
+        <div class="form-group">
+
+
+      <label class="block-label" data-target="sign" for="sign">
+        <input id="sign" type="radio" name="next" value="sign">
+Sign an agreement to allow <span class="organisation-name">Acme Ltd</span> to spend funds
+            </label>
+
+      <label class="block-label" data-target="team" for="team">
+        <input id="team" type="radio" name="next" value="team">
+Check which team members can sign the agreement
+      </label>
+            
+            <label class="block-label" data-target="addorg" for="addorg">
+        <input id="addorg" type="radio" name="next" value="addorg">
+Add another organisation
+      </label>
+            
+      <label class="block-label" data-target="homepage" for="homepage">
+        <input id="homepage" type="radio" name="next" value="homepage">
+Go back to the homepage
+            </label>
+
+      </div>
+
+  
+      <a class="button" href="#" id="submit">Continue</a>
+      
+</form>
+           
+      </div></div>
+
+</main>
+{% endblock %}

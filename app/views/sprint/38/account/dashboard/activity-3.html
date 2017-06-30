@@ -1,0 +1,213 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="activity-dashboard" id="content" role="main" tabindex="-1">
+
+
+          <h2 class="heading-xlarge">
+Activity         </h2>
+    
+        
+
+
+    
+    <div class="grid-row">
+        <div class="column-one-third">
+            <br>
+            <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Search</h2>
+                    <div class="toggled-content">
+
+                  <div class="form-group">
+                            <label for="apprenticeshipKeyword" class="form-label sr-only">Keyword or job role</label>
+                            <input id="apprenticeshipKeyword" type="text" class="form-control" value="">
+                </div>
+                                              <button class="button">Submit</button>
+
+                    </div>
+                </fieldset>
+            
+            <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Type</h2>
+                    <div class="toggled-content">
+                        <div class="form-group">
+                                <legend for="ofsteadFilter" class="form-label sr-only">Type</legend>                            
+                            <div class="multiple-choice">
+                                <input id="ofstedFilter-1" type="checkbox" value="1">
+                                <label class="block-label" for="ofstedFilter-1">Payment failure</label>
+                            </div>
+                            <div class="multiple-choice">
+                                <input id="ofstedFilter-2" type="checkbox" value="2">
+                                <label class="block-label" for="ofstedFilter-2">Apprentice change</label>
+                            </div>
+                            <div class="multiple-choice">
+                                <input id="ofstedFilter-3" type="checkbox" value="3">
+                                <label class="block-label" for="ofstedFilter-3">Account change</label>
+                            </div>
+                            <div class="multiple-choice">
+                                <input id="ofstedFilter-4" type="checkbox" value="4">
+                                <label class="block-label" for="ofstedFilter-4">Team change</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>   
+            <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Team member</h2>
+                <div class="toggled-content">
+                        <div class="form-group">
+                            <label for="apprenticeshipName" class="form-label">Team member</label>
+                            <select id="apprenticeshipName" class="js-states form-control select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true">
+                                <option id="Accounting  level 2">Pete Kowalczyk</option>
+                                <option id="Accounting  level 2">Andy Samberg</option>
+                                <option id="Accounting  level 3">Ella Dabrowski</option>
+                            </select>
+                        </div>
+                </div>
+            </fieldset>
+            
+            <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Apprentice</h2>
+                <div class="toggled-content">
+                        <div class="form-group">
+                            <label for="apprenticeshipName" class="form-label">Apprentice</label>
+                            <select id="apprenticeshipName" class="js-states form-control select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true">
+                                <option id="Accounting  level 2">Suzane Kowalczyk</option>
+                                <option id="Accounting  level 2">Donna Summer</option>
+                                <option id="Accounting  level 3">Byron B. Urger</option>
+                            </select>
+                        </div>
+                </div>
+            </fieldset>
+            
+            
+            
+               <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Date range</h2>
+                <div class="toggled-content">
+                        <div class="form-group">
+                            <label>
+                            From
+                            <input placeholder="31/11/18" type="text" class="form-control" />
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                            To
+                            <input placeholder="31/12/18" type="text" class="form-control" />
+                            </label>
+                        </div>
+                   </div>
+            </fieldset>         
+            
+        </div>
+        <div class="column-two-thirds">
+            <div class="timeline">
+  <div class="entry">
+    <div class="title">
+      <span class="font-small">Today</span>
+    </div>
+    <div class="body">
+      <div>Failed payment: £5,000 for Anne Smith</div>
+        <div class="">At 15:34 - <a class="details"  href="#">Details</a></div>
+  </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+      <span class="font-small">Yesterday</span>
+    </div>
+    <div class="body">
+        <div>Outgoing payment made: £14,500 to Acme ltd</div>
+        <div class="">At 15:34 - <a class="details"  href="#">Details</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+        <span class="font-small">17 June 2018</span>                    
+    </div>
+    <div class="body">
+        <div>Tesco food ltd added to your account 	</div>
+        <div class="">At 15:34 by <a href="/sprint/{{sprint}}/account/team/index">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
+    </div>
+  </div>
+                <div class="entry">
+                </div>
+  <div class="entry">
+    <div class="title">
+                        <span class="font-small">15 June 2018</span>                    
+    </div>
+    <div class="body">
+      <div>Cohort updated</div>
+        <div class="">At 15:34 by <a href="/sprint/{{sprint}}/account/team/index">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
+      </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+    </div>
+    <div class="body">
+      <div>John Doe's details updated</div>
+        <div class="">At 15:34 by <a href="/sprint/{{sprint}}/account/team/index">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
+      </div>
+    </div>
+  <div class="entry">
+    <div class="title">
+    </div>
+    <div class="body">
+     <div>Clare Elmore's details updated</div>
+        <div class="">At 15:34 by <a href="/sprint/{{sprint}}/account/team/index">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
+      </div>
+    </div>
+  <div class="entry">
+    <div class="title">
+        <span class="font-small">13 June 2018</span>                    
+    </div>
+    <div class="body">
+        <div>Tesco logistics ltd added to your account 	</div>
+        <div class="">At 15:34 by <a href="/sprint/{{sprint}}/account/team/index">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
+    </div>
+  </div>         
+  <div class="entry">
+    <div class="title">
+        <span class="font-small">12 June 2018</span>                    
+    </div>
+    <div class="body">
+        <div>PAYE scheme DS43/XDL added to your account</div>
+        <div class="">At 15:34 by <a href="/sprint/{{sprint}}/account/team/index">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
+    </div>
+  </div>                 
+  <div class="entry">
+    <div class="title">
+    </div>
+    <div class="body">
+        <div>Tesco Plc added to your account	</div>
+        <div class="">At 15:34 by <a href="/sprint/{{sprint}}/account/team/index">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
+    </div>
+  </div>                
+  <div class="entry start">
+    <div class="title">
+    </div>
+    <div class="body">
+        <div>Account created 	</div>
+        <div class="">At 15:34 by <a href="/sprint/{{sprint}}/account/team/index">Pete Kowalczyk</a></div>
+    </div>
+  </div> 
+</div>
+
+</div>
+        </div>
+
+</main><!-- / #content -->
+{% endblock %}

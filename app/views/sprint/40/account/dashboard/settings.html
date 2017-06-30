@@ -35,18 +35,29 @@ Email changed         </h2>
  
     <h1 class="heading-xlarge organisation-namee">Settings</h1>
 
+    <div class="grid-row">
+        <div class="column-third">
+            <h2 class="heading-medium">This levy account</h2>
+            <ul class="list list-links">
+        <li><a href="/sprint/{{sprint}}/account/dashboard/activity-3.html">Activity</a></li>
+        <li><a href="/sprint/{{sprint}}/user/rename-account">Rename this levy account</a></li>
+        <li><a href="/account/team/index">Manage your team</a></li>
+    </ul>
     
-    <section class="text">
-                <div class="panel panel-filled">
-                    <h3 class="bold-medium">Help us improve this site</h3>
-                    <p><a href="https://www.surveymonkey.co.uk/r/2JPLQ9T" target="_blank">Take our 3 minute survey</a> so that we can improve the service.</p>
-                    <p><a href="https://www.surveymonkey.co.uk/r/2JPLQ9T" target="_blank" class="button">Take the survey <span class="vh">so that we can improve the service</span></a></p>
-                </div>
-            </section>
-
-
-
-
+        </div>
+        <div class="column-third">
+            <h2 class="heading-medium">Person Settings</h2>
+            <ul class="list list-links">
+        <li><a href="#">Your details</a></li>
+        <li><a href="/sprint/{{sprint}}/user/invitations/all">Your invitations</a></li>
+        <li><a href="/sprint/{{sprint}}/user/index">Access another levy account</a></li>
+        <li><a href="/sprint/{{sprint}}/user/reset-password">Change your password</a></li>
+        <li><a href="/sprint/{{sprint}}/user/change-email">Change your email</a></li>
+                <li><hr /></li>
+        <li><a href="/sprint/{{sprint}}/index">Sign out</a></li>
+    </ul>
+        </div>
+    </div>
 
 </main><!-- / #content -->
 {% endblock %}

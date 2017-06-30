@@ -2243,11 +2243,11 @@ a.menu-closed:before {
 }
 
 a.menu-open:before {
-  border-top-color: black;
+  border-top-color: #0b0c0c;
 }
 
 a.menu-closed:before {
-  border-left-color: black;
+  border-left-color: #0b0c0c;
   border-width: 4px 7px;
 }
 
@@ -2281,7 +2281,7 @@ nav.global-nav ul li a:focus {
 }
 
 nav.global-nav ul li.current a {
-  color: black;
+  color: #0b0c0c;
   text-decoration: none;
 }
 
@@ -2507,7 +2507,7 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 
 .html-publications-show .publication-content .govspeak h2, #whitehall-wrapper .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
-  color: black;
+  color: #0b0c0c;
   margin-top: 30px;
 }
 
@@ -2519,7 +2519,7 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 
 .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
-  color: black;
+  color: #0b0c0c;
   margin-top: 30px;
 }
 
@@ -2598,7 +2598,7 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
   }
   .html-publications-show .publication-content .govspeak h4, #whitehall-wrapper .html-publications-show .publication-content .govspeak h5, #whitehall-wrapper .html-publications-show .publication-content .govspeak h6 {
     font-weight: bold;
-    color: black;
+    color: #0b0c0c;
     margin-top: 30px;
   }
   .html-publications-show .back-to-content {
@@ -2719,7 +2719,7 @@ tr.total td {
 }
 
 .sprint-11 #checklist .statusToDo, .sprint-15 #checklist .statusToDo, .sprint-19 #checklist .statusToDo {
-  background: black;
+  background: #0b0c0c;
   color: white;
   padding: 3px 5px;
   text-transform: uppercase;
@@ -2972,7 +2972,7 @@ span.notification {
 }
 
 .zxcvbn #passwordgroup .popover .fa-circle {
-  color: black;
+  color: #0b0c0c;
   font-size: 0.35em !important;
   top: -4px;
   position: relative;
@@ -3422,7 +3422,7 @@ dl.confirm-details dd {
 }
 
 .impact-link.active {
-  color: black;
+  color: #0b0c0c;
   background-color: white;
   border: 1px solid;
 }
@@ -3963,7 +3963,7 @@ table.responsive tr th.tw-70 {
 }
 
 .done:hover {
-  background: #232868;
+  background: #252b6b;
   cursor: pointer;
 }
 
@@ -4201,7 +4201,7 @@ li.added + li {
 }
 
 #finance-bingo a .data.fuschia:hover {
-  background: #6d2066;
+  background: #702369;
 }
 
 #finance-bingo a .data.orange {
@@ -4210,7 +4210,7 @@ li.added + li {
 }
 
 #finance-bingo a .data.orange:hover {
-  background: #b7592a;
+  background: #ba5c2d;
 }
 
 #finance-bingo a .data.purple {
@@ -4219,7 +4219,7 @@ li.added + li {
 }
 
 #finance-bingo a .data.purple:hover {
-  background: #232868;
+  background: #252b6b;
 }
 
 #finance-bingo a .data.fuscia {
@@ -4228,7 +4228,7 @@ li.added + li {
 }
 
 #finance-bingo a .data.fuscia:hover {
-  background: #6d2066;
+  background: #702369;
 }
 
 #finance-bingo a .data.mauve {
@@ -4237,7 +4237,7 @@ li.added + li {
 }
 
 #finance-bingo a .data.mauve:hover {
-  background: #535683;
+  background: #565986;
 }
 
 #finance-bingo a .data.pink {
@@ -4246,7 +4246,7 @@ li.added + li {
 }
 
 #finance-bingo a .data.pink:hover {
-  background: #a02a60;
+  background: #a32d63;
 }
 
 #finance-bingo a .data.red {
@@ -4255,7 +4255,7 @@ li.added + li {
 }
 
 #finance-bingo a .data.red:hover {
-  background: #a72427;
+  background: #aa272a;
 }
 
 #finance-bingo a .data span {
@@ -4275,7 +4275,6 @@ li.added + li {
   visibility: visible;
 }
 
-<<<<<<< HEAD
 * {
   box-sizing: border-box;
 }
@@ -4457,7 +4456,8 @@ li.added + li {
 .multiple-choice option:disabled {
   color: gray;
   background: red;
-=======
+}
+
 table.footable > tfoot > tr.footable-paging > td > ul.pagination {
   display: block;
 }
@@ -4505,8 +4505,7 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   top: 40px;
   position: relative;
   background: white;
-  color: black;
+  color: #0b0c0c;
   font-weight: 400;
   font-size: 19px;
->>>>>>> a1191368756c9bf618df80a9c13e17a566b06f8f
 }

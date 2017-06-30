@@ -1,4 +1,4 @@
-// Phase banners
+// Phase banners and tags
 // ==========================================================================
 
 .phase-banner {
@@ -12,10 +12,6 @@
   @include phase-banner();
 }
 
-
-.phase-banner {
-    border-bottom: none;
-    .phase-tag {
-            background: $govuk-blue;
-    }
+.phase-tag {
+  @include phase-tag();
 }

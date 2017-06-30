@@ -123,8 +123,7 @@ nav#user-nav {
 		li.top-level {
 			> a {
 				text-decoration: none;
-				color: $black
-				color: $#0b0c0c
+				color: #0b0c0c
 			}
 			&.open {
 				ul li.selected a {
@@ -134,8 +133,7 @@ nav#user-nav {
 					background-position: 0px 14px;
 					background-size: 15px;
 					text-decoration: none;
-					color: $black;
-					color: $#0b0c0c;
+					color: #0b0c0c;
 					margin-left: $nav-padding * 1;
 				}	
 			}
@@ -217,12 +215,10 @@ a.menu-closed {
 }
 
 a.menu-open:before {
-	border-top-color: black;
 	border-top-color: #0b0c0c;
 }
 
 a.menu-closed:before {
-	border-left-color: black;
 	border-left-color: #0b0c0c;
 	border-width: 4px 7px;
 }
@@ -254,7 +250,6 @@ nav.global-nav {
             }
             &.current {
                 a {
-                    color: black;
                     color: #0b0c0c;
                     text-decoration:none;
                     &:after {
@@ -488,7 +483,6 @@ nav.global-nav ul {
 
 .html-publications-show .publication-content .govspeak h2, #whitehall-wrapper .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
-  color: black;
   color: #0b0c0c;
   margin-top: 30px;
 }
@@ -501,7 +495,6 @@ nav.global-nav ul {
 
 .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
-  color: black;
   color: #0b0c0c;
   margin-top: 30px;
 }
@@ -581,7 +574,6 @@ nav.global-nav ul {
   }
   .html-publications-show .publication-content .govspeak h4, #whitehall-wrapper .html-publications-show .publication-content .govspeak h5, #whitehall-wrapper .html-publications-show .publication-content .govspeak h6 {
     font-weight: bold;
-    color: black;
     color: #0b0c0c;
     margin-top: 30px;
   }
@@ -717,7 +709,6 @@ tr.total td {
     
     #checklist {
         .statusToDo {
-            background: black;
             background: #0b0c0c;
             color: white;
             padding: 3px 5px;
@@ -967,7 +958,6 @@ span.notification {
                 margin: 0 auto;
             }
             .fa-circle {
-                color: black;
                 color: #0b0c0c;
                 font-size: 0.35em !important;
                 top: -4px;
@@ -1446,7 +1436,6 @@ dl.confirm-details {
 }
 
 .impact-link.active {
-  color: black;
   color: #0b0c0c;
   background-color: white;
   border: 1px solid;
@@ -1921,7 +1910,6 @@ table.responsive {
     margin: 0;
     position: relative;
     &:hover {
-        background: mix(black,$purple,25%);
         background: mix(#0b0c0c,$purple,25%);
         cursor: pointer;
     }
@@ -2145,7 +2133,6 @@ li.added + li {
             background: $fuschia;
             color: $white;
             &:hover {
-                background: mix(black,$fuschia,25);
                 background: mix(#0b0c0c,$fuschia,25);
             }
         }
@@ -2153,7 +2140,6 @@ li.added + li {
             background: $orange;
             color: $white;
             &:hover {
-                background: mix(black,$orange,25);
                 background: mix(#0b0c0c,$orange,25);
             }
         }
@@ -2161,7 +2147,6 @@ li.added + li {
             background: $purple;
             color: $white;
             &:hover {
-                background: mix(black,$purple,25);
                 background: mix(#0b0c0c,$purple,25);
             }
         }
@@ -2169,7 +2154,6 @@ li.added + li {
             background: $fuschia;
             color: $white;
             &:hover {
-                background: mix(black,$fuschia,25);
                 background: mix(#0b0c0c,$fuschia,25);
             }
         }
@@ -2177,7 +2161,6 @@ li.added + li {
             background: $mauve;
             color: $white;
             &:hover {
-                background: mix(black,$mauve,25);
                 background: mix(#0b0c0c,$mauve,25);
             }
         }
@@ -2185,7 +2168,6 @@ li.added + li {
             background: $pink;
             color: $white;
             &:hover {
-                background: mix(black,$pink,25);
                 background: mix(#0b0c0c,$pink,25);
             }
         }
@@ -2193,7 +2175,6 @@ li.added + li {
             background: $mellow-red;
             color: $white;
             &:hover {
-                background: mix(black,$mellow-red,25);
                 background: mix(#0b0c0c,$mellow-red,25);
             }
         }
@@ -2395,6 +2376,7 @@ $dot-diameter: 8px;
     color: gray;
     background: red;
 }
+
 // footable updates for gds styling
 table.footable>tfoot>tr.footable-paging>td>ul.pagination {
     display: block;
@@ -2442,4 +2424,3 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
     font-weight: 400;
     font-size: 19px;
 }
->>>>>>> a1191368756c9bf618df80a9c13e17a566b06f8f

@@ -1,0 +1,157 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="manage-apprentices" id="content" role="main" tabindex="-1">
+    
+        <div class="hgroup">
+            <h1 class="heading-xlarge">Manage your apprentices</h1>
+        </div>
+            
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <table id="example" class="" cellspacing="0" width="100%">
+           <thead>
+              <tr>
+                 <th></th>
+                 <th>Name</th>
+                 <th>Date of birth</th>
+                 <th>Status</th>
+                 <th>Alerts</th>
+                 <th></th>
+              </tr>
+           </thead>
+           <tfoot class="hidden">
+              <tr>
+                 <th></th>
+                 <th>Name</th>
+                 <th>Date of birth</th>
+                 <th>Status</th>
+                 <th>Alerts</th>
+                 <th></th>
+              </tr>
+           </tfoot>
+        </table>
+        
+    </div>
+    
+    <div class="column-third pull-left">
+<fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Search</h2>
+                    <div class="toggled-content">
+                        <div class="form-group">
+                            <input id="providerLocation" type="text" class="form-control" value="">
+                        </div>
+                    </div>
+                </fieldset>    
+        
+
+    <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Status</h2>
+                    <div class="toggled-content">
+                        
+                       
+                        <div class="form-group">
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Live</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Waiting to start</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Paused</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Stopped</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Finished</label>
+                        </div>
+                       </div>                            
+                    </div>
+                </fieldset> 
+
+    <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Alerts</h2>
+                    <div class="toggled-content">
+                        
+                       
+                        <div class="form-group">
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">No action needed</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Changes pending</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Payment failed</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">End-point assessor review needed</label>
+                        </div>
+                       </div>                            
+                    </div>
+                </fieldset>  
+    <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Apprenticeship training courses</h2>
+                    <div class="toggled-content">
+                        
+                       
+                        <div class="form-group">
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Mechatronics engineers</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Manufacturing engineers</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Survival equipment fitter</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Network engineer</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Cyber intrusion analyst</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Cyber security technologist</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Embedded Electronic Systems Design and Development Engineer</label>
+                        </div>
+                       </div>                            
+                    </div>
+                </fieldset>         
+    </div>
+</div>
+    
+</main>
+{% endblock %}

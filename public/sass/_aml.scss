@@ -124,17 +124,6 @@ nav#user-nav {
 			> a {
 				text-decoration: none;
 				color: $black
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-				color: $#0b0c0c
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-				color: $#0b0c0c
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
 			}
 			&.open {
 				ul li.selected a {
@@ -145,17 +134,6 @@ nav#user-nav {
 					background-size: 15px;
 					text-decoration: none;
 					color: $black;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-					color: $#0b0c0c;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-					color: $#0b0c0c;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
 					margin-left: $nav-padding * 1;
 				}	
 			}
@@ -2557,21 +2535,53 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
     font-weight: 400;
     font-size: 19px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
-.activity-dashboard {
-    .form-control {
-        width: 100%
+#content.manage-apprentices {
+    table.dataTable, table.dataTable th, table.dataTable td {
+        font-size: 16px;
     }
 }
-=======
->>>>>>> a1191368756c9bf618df80a9c13e17a566b06f8f
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> a1191368756c9bf618df80a9c13e17a566b06f8f
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
+
+#content.manage-apprentices.full-width {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    header {
+        background: $grey-3;
+        border-bottom: 1px solid $grey-2;
+        padding: 15px;
+        overflow: auto;
+    }
+    nav {
+        border-bottom: 1px solid $grey-2;
+        padding: 10px;
+        overflow: auto;
+        ul {
+            list-style-type: none;
+            li {
+                display: inline-block;
+                float: left;
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+    article {
+        table {
+            
+            th a, a {
+                text-decoration: none;
+            }
+            
+            .fa-check, .fa-check + span {
+                color: $green;
+            }
+            .fa-pause, .fa-pause + span {
+                color: $orange;
+            }
+            .fa-stop, .fa-stop + span {
+                color: $red;
+            }
+        }
+    }
+}

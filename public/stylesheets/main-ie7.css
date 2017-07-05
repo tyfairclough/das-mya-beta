@@ -2286,13 +2286,6 @@ a.menu-closed:before {
 }
 
 a.menu-open:before {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   border-top-color: black;
   border-top-color: #0b0c0c;
 }
@@ -2300,23 +2293,6 @@ a.menu-open:before {
 a.menu-closed:before {
   border-left-color: black;
   border-left-color: #0b0c0c;
-<<<<<<< HEAD
-=======
-  border-top-color: black;
-}
-
-a.menu-closed:before {
-  border-left-color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  border-top-color: black;
-}
-
-a.menu-closed:before {
-  border-left-color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
   border-width: 4px 7px;
 }
 
@@ -2350,24 +2326,8 @@ nav.global-nav ul li a:focus {
 }
 
 nav.global-nav ul li.current a {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   color: black;
   color: #0b0c0c;
-<<<<<<< HEAD
-=======
-  color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
   text-decoration: none;
 }
 
@@ -2593,24 +2553,8 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 
 .html-publications-show .publication-content .govspeak h2, #whitehall-wrapper .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   color: black;
   color: #0b0c0c;
-<<<<<<< HEAD
-=======
-  color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
   margin-top: 30px;
 }
 
@@ -2622,24 +2566,8 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 
 .html-publications-show .publication-content .govspeak h3 {
   font-weight: bold;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   color: black;
   color: #0b0c0c;
-<<<<<<< HEAD
-=======
-  color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
   margin-top: 30px;
 }
 
@@ -2718,24 +2646,8 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
   }
   .html-publications-show .publication-content .govspeak h4, #whitehall-wrapper .html-publications-show .publication-content .govspeak h5, #whitehall-wrapper .html-publications-show .publication-content .govspeak h6 {
     font-weight: bold;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
     color: black;
     color: #0b0c0c;
-<<<<<<< HEAD
-=======
-    color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-    color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
     margin-top: 30px;
   }
   .html-publications-show .back-to-content {
@@ -2856,24 +2768,8 @@ tr.total td {
 }
 
 .sprint-11 #checklist .statusToDo, .sprint-15 #checklist .statusToDo, .sprint-19 #checklist .statusToDo {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   background: black;
   background: #0b0c0c;
-<<<<<<< HEAD
-=======
-  background: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  background: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
   color: white;
   padding: 3px 5px;
   text-transform: uppercase;
@@ -3126,24 +3022,8 @@ span.notification {
 }
 
 .zxcvbn #passwordgroup .popover .fa-circle {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   color: black;
   color: #0b0c0c;
-<<<<<<< HEAD
-=======
-  color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
   font-size: 0.35em !important;
   top: -4px;
   position: relative;
@@ -3593,24 +3473,8 @@ dl.confirm-details dd {
 }
 
 .impact-link.active {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   color: black;
   color: #0b0c0c;
-<<<<<<< HEAD
-=======
-  color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  color: black;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
   background-color: white;
   border: 1px solid;
 }
@@ -4151,24 +4015,8 @@ table.responsive tr th.tw-70 {
 }
 
 .done:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   background: #232868;
   background: #252b6b;
-<<<<<<< HEAD
-=======
-  background: #232868;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  background: #232868;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
   cursor: pointer;
 }
 
@@ -4406,24 +4254,8 @@ li.added + li {
 }
 
 #finance-bingo a .data.fuschia:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   background: #6d2066;
   background: #702369;
-<<<<<<< HEAD
-=======
-  background: #6d2066;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  background: #6d2066;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
 }
 
 #finance-bingo a .data.orange {
@@ -4432,24 +4264,8 @@ li.added + li {
 }
 
 #finance-bingo a .data.orange:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   background: #b7592a;
   background: #ba5c2d;
-<<<<<<< HEAD
-=======
-  background: #b7592a;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  background: #b7592a;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
 }
 
 #finance-bingo a .data.purple {
@@ -4458,24 +4274,8 @@ li.added + li {
 }
 
 #finance-bingo a .data.purple:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   background: #232868;
   background: #252b6b;
-<<<<<<< HEAD
-=======
-  background: #232868;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  background: #232868;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
 }
 
 #finance-bingo a .data.fuscia {
@@ -4484,24 +4284,8 @@ li.added + li {
 }
 
 #finance-bingo a .data.fuscia:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   background: #6d2066;
   background: #702369;
-<<<<<<< HEAD
-=======
-  background: #6d2066;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  background: #6d2066;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
 }
 
 #finance-bingo a .data.mauve {
@@ -4510,24 +4294,8 @@ li.added + li {
 }
 
 #finance-bingo a .data.mauve:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   background: #535683;
   background: #565986;
-<<<<<<< HEAD
-=======
-  background: #535683;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  background: #535683;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
 }
 
 #finance-bingo a .data.pink {
@@ -4536,24 +4304,8 @@ li.added + li {
 }
 
 #finance-bingo a .data.pink:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   background: #a02a60;
   background: #a32d63;
-<<<<<<< HEAD
-=======
-  background: #a02a60;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  background: #a02a60;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
 }
 
 #finance-bingo a .data.red {
@@ -4562,24 +4314,8 @@ li.added + li {
 }
 
 #finance-bingo a .data.red:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fixedradios
   background: #a72427;
   background: #aa272a;
-<<<<<<< HEAD
-=======
-  background: #a72427;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
-  background: #a72427;
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
 }
 
 #finance-bingo a .data span {
@@ -4911,22 +4647,53 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   color: #0b0c0c;
   font-weight: 400;
   font-size: 19px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 }
 
-.activity-dashboard .form-control {
+#content.manage-apprentices table.dataTable, .manage-apprentices.header-inner table.dataTable, #content.manage-apprentices table.dataTable th, .manage-apprentices.header-inner table.dataTable th, #content.manage-apprentices table.dataTable td, .manage-apprentices.header-inner table.dataTable td {
+  font-size: 16px;
+}
+
+#content.manage-apprentices.full-width, .manage-apprentices.full-width.header-inner {
   width: 100%;
->>>>>>> eb4ac137b0dbb94f6c657d1bae169ebc836b04a3
-=======
->>>>>>> a1191368756c9bf618df80a9c13e17a566b06f8f
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> a1191368756c9bf618df80a9c13e17a566b06f8f
->>>>>>> parent of b546766... Fixed the radio buttons
-=======
->>>>>>> fixedradios
+  max-width: 100%;
+  margin: 0;
+}
+
+#content.manage-apprentices.full-width header, .manage-apprentices.full-width.header-inner header {
+  background: #dee0e2;
+  border-bottom: 1px solid #bfc1c3;
+  padding: 15px;
+  overflow: auto;
+}
+
+#content.manage-apprentices.full-width nav, .manage-apprentices.full-width.header-inner nav {
+  border-bottom: 1px solid #bfc1c3;
+  padding: 10px;
+  overflow: auto;
+}
+
+#content.manage-apprentices.full-width nav ul, .manage-apprentices.full-width.header-inner nav ul {
+  list-style-type: none;
+}
+
+#content.manage-apprentices.full-width nav ul li, .manage-apprentices.full-width.header-inner nav ul li {
+  display: inline-block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+#content.manage-apprentices.full-width article table th a, .manage-apprentices.full-width.header-inner article table th a, #content.manage-apprentices.full-width article table a, .manage-apprentices.full-width.header-inner article table a {
+  text-decoration: none;
+}
+
+#content.manage-apprentices.full-width article table .fa-check, .manage-apprentices.full-width.header-inner article table .fa-check, #content.manage-apprentices.full-width article table .fa-check + span, .manage-apprentices.full-width.header-inner article table .fa-check + span {
+  color: #006435;
+}
+
+#content.manage-apprentices.full-width article table .fa-pause, .manage-apprentices.full-width.header-inner article table .fa-pause, #content.manage-apprentices.full-width article table .fa-pause + span, .manage-apprentices.full-width.header-inner article table .fa-pause + span {
+  color: #f47738;
+}
+
+#content.manage-apprentices.full-width article table .fa-stop, .manage-apprentices.full-width.header-inner article table .fa-stop, #content.manage-apprentices.full-width article table .fa-stop + span, .manage-apprentices.full-width.header-inner article table .fa-stop + span {
+  color: #b10e1e;
 }

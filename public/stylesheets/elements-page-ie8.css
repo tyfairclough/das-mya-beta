@@ -4606,6 +4606,55 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   font-size: 19px;
 }
 
+#content.manage-apprentices table.dataTable, .manage-apprentices.header-inner table.dataTable, #content.manage-apprentices table.dataTable th, .manage-apprentices.header-inner table.dataTable th, #content.manage-apprentices table.dataTable td, .manage-apprentices.header-inner table.dataTable td {
+  font-size: 16px;
+}
+
+#content.manage-apprentices.full-width, .manage-apprentices.full-width.header-inner {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+#content.manage-apprentices.full-width header, .manage-apprentices.full-width.header-inner header {
+  background: #dee0e2;
+  border-bottom: 1px solid #bfc1c3;
+  padding: 15px;
+  overflow: auto;
+}
+
+#content.manage-apprentices.full-width nav, .manage-apprentices.full-width.header-inner nav {
+  border-bottom: 1px solid #bfc1c3;
+  padding: 10px;
+  overflow: auto;
+}
+
+#content.manage-apprentices.full-width nav ul, .manage-apprentices.full-width.header-inner nav ul {
+  list-style-type: none;
+}
+
+#content.manage-apprentices.full-width nav ul li, .manage-apprentices.full-width.header-inner nav ul li {
+  display: inline-block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+#content.manage-apprentices.full-width article table th a, .manage-apprentices.full-width.header-inner article table th a, #content.manage-apprentices.full-width article table a, .manage-apprentices.full-width.header-inner article table a {
+  text-decoration: none;
+}
+
+#content.manage-apprentices.full-width article table .fa-check, .manage-apprentices.full-width.header-inner article table .fa-check, #content.manage-apprentices.full-width article table .fa-check + span, .manage-apprentices.full-width.header-inner article table .fa-check + span {
+  color: #006435;
+}
+
+#content.manage-apprentices.full-width article table .fa-pause, .manage-apprentices.full-width.header-inner article table .fa-pause, #content.manage-apprentices.full-width article table .fa-pause + span, .manage-apprentices.full-width.header-inner article table .fa-pause + span {
+  color: #f47738;
+}
+
+#content.manage-apprentices.full-width article table .fa-stop, .manage-apprentices.full-width.header-inner article table .fa-stop, #content.manage-apprentices.full-width article table .fa-stop + span, .manage-apprentices.full-width.header-inner article table .fa-stop + span {
+  color: #b10e1e;
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

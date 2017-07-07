@@ -4702,3 +4702,7 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
 #content.manage-apprentices.full-width article table .fa-stop, .manage-apprentices.full-width.header-inner article table .fa-stop, #content.manage-apprentices.full-width article table .fa-stop + span, .manage-apprentices.full-width.header-inner article table .fa-stop + span {
   color: #b10e1e;
 }
+
+#activityFilters input[type="text"], #activityFilters select {
+  width: 100%;
+}

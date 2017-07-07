@@ -27,13 +27,42 @@ Activity         </h2>
 
     
     <div class="grid-row">
-        <div class="column-one-third">
+        <div class="column-one-third" id="activityFilters">
             <h3 class="bold-medium">Filters</h3><br>
  
             
                <fieldset class="filters filters-accordion">
+                   
                     <h2 class="toggler heading-small">Date range</h2>
                 <div class="toggled-content">
+                    
+                <form class="" id="date-range">
+                              <div action="#">
+                                <fieldset>
+
+                                    <div class="multiple-choice">
+                                    <input id="1-month" type="radio" name="date-choice" value="1" checked>
+                                  <label class="" for="1-month">
+                                      1 month
+                                  </label>
+                                    </div>
+                                    <div class="multiple-choice">                                    
+                                    <input id="3-months" type="radio" name="date-choice" value="3">
+                                  <label class=" " for="3-months">
+                                      3 months
+                                  </label>
+                                    </div>
+                                    <div class="multiple-choice">
+                                        <input id="custom-date" type="radio" name="date-choice" value="custom">
+                                        <label for="date-choice">
+                                            Custom date range
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                </form>
+                    
+                    <div class="hidden" id="custom-range">
                         <div class="form-group">
                             <label>
                             From
@@ -47,62 +76,8 @@ Activity         </h2>
                             </label>
                         </div>
                    </div>
+                </div>
             </fieldset>  
-            
-            
-            <fieldset class="filters filters-accordion">
-                    <h2 class="toggler heading-small">Type</h2>
-                    <div class="toggled-content">
-                        <div class="form-group">
-                                <legend for="ofsteadFilter" class="form-label sr-only">Type</legend>                            
-                            <div class="multiple-choice">
-                                <input id="ofstedFilter-1" type="checkbox" value="1">
-                                <label class="block-label" for="ofstedFilter-1">Payments</label>
-                            </div>
-                            <div class="multiple-choice">
-                                <input id="ofstedFilter-2" type="checkbox" value="2">
-                                <label class="block-label" for="ofstedFilter-2">Apprentice</label>
-                            </div>
-                            <div class="multiple-choice">
-                                <input id="ofstedFilter-3" type="checkbox" value="3">
-                                <label class="block-label" for="ofstedFilter-3">Account</label>
-                            </div>
-                            <div class="multiple-choice">
-                                <input id="ofstedFilter-4" type="checkbox" value="4">
-                                <label class="block-label" for="ofstedFilter-4">Team</label>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>   
-            <fieldset class="filters filters-accordion">
-                    <h2 class="toggler heading-small">Team member</h2>
-                <div class="toggled-content">
-                        <div class="form-group">
-                            <label for="apprenticeshipName" class="form-label">Team member</label>
-                            <select id="apprenticeshipName" class="js-states form-control select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true">
-                                <option id="Accounting  level 2">Pete Kowalczyk</option>
-                                <option id="Accounting  level 2">Andy Samberg</option>
-                                <option id="Accounting  level 3">Ella Dabrowski</option>
-                            </select>
-                        </div>
-                </div>
-            </fieldset>
-            
-            <fieldset class="filters filters-accordion">
-                    <h2 class="toggler heading-small">Apprentice</h2>
-                <div class="toggled-content">
-                        <div class="form-group">
-                            <label for="apprenticeshipName" class="form-label">Apprentice</label>
-                            <select id="apprenticeshipName" class="js-states form-control select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true">
-                                <option id="Accounting  level 2">Suzane Kowalczyk</option>
-                                <option id="Accounting  level 2">Donna Summer</option>
-                                <option id="Accounting  level 3">Byron B. Urger</option>
-                            </select>
-                        </div>
-                </div>
-            </fieldset>
-            
-           
             
             <fieldset class="filters filters-accordion">
                     <h2 class="toggler heading-small">Keyword search</h2>
@@ -112,15 +87,701 @@ Activity         </h2>
                             <label for="apprenticeshipKeyword" class="form-label sr-only">Keyword or job role</label>
                             <input id="apprenticeshipKeyword" type="text" class="form-control" value="">
                 </div>
+                        <a class="button">Submit</a>
 
                     </div>
                 </fieldset>
-                                                          <button class="button">Update timeilne</button>
+            
+            
+            <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Type</h2>
+                    <div class="toggled-content">
+                        <div class="form-group">
+                                <legend for="activityType" class="form-label sr-only">Type</legend>                            
+                   <div class="multiple-choice">
+                                <input id="apprentice" type="radio" value="apprentice" name="activityType">
+                                <label class="" for="apprentice">Apprentice</label>
+                            </div>
+                            <div class="multiple-choice">
+                                <input id="payment" type="radio" value="payment" name="activityType">
+                                <label class="" for="payment">Payments</label>
+                            </div>
+         
+                            <div class="multiple-choice">
+                                <input id="service" type="radio" value="service" name="activityType">
+                                <label class="" for="service">Service changes</label>
+                            </div>
+                            <div class="multiple-choice">
+                                <input id="team" type="radio" value="team" name="activityType">
+                                <label class="" for="team">Team member</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>   
+
+            
+            <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">More filters</h2>
+                <div class="toggled-content">
+                        <div class="form-group">
+                            <label for="apprenitceName" class="form-label">Apprentice</label>
+<select name="apprenticeName" id="apprenticeName" multiple>
+<option value="Brian Coblenz">Brian Coblenz</option>
+<option value="Gale Proga">Gale Proga</option>
+<option value="Law Mattson">Law Mattson</option>
+<option value="Ailene Violette">Ailene Violette</option>
+<option value="Skye Romano">Skye Romano</option>
+<option value="Tamara Angel">Tamara Angel</option>
+<option value="Patty Sadeghpour">Patty Sadeghpour</option>
+<option value="Jillana Horlacher">Jillana Horlacher</option>
+<option value="Quincey Maybury-lewis">Quincey Maybury-lewis</option>
+<option value="Tory Mccullough">Tory Mccullough</option>
+<option value="Keir Binder">Keir Binder</option>
+<option value="Selma Kretschmer">Selma Kretschmer</option>
+<option value="Erny Coletti">Erny Coletti</option>
+<option value="Beatrix Pridham">Beatrix Pridham</option>
+<option value="Nikolas Steiner">Nikolas Steiner</option>
+<option value="Arlee Huggan">Arlee Huggan</option>
+<option value="Sterling Oatis-skinner">Sterling Oatis-skinner</option>
+<option value="Jillene Adamson">Jillene Adamson</option>
+<option value="Gaylor Descartes">Gaylor Descartes</option>
+<option value="Geneva Wald">Geneva Wald</option>
+<option value="Barclay Wooster">Barclay Wooster</option>
+<option value="Matilde Macinnis">Matilde Macinnis</option>
+<option value="Reilly Jorgensen">Reilly Jorgensen</option>
+<option value="Cornie Bader">Cornie Bader</option>
+<option value="Piotr Kyrou">Piotr Kyrou</option>
+<option value="Filide Castaneda">Filide Castaneda</option>
+<option value="Morgun Violette">Morgun Violette</option>
+<option value="Priscilla Byers">Priscilla Byers</option>
+<option value="Osgood Horlacher">Osgood Horlacher</option>
+<option value="Evvy Gaer">Evvy Gaer</option>
+<option value="Petey Kretschmer">Petey Kretschmer</option>
+<option value="Kristal Konishi">Kristal Konishi</option>
+<option value="Janos Huggan">Janos Huggan</option>
+<option value="Marketa Perry">Marketa Perry</option>
+<option value="Thurstan Wald">Thurstan Wald</option>
+<option value="Friederike Hung">Friederike Hung</option>
+<option value="Rock Bader">Rock Bader</option>
+<option value="Emmeline Holter">Emmeline Holter</option>
+<option value="Fidel Byers">Fidel Byers</option>
+<option value="Gerda Lesage">Gerda Lesage</option>
+<option value="Whitney Konishi">Whitney Konishi</option>
+<option value="Eileen Stephen">Eileen Stephen</option>
+<option value="Salvador Hung">Salvador Hung</option>
+<option value="Dix Tavilla">Dix Tavilla</option>
+<option value="Rosco Lesage">Rosco Lesage</option>
+<option value="Laetitia Shearer">Laetitia Shearer</option>
+<option value="Rickie Tavilla">Rickie Tavilla</option>
+<option value="Codee Breyfogle">Codee Breyfogle</option>
+<option value="Olenolin Breyfogle">Olenolin Breyfogle</option>
+<option value="Bax Gwyn">Bax Gwyn</option>
+<option value="Aubrie Lambert">Aubrie Lambert</option>
+<option value="Kasper Moy">Kasper Moy</option>
+<option value="Gloriane Callow">Gloriane Callow</option>
+<option value="Leonidas Quill">Leonidas Quill</option>
+<option value="Evonne Wellington">Evonne Wellington</option>
+<option value="Trevor Twombly">Trevor Twombly</option>
+<option value="Blanche Perrault">Blanche Perrault</option>
+<option value="Kennith Youngman">Kennith Youngman</option>
+<option value="Anissa Senn">Anissa Senn</option>
+<option value="Adolpho Serrano">Adolpho Serrano</option>
+<option value="Bertina Maxwell">Bertina Maxwell</option>
+<option value="Nicky Marais">Nicky Marais</option>
+<option value="Vinita Marlink">Vinita Marlink</option>
+<option value="Etienne Crews">Etienne Crews</option>
+<option value="Sarah Hussey">Sarah Hussey</option>
+<option value="Jordan Van gieson">Jordan Van gieson</option>
+<option value="Isabel Renjel">Isabel Renjel</option>
+<option value="Fredric Zimmerli">Fredric Zimmerli</option>
+<option value="Carlynn Gombosi">Carlynn Gombosi</option>
+<option value="Tobin Maestas">Tobin Maestas</option>
+<option value="Cybill Falchuk">Cybill Falchuk</option>
+<option value="Igor Moustaid">Igor Moustaid</option>
+<option value="Nanni Abelmann">Nanni Abelmann</option>
+<option value="Teodor Hanan">Teodor Hanan</option>
+<option value="Sharity Ham">Sharity Ham</option>
+<option value="Tedd Callow">Tedd Callow</option>
+<option value="Murial Dunbar">Murial Dunbar</option>
+<option value="Peter Perrault">Peter Perrault</option>
+<option value="Carroll Phillip">Carroll Phillip</option>
+<option value="Halsy Maxwell">Halsy Maxwell</option>
+<option value="Cherin Gisselbrecht">Cherin Gisselbrecht</option>
+<option value="Lowrance Hussey">Lowrance Hussey</option>
+<option value="Virginia Ek">Virginia Ek</option>
+<option value="Shannan Gombosi">Shannan Gombosi</option>
+<option value="Minnie Boorstin">Minnie Boorstin</option>
+<option value="Wolfie Abelmann">Wolfie Abelmann</option>
+<option value="Cathi Millett">Cathi Millett</option>
+<option value="Niels Dunbar">Niels Dunbar</option>
+<option value="Sibilla Sexsmith">Sibilla Sexsmith</option>
+<option value="Walton Gisselbrecht">Walton Gisselbrecht</option>
+<option value="Leland Casserres">Leland Casserres</option>
+<option value="Rem Boorstin">Rem Boorstin</option>
+<option value="Janean Mark">Janean Mark</option>
+<option value="Mychal Sexsmith">Mychal Sexsmith</option>
+<option value="Anastasie Laiou">Anastasie Laiou</option>
+<option value="Clerc Mark">Clerc Mark</option>
+<option value="Maryl Schrauwen">Maryl Schrauwen</option>
+<option value="Iorgos Schrauwen">Iorgos Schrauwen</option>
+<option value="Boris Keillor">Boris Keillor</option>
+<option value="Gerrilee Bisi">Gerrilee Bisi</option>
+<option value="Reinwald Mcelheny">Reinwald Mcelheny</option>
+<option value="Joye Sivaraja">Joye Sivaraja</option>
+<option value="Gallard Kieff">Gallard Kieff</option>
+<option value="Abigale Reinsel">Abigale Reinsel</option>
+<option value="Gayelord Nyhagen">Gayelord Nyhagen</option>
+<option value="Jobyna Flanagan">Jobyna Flanagan</option>
+<option value="Silvester Storo">Silvester Storo</option>
+<option value="Fan Woolley">Fan Woolley</option>
+<option value="Laird Gomes">Laird Gomes</option>
+<option value="Doralynne Childs">Doralynne Childs</option>
+<option value="Muhammad Brzezomslo">Muhammad Brzezomslo</option>
+<option value="Ronni Carr">Ronni Carr</option>
+<option value="Lyn Asimov">Lyn Asimov</option>
+<option value="Letta Sala">Letta Sala</option>
+<option value="Frasco Donaldson">Frasco Donaldson</option>
+<option value="Mil Remey">Mil Remey</option>
+<option value="Shelden Linscott">Shelden Linscott</option>
+<option value="Cecil O'sullivan-snow">Cecil O'sullivan-snow</option>
+<option value="Flynn Nichilo'">Flynn Nichilo'</option>
+<option value="Judye Todd">Judye Todd</option>
+<option value="Geoffry Aziz">Geoffry Aziz</option>
+<option value="Liana Buige">Liana Buige</option>
+<option value="Tanney Frei">Tanney Frei</option>
+<option value="Tamra Hanna">Tamra Hanna</option>
+<option value="Ray Sivaraja">Ray Sivaraja</option>
+<option value="Celestyn Marykwas">Celestyn Marykwas</option>
+<option value="Willie Flanagan">Willie Flanagan</option>
+<option value="Willy Blackmore">Willy Blackmore</option>
+<option value="Collin Childs">Collin Childs</option>
+<option value="Christan Wigglesworth">Christan Wigglesworth</option>
+<option value="Dougie Sala">Dougie Sala</option>
+<option value="Ondrea Browne">Ondrea Browne</option>
+<option value="Ange O'sullivan-snow">Ange O'sullivan-snow</option>
+<option value="Petunia Keightley">Petunia Keightley</option>
+<option value="Raymund Buige">Raymund Buige</option>
+<option value="Ashleigh Dietrich">Ashleigh Dietrich</option>
+<option value="Dell Marykwas">Dell Marykwas</option>
+<option value="Gerrie Cotton">Gerrie Cotton</option>
+<option value="Wilburt Wigglesworth">Wilburt Wigglesworth</option>
+<option value="Morgan Fuller">Morgan Fuller</option>
+<option value="Stuart Keightley">Stuart Keightley</option>
+<option value="Janis Wittgenstein">Janis Wittgenstein</option>
+<option value="Donovan Cotton">Donovan Cotton</option>
+<option value="Etheline Stringer">Etheline Stringer</option>
+<option value="Perceval Wittgenstein">Perceval Wittgenstein</option>
+<option value="Arlyn Meszoly">Arlyn Meszoly</option>
+<option value="Pedro Meszoly">Pedro Meszoly</option>
+<option value="Franzen Jagers">Franzen Jagers</option>
+<option value="Camella Tsao">Camella Tsao</option>
+<option value="Freedman Osher">Freedman Osher</option>
+<option value="Pansy Ramicova-berkovics">Pansy Ramicova-berkovics</option>
+<option value="Randy Campedelli">Randy Campedelli</option>
+<option value="Cissiee Andron">Cissiee Andron</option>
+<option value="Boote Piercy">Boote Piercy</option>
+<option value="Dominga Hollyer">Dominga Hollyer</option>
+<option value="Webb Fridlund">Webb Fridlund</option>
+<option value="Adelaide Peskin">Adelaide Peskin</option>
+<option value="Miltie Distaso">Miltie Distaso</option>
+<option value="Rosalinda Levins">Rosalinda Levins</option>
+<option value="Mendie Carayannopoulos">Mendie Carayannopoulos</option>
+<option value="Maris Toma">Maris Toma</option>
+<option value="Fabiano Kagan">Fabiano Kagan</option>
+<option value="Sherrie Leary">Sherrie Leary</option>
+<option value="Adelbert Guin">Adelbert Guin</option>
+<option value="Gnni Judycki">Gnni Judycki</option>
+<option value="Emmott Ratchford">Emmott Ratchford</option>
+<option value="Irena Metaxas">Irena Metaxas</option>
+<option value="Nester Yanosky">Nester Yanosky</option>
+<option value="Paulina Grover">Paulina Grover</option>
+<option value="Terry Batinti">Terry Batinti</option>
+<option value="Cordelie Orfield">Cordelie Orfield</option>
+<option value="Ahmed Desjardins">Ahmed Desjardins</option>
+<option value="Dulce Garnick">Dulce Garnick</option>
+<option value="Ody Ramicova-berkovics">Ody Ramicova-berkovics</option>
+<option value="Riva Van roosen">Riva Van roosen</option>
+<option value="Maurie Hollyer">Maurie Hollyer</option>
+<option value="Estrella Albertson">Estrella Albertson</option>
+<option value="Laurent Levins">Laurent Levins</option>
+<option value="Miranda Lillis">Miranda Lillis</option>
+<option value="Madison Leary">Madison Leary</option>
+<option value="Iona Poskanzer">Iona Poskanzer</option>
+<option value="Lincoln Metaxas">Lincoln Metaxas</option>
+<option value="Bevvy Clarkson">Bevvy Clarkson</option>
+<option value="Alastair Orfield">Alastair Orfield</option>
+<option value="Marilee Schlesinger">Marilee Schlesinger</option>
+<option value="Garvy Van roosen">Garvy Van roosen</option>
+<option value="Teddie Viens">Teddie Viens</option>
+<option value="Darby Lillis">Darby Lillis</option>
+<option value="Marysa Weiskel">Marysa Weiskel</option>
+<option value="Myles Clarkson">Myles Clarkson</option>
+<option value="Karee Whistler">Karee Whistler</option>
+<option value="Thibaud Viens">Thibaud Viens</option>
+<option value="Kym Machiavelli">Kym Machiavelli</option>
+<option value="Patsy Whistler">Patsy Whistler</option>
+<option value="Eimile Doddis">Eimile Doddis</option>
+<option value="Jamil Doddis">Jamil Doddis</option>
+<option value="Carling Tchimbembe">Carling Tchimbembe</option>
+<option value="Fanchon Gauss">Fanchon Gauss</option>
+<option value="Aldo Sigalot">Aldo Sigalot</option>
+<option value="La verne Areeda">La verne Areeda</option>
+<option value="Hartley Neustadt">Hartley Neustadt</option>
+<option value="Dacie Damon">Dacie Damon</option>
+<option value="Massimiliano De niro">Massimiliano De niro</option>
+<option value="Rivkah Simonds">Rivkah Simonds</option>
+<option value="Clevey Nascimento">Clevey Nascimento</option>
+<option value="Ingunna Rarus">Ingunna Rarus</option>
+<option value="Moise Kalinowski">Moise Kalinowski</option>
+<option value="Nalani Capursi">Nalani Capursi</option>
+<option value="Erek Heydarpour">Erek Heydarpour</option>
+<option value="Fran Chance">Fran Chance</option>
+<option value="Shermie Crescimanni">Shermie Crescimanni</option>
+<option value="Darsey Barbosa">Darsey Barbosa</option>
+<option value="Frazer Panchamoorthy">Frazer Panchamoorthy</option>
+<option value="Shelagh Kassower">Shelagh Kassower</option>
+<option value="Haley Quintano">Haley Quintano</option>
+<option value="Tansy Zorn">Tansy Zorn</option>
+<option value="Cullie Da costa">Cullie Da costa</option>
+<option value="Cassondra Chatalbash">Cassondra Chatalbash</option>
+<option value="Washington Santos">Washington Santos</option>
+<option value="Nollie Spiegelman">Nollie Spiegelman</option>
+<option value="Aylmer Chiaro">Aylmer Chiaro</option>
+<option value="Lorain Vespasian">Lorain Vespasian</option>
+<option value="Matthus Areeda">Matthus Areeda</option>
+<option value="Amanda Schievella">Amanda Schievella</option>
+<option value="Fran Simonds">Fran Simonds</option>
+<option value="Jenilee Cislaghi">Jenilee Cislaghi</option>
+<option value="Dylan Capursi">Dylan Capursi</option>
+<option value="Geraldine Lobdell">Geraldine Lobdell</option>
+<option value="Mathew Barbosa">Mathew Barbosa</option>
+<option value="Natasha Shaumyan">Natasha Shaumyan</option>
+<option value="Hamel Zorn">Hamel Zorn</option>
+<option value="Josie Dunlap">Josie Dunlap</option>
+<option value="Webster Spiegelman">Webster Spiegelman</option>
+<option value="Cheslie Tanguay">Cheslie Tanguay</option>
+<option value="Bradford Schievella">Bradford Schievella</option>
+<option value="Kat Miele">Kat Miele</option>
+<option value="Garv Lobdell">Garv Lobdell</option>
+<option value="Nanci Carlier">Nanci Carlier</option>
+<option value="Logan Dunlap">Logan Dunlap</option>
+<option value="Sherilyn Yuan">Sherilyn Yuan</option>
+<option value="Gasparo Miele">Gasparo Miele</option>
+<option value="Marcelline Kalwat">Marcelline Kalwat</option>
+<option value="Benson Yuan">Benson Yuan</option>
+<option value="Emmalynne Gaeta">Emmalynne Gaeta</option>
+<option value="Whit Gaeta">Whit Gaeta</option>
+<option value="Nikola Watson">Nikola Watson</option>
+<option value="Bobinette Zwiers">Bobinette Zwiers</option>
+<option value="Elton Jona-lasinio">Elton Jona-lasinio</option>
+<option value="Darice Spaccarelli">Darice Spaccarelli</option>
+<option value="Rickey Altobelli">Rickey Altobelli</option>
+<option value="Margalo Rochefoucauld">Margalo Rochefoucauld</option>
+<option value="Lothario Avrett">Lothario Avrett</option>
+<option value="Waneta Kumasaka">Waneta Kumasaka</option>
+<option value="Evered Burleson">Evered Burleson</option>
+<option value="Angelita Chant">Angelita Chant</option>
+<option value="Joaquin Spengler">Joaquin Spengler</option>
+<option value="Val Satin">Val Satin</option>
+<option value="Randal Bebrin">Randal Bebrin</option>
+<option value="Reiko Sadowski">Reiko Sadowski</option>
+<option value="Vail Foote">Vail Foote</option>
+<option value="Luci Clifford">Luci Clifford</option>
+<option value="Alfons Beardsley">Alfons Beardsley</option>
+<option value="Alaine La porte">Alaine La porte</option>
+<option value="Bale Montgomery">Bale Montgomery</option>
+<option value="Henrieta Gollis">Henrieta Gollis</option>
+<option value="Lawrence Surette">Lawrence Surette</option>
+<option value="Sapphire Daley">Sapphire Daley</option>
+<option value="Bradley Scalese">Bradley Scalese</option>
+<option value="Carmel Spievack">Carmel Spievack</option>
+<option value="Sandy Inouye">Sandy Inouye</option>
+<option value="Denyse Atwood">Denyse Atwood</option>
+<option value="Bail Spaccarelli">Bail Spaccarelli</option>
+<option value="Bridget Roque">Bridget Roque</option>
+<option value="Winny Kumasaka">Winny Kumasaka</option>
+<option value="Tabatha Browdy">Tabatha Browdy</option>
+<option value="Alard Satin">Alard Satin</option>
+<option value="Emiline Motta">Emiline Motta</option>
+<option value="Lee Clifford">Lee Clifford</option>
+<option value="Jilli Deschner">Jilli Deschner</option>
+<option value="Ulberto Gollis">Ulberto Gollis</option>
+<option value="Bertha Huenemoerder">Bertha Huenemoerder</option>
+<option value="Carroll Spievack">Carroll Spievack</option>
+<option value="Johanna Mcphee">Johanna Mcphee</option>
+<option value="Eugene Roque">Eugene Roque</option>
+<option value="Allsun Santayana">Allsun Santayana</option>
+<option value="Lev Motta">Lev Motta</option>
+<option value="Giustina Bronte">Giustina Bronte</option>
+<option value="Cal Huenemoerder">Cal Huenemoerder</option>
+<option value="Inger Lavine">Inger Lavine</option>
+<option value="Baron Santayana">Baron Santayana</option>
+<option value="Lyssa Alderman">Lyssa Alderman</option>
+<option value="Benji Lavine">Benji Lavine</option>
+<option value="Darcie Hatton">Darcie Hatton</option>
+<option value="Mathe Hatton">Mathe Hatton</option>
+<option value="Lefty Blanchard">Lefty Blanchard</option>
+<option value="Jenica Tatar">Jenica Tatar</option>
+<option value="Nickey Ni chuiv">Nickey Ni chuiv</option>
+<option value="Karrie Mayo">Karrie Mayo</option>
+<option value="Orlan Barrick">Orlan Barrick</option>
+<option value="Sosanna Silva">Sosanna Silva</option>
+<option value="Lyon Yesson">Lyon Yesson</option>
+<option value="Kizzie Gamble">Kizzie Gamble</option>
+<option value="Bartie Quintilian">Bartie Quintilian</option>
+<option value="Adan Suleiman">Adan Suleiman</option>
+<option value="Rawley Orru'">Rawley Orru'</option>
+<option value="Dahlia Kazmierczak">Dahlia Kazmierczak</option>
+<option value="Boniface Menninger">Boniface Menninger</option>
+<option value="Charita Sarno">Charita Sarno</option>
+<option value="Aloysius Sands">Aloysius Sands</option>
+<option value="Perle De castro bruni">Perle De castro bruni</option>
+<option value="Reider Girard">Reider Girard</option>
+<option value="Brietta Karpouzes">Brietta Karpouzes</option>
+<option value="Friedrick Hertz">Friedrick Hertz</option>
+<option value="Holly Sacks">Holly Sacks</option>
+<option value="Liam Prince">Liam Prince</option>
+<option value="Lilas Nair">Lilas Nair</option>
+<option value="Weber Chervenik">Weber Chervenik</option>
+<option value="Cinda Hakesley">Cinda Hakesley</option>
+<option value="Avery Mathers">Avery Mathers</option>
+<option value="Saidee Marso">Saidee Marso</option>
+<option value="Raffarty Mayo">Raffarty Mayo</option>
+<option value="Fredi Arriero">Fredi Arriero</option>
+<option value="Olin Gamble">Olin Gamble</option>
+<option value="Valina Cortese">Valina Cortese</option>
+<option value="Kennedy Kazmierczak">Kennedy Kazmierczak</option>
+<option value="Godiva Farahmand">Godiva Farahmand</option>
+<option value="Fax De castro bruni">Fax De castro bruni</option>
+<option value="Olly Chafe">Olly Chafe</option>
+<option value="Hobard Sacks">Hobard Sacks</option>
+<option value="Ethelyn Steuernagel">Ethelyn Steuernagel</option>
+<option value="Urbanus Hakesley">Urbanus Hakesley</option>
+<option value="Mella Steinbeck">Mella Steinbeck</option>
+<option value="Odie Arriero">Odie Arriero</option>
+<option value="Zia Ying">Zia Ying</option>
+<option value="Waring Farahmand">Waring Farahmand</option>
+<option value="Lynda Van baalen">Lynda Van baalen</option>
+<option value="Torre Steuernagel">Torre Steuernagel</option>
+<option value="Issie Verghese">Issie Verghese</option>
+<option value="Aubrey Ying">Aubrey Ying</option>
+<option value="Cathrine Soep">Cathrine Soep</option>
+<option value="Paton Verghese">Paton Verghese</option>
+<option value="Johna Studier">Johna Studier</option>
+<option value="Salomo Studier">Salomo Studier</option>
+<option value="Morley Caras">Morley Caras</option>
+<option value="Andi Fitzgerald-clark">Andi Fitzgerald-clark</option>
+<option value="Scott Peixoto">Scott Peixoto</option>
+<option value="Merrile Mcilroy">Merrile Mcilroy</option>
+<option value="Bernardo Mcnamara">Bernardo Mcnamara</option>
+<option value="Emlynne Bruns">Emlynne Bruns</option>
+<option value="Townie Jean">Townie Jean</option>
+<option value="Estele Bang">Estele Bang</option>
+<option value="Marchall Escobar">Marchall Escobar</option>
+<option value="Gail Scozzafava">Gail Scozzafava</option>
+<option value="Mano Gundersen">Mano Gundersen</option>
+<option value="Emilia Minichiello">Emilia Minichiello</option>
+<option value="Roderich Zakarian">Roderich Zakarian</option>
+<option value="Catlin Galli">Catlin Galli</option>
+<option value="Conny Housman">Conny Housman</option>
+<option value="Gretal Honig">Gretal Honig</option>
+<option value="Ruddy Lakis">Ruddy Lakis</option>
+<option value="Alena Lionetti">Alena Lionetti</option>
+<option value="Tull Lodge">Tull Lodge</option>
+<option value="Mabel Merseth">Mabel Merseth</option>
+<option value="Rogers Zahner">Rogers Zahner</option>
+<option value="Fleur Lenney">Fleur Lenney</option>
+<option value="Kendal Stampfer">Kendal Stampfer</option>
+<option value="Blakelee Kangaloo">Blakelee Kangaloo</option>
+<option value="Riccardo Kuhn">Riccardo Kuhn</option>
+<option value="Elvina Ch'oe">Elvina Ch'oe</option>
+<option value="Clim Mcilroy">Clim Mcilroy</option>
+<option value="Jonis Steinkeller">Jonis Steinkeller</option>
+<option value="Orion Bang">Orion Bang</option>
+<option value="Donetta Doll">Donetta Doll</option>
+<option value="Loydie Minichiello">Loydie Minichiello</option>
+<option value="Miran Maitland">Miran Maitland</option>
+<option value="Darrick Honig">Darrick Honig</option>
+<option value="Natka Yellin">Natka Yellin</option>
+<option value="Claire Merseth">Claire Merseth</option>
+<option value="Zuzana Keenum">Zuzana Keenum</option>
+<option value="Skippie Kangaloo">Skippie Kangaloo</option>
+<option value="Dania Muttini">Dania Muttini</option>
+<option value="Harvey Steinkeller">Harvey Steinkeller</option>
+<option value="Martita Knudson">Martita Knudson</option>
+<option value="Donnie Maitland">Donnie Maitland</option>
+<option value="Kyla Isselhardt">Kyla Isselhardt</option>
+<option value="Pail Keenum">Pail Keenum</option>
+<option value="Bella Sul">Bella Sul</option>
+<option value="Dimitry Knudson">Dimitry Knudson</option>
+<option value="Deva Chatterjee">Deva Chatterjee</option>
+<option value="Eldon Sul">Eldon Sul</option>
+<option value="Elysia Vagts">Elysia Vagts</option>
+<option value="Morton Vagts">Morton Vagts</option>
+<option value="Rawley Jose">Rawley Jose</option>
+<option value="Miguela Crews">Miguela Crews</option>
+<option value="Boniface Laplume">Boniface Laplume</option>
+<option value="Milicent Doricent">Milicent Doricent</option>
+<option value="Aloysius Lecar">Aloysius Lecar</option>
+<option value="Martha Van gieson">Martha Van gieson</option>
+<option value="Reider Jung">Reider Jung</option>
+<option value="Katti Tomford">Katti Tomford</option>
+<option value="Friedrick Adams">Friedrick Adams</option>
+<option value="Thekla Zimmerli">Thekla Zimmerli</option>
+<option value="Liam Daveiga">Liam Daveiga</option>
+<option value="Anabal Klose">Anabal Klose</option>
+<option value="Weber Chaudhry">Weber Chaudhry</option>
+<option value="Sophia Maestas">Sophia Maestas</option>
+<option value="Avery Gallo">Avery Gallo</option>
+<option value="Nady Paoletti">Nady Paoletti</option>
+<option value="Raffarty Stromberg">Raffarty Stromberg</option>
+<option value="Judith Moustaid">Judith Moustaid</option>
+<option value="Olin Poli">Olin Poli</option>
+<option value="Birgitta De saint-exupery">Birgitta De saint-exupery</option>
+<option value="Kennedy Golden">Kennedy Golden</option>
+<option value="Shandeigh Hanan">Shandeigh Hanan</option>
+<option value="Fax Nichipor">Fax Nichipor</option>
+<option value="Sarita Lambert">Sarita Lambert</option>
+<option value="Hobard Brand">Hobard Brand</option>
+<option value="Penny Callow">Penny Callow</option>
+<option value="Urbanus Doricent">Urbanus Doricent</option>
+<option value="Pammy Wellington">Pammy Wellington</option>
+<option value="Odie Tomford">Odie Tomford</option>
+<option value="Irina Perrault">Irina Perrault</option>
+<option value="Waring Klose">Waring Klose</option>
+<option value="Emmey Senn">Emmey Senn</option>
+<option value="Torre Paoletti">Torre Paoletti</option>
+<option value="Carilyn Maxwell">Carilyn Maxwell</option>
+<option value="Aubrey De saint-exupery">Aubrey De saint-exupery</option>
+<option value="Faydra Marlink">Faydra Marlink</option>
+<option value="Paton Lambert">Paton Lambert</option>
+<option value="Martie Hussey">Martie Hussey</option>
+<option value="Salomo Wellington">Salomo Wellington</option>
+<option value="Cami Renjel">Cami Renjel</option>
+<option value="Leroy Senn">Leroy Senn</option>
+<option value="Laverne Gombosi">Laverne Gombosi</option>
+<option value="Durant Marlink">Durant Marlink</option>
+<option value="Petronille Falchuk">Petronille Falchuk</option>
+<option value="Peadar Renjel">Peadar Renjel</option>
+<option value="Wenonah Abelmann">Wenonah Abelmann</option>
+<option value="Ximenez Falchuk">Ximenez Falchuk</option>
+<option value="Aili Ham">Aili Ham</option>
+<option value="Moishe Ham">Moishe Ham</option>
+<option value="Ferrel Ercolani">Ferrel Ercolani</option>
+<option value="Marika Kenworthy">Marika Kenworthy</option>
+<option value="Bartholemy Alston">Bartholemy Alston</option>
+<option value="Margaux Cromie">Margaux Cromie</option>
+<option value="Gay Brant">Gay Brant</option>
+<option value="Perry Joag-dev">Perry Joag-dev</option>
+<option value="Sig Ernisse">Sig Ernisse</option>
+<option value="Fifi Doherty">Fifi Doherty</option>
+<option value="Richmound Scudder">Richmound Scudder</option>
+<option value="Suzanne Shepard">Suzanne Shepard</option>
+<option value="Andres Litt">Andres Litt</option>
+<option value="Iseabal Roesler">Iseabal Roesler</option>
+<option value="Berne Atkins">Berne Atkins</option>
+<option value="Karia Breyan">Karia Breyan</option>
+<option value="Miner Vynnycky">Miner Vynnycky</option>
+<option value="Maddalena Amodeo">Maddalena Amodeo</option>
+<option value="Terrill Walhout">Terrill Walhout</option>
+<option value="Barbabra Hartzog">Barbabra Hartzog</option>
+<option value="Claudell Zhan">Claudell Zhan</option>
+<option value="Carolan Hartoch">Carolan Hartoch</option>
+<option value="Abby Debroff">Abby Debroff</option>
+<option value="Rowe Osterud">Rowe Osterud</option>
+<option value="Hayes Virchow">Hayes Virchow</option>
+<option value="Danny Poincaire">Danny Poincaire</option>
+<option value="Jase Hines">Jase Hines</option>
+<option value="Gwendolen Twells">Gwendolen Twells</option>
+<option value="Alain Cromie">Alain Cromie</option>
+<option value="Domeniga Konigsberg">Domeniga Konigsberg</option>
+<option value="Spense Doherty">Spense Doherty</option>
+<option value="Aubry Elsen">Aubry Elsen</option>
+<option value="Ilario Roesler">Ilario Roesler</option>
+<option value="Bobby Arangio">Bobby Arangio</option>
+<option value="Harris Amodeo">Harris Amodeo</option>
+<option value="Valerye Diana">Valerye Diana</option>
+<option value="Niccolo Hartoch">Niccolo Hartoch</option>
+<option value="Jannelle Nenna">Jannelle Nenna</option>
+<option value="Prinz Poincaire">Prinz Poincaire</option>
+<option value="Rebbecca Tarsitano">Rebbecca Tarsitano</option>
+<option value="Johan Konigsberg">Johan Konigsberg</option>
+<option value="Kitty Larosa">Kitty Larosa</option>
+<option value="Palm Arangio">Palm Arangio</option>
+<option value="Darb Kooris">Darb Kooris</option>
+<option value="Paddy Nenna">Paddy Nenna</option>
+<option value="Randene Stadelman">Randene Stadelman</option>
+<option value="Giovanni Larosa">Giovanni Larosa</option>
+<option value="Megan Wypij">Megan Wypij</option>
+<option value="Sergio Stadelman">Sergio Stadelman</option>
+<option value="Shellie Lohmiller">Shellie Lohmiller</option>
+<option value="Benjamen Lohmiller">Benjamen Lohmiller</option>
+<option value="Kingsly Holmes">Kingsly Holmes</option>
+<option value="Laurene Kawasaki">Laurene Kawasaki</option>
+<option value="Ephraim Hernandez-gravelle">Ephraim Hernandez-gravelle</option>
+<option value="Alex Demeke">Alex Demeke</option>
+<option value="Jarret Bigby">Jarret Bigby</option>
+<option value="Jaquenette Yankee">Jaquenette Yankee</option>
+<option value="Eziechiele Hillion">Eziechiele Hillion</option>
+<option value="Catlee Tasciotti">Catlee Tasciotti</option>
+<option value="Aldis Mastrodonato">Aldis Mastrodonato</option>
+<option value="Annemarie Burandt">Annemarie Burandt</option>
+<option value="Averell Jernigan">Averell Jernigan</option>
+<option value="Beverie Jagger">Beverie Jagger</option>
+<option value="Reagen Neufeldt">Reagen Neufeldt</option>
+<option value="Lee Kleinman">Lee Kleinman</option>
+<option value="Hailey Gerschenkron">Hailey Gerschenkron</option>
+<option value="Belva Pruette">Belva Pruette</option>
+<option value="Ramon Meikrantz">Ramon Meikrantz</option>
+<option value="Mellisa Croxton">Mellisa Croxton</option>
+<option value="Lowell Mcauliffe">Lowell Mcauliffe</option>
+<option value="Anthiathia Widing">Anthiathia Widing</option>
+<option value="Edmund Auerbach">Edmund Auerbach</option>
+<option value="Marleen Ramires">Marleen Ramires</option>
+<option value="Thorndike Tong">Thorndike Tong</option>
+<option value="Glad Duckett">Glad Duckett</option>
+<option value="Giorgio Hesterberg">Giorgio Hesterberg</option>
+<option value="Hortense Kerler">Hortense Kerler</option>
+<option value="Clyve Demeke">Clyve Demeke</option>
+<option value="Modesty Tauber">Modesty Tauber</option>
+<option value="Raff Tasciotti">Raff Tasciotti</option>
+<option value="Keslie Hanig">Keslie Hanig</option>
+<option value="Sascha Jagger">Sascha Jagger</option>
+<option value="Carmita Aristophanes">Carmita Aristophanes</option>
+<option value="Frasier Pruette">Frasier Pruette</option>
+<option value="Marget Giacalone">Marget Giacalone</option>
+<option value="Oswald Widing">Oswald Widing</option>
+<option value="Fania Lecchini">Fania Lecchini</option>
+<option value="Grove Duckett">Grove Duckett</option>
+<option value="Tish Greenlaw">Tish Greenlaw</option>
+<option value="Jerald Tauber">Jerald Tauber</option>
+<option value="Celestina Babetski">Celestina Babetski</option>
+<option value="Gamaliel Aristophanes">Gamaliel Aristophanes</option>
+<option value="Larine Blagg">Larine Blagg</option>
+<option value="Gerrard Lecchini">Gerrard Lecchini</option>
+<option value="Emelita Housley">Emelita Housley</option>
+<option value="Chariot Babetski">Chariot Babetski</option>
+<option value="Marga Nawn">Marga Nawn</option>
+<option value="Ancell Housley">Ancell Housley</option>
+<option value="Orly Roca">Orly Roca</option>
+<option value="Barrett Roca">Barrett Roca</option>
+<option value="Wendel Friendly">Wendel Friendly</option>
+<option value="Amalea Bernardi">Amalea Bernardi</option>
+<option value="Tracie Gretz">Tracie Gretz</option>
+<option value="Rebecca Millar">Rebecca Millar</option>
+<option value="Antony Pandiscio">Antony Pandiscio</option>
+<option value="Rafa Spoonerow">Rafa Spoonerow</option>
+<option value="Maury Aymie">Maury Aymie</option>
+<option value="Halli Kovar">Halli Kovar</option>
+<option value="Charlton Elster">Charlton Elster</option>
+<option value="Olva Bianchi">Olva Bianchi</option>
+<option value="Bronson Lavoie">Bronson Lavoie</option>
+<option value="Jaime Harokopus">Jaime Harokopus</option>
+<option value="Horatius Bartolome">Horatius Bartolome</option>
+<option value="Dorri Tisdale">Dorri Tisdale</option>
+<option value="Grantham Myszkowski">Grantham Myszkowski</option>
+<option value="Darelle Hillen">Darelle Hillen</option>
+<option value="Mannie Comess">Mannie Comess</option>
+<option value="Heddi Janes">Heddi Janes</option>
+<option value="Hank Maheras">Hank Maheras</option>
+<option value="Tracie Gee">Tracie Gee</option>
+<option value="Ferris Frazier">Ferris Frazier</option>
+<option value="Carmencita Bebchuk">Carmencita Bebchuk</option>
+<option value="Esdras Link">Esdras Link</option>
+<option value="Marti Bikoff">Marti Bikoff</option>
+<option value="Trevar Darst">Trevar Darst</option>
+<option value="Susannah Pyle">Susannah Pyle</option>
+<option value="Chase Millar">Chase Millar</option>
+<option value="Eran Wirth">Eran Wirth</option>
+<option value="Mozes Kovar">Mozes Kovar</option>
+<option value="Shea Vanburen">Shea Vanburen</option>
+<option value="Reynard Harokopus">Reynard Harokopus</option>
+<option value="Charis Wasser">Charis Wasser</option>
+<option value="Neel Hillen">Neel Hillen</option>
+<option value="Theadora Sorabella">Theadora Sorabella</option>
+<option value="Reamonn Gee">Reamonn Gee</option>
+<option value="Evita Duyck">Evita Duyck</option>
+<option value="Caesar Bikoff">Caesar Bikoff</option>
+<option value="Netta Ennis">Netta Ennis</option>
+<option value="Maximo Wirth">Maximo Wirth</option>
+<option value="Kassey Dees">Kassey Dees</option>
+<option value="Huey Wasser">Huey Wasser</option>
+<option value="Mandi Trimarchi">Mandi Trimarchi</option>
+<option value="Erastus Duyck">Erastus Duyck</option>
+<option value="Betty Guess">Betty Guess</option>
+<option value="Marietta Dees">Marietta Dees</option>
+<option value="Mae Fajtova">Mae Fajtova</option>
+<option value="Puff Guess">Puff Guess</option>
+<option value="Daveta Milofsky">Daveta Milofsky</option>
+<option value="Lovell Milofsky">Lovell Milofsky</option>
+<option value="Frannie Untermeyer">Frannie Untermeyer</option>
+<option value="Chris Angilly">Chris Angilly</option>
+<option value="Tripp Vizzolini">Tripp Vizzolini</option>
+<option value="Mandie Argyris">Mandie Argyris</option>
+<option value="Blayne Polgar">Blayne Polgar</option>
+<option value="Mathilda Fasciano">Mathilda Fasciano</option>
+<option value="Wells Reichenberg">Wells Reichenberg</option>
+<option value="Margot Hollins">Margot Hollins</option>
+<option value="Nelson Barrett">Nelson Barrett</option>
+<option value="Annnora Sanders">Annnora Sanders</option>
+<option value="Shea Coe">Shea Coe</option>
+<option value="Tabbi O'meara">Tabbi O'meara</option>
+<option value="Toddie Mckenney">Toddie Mckenney</option>
+<option value="Pru Mcghee">Pru Mcghee</option>
+<option value="Parry Avraham">Parry Avraham</option>
+<option value="Dniren Mannion">Dniren Mannion</option>
+<option value="Laney Sefcik">Laney Sefcik</option>
+<option value="Lenna Jarvis">Lenna Jarvis</option>
+<option value="Cornelius Pasquino">Cornelius Pasquino</option>
+<option value="Didi Kimura">Didi Kimura</option>
+<option value="Warren Vignaux">Warren Vignaux</option>
+<option value="Darleen Berthiaume">Darleen Berthiaume</option>
+<option value="Dru Marashian">Dru Marashian</option>
+<option value="Anjela Hager">Anjela Hager</option>
+<option value="Rollo Perissinotto">Rollo Perissinotto</option>
+<option value="Suellen Prokop">Suellen Prokop</option>
+<option value="Ludvig Argyris">Ludvig Argyris</option>
+<option value="Gilda Husbands">Gilda Husbands</option>
+<option value="Damiano Hollins">Damiano Hollins</option>
+<option value="Sonny Julian">Sonny Julian</option>
+<option value="Smitty O'meara">Smitty O'meara</option>
+</select>
+                        </div>
+                </div>
+
+                <div class="toggled-content">
+                        <div class="form-group">
+                            <label for="providerName" class="form-label">Training provider</label>
+                            <select id="providerName" multiple class="form-control">
+                                <option value="acme-training-ltd">Acme Training Ltd</option>
+                                <option value="learn-direct">Learn Direct</option>
+                                <option value="in-house-training">In-house training</option>
+                            </select>
+                        </div>
+                </div>
+    
+                <div class="toggled-content">
+                        <div class="form-group">
+                            <label for="teamMember" class="form-label">Team member</label>
+                    <p class="form-hint">Show activity of a specific colleague</p>
+                            <select id="teamMember" multiple class="form-control">
+                                <option value="pete-kowalczyk">Pete Kowalczyk</option>
+                                <option value="andy">Andy Samberg</option>
+                                <option value="ella">Ella Dabrowski</option>
+                                <option value="sarah-thomson">Sarah Thomson</option>
+                            </select>
+                        </div>
+                </div>
+            </fieldset>
+           
+            
+
+                                                          <button class="button">Update timeilne</button> <a id="reset-filters" href="#" class="button  text-link">reset filters</a>
 
         </div>
         <div class="column-two-thirds">
             <div class="timeline">
-  <div class="entry payment">
+  <div class="entry payment apprentice" data-type="payment" data-apprentice="anne-smith">
     <div class="title">
       <span class="font-small">Today</span>
     </div>
@@ -129,7 +790,15 @@ Activity         </h2>
         <div class=""><span class="time">At  1:25pm</span> - <a class="details"  href="#">Details</a></div>
   </div>
   </div>
-                 <div class="entry team">
+    <div class="entry payment apprentice" data-type="payment" data-apprentice="aziz-anzari">
+    <div class="title">
+    </div>
+    <div class="body">
+      <div>Payment failed: £2,000 for Aziz Anzari</div>
+        <div class=""><span class="time">At  1:25pm</span> - <a class="details"  href="#">Details</a></div>
+  </div>
+  </div>
+ <div class="entry team" data-type="team" data-user="pete-kowalczyk">
     <div class="title">
       <span class="font-small">Yesterday</span>
     </div>
@@ -138,7 +807,7 @@ Activity         </h2>
         <div class=""><span class="time">At  3:40pm</span></div>
       </div>
   </div>  
-  <div class="entry apprentice">
+  <div class="entry apprentice" data-apprentice="ann-smith" data-type="apprentice" data-user="pete-kowalczyk">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -146,7 +815,7 @@ Activity         </h2>
         <div class=""><span class="time">At  3:34pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div>
- <div class="entry team">
+ <div class="entry team" data-type="team" data-user="pete-kowalczyk">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -156,7 +825,7 @@ Activity         </h2>
   </div>                 
 
                 
- <div class="entry apprentice">
+ <div class="entry payment" data-type="apprentice" data-apprentice="anne-smith" data-provider="acme-training-ltd">
     <div class="title">
       <span class="font-small">27 June 2018</span>
     </div>
@@ -166,7 +835,7 @@ Activity         </h2>
       </div>
   </div> 
                 
- <div class="entry team">
+ <div class="entry team" data-type="team" data-user="sarah-thomson">
     <div class="title">
       <span class="font-small">26 June 2018</span>
     </div>
@@ -176,7 +845,7 @@ Activity         </h2>
       </div>
   </div>                  
                 
-<div class="entry payment">
+ <div class="entry apprentice payment" data-type="payment" data-user="sarah-thomson" data-apprentice="anne-smith">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -185,7 +854,7 @@ Activity         </h2>
       </div>
   </div>                
                 
- <div class="entry team">
+ <div class="entry team" data-type="team" data-user="sarah-thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -194,7 +863,7 @@ Activity         </h2>
       </div>
   </div>                  
                 
-  <div class="entry payment">
+ <div class="entry payment" data-type="payment">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -203,7 +872,7 @@ Activity         </h2>
       </div>
   </div>
                 
-  <div class="entry apprentice payment">
+  <div class="entry apprentice payment" data-apprentice="anne-smith" data-provider="acme-training-ltd">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -211,7 +880,7 @@ Activity         </h2>
         <div class=""><span class="time">At  5:50pm</span> by Acme Training Ltd - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
-  <div class="entry payment">
+  <div class="entry payment" data-type="payement" data-provider="acme-training-ltd">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -220,7 +889,7 @@ Activity         </h2>
       </div>
   </div>                
                 
-  <div class="entry team">
+ <div class="entry team" data-type="team" data-user="sarah-thomson">
     <div class="title">
                         <span class="font-small">25 June 2018</span>                    
     </div>
@@ -229,7 +898,7 @@ Activity         </h2>
         <div class=""><span class="time">At  5:35pm</span></div>
       </div>
   </div>
-  <div class="entry apprentice">
+  <div class="entry apprentice" data-type="apprentice" data-provider="acme-training-ltd" data-user="sarah-thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -237,7 +906,7 @@ Activity         </h2>
         <div class=""><span class="time">At  5:34pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
- <div class="entry team">
+ <div class="entry team" data-type="team" data-user="sarah-thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -246,7 +915,7 @@ Activity         </h2>
       </div>
   </div>           
                 
-    <div class="entry apprentice">
+  <div class="entry apprentice" data-type="apprentice" data-provider="acme-training-ltd">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -256,7 +925,7 @@ Activity         </h2>
   </div>
                 
                 
-  <div class="entry team">
+ <div class="entry team" data-type="team" data-user="sarah-thomson">
     <div class="title">
                         <span class="font-small">24 June 2018</span>                    
     </div>
@@ -266,7 +935,7 @@ Activity         </h2>
       </div>
   </div>
                 
-  <div class="entry apprentice">
+  <div class="entry apprentice" data-type="apprentice" data-provider="acme-training-ltd" data-user="sarah-thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -274,7 +943,7 @@ Activity         </h2>
         <div class=""><span class="time">At  6:00pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
-  <div class="entry team">
+ <div class="entry team" data-type="team" data-user="sarah-thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -282,7 +951,7 @@ Activity         </h2>
         <div class=""><span class="time">At  5:45pm</span></div>
       </div>
   </div>
-  <div class="entry apprentice">
+  <div class="entry apprentice" data-type="apprentice" data-provider="acme-training-ltd">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -292,7 +961,7 @@ Activity         </h2>
   </div>
 
 
-  <div class="entry team">
+ <div class="entry team" data-type="team" data-user="sarah-thomson">
     <div class="title">
         <span class="font-small">23 June 2018</span>                    
     </div>
@@ -302,7 +971,7 @@ Activity         </h2>
       </div>
   </div>
                 
-    <div class="entry apprentice">
+    <div class="entry apprentice" data-type="apprentice" data-provider="acme-training-ltd" data-user="sarah-thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -311,7 +980,7 @@ Activity         </h2>
       </div>
   </div>
 
-  <div class="entry apprentice">
+  <div class="entry apprentice" data-type="apprentice" data-provider="acme-training-ltd"  data-user="sara-thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -320,7 +989,7 @@ Activity         </h2>
       </div>
   </div>
 
-  <div class="entry team">
+ <div class="entry team" data-type="team" data-user="sarah-thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -330,7 +999,7 @@ Activity         </h2>
   </div>
 
                 
-  <div class="entry payment">
+  <div class="entry payment" data-type="payment">
     <div class="title">
         <span class="font-small">22 June 2018</span>                    
     </div>
@@ -340,7 +1009,7 @@ Activity         </h2>
     </div>
   </div>
                 
-                <div class="entry team">
+ <div class="entry team" data-type="team" data-user="pete-kowalczyk">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -349,7 +1018,7 @@ Activity         </h2>
     </div>
   </div>
                 </div>
-                <div class="entry team">
+  <div class="entry service" data-type="service" data-user="pete-kowalczyk">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -357,7 +1026,7 @@ Activity         </h2>
         <div class=""><span class="time">At  2:29pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div> 
-    <div class="entry team">
+ <div class="entry team" data-type="team" data-user="pete-kowalczyk">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -365,7 +1034,7 @@ Activity         </h2>
         <div class=""><span class="time">At  2:24pm</span></div>
     </div>
   </div> 
-    <div class="entry team">
+ <div class="entry team" data-type="team" data-user="pete-kowalczyk">
     <div class="title">
 &nbsp;
     </div>
@@ -374,7 +1043,7 @@ Activity         </h2>
         <div class=""><span class="time">At  2:24pm</span></div>
     </div>
   </div>         
-  <div class="entry team">
+ <div class="entry team" data-type="team" data-user="sarah-thomson">
     <div class="title">
         <span class="font-small">19 June 2018</span>                    
     </div>
@@ -383,7 +1052,7 @@ Activity         </h2>
         <div class=""><span class="time">At  2:46pm</span></div>
     </div>
   </div>  
-    <div class="entry team">
+ <div class="entry team" data-type="team" data-user="pete-kowalczyk">
     <div class="title">
 &nbsp;
     </div>
@@ -392,7 +1061,7 @@ Activity         </h2>
         <div class=""><span class="time">At  2:45pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div>                 
-  <div class="entry account">
+  <div class="entry service" data-type="service" data-user="sarah.thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -400,7 +1069,7 @@ Activity         </h2>
         <div class=""><span class="time">At  2:34pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div>                 
-  <div class="entry account">
+  <div class="entry service" data-type="service" data-user="sarah.thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -408,7 +1077,7 @@ Activity         </h2>
         <div class=""><span class="time">At  2:30pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div> 
-    <div class="entry account">
+  <div class="entry service" data-type="service" data-user="sarah.thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">
@@ -416,7 +1085,7 @@ Activity         </h2>
         <div class=""><span class="time">At  2:24pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
     </div>
   </div>                 
-  <div class="entry account">
+  <div class="entry service" data-type="service" data-user="sarah.thomson">
     <div class="title">&nbsp;
     </div>
     <div class="body">

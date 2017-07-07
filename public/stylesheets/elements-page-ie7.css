@@ -4698,6 +4698,10 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   color: #b10e1e;
 }
 
+#activityFilters input[type="text"], #activityFilters select {
+  width: 100%;
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

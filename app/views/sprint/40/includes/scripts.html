@@ -13,6 +13,7 @@
 <script src="/public/javascripts/list.min.js"></script>
 <script src="/public/javascripts/jPages.min.js"></script>
 <script src="/public/javascripts/footable.min.js"></script>
+<script src="/public/javascripts/select2.min.js"></script>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
@@ -20,6 +21,7 @@
 <script src="/public/javascripts/mg_line_brushing.js"></script>
 <script src="/public/javascripts/tinysort.min.js"></script>
 <!--<script src="https://getaddress.io/js/jquery.getAddress-2.0.5.min.js"></script>-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.15/datatables.min.css"/>
  
@@ -483,8 +485,64 @@ $(document).ready(function () {
     
     function activityDashboard(){
         //tinysort('.timeline>.entry')
-    }
+        $("#date-range input[name=date-choice]").click(function(e){
+            state = $(this).val();
+            
+            if (state === "custom") {
+                $("#custom-range").removeClass("hidden");
+            } else {
+                $("#custom-range").addClass("hidden");                
+            }
+        })
+        
+        $("#apprenticeName").select2({
+              placeholder: "Enter a name",
+  allowClear: true
+        });
+
+        $("#providerName").select2({
+              placeholder: "Choose a provider",
+  allowClear: true
+        });   
+        $("#teamMember").select2({
+              placeholder: "Choose a colleague",
+  allowClear: true
+        });        
+        
+        
+$("#reset-filters").click(function(e){
+    e.preventDefault();
+    location.reload();
+})        
+
+        
     
+$("input[name=activityType]").click(function(e){
+        var state = $('input[name=activityType]:checked').val();
+    //alert(state);
+    $(".entry").addClass("hidden");
+    $('*[data-type="'+state+'"]').removeClass("hidden");
+
+})
+        
+        
+$("#providerName").on("select2:select", function (e) { 
+                        var select_val = $(e.currentTarget).val();
+                        console.log(select_val)
+                    $(".entry").addClass("hidden")
+                    $('*[data-provider="'+select_val+'"]').removeClass("hidden");
+                    });
+    
+    $("#teamMember").on("select2:select", function (e) { 
+                        var select_val = $(e.currentTarget).val();
+                        console.log(select_val)
+                    $(".entry").addClass("hidden")
+                    $('*[data-user="'+select_val+'"]').removeClass("hidden");
+                    });
+            
+    
+}
+
     function footableIndex(){
     
         $('#showcase-example-1').footable({

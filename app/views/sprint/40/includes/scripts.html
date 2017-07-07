@@ -508,6 +508,10 @@ $(document).ready(function () {
               placeholder: "Choose a colleague",
   allowClear: true
         });        
+                $("#apprenticeshipName").select2({
+              placeholder: "Choose apprenticeship training",
+  allowClear: true
+        });        
         
         
 $("#reset-filters").click(function(e){
@@ -531,6 +535,13 @@ $("#providerName").on("select2:select", function (e) {
                         console.log(select_val)
                     $(".entry").addClass("hidden")
                     $('*[data-provider="'+select_val+'"]').removeClass("hidden");
+                    });
+            
+$("#apprenticeshipName").on("select2:select", function (e) { 
+                        var select_val = $(e.currentTarget).val();
+                        console.log(select_val)
+                    $(".entry").addClass("hidden")
+                    $('*[data-apprenticeshipName="'+select_val+'"]').removeClass("hidden");
                     });
     
     $("#teamMember").on("select2:select", function (e) { 

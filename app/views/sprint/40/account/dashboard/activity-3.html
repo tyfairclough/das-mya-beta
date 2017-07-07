@@ -109,11 +109,11 @@ Activity         </h2>
          
                             <div class="multiple-choice">
                                 <input id="service" type="radio" value="service" name="activityType">
-                                <label class="" for="service">Service changes</label>
+                                <label class="" for="service">Administration</label>
                             </div>
                             <div class="multiple-choice">
                                 <input id="team" type="radio" value="team" name="activityType">
-                                <label class="" for="team">Team member</label>
+                                <label class="" for="team">Team members</label>
                             </div>
                         </div>
                     </div>
@@ -759,10 +759,21 @@ Activity         </h2>
                             </select>
                         </div>
                 </div>
+                
+                <div class="toggled-content">
+                        <div class="form-group">
+                            <label for="apprenticeshipName" class="form-label">Apprenticeship</label>
+                            <select id="apprenticeshipName" multiple class="form-control">
+                                <option value="1">Course 1</option>
+                                <option value="2">Course 2</option>
+                                <option value="3">Course 3</option>
+                            </select>
+                        </div>
+                </div>
     
                 <div class="toggled-content">
                         <div class="form-group">
-                            <label for="teamMember" class="form-label">Team member</label>
+                            <label for="teamMember" class="form-label">Team members</label>
                     <p class="form-hint">Show activity of a specific colleague</p>
                             <select id="teamMember" multiple class="form-control">
                                 <option value="pete-kowalczyk">Pete Kowalczyk</option>
@@ -787,7 +798,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Payment failed: £5,000 for Anne Smith</div>
-        <div class=""><span class="time">At  1:25pm</span> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  1:25pm</span> - <a class="details"  href="#">Details</a></div>
   </div>
   </div>
     <div class="entry payment apprentice" data-type="payment" data-apprentice="aziz-anzari">
@@ -795,7 +806,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Payment failed: £2,000 for Aziz Anzari</div>
-        <div class=""><span class="time">At  1:25pm</span> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  1:25pm</span> - <a class="details"  href="#">Details</a></div>
   </div>
   </div>
  <div class="entry team" data-type="team" data-user="pete-kowalczyk">
@@ -804,7 +815,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Pete Kowalczyk signed out</div>
-        <div class=""><span class="time">At  3:40pm</span></div>
+        <div class="time"><span class="time">At  3:40pm</span></div>
       </div>
   </div>  
   <div class="entry apprentice" data-apprentice="ann-smith" data-type="apprentice" data-user="pete-kowalczyk">
@@ -812,7 +823,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>Start date change approved for Anne Smith</div>
-        <div class=""><span class="time">At  3:34pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  3:34pm</span> by Pete Kowalczyk - <a class="details"  href="#">Details</a></div>
     </div>
   </div>
  <div class="entry team" data-type="team" data-user="pete-kowalczyk">
@@ -820,7 +831,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Pete Kowalczyk signed in</div>
-        <div class=""><span class="time">At  3:30pm</span></div>
+        <div class="time"><span class="time">At  3:30pm</span></div>
       </div>
   </div>                 
 
@@ -831,7 +842,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Start date change requested for Anne Smith</div>
-        <div class=""><span class="time">At  9:35am</span> by Acme Training Ltd - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  9:35am</span> by Acme Training Ltd - <a class="details"  href="#">Details</a></div>
       </div>
   </div> 
                 
@@ -841,7 +852,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Sarah Thomson signed out</div>
-        <div class=""><span class="time">At 3:34pm</span></div>
+        <div class="time"><span class="time">At 3:34pm</span></div>
       </div>
   </div>                  
                 
@@ -850,7 +861,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Price changed approved for Anne Smith</div>
-        <div class=""><span class="time">At  3:24pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  3:24pm</span> by Sarah Thomson - <a class="details"  href="#">Details</a></div>
       </div>
   </div>                
                 
@@ -859,7 +870,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Sarah Thomson signed in</div>
-        <div class=""><span class="time">At  1:24pm</span></div>
+        <div class="time"><span class="time">At  1:24pm</span></div>
       </div>
   </div>                  
                 
@@ -868,7 +879,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Closing balance for May: £16,780</div>
-        <div class=""><span class="time">At  2:20pm</span> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  2:20pm</span> - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
                 
@@ -877,7 +888,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Price change requested for Anne Smith</div>
-        <div class=""><span class="time">At  5:50pm</span> by Acme Training Ltd - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  5:50pm</span> by Acme Training Ltd - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
   <div class="entry payment" data-type="payement" data-provider="acme-training-ltd">
@@ -885,7 +896,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Outgoing payment made: £14,500 to Acme ltd</div>
-        <div class=""><span class="time">At  10:12am</span> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  10:12am</span> - <a class="details"  href="#">Details</a></div>
       </div>
   </div>                
                 
@@ -895,7 +906,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Sarah Thomson signed out</div>
-        <div class=""><span class="time">At  5:35pm</span></div>
+        <div class="time"><span class="time">At  5:35pm</span></div>
       </div>
   </div>
   <div class="entry apprentice" data-type="apprentice" data-provider="acme-training-ltd" data-user="sarah-thomson">
@@ -903,7 +914,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Cohort approved: Acme Training ltd</div>
-        <div class=""><span class="time">At  5:34pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  5:34pm</span> by Sarah Thomson - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
  <div class="entry team" data-type="team" data-user="sarah-thomson">
@@ -911,7 +922,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Sarah Thomson signed in</div>
-        <div class=""><span class="time">At  5:30pm</span></div>
+        <div class="time"><span class="time">At  5:30pm</span></div>
       </div>
   </div>           
                 
@@ -920,7 +931,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Cohort request made</div>
-        <div class=""><span class="time">At  3:34pm</span> by Acme Training ltd - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  3:34pm</span> by Acme Training ltd - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
                 
@@ -931,7 +942,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Sarah Thomson signed out</div>
-        <div class=""><span class="time">At  6:01pm</span></div>
+        <div class="time"><span class="time">At  6:01pm</span></div>
       </div>
   </div>
                 
@@ -940,7 +951,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Cohort request sent to Acme Training ltd</div>
-        <div class=""><span class="time">At  6:00pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
+        <div class=""><span class="time">At  6:00pm</span> by Sarah Thomson - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
  <div class="entry team" data-type="team" data-user="sarah-thomson">
@@ -948,7 +959,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Sarah Thomson signed in</div>
-        <div class=""><span class="time">At  5:45pm</span></div>
+        <div class="time"><span class="time">At  5:45pm</span></div>
       </div>
   </div>
   <div class="entry apprentice" data-type="apprentice" data-provider="acme-training-ltd">
@@ -956,7 +967,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Cohort request made</div>
-        <div class=""><span class="time">At  3:24pm</span> by Acme Training Ltd - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  3:24pm</span> by Acme Training Ltd - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
 
@@ -967,7 +978,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Sarah Thomson signed out</div>
-        <div class=""><span class="time">At  5:24pm</span></div>
+        <div class="time"><span class="time">At  5:24pm</span></div>
       </div>
   </div>
                 
@@ -976,7 +987,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Cohort request sent to Acme Training ltd</div>
-        <div class=""><span class="time">At  5:21pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
+        <div class=""><span class="time">At  5:21pm</span> by Sarah Thomson - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
 
@@ -985,7 +996,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Cohort created with Acme Training ltd</div>
-        <div class=""><span class="time">At  4:23pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  4:23pm</span> by Sarah Thomson - <a class="details"  href="#">Details</a></div>
       </div>
   </div>
 
@@ -994,7 +1005,7 @@ Activity         </h2>
     </div>
     <div class="body">
       <div>Sarah Thomson signed in</div>
-        <div class=""><span class="time">At 3:24pm</span></div>
+        <div class="time"><span class="time">At 3:24pm</span></div>
       </div>
   </div>
 
@@ -1005,7 +1016,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>Levy payment received </div>
-        <div class=""><span class="time">At  midnight</span> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  midnight</span> - <a class="details"  href="#">Details</a></div>
     </div>
   </div>
                 
@@ -1014,7 +1025,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>Pete Kowalczyk timed out</div>
-        <div class=""><span class="time">At  2:59pm</span>
+        <div class="time"><span class="time">At  2:59pm</span>
     </div>
   </div>
                 </div>
@@ -1023,7 +1034,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>Agreement signed for Tesco stores ltd</div>
-        <div class=""><span class="time">At  2:29pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Pete Kowalczyk</a> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  2:29pm</span> by Pete Kowalczyk - <a class="details"  href="#">Details</a></div>
     </div>
   </div> 
  <div class="entry team" data-type="team" data-user="pete-kowalczyk">
@@ -1031,7 +1042,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>Pete Kowalczyk signed in</div>
-        <div class=""><span class="time">At  2:24pm</span></div>
+        <div class="time"><span class="time">At  2:24pm</span></div>
     </div>
   </div> 
  <div class="entry team" data-type="team" data-user="pete-kowalczyk">
@@ -1040,7 +1051,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>Pete Kowalczyk joined</div>
-        <div class=""><span class="time">At  2:24pm</span></div>
+        <div class="time"><span class="time">At  2:24pm</span></div>
     </div>
   </div>         
  <div class="entry team" data-type="team" data-user="sarah-thomson">
@@ -1049,7 +1060,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>Sarah Thomson signed out</div>
-        <div class=""><span class="time">At  2:46pm</span></div>
+        <div class="time"><span class="time">At  2:46pm</span></div>
     </div>
   </div>  
  <div class="entry team" data-type="team" data-user="pete-kowalczyk">
@@ -1058,7 +1069,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>Pete Kowalczyk invited</div>
-        <div class=""><span class="time">At  2:45pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  2:45pm</span> by Sarah Thomsom - <a class="details"  href="#">Details</a></div>
     </div>
   </div>                 
   <div class="entry service" data-type="service" data-user="sarah.thomson">
@@ -1066,7 +1077,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>PAYE scheme added: 123/456789</div>
-        <div class=""><span class="time">At  2:34pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  2:34pm</span> by Sarah Thomson - <a class="details"  href="#">Details</a></div>
     </div>
   </div>                 
   <div class="entry service" data-type="service" data-user="sarah.thomson">
@@ -1074,7 +1085,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>Tesco stores ltd added</div>
-        <div class=""><span class="time">At  2:30pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  2:30pm</span> by Sarah Thomson - <a class="details"  href="#">Details</a></div>
     </div>
   </div> 
   <div class="entry service" data-type="service" data-user="sarah.thomson">
@@ -1082,7 +1093,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>PAYE scheme added: 123/6543321</div>
-        <div class=""><span class="time">At  2:24pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  2:24pm</span> by Sarah Thomson - <a class="details"  href="#">Details</a></div>
     </div>
   </div>                 
   <div class="entry service" data-type="service" data-user="sarah.thomson">
@@ -1090,7 +1101,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>Tesco food ltd added</div>
-        <div class=""><span class="time">At  2:24pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a> - <a class="details"  href="#">Details</a></div>
+        <div class="time"><span class="time">At  2:24pm</span> by Sarah Thomson - <a class="details"  href="#">Details</a></div>
     </div>
   </div>                
   <div class="entry start account">
@@ -1098,7 +1109,7 @@ Activity         </h2>
     </div>
     <div class="body">
         <div>Account created</div>
-        <div class=""><span class="time">At  2:24pm</span> by <a href="/sprint/{{sprint}}/account/team/index" class="name">Sarah Thomson</a></div>
+        <div class="time"><span class="time">At  2:24pm</span> by Sarah Thomson</div>
     </div>
   </div> 
 </div>

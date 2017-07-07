@@ -2591,3 +2591,8 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
         width: 100%;
     }
 }
+.change-email {
+    input[type="email"]:disabled{
+        color: $grey-1;
+    }
+}

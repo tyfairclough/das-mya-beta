@@ -4658,3 +4658,7 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
 #activityFilters input[type="text"], #activityFilters select {
   width: 100%;
 }
+
+.change-email input[type="email"]:disabled {
+  color: #6f777b;
+}

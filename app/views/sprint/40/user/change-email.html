@@ -20,7 +20,7 @@
         display: none;
     }
 </style>
-<main class="elements-index" id="content" role="main" tabindex="-1">
+<main class="change-email" id="content" role="main" tabindex="-1">
   <!--{% include "includes/link-back.html" %}-->
 
   <div class="grid-row">
@@ -30,11 +30,12 @@
 </div>        
 <form>
     <div class="form-group">
-            <label class="form-label-bold" for="email">New email address</label>
-            <input class="form-control" id="email" maxlength="128" name="email" pattern="[A-Za-z0-9_\-\+/{\t\n\r}#$%^\\&amp;\[\]*=()|?'~`! :]+([.][A-Za-z0-9_\-\+/{\t\n\r}#$%^\\&amp;\[\]*=()|?'~`! :]+)*@[A-Za-z0-9\[\]:]+([.-][A-Za-z0-9\[\]:]+)*\.[A-Za-z0-9\[\]:]+([-.][A-Za-z0-9\[\]:]+)*" type="email" tabindex="0"> 
+            <label class="form-label-bold" for="email">Current email address</label>
+            <input class="form-control disabled" id="email" maxlength="128" name="email" type="email" tabindex="0" disabled="disabled"
+ value="joe.blogs@gmail.com"> 
     </div>
     <div class="form-group">
-            <label class="form-label-bold" for="email2">Re-type email address</label>
+            <label class="form-label-bold" for="email2">New email address</label>
             <input class="form-control" id="email2" maxlength="128" name="email" pattern="[A-Za-z0-9_\-\+/{\t\n\r}#$%^\\&amp;\[\]*=()|?'~`! :]+([.][A-Za-z0-9_\-\+/{\t\n\r}#$%^\\&amp;\[\]*=()|?'~`! :]+)*@[A-Za-z0-9\[\]:]+([.-][A-Za-z0-9\[\]:]+)*\.[A-Za-z0-9\[\]:]+([-.][A-Za-z0-9\[\]:]+)*" type="email" tabindex="0"> 
     </div>
     <div class="form-group">

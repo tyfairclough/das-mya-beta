@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+{% block content %}
+<style>
+    .header-organisation {
+        display: none;
+    }
+    .header-user h2 {
+        display: none;
+    }
+</style>
+<main class="change-email" id="content" role="main" tabindex="-1">
+  <!--{% include "includes/link-back.html" %}-->
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        
+        <div id="notifications">
+        <div class="success-summary">
+            <h3 class="heading-medium">Confirmation e-mail sent</h3>
+            <p>We've sent an e-mail to <span class="bold-small">pete.kowalczyk@digi2al.co.uk</span>. You e-mail address won't update until it has been verified</p>
+        </div>
+    </div>
+<a href="/sprint/{{sprint}}/account/dashboard/index" class="link-back">Back to employer account</a>
+
+    </div>
+  </div>
+
+</main>
+{% endblock %}

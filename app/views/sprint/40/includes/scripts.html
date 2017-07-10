@@ -70,6 +70,7 @@ $(document).ready(function () {
     var organisationName = getQueryVariable("name");
     var organisationNameNew = getQueryVariable("name-changed");
     var removeMsg = getQueryVariable("removeMsg");        
+    var notifyUpdated = getQueryVariable("notifyUpdated");        
     var XMLSource = $('#search').attr('xmlData');
     var keyword = '';
     var catType = '';
@@ -432,6 +433,9 @@ $(document).ready(function () {
         case 'manage-apprentices':
             manageApprentices();
             break;
+        case 'user-notifications':
+            userNotifications();
+            break;
         default:
             break;
         };
@@ -440,6 +444,13 @@ $(document).ready(function () {
     
     
 // PAGE FUNCTIONS 
+    
+    function userNotifications() {
+        if (notifyUpdated == "y") {
+            $(".info-summary").addClass("hidden")
+            $(".success-summary").removeClass("hidden")
+        }
+    }
     
     function manageApprentices() {
         

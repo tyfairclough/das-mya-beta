@@ -11,19 +11,22 @@
 
 <a href="/sprint/{{sprint}}/account/dashboard/index" class="link-back">Back to employer account</a>
 
+
+    
     <div class="grid-row">
         <div class="column-two-thirds">
 
-<div class="info-summary" tabindex="-1">
-                                        <p>Changes to these settings won't affect service emails, such as password resets</p>
-                                            </div>
-            
+            <div class="info-summary" tabindex="-1">
+                    <p>Changes to these settings won't affect service emails, such as password resets</p>
+            </div>
+            <div class="success-summary hidden" tabindex="-1">
+                <p>Settings updated</p>
+            </div>
+
             <div class="hgroup">
-            <h1 class="heading-xlarge">
-Your notification settings
-       </h1>
-    <p>Choose which accounts you want to receive cohort and apprentice updates from</p>
-</div>
+                <h1 class="heading-xlarge">Your notification settings</h1>
+                <p>Choose which accounts you want to receive cohort and apprentice updates from</p>
+            </div>
 
 <table>
                 <thead>
@@ -63,7 +66,7 @@ Your notification settings
                 </tbody>
             </table>        
             
-<button type="submit" class="button">Update</button>
+<a href="/sprint/{{sprint}}/user/notifications?notifyUpdated=y" class="button">Update</a>
 <a href="/" class="button text-link">Cancel</a>
         </div>
     </div>

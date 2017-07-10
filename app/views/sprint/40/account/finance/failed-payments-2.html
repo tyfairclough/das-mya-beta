@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="failed-payments" id="content" role="main" tabindex="-1">
+
+<div class="hgroup">
+          <h2 class="heading-xlarge">
+Failed payments         </h2>
+    <p>Payments can fail if there's a mismatch between the data you submitted in your account and the data submitted directly to ESFA by your provider.</p>
+    </div>
+        
+
+
+            <div class="timeline">
+  <div class="entry payment">
+    <div class="title">
+      <span class="font-small">Today</span>
+    </div>
+    <div class="body">
+        <div><span class="bold">£5,000 for Anne Smith to Acme training ltd</span><br>Payment failed because some details are missing or incorrect<br><a href="http://das-commitments.herokuapp.com/programmeTen/apprentice-view/individual-apprentice-showing-changes">Check Anne's details</a> and contact Acme training ltd</div>
+  </div>
+  </div>
+                
+    <div class="entry payment">
+    <div class="title">
+      <span class="font-small"></span>
+    </div>
+    <div class="body">
+        <div><span class="bold">£2,000 for Aziz Anzari to Master training ltd</span><br>Payment failed because some details are missing or incorrect</div>
+            <a href="#">Check Aziz's details</a> and contact Master training ltd
+      </div>
+  </div>
+                 <div class="entry team">
+    <div class="title">
+      <span class="font-small">29 May 2018</span>
+    </div>
+    <div class="body">
+        <div><span class="bold">£3,500 for Yuval Noah Harari to Sapiens training ltd</span><br>Payment failed because some details are missing or incorrect</div>
+            <a href="#">Check Yuval 's details</a> and contact Sapiens training ltd
+      </div>
+  </div>  
+  <div class="entry apprentice">
+    <div class="title">
+    </div>
+    <div class="body">
+        <div><span class="bold">£5,000 for Christian Riese Lassen to Dolphin training ltd</span><br>
+            Payment failed because some details are missing or incorrect<br>
+            <a href="#">Check Christian's details</a> and contact Dolphin training ltd
+        </div>
+    </div>
+  </div>
+                
+ <div class="entry team">
+    <div class="title">
+      <span class="font-small">27 June 2018</span>
+    </div>
+    <div class="body">
+        <div><span class="bold">£4,000 for Emeline Nsingi Nkosi to Acme training ltd</span><br>
+Payment failed because some details are missing or incorrect<br>
+            <a href="#">Check Emeline's details</a> and contact Acme training ltd
+</div>
+      </div>
+  </div>                  
+ <div class="entry team">
+    <div class="title">
+      <span class="font-small">&nbsp;</span>
+    </div>
+    <div class="body">
+        <div><span class="bold">£5,000 for Tim Sweeney to BIS training ltd</span><br>
+Payment failed because the details are different<br>
+<a href="#">Check Tim's details</a> and contact BIS training ltd
+        </div>
+      </div>
+  </div>                     
+  <div class="entry start account">
+
+    <div class="body">
+    </div>
+  </div> 
+</div>
+
+
+</main><!-- / #content -->
+{% endblock %}

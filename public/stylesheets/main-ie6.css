@@ -4710,3 +4710,123 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
 .change-email input[type="email"]:disabled {
   color: #6f777b;
 }
+
+.account-dashboard-7 {
+  /*----- Tabs content -------*/
+}
+
+.account-dashboard-7 .tabs-menu {
+  float: left;
+  border-bottom: 1px solid #d4d4d1;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.account-dashboard-7 .tabs-menu li {
+  display: inline-block;
+  height: 51px;
+  line-height: 51px;
+  float: left;
+  text-align: center;
+  margin-right: 5px;
+  color: #000;
+  background-color: #BFC1C3;
+  border-top: 1px solid #BFC1C3;
+  border-right: 1px solid #BFC1C3;
+  border-left: 1px solid #BFC1C3;
+  bottom: -1px;
+}
+
+.account-dashboard-7 .tabs-menu li.current {
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  z-index: 5;
+}
+
+.account-dashboard-7 .tabs-menu li a {
+  padding: 15px;
+  margin-top: 0px;
+  color: #005EA5;
+  text-decoration: none;
+}
+
+.account-dashboard-7 .tabs-menu .current a {
+  color: #000;
+}
+
+.account-dashboard-7 .tabs-menu li a:focus {
+  background: none;
+  border: 0;
+  outline: 0;
+}
+
+.account-dashboard-7 .tab-content {
+  padding: 0px;
+  display: none;
+}
+
+.account-dashboard-7 #tab-1 {
+  display: block;
+  float: left;
+}
+
+.account-dashboard-7 #tab-1 div {
+  background-color: #F8F8F8;
+  padding: 10px 15px 2px 15px;
+  margin-bottom: 10px;
+}
+
+.account-dashboard-7 #tab-1 div:last-child {
+  background: white;
+}
+
+.account-dashboard-7 #tab-2 {
+  display: block;
+  float: left;
+}
+
+.account-dashboard-7 .timeline {
+  padding-top: 0px;
+  padding-left: 0;
+  padding-bottom: 0px;
+  margin-left: 5px;
+  position: relative;
+  width: 100%;
+  background: #FFF;
+}
+
+.account-dashboard-7 .timeline .body {
+  width: 100%;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.account-dashboard-7 .timeline .body div span {
+  color: #bfc1c3;
+}
+
+.account-dashboard-7 .timeline .body:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #BFC1C3;
+  border-radius: 100%;
+  left: -25px;
+  top: 24%;
+  z-index: 99;
+}
+
+.account-dashboard-7 .timeline:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 1px;
+  background: #BFC1C3;
+  top: 30px;
+  bottom: 10px;
+  left: -1px;
+}

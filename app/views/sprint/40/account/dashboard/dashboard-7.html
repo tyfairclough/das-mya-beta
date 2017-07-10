@@ -267,9 +267,76 @@ Your agreement needs to be signed before you can spend funds. <a href="/sprint/{
         </div>
         <div class="column-third">
     
-            <div style="display:none; border: 1px solid gray; width: 100%; height: 450px; background: lightgray;">
-                <h3 class="heading-medium">Audit/Action</h3>
+            <div id="tabs-container">
+              <ul class="tabs-menu">
+                <li class="current"><a href="#tab-1">Tasks</a></li>
+                <li><a href="#tab-2">Activity</a></li>
+              </ul>
+            <div id="tab-1" class="tab-content">
+
+
+            <div>
+            <p class="">2 payments failed<br><a href="">Check details</a></p></div>
+
+
+            <div style="background-color: #F8F8F8; padding:10px 15px 2px 15px;">
+            <p class="">2 agreements need to be signed<br><a href="">View agreements</a></p></div>
+
+
+            <div style="background-color: #F8F8F8; padding:10px 15px 2px 15px;">
+            <p class="">2 apprentice changes ready for approval<br><a href="">View changes</a></p></div>
+
+
+            <div style="background-color: #F8F8F8; padding:10px 15px 2px 15px;">
+            <p class="">1 cohort request ready for approval<br><a href="">View cohort</a></p></div>
+
+
+            <div><a href="">See all tasks</a></div>
+
+
             </div>
+
+
+            <div id="tab-2" class="tab-content" style="display:none;">
+
+
+            <div class="timeline">
+
+            <div class="body">
+              <div><span style="">Today</span><br>2 payments failed<br><span style="">At 1:25pm</span><br><a href="">See details</a></div>
+            </div>
+
+            <div class="body">
+              <div><span style="">Yesterday</span><br>5 apprentice changes approved<br><span style="">At 3:34pm</span> by Pete Kowalczyk<br><a href="">See details</a></div>
+            </div>
+
+            <div class="body">
+              <div><span style="">17 June 2018</span><br>5 apprentice changes requested <br><span style="">At 9:35am</span> by Acme Training ltd<br><a href="">See details</a></div>
+            </div>
+
+            <div class="body">
+              <div><span style="">15 June 2018</span><br>Cohort approved: Acme Training ltd<br><span style="">At 5:34pm</span> by Sarah Thomson<br><a href="">See details</a></div>
+            </div>
+
+            <div class="body hidden">
+              <div><span style="">14 June 2018</span><br>Cohort request made<br><span style="">At 3:34pm</span> by Acme Training ltd<br><a href="">See details</a></div>
+            </div>
+
+            <div class="body hidden">
+              <div><span style="">12 June 2018</span><br>Levy payment received <br><span style="">At 3:34pm</span><br><a href="">See details</a></div>
+            </div>
+
+            <div class="body">
+            <div><a href="">See all activity</a></div>
+
+            </div>
+
+            </div>
+
+
+
+        </div>
+        </div>
 
         </div>
     </div>
@@ -292,6 +359,20 @@ Your agreement needs to be signed before you can spend funds. <a href="/sprint/{
         });
     </script>
 
+            <script>
+
+            $(document).ready(function() {
+            $(".tabs-menu a").click(function(event) {
+            event.preventDefault();
+            $(this).parent().addClass("current");
+            $(this).parent().siblings().removeClass("current");
+            var tab = $(this).attr("href");
+            $(".tab-content").not(tab).css("display", "none");
+            $(tab).fadeIn();
+            });
+            });  
+
+            </script>
 
 
 </main><!-- / #content -->

@@ -443,6 +443,8 @@ $(document).ready(function () {
     
     function manageApprentices() {
         
+        $("#apprenticeshipName").select2();
+        
    var table = $('table').DataTable({
       'ajax': '/public/data/apprentices.json',
        'ordering':false,

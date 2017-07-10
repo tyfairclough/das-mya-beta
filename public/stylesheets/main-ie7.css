@@ -4698,7 +4698,7 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   color: #b10e1e;
 }
 
-#activityFilters input[type="text"], #activityFilters select {
+#activityFilters input[type="text"], #activityFilters select, #ManageFilters input[type="text"], #ManageFilters select {
   width: 100%;
 }
 

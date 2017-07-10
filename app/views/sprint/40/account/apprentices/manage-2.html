@@ -22,6 +22,18 @@
             
 <div class="grid-row">
     <div class="column-two-thirds">
+<fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Quick actions</h2>
+                    <div class="toggled-content">
+                        <div class="form-group">
+                <a href="#" class="button">Add apprentice</a>
+                <a href="#" class="button text-link">Pause </a>
+                <a href="#" class="button text-link">Stop </a>
+                <a href="#" class="button text-link">Approve </a>
+                <a href="#" class="button text-link">Reject </a>
+                    </div>
+                        </div>
+                </fieldset>        
         <table id="example" class="" cellspacing="0" width="100%">
            <thead>
               <tr>
@@ -47,7 +59,7 @@
         
     </div>
     
-    <div class="column-third pull-left">
+    <div class="column-third pull-left" id="ManageFilters">
 <fieldset class="filters filters-accordion">
                     <h2 class="toggler heading-small">Search</h2>
                     <div class="toggled-content">
@@ -65,24 +77,24 @@
                        
                         <div class="form-group">
                         <div class="multiple-choice">
-                            <input id="national-only" name="waste-types" type="checkbox" value="1">
-                            <label class="block-label" for="national-only">Live</label>
+                            <input id="stateLive" name="apprenticeState" type="checkbox" value="1">
+                            <label class="block-label" for="stateLive">Live</label>
                         </div>
                         <div class="multiple-choice">
-                            <input id="national-only" name="waste-types" type="checkbox" value="1">
-                            <label class="block-label" for="national-only">Waiting to start</label>
+                            <input id="stateWaiting" name="apprenticeState" type="checkbox" value="1">
+                            <label class="block-label" for="stateWaiting">Waiting to start</label>
                         </div>
                         <div class="multiple-choice">
-                            <input id="national-only" name="waste-types" type="checkbox" value="1">
-                            <label class="block-label" for="national-only">Paused</label>
+                            <input id="statePaused" name="apprenticeState" type="checkbox" value="1">
+                            <label class="block-label" for="statePaused">Paused</label>
                         </div>
                         <div class="multiple-choice">
-                            <input id="national-only" name="waste-types" type="checkbox" value="1">
-                            <label class="block-label" for="national-only">Stopped</label>
+                            <input id="stateStopped" name="apprenticeState" type="checkbox" value="1">
+                            <label class="block-label" for="stateStopped">Stopped</label>
                         </div>
                         <div class="multiple-choice">
-                            <input id="national-only" name="waste-types" type="checkbox" value="1">
-                            <label class="block-label" for="national-only">Finished</label>
+                            <input id="stateFinished" name="apprenticeState" type="checkbox" value="1">
+                            <label class="block-label" for="stateFinished">Finished</label>
                         </div>
                        </div>                            
                     </div>
@@ -95,20 +107,20 @@
                        
                         <div class="form-group">
                         <div class="multiple-choice">
-                            <input id="national-only" name="waste-types" type="checkbox" value="1">
-                            <label class="block-label" for="national-only">No action needed</label>
+                            <input id="alertNoAction" name="alertState" type="checkbox" value="1">
+                            <label class="block-label" for="alertNoAction">No action needed</label>
                         </div>
                         <div class="multiple-choice">
-                            <input id="national-only" name="waste-types" type="checkbox" value="1">
-                            <label class="block-label" for="national-only">Changes pending</label>
+                            <input id="alertPending" name="alertState" type="checkbox" value="1">
+                            <label class="block-label" for="alertPending">Changes pending</label>
                         </div>
                         <div class="multiple-choice">
-                            <input id="national-only" name="waste-types" type="checkbox" value="1">
-                            <label class="block-label" for="national-only">Payment failed</label>
+                            <input id="alertFailed" name="alertState" type="checkbox" value="1">
+                            <label class="block-label" for="alertFailed">Payment failed</label>
                         </div>
                         <div class="multiple-choice">
-                            <input id="national-only" name="waste-types" type="checkbox" value="1">
-                            <label class="block-label" for="national-only">End-point assessor review needed</label>
+                            <input id="alertEPA" name="alertState" type="checkbox" value="1">
+                            <label class="block-label" for="alertEPA">End-point assessor review needed</label>
                         </div>
                        </div>                            
                     </div>
@@ -117,8 +129,21 @@
                     <h2 class="toggler heading-small">Apprenticeship training courses</h2>
                     <div class="toggled-content">
                         
+                                                <div class="form-group">
+
                        
-                        <div class="form-group">
+<select id="apprenticeshipName" multiple="" class="form-control" tabindex="-1" aria-hidden="true">
+                                <option value="1">Mechatronics engineers</option>
+                                <option value="2">Manufacturing engineers</option>
+                                <option value="3">Survival equipment fitter</option>
+                                <option value="3">Network engineer</option>
+                                <option value="3">Cyber intrusion analyst</option>
+                                <option value="3">Cyber security technologist</option>
+                                <option value="3">Embedded Electronic Systems Design and Development Engineer</option>
+                            </select>                        
+                        </div>
+                        
+                        <div class="form-group hidden">
                         <div class="multiple-choice">
                             <input id="national-only" name="waste-types" type="checkbox" value="1">
                             <label class="block-label" for="national-only">Mechatronics engineers</label>

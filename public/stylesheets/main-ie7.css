@@ -4825,3 +4825,7 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   bottom: 10px;
   left: -1px;
 }
+
+.notification-row {
+  padding: 20px 0 30px 0;
+}

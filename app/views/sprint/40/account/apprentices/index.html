@@ -14,38 +14,68 @@
 
 
 {% block content %}
-<main class="elements-index" id="content" role="main" tabindex="-1">
+<main class="apprentices-index" id="content" role="main" tabindex="-1">
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+        <div class="hgroup">      <h1 class="heading-xlarge">Apprentices      </h1>
+        <p class="text">Apprentice home page.</p></div>
 
-        <div class="hgroup"></div>
-      <h1 class="heading-xlarge">
-        Apprentices
-      </h1>
-        
-        <p>You can:</p>
-        <ul class="list list-bullet">
-            <li>add details of one or more apprentices to your account</li>
-            <li>make sure your training provider gets paid through your account</li>
-        </ul>
+    
+    <div class="grid-row">
+        <div class="column-third">
+            <h3 class="heading-medium">Add</h3>
+            <p>Add new apprentices.</p>
+            <button type="button" class="button">Add a new apprentice</button>
+        </div>
+        <div class="column-third">
+            <h3 class="heading-medium">Cohorts</h3>
+            <p>Handle groups of apprentices added.</p>
+       <a href="/sprint/{{sprint}}/account/apprentices/index">  
+                <div class="data purple">
+                  <h2 class="bold-large" >8</h2>
+                  <h2 class="bold-small" >Ready for review</h2>
+                </div>
+       </a>
 
-        <h3 class="heading-medium">
-            Before you start
-        </h3>
-        
-        
-        <p>You must:</p>
-        <ul class="list list-bullet">
-            <li>make sure the organisation your apprentices will be employed through is in your account - view organisations in this account</li>
-            <li>know the names of your apprentices</li>
-            <li>know your training provider's UK Provider Reference Number (UKPRN) - your training provider can tell you this</li>
-        </ul>
-        
-        <a href="/sprint/{{sprint}}/account/apprentices/choose-legal.html" class="button button-start">Start</a>
+            <a href="/sprint/{{sprint}}/account/apprentices/index">  
 
+               <div class="data purple">
+                  <h2 class="bold-large" >3</h2>
+                  <h2 class="bold-small" >With training providers</h2>
+                </div>
+      </a>
+            <a href="/sprint/{{sprint}}/account/apprentices/index">  
+
+               <div class="data purple">
+                  <h2 class="bold-large">1</h2>
+                  <h2 class="bold-small">Draft</h2>
+                </div>
+            </a>
+        </div>
+        <div class="column-third">
+            <h3 class="heading-medium">Manage</h3>
+            <p>Handle existing apprentices in the system.</p>
+          <a href="/sprint/{{sprint}}/account/apprentices/index">  
+                <div class="data pink">
+                  <h2 class="bold-large" >132</h2>
+                  <h2 class="bold-small" >Apprentices</h2>
+                </div>
+            </a>  
+            
+            <a href="/sprint/{{sprint}}/account/apprentices/index">  
+
+                <div class="data pink">
+                  <h2 class="bold-large" >34</h2>
+                  <h2 class="bold-small" >Live</h2>
+                </div>
+            </a>                
+            <a href="/sprint/{{sprint}}/account/apprentices/index">  
+                <div class="data pink">
+                  <h2 class="bold-large" >66</h2>
+                  <h2 class="bold-small" >Stopped</h2>
+                </div>
+            </a>            
+        </div>
     </div>
-  </div>
-
+    
 </main>
 {% endblock %}

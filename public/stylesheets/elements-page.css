@@ -3937,23 +3937,23 @@ table.form td .block-label.selection-button-radio::after {
   overflow: auto;
 }
 
-#finance-bingo .column-third div {
+#finance-bingo .column-third div, .apprentices-index a .column-third div {
   background-color: #DEE0E2;
   overflow: auto;
   margin-bottom: 15px;
 }
 
-#finance-bingo .column-third div h2 {
+#finance-bingo .column-third div h2, .apprentices-index a .column-third div h2 {
   margin: 0px 0 0px 15px;
   padding-top: 25px;
 }
 
-#finance-bingo .column-third div h2 + h2 {
+#finance-bingo .column-third div h2 + h2, .apprentices-index a .column-third div h2 + h2 {
   margin: 0px 0 0px 15px;
   padding: 0;
 }
 
-#finance-bingo .column-third div a {
+#finance-bingo .column-third div a, .apprentices-index a .column-third div a {
   margin: 10px 0 0;
   padding: 10px 15px;
   float: left;
@@ -4613,7 +4613,7 @@ li.added + li {
   line-height: normal;
 }
 
-#finance-bingo a {
+#finance-bingo a, .apprentices-index a {
   margin-bottom: 15px;
   text-decoration: none;
   width: 100%;
@@ -4621,82 +4621,82 @@ li.added + li {
   float: left;
 }
 
-#finance-bingo a .data {
+#finance-bingo a .data, .apprentices-index a .data {
   padding: 20px 10px;
   margin: 0;
 }
 
-#finance-bingo a .data.fuschia {
+#finance-bingo a .data.fuschia, .apprentices-index a .data.fuschia {
   background: #912b88;
   color: #fff;
 }
 
-#finance-bingo a .data.fuschia:hover {
+#finance-bingo a .data.fuschia:hover, .apprentices-index a .data.fuschia:hover {
   background: #6d2066;
   background: #702369;
 }
 
-#finance-bingo a .data.orange {
+#finance-bingo a .data.orange, .apprentices-index a .data.orange {
   background: #f47738;
   color: #fff;
 }
 
-#finance-bingo a .data.orange:hover {
+#finance-bingo a .data.orange:hover, .apprentices-index a .data.orange:hover {
   background: #b7592a;
   background: #ba5c2d;
 }
 
-#finance-bingo a .data.purple {
+#finance-bingo a .data.purple, .apprentices-index a .data.purple {
   background: #2e358b;
   color: #fff;
 }
 
-#finance-bingo a .data.purple:hover {
+#finance-bingo a .data.purple:hover, .apprentices-index a .data.purple:hover {
   background: #232868;
   background: #252b6b;
 }
 
-#finance-bingo a .data.fuscia {
+#finance-bingo a .data.fuscia, .apprentices-index a .data.fuscia {
   background: #912b88;
   color: #fff;
 }
 
-#finance-bingo a .data.fuscia:hover {
+#finance-bingo a .data.fuscia:hover, .apprentices-index a .data.fuscia:hover {
   background: #6d2066;
   background: #702369;
 }
 
-#finance-bingo a .data.mauve {
+#finance-bingo a .data.mauve, .apprentices-index a .data.mauve {
   background: #6f72af;
   color: #fff;
 }
 
-#finance-bingo a .data.mauve:hover {
+#finance-bingo a .data.mauve:hover, .apprentices-index a .data.mauve:hover {
   background: #535683;
   background: #565986;
 }
 
-#finance-bingo a .data.pink {
+#finance-bingo a .data.pink, .apprentices-index a .data.pink {
   background: #d53880;
   color: #fff;
 }
 
-#finance-bingo a .data.pink:hover {
+#finance-bingo a .data.pink:hover, .apprentices-index a .data.pink:hover {
   background: #a02a60;
   background: #a32d63;
 }
 
-#finance-bingo a .data.red {
+#finance-bingo a .data.red, .apprentices-index a .data.red {
   background: #df3034;
   color: #fff;
 }
 
-#finance-bingo a .data.red:hover {
+#finance-bingo a .data.red:hover, .apprentices-index a .data.red:hover {
   background: #a72427;
   background: #aa272a;
 }
 
-#finance-bingo a .data span {
+#finance-bingo a .data span, .apprentices-index a .data span {
   text-decoration: underline;
   margin: 5px -10px -20px;
   padding: 10px;
@@ -4705,11 +4705,11 @@ li.added + li {
   font-weight: 900;
 }
 
-#finance-bingo a .data span i {
+#finance-bingo a .data span i, .apprentices-index a .data span i {
   visibility: hidden;
 }
 
-#finance-bingo a .data:hover span i {
+#finance-bingo a .data:hover span i, .apprentices-index a .data:hover span i {
   visibility: visible;
 }
 

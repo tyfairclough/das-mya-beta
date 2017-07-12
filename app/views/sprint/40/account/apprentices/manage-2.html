@@ -15,55 +15,13 @@
 
 {% block content %}
 <main class="manage-apprentices" id="content" role="main" tabindex="-1">
-    
+      {% include "includes/link-back.html" %}
+
         <div class="hgroup">
             <h1 class="heading-xlarge">Manage your apprentices</h1>
         </div>
             
 <div class="grid-row">
-    <div class="column-two-thirds">
-              <details>
-            <summary>Bulk actions</summary>
-
-        <fieldset class="filters filters-accordion">
-                    <h2 class="toggler heading-small">Quick actions</h2>
-                    <div class="toggled-content">
-                  <p>Make a selection to perform bulk actions</p>                        <div class="form-group">
-                <!--<a href="#" class="button">Add apprentice</a>-->
-                <a href="#" class="button text-link">Pause </a>
-                <a href="#" class="button text-link">Stop </a>
-                <a href="#" class="button text-link">Approve </a>
-                <a href="#" class="button text-link">Reject </a>
-                    </div>
-                        </div>
-                </fieldset>  
-        </details>
-        
-        <table id="example" class="" cellspacing="0" width="100%">
-           <thead>
-              <tr>
-                 <th></th>
-                 <th>Name</th>
-                 <th>Date of birth</th>
-                 <th>Status</th>
-                 <th>Alerts</th>
-                 <th></th>
-              </tr>
-           </thead>
-           <tfoot class="hidden">
-              <tr>
-                 <th></th>
-                 <th>Name</th>
-                 <th>Date of birth</th>
-                 <th>Status</th>
-                 <th>Alerts</th>
-                 <th></th>
-              </tr>
-           </tfoot>
-        </table>
-
-
-    </div>
     
     <div class="column-third pull-left" id="ManageFilters">
 <fieldset class="filters filters-accordion">
@@ -182,6 +140,115 @@
                     </div>
                 </fieldset>         
     </div>
+    
+    <div class="column-two-thirds">
+              <details class="hidden">
+            <summary>Bulk actions</summary>
+
+        <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Quick actions</h2>
+                    <div class="toggled-content">
+                  <p>Make a selection to perform bulk actions</p>                        <div class="form-group">
+                <!--<a href="#" class="button">Add apprentice</a>-->
+                <a href="#" class="button text-link">Pause </a>
+                <a href="#" class="button text-link">Stop </a>
+                <a href="#" class="button text-link">Approve </a>
+                <a href="#" class="button text-link">Reject </a>
+                    </div>
+                        </div>
+                </fieldset>  
+        </details>
+ <table class="">
+                          <thead>
+                            <tr>
+                              <th scope="col" style="padding-top:0">Name</th>
+                              <th scope="col" style="padding-top:0">Date of birth</th>
+                               <th scope="col" style="padding-top:0; width:90px">Status</th>
+                               <th scope="col" style="padding-top:0; width:200px">Alerts</th>
+                               <th scope="col" style="padding-top:0"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <!--quick hack, will fix -->
+                              <td class="rjTabWidth">Rob Edwards</td>
+                              <td class="">3 Jun 1997</td>
+                              <td class="">Live</td>
+                               <td>Changes pending</td>
+                              <td><a href="/sprint/{{sprint}}/account/apprentices/individual-apprentice">View</a></td>
+                            </tr>
+                             <tr>
+                              <td class="rjTabWidth">Susan Hamazaki</td>
+                              <td class="">12 Oct 1995</td>
+                               <td class="">Paused</td>
+                                <td>Changes for review</td>
+                               <td><a href="/sprint/{{sprint}}/account/apprentices/individual-apprentice-showing-changes">View</a></td>
+
+                            </tr>
+                                                        <tr>
+                              <td class="rjTabWidth">James Apan</td>
+                              <td class="">30 Oct 2001</td>
+                                <td class="">Live</td>
+                                 <td></td>
+                               <td><a href="/sprint/{{sprint}}/account/apprentices/individual-apprentice-no-changes">View</a></td>
+                            </tr>
+                            <tr>
+                              <td class="rjTabWidth">David Jenkins</td>
+                              <td class="">5 Sep 1999</td>
+                                <td class="">Finished</td>
+                                 <td></td>
+                               <td class="looks-like-a-link-underline">View</td>
+                            </tr>
+
+                            <tr>
+                              <td class="rjTabWidth">William Wing</td>
+                              <td class="">1 June 2001</td>
+                                <td class="">Live</td>
+                                 <td><!--Payment failure<br /> - Change requested-->---</td>
+                             <td><a href="/sprint/{{sprint}}/account/apprentices/individual-apprentice-payment-failure">View</a></td>
+                            </tr>
+
+                             <tr>
+                              <td class="rjTabWidth">Mel O'Connor</td>
+                              <td class="">1 May 1998</td>
+                                <td class="">Live</td>
+                                 <td>Changes for review</td>
+                             <td><a href="/sprint/{{sprint}}/account/apprentices/employer-data-lock-mel">View</a></td>
+                            </tr>
+
+                            <tr>
+                              <td class="rjTabWidth">William Hill</td>
+                              <td class="">10 Jan 1998</td>
+                                <td class="">Waiting to start</td>
+                                 <td></td>
+                              <td class="looks-like-a-link-underline">View</td>
+                            </tr>
+                             <tr>
+                              <td class="rjTabWidth">Harvey Dent</td>
+                              <td class="">29 Oct 2000</td>
+                                <td class="">Live</td>
+                                 <td>Changes requested</td>
+                               <td><a href="/sprint/{{sprint}}/account/apprentices/harvey-dent-restart-apprenticeship">View</a></td>
+                            </tr>
+                             <tr>
+                              <td class="rjTabWidth">Jenny Topham</td>
+                              <td class="">10 Jan 1998</td>
+                                <td class="">Stopped</td>
+                                 <td></td>
+                              <td class="looks-like-a-link-underline">View</td>
+                            </tr>
+                            <tr>
+                              <td class="rjTabWidth">David Jenkins</td>
+                              <td class="">05 June 1999</td>
+                                <td class="">Live</td>
+                                 <td><!--Payment adjustment-->---</td>
+                                  <td><a href="/sprint/{{sprint}}/account/apprentices/individual-apprentice-payment-adjustment">View</a></td>
+                            </tr>
+                          </tbody>
+                      </table>
+
+    </div>
+    
 </div>
     
 </main>

@@ -16,7 +16,7 @@
 {% block content %}
 
 <main class="activity-dashboard" id="content" role="main" tabindex="-1">
-
+{% include "includes/link-back.html" %}
 <div class="hgroup">
           <h2 class="heading-xlarge">
 Activity         </h2>
@@ -43,13 +43,13 @@ Activity         </h2>
                                     <div class="multiple-choice">
                                     <input id="1-month" type="radio" name="date-choice" value="1" checked>
                                   <label class="" for="1-month">
-                                      1 month
+                                      this month
                                   </label>
                                     </div>
                                     <div class="multiple-choice">                                    
                                     <input id="3-months" type="radio" name="date-choice" value="3">
                                   <label class=" " for="3-months">
-                                      3 months
+                                      last 3 months
                                   </label>
                                     </div>
                                     <div class="multiple-choice">

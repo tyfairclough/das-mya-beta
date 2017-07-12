@@ -4719,7 +4719,6 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   float: left;
   border-bottom: 1px solid #d4d4d1;
   width: 100%;
-  margin-bottom: 10px;
 }
 
 .account-dashboard-7 .tabs-menu li {
@@ -4769,12 +4768,25 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
 .account-dashboard-7 #tab-1 {
   display: block;
   float: left;
+  overflow: auto;
+  border: 1px solid #bfc1c3;
+  border-top: 0;
+  padding: 15px;
 }
 
 .account-dashboard-7 #tab-1 div {
-  border-left: 5px solid #bfc1c3;
-  padding: 10px 15px 2px 15px;
-  margin-bottom: 10px;
+  border-bottom: 1px solid #bfc1c3;
+  padding: 10px;
+  position: relative;
+}
+
+.account-dashboard-7 #tab-1 div a.dismiss {
+  float: right;
+  font-size: 16px;
+}
+
+.account-dashboard-7 #tab-1 div p {
+  margin: 0;
 }
 
 .account-dashboard-7 #tab-1 div:last-child {

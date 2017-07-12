@@ -17,7 +17,7 @@
 
 <main class="account-dashboard-7" id="content" role="main" tabindex="-1">
 
-        <div id="notifications">
+        <div id="notifications" class="hidden">
         <div class="success-summary">
             <h3 class="heading-medium">Confirmation e-mail sent</h3>
             <p>We've sent an e-mail to <span class="bold-small">pete.kowalczyk@digi2al.co.uk</span>. You e-mail address won't update until it has been verified</p>
@@ -273,22 +273,22 @@ Your agreement needs to be signed before you can spend funds. <a href="/sprint/{
 
 
             <div>
-            <p class="">2 payments failed<br><a href="">Check details</a></p></div>
+            <p class="">2 payments failed<br><a href="/sprint/{{sprint}}/account/finance/failed-payments-2">Check details</a></p></div>
 
 
-            <div style="background-color: #F8F8F8; padding:10px 15px 2px 15px;">
-            <p class="">2 agreements need to be signed<br><a href="">View agreements</a></p></div>
+            <div >
+            <p class="">1 agreement needs to be signed<br><a href="/sprint/{{sprint}}/account/organisations/index">View agreements</a></p></div>
 
 
-            <div style="background-color: #F8F8F8; padding:10px 15px 2px 15px;">
-            <p class="">2 apprentice changes ready for approval<br><a href="">View changes</a></p></div>
+            <div >
+            <p class="">2 apprentice changes ready for approval<br><a href="/sprint/{{sprint}}/account/apprentices/manage-2">View changes</a></p></div>
 
 
-            <div style="background-color: #F8F8F8; padding:10px 15px 2px 15px;">
-            <p class="">1 cohort request ready for approval<br><a href="">View cohort</a></p></div>
+            <div >
+            <p class="">1 cohort request ready for approval<br><a href="http://das-commitments.herokuapp.com/programmeTen/contracts/listing/approval">View cohort</a></p></div>
 
 
-            <div><a href="">See all tasks</a></div>
+            <div class="hidden"><a href="">See all tasks</a></div>
 
 
             </div>
@@ -300,23 +300,23 @@ Your agreement needs to be signed before you can spend funds. <a href="/sprint/{
             <div class="timeline">
 
             <div class="body">
-              <div><span style="">Today</span><br>2 payments failed<br><span style="">At 1:25pm</span><br><a href="">See details</a></div>
+              <div><span style="">Today</span><br>2 payments failed<br><span style="">At 1:25pm</span><br><a href="/sprint/{{sprint}}/account/finance/failed-payments-2">See details</a></div>
             </div>
 
             <div class="body">
-              <div><span style="">Yesterday</span><br>5 apprentice changes approved<br><span style="">At 3:34pm</span> by Pete Kowalczyk<br><a href="">See details</a></div>
+                <div><span style="">Yesterday</span><br>2 apprentice changes approved<br><span style="">At 3:34pm by Pete Kowalczyk</span><br><a href="/sprint/{{sprint}}/account/apprentices/manage-2">See details</a></div>
             </div>
 
             <div class="body">
-              <div><span style="">17 June 2018</span><br>5 apprentice changes requested <br><span style="">At 9:35am</span> by Acme Training ltd<br><a href="">See details</a></div>
+              <div><span style="">17 June 2018</span><br>2 apprentice changes requested <br><span style="">At 3.34pm by Acme Training ltd</span><br><a href="#" onclick="demoAlert('This link is coming soon')">See details</a></div>
             </div>
 
             <div class="body">
-              <div><span style="">15 June 2018</span><br>Cohort approved: Acme Training ltd<br><span style="">At 5:34pm</span> by Sarah Thomson<br><a href="">See details</a></div>
+              <div><span style="">15 June 2018</span><br>Cohort approved: Acme Training ltd<br><span style="">At 5:34pm by Sarah Thomson</span><br><a href="#" onclick="demoAlert('This link is coming soon')">See details</a></div>
             </div>
 
             <div class="body hidden">
-              <div><span style="">14 June 2018</span><br>Cohort request made<br><span style="">At 3:34pm</span> by Acme Training ltd<br><a href="">See details</a></div>
+              <div><span style="">14 June 2018</span><br>Cohort request made<br><span style="">At 3:34pm by Acme Training ltd</span><br><a href="">See details</a></div>
             </div>
 
             <div class="body hidden">
@@ -324,7 +324,7 @@ Your agreement needs to be signed before you can spend funds. <a href="/sprint/{
             </div>
 
             <div class="body">
-            <div><a href="">See all activity</a></div>
+            <div><a href="/sprint/{{sprint}}/account/dashboard/activity-3.html">See all activity</a></div>
 
             </div>
 

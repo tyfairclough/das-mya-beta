@@ -4772,13 +4772,14 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
 }
 
 .account-dashboard-7 #tab-1 div {
-  background-color: #F8F8F8;
+  border-left: 5px solid #bfc1c3;
   padding: 10px 15px 2px 15px;
   margin-bottom: 10px;
 }
 
 .account-dashboard-7 #tab-1 div:last-child {
-  background: white;
+  border-left: white;
+  padding-left: 20px;
 }
 
 .account-dashboard-7 #tab-2 {
@@ -4804,7 +4805,7 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
 }
 
 .account-dashboard-7 .timeline .body div span {
-  color: #bfc1c3;
+  color: #6f777b;
 }
 
 .account-dashboard-7 .timeline .body:before {

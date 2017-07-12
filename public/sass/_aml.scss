@@ -2654,9 +2654,10 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
       display: block;
         float: left;
         div {
-            background-color: #F8F8F8; padding:10px 15px 2px 15px; margin-bottom: 10px;
+            border-left: 5px solid $grey-2; padding:10px 15px 2px 15px; margin-bottom: 10px;
             &:last-child {
-                background: white;
+                border-left: white;
+                padding-left: 20px
             }
         }
     }
@@ -2681,7 +2682,7 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
               position: relative;
                 div {
                     span {
-                        color: $grey-2
+                        color: $grey-1
                     }
                 }
             &:before {

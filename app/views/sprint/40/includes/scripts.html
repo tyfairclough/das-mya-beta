@@ -123,13 +123,18 @@ $(document).ready(function () {
     
     //default to acme limited
     
+    function demoAlert(message){
+        e.preventDefault;
+        alert(message);
+    }
+    
     function defaultOrg() {
         if (localStorage.getItem("organisations") === null){
     //    console.log("no orgs founddddd");
         var newCompany = [];
         var newCompanyDetails = {};
-        newCompanyDetails.name = "Acme Ltd";
-        localStorage.setItem("organisation-name","Acme Ltd")
+        newCompanyDetails.name = "Tesco food ltd";
+        localStorage.setItem("organisation-name","Tesco food ltd")
         newCompanyDetails.signed = 0;
         newCompany.push(JSON.stringify(newCompanyDetails));
         //newCompany.push(newCompanyDetails);
@@ -171,7 +176,7 @@ $(document).ready(function () {
             //    console.log("no orgs founddddd");
             var newCompany = [];
             var newCompanyDetails = {};
-            newCompanyDetails.name = "Acme Ltd";
+            newCompanyDetails.name = "Tesco food ltd";
             newCompanyDetails.signed = 0;
             newCompany.push(JSON.stringify(newCompanyDetails));
             //  console.log(newCompany);    
@@ -1953,7 +1958,7 @@ $("#apprenticeshipName").on("select2:select", function (e) {
             //    console.log("no orgs founddddd");
             var newCompany = [];
             var newCompanyDetails = {};
-            newCompanyDetails.name = "Acme Ltd";
+            newCompanyDetails.name = "Tesco food ltd";
             newCompanyDetails.signed = 0;
             newCompany.push(JSON.stringify(newCompanyDetails));
             //  console.log(newCompany);    

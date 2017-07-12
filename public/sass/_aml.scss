@@ -2596,33 +2596,44 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
         color: $grey-1;
     }
 }
-.account-dashboard-7 {
+.account-dashboard-7, .individual-apprentice {
     .tabs-menu {
         float: left;
         border-bottom: 1px solid #d4d4d1;
         width: 100%;
+        padding-left: 10px;
     }
 
     .tabs-menu li {
-      display: inline-block;
-      height: 51px;
-      line-height: 51px;
-      float: left;
-      text-align: center;
-      margin-right: 5px;
-      color: #000;
-      background-color: #BFC1C3;
-      border-top: 1px solid #BFC1C3;
-      border-right: 1px solid #BFC1C3;
-      border-left: 1px solid #BFC1C3;
-      bottom: -1px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+    color: #000;
+    background-color: $grey-3;
+    border-top: 1px solid $grey-2;
+    border-right: 1px solid $grey-2;
+    border-left: 1px solid $grey-2;
+    bottom: -1px;
+    line-height: 44px;
+        &:hover {
+            line-height: 51px;
+            margin-top: -6px;
+            margin-bottom: -1px;
+            background: $grey-4;
+            text-decoration: underline;
+
+        }
     }
 
     .tabs-menu li.current {
-      position: relative;
-      background-color: #fff;
-      border-bottom: 1px solid #fff;
-      z-index: 5;
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    z-index: 5;
+    line-height: 50px;
+    margin-bottom: -1px;
+    margin-top: -7px;
     }
 
     .tabs-menu li a {
@@ -2679,6 +2690,10 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
     #tab-2 {
       display: block;
         float: left;
+        overflow: auto;
+        border: 1px solid $grey-2;
+        border-top: 0;
+        padding: 15px;
     }    
 
     .timeline {

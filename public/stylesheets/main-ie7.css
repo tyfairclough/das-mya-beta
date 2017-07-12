@@ -4706,61 +4706,72 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   color: #6f777b;
 }
 
-.account-dashboard-7 {
+.account-dashboard-7, .individual-apprentice {
   /*----- Tabs content -------*/
 }
 
-.account-dashboard-7 .tabs-menu {
+.account-dashboard-7 .tabs-menu, .individual-apprentice .tabs-menu {
   float: left;
   border-bottom: 1px solid #d4d4d1;
   width: 100%;
+  padding-left: 10px;
 }
 
-.account-dashboard-7 .tabs-menu li {
+.account-dashboard-7 .tabs-menu li, .individual-apprentice .tabs-menu li {
   display: inline-block;
-  height: 51px;
-  line-height: 51px;
   float: left;
   text-align: center;
   margin-right: 5px;
   color: #000;
-  background-color: #BFC1C3;
-  border-top: 1px solid #BFC1C3;
-  border-right: 1px solid #BFC1C3;
-  border-left: 1px solid #BFC1C3;
+  background-color: #dee0e2;
+  border-top: 1px solid #bfc1c3;
+  border-right: 1px solid #bfc1c3;
+  border-left: 1px solid #bfc1c3;
   bottom: -1px;
+  line-height: 44px;
 }
 
-.account-dashboard-7 .tabs-menu li.current {
+.account-dashboard-7 .tabs-menu li:hover, .individual-apprentice .tabs-menu li:hover {
+  line-height: 51px;
+  margin-top: -6px;
+  margin-bottom: -1px;
+  background: #f8f8f8;
+  text-decoration: underline;
+}
+
+.account-dashboard-7 .tabs-menu li.current, .individual-apprentice .tabs-menu li.current {
   position: relative;
   background-color: #fff;
   border-bottom: 1px solid #fff;
   z-index: 5;
+  line-height: 50px;
+  margin-bottom: -1px;
+  margin-top: -7px;
 }
 
-.account-dashboard-7 .tabs-menu li a {
+.account-dashboard-7 .tabs-menu li a, .individual-apprentice .tabs-menu li a {
   padding: 15px;
   margin-top: 0px;
   color: #005EA5;
   text-decoration: none;
 }
 
-.account-dashboard-7 .tabs-menu .current a {
+.account-dashboard-7 .tabs-menu .current a, .individual-apprentice .tabs-menu .current a {
   color: #000;
 }
 
-.account-dashboard-7 .tabs-menu li a:focus {
+.account-dashboard-7 .tabs-menu li a:focus, .individual-apprentice .tabs-menu li a:focus {
   background: none;
   border: 0;
   outline: 0;
 }
 
-.account-dashboard-7 .tab-content {
+.account-dashboard-7 .tab-content, .individual-apprentice .tab-content {
   padding: 0px;
   display: none;
 }
 
-.account-dashboard-7 #tab-1 {
+.account-dashboard-7 #tab-1, .individual-apprentice #tab-1 {
   display: block;
   float: left;
   overflow: auto;
@@ -4769,32 +4780,36 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   padding: 15px;
 }
 
-.account-dashboard-7 #tab-1 div {
+.account-dashboard-7 #tab-1 div, .individual-apprentice #tab-1 div {
   border-bottom: 1px solid #bfc1c3;
   padding: 10px;
   position: relative;
 }
 
-.account-dashboard-7 #tab-1 div a.dismiss {
+.account-dashboard-7 #tab-1 div a.dismiss, .individual-apprentice #tab-1 div a.dismiss {
   float: right;
   font-size: 16px;
 }
 
-.account-dashboard-7 #tab-1 div p {
+.account-dashboard-7 #tab-1 div p, .individual-apprentice #tab-1 div p {
   margin: 0;
 }
 
-.account-dashboard-7 #tab-1 div:last-child {
+.account-dashboard-7 #tab-1 div:last-child, .individual-apprentice #tab-1 div:last-child {
   border-left: white;
   padding-left: 20px;
 }
 
-.account-dashboard-7 #tab-2 {
+.account-dashboard-7 #tab-2, .individual-apprentice #tab-2 {
   display: block;
   float: left;
+  overflow: auto;
+  border: 1px solid #bfc1c3;
+  border-top: 0;
+  padding: 15px;
 }
 
-.account-dashboard-7 .timeline {
+.account-dashboard-7 .timeline, .individual-apprentice .timeline {
   padding-top: 0px;
   padding-left: 0;
   padding-bottom: 0px;
@@ -4804,18 +4819,18 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   background: #FFF;
 }
 
-.account-dashboard-7 .timeline .body {
+.account-dashboard-7 .timeline .body, .individual-apprentice .timeline .body {
   width: 100%;
   margin-left: 20px;
   margin-bottom: 30px;
   position: relative;
 }
 
-.account-dashboard-7 .timeline .body div span {
+.account-dashboard-7 .timeline .body div span, .individual-apprentice .timeline .body div span {
   color: #6f777b;
 }
 
-.account-dashboard-7 .timeline .body:before {
+.account-dashboard-7 .timeline .body:before, .individual-apprentice .timeline .body:before {
   content: "";
   position: absolute;
   width: 8px;
@@ -4827,7 +4842,7 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   z-index: 99;
 }
 
-.account-dashboard-7 .timeline:before {
+.account-dashboard-7 .timeline:before, .individual-apprentice .timeline:before {
   content: "";
   position: absolute;
   top: 0px;

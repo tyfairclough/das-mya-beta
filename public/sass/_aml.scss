@@ -2655,6 +2655,10 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
 
     /*----- Tabs content -------*/
 
+    .tab-container {
+        margin-bottom: 10px;
+    }
+    
     .tab-content {
       padding: 0px;
       display: none;
@@ -2670,12 +2674,10 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
         div {
             border-bottom: 1px solid $grey-2;
             padding: 10px;
+            position: relative;
             &:last-child {
                 border-bottom: none;
             }
-
-
-            position: relative;
             a.dismiss {
                 float: right;
                 font-size: 16px;
@@ -2684,9 +2686,9 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
             p {
                 margin: 0;
             }
-            &:last-child {
+            &.see-all {
                 border-left: white;
-                padding-left: 20px
+                padding-left: 20px''
             }
         }
     }

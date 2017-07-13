@@ -5144,6 +5144,10 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   outline: 0;
 }
 
+.account-dashboard-7 .tab-container, .individual-apprentice .tab-container {
+  margin-bottom: 10px;
+}
+
 .account-dashboard-7 .tab-content, .individual-apprentice .tab-content {
   padding: 0px;
   display: none;
@@ -5178,9 +5182,9 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   margin: 0;
 }
 
-.account-dashboard-7 #tab-1 div:last-child, .individual-apprentice #tab-1 div:last-child {
+.account-dashboard-7 #tab-1 div.see-all, .individual-apprentice #tab-1 div.see-all {
   border-left: white;
-  padding-left: 20px;
+  padding-left: 20px "";
 }
 
 .account-dashboard-7 #tab-2, .individual-apprentice #tab-2 {

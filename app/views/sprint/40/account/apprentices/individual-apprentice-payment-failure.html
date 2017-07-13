@@ -1,0 +1,172 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="individual-apprentice" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+<div class="grid-row">
+           <div class="column-two-thirds">
+              <h1 class="heading-xlarge ">
+
+
+William Wing</h1>
+
+              <div>
+
+
+              <!--div class="panel panel-border-wide " style="padding-top: 35px; padding-bottom:35px ">
+                <h2  class="heading-medium">Payment failure</h2>
+              <p>There was a payment failure for this apprentice. Your training provider has not been paid.</P><P> We have alerted your training provider and they are looking into it.</p>
+            </div-->
+
+            <!--div class="panel panel-border-wide  " style="padding-top: 35px; padding-bottom:35px ">
+                <h2  class="heading-medium">Payment failure</h2>
+              <p>There was a payment failure for this apprentice. Your training provider has not been paid.</p><p>Your training provider is fixing this problem</p>
+            </div-->
+
+             <div class="panel panel-border-wide  " style="padding-top: 35px; padding-bottom:35px ">
+                <h2 class="heading-medium">Payment failure</h2>
+              <p>There was a payment failure for this apprentice. Your training provider has not been paid this month.</p><p>Your training provider has requested a change that will fix this problem</p>
+              <a href="./update-apprenticeship/employer-payment-failure/das-change-confirm-employer-pay-failure">View change request</a>
+            </div>
+
+                <table class="table-19-font" style="margin:0">
+                  <thead>
+                    <tr>
+                      <th> </th>
+                    </tr>
+                  </thead>
+                </table>
+
+                <table class="table-19-font">
+                  <tbody>
+                    <tr>
+                      <td class="apprenticeRecordTitle">Status</td>
+                      <td class="">Live</td>
+                      <td><!--p style="text-align:right; margin:0"><a  href="/programmeTen
+
+
+
+/apprentice-view/update-apprenticeship">Edit status</a></p--></td>
+                    </tr>
+
+                      </tbody>
+                </table>
+
+
+                  <p style="" <="" p="">
+                  </p><table class="table-19-font" style="margin:0">
+                  <thead>
+                    <tr>
+                      <th colspan="2"> <h2 class="heading-medium">Overview</h2></th>
+                    </tr>
+                  </thead>
+                    </table>
+
+                   <table class="table-19-font">
+                  <tbody>
+
+                    <tr id="trainingProvider" class="">
+                      <td class="apprenticeRecordTitle">Training provider</td>
+                      <td class="">Hackney Skills Solutions Ltd</td>
+                    </tr>
+                   <tr id="employer" class="rj-dont-display">
+                      <td class="apprenticeRecordTitle">Employer</td>
+                      <td class="">Acme Coventry Ltd</td>
+                    </tr>
+                     <tr id="referenceNumber" class="">
+                      <td class="apprenticeRecordTitle ">Cohort reference</td>
+                      <td class="">98HXGFD</td>
+                    </tr>
+                   </tbody>
+                </table>
+
+
+               <table class="table-19-font" style="margin:0"> 
+                  <thead>
+                    <tr>
+                      <th colspan="2"> <h2 class="heading-medium">Apprentice</h2></th>
+                      <th><!--p style="margin-top:45px; text-align:right"><a href="/programmeTen
+
+
+
+/apprentice-view/update-apprenticeship/change-apprenticeship-all">Edit apprentice</a> </p--> </th>
+
+                    </tr>
+
+                  </thead>
+                    </table>
+
+                <table class="table-19-font"> 
+                  <tbody>
+                    <tr>
+                      <td class="apprenticeRecordTitle" style="width:250px">Name</td>
+                      <td class="" style="">William Wing</td>
+                      <!--td>
+                          <span id="changePending" class="statusToDo" style="width:200px">Pending</span>
+                      </td-->
+
+                    </tr>
+                     <tr id="ULN" class="rj-dont-display">
+                      <td class="apprenticeRecordTitle ">Unique learner number</td>
+                      <td class="">0123456789</td>
+
+                    </tr>
+                     <tr>
+                      <td class="apprenticeRecordTitle">Date of birth</td>
+                      <td class="">28 February 1997</td>
+                    </tr>
+                    <tr><td class="apprenticeRecordTitle">Apprenticeship training course</td>
+                      <td class="">Level 2: Aeronautical engineering</td>
+                       <td></td>
+                    </tr>
+                     <!--tr>
+                     <td class="apprenticeRecordTitle" >End-point assessor</td>
+                      <td class="" >Pham assessments Ltd</td>
+                    </tr-->
+
+                     <tr>
+                     <td class="apprenticeRecordTitle">Training start date</td>
+                      <td class="">July 2018</td>
+
+
+                    </tr>
+                    <tr>
+                     <td class="apprenticeRecordTitle">Training end date</td>
+                      <td class="">July 2020</td>
+
+
+                    </tr>
+                    <tr>
+                     <td class="apprenticeRecordTitle" style="width:217px">Total cost of training</td>
+                      <td class="">£6,555</td>
+                       <td></td>
+
+
+                    </tr>
+                    <tr id="referenceNumber" class="">
+                      <td class="apprenticeRecordTitle ">Reference</td>
+                      <td class="">Banbury site</td>
+
+                    </tr>
+
+                   </tbody>
+                </table>
+                <p style="margin-top:; text-align:"> </p>
+            </div>
+              </div>
+</main>
+
+{% endblock %}

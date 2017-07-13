@@ -4791,9 +4791,14 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
   position: relative;
 }
 
+.account-dashboard-7 #tab-1 div:last-child, .individual-apprentice #tab-1 div:last-child {
+  border-bottom: none;
+}
+
 .account-dashboard-7 #tab-1 div a.dismiss, .individual-apprentice #tab-1 div a.dismiss {
   float: right;
   font-size: 16px;
+  display: none;
 }
 
 .account-dashboard-7 #tab-1 div p, .individual-apprentice #tab-1 div p {
@@ -4861,6 +4866,10 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
 
 .notification-row {
   padding: 20px 0 30px 0;
+}
+
+.dismiss {
+  display: none;
 }
 
 .elements-index .heading-medium {

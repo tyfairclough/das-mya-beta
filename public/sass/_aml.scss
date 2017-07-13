@@ -2670,6 +2670,9 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
         div {
             border-bottom: 1px solid $grey-2;
             padding: 10px;
+            &:last-child {
+                border-bottom: none;
+            }
 
 
             position: relative;

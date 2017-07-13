@@ -2675,6 +2675,7 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
             position: relative;
             a.dismiss {
                 float: right;
+                display: none;
                 font-size: 16px;
             }
             p {

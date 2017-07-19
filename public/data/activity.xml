@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <Item>accountCreated</Item>
+    <Time>2.24pm</Time>
+    <Date>2017-06-19</Date>
+    <Type>Admin</Type>
+    <Who>Sarah Thomson</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>orgAdded</Item>
+    <Time>2.30pm</Time>
+    <Date>2017-06-19</Date>
+    <Type>Admin</Type>
+    <Who>Sarah Thomson</Who>
+    <item1>Tesco food ltd</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>payeAdded</Item>
+    <Time>2:32:00 pm</Time>
+    <Date>2017-06-19</Date>
+    <Type>Admin</Type>
+    <Who>Sarah Thomson</Who>
+    <item1>123/6543321</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>orgAdded</Item>
+    <Time>2:35:00 pm</Time>
+    <Date>2017-06-19</Date>
+    <Type>Admin</Type>
+    <Who>Sarah Thomson</Who>
+    <item1>Tesco stores ltd</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>userAdded</Item>
+    <Time>8:52:48 am</Time>
+    <Date>2017-06-19</Date>
+    <Type>Team</Type>
+    <Who>Sarah Thomson</Who>
+    <item1>Pete Kowalczyk</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>userJoined</Item>
+    <Time>2:01:00 pm</Time>
+    <Date>2017-06-20</Date>
+    <Type>Team</Type>
+    <Who>Pete Kowalczyk</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>signedIn</Item>
+    <Time>2:15:00 pm</Time>
+    <Date>2017-06-20</Date>
+    <Type>Team</Type>
+    <Who>Pete Kowalczyk</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>agreementSigned</Item>
+    <Time>2:35:00 pm</Time>
+    <Date>2017-06-20</Date>
+    <Type>Admin</Type>
+    <Who>Pete Kowalczyk</Who>
+    <item1>Tesco stores ltd</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>levyPayment</Item>
+    <Time>12:00:00 am</Time>
+    <Date>2017-06-22</Date>
+    <Type>Payment</Type>
+    <Who>ESFA</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>signedIn</Item>
+    <Time>3:24:00 pm</Time>
+    <Date>2017-06-23</Date>
+    <Type>Team</Type>
+    <Who>Sarah Thomson</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>cohortCreated</Item>
+    <Time>3:35:00 pm</Time>
+    <Date>2017-06-23</Date>
+    <Type>Apprentice</Type>
+    <Who>Sarah Thomson</Who>
+    <item1>Acme Training ltd</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>cohortRequestSent</Item>
+    <Time>5:21:00 pm</Time>
+    <Date>2017-06-23</Date>
+    <Type>Apprentice</Type>
+    <Who>Sarah Thomson</Who>
+    <item1>Acme Training ltd</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>cohortRequestReceived</Item>
+    <Time>10:40:00 am</Time>
+    <Date>2017-06-24</Date>
+    <Type>Apprentice</Type>
+    <Who>Acme Training ltd</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>signedIn</Item>
+    <Time>11:20:00 am</Time>
+    <Date>2017-06-24</Date>
+    <Type>Team</Type>
+    <Who>Sarah Thomson</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>cohortRequestSent</Item>
+    <Time>11:45:00 am</Time>
+    <Date>2017-06-24</Date>
+    <Type>Apprentice</Type>
+    <Who>Sarah Thomson</Who>
+    <item1>Acme Training ltd</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>cohortRequestReceived</Item>
+    <Time>10:25:00 am</Time>
+    <Date>2017-06-25</Date>
+    <Type>Apprentice</Type>
+    <Who>Acme Training ltd</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>signedIn</Item>
+    <Time>4:45:00 pm</Time>
+    <Date>2017-06-25</Date>
+    <Type>Team</Type>
+    <Who>Sarah Thomson</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>cohortApproved</Item>
+    <Time>5:10:00 pm</Time>
+    <Date>2017-06-25</Date>
+    <Type>Apprentice</Type>
+    <Who>Sarah Thomson</Who>
+    <item1>Acme Training ltd</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentMade</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-06-26</Date>
+    <Type>Payment</Type>
+    <Who>ESFA</Who>
+    <item1>Acme Training ltd</item1>
+    <item2>14500</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-06-26</Date>
+    <Type>Apprentice</Type>
+    <Who>Sarah Thomson</Who>
+    <item1>Anne Smith</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>closingBalance</Item>
+    <Time>12:01:00 pm</Time>
+    <Date>2017-06-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>May</item1>
+    <item2>16780</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>signedIn</Item>
+    <Time>11:45:00 am</Time>
+    <Date>2017-06-26</Date>
+    <Type>Team</Type>
+    <Who>Sarah Thomson</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeApproved</Item>
+    <Time>3:34:00 pm</Time>
+    <Date>2017-06-26</Date>
+    <Type>Team</Type>
+    <Who>Sarah Thomson</Who>
+    <item1>Anne Smith</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequested</Item>
+    <Time>9:35:00 am</Time>
+    <Date>2017-06-27</Date>
+    <Type>Apprentice</Type>
+    <Who>Acme Training ltd</Who>
+    <item1>Aziz Anzari</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequested</Item>
+    <Time>9:35:00 am</Time>
+    <Date>2017-06-27</Date>
+    <Type>Apprentice</Type>
+    <Who>Acme Training ltd</Who>
+    <item1>Anne Smith</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>signedIn</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-06-28</Date>
+    <Type>Team</Type>
+    <Who>Pete Kowalczyk</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeApproved</Item>
+    <Time>2:21:00 pm</Time>
+    <Date>2017-06-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Pete Kowalczyk</Who>
+    <item1>Anziz Anzari</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeApproved</Item>
+    <Time>2:21:00 pm</Time>
+    <Date>2017-06-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Pete Kowalczyk</Who>
+    <item1>Anne Smith</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>1:25:00 pm</Time>
+    <Date>2017-06-30</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Anziz Anzari</item1>
+    <item2>200</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>1:25:00 pm</Time>
+    <Date>2017-06-30</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Anne Smith</item1>
+    <item2>500</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>signedIn</Item>
+    <Time>9:57:00 am</Time>
+    <Date>2017-07-05</Date>
+    <Type>Team</Type>
+    <Who>Pete Kowalczyk</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>userAdded</Item>
+    <Time>10:10:00 am</Time>
+    <Date>2017-07-05</Date>
+    <Type>Team</Type>
+    <Who>Pete Kowalczyk</Who>
+    <item1>Beth Stelling</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>userJoined</Item>
+    <Time>10:35:00 am</Time>
+    <Date>2017-07-05</Date>
+    <Type>Team</Type>
+    <Who>Beth Stelling</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>signedIn</Item>
+    <Time>10:35:00 am</Time>
+    <Date>2017-07-05</Date>
+    <Type>Team</Type>
+    <Who>Beth Stelling</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeRequested</Item>
+    <Time>10:36:00 am</Time>
+    <Date>2017-07-05</Date>
+    <Type>Apprentice</Type>
+    <Who>Beth Stelling</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeRequested</Item>
+    <Time>10:36:00 am</Time>
+    <Date>2017-07-05</Date>
+    <Type>Apprentice</Type>
+    <Who>Beth Stelling</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>userACL</Item>
+    <Time>10:55:00 am</Time>
+    <Date>2017-07-05</Date>
+    <Type>Team</Type>
+    <Who>Beth Stelling</Who>
+    <item1>Pete Kowalczyk</item1>
+    <item2>Transactor</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>userAdded</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-05</Date>
+    <Type>Team</Type>
+    <Who>Beth Stelling</Who>
+    <item1>Gale Proga</item1>
+    <item2>Owner</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>userJoined</Item>
+    <Time>9:15:00 am</Time>
+    <Date>2017-07-06</Date>
+    <Type>Team</Type>
+    <Who>Gale Proga</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>signedIn</Item>
+    <Time>9:15:00 am</Time>
+    <Date>2017-07-06</Date>
+    <Type>Team</Type>
+    <Who>Gale Proga</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>cohortCreated</Item>
+    <Time>11:40:00 am</Time>
+    <Date>2017-07-06</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>ABC Training Plc</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeApproved</Item>
+    <Time>5:55:00 pm</Time>
+    <Date>2017-07-06</Date>
+    <Type>Apprentice</Type>
+    <Who>Acme Training ltd</Who>
+    <item1>Aziz Anzari</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeApproved</Item>
+    <Time>5:55:00 pm</Time>
+    <Date>2017-07-06</Date>
+    <Type>Apprentice</Type>
+    <Who>Acme Training ltd</Who>
+    <item1>Anne Smith</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>signedIn</Item>
+    <Time>9:00:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Team</Type>
+    <Who>Gale Proga</Who>
+    <item1>Brian Cooley</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Natalie Pinkham</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Debbie Gow</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Aielen Violette</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Skye Romano</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Jeff Reine Adalaide</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Suzie Wolff</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Alexandre Lacazette</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Ossano Kyoto</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Ismael Lyban</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Pretti Patel</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Fateh Ahmed</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Louise Skidmore</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Jennifer Day</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Simone Bickmore</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Tracy Murfet</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Alex Iowebi</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Alex Song</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Laura Wade</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Leonnor Baptista</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Erogan Metsut</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Mohammed Elnenny</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Liza Fabrizio Sperrietti</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Pushpa Gupreet</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Gurpreet Sehmi</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Steffi Neichsmann</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Hongxin Zhou</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Milo Tsui</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Petr Cech</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Laurent Koscielny</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Shkodran Mustafi</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Nacho Monreal</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Sally Holding</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Dita Chambers</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Mellisa Kolasinac</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Steffani Bellerin</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeRequest</Item>
+    <Time>11:50:00 am</Time>
+    <Date>2017-07-15</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Emmanulle Coquelin</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Natalie Pinkham</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Debbie Gow</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Aielen Violette</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Skye Romano</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Jeff Reine Adalaide</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Suzie Wolff</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Alexandre Lacazette</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Ossano Kyoto</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Ismael Lyban</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Pretti Patel</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Fateh Ahmed</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Louise Skidmore</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Simone Bickmore</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Tracy Murfet</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Alex Iowebi</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Alex Song</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Laura Wade</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Leonnor Baptista</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Erogan Metsut</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Mohammed Elnenny</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Liza Fabrizio Sperrietti</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Pushpa Gupreet</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Gurpreet Sehmi</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Steffi Neichsmann</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Hongxin Zhou</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Milo Tsui</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Petr Cech</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Laurent Koscielny</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Shkodran Mustafi</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Nacho Monreal</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Sally Holding</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Dita Chambers</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Mellisa Kolasinac</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Steffani Bellerin</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeReceived</Item>
+    <Time>3:30:00 pm</Time>
+    <Date>2017-07-18</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Jennifer Day</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>levyPayment</Item>
+    <Time>12:00:00 am</Time>
+    <Date>2017-07-22</Date>
+    <Type>Payment</Type>
+    <Who>ESFA</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentMade</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who>ESFA</Who>
+    <item1>Acme Training ltd</item1>
+    <item2>14500</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentMade</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who>ESFA</Who>
+    <item1>ABC Training Plc</item1>
+    <item2>14500</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>1:25:00 pm</Time>
+    <Date>2017-06-30</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Hongxin Zhou</item1>
+    <item2>320</item2>
+    <Notes>hongxin had an approved change that shouldn&apos;t of been approved becuase there was an error</Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>1:25:00 pm</Time>
+    <Date>2017-06-30</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Jennifer Day</item1>
+    <item2>320</item2>
+    <Notes>jenny didn&apos;t get the counter change approved</Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>1:25:00 pm</Time>
+    <Date>2017-06-30</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Emmanulle Coquelin</item1>
+    <item2>320</item2>
+    <Notes>emmanuelle didn&apos;t have her date changed in the original summary but did in the irl</Notes>
+  </row>
+  <row>
+    <Item>startDateChangeReceived</Item>
+    <Time>9:01:00 am</Time>
+    <Date>2017-07-02</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Emmanulle Coquelin</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>apprenticeNameRequested</Item>
+    <Time>9:35:00 am</Time>
+    <Date>2017-07-05</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Hongxin Zhou</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>9:35:00 am</Time>
+    <Date>2017-07-05</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Jennifer Day</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>startDateChangeAccepted</Item>
+    <Time>9:35:00 am</Time>
+    <Date>2017-07-05</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>Emmanulle Coquelin</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>cohortCreated</Item>
+    <Time>11:40:00 am</Time>
+    <Date>2017-07-08</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Proga</Who>
+    <item1>ABC Training Plc</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>levyPayment</Item>
+    <Time>12:00:00 am</Time>
+    <Date>2017-07-22</Date>
+    <Type>Payment</Type>
+    <Who>ESFA</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentMade</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who>ESFA</Who>
+    <item1>Acme Training ltd</item1>
+    <item2>14500</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentMade</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who>ESFA</Who>
+    <item1>ABC Training Plc</item1>
+    <item2>14500</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Grace Xhaka</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Andalece Akpom</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Monika Welbeck</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Ping Lee Asano</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Gee Yung Park</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Santi Cazorla</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Dele Bergkamp</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Sonya Mertesacker</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Keiran Mbappe</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Grace Bale</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Emma Swann</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Emma North</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Rebecca Harris</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Victoria Bishop</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Rachel Moore</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Leanne Madson</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Joanne Beale</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Claire Hodge</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>paymentFailed</Item>
+    <Time>10:12:00 am</Time>
+    <Date>2017-07-26</Date>
+    <Type>Payment</Type>
+    <Who></Who>
+    <item1>Catherina Dabrowski</item1>
+    <item2>80</item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Grace Xhaka</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Andalece Akpom</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Monika Welbeck</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Ping Lee Asano</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Gee Yung Park</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Santi Cazorla</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Dele Bergkamp</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Sonya Mertesacker</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Keiran Mbappe</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Grace Bale</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Emma Swann</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Emma North</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Rebecca Harris</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Victoria Bishop</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Rachel Moore</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Leanne Madson</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Joanne Beale</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Claire Hodge</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeReceived</Item>
+    <Time>11:30:00 am</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>ABC Training Plc</Who>
+    <item1>Catherina Dabrowski</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>signedIn</Item>
+    <Time>2:00:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Team</Type>
+    <Who>Gale Progba</Who>
+    <item1></item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Grace Xhaka</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Andalece Akpom</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Monika Welbeck</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Ping Lee Asano</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Gee Yung Park</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Santi Cazorla</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Dele Bergkamp</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Sonya Mertesacker</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Keiran Mbappe</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Grace Bale</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Emma Swann</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Emma North</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Rebecca Harris</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Victoria Bishop</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Rachel Moore</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Leanne Madson</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Joanne Beale</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Claire Hodge</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Item>priceChangeAccepted</Item>
+    <Time>2:11:00 pm</Time>
+    <Date>2017-07-29</Date>
+    <Type>Apprentice</Type>
+    <Who>Gale Progba</Who>
+    <item1>Catherina Dabrowski</item1>
+    <item2></item2>
+    <Notes></Notes>
+  </row>
+</root>

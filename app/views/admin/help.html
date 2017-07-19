@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+&nbsp;
+{% endblock %}
+
+
+{% block content %}
+<main class="elements-index" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Documentation
+      </h1>
+        
+        <p class="lede text">Information on how the prototype works over and above the standard GDS prototype toolkit.</p>
+        
+        <h3 class="heading-small">Javascript</h3>
+        <p>There is a javascript switch that takes the class name from the <code class="code">&lt;main class="class-name"&gt;&lt;/main&gt;</code> element and runs a function for that page. This allows you to set javascript to run for specific pages.</p>
+        
+        <details>
+            <summary>Code example</summary>
+            <pre class="code js">
+var className = $("#content").attr('class');
+switch (className) {
+    case 'index':
+        indexFunction();
+    break;           
+    default:
+    break;
+}
+
+function indexFunction() {
+// Your code for the index page here
+}
+            </pre>
+        </details>
+        
+        
+<h3 class="heading-small">Sprint Folders</h3>        
+        <p>Multiple instances of the prototype can be accessed via sprint numbers/names. Although these don't have to be sprints but any iteration of work.</p>
+        <p>To spin up a duplicate prototype within the prototype simply copy a sprint sub-folder. An existing piece of javascript acts as a shortcut to replace the sub-folder name. This allows you to copy the folder and not break absolute links in the prototype.</p>
+        <p>When you create a link <code class="code">"/sprint/sprint10/account/index"</code> replace the subfolder <code>sprint10</code> with the string <code>{{sprint}}</code> and the nunjucks js engine will automatically replace it with the sub-folder name.</p>
+        <p>In the routes.js file this is pulled through</p>
+        <code class="js">
+        <pre class="code js">
+app.get('/:p1/:p2', function (req, res) {
+res.render(req.params.p1 + "/" + req.params.p2, {'sprint' : req.params.p2})
+})
+        </pre>
+        </code>
+      </div>
+    </div>
+
+</main>
+{% endblock %}

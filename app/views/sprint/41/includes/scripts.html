@@ -1,0 +1,2358 @@
+<!-- govuk_frontend_toolkit js -->
+<script src="/public/javascripts/vendor/polyfills/bind.js"></script>
+<script src="/public/javascripts/govuk/selection-buttons.js"></script>
+<script src="/public/javascripts/govuk/shim-links-with-button-role.js"></script>
+<script src="/public/javascripts/govuk/show-hide-content.js"></script>
+
+<!-- govuk_elements js -->
+<script src="/public/javascripts/govuk/details.polyfill.js"></script>
+<script src="/public/javascripts/application.js"></script>
+<script src="/public/javascripts/stackable.min.js"></script>
+<script src="/public/javascripts/zxcvbn.js"></script>
+<script src="/public/javascripts/hammer.min.js"></script>
+<script src="/public/javascripts/list.min.js"></script>
+<script src="/public/javascripts/jPages.min.js"></script>
+<script src="/public/javascripts/footable.min.js"></script>
+<script src="/public/javascripts/date.js"></script>
+<script src="/public/javascripts/select2.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+<script src="/public/javascripts/metricsgraphics.min.js"></script>
+<script src="/public/javascripts/mg_line_brushing.js"></script>
+<script src="/public/javascripts/tinysort.min.js"></script>
+<!--<script src="https://getaddress.io/js/jquery.getAddress-2.0.5.min.js"></script>-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.15/datatables.min.css"/>
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.15/datatables.min.js"></script>
+<link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.7/css/dataTables.checkboxes.css" rel="stylesheet" />
+<script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.7/js/dataTables.checkboxes.min.js"></script>
+
+
+<script src="/public/javascripts/aml.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" integrity="sha256-gl80aFE+bSTFw7UJf+ne/RkwC55cjidIp0Oe3AX5pfo=" crossorigin="anonymous" />
+<script>
+    
+    // Prototype code written by Ty Fairclough and fixed by James King
+    
+$(document).ready(function () {            
+    // get & set sprint
+    var sprint = {{sprint}}
+    localStorage.setItem("sprint", JSON.stringify(sprint));
+    var className = $("#content").attr('class');
+    var accepted = getQueryVariable("accepted");
+    var invitesent = getQueryVariable("invitesent");
+    var inviteresent = getQueryVariable("inviteresent");
+    var invitecancelled = getQueryVariable("invitecancelled");
+    var rolechange = getQueryVariable("rolechange");
+    var userdeleted = getQueryVariable("userdeleted");
+    var PAYEremoved = getQueryVariable("PAYEremoved");
+    var PAYEadded = getQueryVariable("PAYEadded");
+    var rolechange = getQueryVariable("rolechange");
+    var flow = getQueryVariable("flow");
+    var newOrg = getQueryVariable("newOrg");
+    var newOrgSigned = getQueryVariable("newOrgSigned");
+    var agreementState = getQueryVariable("agreementState");
+    var newLevyAccount = getQueryVariable("newLevyAccount");
+    var sessionState = JSON.parse(localStorage.getItem("sessionState"));
+    var govgateway = getQueryVariable("govgateway");
+    var resetPassword = getQueryVariable("resetPassword");
+    var ab = getQueryVariable("ab");
+    var sprintIteration = JSON.parse(localStorage.getItem("sprint-number"));
+    var userEmail = JSON.parse(localStorage.getItem("email-address"));
+    var emailUpdated = getQueryVariable("emailUpdated");
+    var nameUpdated = getQueryVariable("nameUpdated");
+    var accountCreated = getQueryVariable("accountCreated");
+    var orgType = getQueryVariable("orgtype");
+    var organisationName = getQueryVariable("name");
+    var organisationNameNew = getQueryVariable("name-changed");
+    var removeMsg = getQueryVariable("removeMsg");        
+    var notifyUpdated = getQueryVariable("notifyUpdated");        
+    var XMLSource = $('#search').attr('xmlData');
+    var XMLActivity = $("#activity").attr('xmlData');
+    var keyword = '';
+    var catType = '';
+    var catType = '';
+    var stn = '';
+    var frm = '';
+    var i = 0;
+    var msgPlural = 'are';
+    var paginateCount = 5;
+    var user = {}
+    user.firstName = JSON.parse(localStorage.getItem('user.firstName'));
+    user.lastName = JSON.parse(localStorage.getItem('user.lastName'));
+    user.email = JSON.parse(localStorage.getItem('user.email'));
+    user.password = JSON.parse(localStorage.getItem('user.password'));
+    user.jobTitle = JSON.parse(localStorage.getItem('user.jobTitle'));
+    //user states
+    user.NDA = JSON.parse(localStorage.getItem('userNDA'));
+    user.state = JSON.parse(localStorage.getItem('userState'));
+    user.type = JSON.parse(localStorage.getItem('userType'));
+    
+    var companyData = [{
+        companiesHouseNumber: null,
+        companyName: null,
+        agreement: null
+    }]
+    
+    localStorage.setItem('companyData', JSON.stringify(companyData));
+    
+    var payeSchemes = [{
+        schemeNumber: null,
+        englishPercentage: null
+    }, {
+        schemeNumber: null,
+        englishPercentage: null
+    }];
+    localStorage.setItem('payeSchemes', JSON.stringify(payeSchemes));
+
+    // EXECUTE GLOBAL FUNCTIONS    
+    propositionName();    
+    headerNav();
+    organisationNameFunction();
+    goBack();
+    notifications();
+    userName();
+    getOrganisationDetails();
+    defaultOrg();
+    
+    
+    // GLOBAL FUNCTIONS
+    
+    //default to acme limited
+    
+    function demoAlert(message){
+        e.preventDefault;
+        alert(message);
+    }
+    
+    function defaultOrg() {
+        if (localStorage.getItem("organisations") === null){
+    //    console.log("no orgs founddddd");
+        var newCompany = [];
+        var newCompanyDetails = {};
+        newCompanyDetails.name = "Tesco food ltd";
+        localStorage.setItem("organisation-name","Tesco food ltd")
+        newCompanyDetails.signed = 0;
+        newCompany.push(JSON.stringify(newCompanyDetails));
+        //newCompany.push(newCompanyDetails);
+      //  console.log(newCompany);    
+        localStorage.setItem("organisations", JSON.stringify(newCompany));
+        //localStorage.setItem("organisations", newCompany);
+        }
+    }
+    
+    //get url variables    
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == variable) {
+                return pair[1];
+            }
+        }
+        return (false);
+    }    
+
+    function propositionName() {
+        $("#proposition-name").click(function () {
+            localStorage.clear();
+            window.location.href = "/sprint/{{sprint}}/index";
+        })   
+    }
+
+    function pullCurrentOrg() {
+                    // Global string replacements    
+            //$(".orgnumber").text(JSON.parse(localStorage.getItem("organisation-number")));
+            //$(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
+            //$(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));
+        }
+
+    function SampleOrg() {
+        if (localStorage.getItem("organisations") === null) {
+            //    console.log("no orgs founddddd");
+            var newCompany = [];
+            var newCompanyDetails = {};
+            newCompanyDetails.name = "Tesco food ltd";
+            newCompanyDetails.signed = 0;
+            newCompany.push(JSON.stringify(newCompanyDetails));
+            //  console.log(newCompany);    
+            localStorage.setItem("organisations", JSON.stringify(newCompany));
+        }
+    }       
+
+    function organisationNameFunction() {
+            if (organisationName != "" || null) {
+                var organisationNameStripped = organisationName.replace(/%20/g, " ");
+                localStorage.setItem("organisation-name", JSON.stringify(organisationNameStripped));
+            }
+
+            if (organisationNameNew == "1") {
+                $("#content").prepend("<div class='govuk-box-highlight'><h2 class='bold-large'>Account renamed</h2><p>You successfully updated the account name</p></div>");
+            };
+        }
+      
+    //back button
+    function goBack() {
+        $(".link-back").click(function (e) {
+            e.preventDefault();
+            window.history.back();
+        })
+    }
+
+    function notifications() {
+            // notifications site wide
+            if (newLevyAccount == "y") {
+                $("#accountCreated").removeClass("hidden");
+            }
+            if (invitesent == "y") {
+                $("#invitesent").removeClass("hidden");
+            }
+            if (userdeleted == "y") {
+                $("#userdeleted").removeClass("hidden");
+            };
+            if (inviteresent == "y") {
+                $("#inviteresent").removeClass("hidden");
+            };
+            if (invitecancelled == "y") {
+                $("#invitecancelled").removeClass("hidden");
+            };
+            if (rolechange == "y") {
+                $("#rolechange").removeClass("hidden");
+            }
+            if (PAYEremoved == "y") {
+                $("#PAYEremoved").removeClass("hidden");
+            }
+            if (PAYEadded == "y") {
+                $("#PAYEadded").removeClass("hidden");
+            }
+            if (accountCreated == "y") {
+                $("#accountCreated").removeClass("hidden");
+            }
+            if (newOrgSigned == "y") {
+                $("#org").removeClass("hidden");
+            }
+            if (newOrgSigned == "n") {
+                $("#orgNo").removeClass("hidden");
+            }
+        }
+    
+    function userName() {
+            var userName = JSON.parse(localStorage.getItem('user.name'));
+            if (userName != null) {
+                $(".user-name").text(userName);
+            } else {
+                localStorage.setItem('user.name', JSON.stringify("Sam"));
+                $(".user-name").text("James King");
+            }
+
+        }
+    
+    function today() {
+            var monthNames = [
+  "January", "February", "March",
+  "April", "May", "June", "July",
+  "August", "September", "October",
+  "November", "December"
+];
+
+            var date = new Date();
+            var day = date.getDate();
+            var monthIndex = date.getMonth();
+            var year = date.getFullYear();
+
+            //console.log(day, monthNames[monthIndex], year);
+            $(".today").text(day + ' ' + monthNames[monthIndex] + ' ' + year);
+        }    
+    
+    
+
+
+    switch (className) {
+        case 'index':
+            indexV1();
+            break;
+        case 'manual-input':
+            manualInputName();
+            break;
+        case 'public-sector':
+            // put directory stuff here
+
+            break;
+        case 'account-dashboard-7':
+            accountDash7();
+            break;
+        case 'public-sector-search':
+            // put search keyword stuff here
+            break;
+        case 'organisations-add':
+            organisationAdd();
+            break;
+        case 'organisations-address':
+            $(".button").click(function (e) {
+                e.preventDefault();
+                localStorage.setItem("organisation-address", JSON.stringify($("#address").val()));
+                window.location.href = "/sprint/{{sprint}}/account/organisations/confirm.html?orgtype=";
+            });
+            break;
+        case 'organisations-address-manual':
+            // manual stuff
+            organisationsAddressManual();
+            break;
+        case 'organisations-type-manual':
+            organisationsTypeManual();
+            break;
+        case 'test':
+            getCompaniesHouse();
+            break;
+        case 'organisations-chquestion':
+            $(".button").click(function (e) {
+                e.preventDefault();
+                chQuestion();
+            })
+            break;
+        case 'organisations-question':
+            $(".button").click(function (e) {
+                e.preventDefault();
+                orgQuestion();
+            })
+            break;
+        case 'organisations-index':
+            organisationsIndex();
+            break;
+        case 'before-you-start':
+                beforeYouStart();
+            break;
+        case 'rename-account':
+            renameAccount();
+            break;
+        case 'check-mail':
+            checkMail();
+            break;
+        case 'sign-agreement':
+            signAgreement();
+            break;
+        case 'zxcvbn':
+            captureUserData();
+            passwordPeek();
+            zxcvbn();
+            break;
+        case 'login':
+            loginUser();
+            break;
+        case 'test-react-test':
+            testReactCountdown();
+            break;
+        case 'test-react-instructions':
+            localStorage.setItem("reactLoop", "1");
+            break;
+        case 'confirm':
+            confirmDetails();
+            break;
+        case 'provider-index':
+            providerIndex();
+            break;
+        case 'your-cohorts':
+            yourCohorts();
+            break;
+        case 'finished-editing':
+            finishedEditing();
+            break;
+        case 'approve-cohorts':
+            approveCohorts();
+            break;
+        case 'confirm-your-business-relationship':
+            confirmYourBusinessRelationship();
+            break;
+        case 'confirm-your-organisation-relationship':
+            confirmYourOrganisationRelationship();
+            break;
+        case 'confirm-employer':
+            confirmEmployer();
+            break;
+        case 'funding-index':
+            break;
+        case 'first-approval':
+            firstApproval();
+            break;
+        case 'organisations-remove':
+            removeOrgIndex();
+            break;
+        case 'organisations-remove-confirm':
+            removeOrgConfirm2();
+            break;
+        case 'invite-new':
+            inviteNew();
+            break;
+        case 'account-dashboard':
+            accountDashboard();
+            break;
+        case 'account-forecast':
+            accountForecast();
+            break;
+        case 'forecast-index':
+            forecastIndex();
+            break;
+        case 'account-dash-8':
+            accountDash8();
+            break;
+        case 'd3linked':
+            d3Linked();
+            break;
+        case 'provider-dashboard':
+            providerDashboard();
+            break;
+        case 'paye-check':
+            payeCheck();
+            break;
+        case 'gateway-alert':
+            gatewayAlert();
+            break;
+        case 'paye-next':
+            payeNext();
+            break;
+        case 'organisations-next':
+            organisationsNext();
+            break;
+        case 'agreement-sign':
+            agreementSign();
+            break;
+        case 'agreement-next':
+            agreementNext();
+            break;
+        case 'agreement-cover':
+            agreementCover();
+            break;
+        case 'footable-index':
+            footableIndex();
+            break;
+        case 'activity-dashboard':
+            activityDashboard();
+            break;
+        case 'team-next':
+            teamNext();
+            break;
+        case 'manage-apprentices':
+            manageApprentices();
+            break;
+        case 'apprentices-index':
+            apprenticesIndex();
+            break;
+        case 'user-notifications':
+            userNotifications();
+            break;
+        case 'activity-csv':
+            activityCSV();
+            break;
+        default:
+            break;
+        };
+
+    
+    
+    
+// PAGE FUNCTIONS 
+    
+    function activityCSV(){
+        console.log(XMLActivity);
+        $.ajax({
+            type: "GET",
+            url: XMLActivity,
+            dataType: "xml",
+            success: function (xml) {
+                loadActivity(xml)
+            },
+            error: function (request, error) {
+                //console.log(arguments);
+                console.log("something broke in the ActivityCSV function");
+                //alert(" Can't do because: " + error);
+            }
+        });
+        
+        //activityDashboard();
+        
+    }
+    
+    function loadActivity(xmlData) {
+
+      i = 0;
+        c = 0;
+        var row;
+        var searchExp = "";
+        var msg = "";
+                
+        
+        $($(xmlData).find('row').get().reverse()).each(function() {
+
+        //$(xmlData).find('row').each(function () {
+
+            i++;
+            
+
+            var Item = $(this).find('Item').text();
+            var Time = $(this).find('Time').text();
+            var Date1 = $(this).find('Date').text();
+            var Type = $(this).find('Type').text();
+            var Who = $(this).find('Who').text();
+            var Item1 = $(this).find('item1').text();
+            var Item2 = $(this).find('item2').text();
+            var Date2 = moment(Date1).format("DD MMMM YYYY");
+            
+            //console.log(Item);
+            switch(Item) {
+                case 'paymentFailed':
+                    paymentFailed();
+                    break;
+                case 'levyPayment':
+                    levyPayment();
+                    break;
+                case 'accountCreated':
+                    accountCreated();
+                    break;
+                    
+                case 'orgAdded':
+                    orgAdded();
+                    break;
+                    
+                case 'payeAdded':
+                    payeAdded();
+                    break;
+                    
+                case 'userAdded':
+                    userAdded();
+                    break;
+                case 'userJoined':
+                    userJoined();
+                    break;
+                    
+                case 'signedIn':
+                    signedIn();
+                    break;
+                    
+                case 'agreementSigned':
+                    agreementSigned();
+                    break;
+                    
+                case 'cohortCreated':
+                    cohortCreated();
+                    break;
+                    
+                case 'cohortRequestSent':
+                    cohortRequestSent();
+                    break;
+                                        
+                case 'cohortRequestReceived':
+                    cohortRequestReceived();
+                    break;                                        
+                case 'cohortApproved':
+                    cohortApproved();
+                    break;                                        
+                case 'paymentMade':
+                    paymentMade();
+                    break;                                        
+                case 'priceChangeRequest':
+                    priceChangeRequest();
+                    break;                                        
+                case 'closingBalance':
+                    closingBalance();
+                    break;                       
+                case 'priceChangeApproved':
+                    priceChangeApproved();
+                    break;                       
+                case 'startDateChangeRequested':
+                    startDateChangeRequested();
+                    break;
+                                        
+                case 'startDateChangeApproved':
+                    startDateChangeApproved();
+                    break;                                      
+                case 'userACL':
+                    userACL();
+                    break;
+
+                default: break;
+                       }
+            
+            function orgAdded(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>'+ Item1 +' added</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who + ' - <a href="#">Details</a>';
+                msg += '</div></div>';                  
+            }
+            function payeAdded(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>PAYE scheme added: '+ Item1 +'</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who + ' - <a href="#">Details</a>';
+                msg += '</div></div>';                      
+            }
+            function userAdded(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>'+ Item1 +' invited</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                  
+            }
+            function userJoined(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>'+ Who +' joined</div>';
+                msg += '<div class="time"><span class="time">At '+ Time; 
+                msg += '</div></div>';                   
+            }
+            function signedIn(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>'+ Who +' signed in</div>';
+                msg += '<div class="time"><span class="time">At '+ Time;
+                msg += '</div></div></div>';                  
+            }
+            function agreementSigned(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Agreement signed for: '+ Item1 +'</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                  
+            }
+            function cohortCreated(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Cohort created with '+ Item1 +'</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                  
+            }
+            function cohortRequestSent(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Cohort request sent to '+ Item1 +'</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                     
+            }
+            function cohortRequestReceived(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Cohort request received</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                  
+            }
+            function cohortApproved(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Cohort approved: '+ Item1 +'</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                 
+            }
+            function paymentMade(){
+                
+                Item2 = numberWithCommas(Item2);
+                
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Outgoing payment made: £'+ Item2 +' to ' +Item1+ '</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                 
+            }
+            function priceChangeRequest(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Price change requested for '+ Item1 +'</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                  
+            }
+            function closingBalance(){
+                Item2 = numberWithCommas(Item2);                
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Closing balance for '+ Item1 +': £' +Item2+ '</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by ';
+                msg += '</div></div>';                   
+            }
+            function priceChangeApproved(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Price change approved for '+ Item1 +'</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                  
+            }
+            function startDateChangeRequested(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Start date change requested for '+ Item1 +'</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                  
+            }
+            function startDateChangeApproved(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Start date change approved for '+ Item1 +'</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                  
+            }
+            function userACL(){
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Team member '+ Item1 +'\'s role changed to: '+Item2+'</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
+                msg += '</div></div>';                  
+            }
+            
+            function paymentFailed(){
+                //console.log(Item);
+                msg +=  '<div class="entry payment apprentice" data-type="'+Type+'" data-apprentice="'+Item1+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Payment failed: £' + Item2 + ' for ' + Item1 + '</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + '</span> - <a href="" class="details">Details</a></div>';
+                msg += '</div></div>';   
+            }
+            
+            function levyPayment() {
+                //console.log(Item);
+                msg +=  '<div class="entry payment apprentice" data-type="'+Type+'" data-apprentice="'+Item1+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Levy payment received</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + '</span> - <a href="" class="details">Details</a></div>';
+                msg += '</div></div>';   
+            }
+            
+            function accountCreated() {
+                //console.log(Item);
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
+                    msg += '<div class="title">';
+                        msg += '<span class="font-small">'+Date2+'</span>';
+                    msg += '</div>';
+                msg += '<div class="body">';
+                msg += '<div>Account created</div>';
+                msg += '<div class="time"><span class="time">At '+ Time + '</span> by '+ Who +'</div>';
+                msg += '</div></div>';   
+            }
+               
+        });        
+        
+                    $('#activity').html(msg).promise(pageData());
+        //pageData();
+        
+    }
+    
+    function pageData(){
+        /*
+	Load more content with jQuery - May 21, 2013
+	(c) 2013 @ElmahdiMahmoud
+*/   
+console.log('pagedata');
+
+        $(".entry").hide();
+    $(".entry").slice(0, 11).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $("div.entry:hidden").slice(0, 11).slideDown();
+        if ($("div.entry:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+        $('.totop a').fadeIn();
+    } else {
+        $('.totop a').fadeOut();
+    }
+
+    });
+
+                 
+         }
+    
+    function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+    
+    function apprenticesIndex() {
+        
+    }
+    
+    function userNotifications() {
+        if (notifyUpdated == "y") {
+            $(".info-summary").addClass("hidden")
+            $(".success-summary").removeClass("hidden")
+        }
+    }
+    
+    function manageApprentices() {
+        
+        $("#apprenticeshipName").select2();
+  
+
+/*        
+        
+   var table = $('table').DataTable({
+      'ajax': '/public/data/apprentices.json',
+       'ordering':true,
+       'searching':true,
+       'lengthChange':true,
+      'columnDefs': [
+         {
+            'targets': 0,
+            'checkboxes': {
+               'selectRow': true
+            }
+         }
+      ],
+      'select': {
+         'style': 'compact'
+      },
+      'order': [[1, 'asc']]
+   });
+
+*/
+        
+        
+   // Handle form submission event
+   $('#frm-example').on('submit', function(e){
+      var form = this;
+
+      var rows_selected = table.column(0).checkboxes.selected();
+
+      // Iterate over all selected checkboxes
+      $.each(rows_selected, function(index, rowId){
+         // Create a hidden element
+         $(form).append(
+             $('<input>')
+                .attr('type', 'hidden')
+                .attr('name', 'id[]')
+                .val(rowId)
+         );
+      });
+});
+
+    }
+    
+    function activityDashboard(){
+        //tinysort('.timeline>.entry')
+        $("#date-range input[name=date-choice]").click(function(e){
+            state = $(this).val();
+            
+            if (state === "custom") {
+                $("#custom-range").removeClass("hidden");
+            } else {
+                $("#custom-range").addClass("hidden");                
+            }
+        })
+        
+        $("#apprenticeName").select2({
+              placeholder: "Enter a name",
+  allowClear: true
+        });
+
+        $("#providerName").select2({
+              placeholder: "Choose a provider",
+  allowClear: true
+        });   
+        $("#teamMember").select2({
+              placeholder: "Choose a colleague",
+  allowClear: true
+        });        
+                $("#apprenticeshipName").select2({
+              placeholder: "Choose apprenticeship training",
+  allowClear: true
+        });        
+        
+        
+$("#reset-filters").click(function(e){
+    e.preventDefault();
+    location.reload();
+})        
+
+        
+    
+$("input[name=activityType]").click(function(e){
+        var state = $('input[name=activityType]:checked').val();
+    //alert(state);
+    $(".entry").addClass("hidden");
+    $('*[data-type="'+state+'"]').removeClass("hidden");
+
+})
+        
+        
+$("#providerName").on("select2:select", function (e) { 
+                        var select_val = $(e.currentTarget).val();
+                        console.log(select_val)
+                    $(".entry").addClass("hidden")
+                    $('*[data-provider="'+select_val+'"]').removeClass("hidden");
+                    });
+            
+$("#apprenticeshipName").on("select2:select", function (e) { 
+                        var select_val = $(e.currentTarget).val();
+                        console.log(select_val)
+                    $(".entry").addClass("hidden")
+                    $('*[data-apprenticeshipName="'+select_val+'"]').removeClass("hidden");
+                    });
+    
+    $("#teamMember").on("select2:select", function (e) { 
+                        var select_val = $(e.currentTarget).val();
+                        console.log(select_val)
+                    $(".entry").addClass("hidden")
+                    $('*[data-user="'+select_val+'"]').removeClass("hidden");
+                    });
+            
+    
+}
+
+    function footableIndex(){
+    
+        $('#showcase-example-1').footable({
+            "columns": $.get('/public/data/columns.json'),
+            /*"columns": [
+                {$.get('/public/data/columns.json')},
+                {"classes": "class1 class2"}
+            ],*/
+            "rows": $.get('/public/data/rows.json')
+        });
+
+    }
+    
+    function teamNext() {
+        localStorage.setItem("welcomeState","3");
+                $("#submit").click(function (e) {
+            //e.preventDefault();  
+                        var state = $('input[name=next]:checked').val();
+
+            if (state === "addteam") {
+                window.location.href = "/sprint/{{sprint}}/account/team/new";
+            } else if (state === "viewteam") {
+                window.location.href = "/sprint/{{sprint}}/account/team/index";
+            } else {
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
+            }
+        });
+    }
+    
+    function agreementCover() {
+        $(".organisation-name").text(localStorage.getItem("organisation-name"));
+    }
+
+
+    function agreementNext() {
+        $("#submit").click(function (e) {
+            //e.preventDefault();  
+            var state = $('input[name=next]:checked').val();
+
+            if (state === "orgs") {
+                window.location.href = "/sprint/{{sprint}}/account/organisations/index";
+            } else if (state === "apprentices") {
+                window.location.href = "/sprint/{{sprint}}/account/apprentices/index";
+            } else if ( state === "finance") {
+                window.location.href = "/sprint/{{sprint}}/account/finance/index";                
+            }
+            else {
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
+            }
+        });
+    }
+
+    function organisationsNext() {
+        $("#submit").click(function (e) {
+            //e.preventDefault();  
+            var state = $('input[name=next]:checked').val();
+
+            if (state === "sign") {
+
+                var orgArray = []
+                orgArray = JSON.parse(localStorage.getItem("organisations"));
+                console.log("org array is: " + orgArray);
+                localStorage.setItem("signAgreementFor", orgArray.length);
+                window.location.href = "/sprint/{{sprint}}/account/organisations/agreement-cover-sign";
+            } else if (state === "team") {
+                window.location.href = "/sprint/{{sprint}}/account/team/index";                
+            } 
+            else if (state === "addorg") {
+                window.location.href = "/sprint/{{sprint}}/account/organisations/add";
+            } else {
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
+            }
+        });
+    }
+
+    function payeNext() {
+        $("#submit").click(function (e) {
+            //e.preventDefault();  
+            
+            localStorage.setItem("welcomeState","1");
+            var state = $('input[name=next]:checked').val();
+
+            if (state === "addpaye") {
+                window.location.href = "/sprint/{{sprint}}/onboarding/gateway-login";
+            } else if (state === "checkfinance") {
+                window.location.href = "/sprint/{{sprint}}/account/finance/index";
+            } else {
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard";
+            }
+        });
+    }
+
+    function gatewayAlert() {
+        onboardingNav();
+    }
+
+    function payeCheck() {
+        $(".organisation-name").text(localStorage.getItem("organisation-name"));
+        onboardingNav();
+        onboarding = localStorage.getItem("onboarding");
+
+        $("#continue").click(function (e) {
+            e.preventDefault();
+            if (onboarding == "1") {
+                //onboarding continues
+                        orgName = localStorage.getItem("organisation-address");
+                addOrg(orgName);
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard"
+            } else {
+                window.location.href = "/sprint/{{sprint}}/account/paye/next"
+            }
+        });
+        
+                    var i = parseInt(localStorage.getItem('payeCount'));
+            i++;
+            $('.sprint-11 .paye-check table tr').hide();
+            $('.sprint-11 .paye-check table#paye-check-2 tr:lt(' + i + ')').show()
+
+            // remove a paye scheme    
+            $("table a").click(function (e) {
+                e.preventDefault();
+                i--;
+                localStorage.setItem('payeCount', i);
+                location.reload();
+            });
+    }
+
+    function providerDashboard() {}
+
+    function d3Linked() {
+        d3.json('/public/data/fake_users2.json', function (data) {
+            for (var i = 0; i < data.length; i++) {
+                data[i] = MG.convert.date(data[i], 'date');
+            }
+
+
+
+            MG.data_graphic({
+                title: "Levy balance",
+                description: "Showing the levy balance over time.",
+                data: data,
+                interpolate: d3.curveLinear,
+                width: 600,
+                height: 200,
+                right: 40,
+                target: '#linked_multi1',
+                linked: true,
+                brushing: false,
+                full_width: true,
+                animate_on_load: true,
+            });
+        })
+
+        d3.json('/public/data/fake_users3.json', function (data) {
+            for (var i = 0; i < data.length; i++) {
+                data[i] = MG.convert.date(data[i], 'date');
+            }
+
+            var adi_baselines = [{
+                value: 0,
+                label: 'baseline'
+            }];
+
+
+            var markers = [{
+                'date': new Date('2018-01-01'),
+                'label': 'You\'re getting additional government investment'
+             }, {
+                'date': new Date('2021-04-01'),
+                'label': 'You\'re funds are expiring'
+}];
+
+
+            MG.data_graphic({
+                title: "Gain and Loss chart",
+                description: "Shows periods of co-investment and expiring levy funds",
+                data: data,
+                interpolate: d3.curveLinear,
+                width: 600,
+                height: 200,
+                right: 40,
+                target: '#linked_multi2',
+                //chart_type: 'histogram',
+                linked: true,
+                legend: ['Gain', 'Loss'],
+                brushing: false,
+                markers: markers,
+                full_width: true,
+                animate_on_load: true,
+                baselines: adi_baselines,
+                mouseover: function (d, i) {
+                    //custom format the rollover text, show days
+                    //var prefix = d3.formatPrefix(d.value);
+                    $("h1")
+                        //.text(data.value);
+                        .text("highlight row" + i);
+                    $("tbody tr").css("outline", "none");
+                    $("tbody tr").eq(i).children("td").css("border-bottom", "1px solid #bfc1c3");
+                    $("tbody tr").eq(i).css("outline", "solid 3px #FFBF47");
+                    $("tbody tr").eq(i).children("td").css("border-bottom", "none");
+                }
+            });
+
+
+        });
+    }
+
+    function indexV1() {
+        localStorage.setItem("onboarding", "0");
+        localStorage.setItem("sessionState", "0");
+        localStorage.setItem('payeCount', 0)
+
+        $("a#register").click(function (e) {
+            var href = this.href;
+            e.preventDefault();
+            localStorage.setItem("onboarding", 1);
+            window.location = href;
+        })
+
+    }
+
+    function accountDash7() {
+
+                localStorage.setItem("onboarding", 0);
+
+        // code for counting signed orgs 
+
+        var orgArray = [];
+        var signedOrgs = 0;
+        orgArray = JSON.parse(localStorage.getItem("organisations"));
+        for (var i = 0; i < orgArray.length; i++) {
+            orgName = JSON.parse(orgArray[i]);
+            console.log(orgName.signed);
+            if (orgName.signed == 1) {
+                signedOrgs++
+            }
+
+        }
+        
+        
+        $(".hideWelcomeWizard").click(function (e) {
+            localStorage.setItem("welcomeState", "hide")
+            e.preventDefault();
+            $("#welcome").fadeOut("slow");
+                        $("#directory").removeClass("hidden");   
+
+        });
+
+        $("#sign-agreement, #add-org, #invite-users, .done, #welcome .panel").hide();
+
+        welcomeState = localStorage.getItem("welcomeState");
+        welcomeState = "hide";
+        console.log("welcome state is: " + welcomeState);
+
+        switch (welcomeState) {
+        case '1':
+            console.log("step 1 complete");
+            $("#add-paye .todo").hide()
+            $("#add-org, #add-paye .done").show();
+            break;
+        case '2':
+            console.log("step 2 complete");
+            $("#add-paye .todo, #add-org .todo").hide()
+            $("#add-org, #add-org .done, #add-paye .done, #invite-users").show();
+            break;
+        case '3':
+            console.log("step 3 complete")
+            $("#add-paye .todo, #add-org .todo, #invite-users .todo").hide()
+            $("#add-org, #add-org .done, #add-paye .done, #invite-users, #invite-users .done, #sign-agreement, #sign-agreement .todo").show();
+
+            break;
+        case '4':
+            console.log("step 4 complete");
+            $("#add-paye .todo, #add-org .todo, #invite-users .todo, #sign-agreement .todo").hide()
+                
+        if (orgArray.length == signedOrgs) {
+            console.log("all orgs are signed");
+            $("#sign-agreement .todo").hide();
+            $("#add-org, #add-org .done, #add-paye .done, #invite-users, #invite-users .done, #sign-agreement, #sign-agreement .done, #wizardComplete").show();
+            //$("#invite-users").show();
+//            localStorage.setItem("welcomeState", "4");
+                localStorage.setItem("welcomeState","hide");
+        } else {
+            console.log("not all orgs are signed");
+            $("#add-org, #add-org .done, #add-paye .done, #invite-users, #invite-users .done, #sign-agreement, #sign-agreement .done, #wizardPending").show();
+        }                
+                
+                
+            break;
+            case '5':
+                console.log("step 4 complete - user not signing agreements");
+                $("#add-paye .todo, #add-org .todo, #invite-users .todo, #sign-agreement .todo").hide()
+                $("#add-org, #add-org .done, #add-paye .done, #invite-users, #invite-users .done, #sign-agreement, #sign-agreement .done, #wizardPending").show();
+                break;
+        case 'hide':
+            console.log("hide welcome wizard");
+            $("#welcome").hide();
+            $("#directory").removeClass("hidden");   
+        default:
+            break;
+        }
+
+
+        
+
+
+
+
+        //var orgsLength = orgName.length;
+        console.log("number of orgs: " + orgArray.length);
+
+        console.log("signed orgs: " + signedOrgs);
+
+        $(".signedOrgs").text(signedOrgs)
+        
+        $(".org-count").text(orgArray.length);
+
+
+        if ( signedOrgs > 1 ) {
+            $(".agreementPlural").text("s");
+        }
+        
+        if ( orgArray.length > 1 ) {
+            $(".organisationPlural").text("s");
+        }
+        
+        if ( signedOrgs == "1") {
+            $("#sign-agreement .done p").text("1 agreement signed");
+        }
+
+        
+        $("#sign-agreement form input").click(function (e) {
+            var state = $('input[name=sign-org-group]:checked').val();
+
+            if (state == "1") {
+                console.log("agreement option state 1")
+                $("#sign-agreement .todo .agreement-panel").fadeIn();
+                //$("#sign-agreement .todo").hide();
+                //$("#sign-agreement .todo .invite-panel").hide();
+                //$("#sign-agreement .todo .agreement-panel").fadeIn();
+                localStorage.setItem("welcomeState", "4");
+            } else {
+                console.log("agreement option is state 2")
+                $("#sign-agreement .todo").hide();
+                localStorage.setItem("welcomeState", "5");
+                $("#wizardPending, #sign-agreement .done").show();
+            }
+        });
+
+        $("#add-paye form input").click(function (e) {
+            //e.preventDefault();  
+            var state = $('input[name=add-paye-group]:checked').val();
+
+            if (state === "1") {
+                $("#add-paye .todo").hide();
+                $("#add-org, #add-paye .done").show();
+                localStorage.setItem("welcomeState", "1");
+            } else {
+                $("#add-paye .todo .panel").fadeIn();
+            }
+        });
+
+        $("#add-org form input").click(function (e) {
+            var state = $("input[name=add-org-group]:checked").val();
+
+            if (state === "1") {
+                $("#add-org .todo").hide();
+                $("#add-org .done, #invite-users").show();
+                localStorage.setItem("welcomeState", "2");
+            } else {
+                $("#add-org .panel").show();
+            }
+        });
+
+
+        $("#invite-users form input").click(function (e) {
+
+            var state = $("input[name=invite-users-group]:checked").val();
+            console.log("state is " + state)
+            if (state === "1") {
+                $("#invite-users .todo").hide();
+                $("#invite-users .done").show();
+                $("#sign-agreement, #sign-agreement .todo").show();
+                localStorage.setItem("welcomeState", "3");
+                
+            } else {
+                $("#invite-users .panel:first").show();
+                $("#invite-users .panel + .panel").hide();
+            }
+        })
+        
+        
+        $("#welcome .done h3 a").click(function(e){
+            e.preventDefault(); 
+            
+            //$(this).parent("done").hide();
+            $(this).parents(".done").hide();
+            $(this).parents("section").children(".todo").show();
+        })
+        
+    }
+
+    function accountDashboard() {}
+
+    function inviteNew() {
+
+
+        // version without drop down
+
+        $(".acl").removeClass("hidden");
+        $(".preset-roles").addClass("hidden");
+        $("label").removeClass('selected');
+
+        $("label").click(function (e) {
+            e.preventDefault();
+            $(this).parents("tr").find("label").removeClass("selected");
+            $(this).addClass("selected");
+        })
+    }
+
+    function removeOrgConfirm2() {
+        $("#action").click(function (e) {
+            e.preventDefault();
+            //get the number of the row
+            //var rowNum = $(this).attr("id");
+            var rowNum = getQueryVariable("orgId");
+
+
+
+            var orgArray = [];
+            orgArray = JSON.parse(localStorage.getItem("organisations"));
+
+            orgArray.splice(rowNum, 1);
+            localStorage.setItem("organisations", JSON.stringify(orgArray));
+            window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?removeMsg=y";
+        });
+    }
+
+    function firstApproval() {
+        $(".button").click(function (e) {
+            e.preventDefault();
+            var state = $('input[name=radio-group]:checked').val();
+
+            if (state == "1") {
+                window.location.href = "/sprint/{{sprint}}/providers/memo.html";
+            } else {
+                window.location.href = "/sprint/{{sprint}}/providers/cohort-approve.html";
+            }
+        })
+    }
+
+    function confirmYourOrganisationRelationship() {
+        $(".button").click(function (e) {
+            e.preventDefault();
+            window.location.href = "/sprint/{{sprint}}/providers/review-your-cohort.html";
+        })
+    }
+
+    function confirmEmployer() {
+        $(".button").click(function (e) {
+            e.preventDefault();
+            var state = $('input[name=radio-group]:checked').val();
+
+            if (state == "1") {
+                window.location.href = "/sprint/{{sprint}}/providers/first-approval.html";
+            } else {
+                window.location.href = "/sprint/{{sprint}}/providers/advice-confirm-identity.html";
+            }
+        })
+    }
+
+    function confirmYourBusinessRelationship() {
+        $(".button").click(function (e) {
+            e.preventDefault();
+
+            var state = $('input[name=radio-group]:checked').val();
+
+            if (state == "1") {
+                // if they don't know their employer
+                window.location.href = "/sprint/{{sprint}}/providers/confirm-your-organisation-relationship.html";
+                localStorage.setItem("employerKnown", 1);
+            } else {
+                // if they are a regular employer
+                window.location.href = "/sprint/{{sprint}}/providers/advice-confirm-identity.html";
+                localStorage.setItem("employerKnown", 2);
+            };
+        });
+    };
+
+    function approveCohorts() {
+        $("a").click(function (e) {
+            e.preventDefault();
+            window.location.href = "/sprint/{{sprint}}/providers/confirm-your-business-relationship.html"
+        })
+    };
+
+    function getCompaniesHouse() {
+
+        // get companies house number
+
+        $.ajax({
+            url: 'https://api.companieshouse.gov.uk/company/09963675',
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("0IJg_twH_cNHRQ4TufRhHhKW72_W8xdgijXsHDyI:")
+            },
+            success: function (data) {
+                alert(data);
+                //process the JSON data etc
+            }
+        });
+    }
+
+    function providerIndex() {
+
+        $(".button").click(function (e) {
+            e.preventDefault();
+            var state = $('input[name=radio-group]:checked').val();
+
+            if (state == "1") {
+                // if they have already approved a commitment
+                window.location.href = "/sprint/{{sprint}}/providers/your-cohorts.html";
+                localStorage.setItem("providerAgreement", 1);
+            } else {
+                // if they haven't go to contract of service
+                window.location.href = "/sprint/{{sprint}}/providers/your-cohorts.html";
+                localStorage.setItem("providerAgreement", 0);
+            }
+        });
+
+    };
+
+    function yourCohorts() {
+
+
+        var state = localStorage.getItem("providerAgreement");
+
+        if (state == 1) {
+            $(".alert-default-blue-thing").hide();
+        }
+
+
+        $("#button").click(function (e) {
+            e.preventDefault();
+            var state = localStorage.getItem("providerAgreement");
+
+            if (state == 1) {
+                // if they have already approved a commitment
+                window.location.href = "/sprint/{{sprint}}/providers/approve-cohorts.html";
+            } else {
+                // if they haven't go to contract of service
+                window.location.href = "/sprint/{{sprint}}/providers/no-agreement.html";
+            }
+        });
+    };
+
+    function finishedEditing() {
+        //switch which option to show  
+        var state = localStorage.getItem("providerAgreement");
+        if (state == 1) {
+            //signed
+            $("form.state-1").show();
+            $("form.state-2").hide();
+        } else {
+            //not signed
+            $("form.state-1").hide();
+            $("form.state-2").show();
+        }
+
+
+        $(".button").click(function (e) {
+            e.preventDefault();
+
+            var state = $('input[name=radio-group]:checked').val();
+
+
+            if (state == "1") {
+                //approve logic
+                var employerKnown = localStorage.getItem("employerKnown");
+                // if they send for approval then we also ask if its a known employer
+                // if they have already approved a commitment
+                if (employerKnown == "1") {
+                    //then ask if its the first approval logic page
+                    window.location.href = "/sprint/{{sprint}}/providers/confirm-employer.html";
+                } else {
+                    // is this the first appproval
+                    window.location.href = "/sprint/{{sprint}}/providers/first-approval.html";
+                }
+
+            } else if (state == "2" || state == "4") {
+                // send for review
+                window.location.href = "/sprint/{{sprint}}/providers/memo.html";
+            } else if (state == "3" || state == "5") {
+                window.location.href = "/sprint/{{sprint}}/providers/cohort-save.html"
+            }
+
+        });
+    };
+
+    function confirmDetails() {
+        localStorage.setItem("welcomeState","2")
+        orgName = JSON.parse(localStorage.getItem("organisation-name"));
+        $(".organisation-name").text(orgName);
+        $(".organisation-address").text(localStorage.getItem("organisation-address"));
+        $(".button").click(function (e) {
+            e.preventDefault();
+            addOrg(orgName)
+                //var orgName = JSON.parse(localStorage.getItem("organisation-name"));
+                //addOrg(orgName);
+                //console.log(orgName);
+            var onboarding = JSON.parse(localStorage.getItem("onboarding"));
+
+            if (onboarding == 1) {
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html?accountCreated=y";
+            } else {
+                window.location.href = "/sprint/{{sprint}}/account/organisations/next.html?orgAdded=y";
+            }
+        });
+    }
+
+    function removeOrgConfirm(i) {
+        $("table a.remove").click(function (e) {
+            e.preventDefault();
+            //get the number of the row
+            var rowNum = $(this).attr("id");
+            //var rowNum = $(this).id;
+            // splice that row
+            console.log(rowNum);
+            orgArray.splice(rowNum, 1);
+            localStorage.setItem("organisations", JSON.stringify(orgArray));
+            window.location.href = "/sprint/{{sprint}}/account/organisations/index.html";
+        });
+    }
+
+    function removeOrgIndex(i) {
+        if (localStorage.getItem("organisations") === null) {
+            console.log("no orgs found")
+        } else {
+            var orgArray = [];
+            orgArray = JSON.parse(localStorage.getItem("organisations"));
+
+            var $table = $("<table class='table'></table>");
+            var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th></th></tr></thead>");
+            $table.append($head);
+
+
+
+            if (orgArray.length == 1) {
+                //alert("show there's only 1 org");
+
+                orgName = JSON.parse(orgArray[0]);
+
+                var $line = $("<tr></tr>");
+                $line.append($("<td>" + orgName.name + "</td>"));
+                $line.append($("<td>Can’t be removed because it's the only organisation on your account.</td>"));
+                //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
+                $table.append($line);
+
+            } else {
+
+
+                for (var i = 0; i < orgArray.length; i++) {
+
+                    orgName = JSON.parse(orgArray[i]);
+
+                    var $line = $("<tr></tr>");
+
+                    // this is if it is disabled 
+
+                    if (orgName.signed != 0) {
+                        // this is if its enabled
+                        //$line.append( $( "<td><a href='#'></a></td>" ).html( orgName ) );
+                        $line.append($("<td>" + orgName.name + "</td>"));
+                        $line.append($("<td>Can’t be removed because it has ongoing apprenticeships.</td>"));
+                        //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
+                        $table.append($line);
+                        continue;
+                    }
+                    $line.append($("<td>" + orgName.name + "</td>"));
+                    $line.append($("<td><a data-org-index=" + i + " href='/sprint/{{sprint}}/account/organisations/remove-org-confirm.html?orgId=" + i + "'>Remove</a></td>"));
+                    $table.append($line);
+
+
+                }
+            };
+
+            $table.appendTo(document.body);
+
+            // if you want to insert this table in a div with id attribute 
+            // set as "myDiv", you can do this:
+            $table.appendTo($("#orgTable"));
+
+        }
+        var orgArray = []
+        orgArray = JSON.parse(localStorage.getItem("organisations"));
+        //            console.log(orgArray);
+        $("table a.remove").click(function (e) {
+            e.preventDefault();
+            //get the number of the row
+            var rowNum = $(this).attr("id");
+            //var rowNum = $(this).id;
+            // splice that row
+            console.log(rowNum);
+            orgArray.splice(rowNum, 1);
+            localStorage.setItem("organisations", JSON.stringify(orgArray));
+            window.location.href = "/sprint/{{sprint}}/account/organisations/index.html";
+        });
+
+        $("table a").click(function (e) {
+            e.preventDefault();
+            var orgName = $(this).closest("td").prev("td").text();
+            var orgId = $(this).attr("data-org-index");
+            localStorage.setItem("organisation-name", JSON.stringify(orgName));
+            window.location.href = "/sprint/{{sprint}}/account/organisations/remove-org-confirm.html?orgId=" + orgId;
+        });
+    }
+
+    function organisationsIndex(i) {
+
+        $('.review-agreement-button').on('click', function (e) {
+            localStorage.setItem("signAgreementFor", $(this).data('org-index'));
+        });
+
+        //sessionState = localStorage.setItem("onboarding","0");            
+        if (removeMsg == "y") {
+            $("#removeOrgMsg").removeClass("hidden");
+        }
+
+
+
+        if (localStorage.getItem("organisations") === null) {
+            console.log("no orgs found")
+        } else {
+            var orgArray = [];
+            orgArray = JSON.parse(localStorage.getItem("organisations"));
+
+            var $table = $("<table class='table'></table>");
+            var $head = $("<thead><tr><th scope='col' style='padding-top:0'>Organisation</th><th>Spending status</th><th></th></tr></thead>");
+            $table.append($head);
+
+
+            for (var i = 0; i < orgArray.length; i++) {
+
+
+
+                orgName = JSON.parse(orgArray[i]);
+
+                var $line = $("<tr></tr>");
+
+                // this is if it is disabled 
+
+                if (orgName.signed != 0) {
+                    // this is if its enabled
+                    //$line.append( $( "<td><a href='#'></a></td>" ).html( orgName ) );
+                    $line.append($("<td>" + orgName.name + "</td>"));
+                    $line.append($("<td>Spending enabled<div style='color:#6F777B' class='font-xsmall'>SFA agreement signed by <span class='user-name'>Maxim Baby</span>, <span class='today'>" + orgName.date + "</span></div></td>"));
+
+                    $line.append($("<td class='numeric'><a class='button text-link' href='/sprint/{{sprint}}/account/organisations/agreement-cover-signed.html'>Details</a></td>"));
+                    //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
+                    $table.append($line);
+                    continue;
+                }
+                $line.append($("<td>" + orgName.name + "</td>"));
+                $line.append($("<td>Spending disabled<div style='color:#6F777B' class='font-xsmall'>SFA agreement not yet signed</div></td>"));
+
+                $line.append($("<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/agreement-cover-sign.html' class='button secondary review-agreement-button' data-org-index='" + i + "'>Sign agreement</a></td>"));
+                //$line.append( $( "<td class='numeric'><a href='/sprint/{{sprint}}/account/organisations/sign.html' id='"+i+"' class='remove'>Remove</a></td>" ) );
+                $table.append($line);
+
+
+            }
+
+
+            $table.appendTo(document.body);
+
+            // if you want to insert this table in a div with id attribute 
+            // set as "myDiv", you can do this:
+            $table.appendTo($("#orgTable"));
+
+        }
+        var orgArray = []
+        orgArray = JSON.parse(localStorage.getItem("organisations"));
+        console.log("org array is: " + orgArray);
+        $("table a.remove").click(function (e) {
+            e.preventDefault();
+            //get the number of the row
+            var rowNum = $(this).attr("id");
+            //var rowNum = $(this).id;
+            // splice that row
+            console.log(rowNum);
+            orgArray.splice(rowNum, 1);
+            localStorage.setItem("organisations", JSON.stringify(orgArray));
+            window.location.href = "/sprint/{{sprint}}/account/organisations/index.html";
+        });
+
+        userName();
+
+    }
+
+    function loginUser() {
+        $(".button").click(function (e) {
+            e.preventDefault();
+            sessionState = localStorage.setItem("sessionState", "1");
+            sessionState = localStorage.setItem("onboarding", "0");
+            window.location.href = "/sprint/{{sprint}}/account/dashboard/index.html";
+        });
+    }
+
+    function organisationsTypeManual() {
+        $(".button").click(function (e) {
+            e.preventDefault();
+            window.location.href = "/sprint/{{sprint}}/account/organisations/address.html";
+        })
+    }
+
+    function organisationsAddressManual() {
+
+            $(".error-summary, .error-summary li, .error-message").hide();
+            $(".form-group").removeClass("error");
+            $(".manual-entry").hide();
+
+
+            $('#postcode_lookup').getAddress({
+                api_key: 'PZ3nAXOYLE-eWh1OqQNuZw8517',
+                output_fields: {
+                    line_1: '#line1',
+                    line_2: '#line2',
+                    line_3: '#line3',
+                    post_town: '#town',
+                    county: '#county',
+                    postcode: '#postcode'
+                },
+                button_class: 'button',
+                input_class: 'form-control',
+                select_class: 'select2',
+
+                onLookupSuccess: function (data) {
+                    alert("success")
+                },
+                onLookupError: function () {
+                    $(".manual-entry").show();
+                },
+                onAddressSelected: function (elem, index) {
+                    $(".manual-entry").show();
+                }
+            });
+
+
+        }
+
+    function manualInputName() {
+            $(".error-summary, .error-message").addClass("hidden");
+            $(".form-group").removeClass("error");
+
+            $(".button").click(function (e) {
+                e.preventDefault();
+                var orgName = $("#name").val();
+                //addOrg(orgName);
+
+                localStorage.setItem("organisation-name", JSON.stringify(orgName));
+                window.location.href = "/sprint/{{sprint}}/account/organisations/address.html";
+            })
+
+        }
+
+    function addOrg(orgName) {
+
+            // This function takes a name and adds it to a list of organisations in an array
+            var orgArray = new Array;
+
+            var newOrg = '{"name":"' + orgName + '","signed":0}';
+
+            //find out if there is a local storage for orgs already
+            if (localStorage.getItem("organisations") === null) {
+                orgArray.push(newOrg);
+                localStorage.setItem("organisations", JSON.stringify(orgArray));
+
+            } else {
+                //orgArray = JSON.parse("["+localStorage.getItem("organisations")+"]");
+                orgArray = JSON.parse(localStorage.getItem("organisations"));
+                //orgArray.push(orgName);
+                orgArray.push(newOrg);
+                localStorage.setItem("organisations", JSON.stringify(orgArray));
+            }
+        }
+
+    function captureUserData() {
+            $("#email-address").val(JSON.parse(localStorage.getItem("user.email")));
+            $(".zxcvbn .button").click(function (e) {
+                e.preventDefault();
+                var name = $("#users-name").val();
+                var email = $("#email-address").val();
+                var password = $("#password").val();
+                if (email == "joe.bloggs@gmail.com") {
+                    $("#emailGroup").addClass("error");
+                    $("#emailError1").show().removeClass("hidden");
+                    $(".error-summary").show().removeClass("hidden");
+
+                } else {
+                    // store field inputs into local storage
+                    localStorage.setItem("user.name", JSON.stringify(name));
+                    localStorage.setItem("user.email", JSON.stringify(email));
+                    localStorage.setItem("user.password", JSON.stringify(password));
+                    window.location.href = "/sprint/{{sprint}}/onboarding/check-mail.html";
+                }
+            });
+        }
+
+    function checkMail() {
+            //window.location.href = "/sprint/{{sprint}}/onboarding/gateway-alert";
+            $("#email-code").keyup(function (e) {
+                e.preventDefault();
+                if (e.keyCode == 13) {
+                    window.location.href = "/sprint/{{sprint}}/onboarding/gateway-alert";
+                }
+            });
+        }
+
+    function headerNav() {
+            var sessionState = localStorage.getItem("sessionState");
+            if (sessionState == "1") {
+                // if you're logged in
+                $("#loggedIn").removeClass("hidden");
+                $("#loggedOut").addClass("hidden");
+            } else {
+                // if you're logged out
+                $("#loggedOut").removeClass("hidden");
+                $("#loggedIn").addClass("hidden");
+            }
+        }
+
+    function signAgreement() {
+        today();
+        $(".organisation-name").text(localStorage.getItem("organisation-name"));
+
+        // contract scroll up
+        $(document).scroll(function () {
+            $("#draftContract .js-back-to-content").removeClass("visually-hidden");
+        });
+
+        $("#sign2").click(function (e) {
+             e.preventDefault();
+            //  check if this is on-boarding or not
+            window.location.href = "/sprint/{{sprint}}/account/organisations/agreement-next";
+
+            var today = new Date();
+            var date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+
+            var signAgreementForID = localStorage.getItem("signAgreementFor")
+            if (signAgreementForID == null) {
+                signAgreementForID = "0"
+            }
+
+            var orgToSign = signAgreementForID,
+                organisations = JSON.parse(localStorage.getItem("organisations"));
+
+            existingDetails = JSON.parse(organisations[orgToSign]);
+            existingDetails.signed = 1;
+            existingDetails.date = date;
+
+            organisations[orgToSign] = JSON.stringify(existingDetails);
+
+            localStorage.setItem("organisations", JSON.stringify(organisations));
+
+            var onboarding = JSON.parse(localStorage.getItem("onboarding"));
+            //window.location.href = "/sprint/{{sprint}}/account/organisations/index.html?newOrgSigned=y";
+
+        });
+    };
+
+    function renameAccount() {
+        $(".error-summary").hide();
+        $(".form-group .error-message").hide();
+        $(".form-group").removeClass("error");
+
+        $(".button").click(function (e) {
+            e.preventDefault();
+            var newName = $("#new-name").val();
+
+            if (newName == "") {
+                //show error
+                $(".error-summary").show();
+                $(".form-group .error-message").show();
+                $("#newName").addClass("error");
+            } else {
+                localStorage.setItem("organisation-name", JSON.stringify(newName));
+                window.location = document.referrer + '?name-changed=1';
+            };
+        });
+    }
+
+    function beforeYouStart() {
+                // used service before page
+        $(".button").click(function (e) {
+            e.preventDefault();
+            if ($('input[name=radio-group]:checked', 'form').val() == "no") {
+                window.location.href = "/sprint/{{sprint}}/onboarding/not-ready.html";
+            } else {
+                window.location.href = "/sprint/{{sprint}}/onboarding/zxcvbn.html";
+            }
+    })
+
+        
+
+        
+        
+    }
+
+    function orgQuestion() {
+        if ($('input[name=radio-group]:checked', 'form').val() == "charity") {
+            window.location.href = "/sprint/{{sprint}}/account/organisations/addcharity.html";
+        } else {
+            window.location.href = "/sprint/{{sprint}}/account/organisations/public-sector-searh.html";
+        }
+    };
+
+    function chQuestion() {
+        if ($('input[name=radio-group]:checked', 'form').val() == "yes") {
+            window.location.href = "/sprint/{{sprint}}/account/organisations/companieshouse.html?orgtype=limited";
+        } else {
+            window.location.href = "/sprint/{{sprint}}/account/organisations/add.html";
+        }
+
+    }
+
+    function searchThis() {
+
+        $.ajax({
+            type: "GET",
+            url: XMLSource,
+            dataType: "xml",
+            success: function (xml) {
+                loadstnlocation(xml)
+            },
+            error: function (request, error) {
+                //console.log(arguments);
+                console.log("something broke in the searchThis function");
+                //alert(" Can't do because: " + error);
+            }
+        });
+    }
+
+    function loadstnlocation(xmlData) {
+        i = 0;
+        c = 0;
+        var row;
+        var searchExp = "";
+        var stn = "";
+        
+        
+
+        $(xmlData).find('row').each(function () {
+
+            i++;
+            
+
+            var iName = $(this).find('iName').text();
+            var iAddress = $(this).find('iAddress').text();
+            var iType = $(this).find('iType').text();
+            
+            //console.log(iName);
+
+            //Format the keyword expression
+            var exp = new RegExp(keyword, "gi");
+            searchExp = iName.match(exp);
+
+            var sortBy = localStorage.getItem("addSort");
+            //sortBy = "Public body";
+
+            if (searchExp != null) {
+                if (sortBy != null) {
+                    if (sortBy == iType) {
+	                    	
+                        returnList();
+                        c++;
+                    }
+                } else {
+                    returnList();
+                    c++;
+                }
+            }
+
+
+            function returnList() {
+                stn += '<li class="item" data-id=' + i + '"><h2 class="heading-medium"><a href="/sprint/{{sprint}}/account/organisations/confirm.html?name=' + iName + '">' + iName + '</a></h2>';
+                stn += '<dl class="result-data-list"><dt><b>Address</b></dt><dd>'
+                stn += '<address class="form-hint">' + iAddress + '</address></dd>';
+                stn += '<dt><b>Type</b><dd data-filter=' + iType + '><span class="type">' + iType + '</span></dd></dl></li>';
+            }
+            
+           
+        });
+        
+
+
+				$('span.count').text(c);
+        showList(stn);
+
+    }
+
+    function showList(stn) {
+
+	        //Populate on page
+        var contentTop = '<ul class="list list-links">';
+        var contentBottom = '</ul>';
+        var helpText = "<aside id='manualentrylink' style='display:none;'><h5 class='heading-small'>Can't find your organisation?</h5><p> You can <a href='manual-input.html'>add it manually here</a>.</p></aside>";
+        $('#results').html(contentTop + stn + contentBottom + helpText);
+        getPublicSearchCount(keyword);
+
+
+        onboarding = localStorage.getItem("onboarding");
+        if (onboarding != "1") {
+            disabledAddedPublicOrgs();
+        }
+        pageNsort();
+        pageNfilter();
+
+        $("ul a").click(function (e) {
+            e.preventDefault();
+            var orgName = $(this).text();
+            var orgType = $(this).text();
+            var orgAddress = $(this).parents("li").find("address").text();
+            //alert($(this).parents("li").find("address").text());
+            //$("ul a")
+            var href = this.href;
+            //addOrg(orgName);
+            onboarding = localStorage.getItem("onboarding");
+            localStorage.setItem("organisation-name", orgName);
+            localStorage.setItem("organisation-type", orgType);
+            localStorage.setItem("organisation-address", orgAddress);
+            localStorage.setItem("organisation-name", $(this).text());
+
+            if (onboarding == 1) {
+                window.location.href = "/sprint/{{sprint}}/onboarding/gateway-alert";
+            } else {
+                window.location.href = href;
+            }
+        })
+
+    }
+
+    function pageNsort() {
+
+        //$(".page-navigation__btn.previous").css("visibility","hidden");
+        //$("ol li").hide();
+        //$("ol#standard-results li:lt(" + paginateCount + ")").show();
+        //$("ol#framework-results li:lt(" + paginateCount + ")").show();
+        $("#pagedat").jPages({
+            containerID: "results ul",
+            perPage: 10,
+            animation: "none",
+            first: false,
+            previous: "a.previous",
+            next: "a.next",
+            last: false,
+            midRange: 0,
+            callback: function (pages, items) {
+                $(".totalPage").html(pages.count);
+                $(".prevPage").html((pages.current) - 1);
+                $(".nextPage").html((pages.current) + 1);
+                $(".page-navigation__btn.next").removeClass("hidden");
+                if (pages.current == 1) {
+                    $(".page-navigation__btn.previous").addClass("hidden");
+                } else {
+                    $(".page-navigation__btn.previous").removeClass("hidden");
+                }
+                if (pages.current == pages.count) {
+                    $("#manualentrylink").show();
+                    $(".page-navigation__btn.next").addClass("hidden");
+                }
+                $("html, body").animate({
+                    scrollTop: 0
+                }, "slow");
+            }
+        });
+    }
+
+    function pageNfilter() {
+        var iType = localStorage.getItem("addSort");
+        $('input:radio[name="levy-group"]').filter('[value="' + iType + '"]').attr('checked', true).parent().addClass("selected");
+
+
+
+
+        $('input[name=levy-group]').change(function () {
+            var value = $('input[name=levy-group]:checked').val();
+            localStorage.setItem("addSort", value);
+            location.reload();
+        });
+    }
+
+    function getPublicSearchCount(keyword) {
+        $("#search-main").val(keyword);
+        var count = $(".list-links li").length;
+        //$(".count").text(count);
+    };
+
+    function disabledAddedPublicOrgs() {
+        var psAdded = 3;
+
+        var name = $(".list-links li:nth-child(" + psAdded + ") a").text();
+        var iAddress = $(".list-links li:nth-child(" + psAdded + ") address").text();
+        var iType = $(".list-links li:nth-child(" + psAdded + ") span.type").text();
+
+        $(".list-links li:nth-child(" + psAdded + ")").replaceWith("<li class='added item'><h2 class='heading-medium'>" + name + "</h2><dl class='result-data-list'><dt><b>Address</b></dt><dd><address>" + iAddress + "</dd><dt><b>Type</b></dt><dd><span class='type'>" + iType + "</span></dd></dl><div>Already added — <a href='/sprint/{{sprint}}/account/organisations/index'>view my organisations</a></div><li>");
+    }
+
+    function zxcvbn() {
+    
+        $("#password").focusin(function () {
+            $(".popover").fadeIn("slow");
+        });
+        i = 0;
+        $("#passwordgroup input").keyup(function (e) {
+
+            i++;
+            var len = $("input").val().length;
+            //alert(len);
+            //var oneCharacter = newRegExp(^[A-Za-z]([A-Za-z]{2}|[A-Za-z][0-9]|[0-9]{2})[0-9]{0,6}$);
+            var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+            var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+            var enoughRegex = new RegExp("(?=.{6,}).*", "g");
+            if (false == enoughRegex.test($(this).val())) {} else if (strongRegex.test($(this).val())) {} else if (mediumRegex.test($(this).val())) {
+                $("#1char").removeClass("danger").addClass("success");
+                $("#1char .fa").removeClass("fa-circle").addClass("fa-check-circle")
+            } else if (len > 8) {
+                $("#8num").removeClass("danger").addClass("success");
+                $("#8num .fa").removeClass("fa-circle").addClass("fa-check-circle")
+            } else {}
+            return true;
+        })
+        i = 0;
+
+        $(".password-strength span").hide();
+
+        $("#passwordgroup input").keyup(function (e) {
+            var password = $(this).val();
+            var result = zxcvbn(password);
+            console.log(result.score);
+            var resultScore = result.score;
+
+
+            switch (resultScore) {
+            case 0:
+                console.log("score is " + resultScore);
+                $(".password-strength span").show();
+                //$(".password-strength .veryweak").show();
+                $(".password-strength.pw2 span").addClass("veryweak").css("width", "20%");
+                $(".pw-strength").text("very weak");
+                break;
+            case 1:
+                console.log("score is " + resultScore)
+                    //$(".password-strength span").hide();
+                    //$(".password-strength .veryweak, .password-strength .weak").show();
+                $(".password-strength.pw2 span").removeClass().addClass("weak").css("width", "40%");
+                $(".pw-strength").text("weak");
+                break;
+            case 2:
+                console.log("score is " + resultScore)
+                    //$(".password-strength span").hide();
+                    ///$(".password-strength .veryweak, .password-strength .weak, .password-strength .good").show();
+                $(".password-strength.pw2 span").removeClass().addClass("good").css("width", "60%");
+                $(".pw-strength").text("good");
+                break;
+            case 3:
+                console.log("score is " + resultScore)
+                    //$(".password-strength span").hide();
+                    //$(".password-strength .veryweak, .password-strength .weak, .password-strength .good, .password-strength .strong").show();
+                $(".password-strength.pw2 span").removeClass().addClass("strong").css("width", "80%");
+                $(".pw-strength").text("strong");
+                break;
+            case 4:
+                console.log("score is " + resultScore)
+                    //$(".password-strength span").hide();
+                    //$(".password-strength .veryweak, .password-strength .weak, .password-strength .good, .password-strength .strong, .password-strength .verystrong").show();
+                $(".password-strength.pw2 span").removeClass().addClass("verystrong").css("width", "100%");
+                $(".pw-strength").text("very strong");
+                break;
+            }
+
+        });
+
+        }    
+    
+    function passwordPeek() {
+            var myElement = document.getElementById('peak');
+
+            // create a simple instance
+            // by default, it only adds horizontal recognizers
+            var mc = new Hammer(myElement);
+
+            // listen to events...
+            mc.on("tap", function (ev) {
+                // show helper text
+                $(".peakHelp").show().delay(2500).fadeOut("slow");
+                console.log("tapp");
+            });
+            mc.on("press", function (ev) {
+                console.log("press down")
+                $(".peakHelp").hide();
+                $("#password").attr('type', 'text');
+                $('.show-pw').text("Hide").addClass("hide-pw");
+            });
+            mc.on("pressup", function (ev) {
+                console.log("press release")
+                $("#password").attr('type', 'password');
+                $('.show-pw').text("Peek").removeClass("hide-pw");
+            });
+
+        }
+
+    function getOrganisationDetails() {
+     //   $(".organisation-address").text(localStorage.getItem("organisation-address"));
+        // my functions
+    //    $(".organisation-name, .company-name").text(JSON.parse(localStorage.getItem("organisation-name")));
+    //    $(".organisation-name, .company-name").val(JSON.parse(localStorage.getItem("organisation-name")));
+    }
+
+    function organisationAdd() {
+        onboardingNav();
+        localStorage.removeItem("addSort");
+
+        $(".errror-summary").hide();
+        $(".form-group").removeClass("error");
+        $(".error-message, .error-summary").addClass("hidden");
+        //localStorage.setItem("organisation-address", JSON.stringify("101 Aviation House"))           
+        $(".panel").hide()
+        $("label").click(function () {
+            $(".panel").hide();
+            $(this).next().show()
+        })
+
+        $("#submit-keywords, #search-submit button").click(function (e) {
+            e.preventDefault();
+            $("#public-sector-search").hide();
+            $("#results-wrapper").removeClass("hidden");
+            
+            keyword = $("#input-keywords").val();
+           
+            stn = '';
+            searchThis();
+        });
+        
+        $("#results-wrapper .button").click(function(e){
+            e.preventDefault();
+            keyword = $("#search-main").val();
+            stn = '';
+            searchThis();
+        });
+        
+        
+        
+        $('.org-search-filter input:radio').on('change', function(e) {
+	        var filterValue = $('.org-search-filter input:radio:checked').val();
+	        console.log(filterValue);
+	        if (filterValue !== 'all') {
+		        localStorage.setItem("addSort", filterValue);
+		        searchThis();
+	        } else {
+		        localStorage.removeItem("addSort");
+		        searchThis();
+	        }
+	        e.stopPropagation();
+        });
+        
+        var addSort = localStorage.getItem("addSort");
+
+    }
+
+    function onboardingNav() {
+        onboarding = localStorage.getItem("onboarding");
+        if (onboarding != 0) {
+            $("nav").hide();
+        }
+    }
+
+    function SampleOrg() {
+        if (localStorage.getItem("organisations") === null) {
+            //    console.log("no orgs founddddd");
+            var newCompany = [];
+            var newCompanyDetails = {};
+            newCompanyDetails.name = "Tesco food ltd";
+            newCompanyDetails.signed = 0;
+            newCompany.push(JSON.stringify(newCompanyDetails));
+            //  console.log(newCompany);    
+            localStorage.setItem("organisations", JSON.stringify(newCompany));
+        }
+    }
+
+        console.log("end");
+
+    });
+</script>

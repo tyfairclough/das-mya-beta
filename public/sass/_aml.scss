@@ -372,11 +372,20 @@ nav.global-nav ul {
 }
 
 .button.secondary {
-    background-color: #eee;
-    color: #000;
-    box-shadow: 0 2px 0 #666;
+    background-color: $grey-2;
+    color: $black;
+    box-shadow: 0 2px 0 mix($grey-2, black, 60%;
 }
-
+.button.error {
+    background: $red;
+    box-shadow: 0 2px 0 mix($red, black, 60%)
+}
+@media (min-width: 960px) {
+    .button + .button {
+        margin-left: 10px;
+    }
+}
+    
 .hgroup {
   margin-bottom: 30px;
 }
@@ -2129,16 +2138,28 @@ li.added + li {
 }
 
 
-#finance-bingo a, .apprentices-index a 
+#finance-bingo a, .apprentices-index a
 {
     margin-bottom: 15px;
     text-decoration: none;
     width: 100%;
     overflow: auto;
     float: left;
-    .data {
+}
+
+.data {
         padding: 20px 10px;
         margin: 0;
+        min-height: 160px;
+        position: relative;
+    
+    h1, h2, h3, h4, h5, h6 {
+        + h1, + h2, + h3, + h4, + h5, + h6 {
+            position: absolute;
+            bottom: 15px;
+        }
+    }
+    
         &.fuschia {
             background: $fuschia;
             color: $white;
@@ -2212,7 +2233,6 @@ li.added + li {
             }
         }
     }
-}
 $container-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
 
 $gutter: 30px;
@@ -2750,4 +2770,13 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
 }
 .dismiss {
     display: none;
+}
+
+dl {
+    clear: both;
+    dt {
+        float: left;
+        margin-right: 5px;
+        font-weight: 900;
+    }
 }

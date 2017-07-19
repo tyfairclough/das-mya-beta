@@ -2396,9 +2396,20 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 }
 
 .button.secondary {
-  background-color: #eee;
+  background-color: #bfc1c3;
   color: #000;
   box-shadow: 0 2px 0 #666;
+}
+
+.button.error {
+  background: #b10e1e;
+  box-shadow: 0 2px 0 #6a0812;
+}
+
+@media (min-width: 960px) {
+  .button + .button {
+    margin-left: 10px;
+  }
 }
 
 .hgroup {
@@ -4200,82 +4211,89 @@ li.added + li {
   float: left;
 }
 
-#finance-bingo a .data, .apprentices-index a .data {
+.data {
   padding: 20px 10px;
   margin: 0;
+  min-height: 160px;
+  position: relative;
 }
 
-#finance-bingo a .data.fuschia, .apprentices-index a .data.fuschia {
+.data h1 + h1, .data h1 + h2, .data h1 + h3, .data h1 + h4, .data h1 + h5, .data h1 + h6, .data h2 + h1, .data h2 + h2, .data h2 + h3, .data h2 + h4, .data h2 + h5, .data h2 + h6, .data h3 + h1, .data h3 + h2, .data h3 + h3, .data h3 + h4, .data h3 + h5, .data h3 + h6, .data h4 + h1, .data h4 + h2, .data h4 + h3, .data h4 + h4, .data h4 + h5, .data h4 + h6, .data h5 + h1, .data h5 + h2, .data h5 + h3, .data h5 + h4, .data h5 + h5, .data h5 + h6, .data h6 + h1, .data h6 + h2, .data h6 + h3, .data h6 + h4, .data h6 + h5, .data h6 + h6 {
+  position: absolute;
+  bottom: 15px;
+}
+
+.data.fuschia {
   background: #912b88;
   color: #fff;
 }
 
-#finance-bingo a .data.fuschia:hover, .apprentices-index a .data.fuschia:hover {
+.data.fuschia:hover {
   background: #6d2066;
   background: #702369;
 }
 
-#finance-bingo a .data.orange, .apprentices-index a .data.orange {
+.data.orange {
   background: #f47738;
   color: #fff;
 }
 
-#finance-bingo a .data.orange:hover, .apprentices-index a .data.orange:hover {
+.data.orange:hover {
   background: #b7592a;
   background: #ba5c2d;
 }
 
-#finance-bingo a .data.purple, .apprentices-index a .data.purple {
+.data.purple {
   background: #2e358b;
   color: #fff;
 }
 
-#finance-bingo a .data.purple:hover, .apprentices-index a .data.purple:hover {
+.data.purple:hover {
   background: #232868;
   background: #252b6b;
 }
 
-#finance-bingo a .data.fuscia, .apprentices-index a .data.fuscia {
+.data.fuscia {
   background: #912b88;
   color: #fff;
 }
 
-#finance-bingo a .data.fuscia:hover, .apprentices-index a .data.fuscia:hover {
+.data.fuscia:hover {
   background: #6d2066;
   background: #702369;
 }
 
-#finance-bingo a .data.mauve, .apprentices-index a .data.mauve {
+.data.mauve {
   background: #6f72af;
   color: #fff;
 }
 
-#finance-bingo a .data.mauve:hover, .apprentices-index a .data.mauve:hover {
+.data.mauve:hover {
   background: #535683;
   background: #565986;
 }
 
-#finance-bingo a .data.pink, .apprentices-index a .data.pink {
+.data.pink {
   background: #d53880;
   color: #fff;
 }
 
-#finance-bingo a .data.pink:hover, .apprentices-index a .data.pink:hover {
+.data.pink:hover {
   background: #a02a60;
   background: #a32d63;
 }
 
-#finance-bingo a .data.red, .apprentices-index a .data.red {
+.data.red {
   background: #df3034;
   color: #fff;
 }
 
-#finance-bingo a .data.red:hover, .apprentices-index a .data.red:hover {
+.data.red:hover {
   background: #a72427;
   background: #aa272a;
 }
 
-#finance-bingo a .data span, .apprentices-index a .data span {
+.data span {
   text-decoration: underline;
   margin: 5px -10px -20px;
   padding: 10px;
@@ -4284,11 +4302,11 @@ li.added + li {
   font-weight: 900;
 }
 
-#finance-bingo a .data span i, .apprentices-index a .data span i {
+.data span i {
   visibility: hidden;
 }
 
-#finance-bingo a .data:hover span i, .apprentices-index a .data:hover span i {
+.data:hover span i {
   visibility: visible;
 }
 
@@ -4826,6 +4844,16 @@ table.footable > tfoot > tr.footable-paging > td > span.label {
 
 .dismiss {
   display: none;
+}
+
+dl {
+  clear: both;
+}
+
+dl dt {
+  float: left;
+  margin-right: 5px;
+  font-weight: 900;
 }
 
 .elements-index .heading-medium {

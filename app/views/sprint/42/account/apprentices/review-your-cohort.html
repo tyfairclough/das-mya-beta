@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="review-your-cohort" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+    <h1 class="heading-xlarge" id="commitmentsHeader">Review your cohort</h1>
+      </div>
+</div>
+
+
+  <div class="grid-row">
+
+
+     <div class="column-third" >
+                <div class="data purple">
+                  <h2 class="bold-xxlarge">25</h2>
+                  <h2 class="bold-medium">Apprentices</h2>
+              </div>
+    </div>
+         <div class="column-third" >
+                <div class="data fuscia">
+                  <h2 class="bold-xxlarge">10</h2>
+                  <h2 class="bold-medium">Incomplete records</h2>
+              </div>
+    </div>
+         <div class="column-third" >
+                <div class="data pink">
+                  <h2 class="bold-xlarge">£29,002</h2>
+                  <h2 class="bold-medium">Total cost</h2>
+              </div>
+
+    </div>
+  </div>
+
+  <div class="grid-row">
+           <div class="column-third">
+                           <div class="">
+                                     <!--h2 class="heading-medium" id="commitmentsName" style="margin: 0 0 5px 0">Acme Coventry Ltd</h2-->
+                                     <div id=""><h2 id="providerName" class="heading-small">Provider:</h2><p id="commitmentsName" style="display:inline; margin:0;"> Hackney Skills &amp; Training Ltd</p></div>
+                                  <div id="addReference"><h2 class="heading-small">Reference:&nbsp;</h2><p>98HGS3F</p></div>
+
+                          </div>
+            </div>
+
+        <div class="column-two-thirds rj-dont-display" id="notesStuff">
+          <div id="removeMe">
+            <div><h2 class="heading-small">Message:&nbsp;</h2><p style=" margin:0;">There is space here for a short note to be added by the last party to make an amend.</p></div>
+          </div>
+        </div>
+</div>
+
+    <!-- ----------- This is the default where there aren't any groups or cohorts added ------------ -->
+
+
+
+       <hr>
+        <div class="commit-bar">
+              <form class="" action="#">
+                  <a class="button" href="/sprint/{{sprint}}/account/apprentices/choose-an-option" id="send-to-employer">Save and continue</a>
+                <input class="secondary button " type="submit" id="bulk-upload" value="Add apprentices">
+            <div class="pull-right"><a href="/sprint/{{sprint}}/account/apprentices/payment-schedule" class="button text-link">View the payment schedule</a></div>
+            </form>
+
+         
+        </div>
+
+        <hr>
+
+        <h2 class="bold-medium"><span class="count">5</span> <span class="apprenticeship">Mechatronics Engineers</span></h2>
+                
+            <dl>
+                <dt class="apprenticeshipLevel">Level</dt>
+                <dd class="apprenticeshipLevel">4</dd>
+                <dt class="trainingCode">Training code</dt>
+                <dd class="trainingCode">3246</dd>
+            </dl>
+<table class="" id="">
+                  <thead>
+                      <tr>
+                        <th scope="col" class="">Name</th>
+                        <!--th scope="col" class="">Family<br />name</th-->
+                        <th id="ULNTable" scope="col">ULN</th>
+                        <th id="" scope="col" class="">Date of birth</th>
+                        <th scope="col" class="">Training dates</th>
+                        <!--th scope="col" class="">Endpoint Assessor</th-->
+                         <th scope="col" class="">Cost</th>
+                        <th scope="col" class=""></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr><td >David Edwards</td><td ><span class="highlight"><span class="highlight">----</span></span> </td><td >11/2018 to 10/2020</td><td >£1,500</td><td><a href="/sprint/{{sprint}}/account/apprentices/add-apprentice-details">Edit</a></td></tr><tr><td >Rob Andrews</td><td ><span class="highlight"><span class="highlight">----</span></span> </td><td >11/2018 to 10/2020</td><td >£1,500</td><td><a href="/sprint/{{sprint}}/account/apprentices/add-apprentice-details">Edit</a></td></tr><tr><td >Mellisa Shaw</td><td ><span class="highlight"><span class="highlight">----</span></span> </td><td >11/2018 to 10/2020</td><td >£1,500</td><td><a href="/sprint/{{sprint}}/account/apprentices/add-apprentice-details">Edit</a></td></tr><tr><td >Brendan Hamazaki</td><td ><span class="highlight"><span class="highlight">----</span></span> </td><td >11/2018 to 10/2020</td><td >£1,500</td><td><a href="/sprint/{{sprint}}/account/apprentices/add-apprentice-details">Edit</a></td></tr><tr><td >Gary Barton</td><td ><span class="highlight"><span class="highlight">----</span></span> </td><td >11/2018 to 10/2020</td><td >£1,500</td><td><a href="/sprint/{{sprint}}/account/apprentices/add-apprentice-details">Edit</a></td></tr></tbody>
+                </table>
+  
+
+              <div class="page-navigation hidden">
+                    <a class="page-navigation__btn previous">
+                        <i class="arrow-button fa fa-angle-left"></i>
+                        <span class="description">Previous <span class="hide-mob"></span></span>
+                        <span class="counter">Apprentices 1<span class="prevPage"></span> to <span class="totalPage">25 </span></span>
+                    </a>
+
+
+
+                    <a  class="page-navigation__btn next">
+                        <i class="arrow-button fa fa-angle-right"></i>
+                        <span class="description">Next <span class="hide-mob"></span></span>
+                        <span class="counter">Apprentices 26 <span class="nextPage"></span> to <span class="totalPage">50 </span></span>
+                    </a>
+
+                </div>
+
+
+    
+</main>
+{% endblock %}

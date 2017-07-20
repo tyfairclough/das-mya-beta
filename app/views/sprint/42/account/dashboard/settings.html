@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="account-dashboard" id="content" role="main" tabindex="-1">
+
+
+       <div class="govuk-box-highlight hidden">
+          <h2 class="bold-large">
+Levy account created          </h2>
+        <p>You need to <a href="/{{sprint}}/account/organisation/view?agreementState=not-signed">sign the SFA agreement</a> before you can start spending your levy.</p>
+        </div>
+    
+           <div class="govuk-box-highlight hidden" id="emailUpdated">
+          <h2 class="bold-large">
+Email changed         </h2>
+           <p>You've changed your email address to <span class="user-email bold-small">john@tesco.co.uk</span> </p>
+        </div>
+    
+
+
+ 
+    <h1 class="heading-xlarge organisation-namee">Settings</h1>
+
+    <div class="grid-row">
+        <div class="column-third">
+            <h2 class="heading-medium">Acme Training Ltd settings</h2>
+            <ul class="list list-links">
+        <li><a href="/sprint/{{sprint}}/account/dashboard/activity-3.html">Activity</a></li>
+        <li><a href="/sprint/{{sprint}}/user/rename-account">Rename this levy account</a></li>
+        <li><a href="/account/team/index">Manage your team</a></li>
+    </ul>
+    
+        </div>
+        <div class="column-third">
+            <h2 class="heading-medium">Your Settings</h2>
+            <ul class="list list-links">
+        <li><a href="#">Your details</a></li>
+        <li><a href="/sprint/{{sprint}}/user/invitations/all">Invitations</a></li>
+        <li><a href="/sprint/{{sprint}}/user/invitations/all">Notifications</a></li>
+        <li><a href="/sprint/{{sprint}}/user/reset-password">Change password</a></li>
+        <li><a href="/sprint/{{sprint}}/user/change-email">Change email</a></li>
+                <li><hr /></li>
+        <li><a href="/sprint/{{sprint}}/user/index">Switch employer accounts</a></li>
+        <li><a href="/sprint/{{sprint}}/index">Sign out</a></li>
+    </ul>
+        </div>
+    </div>
+
+</main><!-- / #content -->
+{% endblock %}

@@ -580,7 +580,8 @@ $(document).ready(function () {
                 default: break;
                        }
             
-            function orgAdded(){
+            
+               function orgAdded(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
                     msg += '<div class="title">';
                         msg += '<span class="font-small">'+Date2+'</span>';
@@ -588,8 +589,9 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>'+ Item1 +' added</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who + ' - <a href="#">Details</a>';
-                msg += '</div></div></div>';                  
+                msg += '</div></div>';                  
             }
+
             function payeAdded(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
                     msg += '<div class="title">';
@@ -598,18 +600,9 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>PAYE scheme added: '+ Item1 +'</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who + ' - <a href="#">Details</a>';
-                msg += '</div></div></div>';                      
+                msg += '</div></div>';                      
             }
-            function startDateChangeAccepted(){
-                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
-                    msg += '<div class="title">';
-                        msg += '<span class="font-small">'+Date2+'</span>';
-                    msg += '</div>';
-                msg += '<div class="body">';
-                msg += '<div>Start date change approved for '+ Item1 +'</div>';
-                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who + ' - <a href="#">Details</a>';
-                msg += '</div></div></div>';                      
-            }
+
             function userAdded(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
                     msg += '<div class="title">';
@@ -618,7 +611,7 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>'+ Item1 +' invited</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                  
+                msg += '</div></div>';                  
             }
             function userJoined(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
@@ -628,7 +621,7 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>'+ Who +' joined</div>';
                 msg += '<div class="time"><span class="time">At '+ Time; 
-                msg += '</div></div></div>';                   
+                msg += '</div></div>';                   
             }
             function signedIn(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
@@ -648,7 +641,7 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>Agreement signed for: '+ Item1 +'</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                  
+                msg += '</div></div>';                  
             }
             function cohortCreated(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
@@ -658,7 +651,7 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>Cohort created with '+ Item1 +'</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                  
+                msg += '</div></div>';                  
             }
             function cohortRequestSent(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
@@ -668,7 +661,7 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>Cohort request sent to '+ Item1 +'</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                     
+                msg += '</div></div>';                     
             }
             function cohortRequestReceived(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
@@ -677,8 +670,8 @@ $(document).ready(function () {
                     msg += '</div>';
                 msg += '<div class="body">';
                 msg += '<div>Cohort request received</div>';
-                msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                  
+                msg += '<div class="time"><span class="time">At '+ Time + ' from '+ Who;
+                msg += '</div></div>';                  
             }
             function cohortApproved(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
@@ -688,20 +681,20 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>Cohort approved: '+ Item1 +'</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                 
+                msg += '</div></div>';                 
             }
             function paymentMade(){
                 
                 Item2 = numberWithCommas(Item2);
                 
-                msg +=  '<div class="entry payment" data-type="'+Type+'" data-date1="'+Date1+'">';
+                msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
                     msg += '<div class="title">';
                         msg += '<span class="font-small">'+Date2+'</span>';
                     msg += '</div>';
                 msg += '<div class="body">';
                 msg += '<div>Outgoing payment made: £'+ Item2 +' to ' +Item1+ '</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                 
+                msg += '</div></div>';                 
             }
             function priceChangeRequest(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
@@ -711,7 +704,7 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>Price change requested for '+ Item1 +'</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                  
+                msg += '</div></div>';                  
             }
             function closingBalance(){
                 Item2 = numberWithCommas(Item2);                
@@ -722,7 +715,7 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>Closing balance for '+ Item1 +': £' +Item2+ '</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by ';
-                msg += '</div></div></div>';                   
+                msg += '</div></div>';                   
             }
             function priceChangeApproved(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
@@ -732,9 +725,9 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>Price change approved for '+ Item1 +'</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                  
+                msg += '</div></div>';                  
             }
-            function startDateChangeRequest(){
+            function startDateChangeRequested(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
                     msg += '<div class="title">';
                         msg += '<span class="font-small">'+Date2+'</span>';
@@ -742,7 +735,7 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>Start date change requested for '+ Item1 +'</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                  
+                msg += '</div></div>';                  
             }
             function startDateChangeApproved(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
@@ -752,7 +745,7 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>Start date change approved for '+ Item1 +'</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                  
+                msg += '</div></div>';                  
             }
             function userACL(){
                 msg +=  '<div class="entry admin" data-type="'+Type+'" data-date1="'+Date1+'">';
@@ -762,31 +755,31 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>Team member '+ Item1 +'\'s role changed to: '+Item2+'</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + ' by '+ Who;
-                msg += '</div></div></div>';                  
+                msg += '</div></div>';                  
             }
             
             function paymentFailed(){
                 //console.log(Item);
-                msg +=  '<div class="entry payment apprentice" data-type="'+Type+'" data-date1="'+Date1+'">';
+                msg +=  '<div class="entry payment apprentice" data-type="'+Type+'" data-apprentice="'+Item1+'" data-date1="'+Date1+'">';
                     msg += '<div class="title">';
                         msg += '<span class="font-small">'+Date2+'</span>';
                     msg += '</div>';
                 msg += '<div class="body">';
-                msg += '<div>Payment failed: £' + Item2 + ' for ' + Item1 + '</div>';
+                msg += '<div>Payment failed: £' + Item2 + ' to ' + Item1 + '</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + '</span> - <a href="" class="details">Details</a></div>';
-                msg += '</div></div></div>';   
+                msg += '</div></div>';   
             }
             
             function levyPayment() {
                 //console.log(Item);
-                msg +=  '<div class="entry payment apprentice" data-type="'+Type+'" data-date1="'+Date1+'">';
+                msg +=  '<div class="entry payment apprentice" data-type="'+Type+'" data-apprentice="'+Item1+'" data-date1="'+Date1+'">';
                     msg += '<div class="title">';
                         msg += '<span class="font-small">'+Date2+'</span>';
                     msg += '</div>';
                 msg += '<div class="body">';
                 msg += '<div>Levy payment received</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + '</span> - <a href="" class="details">Details</a></div>';
-                msg += '</div></div></div>';   
+                msg += '</div></div>';   
             }
             
             function accountCreated() {
@@ -798,8 +791,9 @@ $(document).ready(function () {
                 msg += '<div class="body">';
                 msg += '<div>Account created</div>';
                 msg += '<div class="time"><span class="time">At '+ Time + '</span> by '+ Who +'</div>';
-                msg += '</div></div></div>';   
+                msg += '</div></div>';   
             }
+               
                
         });        
         

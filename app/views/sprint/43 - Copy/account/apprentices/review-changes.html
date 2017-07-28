@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="review-changes" id="content" role="main" tabindex="-1">
+{% include "includes/link-back.html" ignore missing %}
+
+<div class="grid-row">
+           <div class="column-two-thirds">
+              <h1 class="heading-xlarge">Review changes</h1>
+            <div>
+                       <p class=" ">Hackney Skills &amp; Training have suggested the following changes to the apprentice record.</p>
+                 <!--p class=" lede">Telling them that there are consequences for the other side if they pause or delete:</p-->
+
+            
+
+                <table class=""> 
+                  <tbody>
+                     <tr>
+                      <td class="rjTableName"></td>
+                      <td class="rjTableName" style="font-weight:700;">Period</td>
+                      <td class="" style="font-weight:700;">Current</td>
+                      <td class="" style="font-weight:700">Change to</td>
+                    </tr>
+                    <tr>
+                      <td class="rjTableName">Total Cost</td>
+                      <td class="rjTableName">04 Jun 2017 -- 03 May 2018</td>
+                      <td style="">£6,555</td>
+                      <td style="font-weight:700; font-size:19px">£7,000</td>
+                  </tr></tbody>
+                </table>
+                <div style="margin-top:35px"></div>
+              <div class="panel panel-border-wide">
+                    <p>
+                      This is making an adjustment to a payment in the past.</p><p></p><p>The adjustment will be paid in the next monthly payment cycle.
+                    </p>
+                </div>
+
+              <!--h2 class="heading-medium" style="margin-top:10px">Organisation information</h2-->
+              <form action="friendly-name">
+                  <legend class="visuallyhidden">Confirm changes</legend>
+                    <div class="form-group">
+                      <label class="form-label-bold" for="">Are you happy to approve these changes?</label>
+                    <!--label class="block-label" for="pause">
+                      <input id="pause" type="radio" name="radio-group" value="pause">
+                     Pause the apprenticeship
+                     </label-->
+                        <div class="multiple-choice">
+                    <input id="stop" type="radio" name="radio-group" value="stop">
+                    <label class="" for="stop">
+                      Yes, approve these changes
+                     </label>
+                            </div>
+                        <div class="multiple-choice">
+                      <input id="unchanged" type="radio" name="radio-group" value="unchanged">
+                     <label class="" for="unchanged">
+                      No, reject these changes
+                     </label>  
+                        </div>
+                     </div>
+                
+                <div style="margin-top:50px"></div>
+      
+
+
+          <!--input class="button" id="saveAndContinue" onclick="whereNow()" value="Save and continue"-->
+          <input class="button" id="saveAndContinue" type="button" onclick="whereNow()" value="Finish">
+              </form>
+                              <!--p class="looks-like-a-link-underline" id="saveAndAdd" style="margin-top:20px; cursor: pointer; cursor: hand; ">Cancel and return</p-->
+
+            </div>
+
+          </div>
+
+          <div class="column-one-third">
+                       <!--aside class="related">
+                        <h2 class="heading-medium" style="margin-top:10px">Provider management</h2>
+                        <nav role="navigation">
+                      <ul class="robSideNav">
+                        
+                          <li>
+                            <a href="/programmeTen
+
+
+
+/payment/paymentplan">Add a new payment plan (OUT?)</a>
+                          </li>
+                          <li>
+                            <a href="/programmeTen
+
+
+
+/payment/makepayment">Make a payment</a>
+                          </li>
+                           <li>
+                            <a href="/programmeTen
+
+
+
+/payment/reviewpayments">Review and amend regular payments</a>
+                          </li>
+                            <li>
+                            <a href="/programmeTen
+
+
+
+/payment/spendingcommitments">View a summary of your spending commitments</a>
+                          </li>
+                        </ul>
+                           </nav>
+                    </aside-->
+            </div>
+        </div>    
+    
+</main><!-- / #content -->
+{% endblock %}

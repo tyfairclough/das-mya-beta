@@ -1,0 +1,79 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfers-check-details" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+<div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+          Check details
+        </h1>
+        
+        <table class="check-your-answers">
+
+
+    <tbody>
+      <tr>
+        <td>
+            Organisation name
+        </td>
+        <td>
+          <span class="organisation-name">123 Facilities Ltd - (s C4)</span>
+        </td>
+      </tr>
+        <tr>
+        <td>
+            Account ID
+        </td>
+        <td>
+            <address class="organisation-address">AS4XF</address>
+        </td>         
+      </tr>
+        <tr>
+        <td>
+            Amount
+        </td>
+        <td>
+            <address class="organisation-address">£1,000</address>
+        </td>         
+      </tr>
+        <tr>
+        <td>
+            Date
+        </td>
+        <td>
+            <address class="organisation-address">11 July 2018</address>
+        </td>         
+      </tr>
+    </tbody>
+  </table>
+        
+<div class="form-group">
+    <fieldset>
+
+        <h3 class="heading-medium">Do you wish to process this transfer</h3>
+        <p>You can not undo this once it has been submitted</p>
+        <div class="form-group">
+            <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="radio-group" value="yes">
+      <label class="" for="radio-1">Yes</label>
+                </div>
+            <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="radio-group" value="no">
+      <label class="" for="radio-2">No, cancel transfer</label>
+                </div>            
+            
+    
+            </div>
+        <div class="form-group">
+        <a href="/sprint/{{sprint}}/account/transfers/complete.html" class="button">Continue</a>
+        </div>            
+    </fieldset>
+  </div>        
+        
+    </div>
+  </div>
+    
+</main>
+{% endblock %}

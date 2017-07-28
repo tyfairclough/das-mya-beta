@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="manage-apprentices full-width" id="content" role="main" tabindex="-1">
+    
+    <section class="full-width" id="apprentices">
+        <header>
+            <h1 class="bold-large">
+            Manage your apprentices
+            </h1>        
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" class="button">Add</a></li>
+                <li><a href="#" class="button secondary disabled">Edit</a></li>
+                <li><a href="#" class="button secondary disabled">Approve</a></li>
+                <li><a href="#" class="button secondary disabled">Reject</a></li>
+                <li><a href="#" class="button secondary disabled">Stop</a></li>
+                <li><a href="#" class="button secondary disabled">Pause</a></li>
+                <li><a href="#" class="button secondary disabled">Batch</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Search" name="search" class="form-control" />
+                    <label class="sr-only">Search</label>
+                    
+                </div>
+            </form>
+        </aside>
+        <article>
+            <table>
+                <table class="">
+                          <thead>
+                            <tr>
+                              <th scope="col" >
+                                  <input type="checkbox" id="cb0" name="cid[]" value="1">
+                                </th>
+                                <th scope="col" ><a href="#">Name</a></th>
+                              <th scope="col" ><a href="#">Date of birth</a></th>
+                               <th scope="col" ><a href="#">Status</a></th>
+                               <th scope="col" ><a href="#">Alerts</a></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <!--quick hack, will fix -->
+                              <td>
+                                  <input type="checkbox" id="cb0" name="cid[]" value="1">    
+                              </td>
+                              <td class=""><a href="#">Adam Gaskell</a></td>
+                              <td class="">3 Jun 1997</td>
+                              <td class=""><i class="fa fa-check"></i> <span>Live</span></td>
+                               <td>Changes pending</td>
+                            </tr>
+                             <tr>
+                              <td>
+                                  <input type="checkbox" id="cb0" name="cid[]" value="1">    
+                              </td>                            
+                              <td class=""><a href="#">Su Boo Boo</a></td>
+                              <td class="">12 Jun 1984</td>
+                               <td class=""><i class="fa fa-pause"></i> <span>Paused</span></td>
+                                <td>Changes for review</td>
+
+                            </tr>
+                            <tr>
+                              <td>
+                                  <input type="checkbox" id="cb0" name="cid[]" value="1">    
+                              </td>                            
+                              <td class=""><a href="#">Su Boo Boo</a></td>
+                              <td class="">12 Jun 1984</td>
+                               <td class=""><i class="fa fa-stop"></i> <span>Stopped</span></td>
+                                <td>Changes for review</td>
+
+                            </tr>
+                              
+                          <tr>
+                              <td>
+                                  <input type="checkbox" id="cb0" name="cid[]" value="1">    
+                              </td>                            
+                              <td class=""><a href="#">Su Boo Boo</a></td>
+                              <td class="">12 Jun 1984</td>
+                               <td class="">
+                                <div class="btn-group">
+								<a class="btn btn-micro active hasTooltip" href="#"><span class="icon-publish" aria-hidden="true"></span></a>								<a href="#" onclick="return listItemTask('cb0','articles.featured')" class="btn btn-micro hasTooltip" title="" data-original-title="Toggle featured status."><span class="icon-unfeatured" aria-hidden="true"></span></a>								<button data-toggle="dropdown" class="dropdown-toggle btn btn-micro"><span class="caret"></span><span class="element-invisible">Actions for: Travel &amp; Accommodation</span></button><ul class="dropdown-menu"><li><a href="javascript://" onclick="listItemTask('cb0', 'articles.archive')"><span class="icon-archive" aria-hidden="true"></span> Archive</a></li><li><a href="javascript://" onclick="listItemTask('cb0', 'articles.trash')"><span class="icon-trash" aria-hidden="true"></span> Trash</a></li></ul>							</div>
+                              </td>
+                                <td>Changes for review</td>
+
+                            </tr>
+                          </tbody>
+                      </table>
+            </table>
+        </article>
+    </section>
+    
+</main>
+{% endblock %}

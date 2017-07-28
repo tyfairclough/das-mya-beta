@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="agreement-next" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+        <div class="column-two-thirds">
+    <div id="notifications">
+        <div class="success-summary">
+            <h3 class="heading-medium">Agreement signed</h3>
+            <p><span class="organisation-name bold-small">Acme Ltd</span> can now spend levy funds.</p>
+        </div>
+    </div>
+      
+      </div>
+    </div>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+                  <div class="">
+          <h1 class="heading-medium">What next?</h1>
+          </div>
+        </div>
+    </div>
+  <div class="grid-row">
+
+      
+      <div class="column-two-thirds">
+
+             <form action="">
+            
+        <div class="form-group">
+                                    <div class="multiple-choice">
+
+        <input id="orgs" type="radio" name="next" value="orgs">
+            <label class=" " data-target="orgs" for="orgs">
+View all organisations    </label>
+            </div>
+                                                <div class="multiple-choice">
+        <input id="finance" type="radio" name="next" value="finance">
+
+      <label class=" " data-target="finance" for="finance">
+Check finances     </label>
+            </div>
+                                                <div class="multiple-choice">
+        <input id="apprentices" type="radio" name="next" value="apprentices">
+
+      <label class=" " data-target="apprentices" for="apprentices">
+Add apprentices
+        </label>
+            </div>
+                                                <div class="multiple-choice">
+        <input id="homepage" type="radio" name="next" value="homepage">
+
+            <label class="" data-target="homepage" for="homepage">
+Go back to the homepage
+            </label>
+            </div>
+      </div>
+
+  
+      <a class="button" href="#" id="submit">Continue</a>
+      
+</form>
+          
+                 
+</div></div>
+
+</main>
+{% endblock %}

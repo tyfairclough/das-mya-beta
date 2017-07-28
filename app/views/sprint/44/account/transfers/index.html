@@ -1,0 +1,123 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfers-index" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+        Transfer funds
+      </h1>
+            <p class="lede">Move money between digital apprenticeship accounts.</p>
+
+            <a class="button" href="/sprint/{{sprint}}/account/transfers/start">Create a new transfer</a>
+</div>
+
+
+        </div>
+    </div>
+
+    
+    <div class="form-group">
+        
+        <div class="grid-row">
+            <div class="column-one-quarter">
+        <div class="data pink active">
+                    <h2 class="bold-large">389</h2>
+                    <h2 class="bold-small">All transfers</h2>
+        </div> 
+            </div>            <div class="column-one-quarter">
+        <div class="data fuscia">
+                    <h2 class="bold-large">123</h2>
+                    <h2 class="bold-small">Pending</h2>
+        </div>   
+            </div>            <div class="column-one-quarter">
+        <div class="data purple">
+                    <h2 class="bold-large">£34,240</h2>
+                    <h2 class="bold-small">Transferred in</h2>
+        </div>
+            </div>            <div class="column-one-quarter">
+        <div class="data mauve">
+                    <h2 class="bold-large">£4,001</h2>
+                    <h2 class="bold-small">Transferred out</h2>
+        </div>
+            </div>
+        </div>
+        <div class="container" id="test32">
+        <table class="table">
+        <thead>
+            <tr>
+                <th>In/Out</th>
+                <th>Organisation</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody><tr>
+            <td><i class="fa fa-sign-in"></i></td>
+            <td>Microsoft EMEA
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£9,000</td>
+            <td>--</td>
+            <td><span class="label mellow-red">Expires in 3 days</span></td>
+            <td class="numeric"><a href="pending-inbound.html" data-org-index="0">Details</a></td>
+        </tr><tr>
+            <td><i class="fa fa-sign-out"></i></td>
+            <td>MSi Computing
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£3,300</td>
+            <td>--</td>
+            <td><span class="label mellow-red">Expires in 7 days</span></td>
+            <td class="numeric"><a href="pending-inbound.html" data-org-index="0">Details</a></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-sign-out"></i></td>
+            <td>Foxtons Pty
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£11,525</td>
+            <td>14 May 2018</td>
+            <td><span class="label white">Accepted</span></td>
+            <td class="numeric"><a href="pending-outbound.html" data-org-index="0">Details</a></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-sign-out"></i></td>
+            <td>Foxtons Pty
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td><span class="label grey">Returned</span></td>
+            <td class="numeric"><a href="pending-outbound.html" data-org-index="0">Details</a></td>
+        </tr>        <tr>
+            <td><i class="fa fa-sign-in"></i></td>
+            <td>Anvil Plc
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td><span class="label grey">Returned</span></td>
+            <td class="numeric"><a href="pending-outbound.html" data-org-index="0">Details</a></td>
+        </tr>      <tr>
+            <td><i class="fa fa-sign-in"></i></td>
+            <td>Anvil Plc
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td><span class="label grey">Returned</span></td>
+            <td class="numeric"><a href="pending-outbound.html" data-org-index="0">Details</a></td>
+        </tr>
+    </tbody></table>
+        
+        </div>
+        
+        </div> 
+
+    
+</main>
+{% endblock %}

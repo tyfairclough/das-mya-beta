@@ -1,0 +1,59 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfers-complete" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+<div class="grid-row">
+        <div class="column-two-thirds">
+    <div id="notifications">
+        <div class="success-summary">
+            <h3 class="heading-medium">Transfer successful</h3>
+            <p>You have transferred <span class="bold-small">£1,100</span> to <span class="bold-small">Acme Ltd</span></p>
+        </div>
+    </div>
+      
+      </div>
+    </div>    
+    
+    
+    <div class="grid-row">
+
+        
+      
+      <div class="column-two-thirds">
+<h1 class="heading-medium">What next?</h1>
+             <form action="">
+            
+        <div class="form-group">
+
+
+                                         <div class="multiple-choice">
+        <input id="sign" type="radio" name="next" value="sign">
+ <label class="" data-target="sign" for="sign">
+Create another new transfer
+            </label>
+            </div>
+                                    <div class="multiple-choice">
+        <input id="team" type="radio" name="next" value="team">
+      <label class="" data-target="team" for="team">
+Go back to the transfers dashboard
+      </label>
+            </div>                      
+                                    <div class="multiple-choice">
+        <input id="homepage" type="radio" name="next" value="homepage">
+      <label class="" data-target="homepage" for="homepage">
+Go back to the homepage
+            </label>
+            </div>
+      </div>
+
+  
+      <a class="button" href="index.html" id="submit">Continue</a>
+      
+</form>
+           
+      </div></div>
+    
+    
+</main>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="elements-index" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+
+      <div class="column-two-thirds">
+          <div class="hgroup">
+              
+            <h1 class="heading-xlarge">
+                </h1>
+           <div class="data">
+                    <span class="form-hint">Tesco stores limited longest </span>
+                    <span class="data-item bold-xlarge">123/AB12345</span>
+                    <span class="data-item bold-xsmall">Remove this scheme?</span>
+                </div>
+              </div>
+            <p>The <span class="company-name bold-small">Acme Ltd Coventry</span> account will stop receiving funds through this PAYE scheme.</p>
+<div class="form-group ">
+
+                <fieldset class="" id="confirm">
+                    <legend class="vh">Remove this PAYE scheme</legend>
+                    <label class="block-label selection-button-radio">
+                        <input type="radio" name="RemoveScheme" value="2">
+                        <span class="heading-small">Yes, remove scheme</span>
+                    </label>
+                    <label class="block-label selection-button-radio">
+                        <input type="radio" name="RemoveScheme" value="1">
+                        <span class="heading-small">No, don't remove</span>
+                    </label>
+                </fieldset>
+            </div>
+          <a class="button" href="#">Continue</a>
+        </div>
+      
+  </div>
+
+</main>
+{% endblock %}

@@ -2828,3 +2828,13 @@ dl {
 .label.mellow-red, .label.sfs {
     background: $mellow-red;
 }
+.label.grey {
+    background: $grey-3;
+    color: $black;
+        
+}
+
+#test32 {
+    padding: 15px;
+    border: 4px solid $pink;
+}

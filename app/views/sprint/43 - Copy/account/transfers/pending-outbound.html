@@ -1,0 +1,74 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfers-index" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">
+        Pending transfer details
+      </h1>
+            <p class="lede">Review outbound transfer.</p>
+        </div>
+        
+<div class="column-two-thirds">
+        <table class="check-your-answers">
+
+
+    <tbody>
+      <tr>
+        <td>
+            Organisation name
+        </td>
+        <td>
+          <span class="organisation-name">Microsoft EMEA</span>
+        </td>
+      </tr>
+        <tr>
+        <td>
+            Account ID
+        </td>
+        <td>
+            <address class="organisation-address">AS4XF</address>
+        </td>         
+      </tr>
+        <tr>
+        <td>
+            Sent by
+        </td>
+        <td>
+            <address class="organisation-address">Pete Kowalczyk</address>
+        </td>         
+      </tr>
+        <tr>
+        <td>
+            Amount
+        </td>
+        <td>
+            <address class="organisation-address">£9,000</address>
+        </td>         
+      </tr>
+        <tr>
+        <td>
+            Transfer date
+        </td>
+        <td>
+            <address class="organisation-address">11 July 2018</address>
+        </td>         
+      </tr>
+        <tr>
+        <td>
+            State
+        </td>
+        <td>
+            <address >Awaiting approval from receiver</address>
+        </td>         
+      </tr>
+    </tbody>
+  </table> 
+        </div>       
+    </div>
+
+
+    
+</main>
+{% endblock %}

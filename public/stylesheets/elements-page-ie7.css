@@ -4953,6 +4953,16 @@ dl dt {
   background: #df3034;
 }
 
+.label.grey {
+  background: #dee0e2;
+  color: #0b0c0c;
+}
+
+#test32 {
+  padding: 15px;
+  border: 4px solid #d53880;
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

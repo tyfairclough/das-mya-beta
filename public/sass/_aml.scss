@@ -374,7 +374,7 @@ nav.global-nav ul {
 .button.secondary {
     background-color: $grey-2;
     color: $black;
-    box-shadow: 0 2px 0 mix($grey-2, black, 60%;
+    box-shadow: 0 2px 0 mix($grey-2, black, 60%);
 }
 .button.error {
     background: $red;
@@ -2216,6 +2216,22 @@ li.added + li {
                 background: mix(#0b0c0c,$mellow-red,25);
             }
         }
+    &.blue {
+            background: $govuk-blue;
+            color: $white;
+            &:hover {
+                background: mix(black,$govuk-blue,25);
+                background: mix(#0b0c0c,$govuk-blue,25);
+            }
+        }
+    &.grey {
+            background: $grey-2;
+            color: $black;
+            &:hover {
+                background: mix(black,white,50);
+                background: mix(#0b0c0c,#fff,50);
+            }
+        }
         span {
             text-decoration: underline;
             margin: 5px -10px -20px;
@@ -2779,4 +2795,36 @@ dl {
         margin-right: 5px;
         font-weight: 900;
     }
+}
+
+
+// Labels
+
+.label {
+    display: inline;
+    padding: 0 .25em 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0;
+}
+.label.white {
+    background: $white;
+    color: $black;
+}
+.label.blue, .label.mya {
+    background: $govuk-blue;
+}
+.label.orange, .label.commitments {
+    background: $orange;
+}
+.label.purple, .label.recruit {
+    background: $purple;
+}
+.label.mellow-red, .label.sfs {
+    background: $mellow-red;
 }

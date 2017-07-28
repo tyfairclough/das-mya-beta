@@ -1,0 +1,48 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfers-index" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">
+        Pending transfers
+      </h1>
+            <p class="lede">Accept and decline and view the status of outbound transfers.</p>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" style="padding-top:0">Type</th>
+                <th>To/From</th>
+                <th>Sent/received on</th>
+                <th>Expires in</th>
+                <th>Amount</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Inbound offer</td>
+            <td>Microsoft EMEA
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>11 April 2018</td>
+            <td><span class="label mellow-red">3 days</span></td>
+            <td>£9,000</td>
+            <td class="numeric"><a href="#" data-org-index="0">Details</a></td>
+        </tr>
+        <tr>
+            <td>Outbound offer</td>
+            <td>Foxtons Pty
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>14 May 2018</td>
+            <td><span class="label white">7 days</span></td>
+            <td>£11,525</td>
+            <td class="numeric"><a href="#" data-org-index="0">Details</a></td>
+        </tr>
+    </table>
+    
+</main>
+{% endblock %}

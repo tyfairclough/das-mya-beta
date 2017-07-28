@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="elements-index" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="hgroup">
+      <h1 class="heading-large">
+          Payment details 
+            </h1>
+            
+            <ul>
+                <li>Date  <span class="bold-small">5 July 2018</span></li>
+                <li>Payment to <span class="bold-small">Anvil Plc</span></li>
+            </ul>
+        </div>
+        
+
+        
+     </div>   
+        
+      
+   
+    </div>
+
+       
+<table class="responsive">
+            <thead>
+                <tr>
+                    <th colspan="2"></th>
+                    <th class="highlight colgroup" scope="colgroup" colspan="2">Co-investment</th>
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <th scope="col">Course</th>
+                    <th scope="col" class="numeric">Paid from levy</th>
+                    <th scope="col" class="highlight numeric">Government contribution</th>
+                    <th scope="col" class="highlight numeric">Your contribution</th>
+                    <th scope="col" class="numeric">Amount</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Course">Financial services administrator level 3</td>
+                    <td data-label="Paid from levy" class="numeric">-£370.00</td>
+                    <td data-label="Government contribution" class="highlight numeric">-£562.50</td>
+                    <td data-label="Your contribution" class="highlight numeric">-£62.50</td>
+                    <td data-label="Amount" class="numeric">-£1,000.00</td>
+                    <td><a href="/sprint/{{sprint}}/account/finance/payment-details-apprentice.html">Details</a></td>
+                </tr>
+                <tr>
+                    <td data-label="Course">Investment operations administrator level 4</td>
+                    <td data-label="Paid from levy" class="numeric">-£500.00</td>
+                    <td data-label="90% paid by Government" class="highlight numeric">-£450.00</td>
+                    <td data-label="Your contribution" class="highlight numeric">-£50.00</td>
+                    <td data-label="Amount" class="numeric">-£1,000.00</td>
+                    <td><a href="/sprint/{{sprint}}/account/finance/payment-details-apprentice.html">Details</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="total">
+                    <td data-label="Totals"> </td>
+                    <td data-label="Paid from levy" class="total numeric nowrap">-£875.00</td>
+                    <td data-label="Government contribution (90%)" class="highlight total numeric nowrap">-£1,012.50</td>
+                    <td data-label="Your contribution" class="highlight total numeric nowrap">-£112.50	</td>
+                    <td data-label="Amount" class="total numeric nowrap">-£2,000.00</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>   
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="panel panel-width-thin">
+            <p>It's up to you and your training provider to decide how and when your contributions are paid.</p>
+        </div>
+            
+        
+    </div>
+    </div>
+    <script>
+
+    </script>
+</main>
+{% endblock %}

@@ -2445,8 +2445,8 @@ nav.global-nav ul li.sa-stacker.sa-open ul li {
 
 .button.secondary {
   background-color: #bfc1c3;
-  color: #000;
-  box-shadow: 0 2px 0 #666;
+  color: #0b0c0c;
+  box-shadow: 0 2px 0 #737475;
 }
 
 .button.error {
@@ -4341,6 +4341,26 @@ li.added + li {
   background: #aa272a;
 }
 
+.data.blue {
+  background: #005ea5;
+  color: #fff;
+}
+
+.data.blue:hover {
+  background: #00477c;
+  background: #034a7f;
+}
+
+.data.grey {
+  background: #bfc1c3;
+  color: #0b0c0c;
+}
+
+.data.grey:hover {
+  background: gray;
+  background: #858686;
+}
+
 .data span {
   text-decoration: underline;
   margin: 5px -10px -20px;
@@ -4902,4 +4922,38 @@ dl dt {
   float: left;
   margin-right: 5px;
   font-weight: 900;
+}
+
+.label {
+  display: inline;
+  padding: 0 .25em 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0;
+}
+
+.label.white {
+  background: #fff;
+  color: #0b0c0c;
+}
+
+.label.blue, .label.mya {
+  background: #005ea5;
+}
+
+.label.orange, .label.commitments {
+  background: #f47738;
+}
+
+.label.purple, .label.recruit {
+  background: #2e358b;
+}
+
+.label.mellow-red, .label.sfs {
+  background: #df3034;
 }

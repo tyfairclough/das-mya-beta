@@ -1,0 +1,98 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfers-index" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+        Transfer funds
+      </h1>
+            <p class="lede">Move money between digital apprenticeship accounts.</p>
+
+            <a class="button">Create a new transfer</a>
+</div>
+
+
+        </div>
+    </div>
+
+<div class="" id="finance-bingo">   
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="grid-row">
+            <div class="column-half">
+               <div class="data">
+                    <h2 class="bold-large">£0</h2>
+                    <h2 class="bold-small">Transfered in</h2>
+        </div>
+            </div>
+            <div class="column-half">
+            <div class="data">
+                    <h2 class="bold-large">£0</h2>
+                    <h2 class="bold-small">Transfered out</h2>
+        </div>
+            </div>
+            
+        </div>
+        
+        <div class="grid-row">
+            <div class="column-half">
+           <a href="#">
+               <div class="data red">
+                    <h2 class="bold-large">1</h2>
+                    <h2 class="bold-small">Expiring offer</h2>
+        </div>
+               </a> 
+            </div>
+            <div class="column-half">
+                   <a href="#">
+            <div class="data blue">
+                    <h2 class="bold-large">3</h2>
+                    <h2 class="bold-small">Pending offers</h2>
+        </div>
+      </a>
+            </div>
+            
+        </div>
+        
+        <div class="grid-row">
+            <div class="column-half">
+           <a href="#">
+               <div class="data mauve">
+                    <h2 class="bold-large">0</h2>
+                    <h2 class="bold-small">Accepted offers</h2>
+        </div>
+               </a> 
+            </div>
+            <div class="column-half">
+                   <a href="#">
+            <div class="data grey">
+                    <h2 class="bold-large">32</h2>
+                    <h2 class="bold-small">Archived transfers</h2>
+        </div>
+      </a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="column-one-third">
+        <aside class="related" style="margin-top:0;">
+        <div class="container" style="padding-top: 20px;">
+        <h4 class="bold-medium">Useful information</h4><br>
+        <dl>
+        <dt>Account ID</dt>
+        <dd>XGHFDSD</dd>
+        <dt>Detailed guideance</dt>
+            <dd><a href="#">Read transferring funds user guide</a></dd>
+        </dl>
+        </div>
+        </aside>
+    </div>
+</div>    
+    
+</div>
+    
+</main>
+{% endblock %}

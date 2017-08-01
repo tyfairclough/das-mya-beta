@@ -449,6 +449,9 @@ $(document).ready(function () {
         case 'activity-csv':
             activityCSV();
             break;
+        case 'transfers-index':
+            transfersIndex();
+            break;
         default:
             break;
         };
@@ -457,6 +460,28 @@ $(document).ready(function () {
     
     
 // PAGE FUNCTIONS 
+    
+    function transfersIndex(){
+        
+        $(".data").click(function(e){
+            e.preventDefault();
+            state = $(this).attr("data-type");
+            $("#noResults").hide();
+            $("tbody tr").hide();
+            $("tbody tr[data-type="+state+"]").show();
+            numOfVisibleRows = $('tr:visible').length;
+            if (state == "all") {
+                $("tbody tr").show();
+                $("tbody tr#noResults").hide();
+            }
+            if ( numOfVisibleRows <= 1 ) {
+                
+                $("#noResults").show();
+                
+            }
+        });
+        
+    }
     
     function activityCSV(){
         console.log(XMLActivity);
@@ -1222,7 +1247,7 @@ $("#apprenticeshipName").on("select2:select", function (e) {
         $("#sign-agreement, #add-org, #invite-users, .done, #welcome .panel").hide();
 
         welcomeState = localStorage.getItem("welcomeState");
-        welcomeState = "hide";
+        //welcomeState = "hide";
         console.log("welcome state is: " + welcomeState);
 
         switch (welcomeState) {

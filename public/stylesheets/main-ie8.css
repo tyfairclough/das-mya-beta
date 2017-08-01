@@ -4919,3 +4919,7 @@ dl dt {
   padding: 15px;
   border: 4px solid #d53880;
 }
+
+.transfers-index .data {
+  cursor: pointer;
+}

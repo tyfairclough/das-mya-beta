@@ -4968,6 +4968,10 @@ dl dt {
   border: 4px solid #d53880;
 }
 
+.transfers-index .data {
+  cursor: pointer;
+}
+
 .elements-index .heading-medium {
   margin: 1em 0 0 0;
 }

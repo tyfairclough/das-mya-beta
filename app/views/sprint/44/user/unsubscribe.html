@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+{% block content %}
+<style>
+    .header-organisation {
+        display: none;
+    }
+    .header-user h2 {
+        display: none;
+    }
+</style>
+<main class="unsubscribe" id="content" role="main" tabindex="-1">
+  <!--{% include "includes/link-back.html" %}-->
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+<div class="hgroup">
+      <h1 class="heading-xlarge">Change your email address</h1>
+</div>        
+<form>
+    <div class="form-group">
+            <label class="form-label-bold" for="email">Current email address</label>
+            <input class="form-control disabled" id="email" maxlength="128" name="email" type="email" tabindex="0" disabled="disabled"
+ value="joe.blogs@gmail.com"> 
+    </div>
+    <div class="form-group">
+            <label class="form-label-bold" for="email2">New email address</label>
+            <input class="form-control" id="email2" maxlength="128" name="email" pattern="[A-Za-z0-9_\-\+/{\t\n\r}#$%^\\&amp;\[\]*=()|?'~`! :]+([.][A-Za-z0-9_\-\+/{\t\n\r}#$%^\\&amp;\[\]*=()|?'~`! :]+)*@[A-Za-z0-9\[\]:]+([.-][A-Za-z0-9\[\]:]+)*\.[A-Za-z0-9\[\]:]+([-.][A-Za-z0-9\[\]:]+)*" type="email" tabindex="0"> 
+    </div>
+    <div class="form-group">
+        <a class="button" href="/sprint/{{sprint}}/user/change-email-confirm.html">Continue</a>
+    </div>
+</form>
+        
+
+    </div>
+  </div>
+
+</main>
+{% endblock %}

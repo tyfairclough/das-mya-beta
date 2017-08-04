@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+{% block content %}
+<style>
+    .header-organisation {
+        display: none;
+    }
+    .header-user h2 {
+        display: none;
+    }
+</style>
+<main class="unsubscribe" id="content" role="main" tabindex="-1">
+  <!--{% include "includes/link-back.html" %}-->
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+<div class="hgroup">
+      <h1 class="heading-xlarge">Notification settings</h1>
+</div>        
+
+        
+
+    </div>
+  </div>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+                  <div class="">
+          <h1 class="heading-medium">Do you want to receive e-mail notifications of changes to apprentices</h1>
+          </div>
+        </div>
+    </div>
+    
+    <div class="grid-row">
+
+      
+      <div class="column-two-thirds">
+
+             <form action="">
+            
+        <div class="form-group">
+
+
+
+                                    <div class="multiple-choice">
+        <input id="team" type="radio" name="next" value="team">
+      <label class="" data-target="team" for="team">
+Yes
+      </label>
+            </div>            
+                                    <div class="multiple-choice">
+        <input id="addorg" type="radio" name="next" value="addorg">
+            <label class="" data-target="addorg" for="addorg">
+No
+            </label>
+            </div>            
+                                
+
+      </div>
+
+  
+      <a class="button" href="#" id="submit">Update</a>
+      
+</form>
+           
+      </div></div>
+
+</main>
+{% endblock %}

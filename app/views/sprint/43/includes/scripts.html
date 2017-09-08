@@ -449,14 +449,21 @@ $(document).ready(function () {
         case 'activity-csv':
             activityCSV();
             break;
+        case 'add-apprenticeship':
+            addApprenticeship();
+            break;
         default:
             break;
         };
 
     
-    
+
     
 // PAGE FUNCTIONS 
+
+    function addApprenticeship(){
+                $("#apprenticeshipName").select2();
+    }
     
     function activityCSV(){
         console.log(XMLActivity);

@@ -463,9 +463,14 @@ $(document).ready(function () {
     
     function transfersIndex(){
         
+        
+        
         $(".data").click(function(e){
             e.preventDefault();
+            
+            color = $(this).css("background-color");
             state = $(this).attr("data-type");
+            $(".container").css("border-color",color);
             $("#noResults").hide();
             $("tbody tr").hide();
             $("tbody tr[data-type="+state+"]").show();

@@ -1,7 +1,16 @@
 {% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
 <main class="transfers-index" id="content" role="main" tabindex="-1">
     {% include "includes/link-back.html" %}
-
+<div class="success-summary">
+    <h3 class="heading-medium">Transfer offer aborted</h3>
+    <p>The transfer offer was not compelted.</p>
+</div>
+    
+<div class="success-summary">
+    <h3 class="heading-medium">Transfer request aborted</h3>
+    <p>The transfer request was not compelted.</p>
+</div>
+    
     <div class="grid-row">
         <div class="column-two-thirds">
             <div class="hgroup">
@@ -10,7 +19,8 @@
       </h1>
             <p class="lede">Move money between digital apprenticeship accounts.</p>
 
-            <a class="button" href="/sprint/{{sprint}}/account/transfers/start">Create a new transfer</a>
+            <a class="button" href="/sprint/{{sprint}}/account/transfers/send/create">Offer funds</a>
+                <a class="button text-link" href="/sprint/{{sprint}}/account/transfers/receive/request">Request funds</a>
 </div>
 
 
@@ -19,70 +29,253 @@
 
 <div class="" id="finance-bingo">   
 
-<div class="grid-row">
-    <div class="column-two-thirds">
+
         
         <div class="grid-row">
-            <div class="column-half">
-           <a href="pending.html">
-               <div class="data red">
-                    <h2 class="bold-large">1</h2>
-                    <h2 class="bold-small">Expiring offer</h2>
+            <div class="column-one-third">
+           <a data-filter="expiring">
+               <div class="data purple">
+                    <h2 class="bold-xxlarge">1</h2>
+                    <h2 class="bold-medium">Expiring offer</h2>
         </div>
                </a> 
             </div>
-            <div class="column-half">
-                   <a href="pending.html">
-            <div class="data blue">
-                    <h2 class="bold-large">3</h2>
-                    <h2 class="bold-small">Pending offers</h2>
+            <div class="column-one-third">
+           <a data-filter="pending">
+            <div class="data fuscia">
+                    <h2 class="bold-xxlarge">3</h2>
+                    <h2 class="bold-medium">Pending offers</h2>
         </div>
       </a>
             </div>
             
-        </div>
         
-        <div class="grid-row">
-            <div class="column-half">
-           <a href="accepted.html">
-               <div class="data mauve">
-                    <h2 class="bold-large">0</h2>
-                    <h2 class="bold-small">Accepted offers</h2>
+            <div class="column-one-third">
+           <a data-filter="accepted">
+               <div class="data pink">
+                    <h2 class="bold-xxlarge">0</h2>
+                    <h2 class="bold-medium">Accepted offers</h2>
         </div>
                </a> 
             </div>
-            <div class="column-half">
+            
+        </div>
+</div>   
+            <!--<div class="column-half">
                    <a href="archived.html">
             <div class="data grey">
                     <h2 class="bold-large">32</h2>
                     <h2 class="bold-small">Archived transfers</h2>
         </div>
       </a>
-            </div>
+            </div> -->
+    
+    <hr />
+    
+    <h4 class="bold-medium">Useful information</h4>
+    <div class="grid-row">
+        <div class="column-one-third">
+            <h2 class="heading-small">Your apprenticeship account ID</h2>
+            <p>XGHFEDF</p>        
+        </div>
+        <div class="column-one-third">
+            <h2 class="heading-small">Available transfer balance</h2>
+            <p>£123,450</p>            
+        </div>
+        <div class="column-one-third">
+        <h2 class="heading-small">Transfer offers availble from</h2>
+            <p>March 2019</p>            
+        </div>
+    </div>
+
+    
+    <hr />
+    
+  
+        <div id="sender" class="container">
+            SENDER TABLE
             
-        </div>
-    </div>
-    <div class="column-one-third">
-        <aside class="related" style="margin-top:0;">
-        <div class="container" style="padding-top: 20px;">
-        <h4 class="bold-medium">Useful information</h4><br>
-        <dl>
-        <dt>Account ID</dt>
-        <dd>XGHFDSD</dd>
-            <dt>Available to transfer</dt>
-            <dd><span class="none">£0</span><span class="available"></span></dd>            
+        <table class="responsive">
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>Organisation</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody><tr data-type="pending">
+            <td>Offer sent<span class="label mellow-red">Expires in 3 days</span></td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£9,000</td>
+            <td>--</td>
+            <td class="numeric"><a href="receive/request-pending.html?SendingOrg=Microsoft&sendingAmount=9000&expires=3" data-org-index="0">Details</a></td>
+        </tr><tr data-type="pending">
+            <td>Request received<span class="label mellow-red">Expires in 3 days</span></td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£3,300</td>
+            <td>--</td>
+            <td class="numeric"><a href="send/offer-pending.html" data-org-index="0">Details</a></td>
+        </tr>
+        <tr data-type="outbound">
+            <td>Offer accepted</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£11,525</td>
+            <td>14 May 2018</td>
+            <td class="numeric"><a href="send/offer-accepted.html" data-org-index="0">Details</a></td>
+        </tr>
+        <tr data-type="returned">
+            <td>Request accepted</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-accepted.html" data-org-index="0">Details</a></td>
+        </tr>                
+        <tr data-type="returned">
+            <td>Offer declined</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-declined.html" data-org-index="0">Details</a></td>
+        </tr> 
+        <tr data-type="returned">
+            <td>Request declined</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-declined.html" data-org-index="0">Details</a></td>
+        </tr>      
+        <tr data-type="returned"> 
+            <td>Offer expired</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="send/request-declined.html" data-org-index="0">Details</a></td>
+        </tr> 
+            
+        <tr data-type="returned"> 
+            <td>Request expired</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-expired.html" data-org-index="0">Details</a></td>
+        </tr>              
+    </tbody>
+         
+            </table>
         
-            <dt>Transfered in</dt>
-            <dd>£9,000</dd>
-            <dt>Transfered out</dt>
-            <dd>£0                                 </dd>
-        </dl>
         </div>
-        </aside>
-    </div>
-</div>    
     
-</div>
-    
+        <div id="receiver" class="container">
+            RECEIVER TABLE
+            
+        <table class="responsive">
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>Organisation</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody><tr data-type="pending">
+            <td>Offer received<span class="label mellow-red">Expires in 3 days</span></td>
+            <td>MSi Computing Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£9,000</td>
+            <td>--</td>
+            <td class="numeric"><a href="receive/offer-received.html">Details</a></td>
+        </tr><tr data-type="pending">
+            <td>Request sent<span class="label mellow-red">Expires in 3 days</span></td>
+            <td>MSi Computing Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£3,300</td>
+            <td>--</td>
+            <td class="numeric"><a href="receive/request-sent.html">Details</a></td>
+        </tr>
+        <tr data-type="outbound">
+            <td>Offer accepted</td>
+            <td>MSi Computing Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£11,525</td>
+            <td>14 May 2018</td>
+            <td class="numeric"><a href="receive/offer-accepted.html">Details</a></td>
+        </tr>
+        <tr data-type="returned">
+            <td>Request accepted</td>
+            <td>MSi Computing Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-accepted.html">Details</a></td>
+        </tr>                
+        <tr data-type="returned">
+            <td>Offer declined</td>
+            <td>MSi Computing Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/offer-declined.html">Details</a></td>
+        </tr>      
+        <tr data-type="returned"> 
+            <td>Request declined</td>
+            <td>MSi Computing Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-declined.html">Details</a></td>
+        </tr> 
+            
+        <tr data-type="returned"> 
+            <td>Offer expired</td>
+            <td>MSi Computing Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/offer-expired.html">Details</a></td>
+        </tr>              
+        <tr data-type="returned"> 
+            <td>Request expired</td>
+            <td>MSi Computing Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-expired.html">Details</a></td>
+        </tr>             
+            <tr id="noResults" style="display:none;">
+                <td colspan="6">No results found</td>
+            </tr>
+    </tbody>
+         
+            </table>
+        
+        </div>
+        
 </main>
 {% endblock %}

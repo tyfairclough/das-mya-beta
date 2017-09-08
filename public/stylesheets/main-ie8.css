@@ -4915,6 +4915,11 @@ dl dt {
   color: #0b0c0c;
 }
 
+.label.green {
+  background: #85994b;
+  color: #fff;
+}
+
 #test32 {
   padding: 15px;
   border: 4px solid #d53880;
@@ -4922,4 +4927,30 @@ dl dt {
 
 .transfers-index .data {
   cursor: pointer;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border-radius: 0 !important;
+  border: 2px solid #0b0c0c !important;
+}
+
+#finance-bingo.calculator .data {
+  min-height: 100px;
+}
+
+#finance-bingo.calculator .data:nth-child(4) {
+  min-height: 125px;
+}
+
+#Codepad {
+  margin-top: 30px;
+}
+
+input.disabled, input:disabled {
+  opacity: 0.5;
+}
+
+.text-box-with-month-after-with-error, .text-box-with-month-after {
+  margin-right: -80px;
+  padding-right: 80px;
 }

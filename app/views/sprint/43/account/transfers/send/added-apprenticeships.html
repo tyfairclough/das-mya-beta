@@ -1,0 +1,61 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfers-add" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+                                <div class="warning-summary">
+                                <h4 class="heading-medium">Partial funding warning</h4>
+                                <p>One or more apprenticeships won't be fully funded, meaning monthly payments there after will need to be funded by you or by requesting another transfer for the remaining amount.</p>
+                                    <details>
+                                        <summary>Why is this?</summary>
+                                        <p>The funding rules stipulate any funds recieved into a digital apprenticeship account have a 24 month expiry date. Payments for apprenticeships are made monthly so</p>
+                                    </details>
+                            </div>
+        
+                <div class="hgroup">
+        <h1 class="heading-xlarge">
+            What apprenticeships are being funded?
+        </h1>
+                    <p>Add apprenticeships you want to fund.</p>
+
+</div>
+    
+
+    
+
+    <table class="responsive">
+        <thead>
+            <tr>
+                <th>Apprenticeship</th>
+                <th class="numeric">Apprentices</th>
+                <th class="numeric">Start date</th>
+                <th class="numeric">Duration</th>
+                <th  class="numeric">Cost</th>
+                <th  class="numeric">Funded</th>
+                <th class="numeric" scope="col"></th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Nuclear engineer<span class="form-hint">level 5</span></td>
+            <td class="numeric">1</td>
+            <td class="numeric">May 2019</td>
+            <td class="numeric">36 months</td>
+            <td class="numeric">£94,000</td>
+            <td class="numeric">£38,400</td>
+            <td class="numeric"><a href="#">Remove</a></td>
+        </tr>
+        <tfoot>
+            <tr class="total">
+            <td colspan="4" class="numeric">&nbsp;</td>
+            <td data-label="Total cost" class="total numeric">£94,000</td>
+            <td data-label="Total amount" class="total numeric">£38,400</td>
+            <td colspan="1" class="numeric">&nbsp;</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <a href="finalise-transfer.html" class="button" >Continue to </a>
+    <a class="button text-link" href="add-apprenticeship.html">Add an apprenticeship</a>
+    
+    
+</main>
+{% endblock %}

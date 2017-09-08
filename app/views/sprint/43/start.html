@@ -1,0 +1,50 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="transfers-start" id="content" role="main" tabindex="-1">
+
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row logic-page">
+    <div class="column-two-thirds">
+
+<div class="hgroup">
+    <h1 class="heading-xlarge">Transfers prototype <sup class="font-xsmall">Version.DTs24</sup></h1>
+    <p>Does this provider have a signed provider agreement.</p>
+</div>
+        <form>
+<div class="form-group">
+            <label class="form-label" for="levy-value-2">Estimated payroll for this financial year</label>
+            <label for="levy-value-2" class="text-box-unit">£</label>
+            <input class="form-control text-box-with-unit-before money-mask" id="levy-value-2" name="levy-value-2" type="text" maxlength="22">
+        </div>
+                    
+                  </form>
+
+
+        <a href="/sprint/{{sprint}}/providers/" class="button">Continue</a>
+
+    </div>
+  </div>
+
+    
+    
+
+    
+</main><!-- / #content -->
+{% endblock %}

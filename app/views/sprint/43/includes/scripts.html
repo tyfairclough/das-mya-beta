@@ -506,11 +506,11 @@ $(document).ready(function () {
             payroll = parseFloat($("#levy-value-2").val().replace(/,/g, ''))
             
             if ( payroll > 3000000 ) {
-                alert("levy payer sender")
+                //alert("levy payer sender")
                 localStorage.setItem("levyPayer",1)
                 window.location.href = "/sprint/{{sprint}}/index.html";
             } else {
-                alert("receiving employer")
+                //alert("receiving employer")
                 localStorage.setItem("levyPayer",0)
                 window.location.href = "/sprint/{{sprint}}/index.html";
             }

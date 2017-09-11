@@ -21,7 +21,7 @@
                         <div class="form-group">
                             <label for="apprenticeshipName" class="form-label form-label-bold">Choose an apprenticeship</label>
                             <select id="apprenticeshipName" multiple class="form-control">
-                                <option value="1">Nuclear engineer</option>
+                                <option value="1" selected>Digital and Technology Solutions Professional</option>
                                 <option value="2">Course 2</option>
                                 <option value="3">Course 3</option>
                             </select>
@@ -47,12 +47,12 @@
       </legend>
       <div class="form-date">
         <div class="form-group form-group-month">
-          <label class="form-label" for="dob-month">Month</label>
-          <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12" disabled value="09">
+          <label class="form-label" for="dob-month1">Month</label>
+          <input class="form-control" id="dob-month1" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12" disabled value="09">
         </div>
         <div class="form-group form-group-year">
-          <label class="form-label" for="dob-year">Year</label>
-          <input class="form-control disabled" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2017" disabled value="2017">
+          <label class="form-label" for="dob-year1">Year</label>
+          <input class="form-control disabled" id="dob-year1" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2017" disabled value="2017">
         </div>
       </div>
     </fieldset>
@@ -67,12 +67,12 @@
       </legend>
       <div class="form-date">
         <div class="form-group form-group-month">
-          <label class="form-label" for="dob-month">Month</label>
-          <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12" value="11">
+          <label class="form-label" for="dob-month2">Month</label>
+          <input class="form-control" id="dob-month2" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12" value="11">
         </div>
         <div class="form-group form-group-year">
-          <label class="form-label" for="dob-year">Year</label>
-          <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2017" value="2017">
+          <label class="form-label" for="dob-year2">Year</label>
+          <input class="form-control" id="dob-year2" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2017" value="2017">
         </div>
       </div>
     </fieldset>
@@ -80,10 +80,11 @@
 <div class="form-group">
             <label class="form-label-bold" for="levy-value-2">Total transfer value</label>
             <label for="levy-value-2" class="text-box-unit">£</label>
-            <input class="form-control text-box-with-unit-before money-mask" id="levy-value-2" name="levy-value-2" type="text" maxlength="22" value="94,000" disabled>
+            <input class="form-control text-box-with-unit-before money-mask" id="levy-value-2" name="levy-value-2" type="text" maxlength="22" value="11,040" disabled>
         </div>
                 
-                <a class="button" href="added-apprenticeships.html">Add apprenticeship</a>
+                <a class="button" href="finalise-transfer.html">Finalise your transfer</a>
+                <a class="button text-link" href="add-apprenticeship.html">Add another apprenticeship</a>
             </form>
         </div>
         
@@ -98,18 +99,18 @@
                 <tbody>
                 <tr>
                     <th scope="row">
-                        Total cost of apprenticeship
+                        Funding band maximum
                     </th>
                     <td>
-                        £94,000
+                        £27,000
                     </td>
                 </tr>
                 <tr>
                     <th scope="row">
-                        You will receive
+                        You will offer
                     </th>
                     <td>
-                        £38,400
+                        £11,040
                     </td>
                 </tr>
                 <tr>
@@ -117,7 +118,7 @@
                         Funds that will expire
                     </th>
                     <td>
-                        £3,200
+                        £920
                     </td>
                 </tr>
                 <tr>
@@ -125,7 +126,7 @@
                         Can be used
                     </th>
                     <td>
-                        £35,200
+                        £10,120
                     </td>
                 </tr>
             </tbody>
@@ -136,14 +137,14 @@
                 
                 
 <div class="data blue">
-  <h4 class="data-item bold-large">£94,000</h4>
+  <h4 class="data-item bold-large">£27,000</h4>
   <h5 class="data-item bold-xsmall">Total cost of apprenticeship
     </h5>
 </div> 
     
 <div class="data purple">
   <h4 class="data-item bold-large">£38,400</h4>
-  <h5 class="data-item bold-xsmall">You will receive
+  <h5 class="data-item bold-xsmall">You will offer
     </h5>
 </div>                
 
@@ -170,7 +171,7 @@
           
           <h4 class="heading-small">Calculation</h4>      
           <div id="Codepad">      
-<span id="main-input" class="mathquill-input mathquill-rendered-math" rel="tooltip" title=""><span class="textarea"><textarea></textarea></span><span class="block"><span class="paren" style="transform: scale(1.2, 2.4675);">(</span><span class="block"><span class="fraction"><span class="numerator"><span class="block"><span class="paren" style="transform: scale(1.04444, 1.28333);">(</span><span class="block"><span>9</span><span>4</span><span>0</span><span>0</span><span>0</span><span class="binary-operator">−</span><span class="block"><span class="paren" style="transform: scale(1.03333, 1.225);">(</span><span class="block"><span>9</span><span>4</span><span>0</span><span>0</span><span>0</span><span class="binary-operator">×</span><span>0</span><span>.</span><span>2</span></span><span class="paren" style="transform: scale(1.03333, 1.225);">)</span></span></span><span class="paren" style="transform: scale(1.04444, 1.28333);">)</span></span></span><span class="denominator"><span class="block"><span class="paren" style="transform: scale(1.03333, 1.225);">(</span><span class="block"><span>4</span><span>8</span><span class="binary-operator">−</span><span>1</span></span><span class="paren" style="transform: scale(1.03333, 1.225);">)</span></span></span><span style="display:inline-block;width:0">&nbsp;</span></span></span><span class="paren" style="transform: scale(1.2, 2.4675);">)</span></span><span class="binary-operator">×</span><span class="block"><span class="paren" style="transform: scale(1.03, 1.2075);">(</span><span class="block"><span>2</span><span>4</span><span class="binary-operator">−</span><span>2</span></span><span class="paren" style="transform: scale(1.03, 1.2075);">)</span></span>
+<span id="main-input" class="mathquill-input mathquill-rendered-math" rel="tooltip" title=""><span class="textarea"><textarea></textarea></span><span class="block"><span class="paren" style="transform: scale(1.2, 2.4675);">(</span><span class="block"><span class="fraction"><span class="numerator"><span class="block"><span class="paren" style="transform: scale(1.04444, 1.28333);">(</span><span class="block"><span>2</span><span>7</span><span>0</span><span>0</span><span>0</span><span class="binary-operator">−</span><span class="block"><span class="paren" style="transform: scale(1.03333, 1.225);">(</span><span class="block"><span>2</span><span>7</span><span>0</span><span>0</span><span>0</span><span class="binary-operator">×</span><span>0</span><span>.</span><span>2</span></span><span class="paren" style="transform: scale(1.03333, 1.225);">)</span></span></span><span class="paren" style="transform: scale(1.04444, 1.28333);">)</span></span></span><span class="denominator"><span class="block"><span class="paren" style="transform: scale(1.03333, 1.225);">(</span><span class="block"><span>4</span><span>8</span><span class="binary-operator">−</span><span>1</span></span><span class="paren" style="transform: scale(1.03333, 1.225);">)</span></span></span><span style="display:inline-block;width:0">&nbsp;</span></span></span><span class="paren" style="transform: scale(1.2, 2.4675);">)</span></span><span class="binary-operator">×</span><span class="block"><span class="paren" style="transform: scale(1.03, 1.2075);">(</span><span class="block"><span>2</span><span>4</span><span class="binary-operator">−</span><span>2</span></span><span class="paren" style="transform: scale(1.03, 1.2075);">)</span></span>
     <span class="block" style="visibility:hidden">
     <span class="binary-operator">=</span><span>3</span><span>5</span><span>2</span><span>0</span><span>0</span><span>.</span><span>0</span>
               </span>

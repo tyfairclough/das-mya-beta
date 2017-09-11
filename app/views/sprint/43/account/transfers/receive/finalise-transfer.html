@@ -14,9 +14,18 @@
 
 
 {% block content %}
-<main class="finalise-transfer" id="content" role="main" tabindex="-1">
+<main class="finalise-transfer-receive" id="content" role="main" tabindex="-1">
   {% include "includes/link-back.html" %}
 
+    <div class="warning-summary">
+                                <h4 class="heading-medium">Partial funding warning</h4>
+                                <p>One or more apprenticeships won't be fully funded, meaning monthly payments there after will need to be funded by you or by requesting another transfer for the remaining amount.</p>
+                                    <details>
+                                        <summary>Why is this?</summary>
+                                        <p>The funding rules stipulate any funds recieved into a digital apprenticeship account have a 24 month expiry date. Payments for apprenticeships are made monthly so</p>
+                                    </details>
+                            </div>
+    
     <div class="hgroup">
         <h1 class="heading-xlarge">Finalise your request</h1>
         <p>Please check all the details are correct before submitting your request to the employer.</p>
@@ -31,7 +40,7 @@
                         Sending employer
                     </th>
                     <td>
-                        Acme Ltd<span class="form-hint">XDAS1564</span>
+                        Acme Ltd<span class="form-hint">AS4XF</span>
                     </td>
                 </tr>
                 <tr>
@@ -39,7 +48,7 @@
                         Receiving employer
                     </th>
                     <td>
-                        (YOU) Drake and son Welding Ltd<span class="form-hint">XDFVVA3456</span>
+                        <span class="organisation-name"></span><span class="form-hint">XDFVA</span>
                     </td>
                 </tr>
                 <tr>
@@ -55,7 +64,7 @@
                         Total transfer amount
                     </th>
                     <td>
-                        £38,400
+                        £11,040
                     </td>
                 </tr>
             </tbody>
@@ -79,33 +88,33 @@
             </tr>
         </thead>
         <tr>
-            <td>Nuclear engineer<span class="form-hint">level 5</span></td>
+            <td>Digital and Technology Solutions Professional<span class="form-hint">level 6</span></td>
             <td class="numeric">1</td>
-            <td class="numeric">May 2019</td>
-            <td class="numeric">36 months</td>
-            <td class="numeric">£94,000</td>
-            <td class="numeric">£38,400</td>
+            <td class="numeric">November 2017</td>
+            <td class="numeric">48 months</td>
+            <td class="numeric">£27,000</td>
+            <td class="numeric">£11,040</td>
         </tr>
         <tfoot>
             <tr class="total">
             <td colspan="4" class="numeric">&nbsp;</td>
-            <td data-label="Total cost" class="total numeric">£94,400</td>
-            <td data-label="Total amount" class="total numeric">£38,400</td>
+            <td data-label="Total cost" class="total numeric">£27,000</td>
+            <td data-label="Total amount" class="total numeric">£11,040</td>
             </tr>
         </tfoot>
     </table>
     
     
     <legend class="heading-medium">Are you ready to submit this application</legend>
-    <div class="form-group org-search-filter">
+    <div class="form-group">
                                     <legend class="form-label sr-only">Select an organisation type</legend>
 
                                     <div class="multiple-choice">
-                                        <input id="ltd" type="radio" name="org-type-filter" value="Private limited company">
+                                        <input id="ltd" type="radio" name="submit-app" value="yes">
                                         <label for="ltd">Yes, send this to the employer</label>
                                     </div>
                                     <div class="multiple-choice">
-                                        <input id="plc" type="radio" name="org-type-filter" value="Public limited company">
+                                        <input id="plc" type="radio" name="submit-app" value="no">
                                         <label for="plc">No, cancel this request</label>
                                     </div>
                                   

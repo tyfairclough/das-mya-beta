@@ -1,5 +1,5 @@
 {% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
-<main class="transfers-start" id="content" role="main" tabindex="-1">
+<main class="request-a-new-transfer" id="content" role="main" tabindex="-1">
     {% include "includes/link-back.html" %}
 
     <div class="grid-row">
@@ -21,7 +21,7 @@
         </div>
     </div>
 
-            <a class="button button-start" href="/sprint/{{sprint}}/account/transfers/receive/add-apprenticeship.html">Start</a>
+            <a class="button button-start" href="/sprint/{{sprint}}/account/transfers/receive/account-id.html">Start</a>
     
 </main>
 {% endblock %}

@@ -1,5 +1,5 @@
 {% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
-<main class="transfers-index" id="content" role="main" tabindex="-1">
+<main class="request-sent" id="content" role="main" tabindex="-1">
     {% include "includes/link-back.html" %}
 
     <div class="grid-row">
@@ -7,7 +7,7 @@
             <h1 class="heading-xlarge">
         Pending transfer details
       </h1>
-            <p class="lede">Your transfer offer summary.</p>
+            <p class="lede">Review the transfer offer made.</p>
         </div>
         
 <div class="column-two-thirds">
@@ -17,7 +17,7 @@
     <tbody>
       <tr>
         <td>
-            Receiving organisation name
+            Sending organisation name
         </td>
         <td>
           <span class="organisation-name">Microsoft EMEA</span>
@@ -44,17 +44,17 @@
             Transfer amount
         </td>
         <td>
-            <address class="organisation-address">£9,000</address>
+            <address class="organisation-address">£11,040</address>
         </td>         
       </tr>  
-        <tr>
+                <tr>
         <td>
             Expiry date
         </td>
         <td>
             <address class="organisation-address">22 September 2019 - expires in 3 days</address>
         </td>         
-      </tr>        
+      </tr> 
     </tbody>
   </table> 
         </div>       
@@ -74,23 +74,66 @@
             </tr>
         </thead>
         <tbody><tr>
-            <td>Nuclear engineer<span class="form-hint">level 5</span></td>
+            <td>Digital and Technology Solutions Professional
+<span class="form-hint">level 6</span></td>
             <td class="numeric">1</td>
             <td class="numeric">May 2019</td>
-            <td class="numeric">36 months</td>
-            <td class="numeric">£94,000</td>
-            <td class="numeric">£38,400</td>
+            <td class="numeric">48 months</td>
+            <td class="numeric">£27,000</td>
+            <td class="numeric">£11,040</td>
         </tr>
         </tbody><tfoot>
             <tr class="total">
             <td colspan="4" class="numeric">&nbsp;</td>
-            <td data-label="Total cost" class="total numeric">£94,400</td>
-            <td data-label="Total amount" class="total numeric">£38,400</td>
+            <td data-label="Total cost" class="total numeric">£27,000</td>
+            <td data-label="Total amount" class="total numeric">£11,040</td>
             </tr>
         </tfoot>
     </table>
     
+<div class="grid-row">
+        <div class="column-two-thirds">
+                  <div class="">
+          <h1 class="heading-medium">Do you want to accept the transfer?</h1>
+          </div>
+        </div>
+    </div>
+    
+<div class="grid-row">
+
+      
+      <div class="column-two-thirds">
+
+             <form action="">
+            
+        <div class="form-group">
+                                    <div class="multiple-choice">
+        <input id="team" type="radio" name="next" value="team">
+      <label class="" data-target="team" for="team">
+Accept the transfer
+      </label>
+            </div>            
+                                    <div class="multiple-choice">
+        <input id="addorg" type="radio" name="next" value="addorg">
+            <label class="" data-target="addorg" for="addorg">
+Decline the transfer
+      </label>
+            </div>            
+            
+      </div>
+
   
+      <a class="button" href="accepted.html" id="submit">Continue</a>
+      
+</form>
+           
+      </div></div>    
     
 </main>
 {% endblock %}
+
+
+
+
+
+

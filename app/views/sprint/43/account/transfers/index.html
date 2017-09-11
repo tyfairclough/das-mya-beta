@@ -1,14 +1,14 @@
 {% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
 <main class="transfers-index" id="content" role="main" tabindex="-1">
     {% include "includes/link-back.html" %}
-<div class="success-summary">
-    <h3 class="heading-medium">Transfer offer aborted</h3>
-    <p>The transfer offer was not compelted.</p>
+<div class="success-summary hidden" id="offer-cancelled">
+    <h3 class="heading-medium">Your transfer offer was cancelled</h3>
+    <p>The transfer offer was not completed.</p>
 </div>
     
-<div class="success-summary">
-    <h3 class="heading-medium">Transfer request aborted</h3>
-    <p>The transfer request was not compelted.</p>
+<div class="success-summary hidden" id="request-cancelled">
+    <h3 class="heading-medium">Your transfer request was cancelled</h3>
+    <p>The transfer request was not completed.</p>
 </div>
     
     <div class="grid-row">
@@ -19,8 +19,8 @@
       </h1>
             <p class="lede">Move funds between apprenticeship accounts.</p>
 
-            <a class="button" href="/sprint/{{sprint}}/account/transfers/send/create">Offer funds</a>
-                <a class="button text-link" href="/sprint/{{sprint}}/account/transfers/receive/request">Request funds</a>
+            <a class="button" href="/sprint/{{sprint}}/account/transfers/send/create" id="offerFunds">Offer funds</a>
+                <a class="button" href="/sprint/{{sprint}}/account/transfers/receive/request" id="requestFunds">Request funds</a>
 </div>
 
 
@@ -35,7 +35,7 @@
             <div class="column-one-third">
            <a data-filter="expiring">
                <div class="data purple">
-                    <h2 class="bold-xxlarge">1</h2>
+                    <h2 class="bold-xxlarge">0</h2>
                     <h2 class="bold-medium">Expiring transfers</h2>
         </div>
                </a> 
@@ -43,7 +43,7 @@
             <div class="column-one-third">
            <a data-filter="pending">
             <div class="data fuscia">
-                    <h2 class="bold-xxlarge">3</h2>
+                    <h2 class="bold-xxlarge">0</h2>
                     <h2 class="bold-medium">Pending transfers</h2>
         </div>
       </a>
@@ -72,19 +72,23 @@
     
     <hr />
     
-    <h4 class="bold-medium">Useful information</h4>
+    <h4 class="bold-medium hidden">Useful information</h4>
     <div class="grid-row">
         <div class="column-one-third">
             <h2 class="heading-small">Your apprenticeship account ID</h2>
             <p>XGHFEDF</p>        
         </div>
         <div class="column-one-third">
-            <h2 class="heading-small">Available transfer balance</h2>
-            <p>£123,450</p>            
+            <div id="transferBalance">
+            <h2 class="heading-small">Available balance to transfer</h2>
+            <p class="transfer-balance">£123,450</p>
+            </div>
         </div>
         <div class="column-one-third">
-        <h2 class="heading-small">Transfer offers availble from</h2>
-            <p>March 2019</p>            
+            <div id="offerFundsDate">
+        <h2 class="heading-small">Can offer funds from</h2>
+            <p>March 2019</p>         
+            </div>
         </div>
     </div>
 
@@ -92,8 +96,11 @@
     <hr />
     
   
+    <div class="panel panel-width-thin">
+        <p>You have no transfers to date.</p>
+    </div>
+    
         <div id="sender" class="container">
-            SENDER TABLE
             
         <table class="responsive">
         <thead>
@@ -184,7 +191,6 @@
         </div>
     
         <div id="receiver" class="container">
-            RECEIVER TABLE
             
         <table class="responsive">
         <thead>
@@ -198,18 +204,17 @@
         </thead>
         <tbody><tr data-type="pending">
             <td>Offer received<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
-            <td>MSi Computing Ltd
+            <td>Acme Ltd
                 <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
             </td>
-            <td>£9,000</td>
+            <td>£11,040</td>
             <td>--</td>
             <td class="numeric"><a href="receive/offer-received.html">Details</a></td>
-        </tr><tr data-type="pending">
-            <td>Request sent<span class="label mellow-red"  style="display:inherit;">Expires in 3 days</span></td>
-            <td>MSi Computing Ltd
-                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+        </tr><tr data-type="pending" id="requestSent">
+            <td>Request sent<span class="label mellow-red"  style="display:inherit;">Expires in 7 days</span></td>
+            <td>Acme Ltd               <div style="color:#6F777B" class="font-xsmall">AS4XF</div>
             </td>
-            <td>£3,300</td>
+            <td>£11,040</td>
             <td>--</td>
             <td class="numeric"><a href="receive/request-sent.html">Details</a></td>
         </tr>
@@ -222,13 +227,13 @@
             <td>14 May 2018</td>
             <td class="numeric"><a href="receive/offer-accepted.html">Details</a></td>
         </tr>
-        <tr data-type="returned">
+        <tr data-type="returned" id="requestAccepted">
             <td>Request accepted</td>
-            <td>MSi Computing Ltd
+            <td>Acme Ltd
                 <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
             </td>
-            <td>£1,525</td>
-            <td>13 May 2018</td>
+            <td>£11,040</td>
+            <td>18 September 2019</td>
             <td class="numeric"><a href="receive/request-accepted.html">Details</a></td>
         </tr>                
         <tr data-type="returned">
@@ -253,7 +258,6 @@
         <tr data-type="returned"> 
             <td>Offer expired</td>
             <td>MSi Computing Ltd
-                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
             </td>
             <td>£1,525</td>
             <td>13 May 2018</td>
@@ -262,7 +266,6 @@
         <tr data-type="returned"> 
             <td>Request expired</td>
             <td>MSi Computing Ltd
-                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
             </td>
             <td>£1,525</td>
             <td>13 May 2018</td>

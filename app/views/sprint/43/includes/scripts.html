@@ -72,6 +72,7 @@ $(document).ready(function () {
     var organisationName = getQueryVariable("name");
     var organisationNameNew = getQueryVariable("name-changed");
     var removeMsg = getQueryVariable("removeMsg");        
+    var transferDialog = getQueryVariable("transferDialog");        
     var notifyUpdated = getQueryVariable("notifyUpdated");        
     var XMLSource = $('#search').attr('xmlData');
     var XMLActivity = $("#activity").attr('xmlData');
@@ -461,6 +462,27 @@ $(document).ready(function () {
         case 'transfers-start':
             transfersStart();
             break;
+        case 'transfers-index':
+            transfersIndex();
+            break;
+        case 'finalise-transfer-receive':
+            finaliseTransferReceive();
+            break;
+        case 'finalise-transfer-send':
+            finaliseTransferSend();
+            break;
+        case 'transfer-request-complete':
+            transferRequestComplete();
+            break;
+        case 'transfer-offer-complete':
+            transferOfferComplete();
+            break;
+        case 'recieve-request-accepted':
+            receiveRequestAccepted();
+            break;
+        case 'receive-request-sent':
+            receiveRequestSent();
+            break;
         default:
             break;
         };
@@ -469,6 +491,148 @@ $(document).ready(function () {
 
     
 // PAGE FUNCTIONS 
+    
+    function receiveRequestAccepted() {
+        $(".organisation-name").text(localStorage.getItem("organisation-name"));
+        
+                localStorage.setItem("requestState","declined")
+    }
+    
+    function receiveRequestSent() {
+        $(".organisation-name").text(localStorage.getItem("organisation-name"));
+        
+                localStorage.setItem("requestState","accepted")
+    }
+    
+    
+    function transferRequestComplete() {
+                $(".button").click(function(e){
+            
+            e.preventDefault();
+                    var state = $('input[name=next]:checked').val();
+
+            if (state === "request") {
+                window.location.href = "/sprint/{{sprint}}/account/transfers/receive/request.html"
+                // go to confirm    
+            }
+            else if (state === "dashboard") {
+                window.location.href = "/sprint/{{sprint}}/account/transfers/index.html"                
+            }
+            else {
+                // go to dashboard and show cancel dialog
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard-7.html"                
+            }
+        })
+    }
+    
+    
+    function transferOfferComplete() {
+                $(".button").click(function(e){
+            
+            e.preventDefault();
+                    var state = $('input[name=next]:checked').val();
+
+            if (state === "offer") {
+                window.location.href = "/sprint/{{sprint}}/account/transfers/offer/create.html"
+                // go to confirm    
+            }
+            else if (state === "dashboard") {
+                window.location.href = "/sprint/{{sprint}}/account/transfers/index.html"                
+            }
+            else {
+                // go to dashboard and show cancel dialog
+                window.location.href = "/sprint/{{sprint}}/account/dashboard/dashboard-7.html"                
+            }
+        })
+    }    
+
+    
+    function finaliseTransferReceive() {
+        $(".organisation-name").text(localStorage.getItem("organisation-name"));
+        
+        
+        $(".button").click(function(e){
+            
+            e.preventDefault();
+                    var state = $('input[name=submit-app]:checked').val();
+
+            if (state === "yes") {
+                localStorage.setItem("requestState","sent")
+                window.location.href = "/sprint/{{sprint}}/account/transfers/receive/complete.html"
+                // go to confirm
+                
+                
+            } else {
+                // go to dashboard and show cancel dialog
+                window.location.href = "/sprint/{{sprint}}/account/transfers/index.html?transferDialog=requestCancelled"                
+            }
+        })
+        
+
+        
+
+    }
+    
+    function finaliseTransferSend() {
+        $(".organisation-name").text(localStorage.getItem("organisation-name"));
+        
+                $(".button").click(function(e){
+            
+            e.preventDefault();
+                    var state = $('input[name=submit-app]:checked').val();
+
+            if (state === "yes") {
+                
+                localStorage.setItem("sendState","sent")
+                window.location.href = "/sprint/{{sprint}}/account/transfers/send/complete.html"
+                // go to confirm
+                
+                
+            } else {
+                // go to dashboard and show cancel dialog
+                window.location.href = "/sprint/{{sprint}}/account/transfers/index.html?transferDialog=offerCancelled"                
+            }
+        })
+        
+    }
+    
+    
+
+    
+    function transfersIndex(){
+        
+        $("#sender,#receiver, tbody tr").hide()
+        
+        
+        var requestState = localStorage.getItem("requestState");
+        
+        if ( requestState == "sent" ) {
+            $("#receiver").show();
+            $("tbody tr#requestSent").show();
+        } else if ( requestState == "accepted" ) {
+                        $("#receiver").show();
+            $("tbody tr#requestSent").hide();
+            $("tbody tr#requestAccepted").show();
+        }
+
+        
+        var levyPayer = localStorage.getItem("levyPayer");
+            
+
+        if ( transferDialog == "requestCancelled" ) {
+            $("#request-cancelled").removeClass("hidden");
+        } else if ( transferDialog == "offerCancelled" ) {
+            $("#offer-cancelled").removeClass("hidden");
+        };
+        
+        if ( levyPayer == "1") {
+            $("#offerFunds").addClass("text-link");
+        } else {
+            $("#offerFunds").hide();        
+            $("#offerFundsDate").hide();   
+        }
+        
+    }
     
     function fundingIndex(){
         
@@ -504,6 +668,7 @@ $(document).ready(function () {
             //$("#levy-value-2").val()
             
             payroll = parseFloat($("#levy-value-2").val().replace(/,/g, ''))
+            localStorage.setItem("payrollFigure",payroll);
             
             if ( payroll > 3000000 ) {
                 //alert("levy payer sender")
@@ -519,6 +684,25 @@ $(document).ready(function () {
     
     function addApprenticeship(){
                 $("#apprenticeshipName").select2();
+        
+        /*
+        $(".button").click(function(e){
+            e.preventDefault();
+
+        var mon1 = $("#dob-month1").val();
+        var year1 = $("#dob-year1").val();
+        var date1 = new Date("1/"+mon1+"/"+year1+"");
+        
+        var mon2 = $("#dob-month2").val();
+        var year2 = $("#dob-year2").val();
+        var date2 = new Date("1/"+mon2+"/"+year2+"");
+        
+
+var timeDiff = Math.abs(date2.getMonth() - date1.getMonth());
+alert(timeDiff);        
+        })
+
+        */
     }
     
     function activityCSV(){

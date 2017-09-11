@@ -483,6 +483,9 @@ $(document).ready(function () {
         case 'receive-request-sent':
             receiveRequestSent();
             break;
+        case 'sender-offer-pending':
+            senderOfferPending();
+            break;
         default:
             break;
         };
@@ -491,6 +494,12 @@ $(document).ready(function () {
 
     
 // PAGE FUNCTIONS 
+    
+    function senderOfferPending(){
+        $(".organisation-name").text(localStorage.getItem("organisation-name"));
+                localStorage.setItem("sendState","acceptted")
+        
+    }
     
     function receiveRequestAccepted() {
         $(".organisation-name").text(localStorage.getItem("organisation-name"));
@@ -601,18 +610,27 @@ $(document).ready(function () {
     
     function transfersIndex(){
         
-        $("#sender,#receiver, tbody tr").hide()
+        $("#transactions, tbody tr").hide()
         
         
         var requestState = localStorage.getItem("requestState");
-        
+        var sendState = localStorage.getItem("sendState","sent");
+
         if ( requestState == "sent" ) {
-            $("#receiver").show();
+            $("#transactions").show();
             $("tbody tr#requestSent").show();
         } else if ( requestState == "accepted" ) {
-                        $("#receiver").show();
+                        $("#transactions").show();
             $("tbody tr#requestSent").hide();
             $("tbody tr#requestAccepted").show();
+        }
+        
+        if ( sendState == "sent" ) {
+            $("#transactions").show();
+            $("tbody tr#offerSent").show();
+        } else if ( sendState == "accepted" ) {
+            $("#transactions").show();
+            $("tbody tr#offerAccepted").show();            
         }
 
         

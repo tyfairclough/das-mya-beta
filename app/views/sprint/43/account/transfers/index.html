@@ -99,8 +99,8 @@
     <div class="panel panel-width-thin">
         <p>You have no transfers to date.</p>
     </div>
-    
-        <div id="sender" class="container">
+      
+        <div id="transactions" class="container">
             
         <table class="responsive">
         <thead>
@@ -112,97 +112,9 @@
                 <th></th>
             </tr>
         </thead>
-        <tbody><tr data-type="pending">
-            <td>Offer sent<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
-            <td>GBC Micro Ltd
-                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
-            </td>
-            <td>£9,000</td>
-            <td>--</td>
-            <td class="numeric"><a href="receive/request-pending.html?SendingOrg=Microsoft&sendingAmount=9000&expires=3" data-org-index="0">Details</a></td>
-        </tr><tr data-type="pending">
-            <td>Request received<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
-            <td>GBC Micro Ltd
-                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
-            </td>
-            <td>£3,300</td>
-            <td>--</td>
-            <td class="numeric"><a href="send/offer-pending.html" data-org-index="0">Details</a></td>
-        </tr>
-        <tr data-type="outbound">
-            <td>Offer accepted</td>
-            <td>GBC Micro Ltd
-                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
-            </td>
-            <td>£11,525</td>
-            <td>14 May 2018</td>
-            <td class="numeric"><a href="send/offer-accepted.html" data-org-index="0">Details</a></td>
-        </tr>
-        <tr data-type="returned">
-            <td>Request accepted</td>
-            <td>GBC Micro Ltd
-                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
-            </td>
-            <td>£1,525</td>
-            <td>13 May 2018</td>
-            <td class="numeric"><a href="receive/request-accepted.html" data-org-index="0">Details</a></td>
-        </tr>                
-        <tr data-type="returned">
-            <td>Offer declined</td>
-            <td>GBC Micro Ltd
-                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
-            </td>
-            <td>£1,525</td>
-            <td>13 May 2018</td>
-            <td class="numeric"><a href="receive/request-declined.html" data-org-index="0">Details</a></td>
-        </tr> 
-        <tr data-type="returned">
-            <td>Request declined</td>
-            <td>GBC Micro Ltd
-                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
-            </td>
-            <td>£1,525</td>
-            <td>13 May 2018</td>
-            <td class="numeric"><a href="receive/request-declined.html" data-org-index="0">Details</a></td>
-        </tr>      
-        <tr data-type="returned"> 
-            <td>Offer expired</td>
-            <td>GBC Micro Ltd
-                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
-            </td>
-            <td>£1,525</td>
-            <td>13 May 2018</td>
-            <td class="numeric"><a href="send/request-declined.html" data-org-index="0">Details</a></td>
-        </tr> 
-            
-        <tr data-type="returned"> 
-            <td>Request expired</td>
-            <td>GBC Micro Ltd
-                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
-            </td>
-            <td>£1,525</td>
-            <td>13 May 2018</td>
-            <td class="numeric"><a href="receive/request-expired.html" data-org-index="0">Details</a></td>
-        </tr>              
-    </tbody>
-         
-            </table>
-        
-        </div>
-    
-        <div id="receiver" class="container">
-            
-        <table class="responsive">
-        <thead>
-            <tr>
-                <th>State</th>
-                <th>Organisation</th>
-                <th>Amount</th>
-                <th>Date</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody><tr data-type="pending">
+        <tbody>
+<!-- RECEIVER START -->                     
+        <tr data-type="pending">
             <td>Offer received<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
             <td>Acme Ltd
                 <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
@@ -210,7 +122,8 @@
             <td>£11,040</td>
             <td>--</td>
             <td class="numeric"><a href="receive/offer-received.html">Details</a></td>
-        </tr><tr data-type="pending" id="requestSent">
+        </tr>
+        <tr data-type="pending" id="requestSent">
             <td>Request sent<span class="label mellow-red"  style="display:inherit;">Expires in 7 days</span></td>
             <td>Acme Ltd               <div style="color:#6F777B" class="font-xsmall">AS4XF</div>
             </td>
@@ -274,8 +187,84 @@
             <tr id="noResults" style="display:none;">
                 <td colspan="6">No results found</td>
             </tr>
+<!-- RECEIVER END -->         
+            
+<!-- SENDER -->    
+        <tr data-type="pending" id="offerSent">
+            <td>Offer sent<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£9,000</td>
+            <td>--</td>
+            <td class="numeric"><a href="send/offer-pending.html" data-org-index="0">Details</a></td>
+        </tr><tr data-type="pending">
+            <td>Request received<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£3,300</td>
+            <td>--</td>
+            <td class="numeric"><a href="send/offer-pending.html" data-org-index="0">Details</a></td>
+        </tr>
+        <tr data-type="outbound" id="offerAccepted">
+            <td>Offer accepted</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£11,525</td>
+            <td>14 May 2018</td>
+            <td class="numeric"><a href="send/offer-accepted.html" data-org-index="0">Details</a></td>
+        </tr>
+        <tr data-type="returned">
+            <td>Request accepted</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-accepted.html" data-org-index="0">Details</a></td>
+        </tr>                
+        <tr data-type="returned">
+            <td>Offer declined</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-declined.html" data-org-index="0">Details</a></td>
+        </tr> 
+        <tr data-type="returned">
+            <td>Request declined</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-declined.html" data-org-index="0">Details</a></td>
+        </tr>      
+        <tr data-type="returned"> 
+            <td>Offer expired</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="send/request-declined.html" data-org-index="0">Details</a></td>
+        </tr> 
+            
+        <tr data-type="returned"> 
+            <td>Request expired</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-expired.html" data-org-index="0">Details</a></td>
+        </tr>                          
+<!-- SENDER END -->            
+            
     </tbody>
-         
             </table>
         
         </div>

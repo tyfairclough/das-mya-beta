@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <row>
-    <iName proId="59375983">123 Facilities Ltd - (s C4)</iName>
-      <iAddress>154 Principal Places</iAddress>
+    <iName proId="59375983">Harper Adams University</iName>
+      <iAddress>Newport
+Shropshire, TF10 8NB</iAddress>
+    <iType>Public sector</iType>
+  </row>
+  <row>
+    <iName proId="69486573">GlaxoSmithKline GSK</iName>
+      <iAddress>170 Kenilworth Rd, Balsall Common, Coventry CV7 7EW</iAddress>
+    <iType>Public limited company</iType>
+  </row>
+  <row>
+    <iName proId="33095820">Bentley Motors Limited</iName>
+      <iAddress>Pyms Lane, Crewe, Cheshire, CW1 3PL, England</iAddress>
     <iType>Private limited company</iType>
   </row>
   <row>
-    <iName proId="69486573">180 Housing Ltd</iName>
-      <iAddress>154 Principal Places</iAddress>
-    <iType>Private limited company</iType>
-  </row>
-  <row>
-    <iName proId="33095820">2010 Rotherham Ltd</iName>
-      <iAddress>154 Principal Places</iAddress>
-    <iType>Private limited company</iType>
-  </row>
-  <row>
-    <iName proId="13394827">20-20 Housing Co-operative Limited</iName>
-      <iAddress>154 Principal Places</iAddress>
+    <iName proId="13394827">Servest Group Ltd</iName>
+      <iAddress>Servest/Arthur McKay
+Warehouse W
+Western Gateway
+Royal Victoria Docks
+London
+E16 IBD</iAddress>
     <iType>Private limited company</iType>
   </row>
   <row>

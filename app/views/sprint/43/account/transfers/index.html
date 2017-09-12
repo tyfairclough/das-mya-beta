@@ -43,7 +43,7 @@
             <div class="column-one-third">
            <a data-filter="pending">
             <div class="data fuscia">
-                    <h2 class="bold-xxlarge">0</h2>
+                    <h2 class="bold-xxlarge" id="pendingCount">0</h2>
                     <h2 class="bold-medium">Pending transfers</h2>
         </div>
       </a>
@@ -96,7 +96,7 @@
     <hr />
     
   
-    <div class="panel panel-width-thin">
+    <div class="panel panel-width-thin hidden">
         <p>You have no transfers to date.</p>
     </div>
       
@@ -198,14 +198,15 @@
             <td>£9,000</td>
             <td>--</td>
             <td class="numeric"><a href="send/offer-pending.html" data-org-index="0">Details</a></td>
-        </tr><tr data-type="pending">
+        </tr>
+        <tr data-type="pending" id="requestReceived">
             <td>Request received<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
             <td>GBC Micro Ltd
                 <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
             </td>
-            <td>£3,300</td>
+            <td>£11,040</td>
             <td>--</td>
-            <td class="numeric"><a href="send/offer-pending.html" data-org-index="0">Details</a></td>
+            <td class="numeric"><a href="send/request-received.html" data-org-index="0">Details</a></td>
         </tr>
         <tr data-type="outbound" id="offerAccepted">
             <td>Offer accepted</td>

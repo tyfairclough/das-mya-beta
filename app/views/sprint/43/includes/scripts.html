@@ -610,6 +610,16 @@ $(document).ready(function () {
     
     function transfersIndex(){
         
+        
+        var pendingCount = localStorage.getItem("pendingCount");
+
+        if ( pendingCount == "" ) {
+            localStorage.setItem("pendingCount",1);            
+            pendingCount = 1;
+        } else {
+            pendingCount = localStorage.getItem("pendingCount");
+        }
+        
         $("#transactions, tbody tr").hide()
         
         
@@ -619,6 +629,7 @@ $(document).ready(function () {
         if ( requestState == "sent" ) {
             $("#transactions").show();
             $("tbody tr#requestSent").show();
+            $("#offerFunds").addClass("disabled");
         } else if ( requestState == "accepted" ) {
                         $("#transactions").show();
             $("tbody tr#requestSent").hide();
@@ -644,7 +655,11 @@ $(document).ready(function () {
         };
         
         if ( levyPayer == "1") {
-            $("#offerFunds").addClass("text-link");
+            $("#transactions").show();
+            $("tbody tr#requestReceived").show();
+            $("#requestFunds").addClass("text-link");
+            $("#pendingCount").text(pendingCount);
+            
         } else {
             $("#offerFunds").hide();        
             $("#offerFundsDate").hide();   

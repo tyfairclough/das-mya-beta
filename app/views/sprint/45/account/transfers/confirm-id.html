@@ -1,0 +1,53 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfers-add" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+                <div class="hgroup">
+        <h1 class="heading-xlarge">
+            Confirm employer
+        </h1>
+                    <p>Ensure you have entered the correct employer apprenticeship account ID</p>
+
+</div>
+    
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            
+        <div class="form-group panel panel-width-thin">
+            <dl>
+                <dt>Employer name</dt>
+                <dd>Acme Ltd</dd>
+                <dt>Apprenticeship account ID</dt>
+                <dd>46MYXV</dd>
+                <dt>Address</dt>
+                <dd>10 Main Road, London, EC2A 3LT</dd>
+            </dl>
+        </div>
+            
+            
+            <h3 class="heading-medium">Is this the correct employer?</h3>
+  <form>
+            
+<div class="form-group">
+      <div class="multiple-choice">
+															        <input id="ltd" type="radio" name="org-type-filter" value="Private limited company"> 
+															        <label for="ltd">Yes, Acme Ltd is correct</label>
+															      </div>
+    <div class="multiple-choice">
+															        <input id="ltd" type="radio" name="org-type-filter" value="Private limited company"> 
+															        <label for="ltd">No, let me change my entry</label>
+															      </div>
+      </div>            
+</form>
+            
+            <a class="button" href="check-details.html">Continue</a>
+            
+        </div>
+
+    </div>
+
+    
+</main>
+{% endblock %}

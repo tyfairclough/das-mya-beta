@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="finalise-transfer-receive" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+    <div class="warning-summary">
+                                <h4 class="heading-medium">Partial funding warning</h4>
+                                <p>One of more apprenticeships won't be fully funded because the duration is greater than the transfer funds you've requested. Therefore, the additional monthly payments will be made by you or by requesting another transfer for the remaining amount.</p>
+                            </div>
+    
+    <div class="hgroup">
+        <h1 class="heading-xlarge">Finalise your request</h1>
+        <p>Please check all the details are correct before submitting your request to the employer.</p>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+<table class="top-border">
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        Sending employer
+                    </th>
+                    <td>
+                        Acme Ltd<span class="form-hint">AS4XF</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Receiving employer
+                    </th>
+                    <td>
+                        <span class="organisation-name"></span><span class="form-hint">XDFVA</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Transfer date
+                    </th>
+                    <td>
+                        September
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Total transfer amount
+                    </th>
+                    <td>
+                        £11,040
+                    </td>
+                </tr>
+            </tbody>
+    </table>        
+        </div>
+    </div>
+    
+    
+    
+    
+    <h2 class="heading-large">Apprenticeships to be funded</h2>
+    <table class="responsive">
+        <thead>
+            <tr>
+                <th>Apprenticeship</th>
+                <th class="numeric">Apprentices</th>
+                <th class="numeric">Start date</th>
+                <th class="numeric">Duration</th>
+                <th  class="numeric">Cost</th>
+                <th  class="numeric">Transfer amount</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Digital and Technology Solutions Professional<span class="form-hint">level 6</span></td>
+            <td class="numeric">1</td>
+            <td class="numeric">November 2017</td>
+            <td class="numeric">48 months</td>
+            <td class="numeric">£27,000</td>
+            <td class="numeric">£11,040</td>
+        </tr>
+        <tfoot>
+            <tr class="total">
+            <td colspan="4" class="numeric">&nbsp;</td>
+            <td data-label="Total cost" class="total numeric">£27,000</td>
+            <td data-label="Total amount" class="total numeric">£11,040</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    
+    <legend class="heading-medium">Are you ready to submit this application</legend>
+    <div class="form-group">
+                                    <legend class="form-label sr-only">Select an organisation type</legend>
+
+                                    <div class="multiple-choice">
+                                        <input id="ltd" type="radio" name="submit-app" value="yes">
+                                        <label for="ltd">Yes, send this to the employer</label>
+                                    </div>
+                                    <div class="multiple-choice">
+                                        <input id="plc" type="radio" name="submit-app" value="no">
+                                        <label for="plc">No, cancel this request</label>
+                                    </div>
+                                  
+                                    </div>
+
+    <a class="button" href="complete.html">Finish</a>
+    
+</main>
+{% endblock %}

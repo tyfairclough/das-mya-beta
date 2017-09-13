@@ -1,0 +1,111 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="sender-offer-pending" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">
+        Pending transfer details
+      </h1>
+            <p class="lede">Review the transfer offer made.</p>
+        </div>
+        
+<div class="column-two-thirds">
+        <table class="check-your-answers">
+
+
+    <tbody>
+      <tr>
+        <td>
+            Sending organisation name
+        </td>
+        <td>
+          <span class="organisation-name">Microsoft EMEA</span>
+        </td>
+      </tr>
+        <tr>
+        <td>
+            Sent by
+        </td>
+        <td>
+            <address class="organisation-address">Pete Kowalczyk</address>
+        </td>        
+      </tr>
+              <tr>
+        <td>
+            Receiving organisation name
+        </td>
+        <td>
+          <span>ACME Ltd</span>
+        </td>
+      </tr>
+        <tr>
+        <td>
+            Transfer date
+        </td>
+        <td>
+            <address class="organisation-address">September 2017</address>
+        </td>         
+      </tr>
+        <tr>
+        <td>
+            Transfer amount
+        </td>
+        <td>
+            <address class="organisation-address">£11,040</address>
+        </td>         
+      </tr>  
+                <tr>
+        <td>
+            Expiry date
+        </td>
+        <td>
+            <address class="organisation-address">22 September 2019 - expires in 3 days</address>
+        </td>         
+      </tr> 
+    </tbody>
+  </table> 
+        </div>       
+    </div>
+
+    <h2 class="heading-large">Apprenticeships to be funded</h2>
+    
+    <table class="responsive">
+        <thead>
+            <tr>
+                <th>Apprenticeship</th>
+                <th class="numeric">Apprentices</th>
+                <th class="numeric">Start date</th>
+                <th class="numeric">Duration</th>
+                <th class="numeric">Cost</th>
+                <th class="numeric">Transfer amount</th>
+            </tr>
+        </thead>
+        <tbody><tr>
+            <td>Digital and Technology Solutions Professional
+<span class="form-hint">level 6</span></td>
+            <td class="numeric">1</td>
+            <td class="numeric">May 2019</td>
+            <td class="numeric">48 months</td>
+            <td class="numeric">£27,000</td>
+            <td class="numeric">£11,040</td>
+        </tr>
+        </tbody><tfoot>
+            <tr class="total">
+            <td colspan="4" class="numeric">&nbsp;</td>
+            <td data-label="Total cost" class="total numeric">£27,000</td>
+            <td data-label="Total amount" class="total numeric">£11,040</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+ 
+    
+</main>
+{% endblock %}
+
+
+
+
+
+

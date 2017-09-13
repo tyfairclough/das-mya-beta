@@ -1,0 +1,271 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="manage-apprentices" id="content" role="main" tabindex="-1">
+      {% include "includes/link-back.html" %}
+
+        <div class="hgroup">
+            <h1 class="heading-xlarge">Manage your apprentices</h1>
+        </div>
+            
+<div class="grid-row">
+    
+    <div class="column-third pull-left" id="ManageFilters">
+<fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Search</h2>
+                    <div class="toggled-content">
+                        <div class="form-group">
+                            <input id="providerLocation" type="text" class="form-control" value="">
+                        </div>
+                    </div>
+                </fieldset>    
+        
+
+    <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Status</h2>
+                    <div class="toggled-content">
+                        
+                       
+                        <div class="form-group">
+                        <div class="multiple-choice">
+                            <input id="stateLive" name="apprenticeState" type="checkbox" value="1">
+                            <label class="block-label" for="stateLive">Live</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="stateWaiting" name="apprenticeState" type="checkbox" value="1">
+                            <label class="block-label" for="stateWaiting">Waiting to start</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="statePaused" name="apprenticeState" type="checkbox" value="1">
+                            <label class="block-label" for="statePaused">Paused</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="stateStopped" name="apprenticeState" type="checkbox" value="1">
+                            <label class="block-label" for="stateStopped">Stopped</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="stateFinished" name="apprenticeState" type="checkbox" value="1">
+                            <label class="block-label" for="stateFinished">Finished</label>
+                        </div>
+                       </div>                            
+                    </div>
+                </fieldset> 
+
+    <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Alerts</h2>
+                    <div class="toggled-content">
+                        
+                       
+                        <div class="form-group">
+                        <div class="multiple-choice">
+                            <input id="alertNoAction" name="alertState" type="checkbox" value="1">
+                            <label class="block-label" for="alertNoAction">Changes to review</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="alertPending" name="alertState" type="checkbox" value="1">
+                            <label class="block-label" for="alertPending">Changes you've requested</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="alertFailed" name="alertState" type="checkbox" value="1">
+                            <label class="block-label" for="alertFailed">Failed payments</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="alertEPA" name="alertState" type="checkbox" value="1">
+                            <label class="block-label" for="alertEPA">End-point assessor review needed</label>
+                        </div>
+                       </div>                            
+                    </div>
+                </fieldset>  
+    <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Apprenticeship training courses</h2>
+                    <div class="toggled-content">
+                        
+                                                <div class="form-group">
+
+                       
+<select id="apprenticeshipName" multiple="" class="form-control" tabindex="-1" aria-hidden="true">
+                                <option value="1">Mechatronics engineers</option>
+                                <option value="2">Manufacturing engineers</option>
+                                <option value="3">Survival equipment fitter</option>
+                                <option value="3">Network engineer</option>
+                                <option value="3">Cyber intrusion analyst</option>
+                                <option value="3">Cyber security technologist</option>
+                                <option value="3">Embedded Electronic Systems Design and Development Engineer</option>
+                            </select>                        
+                        </div>
+                        
+                        <div class="form-group hidden">
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Mechatronics engineers</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Manufacturing engineers</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Survival equipment fitter</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Network engineer</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Cyber intrusion analyst</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Cyber security technologist</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="national-only" name="waste-types" type="checkbox" value="1">
+                            <label class="block-label" for="national-only">Embedded Electronic Systems Design and Development Engineer</label>
+                        </div>
+                       </div>                            
+                    </div>
+                </fieldset>         
+    </div>
+    
+    <div class="column-two-thirds">
+              <details class="hidden">
+            <summary>Bulk actions</summary>
+
+        <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Quick actions</h2>
+                    <div class="toggled-content">
+                  <p>Make a selection to perform bulk actions</p>                        <div class="form-group">
+                <!--<a href="#" class="button">Add apprentice</a>-->
+                <a href="#" class="button text-link">Pause </a>
+                <a href="#" class="button text-link">Stop </a>
+                <a href="#" class="button text-link">Approve </a>
+                <a href="#" class="button text-link">Reject </a>
+                    </div>
+                        </div>
+                </fieldset>  
+        </details>
+ <table class="">
+                          <thead>
+                            <tr>
+                              <th scope="col" style="padding-top:0">Name</th>
+                              <th scope="col" style="padding-top:0">Date of birth</th>
+                               <th scope="col" style="padding-top:0; width:90px">Status</th>
+                               <th scope="col" style="padding-top:0; width:200px">Alerts</th>
+                               <th scope="col" style="padding-top:0"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <!--quick hack, will fix -->
+                              <td class="rjTabWidth">Anne Smith</td>
+                              <td class="">3 Jun 1997</td>
+                              <td class="">Live</td>
+                               <td>Payment failure</td>
+                              <td><a href="/sprint/{{sprint}}/account/apprentices/ann-smith">View</a></td>
+                            </tr>
+                            <tr>
+                              <!--quick hack, will fix -->
+                              <td class="rjTabWidth">Aziz Anzari</td>
+                              <td class="">14 Jul 1998</td>
+                              <td class="">Live</td>
+                               <td>Payment failure</td>
+                              <td><a href="/sprint/{{sprint}}/account/apprentices/aziz-anzari">View</a></td>
+                            </tr>
+                              <tr>
+                              <!--quick hack, will fix -->
+                              <td class="rjTabWidth">Rob Edwards</td>
+                              <td class="">3 Jun 1997</td>
+                              <td class="">Live</td>
+                               <td>Changes pending</td>
+                              <td><a href="/sprint/{{sprint}}/account/apprentices/individual-apprentice">View</a></td>
+                            </tr>
+                             <tr>
+                              <td class="rjTabWidth">Susan Hamazaki</td>
+                              <td class="">12 Oct 1995</td>
+                               <td class="">Paused</td>
+                                <td>Changes for review</td>
+                               <td><a href="/sprint/{{sprint}}/account/apprentices/individual-apprentice-showing-changes">View</a></td>
+
+                            </tr>
+                                                        <tr>
+                              <td class="rjTabWidth">James Apan</td>
+                              <td class="">30 Oct 2001</td>
+                                <td class="">Live</td>
+                                 <td></td>
+                               <td><a href="/sprint/{{sprint}}/account/apprentices/individual-apprentice-no-changes">View</a></td>
+                            </tr>
+                            <tr>
+                              <td class="rjTabWidth">David Jenkins</td>
+                              <td class="">5 Sep 1999</td>
+                                <td class="">Finished</td>
+                                 <td></td>
+                               <td class="looks-like-a-link-underline">View</td>
+                            </tr>
+
+                            <tr>
+                              <td class="rjTabWidth">William Wing</td>
+                              <td class="">1 June 2001</td>
+                                <td class="">Live</td>
+                                 <td><!--Payment failure<br /> - Change requested-->---</td>
+                             <td><a href="/sprint/{{sprint}}/account/apprentices/individual-apprentice-payment-failure">View</a></td>
+                            </tr>
+
+                             <tr>
+                              <td class="rjTabWidth">Mel O'Connor</td>
+                              <td class="">1 May 1998</td>
+                                <td class="">Live</td>
+                                 <td>Changes for review</td>
+                             <td><a href="/sprint/{{sprint}}/account/apprentices/employer-data-lock-mel">View</a></td>
+                            </tr>
+
+                            <tr>
+                              <td class="rjTabWidth">William Hill</td>
+                              <td class="">10 Jan 1998</td>
+                                <td class="">Waiting to start</td>
+                                 <td></td>
+                              <td class="looks-like-a-link-underline">View</td>
+                            </tr>
+                             <tr>
+                              <td class="rjTabWidth">Harvey Dent</td>
+                              <td class="">29 Oct 2000</td>
+                                <td class="">Live</td>
+                                 <td>Changes requested</td>
+                               <td><a href="/sprint/{{sprint}}/account/apprentices/harvey-dent-restart-apprenticeship">View</a></td>
+                            </tr>
+                             <tr>
+                              <td class="rjTabWidth">Jenny Topham</td>
+                              <td class="">10 Jan 1998</td>
+                                <td class="">Stopped</td>
+                                 <td></td>
+                              <td class="looks-like-a-link-underline">View</td>
+                            </tr>
+                            <tr>
+                              <td class="rjTabWidth">David Jenkins</td>
+                              <td class="">05 June 1999</td>
+                                <td class="">Live</td>
+                                 <td><!--Payment adjustment-->---</td>
+                                  <td><a href="/sprint/{{sprint}}/account/apprentices/individual-apprentice-payment-adjustment">View</a></td>
+                            </tr>
+                          </tbody>
+                      </table>
+
+    </div>
+    
+</div>
+    
+</main>
+{% endblock %}

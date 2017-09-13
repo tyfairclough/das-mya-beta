@@ -1,0 +1,274 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfers-index" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+<div class="success-summary hidden" id="offer-cancelled">
+    <h3 class="heading-medium">Your transfer offer was cancelled</h3>
+    <p>The transfer offer was not completed.</p>
+</div>
+    
+<div class="success-summary hidden" id="request-cancelled">
+    <h3 class="heading-medium">Your transfer request was cancelled</h3>
+    <p>The transfer request was not completed.</p>
+</div>
+    
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+        Transfer funds
+      </h1>
+            <p class="lede">Move funds between apprenticeship accounts.</p>
+
+            <a class="button" href="/sprint/{{sprint}}/account/transfers/send/create" id="offerFunds">Offer funds</a>
+                <a class="button" href="/sprint/{{sprint}}/account/transfers/receive/request" id="requestFunds">Request funds</a>
+</div>
+
+
+        </div>
+    </div>
+
+<div class="" id="finance-bingo">   
+
+
+        
+        <div class="grid-row">
+            <div class="column-one-third">
+           <a data-filter="expiring">
+               <div class="data purple">
+                    <h2 class="bold-xxlarge">0</h2>
+                    <h2 class="bold-medium">Expiring transfers</h2>
+        </div>
+               </a> 
+            </div>
+            <div class="column-one-third">
+           <a data-filter="pending">
+            <div class="data fuscia">
+                    <h2 class="bold-xxlarge" id="pendingCount">0</h2>
+                    <h2 class="bold-medium">Pending transfers</h2>
+        </div>
+      </a>
+            </div>
+            
+        
+            <div class="column-one-third">
+           <a data-filter="accepted">
+               <div class="data pink">
+                    <h2 class="bold-xxlarge">0</h2>
+                    <h2 class="bold-medium">Completed transfers</h2>
+        </div>
+               </a> 
+            </div>
+            
+        </div>
+</div>   
+            <!--<div class="column-half">
+                   <a href="archived.html">
+            <div class="data grey">
+                    <h2 class="bold-large">32</h2>
+                    <h2 class="bold-small">Archived transfers</h2>
+        </div>
+      </a>
+            </div> -->
+    
+    <hr />
+    
+    <h4 class="bold-medium hidden">Useful information</h4>
+    <div class="grid-row">
+        <div class="column-one-third">
+            <h2 class="heading-small">Your apprenticeship account ID</h2>
+            <p>XGHFEDF</p>        
+        </div>
+        <div class="column-one-third">
+            <div id="transferBalance">
+            <h2 class="heading-small">Available balance to transfer</h2>
+            <p class="transfer-balance">£123,450</p>
+            </div>
+        </div>
+        <div class="column-one-third hidden">
+            <div id="offerFundsDate">
+        <h2 class="heading-small">Can offer funds from</h2>
+            <p>March 2019</p>         
+            </div>
+        </div>
+    </div>
+
+    
+    <hr />
+    
+  
+    <div class="panel panel-width-thin hidden">
+        <p>You have no transfers to date.</p>
+    </div>
+      
+        <div id="transactions" class="container">
+            
+        <table class="responsive">
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>Organisation</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+<!-- RECEIVER START -->                     
+        <tr data-type="pending">
+            <td>Offer received<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
+            <td>Acme Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£11,040</td>
+            <td>--</td>
+            <td class="numeric"><a href="receive/offer-received.html">Details</a></td>
+        </tr>
+        <tr data-type="pending" id="requestSent">
+            <td>Request sent<span class="label mellow-red"  style="display:inherit;">Expires in 7 days</span></td>
+            <td>Acme Ltd               <div style="color:#6F777B" class="font-xsmall">AS4XF</div>
+            </td>
+            <td>£11,040</td>
+            <td>--</td>
+            <td class="numeric"><a href="receive/request-sent.html">Details</a></td>
+        </tr>
+        <tr data-type="outbound">
+            <td>Offer accepted</td>
+            <td>MSi Computing Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£11,525</td>
+            <td>14 May 2018</td>
+            <td class="numeric"><a href="receive/offer-accepted.html">Details</a></td>
+        </tr>
+        <tr data-type="returned" id="requestAccepted">
+            <td>Request accepted</td>
+            <td>Acme Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£11,040</td>
+            <td>18 September 2019</td>
+            <td class="numeric"><a href="receive/request-accepted.html">Details</a></td>
+        </tr>                
+        <tr data-type="returned">
+            <td>Offer declined</td>
+            <td>MSi Computing Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/offer-declined.html">Details</a></td>
+        </tr>      
+        <tr data-type="returned"> 
+            <td>Request declined</td>
+            <td>MSi Computing Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-declined.html">Details</a></td>
+        </tr> 
+            
+        <tr data-type="returned"> 
+            <td>Offer expired</td>
+            <td>MSi Computing Ltd
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/offer-expired.html">Details</a></td>
+        </tr>              
+        <tr data-type="returned"> 
+            <td>Request expired</td>
+            <td>MSi Computing Ltd
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-expired.html">Details</a></td>
+        </tr>             
+            <tr id="noResults" style="display:none;">
+                <td colspan="6">No results found</td>
+            </tr>
+<!-- RECEIVER END -->         
+            
+<!-- SENDER -->    
+        <tr data-type="pending" id="offerSent">
+            <td>Offer sent<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£9,000</td>
+            <td>--</td>
+            <td class="numeric"><a href="send/offer-pending.html" data-org-index="0">Details</a></td>
+        </tr>
+        <tr data-type="pending" id="requestReceived">
+            <td>Request received<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£11,040</td>
+            <td>--</td>
+            <td class="numeric"><a href="send/request-received.html" data-org-index="0">Details</a></td>
+        </tr>
+        <tr data-type="outbound" id="offerAccepted">
+            <td>Offer accepted</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£11,525</td>
+            <td>14 May 2018</td>
+            <td class="numeric"><a href="send/offer-accepted.html" data-org-index="0">Details</a></td>
+        </tr>
+        <tr data-type="returned">
+            <td>Request accepted</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-accepted.html" data-org-index="0">Details</a></td>
+        </tr>                
+        <tr data-type="returned">
+            <td>Offer declined</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-declined.html" data-org-index="0">Details</a></td>
+        </tr> 
+        <tr data-type="returned">
+            <td>Request declined</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-declined.html" data-org-index="0">Details</a></td>
+        </tr>      
+        <tr data-type="returned"> 
+            <td>Offer expired</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="send/request-declined.html" data-org-index="0">Details</a></td>
+        </tr> 
+            
+        <tr data-type="returned"> 
+            <td>Request expired</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Jayesh Patel</div>
+            </td>
+            <td>£1,525</td>
+            <td>13 May 2018</td>
+            <td class="numeric"><a href="receive/request-expired.html" data-org-index="0">Details</a></td>
+        </tr>                          
+<!-- SENDER END -->            
+            
+    </tbody>
+            </table>
+        
+        </div>
+        
+</main>
+{% endblock %}

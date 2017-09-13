@@ -1,0 +1,50 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfers-pending-accepted" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+<div class="govuk-box-highlight">
+                <h2 class="bold-large">Transfer accepted</h2>
+                <p>Your transfer has succesfully transferred, you can now see this funds in your account balance.</p>
+                <p class="bold-small">Reference number: XF4F34</p>
+            </div>
+
+<div class="grid-row">
+        <div class="column-two-thirds">
+                  <div class="">
+          <h1 class="heading-medium">Next steps</h1>
+          </div>
+        </div>
+    </div>
+    
+<div class="grid-row">
+
+      
+      <div class="column-two-thirds">
+
+             <form action="">
+            
+        <div class="form-group">
+                                    <div class="multiple-choice">
+        <input id="team" type="radio" name="next" value="team">
+      <label class="" data-target="team" for="team">
+Go back to transfer funds
+      </label>
+            </div>            
+                                    <div class="multiple-choice">
+        <input id="addorg" type="radio" name="next" value="addorg">
+            <label class="" data-target="addorg" for="addorg">
+                Go back to the account dashboard
+      </label>
+            </div>            
+            
+      </div>
+
+  
+      <a class="button" href="../index.html" id="submit">Continue</a>
+      
+</form>
+           
+      </div></div>    
+    
+</main>
+{% endblock %}

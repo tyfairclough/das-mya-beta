@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+{% block content %}
+<style>
+    .header-organisation {
+        display: none;
+    }
+    .header-user h2 {
+        display: none;
+    }
+</style>
+<main class="change-email" id="content" role="main" tabindex="-1">
+  <!--{% include "includes/link-back.html" %}-->
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        
+
+<a href="/sprint/{{sprint}}/account/dashboard/index" class="link-back">Back to employer account</a>
+
+    </div>
+  </div>
+
+    <div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="hgroup">    
+            <h1 class="heading-xlarge">Check email</h1>
+        </div>            
+          
+        <table class="top-border">
+                <tbody>
+                    
+                    <!--<tr>
+                    <th scope="row">
+                        Organisation
+                    </th>
+                    <td>
+                        <dl class="inline">
+                            <dt>Name:</dt>
+                            <dd class="organisation-name">TESCO STORES LIMITED</dd>
+                            <dt>Companies House number:</dt>
+                            <dd>00519500</dd>
+                        </dl>
+                    </td>
+                </tr>-->
+                <tr>
+                    <th scope="row">
+                        Email address
+                    </th>
+                    <td>
+                        newemail@gmail.com
+                    </td>
+                </tr>
+            </tbody></table>
+        
+            <form method="GET" action="/sprint/{{sprint}}/account/paye/next.html">
+                <input id="radio1" type="hidden" name="accountCreated" checked="checked" value="y">
+                <div class="form-group">
+                    <a class="button" href="/sprint/{{sprint}}/account/dashboard/index.html">This email is correct</a>
+                    <a class="button text-link" href="/sprint/{{sprint}}/user/change-email.html">Change email</a>
+                </div>
+            </form>
+    </div>
+</div>
+    
+</main>
+{% endblock %}

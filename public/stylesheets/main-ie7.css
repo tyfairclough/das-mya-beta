@@ -4997,3 +4997,12 @@ input.disabled, input:disabled {
   margin-right: -80px;
   padding-right: 80px;
 }
+
+table.small th, table.small td {
+  font-size: 16px;
+}
+
+sup {
+  font-size: 0.75em;
+  top: -0.5em;
+}

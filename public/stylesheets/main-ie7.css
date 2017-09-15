@@ -2076,6 +2076,84 @@ input[type=number] {
   padding-right: 0.5em;
 }
 
+.govuk-check-your-answers {
+  display: table;
+}
+
+.govuk-check-your-answers > * {
+  position: relative;
+  border-bottom: 1px solid #bfc1c3;
+  display: table-row;
+  border-bottom-width: 0;
+}
+
+.govuk-check-your-answers > * > * {
+  display: block;
+  display: table-cell;
+  border-bottom: 1px solid #bfc1c3;
+  padding: 0.6315789474em 1.0526315789em 0.4736842105em 0;
+  margin: 0;
+}
+
+.govuk-check-your-answers > *:first-child > * {
+  padding-top: 0;
+}
+
+.govuk-check-your-answers > * dt {
+  float: none;
+}
+
+.govuk-check-your-answers .cya-question {
+  font-weight: bold;
+  margin: 0.6315789474em 4em 0.2105263158em 0;
+}
+
+.govuk-check-your-answers > *:first-child .cya-question {
+  margin-top: 0;
+}
+
+.govuk-check-your-answers.cya-questions-short, .govuk-check-your-answers.cya-questions-long {
+  width: 100%;
+}
+
+.govuk-check-your-answers.cya-questions-short .cya-question {
+  width: 30%;
+}
+
+.govuk-check-your-answers.cya-questions-long .cya-question {
+  width: 50%;
+}
+
+.govuk-check-your-answers .cya-answer {
+  padding-bottom: 0.4736842105em;
+}
+
+.govuk-check-your-answers .cya-change {
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  position: static;
+  padding-right: 0;
+}
+
+.check-your-answers td {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  font-size: 19px;
+  line-height: 1.3157894737;
+  vertical-align: top;
+}
+
+.check-your-answers .change-answer {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 0;
+}
+
 .header-global {
   margin: 0 auto;
   max-width: 960px;

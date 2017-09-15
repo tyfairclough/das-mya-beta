@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="send-offer-start" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+<div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+Offer a monthly transfer
+                </h1>
+            <p class="lede">Receive levy funds from another employer to cover up to the entire cost of apprenticeship training.</p>
+
+</div>
+            <h3 class="heading-medium">Before you start</h3>
+            <p>You will need:</p>
+            <ul class="list list-bullet">
+                <li>The receiving employers apprenticeship account ID</li>
+                <li>Basic details of the apprenticeships you want to fund:
+                    <ul class="list list-bullet">
+                        <li>Apprenticeship standard/Framework
+</li>
+                        <li>Start date
+</li>
+                        <li>Number of apprentices</li>
+                    </ul>
+</li>
+                <li>Available funds to transfer</li>
+            </ul>
+<a class="button button-start" href="/sprint/{{sprint}}/account/transfers/send/does-employer-have-account">Start</a>            
+
+            <h3 class="heading-medium">What you need to know</h3>
+ 
+            <ul class="list list-bullet">
+                <li>You can't get these funds back once they are sent.</li>
+<li>You can only fund new starts</li>
+<li>Funds may not cover the entire apprenticeship you wish to fund</li>
+<li>Insure you have carefully forecasted your outgoing payments to ensure you're commitment to the receiving employer can be honoured.</li>
+<li>Your oldest funds will be used first</li>
+<li>The expiry dates of those funds will be carried over to the receiving employer.</li>
+            </ul>
+            
+    </div>
+    </div>
+    
+</main>
+{% endblock %}

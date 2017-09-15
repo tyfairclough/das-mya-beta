@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="transfers-index" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+        Transfer funds
+      </h1>
+            <p class="lede">Move funds between apprenticeship accounts.</p>
+
+            <a class="button" href="/sprint/{{sprint}}/account/transfers/send/start" id="offerFunds">Offer funds</a>
+                <a class="button text-link" href="/sprint/{{sprint}}/account/transfers/receive/start" id="requestFunds">Request funds</a>
+</div>
+
+
+        </div>
+    </div>
+ 
+    <div class="" id="finance-bingo">   
+
+
+        
+        <div class="grid-row">
+            <div class="column-one-third">
+           <a data-filter="expiring">
+               <div class="data purple">
+                    <h2 class="bold-xxlarge">0</h2>
+                    <h2 class="bold-medium">Expiring transfers</h2>
+        </div>
+               </a> 
+            </div>
+            <div class="column-one-third">
+           <a data-filter="pending">
+            <div class="data fuscia">
+                    <h2 class="bold-xxlarge" id="pendingCount">0</h2>
+                    <h2 class="bold-medium">Pending transfers</h2>
+        </div>
+      </a>
+            </div>
+            
+        
+            <div class="column-one-third">
+           <a data-filter="accepted">
+               <div class="data pink">
+                    <h2 class="bold-xxlarge">0</h2>
+                    <h2 class="bold-medium">Completed transfers</h2>
+        </div>
+               </a> 
+            </div>
+            
+        </div>
+</div>
+    
+    <hr />
+    
+    <div class="grid-row">
+        <div class="column-one-third">
+            <h2 class="heading-small">Your apprenticeship account ID</h2>
+            <p>XGHFEDF</p>        
+        </div>
+        <div class="column-one-third">
+            <div id="transferBalance">
+            <h2 class="heading-small">Available balance to transfer</h2>
+            <p class="transfer-balance">£0</p>
+            </div>
+        </div>
+        <div class="column-one-third hidden">
+            <div id="offerFundsDate">
+        <h2 class="heading-small">Can offer funds from</h2>
+            <p>March 2019</p>         
+            </div>
+        </div>
+    </div>
+    
+    <hr />
+    
+    <div class="panel panel-width-thin">
+        <p>You have no transfers to date.</p>
+    </div>
+    <div id="transactions" class="container" style="">
+            
+        <table class="responsive">
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>Sending</th>
+                <th>Receiving</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+<!-- RECEIVER START -->                     
+        <tr data-type="pending" id="receiver-offer-received">
+            <td>Offer received<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
+            <td>Acme Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>Acme Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£6,000</td>
+            <td>--</td>
+            <td class="numeric"><a href="receive/offer-received.html">Details</a></td>
+        </tr>
+
+<!-- RECEIVER END -->         
+            
+<!-- SENDER -->    
+        <tr data-type="pending" id="sender-offer-sent" >
+            <td>Offer sent<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£6,000</td>
+            <td>--</td>
+            <td class="numeric"><a href="send/offer-pending.html" data-org-index="0">Details</a></td>
+        </tr>
+        
+<!-- SENDER END -->            
+            
+    </tbody>
+            </table>
+        
+        </div>
+    
+</main>
+{% endblock %}

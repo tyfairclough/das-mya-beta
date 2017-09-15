@@ -1,0 +1,55 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="transfers-start" id="content" role="main" tabindex="-1">
+
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row logic-page">
+    <div class="column-two-thirds">
+
+<div class="hgroup">
+    <h1 class="heading-xlarge">Transfers prototype <sup class="font-xsmall">Version.DTs24</sup></h1>
+    <p>Does this provider have a signed provider agreement.</p>
+</div>
+        <form>
+<div class="form-group">
+            <label class="form-label" for="levy-value-2">Estimated payroll for this financial year</label>
+            <label for="levy-value-2" class="text-box-unit">£</label>
+            <input class="form-control text-box-with-unit-before money-mask" id="levy-value-2" name="levy-value-2" type="text" maxlength="22">
+        </div>
+                    
+                  </form>
+
+
+        <a href="/sprint/{{sprint}}/providers/" class="button">Start</a>
+
+        
+    <h4 class="heading-small">Before you start</h4>
+    <p>This is a recorded demonstration prototype. You may have been already been asked by your user researcher for permission to record the session. By continuing you agree to have this session recorded.</p>
+    <h5 class="heading-small">How will we use the data</h5>
+    <p>We collection information throughout the session to understand your user needs. The data is not publicaclly shared beyond the SFA and DfE organisations. Any public content is anonymised and aggregated. In almost all cases no personal information will be required, your user researcher will stipulate if your actual data is required for the sake of facilitating the research session.</p>
+    
+
+        
+    </div>
+  </div>
+
+    
+</main><!-- / #content -->
+{% endblock %}

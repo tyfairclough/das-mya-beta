@@ -1,0 +1,44 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="confirm-sending-employer" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+        How would you like to fund this transfer?
+      </h1>
+
+</div>
+
+
+        </div>
+    </div>
+        
+        
+<div class="form-group">
+    <fieldset>
+
+        <h3 class="heading-medium">Do you want to set up a monthly payment or one off transfer?</h3>
+        <div class="form-group">
+            <div class="multiple-choice">
+                    <input id="radio-1" type="radio" name="radio-group" value="yes">
+      <label class="" for="radio-1">Send all the funds now</label>
+                </div>
+            <div class="multiple-choice">
+                    <input id="radio-2" type="radio" name="radio-group" value="no">
+      <label class="" for="radio-2">Create a recurring monthly payment</label>
+                </div>            
+            
+    
+            </div>
+        <div class="form-group">
+        <a href="add-apprenticeship.html" class="button">Continue</a>
+        </div>            
+    </fieldset>
+  </div>        
+        
+
+    
+</main>
+{% endblock %}

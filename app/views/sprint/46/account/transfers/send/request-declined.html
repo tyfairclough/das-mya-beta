@@ -1,0 +1,105 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="receive-request-declined" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">
+        Declined transfer offer details
+      </h1>
+            <p class="lede">Review the transfer summary.</p>
+        </div>
+        
+<div class="column-two-thirds">
+        <table class="check-your-answers">
+    <tbody>
+      <tr>
+        <td>
+            Receiving organisation name
+        </td>
+        <td>
+            Microsoft EMEA
+        </td>
+      </tr>
+        <tr>
+        <td>
+            Sent by
+        </td>
+        <td>
+            Pete Kowalczyk
+        </td>         
+      </tr>
+        <tr>
+        <td>
+            Transfer date
+        </td>
+        <td>
+           September 2017
+        </td>         
+      </tr>
+        <tr>
+        <td>
+            Transfer amount
+        </td>
+        <td>
+            £6,000
+        </td>         
+      </tr>  
+                <tr>
+        <td>
+            Declined on
+        </td>
+        <td>
+            22 September 2019
+        </td>         
+      </tr> 
+        
+        <tr>
+        <td>
+            Declined by
+        </td>
+        <td>
+            John O'Hare
+        </td>         
+      </tr> 
+        <tr>
+            <td>Message</td>
+            <td>None supplied</td>
+        </tr>
+    </tbody>
+  </table> 
+        </div>       
+    </div>
+
+    <h2 class="heading-large">Apprenticeships not funded</h2>
+    
+    <table class="responsive">
+        <thead>
+            <tr>
+                <th>Apprenticeship</th>
+                <th class="numeric">Apprentices</th>
+                <th class="numeric">Start date</th>
+                <th class="numeric">Duration</th>
+                <th class="numeric">Cost</th>
+                <th class="numeric">Transfer amount</th>
+            </tr>
+        </thead>
+        <tbody><tr>
+            <td>Nuclear engineer<span class="form-hint">level 5</span></td>
+            <td class="numeric">1</td>
+            <td class="numeric">May 2019</td>
+            <td class="numeric">18 months</td>
+            <td class="numeric">£6,000</td>
+            <td class="numeric">£6,000</td>
+        </tr>
+        </tbody><tfoot>
+            <tr class="total">
+            <td colspan="4" class="numeric">&nbsp;</td>
+            <td data-label="Total cost" class="total numeric">£6,000</td>
+            <td data-label="Total amount" class="total numeric">£6,000</td>
+            </tr>
+        </tfoot>
+    </table>
+ 
+</main>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfer-offer-complete" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+<div class="grid-row">
+        <div class="column-two-thirds">
+    <div id="notifications">
+        <div class="success-summary">
+            <h3 class="heading-medium">Transfer request sent</h3>
+            <p>The employer you have offered funds to will have until the 22nd of September to accept this request. You will be notified of the outcome in due course.</p>
+        </div>
+    </div>
+      
+      </div>
+    </div>    
+    
+    
+    <div class="grid-row">
+
+        
+      
+      <div class="column-two-thirds">
+<h1 class="heading-medium">What next?</h1>
+             <form action="">
+            
+        <div class="form-group">
+
+
+                                         <div class="multiple-choice">
+        <input id="request" type="radio" name="next" value="offer">
+ <label class="" data-target="new" for="new">
+Create new transfer offer
+            </label>
+            </div>
+                                    <div class="multiple-choice">
+        <input id="dashboard" type="radio" name="next" value="dashboard">
+      <label class="" data-target="dashboard" for="dashboard">
+Go back to the transfers dashboard
+      </label>
+            </div>                      
+                                    <div class="multiple-choice">
+        <input id="homepage" type="radio" name="next" value="homepage">
+      <label class="" data-target="homepage" for="homepage">
+Go back to the homepage
+            </label>
+            </div>
+      </div>
+
+  
+      <a class="button" href="add-apprenticeship.html" id="submit">Continue</a>
+      
+</form>
+           
+      </div></div>
+    
+    
+</main>
+{% endblock %}

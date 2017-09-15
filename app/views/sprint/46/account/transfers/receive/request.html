@@ -1,0 +1,27 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="request-a-new-transfer" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+        Request a new transfer
+      </h1>
+            <p class="lede">Receive funds from another apprenticeship account.</p>
+
+</div>
+
+            <h3 class="heading-medium">Before you start</h3>
+            <p>You will need:</p>
+            <ul class="list list-bullet">
+                <li>The account ID of the organisation sending funds</li>
+                <li>The organisation's legal name that you want to receive funds from</li>
+            </ul>
+        </div>
+    </div>
+
+            <a class="button button-start" href="/sprint/{{sprint}}/account/transfers/receive/account-id.html">Start</a>
+    
+</main>
+{% endblock %}

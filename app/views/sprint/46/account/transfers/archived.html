@@ -1,0 +1,93 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="transfers-archived" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">
+        Archived transfers
+      </h1>
+            <p class="lede">Old, rejected and expired transfers.</p>
+
+
+
+
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Type</th>
+                <th>Organisation</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>State</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Outbound offer</td>
+            <td>Foxtons Pty
+            </td>
+            <td>11 April 2018</td>
+            <td>-£9,000</td>
+            <td>Rejected<div style="color:#6F777B" class="font-xsmall">18 April 2018</div></td>
+            <td class="numeric"><a href="#" data-org-index="0">Details</a></td>
+        </tr>
+        <tr>
+            <td>Outbound offer</td>
+            <td>Foxtons Pty
+            </td>
+            <td>11 April 2018</td>
+            <td>-£129,000</td>
+            <td>Insufficient funds<div style="color:#6F777B" class="font-xsmall">18 April 2018</div></td>
+            <td class="numeric"><a href="#" data-org-index="0">Details</a></td>
+        </tr>
+        <tr>
+            <td>Outbound offer</td>
+            <td>Acme Ltd
+            </td>
+            <td>11 April 2018</td>
+            <td>-£9,000</td>
+            <td>Expired<div style="color:#6F777B" class="font-xsmall">18 April 2018</div></td>
+            <td class="numeric"><a href="#" data-org-index="0">Details</a></td>
+        </tr>
+        <tr>
+            <td>Inbound offer</td>
+            <td>Laura Ashley Ltd
+            </td>
+            <td>11 April 2018</td>
+            <td>£9,000</td>
+            <td>Expired<div style="color:#6F777B" class="font-xsmall">31 May 2018</div></td>
+            <td class="numeric"><a href="#" data-org-index="0">Details</a></td>
+        </tr>
+        <tr>
+            <td>Inbound offer</td>
+            <td>Travis Perkins Plc
+            </td>
+            <td>11 April 2018</td>
+            <td>£9,000</td>
+            <td>Rejected<div style="color:#6F777B" class="font-xsmall">11 June 2018</div></td>
+            <td class="numeric"><a href="#" data-org-index="0">Details</a></td>
+        </tr>
+    </table>
+    
+    <div class="page-navigation">
+                    <a class="page-navigation__btn previous" href="/sprint/43/account/finance/history_last-month.html" style="visibility:hidden;">
+                        <i class="arrow-button fa fa-angle-left"></i>
+                        <span class="description">Previous <span class="hide-mob">page</span></span>
+                        <span class="counter">1 of 11</span>
+                    </a>
+
+
+
+                   <a style="" class="page-navigation__btn next">
+                        <i class="arrow-button fa fa-angle-right"></i>
+                        <span class="description">Next <span class="hide-mob">page</span></span>
+                        <span class="counter">2 of 8</span>
+                    </a>
+
+                </div>
+</main>
+{% endblock %}

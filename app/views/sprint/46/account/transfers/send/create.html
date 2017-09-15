@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="create-transfer-offer" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+        Create a new transfer offer
+      </h1>
+            <p class="lede">Transfer funds to another apprenticeship account.</p>
+
+</div>
+
+            <h3 class="heading-medium">Before you start</h3>
+            <p>You will need:</p>
+            <ul class="list list-bullet">
+                <li>The account ID of the organisation receiving funds</li>
+                <li>The organisation's legal name you wish to transfer funds to</li>
+                <li>Available funds to transfer</li>
+            </ul>
+        </div>
+    </div>
+
+            <a class="button button-start" href="/sprint/{{sprint}}/account/transfers/send/account-id">Start</a>
+    
+    
+               <h3 class="heading-medium">What you can do</h3>
+            <p>Use this service to:</p>
+            <ul class="list list-bullet">
+                <li>Transfer up to 10% of your apprenticeship levy</li>
+                <li>Support organisations in your supply chain</li>
+            </ul>
+    
+</main>
+{% endblock %}

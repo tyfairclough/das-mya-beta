@@ -1,0 +1,359 @@
+{% extends "layout.html" %} {% block page_title %} Sprint {{sprint}} - Funding {% endblock %} {% block inside_header %} {% endblock %} {% block after_header %} {% include "sprint/"+sprint+"/includes/header.html" %} {% endblock %} {% block content %}
+<main class="add-apprenticeship" id="content" role="main" tabindex="-1">
+
+    <link href="/public/stylesheets/calculations.css" rel="stylesheet" type="text/css">
+    {% include "includes/link-back.html" %}
+
+    
+
+
+
+    <div class="grid-row" id="transfer v1">
+                        <div class="hgroup">
+        <h1 class="heading-xlarge">
+            Add an apprenticeship
+        </h1>
+                    <p>Enter details about the apprenticeships you want to fund with this transfer</p>
+
+</div>
+    
+        <div class="column-two-thirds">
+            <form>
+                        <div class="form-group">
+                            <label for="apprenticeshipName" class="form-label form-label-bold">Choose an apprenticeship</label>
+                            <select id="apprenticeshipName" multiple class="form-control">
+                                <option value="1" selected>Assistant Accountant</option>
+                                <option value="2">Course 2</option>
+                                <option value="3">Course 3</option>
+                            </select>
+                        </div>
+
+<div class="form-group">
+            <label class="form-label" for="english-value">How long is the apprenticeship</label>
+            <input class="form-control text-box-with-month-after" id="english-value" name="english-value" type="text" style="width: 115px" disabled value="18">
+            <label for="english-value" class="text-box-unit">months</label>
+        </div>              
+                
+<div class="form-group">
+  <label class="form-label form-label-bold">Number of apprenticeships</label>
+  <input class="form-control" type="text" style="width: 70px;" value="1">
+</div>
+                
+<div class="form-group">
+    <fieldset>
+      <legend>
+        <span class="form-label-bold">
+          Transfer date
+        </span>
+      </legend>
+      <div class="form-date">
+        <div class="form-group form-group-month">
+          <label class="form-label" for="dob-month1">Month</label>
+          <input class="form-control" id="dob-month1" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12" disabled value="09">
+        </div>
+        <div class="form-group form-group-year">
+          <label class="form-label" for="dob-year1">Year</label>
+          <input class="form-control disabled" id="dob-year1" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2017" disabled value="2017">
+        </div>
+      </div>
+    </fieldset>
+  </div>    
+                
+                <div class="form-group">
+    <fieldset>
+      <legend>
+        <span class="form-label-bold">
+          Start date
+        </span>
+      </legend>
+      <div class="form-date">
+        <div class="form-group form-group-month">
+          <label class="form-label" for="dob-month2">Month</label>
+          <input class="form-control" id="dob-month2" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12" value="11">
+        </div>
+        <div class="form-group form-group-year">
+          <label class="form-label" for="dob-year2">Year</label>
+          <input class="form-control" id="dob-year2" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2017" value="2017">
+        </div>
+      </div>
+    </fieldset>
+  </div>           
+<div class="form-group hidden">
+            <label class="form-label-bold" for="levy-value-2">Monthly outgoings
+                <span class="form-hint">£123,450 available to transfer</span>
+    </label>
+            <label for="levy-value-2" class="text-box-unit">£</label>
+            <input class="form-control text-box-with-unit-before money-mask" id="levy-value-2" name="levy-value-2" type="text" maxlength="22" value="6,000" disabled>
+        </div>
+               
+                <div class="form-group">
+            <label class="form-label-bold" for="levy-value-2">Total transfer value
+                <span class="form-hint">£123,450 available to transfer</span>
+    </label>
+            <label for="levy-value-2" class="text-box-unit">£</label>
+            <input class="form-control text-box-with-unit-before money-mask" id="levy-value-2" name="levy-value-2" type="text" maxlength="22" value="6,000" disabled>
+        </div>
+                
+                <a class="button" href="finalise-transfer.html">Finalise your transfer</a>
+                <a class="button text-link" href="add-apprenticeship.html">Add another apprenticeship</a>
+            </form>
+        </div>
+        
+        <div class="column-one-third">
+            <div class="related">
+                <div class="">
+                <h3 class="heading-medium">Funding calculator</h3>
+                <p>Enter the apprenticeship details to generate totals.</p>
+                    </div>
+                
+<table class="top-border">
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        Funding band maximum
+                    </th>
+                    <td>
+                        £6,000
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        You will offer
+                    </th>
+                    <td>
+                        £6,000
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Funds that will expire
+                    </th>
+                    <td>
+                        £0
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Can be used
+                    </th>
+                    <td>
+                        £6,000
+                    </td>
+                </tr>
+            </tbody>
+    </table> 
+
+                
+<div id="finance-bingo" class="calculator hidden">
+                
+                
+<div class="data blue">
+  <h4 class="data-item bold-large">£6,000</h4>
+  <h5 class="data-item bold-xsmall">Total cost of apprenticeship
+    </h5>
+</div> 
+    
+<div class="data purple">
+  <h4 class="data-item bold-large">£6,000</h4>
+  <h5 class="data-item bold-xsmall">You will offer
+    </h5>
+</div>                
+
+<div class="data fuscia">
+  <h4 class="bold-large">£6,000</h4>
+  <h5 class="bold-xsmall">Funds that will expire
+    </h5>
+</div> 
+    
+    <div class="data pink">
+  <h4 class="data-item bold-xlarge">£35,200</h4>
+  <h5 class="data-item bold-xsmall">Can be used
+    </h5>
+</div>                
+
+               
+                
+                          
+</div>             
+                
+                <br />
+     <details>
+                <summary>What you need to know about transfers:</summary>
+          
+           <ul class="list list-bullet">
+            <li>you have 24 months from the point at which funds are transferred to you to use them</li>
+              <li>If the apprenticeship lasts for longer than 24 months you won’t be able to fund it from a single transfer</li>
+              <li>If the apprenticeship start date is after the transfer has been deposited into your account, you will have less to spend before the funds expire</li>            
+          </ul>
+          
+          <p>The transfer funds show the completion payment of 20% of the total cost of the apprenticeship, which is taken out in the final month.</p>
+<p>
+Transferred funds that do not cover the entire cost of the apprenticeship will not include the final completion payment.
+</p>
+          
+          <h4 class="heading-small">Calculation</h4>      
+          <div id="Codepad">      
+<span id="main-input" class="mathquill-input mathquill-rendered-math" rel="tooltip" title=""><span class="textarea"><textarea></textarea></span><span class="block"><span class="paren" style="transform: scale(1.2, 2.4675);">(</span><span class="block"><span class="fraction"><span class="numerator"><span class="block"><span class="paren" style="transform: scale(1.04444, 1.28333);">(</span><span class="block"><span>2</span><span>7</span><span>0</span><span>0</span><span>0</span><span class="binary-operator">−</span><span class="block"><span class="paren" style="transform: scale(1.03333, 1.225);">(</span><span class="block"><span>2</span><span>7</span><span>0</span><span>0</span><span>0</span><span class="binary-operator">×</span><span>0</span><span>.</span><span>2</span></span><span class="paren" style="transform: scale(1.03333, 1.225);">)</span></span></span><span class="paren" style="transform: scale(1.04444, 1.28333);">)</span></span></span><span class="denominator"><span class="block"><span class="paren" style="transform: scale(1.03333, 1.225);">(</span><span class="block"><span>4</span><span>8</span><span class="binary-operator">−</span><span>1</span></span><span class="paren" style="transform: scale(1.03333, 1.225);">)</span></span></span><span style="display:inline-block;width:0">&nbsp;</span></span></span><span class="paren" style="transform: scale(1.2, 2.4675);">)</span></span><span class="binary-operator">×</span><span class="block"><span class="paren" style="transform: scale(1.03, 1.2075);">(</span><span class="block"><span>2</span><span>4</span><span class="binary-operator">−</span><span>2</span></span><span class="paren" style="transform: scale(1.03, 1.2075);">)</span></span>
+    <span class="block" style="visibility:hidden">
+    <span class="binary-operator">=</span><span>3</span><span>5</span><span>2</span><span>0</span><span>0</span><span>.</span><span>0</span>
+              </span>
+              </span>                </div>
+                          
+          
+          
+              
+         
+                </details>
+
+        </div>
+    </div>
+    
+    </div>
+
+    <div class="grid-row hidden" id="transfer v2">
+            <div class="warning-summary">
+            <h3 class="heading-medium">Important:</h3>
+                <p>As soon as the transferred funds are in your account, the 24 month expiry period will start. If you have received the funds earlier than the course start date or the apprenticeship is more than 24 months, your apprenticeship may not be fully funded.
+
+                </p>
+            </div>        
+                        <div class="hgroup">
+        <h1 class="heading-xlarge">
+            Add an apprenticeship
+        </h1>
+                    <p>Enter details about the apprenticeships you want to fund with this transfer</p>
+
+</div>
+    
+        
+        <div class="column-two-thirds">
+                        
+
+            
+            <form>
+                        <div class="form-group">
+                            <label for="apprenticeshipName" class="form-label form-label-bold">Choose an apprenticeship</label>
+                            <select id="apprenticeshipName" multiple class="form-control">
+                                <option value="1" selected>Digital and Technology Solutions Professional</option>
+                                <option value="2">Course 2</option>
+                                <option value="3">Course 3</option>
+                            </select>
+                        </div>
+            
+                
+<div class="form-group">
+  <label class="form-label form-label-bold">Number of apprenticeships</label>
+  <input class="form-control" type="text" style="width: 70px;" value="1">
+</div>
+                
+   
+                <div class="form-group">
+    <fieldset>
+      <legend>
+        <span class="form-label-bold">
+          Start date
+        </span>
+      </legend>
+      <div class="form-date">
+        <div class="form-group form-group-month">
+          <label class="form-label" for="dob-month2">Month</label>
+          <input class="form-control" id="dob-month2" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12" value="11">
+        </div>
+        <div class="form-group form-group-year">
+          <label class="form-label" for="dob-year2">Year</label>
+          <input class="form-control" id="dob-year2" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2017" value="2017">
+        </div>
+      </div>
+    </fieldset>
+  </div>       
+                <div class="form-group">
+                    <a class="button secondary">Update calculator</a>                
+                </div>
+                
+                            
+                <a class="button" href="finalise-transfer.html">Continue</a>
+
+            </form>
+
+        </div>
+        
+        <div class="column-one-third">
+            <div class="related">
+                <div class="">
+                <h3 class="heading-medium">Transfer calculator</h3>
+                <p>Enter the apprenticeship details to generate calculations.</p>
+                    </div>
+                
+<table class="small responsive">
+                <tbody>
+                    
+                <tr>
+                    <th scope="row">
+                        Your monthly transfer limit<sup>†</sup>
+                    </th>
+                    <td>
+                        £123,450
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Funding band maximum
+                    </th>
+                    <td>
+                        £27,000
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Monthly amount
+                    </th>
+                    <td>
+                        £459.57
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Completion amount
+                    </th>
+                    <td>
+                        £5,400
+                    </td>
+                </tr>
+                    
+            </tbody>
+    </table> 
+
+                
+        
+                                <details>
+                    <summary>Payment schedule</summary>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Date</td>
+                                <td>Transfer amount</td>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>October 2017</td>
+                            <td>£459.57</td>
+                        </tr>
+                    </table>
+                </details>
+                <br />
+     <div class="panel panel-with-thin">
+         <h4 class="heading-small"><sup>†</sup>Your Monthly transfer limit</h4>
+          
+         <p>
+         Your monthly transfer limit is recalculated every month. The figure shown reflects the current month's transfer amount.
+         </p>
+                     
+                </div>
+
+        </div>
+    </div>
+    
+    </div>
+
+</main>
+{% endblock %}

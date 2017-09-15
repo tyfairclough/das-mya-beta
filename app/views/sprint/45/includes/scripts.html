@@ -486,6 +486,9 @@ $(document).ready(function () {
         case 'sender-offer-pending':
             senderOfferPending();
             break;
+        case 'sender-request-received':
+            senderRequesterReceived();
+            break;
         default:
             break;
         };
@@ -494,6 +497,22 @@ $(document).ready(function () {
 
     
 // PAGE FUNCTIONS 
+    
+    
+    function senderRequesterReceived(){
+        $(".button").click(function(e){
+            e.preventDefault();
+            var state = $('input[name=next]:checked').val();
+
+            if (state === "request") {
+                window.location.href = "request-received-accepted"
+                // go to confirm    
+            } else {
+                window.location.href = "../index.html?transferDialog=offerSenderDeclined"
+                // go to confirm                    
+            }            
+        })
+    }
     
     function senderOfferPending(){
         $(".organisation-name").text(localStorage.getItem("organisation-name"));

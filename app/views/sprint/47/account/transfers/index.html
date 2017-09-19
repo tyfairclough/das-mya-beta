@@ -101,8 +101,7 @@
         <thead>
             <tr>
                 <th>State</th>
-                <th>Sending</th>
-                <th>Receiving</th>
+                <th>Sending employer</th>
                 <th>Amount</th>
                 <th>Date</th>
                 <th></th>
@@ -115,27 +114,69 @@
             <td>Acme Ltd
                 <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
             </td>
+            <td>£6,000</td>
+            <td>--</td>
+            <td class="numeric"><a href="receive/offer-received-summary.html">Details</a></td>
+        </tr>
+        <tr data-type="pending" id="receiver-offer-accepted">
+            <td>Offer accepted
+            </td>
             <td>Acme Ltd
                 <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
             </td>
             <td>£6,000</td>
             <td>--</td>
-            <td class="numeric"><a href="receive/offer-received.html">Details</a></td>
+            <td class="numeric"><a href="receive/offer-accepted-summary.html">Details</a></td>
+        </tr>
+        <tr data-type="pending" id="receiver-request-sent">
+            <td>Request sent<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
+            <td>Acme Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£6,000</td>
+            <td>--</td>
+            <td class="numeric"><a href="receive/request-sent-summary.html">Details</a></td>
         </tr>
 
 <!-- RECEIVER END -->         
             
+            
+                    <thead>
+            <tr>
+                <th>State</th>
+                <th>Receiving employer</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+        </thead>
 <!-- SENDER -->    
         <tr data-type="pending" id="sender-offer-sent" >
             <td>Offer sent<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
             <td>GBC Micro Ltd
                 <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
-            </td>            <td>GBC Micro Ltd
+            </td>
+            <td>£6,000</td>
+            <td>--</td>
+            <td class="numeric"><a href="send/offer-sent-summary.html" data-org-index="0">Details</a></td>
+        </tr>
+        <tr data-type="pending" id="sender-request-received" >
+            <td>Request received<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
+            <td>GBC Micro Ltd
                 <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
             </td>
             <td>£6,000</td>
             <td>--</td>
-            <td class="numeric"><a href="send/offer-pending.html" data-org-index="0">Details</a></td>
+            <td class="numeric"><a href="send/request-received-summary.html" data-org-index="0">Details</a></td>
+        </tr>
+        <tr data-type="pending" id="sender-offer-accepted-summary" >
+            <td>Offer accepted</td>
+            <td>GBC Micro Ltd
+                <div style="color:#6F777B" class="font-xsmall">Pete Kowalczyk</div>
+            </td>
+            <td>£6,000</td>
+            <td>--</td>
+            <td class="numeric"><a href="send/offer-accepted-summary.html" data-org-index="0">Details</a></td>
         </tr>
         
 <!-- SENDER END -->            

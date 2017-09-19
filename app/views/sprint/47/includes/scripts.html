@@ -276,6 +276,23 @@ $(document).ready(function () {
             $(".today").text(day + ' ' + monthNames[monthIndex] + ' ' + year);
         }    
     
+
+    
+    function availableTransfer() {
+            payroll = localStorage.getItem("payrollFigure");
+            payrollNumber = parseFloat(payroll.replace(/,/g, ''));
+
+        if ( payrollNumber > 3000000 ) {
+        balance = payrollNumber * 0.1;
+        balanceString = balance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        balanceString = "£" + balanceString;
+        //console.log(balance);
+        return balanceString;
+        } else {
+            balanceString = "No funds available for transfer";
+            return balanceString
+        }
+    }
     
 
 
@@ -471,6 +488,25 @@ $(document).ready(function () {
     
 // PAGE FUNCTIONS 
     
+    
+        function fundingIndex(){
+        
+        $("#your-transactions").click(function(e){
+            e.preventDefault();
+            if ( localStorage.getItem("onboarding") == "1" ) {
+                window.location.href = "/sprint/{{sprint}}/account/finance/__pre-jan.html";                                
+            } else {
+                window.location.href = "/sprint/{{sprint}}/account/finance/history_22nd.html";                
+            }
+        });
+        
+        
+            if ( localStorage.getItem("onboarding") == "1" ) {
+        $(".notice").hide();
+                $(".committed-funds, .expiring-funds, .current-funds").text("£0");
+    };
+    }
+    
         function transfersStart(){
         
          $("#levy-value-2").mask("999,999,999",{reverse: true});
@@ -502,6 +538,8 @@ $(document).ready(function () {
 
     
     function transfersIndex(){
+        
+        $(".transfer-balance").text(availableTransfer());
     }
         
         

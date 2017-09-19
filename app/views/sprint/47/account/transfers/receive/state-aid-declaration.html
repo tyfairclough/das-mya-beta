@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="receive-state-aid-declaration" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+
+                        <div class="hgroup">
+        <h1 class="heading-xlarge">
+            Complete state aid declaration
+        </h1>
+                    <p class="lede text">Enter fiscal year figures
+If the transfer does not complete this declaration will be ignored.</p>
+   </div> 
+    
+
+<form>
+    <fieldset>
+
+<div class="form-group">
+            <label class="form-label" for="2017">State aid 2017
+                <span class="form-hint">Not including this transfer</span>
+            </label>
+            <label for="2017" class="text-box-unit">£</label>
+            <input class="form-control text-box-with-unit-before money-mask" id="2017" name="state-aid" type="text" maxlength="22">
+</div>
+
+<div class="form-group">
+            <label class="form-label" for="2016">State aid 2016
+            </label>
+            <label for="2016" class="text-box-unit">£</label>
+            <input class="form-control text-box-with-unit-before money-mask" id="2016" name="state-aid" type="text" maxlength="22">
+</div>
+        
+<div class="form-group">
+            <label class="form-label" for="2015">State aid 2015
+            </label>
+            <label for="2015" class="text-box-unit">£</label>
+            <input class="form-control text-box-with-unit-before money-mask" id="2015" name="state-aid" type="text" maxlength="22">
+</div>
+        
+<div class="form-group">
+<div class="multiple-choice">
+  <input id="checkbox-telephone-number" name="contact-by-text-phone" type="checkbox" value="true">
+  <label for="checkbox-telephone-number">I declare this information is correct to the best of my knowledge and in good faith.</label>
+</div>      
+</div>        
+
+    </fieldset>
+                
+                <a class="button" href="check-your-answers.html">Continue</a>
+</form>
+    
+
+     
+    
+</main>
+{% endblock %}

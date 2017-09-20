@@ -14,19 +14,20 @@
 
 
 {% block content %}
-<main class="send-offer-accepted-summary" id="content" role="main" tabindex="-1">
+<main class="send-request-accepted-summary" id="content" role="main" tabindex="-1">
     {% include "includes/link-back.html" %}
 
 
 
             <div class="hgroup">
             <h1 class="heading-xlarge">
-        Transfer: offer accepted
+        Transfer: request accepted
       </h1>
             <p class="lede">Your transfer summary.</p>
         </div>
     
    {% include "sprint/"+sprint+"/account/transfers/send/summary.html" %}
+
 
 
     <h2 class="heading-large">Payment summary</h2>
@@ -53,7 +54,6 @@
     <div class="form-group">
         <a href="cancel-transfer.html" class="button error">Cancel transfer</a>
     </div>            
-
 
     
 </main>

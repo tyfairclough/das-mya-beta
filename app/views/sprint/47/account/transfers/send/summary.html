@@ -1,36 +1,4 @@
-{% extends "layout.html" %}
-
-{% block page_title %}
-  Sprint {{sprint}} - Funding
-{% endblock %}
-
-{% block inside_header %}
-
-{% endblock %}
-
-{% block after_header %}
-{% include "sprint/"+sprint+"/includes/header.html" %}
-{% endblock %}
-
-
-{% block content %}
-<main class="send-request-accepted" id="content" role="main" tabindex="-1">
-    {% include "includes/link-back.html" %}
-
-<div class="govuk-box-highlight">
-    <h2 class="heading-large">Transfer accepted</h2>
-    <p>Funds will be debited from your account in accordance with the payment plan.</p>
-</div>
-    
-
-            <div class="hgroup">
-            <h1 class="heading-xlarge">
-        Transfer: request accepted
-      </h1>
-            <p class="lede">Your transfer summary.</p>
-        </div>
-    
-    <div class="grid-row">
+ <div class="grid-row">
         <div class="column-two-thirds">
 <h2 class="heading-medium">
 Receiving employer
@@ -41,7 +9,7 @@ Receiving employer
             Name
           </dt>
           <dd class="cya-answer">
-            Acme Ltd
+            GBC Micro Ltd
           </dd>
         </div>
 
@@ -142,41 +110,6 @@ Transfer details
         </div>
     
       </dl>  
-        </div>
-    </div>
-
-    
-    <h2 class="heading-large">Payment summary</h2>
-    <dl class="govuk-check-your-answers cya-questions-short">
-        <div>
-          <dt class="cya-question">
-            Payments made to date
-          </dt>
-          <dd class="cya-answer">
-              £0
-          </dd>
-        </div>    
-    <div>
-          <dt class="cya-question">
-              Missed payments
-          </dt>
-          <dd class="cya-answer">
-              None
-          </dd>
-        </div>    
-      </dl>
-    <br>
-    <div class="form-group">
-                <a href="payment-plan-total.html">See payment plan</a>    
-    </div>
-
-    <div class="form-group">
-        <a href="cancel-transfer.html" class="button error">Cancel transfer</a>
-    </div>
-
-</main>
-{% endblock %}
-
-
-<!-- end -->
-
+            <br>
+            <a href="payment-plan-total.html">See payment plan</a>
+            

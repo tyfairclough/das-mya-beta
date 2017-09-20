@@ -14,22 +14,18 @@
 
 
 {% block content %}
-<main class="send-offer-declined-summary" id="content" role="main" tabindex="-1">
+<main class="receive-request-accepted-summary" id="content" role="main" tabindex="-1">
     {% include "includes/link-back.html" %}
-
-
-
+    
             <div class="hgroup">
             <h1 class="heading-xlarge">
-        Transfer: offer declined
+        Transfer: request accepted
       </h1>
             <p class="lede">Your transfer summary.</p>
         </div>
-    
-   {% include "sprint/"+sprint+"/account/transfers/send/summary.html" %}
+{% include "sprint/"+sprint+"/account/transfers/receive/summary.html" %}
 
 
-    
 </main>
 {% endblock %}
 

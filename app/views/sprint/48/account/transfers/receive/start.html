@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="receive-request-start" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+<div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+Request a monthly transfer
+                </h1>
+            <p class="lede">Receive levy funds from another employer to cover up to the entire cost of apprenticeship training.</p>
+
+</div>
+            <h3 class="heading-medium">Before you start</h3>
+            <p>You will need:</p>
+            <ul class="list list-bullet">
+                <li>the sending employers apprenticeship account ID</li>
+            </ul>
+            <p>Either</p>
+            <ul class="list list-bullet">
+                <li>basic details of the apprenticeships you want to fund:
+                    <ul class="list list-bullet">
+                        <li>Apprenticeship standard/Framework</li>
+                        <li>start date</li>
+                        <li>number of apprentices</li>
+                    </ul>
+</li>
+            </ul>
+            <p>Or:</p>
+            <ul class="list list-bullet">
+                <li>A monthly transfer amount and duration agreed with the sending employer</li>
+            </ul>
+<a class="button button-start" href="/sprint/{{sprint}}/account/transfers/receive/account-id">Start</a>            
+
+            <h3 class="heading-medium">What you need to know</h3>
+ 
+    <ul class="list list-bullet">
+        <li>you can't re-transfer these funds</li>
+        <li>you can't refund unspent funds</li>
+        <li>you can only fund new starts</li>
+        <li>funds you receive will have expiry dates carried over from the sending employers account.</li>
+        <li>no transfers out are permitted until all transfers in are spent</li>
+    </ul>
+            
+    </div>
+    </div>
+    
+</main>
+{% endblock %}

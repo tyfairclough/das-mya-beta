@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="send-offer-accepted-summary" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+
+
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+        Transfer: offer accepted
+      </h1>
+            <p class="lede">Your transfer summary.</p>
+        </div>
+    
+   {% include "sprint/"+sprint+"/account/transfers/send/summary.html" %}
+
+
+    <h2 class="heading-large">Payment summary</h2>
+    <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Payments to date
+          </dt>
+          <dd class="cya-answer">
+              £0
+          </dd>
+        </div>    
+    <div>
+          <dt class="cya-question">
+              Missed payments
+          </dt>
+          <dd class="cya-answer">
+              None
+          </dd>
+        </div>    
+      </dl>
+    <br>
+
+    <div class="form-group">
+        <a href="cancel-transfer.html" class="button error">Cancel transfer</a>
+    </div>            
+
+
+    
+</main>
+{% endblock %}
+
+
+<!-- end -->
+

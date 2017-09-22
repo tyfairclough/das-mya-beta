@@ -540,6 +540,16 @@ $(document).ready(function () {
     function transfersIndex(){
         
         $(".transfer-balance").text(availableTransfer());
+        
+        $("table").hide();
+        
+     document.onkeypress = function (e) {
+    e = e || window.event;
+                if (e.keyCode === 32) {
+        $("table").toggle();                    
+        $(".panel.panel-width-thin").toggle();                    
+                }
+         };
     }
         
         

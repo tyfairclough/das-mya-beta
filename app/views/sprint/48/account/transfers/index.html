@@ -26,15 +26,36 @@
       </h1>
             <p class="lede">Move funds between apprenticeship accounts.</p>
 
-            <a class="button" href="/sprint/{{sprint}}/account/transfers/send/start" id="offerFunds">Offer funds</a>
-                <a class="button text-link" href="/sprint/{{sprint}}/account/transfers/receive/start" id="requestFunds">Request funds</a>
+                <a class="button" href="/sprint/{{sprint}}/account/transfers/receive/start" id="requestFunds">Request funds</a>
 </div>
 
 
         </div>
     </div>
  
-    <div class="" id="finance-bingo">   
+
+    <div class="grid-row">
+        <div class="column-one-third">
+            <h2 class="heading-small">Your apprenticeship account ID</h2>
+            <p>XGHFEDF</p>        
+        </div>
+        <div class="column-one-third">
+            <div id="transferBalance">
+            <h2 class="heading-small">Available balance to transfer</h2>
+            <p class="transfer-balance">£0</p>
+            </div>
+        </div>
+        <div class="column-one-third hidden">
+            <div id="offerFundsDate">
+        <h2 class="heading-small">Can offer funds from</h2>
+            <p>March 2019</p>         
+            </div>
+        </div>
+    </div>
+    
+    
+    
+        <div class="" id="finance-bingo">   
 
 
         
@@ -68,29 +89,7 @@
             
         </div>
 </div>
-    
-    <hr />
-    
-    <div class="grid-row">
-        <div class="column-one-third">
-            <h2 class="heading-small">Your apprenticeship account ID</h2>
-            <p>XGHFEDF</p>        
-        </div>
-        <div class="column-one-third">
-            <div id="transferBalance">
-            <h2 class="heading-small">Available balance to transfer</h2>
-            <p class="transfer-balance">£0</p>
-            </div>
-        </div>
-        <div class="column-one-third hidden">
-            <div id="offerFundsDate">
-        <h2 class="heading-small">Can offer funds from</h2>
-            <p>March 2019</p>         
-            </div>
-        </div>
-    </div>
-    
-    <hr />
+   
     
 
     <div id="transactions" class="container" style="">

@@ -27,6 +27,7 @@
             <p class="lede">Move funds between apprenticeship accounts.</p>
 
                 <a class="button" href="/sprint/{{sprint}}/account/transfers/receive/start" id="requestFunds">Request funds</a>
+                <a class="button text-link" href="send/request-help.html">Offer funds</a>
 </div>
 
 
@@ -109,7 +110,7 @@
         </thead>
         <tbody>
 <!-- RECEIVER START -->                     
-        <tr data-type="pending" id="receiver-offer-received">
+        <tr data-type="pending" id="receiver-offer-received" class="hidden">
             <td>Offer received<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
             <td>Acme Ltd
                 
@@ -118,7 +119,7 @@
             <td>--</td>
             <td class="numeric"><a href="receive/offer-received-summary.html">Details</a></td>
         </tr>
-        <tr data-type="pending" id="receiver-offer-accepted">
+        <tr data-type="pending" id="receiver-offer-accepted" class="hidden">
             <td>Offer accepted
             </td>
             <td>Acme Ltd
@@ -128,7 +129,7 @@
             <td>--</td>
             <td class="numeric"><a href="receive/offer-accepted-summary.html">Details</a></td>
         </tr>
-        <tr data-type="pending" id="receiver-offer-declined">
+        <tr data-type="pending" id="receiver-offer-declined" class="hidden">
             <td>Offer declined</td>
             <td>Acme Ltd
                 
@@ -205,7 +206,7 @@
         </thead>
         <tbody>
 <!-- SENDER -->    
-        <tr data-type="pending" id="sender-offer-sent" >
+        <tr data-type="pending" id="sender-offer-sent" class="hidden">
             <td>Offer sent<span class="label mellow-red" style="display:inherit;">Expires in 3 days</span></td>
             <td>GBC Micro Ltd
                 
@@ -214,7 +215,7 @@
             <td>--</td>
             <td class="numeric"><a href="send/offer-sent-summary.html" data-org-index="0">Details</a></td>
         </tr>
-        <tr data-type="pending" id="sender-offer-accepted-summary" >
+        <tr data-type="pending" id="sender-offer-accepted-summary"  class="hidden">
             <td>Offer accepted</td>
             <td>GBC Micro Ltd
                 
@@ -223,7 +224,7 @@
             <td>--</td>
             <td class="numeric"><a href="send/offer-accepted-summary.html" data-org-index="0">Details</a></td>
         </tr>
-        <tr data-type="pending" id="sender-offer-declined-summary" >
+        <tr data-type="pending" id="sender-offer-declined-summary"  class="hidden">
             <td>Offer declined</td>
             <td>GBC Micro Ltd
                 

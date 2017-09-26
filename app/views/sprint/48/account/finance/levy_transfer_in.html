@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="elements-index" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="hgroup">
+      <h1 class="heading-large">
+          Levy funds transferred
+            </h1>
+            
+            <ul>
+                <li>Date  <span class="bold-small">22 April 2018</span></li>
+                <li>Employer  <span class="bold-small">Acme Ltd</span></li>
+            </ul>
+        </div>
+        
+
+        
+     </div>   
+        
+      
+   
+    </div>
+                  <table class="responsive">
+            <thead>
+                <tr>
+                    <th class="numeric" scope="col">Transferred levy</th>
+                    <th class="numeric" scope="col">Transferred 10% Top up</th>
+                    <th class="numeric " scope="col">Expiry date</th>
+                    <th class="numeric " scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr class="responsive-tr">
+                        <td data-label="Levy paid to HMRC" class="numeric">
+                            £200.00
+                        </td>
+                        <td data-label="English %" class="numeric">
+                            £20.00
+                        </td>
+                        <td data-label="10% Top up" class="numeric">
+                            November 2017
+                        </td>
+                        <td data-label="Amount" class="numeric">
+                            £220.00
+                        </td>
+                    </tr>
+                <tr class="responsive-tr">
+                        <td data-label="Levy paid to HMRC" class="numeric">
+                            £43.20
+                        </td>
+                        <td data-label="English %" class="numeric">
+                            £4.80
+                        </td>
+                        <td data-label="10% Top up" class="numeric">
+                            December 2017
+                        </td>
+                        <td data-label="Amount" class="numeric">
+                            £48.00
+                        </td>
+                    </tr>
+                <tr class="total">
+                    <td colspan="3" class="numeric">&nbsp;</td>
+
+                    <td data-label="Total amount" class="total numeric">£289.00</td>
+                </tr>
+            </tbody>
+        </table>
+    
+<div class="grid-row hidden">
+    <div class="column-two-thirds">
+        
+
+        <!--<p>Amount levied by HMRC might include negative adjustments for previous months. Negative adjustments can happen if you paid too much levy in a previous month. 			</p>-->
+        
+        <details>
+            <summary>What is English percentage?</summary>         
+            <div class="panel panel-width-thin">
+          <p>Your English percentage is provided by HMRC based on the data in your payroll submissions. It represents the proportion of your payroll that’s paid to your employees that live in England. </p>
+            <p>Check your payroll data if you think there are any issues with your English percentage values.</p>
+                </div>
+        </details>
+        
+        <div class="info-highlighted">
+            <p><a href="#">Contact HMRC</a> if the amount levied isn't what you expected.</p>
+        </div>
+        
+        
+    </div>
+    </div>
+<script>
+
+    </script>
+</main>
+{% endblock %}

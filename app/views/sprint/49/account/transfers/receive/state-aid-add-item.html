@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="receive-state-aid-declaration" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+
+                        <div class="hgroup">
+        <h1 class="heading-xlarge">
+            Add other state aid
+        </h1>
+                    
+                            <p class="lede text">Edit your state-aid declaration for the given tax year 4 April to 5 April</p>
+   </div> 
+    
+    
+    <div class="grid-row">
+        <div class="column-two-thirds">
+                <form>
+    
+        
+            <div class="form-group">
+            <label class="form-label" for="state-aid-who">Organisation</label>
+                <label class="form-hint" for="state-aid-who">who gave you the state aid</label>
+            <input class="form-control" id="state-aid-value" name="state-aid-who" type="text">
+        </div>
+            
+            
+            <div class="form-group">
+            <label class="form-label" for="state-aid-value">Organisation</label>
+                <label class="form-hint" for="state-aid-value">who gave you the state aid</label>
+                            <label for="state-aid-value" class="text-box-unit">€</label>
+            <input class="form-control text-box-with-unit-before" id="state-aid-value" name="state-aid-value" type="text">
+        </div>
+            
+<div class="form-group">
+            <fieldset>
+              <legend>
+                <span class="form-label-bold">Date of assistance</span>
+              </legend>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label class="form-label" for="dob-day">Day</label>
+                  <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                </div>
+                <div class="form-group form-group-month">
+                  <label class="form-label" for="dob-month">Month</label>
+                  <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                </div>
+                <div class="form-group form-group-year">
+                  <label class="form-label" for="dob-year">Year</label>
+                  <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+            
+
+        <div class="form-group">
+            <a class="button" href="state-aid-declaration.html">Add</a>
+            <a class="button text-link" href="state-aid-add-item.html">Save and add another</a>
+        </div>
+    </form>
+        </div>
+        <div class="column-one-third">
+            <aside class="related">
+                <h3 class="heading-medium">How to calculate amount in euros</h3>
+                <p>ENTER THE FIGURE IN EUROS BASED ON THE TIME THE OFFER WAS MADE, NOT THE MONEY SENT (UNLESS IT WAS THE SAME DAY) USING THE EUROPEAN COMISSION EXCHANGE RATE FOR THAT DAY</p>
+            </aside>
+        </div>
+    </div>
+    
+
+ 
+    
+</main>
+{% endblock %}

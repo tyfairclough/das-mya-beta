@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="receive-state-aid-declaration" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+
+                        <div class="hgroup">
+        <h1 class="heading-xlarge">
+            Confirm your state aid declaration
+        </h1>
+                    
+   </div> 
+    
+    
+    <div class="grid-row">
+        <div class="column-two-thirds">
+          
+    <table class="top-border">
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        Employer name
+                    </th>
+                    <td>
+                        Acme ltd
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Your name
+                    </th>
+                    <td>
+                        <span class="user-name">Joe Bloggs</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Date
+                    </th>
+                    <td>
+                        <span class="today">23rd October</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Declaration amount
+                    </th>
+                    <td>
+                        €123,456.78
+                    </td>
+                </tr>
+            </tbody></table>
+    
+    <form>
+<div class="form-group">
+<div class="multiple-choice">
+  <input id="checkbox-telephone-number" name="contact-by-text-phone" type="checkbox" value="true">
+  <label for="checkbox-telephone-number">I declare this information is correct to the best of my knowledge and in good faith.</label>
+</div>      
+</div>
+        <div class="form-group">
+            <a class="button" href="state-aid-authorised.html">Continue</a>
+            <a class="button text-link" href="state-aid-add-item.html">Cancel transfer</a>
+        </div>
+    </form>
+    
+            <br clear="all" />
+
+    <div class="notice text">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+Please note that declaration amount is not the actual amount received. This can change based on exchange rate fluctuations  </strong>
+</div>
+     
+        </div>
+    </div>
+  
+    
+</main>
+{% endblock %}

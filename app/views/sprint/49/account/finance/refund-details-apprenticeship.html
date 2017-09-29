@@ -1,0 +1,150 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="elements-index" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="hgroup">
+      <h1 class="heading-large">
+          Refund: apprentice details
+            </h1>
+            
+            <ul>
+                <li>Date  <span class="bold-small">5 July 2018</span></li>
+                <li>Training provider <span class="bold-small">Acme ltd</span></li>
+                <li>Course <span class="bold-small">Financial services administrator level 3</span></li>
+            </ul>
+        </div>
+        
+
+        
+     </div>   
+        
+      
+   
+    </div>
+
+               <table>
+                      <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="2" class="colspan cofunding">Co-investment</th>
+                          </tr>
+                      </thead>
+            <thead>
+                <tr>
+                    <th scope="col">Apprentice</th>
+                    <th class="numeric" scope="col">Total</th>
+                    <th class="numeric" scope="col">Levy refunded</th>
+                    <th class="numeric cofunding" scope="col">90% refunded to Government</th>
+                    <th class="numeric cofunding" scope="col">10% owed to you</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr class="responsive-tr">
+                        <td>
+                            Ty Fairclough                            
+                        </td>
+                        <td class="numeric">
+                            £250
+                        </td>
+                        <td class="numeric">
+                            £250
+                        </td>
+                        <td class="numeric cofunding">
+                            £562.50
+                        </td>
+                        <td class="numeric cofunding">
+                            £62.50
+                        </td>
+                    </tr>
+                <tr class="responsive-tr">
+                        <td>
+                            Fred Brenton
+                        </td>
+                        <td class="numeric">
+                            £250
+                        </td>
+                        <td class="numeric">
+                            £125
+                        </td>
+                        <td class="numeric cofunding">
+                            £112.50
+                        </td>
+                        <td class="numeric cofunding">
+                            £12.50
+                        </td>
+                    </tr>
+                <tr class="responsive-tr">
+                        <td>
+                            Elizabeth Watson
+                    </td>
+                        <td class="numeric">
+                            £250
+                        </td>
+                        <td class="numeric">
+                            
+                        </td>
+                        <td class="numeric cofunding">
+                            £225
+                        </td>
+                        <td class="numeric cofunding">
+                            £25
+                        </td>
+                    </tr>
+              
+                <tr class="responsive-tr">
+                        <td>
+                            Sarah Thompson
+                    </td>
+                        <td class="numeric">
+                            £250
+                        </td>
+                        <td class="numeric">
+                            
+                        </td>
+                        <td class="numeric cofunding">
+                            £225
+                        </td>
+                        <td class="numeric cofunding">
+                            £25
+                        </td>
+                    </tr>
+                <tr class="total">
+                    <th scope="row"><span class="vh">Amount</span></th>
+                    
+                    <td class="numeric">£1,000</td>
+                    <td class="numeric">£450</td>
+                    <td class="numeric cofunding">£562.50</td>
+                    <td class="numeric cofunding">£62.20</td>
+                </tr>
+            </tbody>
+        </table>
+<div class="grid-row">
+    <div class="column-two-thirds">
+        
+        <p>Your refund doesn't include the costs of any apprenticeships above the <a href="#">funding caps</a></p>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</main>
+{% endblock %}

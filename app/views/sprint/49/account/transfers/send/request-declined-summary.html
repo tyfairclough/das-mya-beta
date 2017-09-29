@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="send-request-declined-summary" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+
+
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+        Transfer: request declined
+      </h1>
+            <p class="lede">Your transfer summary.</p>
+        </div>
+    
+   {% include "sprint/"+sprint+"/account/transfers/send/summary.html" %}
+
+
+    
+</main>
+{% endblock %}
+
+
+<!-- end -->
+

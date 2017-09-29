@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="receive-request-accepted-summary" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+    
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+        Transfer: request accepted
+      </h1>
+            <p class="lede">Your transfer summary.</p>
+        </div>
+{% include "sprint/"+sprint+"/account/transfers/receive/summary.html" %}
+
+
+</main>
+{% endblock %}
+
+
+<!-- end -->
+

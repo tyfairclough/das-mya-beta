@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="send-employer-have-account" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+<div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+Does the employer have an apprenticeship account?
+                </h1>
+
+</div>
+
+            <form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend>
+        <h1 class="heading-medium sr-only">
+Does the employer have an apprenticeship account?
+        </h1>
+      </legend>
+
+      <div class="multiple-choice" data-target="no-id-help">
+        <input id="no-id" type="radio" name="radio-group" value="No">
+        <label for="no-id">No, they do not currently have an account</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="no-id-help">
+        <p>Receiving employers must set up an apprenticeship service account so that they can access your transferred funds. Email this link to them and return to the service once they have an account.
+
+<a href="http://education.gov.uk/manage-apprenticeship-signup">http://education.gov.uk/manage-apprenticeship-signup</a></p>
+      </div>
+
+      <div class="multiple-choice">
+        <input id="has-id" type="radio" name="radio-group" value="Yes">
+        <label for="has-id">Yes, I know their account ID</label>
+      </div>
+
+
+    </fieldset>
+  </div>
+                
+                <a class="button" href="account-id.html">Continue</a>
+</form>
+            
+            
+            
+    </div>
+    </div>
+    
+</main>
+{% endblock %}

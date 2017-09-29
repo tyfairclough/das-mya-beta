@@ -14,26 +14,21 @@
 
 
 {% block content %}
-<main class="send-payment-failed-summary" id="content" role="main" tabindex="-1">
+<main class="receive-offer-accepted-summary" id="content" role="main" tabindex="-1">
     {% include "includes/link-back.html" %}
 
 
-<div class="error-summary">
-        <h3 class="heading-medium">Payment failed</h3>
-        <p>This month'  s transfer has failed.
-The apprenticeships that this payment was due to cover will now be
-co-invested by the receiving employer.</p>
-    </div>
-    
-    
+
             <div class="hgroup">
             <h1 class="heading-xlarge">
-        Transfer: active
+        Transfer: offer accepted
       </h1>
             <p class="lede">Your transfer summary.</p>
         </div>
     
-   {% include "sprint/"+sprint+"/account/transfers/send/summary.html" %}
+    {% include "sprint/"+sprint+"/account/transfers/receive/summary.html" %}
+
+        
 
     <h2 class="heading-large">Payment summary</h2>
     <dl class="govuk-check-your-answers cya-questions-short">
@@ -55,7 +50,12 @@ co-invested by the receiving employer.</p>
         </div>    
       </dl>
     <br>
-  
+
+    <div class="form-group">
+        <a href="cancel-transfer.html" class="button error">Cancel transfer</a>
+    </div>            
+
+
     
 </main>
 {% endblock %}

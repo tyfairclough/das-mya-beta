@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="receive-apprenticeships-in-request" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+
+                        <div class="hgroup">
+        <h1 class="heading-xlarge">
+Apprenticeships in your request
+                            </h1>
+                    <p class="lede">Add transfers for apprenticeships you want to fund</p>
+                            <div class="info-highlighted">
+                                <p class="">Please note that the declaration here is to calculate the correct amount to fund. The receiving employer can spend these funds however they choose.</p>
+                            </div>
+
+   </div> 
+    
+
+                    <table class="responsive">
+        <thead>
+            <tr>
+                <th>Apprenticeship</th>
+                <th class="numeric">Apprentices</th>
+                <th class="numeric">Start date</th>
+                <th class="numeric">Duration</th>
+                <th class="numeric">Transfer amount</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody><tr>
+            <td>Assistant Accountant<span class="form-hint">level 2</span></td>
+            <td class="numeric">1</td>
+            <td class="numeric">November 2017</td>
+            <td class="numeric">18 months</td>
+            <td class="numeric">£6,000</td>
+            <td><a href="#remove">Remove</a></td>
+        </tr>
+        </tbody><tfoot>
+            <tr class="total">
+            <td colspan="4">&nbsp;</td>
+            <td data-label="Total amount" class="total numeric">£6,000</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tfoot>
+    </table>
+        
+
+
+
+
+        <div class="panel panel-width-thin">
+                <h3 class="heading-medium">Payment plan</h3>
+            <p>See the monthly outgoings and final payment table</p>
+    <a href="payment-plan-total.html">View payment plan</a>
+            </div>
+                <a class="button" href="state-aid-question.html">Continue</a>
+                <a class="button text-link" href="add-apprenticeship.html">Add another apprenticeship</a>
+     
+    
+</main>
+{% endblock %}

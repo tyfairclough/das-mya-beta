@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="receive-state-aid-question" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    
+
+                        <div class="hgroup">
+        <h1 class="heading-xlarge">
+            State aid declaration
+        </h1>
+                    <p class="lede text">10% of the transfer will become a state aid payment. There are rules about state aid and you'll need to make a declaration. 
+</p>
+                            <p><a href="https://www.gov.uk/guidance/state-aid">What is state aid?</a></p>
+   </div> 
+    
+
+<form>
+    <fieldset>
+  <div class="form-group">
+      <legend>
+        <h1 class="heading-medium">
+Do you currently receive state aid?</h1>
+      </legend>
+
+        </div>
+      
+      <div class="form-group">
+      <div class="multiple-choice">
+        <input id="yes" type="radio" name="radio-group" value="Yes">
+        <label for="yes">Yes, I received other state aid payments in the last 3 years.</label>
+      </div>
+
+
+      <div class="multiple-choice">
+        <input id="no" type="radio" name="radio-group" value="No">
+        <label for="no">No this is my first state aid payment.</label>
+      </div>
+  </div>
+
+
+    </fieldset>
+                
+                <a class="button" href="state-aid-declaration.html">Continue</a>
+</form>
+    
+
+     
+    
+</main>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="elements-index" id="content" role="main" tabindex="-1">
+{% include "includes/link-back.html" %}
+ <div class="grid-row">
+
+           <div class="column-two-thirds">
+  <h1 class="heading-xlarge">Choose bulk upload file</h1>
+    <p>Add details of multiple apprentices to your chosen training course using a Microsoft Excel file.</p>
+    <table class="">
+                    <!--thead>
+                      <tr>
+                        <h2 class="heading-medium">Apprenticeship 1</h2>
+                           <th scope="col"></th>
+                          <th scope="col"></th>
+                           <th scope="col"></th>
+                      </tr>
+                    </thead-->
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                       <tr>
+                        <td>Chosen training course</td>
+                        <td>Mechatronics engineer, Level 4</td>
+                        <td><a href="choose-training-employer">Change</a></td>
+                      </tr>
+                    <tr>
+                        <td>Course length</td>
+                        <td>24 months</td>
+                         <td><a href="change-course-length">Change</a></td>
+                      </tr>
+                        <tr id="upload-alert">
+                        <td>File</td>
+                        <td>Acme-apprentices.xlsx</td>
+                        <td><a href="change-course-length">Change</a></td>
+                      </tr>
+                    </tbody>
+                </table>
+
+
+
+
+  <form action="#" id="upload-button-form">
+      <div class="form-group">
+                <div class="button secondary" id="anotherButton">Choose file</div> 
+          </div>
+           <input class="button rj-dont-display" type="button" id="bulk-upload-finish" value="Add and finish">
+
+    </form>
+     </div>
+
+
+</div>
+    
+</main>
+{% endblock %}

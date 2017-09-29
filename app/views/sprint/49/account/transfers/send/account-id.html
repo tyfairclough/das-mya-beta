@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="send-employer-account-id" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+<div class="grid-row">
+        <div class="column-two-thirds">
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+Which employer are you funding apprenticeships for?
+                </h1>
+
+</div>
+
+
+        </div>
+    </div>
+    
+<div class="grid-row">
+        <div class="column-two-thirds">
+            <form>
+            <div class="form-group">
+            <label name="input-keywords" for="input-keywords" class="form-label-bold">Enter the apprenticeship account ID
+                    <span class="form-hint">Enter the receiving employer's apprenticeship account ID.
+You will need to request this directly from the employer.</span>
+                </label>
+            <input class="form-control" id="input-keywords" type="text">
+            </div>
+            </form>
+
+            <a class="button" href="confirm-receiving.employer.html">Continue</a>        
+        </div>
+        <div class="column-one-third">
+            <div class="related">
+            <h3 class="heading-medium">Re-use previously transferred receiptients</h3>
+            <ul class="list list-links">
+                <li><a href="#">Acme Limited</a><span class="form-hint">XHGDK/54</span></li>
+                <li><a href="#">Warner Bros LLC</a><span class="form-hint">XHGDK/54</span></li>
+                <li><a href="#">Anvil Pty</a><span class="form-hint">XHGDK/54</span></li>
+                <li><a href="#">Universal Pictures Plc</a><span class="form-hint">XHGDK/54</span></li>
+            </ul>
+            </div>        
+        </div>
+    </div>
+    
+</main>
+{% endblock %}

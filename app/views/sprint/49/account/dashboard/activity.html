@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="activity-dashboard" id="content" role="main" tabindex="-1">
+
+
+          <h2 class="heading-xlarge">
+Activity         </h2>
+    
+        
+
+
+    
+    <div class="grid-row">
+        <div class="column-one-third">
+            <br>
+            <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Search</h2>
+                    <div class="toggled-content">
+
+                  <div class="form-group">
+                            <label for="apprenticeshipKeyword" class="form-label sr-only">Keyword or job role</label>
+                            <input id="apprenticeshipKeyword" type="text" class="form-control" value="">
+                </div>
+                    </div>
+                </fieldset>
+            
+            <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Type</h2>
+                    <div class="toggled-content">
+                        <div class="form-group">
+                                <legend for="ofsteadFilter" class="form-label sr-only">Type</legend>                            
+                            <div class="multiple-choice">
+                                <input id="ofstedFilter-1" type="checkbox" value="1">
+                                <label class="block-label" for="ofstedFilter-1">Payment failure</label>
+                            </div>
+                            <div class="multiple-choice">
+                                <input id="ofstedFilter-2" type="checkbox" value="2">
+                                <label class="block-label" for="ofstedFilter-2">Apprentice change</label>
+                            </div>
+                            <div class="multiple-choice">
+                                <input id="ofstedFilter-3" type="checkbox" value="3">
+                                <label class="block-label" for="ofstedFilter-3">Account change</label>
+                            </div>
+                            <div class="multiple-choice">
+                                <input id="ofstedFilter-4" type="checkbox" value="4">
+                                <label class="block-label" for="ofstedFilter-4">Team change</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>   
+            <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Team member</h2>
+                <div class="toggled-content">
+                        <div class="form-group">
+                            <label for="apprenticeshipName" class="form-label">Team member</label>
+                            <select id="apprenticeshipName" class="js-states form-control select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true">
+                                <option id="Accounting  level 2">Pete Kowalczyk</option>
+                                <option id="Accounting  level 2">Andy Samberg</option>
+                                <option id="Accounting  level 3">Ella Dabrowski</option>
+                            </select>
+                        </div>
+                </div>
+            </fieldset>
+            
+            <fieldset class="filters filters-accordion">
+                    <h2 class="toggler heading-small">Apprentice</h2>
+                <div class="toggled-content">
+                        <div class="form-group">
+                            <label for="apprenticeshipName" class="form-label">Apprentice</label>
+                            <select id="apprenticeshipName" class="js-states form-control select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true">
+                                <option id="Accounting  level 2">Suzane Kowalczyk</option>
+                                <option id="Accounting  level 2">Donna Summer</option>
+                                <option id="Accounting  level 3">Byron B. Urger</option>
+                            </select>
+                        </div>
+                </div>
+            </fieldset>
+            
+            
+            
+        </div>
+        <div class="column-two-thirds">
+            <div class="timeline">
+  <div class="entry">
+    <div class="title">
+      <span class="bold-xsmall">Today at 5:35 PM</span>
+    </div>
+    <div class="body">
+      <p><b>Failed payment: £5,000</b> for Anne Smith to Acme training ltd on 17 July 2017 - <a href="#">make sure Pete's details are correct</a>.</p>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+      <span class="bold-xsmall">Yesterday at 5:35 PM</span>
+    </div>
+    <div class="body">
+        <p><b>Outgoing payments made</b>: £14,500 for July 2017 - <a href="#">see details</a>. 	</p>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+      <span class="bold-xsmall">Yesterday at 5:35 PM</span>
+    </div>
+    <div class="body">
+        <p><b>Tesco food ltd has been added</b> added to your account by Pete Kowalczyk - <a href="#">see details</a>. 	</p>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+      <span class="bold-xsmall">14 June 2017 at 5:35 PM</span>
+    </div>
+    <div class="body">
+      <p><b>
+3 cohorts updated</b> by Pete Kowalczyk- <a href="#">see details</a>.</p>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="title">
+      <span class="bold-xsmall">14 June 2017 at 5:35 PM</span>
+    </div>
+    <div class="body">
+      <p><b>12 apprentice details updated</b> by Pete Kowalczyk - <a href="#">see details</a>.</p>
+    </div>
+  </div>
+
+</div>
+        </div>
+    </div>
+
+</main><!-- / #content -->
+{% endblock %}

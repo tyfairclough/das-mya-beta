@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="send-request-help" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="hgroup">
+      <h1 class="heading-large">
+          How to offer funds
+            </h1>
+            
+            <p>TELL THE RECEIVING EMPLOYER Your receiving employer will need to request some apprenticeships to be funded from you. </p>
+            <ul class="list list-links">
+                <li>THEY NEED A LEVY ACCOUNT</li>
+                <li>THEY NEED THE SENDING ACCOUNT ID</li>
+            </ul>
+            <p><a href="#">Link to creating an account for non-levy payers</a></p>
+        </div>  
+     </div>   
+    </div>
+
+</main>
+{% endblock %}

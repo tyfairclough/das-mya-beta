@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="send-request-received-summary" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+
+
+            <div class="hgroup">
+            <h1 class="heading-xlarge">
+        Transfer: request received
+      </h1>
+            <p class="lede">Your transfer summary.</p>
+        </div>
+    
+   {% include "sprint/"+sprint+"/account/transfers/send/summary.html" %}
+
+
+  
+    
+    <form>
+    <legend>
+        <h1 class="heading-medium">Do you wish to accept this transfer request?</h1>
+      </legend>
+        <div class="form-group">
+      <div class="multiple-choice">
+        <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+        <label for="radio-1">Yes, send Acme Ltd the requested transfer amount</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+        <label for="radio-2">No, decline this request</label>
+      </div>
+  </div>
+        <a class="button" href="request-accepted.html">Continue</a>
+    </form>
+    
+</main>
+{% endblock %}
+
+
+<!-- end -->
+

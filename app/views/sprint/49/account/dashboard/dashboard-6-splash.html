@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="account-dashboard" id="content" role="main" tabindex="-1">
+
+
+   <section id="welcome" style="position: relative;">
+        <div class="">
+        <h2 class="heading-xlarge">Welcome to your new digital account</h2>
+        <p class="lede">Please take a moment to familiarise yourself with the digital service.</p>
+        <a href="#" style="position: absolute;bottom: 0;background: #2e358b;padding: 10px 15px;color: white;left: 30px;">Don't show this message again<i class="fa fa-times" style="margin-left: 10px;"></i></a>
+        </div>
+        <hr>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+                            
+                    
+                            <h3 class="bold-medium">Checklist</h3>
+                <p>In order to spend your funds you'll need to complete these initial tasks:</p>
+<table class="">
+                          <thead>
+                            <tr>
+                              <th scope="col" style="padding-top:0"></th>
+                              <th scope="col" style="padding-top:0"></th>
+                               <th scope="col" style="padding-top:0"></th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+           <tr>
+                                                                 <td class="bold-medium">
+                                    1
+                                 </td>
+                              <!--quick hack, will fix -->
+                              <td><a href="/sprint/28/account/finance/index">Add sources of funding</a> by adding PAYE schemes to your account.</td>
+                  
+                                
+                              </tr>
+                             <tr id="" class="">
+                                 <td class="bold-medium">
+                                   2
+                                 </td>
+                              <td style="width: 100%">Then <a href="/sprint/28/account/organisations/index">add each organisation</a> you intend to sign provider agreements with.</td>
+                                
+                              </tr>
+                             <tr>
+                                                                <td class="bold-medium">
+                                    3
+                                 </td>
+                                
+                             <td style="width: 100%">Finally for each organisation added an authorised representative needs to <a href="/sprint/28/account/organisations/index">digitaly sign an SFA agreement</a>.</td>
+                                 
+                                
+                              </tr>
+                   
+
+                             <tr id="trainingProviders" class="hidden">
+                                                                <td class="bold-medium">
+                                    4
+                                 </td>
+                              <td><a href="http://www.findapprenticeshiptraining.sfa.bis.gov.uk">Explore training and find a provider.</a></td>
+                                <td class="looks-like-a-link-underline"></td>
+                              </tr>
+
+                              <tr id="endpointAssessment" class="hidden">
+                                                                 <td class="bold-medium">
+                                    5
+                                 </td>
+                              <td><a href="https://www.gov.uk/government/collections/register-of-apprentice-assessment-organisations#employers-looking-for-an-assessment-organisation" rel="external">Learn more about Endpoint Assesment.</a></td>
+                                <td class="looks-like-a-link-underline"></td>
+                              </tr>
+
+                              <tr id="endpointAssessment" class="hidden">
+                                                                 <td class="bold-medium">
+                                    6
+                                 </td>
+                              <td><a href="https://www.gov.uk/government/collections/register-of-apprentice-assessment-organisations#employers-looking-for-an-assessment-organisation" rel="external">Recruit your first apprentice.</a></td>
+                                <td class="looks-like-a-link-underline"></td>
+                              </tr>
+
+
+                          </tbody>
+                      </table>
+            </div>
+                        <div class="column-third">
+
+                 <aside class="" id="help2">
+  <h3 class="heading-medium">Your first apprentice</h3>
+                <p>A 3 minute guide to authorising your first apprenticeship payment.</p>
+
+       <iframe class="form-group" id="youTubeResponsive" width="640" height="360" src="https://www.youtube.com/embed/ofbDKGuB0X0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen="" style="max-width: 100%; height: auto;"></iframe>
+<br clear="all" />
+                <!--<a href="#" class="button text-link">Dismiss</a>-->
+
+            </aside>   
+                
+<!--<hr />
+             <h3 class="bold-medium">Most used pages</h3>
+                <br>
+                <ul class="list list-bullet">
+                <li><a href="/sprintbeta0
+
+
+
+/organisation/step_b1?flow=addOrg">Add an organisation</a></li>
+                <li><a href="findapprenticeshiptraining.sfa.bis.gov.uk">Find a training provider</a></li>
+                <li><a href="https://das-alpha-node-ui-proto.herokuapp.com/sprintbeta1/contracts/new-contract">Start a new commitment</a></li>
+            </ul>
+-->
+            </div>
+        </div>
+    </section>
+ 
+    <script>
+        $("document").ready(function(){
+           $("i").click(function(e){
+               e.preventDefault();
+               $("#welcome").hide();
+           }) 
+        });
+    </script>
+
+
+
+</main><!-- / #content -->
+{% endblock %}

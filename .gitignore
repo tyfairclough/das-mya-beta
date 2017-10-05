@@ -39,3 +39,4 @@ jspm_packages
 govuk_modules/govuk_frontend_toolkit/package.json
 govuk_modules/govuk_template/package.json
 govuk_modules/govuk_frontend_toolkit/package.json
+govuk_modules/*

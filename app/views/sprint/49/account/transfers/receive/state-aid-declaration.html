@@ -17,9 +17,57 @@
 <main class="receive-state-aid-declaration" id="content" role="main" tabindex="-1">
     {% include "includes/link-back.html" %}
 
-    
+    <div class="grid-row logic-page">
+    <div class="column-two-thirds">
 
-                        <div class="hgroup">
+<div class="hgroup">
+    <h1 class="heading-xlarge">State aid declaration</h1>
+    <p>Choose an option that fits your use case.</p>
+</div>     
+        
+        <form>
+    <fieldset>
+
+        <div class="form-group">
+            
+            <div class="multiple-choice">
+        <input id="radio-1" type="radio" name="radio-group" value="1">
+        <label for="radio-1">        I received levy transfer before
+</label>
+      </div>
+            
+            <div class="multiple-choice">
+        <input id="radio-2" type="radio" name="radio-group" value="2">
+        <label for="radio-2">                I said I had received state aid, but none from transfers
+</label>
+      </div>
+            
+            <div class="multiple-choice">
+        <input id="radio-22" type="radio" name="radio-group" value="22">
+        <label for="radio-22">                I said I had received state aid, I have added it into the system
+</label>
+      </div>
+            
+            <div class="multiple-choice">
+        <input id="radio-3" type="radio" name="radio-group" value="3">
+        <label for="radio-3">                I said I didn't received state aid before
+</label>
+      </div>
+            </div>
+        <div class="form-group">
+        <a href="#" class="button">Continue</a>
+        </div>            
+    </fieldset>
+</form>
+
+
+
+    </div>
+  </div>
+
+    
+    <div id="v1" class="hidden">
+    <div class="hgroup">
         <h1 class="heading-xlarge">
             Complete state aid declaration
         </h1>
@@ -40,26 +88,102 @@
           </thead>
          <tbody>
     <tr>
-      <th scope="row">ESFA <span class="form-hint">(levy transfer)</span></th>
+      <td>ESFA <span class="form-hint">(levy transfer)</span></td>
       <td class="numeric">€1,050.00</td>
       <td>January 2015</td>
       <td><a href="state-aid-remove-item.html" style="visibility:hidden">Remove</a></td>
     </tr>
     <tr>
-      <th scope="row">ESFA <span class="form-hint">(levy transfer)</span></th>
+      <td>ESFA <span class="form-hint">(levy transfer)</span></td>
       <td class="numeric">€309.00</td>
       <td>May 2016</td>
       <td><a href="state-aid-remove-item.html" style="visibility:hidden">Remove</a></td>
     </tr>
     <tr>
-      <th scope="row">ESFA <span class="form-hint">(levy transfer)</span></th>
+      <td>ESFA <span class="form-hint">(levy transfer)</span></td>
       <td class="numeric">€3,205.25</td>
       <td>May 2016</td>
       <td><a href="state-aid-remove-item.html" style="visibility:hidden">Remove</a></td>
     </tr>
+     <tr class="total">
+         <td colspan="1">&nbsp;</td>
+<td data-label="Total amount" class="total numeric">£2,178.00</td>    </tr>
   </tbody>
     </table>
     
+    
+        <h2 class="heading-medium">Other state aid</h2>
+    
+    <div class="panel panel-border-wide">
+    <h3 class="heading-medium">No state aid declared</h3>
+    <p>You have not declared any other sources of state aid.</p>
+</div>
+
+
+    
+    
+        <h2 class="heading-medium">This levy transfer declaration</h2>
+    <table class="top-border">
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        Declaration amount
+                    </th>
+                    <td>
+                        €600
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Estimated date of assistance
+                    </th>
+                    <td>
+                        October 2017
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Last 3 years state aid total
+                    </th>
+                    <td>
+                        €43,123.00
+                    </td>
+                </tr>
+            </tbody></table>
+    
+    <form>
+        <div class="form-group">
+            <a class="button" href="state-aid-confirm.html">Continue</a>
+            <a class="button text-link" href="state-aid-add-item.html">Add another source of state aid</a>
+        </div>
+    </form>
+    
+    <br />
+    <br />
+    <br />
+    <div class="notice text">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+Please note that declaration amount is not the actual amount received. This can change based on exchange rate fluctuations  </strong>
+</div>
+     
+    
+    </div>
+    
+    
+    
+    <div id="v2" class="hidden">
+    <div class="hgroup">
+        <h1 class="heading-xlarge">
+            Complete state aid declaration
+        </h1>
+                    
+                            <p class="lede text">Add any other de mimimis state-aid received received between April 6 2016 and April 5 2018</p>
+   </div> 
+    
+  
 
     
         <h2 class="heading-medium">Other state aid</h2>
@@ -69,13 +193,76 @@
     <p>You must declare what other state aid you received in order to continue, <a href="#">declare my other state aid</a>.</p>
 </div>
     
-    
-    <div class="panel panel-border-wide">
-    <h3 class="heading-medium">No state aid declared</h3>
-    <p>You not declared any other sources of state aid.</p>
-</div>
 
-    <table class="responsive">
+    
+    
+        <h2 class="heading-medium">This levy transfer declaration</h2>
+    <table class="top-border">
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        Declaration amount
+                    </th>
+                    <td>
+                        €600
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Estimated date of assistance
+                    </th>
+                    <td>
+                        October 2017
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Last 3 years state aid total
+                    </th>
+                    <td>
+                        €43,123.00
+                    </td>
+                </tr>
+            </tbody></table>
+    
+    <form>
+        <div class="form-group">
+            <a class="button" href="state-aid-confirm.html">Continue</a>
+            <a class="button text-link" href="state-aid-add-item.html">Add another source of state aid</a>
+        </div>
+    </form>
+    
+    <br />
+    <br />
+    <br />
+    <div class="notice text">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+Please note that declaration amount is not the actual amount received. This can change based on exchange rate fluctuations  </strong>
+</div>
+     
+    
+    </div>
+    
+    
+    <div id="v22" class="hidden">
+        
+        <div class="hgroup">
+        <h1 class="heading-xlarge">
+            Complete state aid declaration
+        </h1>
+                    
+                            <p class="lede text">Add any other de mimimis state-aid received received between April 6 2016 and April 5 2018</p>
+   </div> 
+    
+  
+
+    
+        <h2 class="heading-medium">Other state aid</h2>
+    
+<table class="responsive">
          <thead>
             <tr>
               <th scope="col">Organisation</th>
@@ -136,6 +323,82 @@
                 </tr>
             </tbody></table>
     
+        
+        
+    <form>
+        <div class="form-group">
+            <a class="button" href="state-aid-confirm.html">Continue</a>
+            <a class="button text-link" href="state-aid-add-item.html">Add another source of state aid</a>
+        </div>
+    </form>
+    
+    <br />
+    <br />
+    <br />
+    <div class="notice text">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+Please note that declaration amount is not the actual amount received. This can change based on exchange rate fluctuations  </strong>
+</div>
+     
+        
+     
+    
+    </div>
+    
+    
+    <div id="v3" class="hidden">
+    <div class="hgroup">
+        <h1 class="heading-xlarge">
+            Complete state aid declaration
+        </h1>
+                    
+                            <p class="lede text">Add any other de mimimis state-aid received received between April 6 2016 and April 5 2018</p>
+   </div> 
+    
+    
+    
+        <h2 class="heading-medium">Other state aid</h2>
+
+    
+    <div class="panel panel-border-wide">
+    <h3 class="heading-medium">No state aid declared</h3>
+    <p>You have not declared any other sources of state aid.</p>
+</div>
+
+   
+    
+        <h2 class="heading-medium">This levy transfer declaration</h2>
+    <table class="top-border">
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        Declaration amount
+                    </th>
+                    <td>
+                        €600
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Estimated date of assistance
+                    </th>
+                    <td>
+                        October 2017
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Last 3 years state aid total
+                    </th>
+                    <td>
+                        €43,123.00
+                    </td>
+                </tr>
+            </tbody></table>
+    
     <form>
         <div class="form-group">
             <a class="button" href="state-aid-confirm.html">Continue</a>
@@ -155,5 +418,7 @@ Please note that declaration amount is not the actual amount received. This can 
 </div>
      
     
+    </div>
+                        
 </main>
 {% endblock %}

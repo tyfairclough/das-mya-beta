@@ -479,6 +479,9 @@ $(document).ready(function () {
         case 'transfers-start':
             transfersStart();
             break;
+        case 'receive-state-aid-declaration':
+            receiveStateAidDeclaration();
+            break;
         default:
             break;
         };
@@ -488,6 +491,24 @@ $(document).ready(function () {
     
 // PAGE FUNCTIONS 
     
+        function receiveStateAidDeclaration(){
+            $(".logic-page .button").click(function(e){
+                e.preventDefault();
+                $(".logic-page").hide();
+                
+            state = $("input[name=radio-group]:checked").val()
+            
+            if (state === "1") {
+                $("#v1").removeClass("hidden");
+            } else if (state === "2") {
+                $("#v2").removeClass("hidden");
+            } else if (state === "22") {
+                $("#v22").removeClass("hidden");
+            } else {
+                $("#v3").removeClass("hidden");                
+            }
+        });
+        };
     
         function fundingIndex(){
         

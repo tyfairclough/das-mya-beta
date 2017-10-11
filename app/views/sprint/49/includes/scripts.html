@@ -482,6 +482,9 @@ $(document).ready(function () {
         case 'receive-state-aid-declaration':
             receiveStateAidDeclaration();
             break;
+        case 'choose-an-option':
+            chooseAnOption();
+            break;
         default:
             break;
         };
@@ -490,6 +493,24 @@ $(document).ready(function () {
 
     
 // PAGE FUNCTIONS 
+    
+    function chooseAnOption(){
+                          $(".button").click(function(e){
+  
+            state = $("input[name=radio-group]:checked").val()
+            
+            if (state === "send-approve") {
+                window.location.href = "/sprint/{{sprint}}/account/apprentices/track-transfer.html";                                                
+                
+            } else if (state === "send-amend") {
+                window.location.href = "/sprint/{{sprint}}/account/apprentices/sent.html";                                                                
+            } else if (state === "save-no-send") {
+                window.location.href = "/sprint/{{sprint}}/account/apprentices/sent.html";                                                                
+            } else {
+                window.location.href = "/sprint/{{sprint}}/account/apprentices/sent.html";                                                                
+            }
+        });
+    };
     
         function receiveStateAidDeclaration(){
             $(".logic-page .button").click(function(e){

@@ -1524,35 +1524,6 @@ table.form {
 }
 
 
-#finance-bingo, .apprentices-index a {
-        .column-third {
-            div {
-                background-color:#DEE0E2; 
-                overflow: auto; 
-                margin-bottom: 15px;
-                
-                h2 {
-                    margin: 0px 0 0px 15px;
-                    padding-top: 25px;
-                    
-                }
-                h2 + h2 {
-                    margin: 0px 0 0px 15px;
-                    padding: 0;
-                }
-                a {    
-                    margin: 10px 0 0;
-                    padding: 10px 15px;
-                    float: left;
-                    background: #F8F8F8;
-                    width: 100%;
-                    box-sizing: border-box;
-                    background-color: white;
-                    border: 1px solid #DEE0E2;
-                }
-            }
-        }
-}
 
 #help2 {
         background: #DEE0E2;
@@ -2138,14 +2109,6 @@ li.added + li {
 }
 
 
-#finance-bingo a, .apprentices-index a
-{
-    margin-bottom: 15px;
-    text-decoration: none;
-    width: 100%;
-    overflow: auto;
-    float: left;
-}
 
 .data {
         padding: 20px 10px;
@@ -2632,7 +2595,7 @@ table.footable>tfoot>tr.footable-paging>td>span.label {
         color: $grey-1;
     }
 }
-.account-dashboard-7, .individual-apprentice {
+.account-dashboard-7, .individual-apprentice, .apprentices-index {
     .tabs-menu {
         float: left;
         border-bottom: 1px solid #d4d4d1;

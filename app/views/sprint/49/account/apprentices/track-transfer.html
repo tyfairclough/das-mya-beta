@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="choose-an-option" id="content" role="main" tabindex="-1">
+{% include "includes/link-back.html" %}
+    <div class="grid-row">
+           <div class="column-two-thirds">
+              <h1 class="heading-xlarge">Funding method</h1>
+               <p>TELL THE USER WE HAVE MATCHED APPRENTICESHIPS FROM A TRANSFER TO APPRENTICESHIPS IN THIS COHORT.</p>
+            <div>
+        
+      
+                <h3 class="heading-medium">H2 - COHORT WITH MATCHES</h3>
+                <table id="matched-apprenticeships" class="responsive">
+      
+
+                    <thead>
+                      <tr>
+                        <th scope="col">APPRENTICESHIP</th>
+                        <th class="" scope="col" style="">INDICATIVE COST EACH</th>
+                        <th class="" scope="col" style="">QUANTITY</th>
+                        <th class="" scope="col" style="">MATCH MADE?</th>
+                      </tr>
+                    </thead>
+
+                      <tbody>
+                          <tr>
+                            <td>Mechatronics Level <span class="form-hint">level 3</span></td>
+                            <td>£5,400</td>
+                            <td>20</td>
+                            <td>X</td>
+                          </tr>
+                          <tr>
+                            <td>Mechatronics Level <span class="form-hint">level 3</span></td>
+                            <td>£5,400</td>
+                            <td>3</td>
+                            <td>- -</td>
+                          </tr>
+
+                    </tbody>
+                </table>
+                
+                <h4 class="heading-medium">ASK IF THEY WANT TO USED THE FUNDS FROM THE TRANSFER ON THESE APPRENTICES</h4>
+
+                 <form action="/programmeTen&#10;&#10;&#10;&#10;/contracts/provider-in-progress">
+                    <legend class="visuallyhidden">Things to do next</legend>
+                      <div class="form-group">
+                          <div class="multiple-choice">
+                          <input id="radio-2" type="radio" name="radio-group" value="send-approve">
+                       <label for="radio-2">
+                        <span id="changeTwo">YES OPTION - USE MATCHED FUNDS</span>
+                      </label>
+                              </div>
+                          <div class="multiple-choice">
+                      <input id="radio-1" type="radio" name="radio-group" value="send-amend">
+                       <label for="radio-1">
+                        <span id="changeOne">NO OPTION - DON'T USE FUNDS</span></label>
+                              </div>
+ 
+                    </div>
+                    
+                  <div style="margin-top:20px;"><input type="button" class="button" id="paymentPlan" onclick="setProviderAlert()" value="Continue"></div>
+                  </form>
+
+            </div>
+            <div style="margin-top:35px"></div>
+            <div style="margin-top:50px"></div>
+          </div>
+
+          <div class="column-one-third hidden">
+              <h4 class="heading-medium">
+                Transfer calculator
+              </h4>
+              <p>Transfer pot: £35,205</p>
+              <P>Left over: £0</P>
+            </div>
+        </div>
+
+</main>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header-provider.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="choose-an-option" id="content" role="main" tabindex="-1">
+                <div id="content">
+                
+
+
+                
+
+
+
+<div class="grid-row">
+    <div class="column-full home-page">
+        <h1 class="heading-xlarge">BARNFIELD COLLEGE</h1>
+        <p class="grey-text">UKPRN: 10000534</p>
+        <hr class="hr-double">
+    </div>
+</div>
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="grid-row">
+            <div class="column-one-half">
+                    <h2 class="heading-medium">
+                        <a href="/10000534/apprentices/Cohorts">Your cohorts</a>
+                    </h2>
+              <p>Review, edit, approve and add apprentices to new cohorts.</p>
+                <hr>
+            </div>
+            <div class="column-one-half">
+                <h2 class="heading-medium">
+                    <a href="/10000534/apprentices/manage/all">Manage your apprentices</a>
+                </h2>
+                <p>
+                    View and update approved apprentice records.
+                </p>
+                <hr>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+            <h3 class="heading-medium">Instructions for the apprentices' employer</h3>
+         <p>Employers need to <a href="https://www.gov.uk/guidance/manage-apprenticeship-funds" target="_blank" title="Register to manage their apprenticeship funds">register to manage their apprenticeship funds</a>. </p>
+        <p>Once they've registered they need to:</p>
+        <ol class="list list-number">
+            <li>Add the PAYE schemes that the apprentices will be paid through.</li>
+            <li>Added the employer organisations that will contract with the training provider.</li>
+            <li>Sign agreements for their organisations so that they can spend levy funds.</li>
+            <li>Add apprentices to their account so they can authorise payments to you. </li>
+        </ol>  
+    </div>
+</div>
+
+
+
+            </div>
+
+</main>
+{% endblock %}

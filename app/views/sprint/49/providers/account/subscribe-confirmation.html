@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header-provider.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="pro-confirm-sub" id="content" role="main" tabindex="-1">
+  {% include "includes/link-back.html" %}
+          
+
+
+                
+
+
+
+<div class="grid-row">
+<div class="column-two-thirds">
+        <h1 class="heading-xlarge">Confirm Subscription
+</h1>
+
+        
+        <fieldset>
+
+          <legend>
+
+        <div class="heading-medium">Confirm you want to recieve these notifications?</div>
+
+
+          </legend>
+<div class="form-group">
+          <div class="multiple-choice">
+            <input id="public-sector" type="radio" name="radio-group" value="public">
+            <label for="public-sector">Yes, stop sending me these messages</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="private-sector" type="radio" name="radio-group" value="private">
+            <label for="private-sector">No continue to receive these messages.</label>
+          </div>
+            </div>
+                <a class="button" href="#">Save</a>
+
+
+        </fieldset>
+    
+    </div>
+
+            </div>
+
+</main>
+{% endblock %}
